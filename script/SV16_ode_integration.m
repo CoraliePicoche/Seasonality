@@ -12,19 +12,9 @@ global A m S r thresh_min
 dydt=zeros(S,1);
 comp=zeros(1,S);
 
+mask=transpose(find(y>=thresh_min));
 
-for i=1:S
-        if y(i)<thresh_min
-        dydt(i)=0.0;
-        else
-        %Competition
-        for j=1:S
-                comp(i)=comp(i)+A(i,j)*y(j);
-        end;
-        comp(i)=1-comp(i);
-        %Final
-        dydt(i)=(r(i,floor(t))*comp(i)-m)*y(i);
-    end;
-
-end;
+%Competition
+comp=1-A(:,mask)*y(mask);
+dydt(mask)=(r(mask,floor(t)).*comp(mask)-m).*y(mask); 
 end
