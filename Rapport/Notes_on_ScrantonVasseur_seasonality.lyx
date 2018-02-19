@@ -156,7 +156,7 @@ e^{-5|\tau-\tau_{i}^{opt}|^{3}/b_{i}}, & \tau>\tau_{i}^{opt}
 \end_layout
 
 \begin_layout Standard
-In this model, 
+In this model, the abundance $N$ of species $i$
 \end_layout
 
 \begin_layout Standard
@@ -1176,12 +1176,155 @@ status open
 Thermal niches of seven species with thermal optima spaced regularly on
  the interval [17.5°C-22.5°C] (left) and long-term mean intrisic growth rates
  of species as a function of their thermal optima (right)
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Thermal-niches-7-species"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
 
 
 \end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We can see the variaibility in growth rates according to thermal optima
+ in a 7-species community on Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Thermal-niches-7-species"
+
+\end_inset
+
+.
+ Thermal niches are normalized so that all species have the same niche area.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Species dynamics
+\end_layout
+
+\begin_layout Standard
+Species dynamics were explored in a large community of 60 species.
+ Their thermal optima are spaced regularly on the interval [15°C-25°C] and
+ they are all initialized with density 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+frac{1}{
+\backslash
+alpha S}$
+\end_layout
+
+\end_inset
+
+.
+ Dynamics are simulated for 5000 years with a daily timestep.
+ The model is integrated with ode45 in Matlab, a Runge-Kuntta 4th/5th order
+ algorithm
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+We should acknowledge the fact that we're trying to keep the same algorithm
+ -and programming language- for all experiments with the model but
+\begin_inset CommandInset citation
+LatexCommand citet
+key "scranton_coexistence_2016"
+
+\end_inset
+
+ use a multistep algorithm in Python/Fortran for 'regular' species dynamics,
+ also called species sorting, a Runge-Kutta method in Fortran for community
+ assembly and only mention Python for species removal - probably the multistep
+ algorithm mentioned previously.
+ 
+\end_layout
+
+\end_inset
+
+.
+ If the density of a species declines below 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$10^{-6}$
+\end_layout
+
+\end_inset
+
+, the species is considered extinct.
+ In a first set of simulations, all species are subject to the same temperature
+ sequence.
+ In a second set of simulations, the same temperature sequence is shuffled
+ differently for every species in order to test the effect of the environmental
+ driver on species synchrony.
+ We ran both simulations 20 times
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+In contrast with 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "scranton_coexistence_2016"
+
+\end_inset
+
+ who performed 100 simulations for each case.
+ We chose to lower this number as simulations are quite time consuming -still
+ working on it, BTW
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset citation
+LatexCommand citet
+key "scranton_coexistence_2016"
+
+\end_inset
+
+ chose a species-specific synchrony index based on Pearson's correlation
+ coefficient 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+rho$
+\end_layout
+
+\end_inset
+
+ .
+ Synchrony is calculated for the last 200 years of dynamics with a moving
+ window of 5 years.
+\begin_inset Formula 
+\[
+\zeta_{i}=\sum_{j=1,j\neq1}^{S}\alpha_{ij}\rho_{i,j}
+\]
 
 \end_inset
 
@@ -1241,7 +1384,9 @@ Synchrony of each species measured as the weighted correlations between
  Temperature is the same for all species in the top-panel, temperatures
  are random in the bottom-panel.
  There were 60 species at the beginning of the simulation.
-\end_layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Synchrony-of-each"
 
 \end_inset
 
@@ -1251,6 +1396,32 @@ Synchrony of each species measured as the weighted correlations between
 \end_inset
 
 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We can see the results for the two sets of simulations on Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Synchrony-of-each"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Community assembly
+\end_layout
+
+\begin_layout Subsubsection
+Species removal and reintroduction
 \end_layout
 
 \begin_layout Standard

@@ -5,7 +5,7 @@ ywindow=5;
 thresh_min=10^(-6);
 alpha=0.001;
 
-adir='./output_simulation/SV_same_temp/';
+adir='./output_simulation/season_cos/';
 allfiles=dir(adir);
 fileNames = {allfiles(~[allfiles.isdir]).name};
 
@@ -43,12 +43,12 @@ a_median=zeros(1,length(fileNames));
 %         end
     end;
 sp=0;
-% figure; hold on;
-% for s1=sbis
-%     sp=sp+1;
-%     plot(1:yspan,synchrony(:,s1),'color',c(sp,:));
-% end
-% hold off;
+figure; hold on;
+for s1=sbis
+    sp=sp+1;
+    plot(1:yspan,synchrony(:,s1),'color',c(sp,:));
+end
+hold off;
 
 sp=0;
 figure; hold on;

@@ -2,13 +2,6 @@
 %%% Developped by Picoche & Barraquand 2017
 %%% Main for community assembly
 
-%To try : focus on the interval 18-21 at first, then, as a maximum 17-22
-% because it seems to be the maximum range for coexisting species and i'll
-% go nowhere if I keep trying species that did not survive before (this
-% means index 13-14 and 43-33 instead of 1:60)
-% In this, take one species after the other and do the full range at least
-% 10 times
-
 clc 
 clear all
 close all
@@ -35,7 +28,7 @@ A=ones(S,S)*alpha_compet; %interaction matrix
 m=15/365; %mortality rate SV (kg/(kg*year))
 thresh_min=10^(-6); %species considered extinct below this biomass
 yspan=200;
-ysave=500;
+ysave=200;
 mean_invasion_time=20*365;
 
 
@@ -64,9 +57,14 @@ for i=1:S
 end;
 
 
-S_invade=14:43; % to be in the range that seems to survive in fig. from SV
+S_invade=1:60; % to be in the range that seems to survive in fig. from SV
 
- for iter=1:10
+ for iter=3:100
+     tstart = 1.0;
+tstop = 10001.0*365; %5000 years in SV, with 1 day intervals
+tsampling = (tstop-tstart)+1; 
+tspan=linspace(tstart,tstop,tsampling);                        % timespan for the numerical solution
+
 rng(iter)
 iter
 % Seasonality with time
@@ -84,9 +82,9 @@ for i=1:S
 end;
 
  
-for s_first=S_invade
+%for s_first=S_invade
      y0=zeros(1,S);
-    s_first
+    s_first=randi([S_invade(1) S_invade(end)],1);
 
     y0(s_first)=1/(alpha_compet*2)
  
@@ -135,9 +133,9 @@ toutbis=tout(imin:imax);
 youtbis=yout(imin:imax,:);
 mask=youtbis(end,:)
 
-save(strcat('./output_simulation/',dir_output,'/Sp_',num2str(s_first),'_iter_',num2str(iter),'ode45_no_refine_low_initial_density_minimal_value.mat'),'toutbis','youtbis','tau_opt','b','tau','invasion_time','list_species');
+save(strcat('./output_simulation/',dir_output,'/random_init_iter_',num2str(iter),'ode45_no_refine_low_initial_density_minimal_value.mat'),'toutbis','youtbis','tau_opt','b','tau','invasion_time','list_species');
 %writetable(T2,strcat('./output_simulation/SV_same_temp/',num2str(iter),'essai_param.txt'))
-end;
+%end;
 end;
 
 

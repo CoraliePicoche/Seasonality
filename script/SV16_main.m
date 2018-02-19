@@ -8,12 +8,14 @@ close all
 
 
 %%%%%% Parameters
-global S tau0 mu_tau sigma_tau tau_min tau_max a_r_tau0 E_r k A m thresh_min tspan r
+global S tau0 mu_tau sigma_tau tau_min tau_max a_r_tau0 E_r k A m thresh_min tspan r amp_tau
 S=60 %number of species (60 for SV)
 %Temperature-related
 tau0=293; %reference temperature in Kelvin (SV)
 mu_tau=293; %mean temperature in Kelvin SV
-sigma_tau=5; %standard deviation of temperature in Kelvin SV
+sigma_tau=2; %standard deviation of temperature in Kelvin SV
+amp_tau=10;% used for seasonal signal, this is the total amplitude of the temperature variation, as opposed to the deviation of the noise
+
 tau_min=15+273; %minimum thermal optimum SV, in Kelvin
 tau_max=25+273; %maximum thermal optimum SV, in Kelvin
 %Growth-related
@@ -57,22 +59,22 @@ end;
  y0=ones(1,S)*1/(alpha_compet*S);
  
  
-for iter=1:1
+for iter=1:10
     rng(iter)
     iter
 % Seasonality with time
-tau=compute_temperature(tspan); %this function gives the corresponding temperature of the day. Can be random (as in SV 2016), or based on a seasonal function (as in Taylor et al. 2013 + Sauve&Barraquand) 
+tau=compute_temperature_season(tspan); %this function gives the corresponding temperature of the day. Can be random (as in SV 2016), or based on a seasonal function (as in Taylor et al. 2013 + Sauve&Barraquand) 
 
 %%randomize
 tau_mat=zeros(S,length(tau));
 for i=1:S
 %    if iter<=10
         tau_mat(i,:)=tau;
-        dir_output='SV_same_temp';
-    else
-        tau_mat(i,:)=tau(randperm(length(tau)));
-        dir_output='SV_different_temp';
-    end;
+        dir_output='season_cos';
+%    else
+%         tau_mat(i,:)=tau(randperm(length(tau)));
+%         dir_output='SV_different_temp';
+%     end;
 
 end;
 
@@ -83,12 +85,12 @@ end;
 
 
 %%%%%% Integration starts
-options= odeset('Reltol',1e-3,'NonNegative',[1 2]);
+options= odeset('Reltol',1e-3,'NonNegative',1:60);
 [tout,yout] = ode45(@SV16_ode_integration, tspan , y0); %,options);       % ode solver
  imin=tstop-ysave*365;
  imax=tstop;
 
 toutbis=tout(imin:imax);
 youtbis=yout(imin:imax,:);
-save(strcat('./output_simulation/',dir_output,'/',num2str(iter),'essai.mat'),'toutbis','youtbis','tau_opt','b','tau_mat');
+save(strcat('./output_simulation/',dir_output,'/',num2str(iter),'essai_wih_stochasticity.mat'),'toutbis','youtbis','tau_opt','b','tau_mat');
 end;
