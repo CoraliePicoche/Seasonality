@@ -3,6 +3,9 @@
 \begin_document
 \begin_header
 \textclass article
+\begin_preamble
+\usepackage{footnote}
+\end_preamble
 \use_default_options true
 \maintain_unincluded_children false
 \language english
@@ -91,7 +94,7 @@ Introducing the model
 \end_layout
 
 \begin_layout Standard
-We use the coexistence model from 
+We use the coexistence model described in 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "scranton_coexistence_2016"
@@ -1212,6 +1215,13 @@ reference "fig:Thermal-niches-7-species"
 
 \begin_layout Subsubsection
 Species dynamics
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Species-dynamics"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -1234,30 +1244,6 @@ alpha S}$
 
 .
  Dynamics are simulated for 5000 years with a daily timestep.
- The model is integrated with ode45 in Matlab, a Runge-Kuntta 4th/5th order
- algorithm
-\begin_inset Foot
-status open
-
-\begin_layout Plain Layout
-We should acknowledge the fact that we're trying to keep the same algorithm
- -and programming language- for all experiments with the model but
-\begin_inset CommandInset citation
-LatexCommand citet
-key "scranton_coexistence_2016"
-
-\end_inset
-
- use a multistep algorithm in Python/Fortran for 'regular' species dynamics,
- also called species sorting, a Runge-Kutta method in Fortran for community
- assembly and only mention Python for species removal - probably the multistep
- algorithm mentioned previously.
- 
-\end_layout
-
-\end_inset
-
-.
  If the density of a species declines below 
 \begin_inset ERT
 status open
@@ -1413,6 +1399,11 @@ reference "fig:Synchrony-of-each"
 \end_inset
 
 .
+ As described in the original paper, when the system is dominated by seasonal
+ dynamics, species form three clumps within the [19-22]°C interval and show
+ small or negative values of synchrony.
+ When temperatures are different for every species, less species survive,
+ with more homogeneous abundances and no patterns of synchrony.
  
 \end_layout
 
@@ -1420,8 +1411,728 @@ reference "fig:Synchrony-of-each"
 Community assembly
 \end_layout
 
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename graphe/invasion_2species.png
+	width 45text%
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename graphe/invasion_3species.png
+	width 45text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Species coexistence according to their thermal optimum for 2-species communities
+ (left) and 3-species communities (right).
+ Black lines indicate the thermal optimum of 20.42°C.
+ On the left, the frequency of each pair is indicated by the intensity of
+ the gray scale.
+ On the right, the color corresponds to the third species being present,
+ while pairs correspond to extreme values of thermal optima.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Species-coexistence-according"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+To model community assembly, 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "scranton_coexistence_2016"
+
+\end_inset
+
+ iniate a community with only one species chosen at random from the previous
+ 60 species pool, set its density to 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+frac{1}{2
+\backslash
+alpha}$
+\end_layout
+
+\end_inset
+
+ and run the simulation for 10,000 years, during which the community the
+ community is subjected to invasion events.
+ The time between invasions is exponentially distributed with a mean of
+ 20 years and for every invasion event, a species is chosen at random from
+ the species pool to be introduced at its extinction threshold (
+\begin_inset Formula $10^{-6}$
+\end_inset
+
+).
+ Authors repeated this simulation 2000 times.
+ 
+\end_layout
+
+\begin_layout Standard
+Considering the time required for each simulation (see below), we only launched
+ 20 simulations and checked if we had qualitatively the same results, that
+ is a majority of simulations with only 2 or 3 extant species laying on
+ opposite sides of the most fit species' thermal optimum, around 20.42°C
+ (Species 33).
+ We also reduced the range of explored species to those whose thermal optima
+ were within 
+\begin_inset Formula $\pm2$
+\end_inset
+
+K) of the previously observed thermal limits.
+ 
+\end_layout
+
+\begin_layout Standard
+In the 20 communities we obtained, half of them had 2 secies and 7 had 3
+ species; remaining communities had 4 species.
+ We confirmed that species laid on opposites sides of the thermal optimum,
+ with the third species, when present, being in the 
+\begin_inset Quotes eld
+\end_inset
+
+optimum clump
+\begin_inset Quotes erd
+\end_inset
+
+.
+ 
+\end_layout
+
 \begin_layout Subsubsection
 Species removal and reintroduction
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename graphe/species_removal.png
+	width 45text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Effect of knocking out a species (on the y-axis) on the other species abundance
+ (on the x-axis).
+ The size of the circles is proportional to the absolute value of the difference
+ between a simulation with a knocked-out species and a simulation without
+ knocking out.
+ Grey circle indicate negative difference (the abundance of the given species
+ is higher when no knocking-out took place) while black circles indicate
+ positive value (the knocking-out of ones species enable the other one to
+ increase its abundance).
+ Species identities are given by their thermal optima shown on the axes.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Effect-of-knocking"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In this experiment, 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "scranton_coexistence_2016"
+
+\end_inset
+
+ use a previous simulation of community dynamics to initialize their model
+ and then knock out each species separately, then reintroduce it after 5000
+ years with a density of 
+\begin_inset Formula $10^{-5}$
+\end_inset
+
+ (due to stochasticity, the same species is given 9 chances to invade the
+ communitiyà and observe the final abundances after 5000 more years.
+ 
+\end_layout
+
+\begin_layout Standard
+We can see on Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Effect-of-knocking"
+
+\end_inset
+
+ that our results are a bit different as the effect of a given clump is
+ not restricted to its clump (effect of stochasticity?).
+ 
+\end_layout
+
+\begin_layout Section
+Seasonality
+\end_layout
+
+\begin_layout Standard
+We wanted to keep the same mean and variance as before, with a seasonal
+ signal.
+ We propose the function
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+We could also consider another type of autocorrelated noise (just to keep
+ this in mind)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+I also took a lot of time in October 2017 to try and extract a signal from
+ real data in Arcachon, but it is still 'under development'.
+\end_layout
+
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\tau(t)=\mu_{\tau}+\sigma_{\tau}sin(\frac{2\pi t}{365.25})+\epsilon,\text{where }\epsilon\sim N(0,\frac{\sigma_{\tau}}{\sqrt{2}})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Notes on the algorithm
+\end_layout
+
+\begin_layout Standard
+The model is integrated with ode45 in Matlab, a Runge-Kuntta 4th/5th order
+ algorithm
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+We should acknowledge the fact that we're trying to keep the same algorithm
+ -and programming language- for all experiments with the model but 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "scranton_coexistence_2016"
+
+\end_inset
+
+ use a multistep algorithm in Python/Fortran for 'regular' species dynamics,
+ also called species sorting, a Runge-Kutta method in Fortran for community
+ assembly and only mention Python for species removal - probably the multistep
+ algorithm mentioned previously.
+ 
+\end_layout
+
+\end_inset
+
+One of the first issues we encountered was the time needed for each simulation.
+ With usual algorithm settings (absolute tolerance set 
+\begin_inset Formula $10^{-9}$
+\end_inset
+
+ and relative tolerance, to 
+\begin_inset Formula $10^{-8}$
+\end_inset
+
+), imposing no negative value for species abundance
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+This option is costly (the simulation is about 35% longer) but necessary,
+ steps can still be too large and lead to high negative abundances
+\end_layout
+
+\end_inset
+
+, a regular simulation as described in Sec.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:Species-dynamics"
+
+\end_inset
+
+ takes about 35 minutes to run.
+ Even increasing the tolerance levels to absolute tolerance 
+\begin_inset Formula $10^{-8}$
+\end_inset
+
+ and relative tolerance to 
+\begin_inset Formula $10^{-3}$
+\end_inset
+
+only reduces the computation time to about 20 minutes (and final results
+ can differ by about 10% in abundance).
+ 
+\end_layout
+
+\begin_layout Standard
+When timing the code, the program shows
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="8" columns="4">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Function
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Total time
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Self time
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+%Time
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Main
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2823
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+309
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+11%
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ode45
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2370
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+494
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+17%
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+NonNegative option
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1793
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+563
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+20%
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ode integration (actual function to integrate)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1230
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1230
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+43%
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+b computation
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+141
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.03%
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Growth rate computation (also used for b)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+137
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+137
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5%
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ntrp45 (ode45 related)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+82
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+82
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3%
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Time spent in the most important functions of the code.
+ We used comm assembly to check if the interruption in the integration was
+ time consuming.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In the ode integration function, 50% of the time is required only to load
+ growth data ; 14% for the competition computation and 12% for the final
+ computation : growth + competition.
+ Initializing temperature and maximum growth rates in the main program is
+ therefore time expensive but I don't really see how to do it differently
+ if we want to save stochastic temperatures ; and I'm not sure computing
+ maxium possible growth rates for each time step would be more effective.
+ Should be tried, though.
+\end_layout
+
+\begin_layout Standard
+We could also save b computation for once and load it, but this means we
+ decide once and for all which species we use (and reduce the range considered
+ by S&V, and/or increase the precision in the right range to increase the
+ total number of species).
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset citation
+LatexCommand citet
+key "scranton_coexistence_2016"
+
+\end_inset
+
+ use 5000 time steps as the necessary time for the model to stabilize.
+ However, we can expect the model to stabilize more quickly with seasonality
+ (this will be a necessary check before lauching simulations).
+ 
+\end_layout
+
+\begin_layout Standard
+In addition to the time cost, species invasion or removal requires the introduct
+ion of discontinuities in the dynamics of the community.
+ This can be done in 3 ways using Matlab: using the event function (but
+ events do not depend on the dynamics of the community, so are not really
+ appropriate for this), integrating on segments of the total time span,
+ stopping for every species addition or deletion (our choice, until now),
+ or introducing the species for a given time without stopping the simulation
+ (which would require the model to test each time step and compare it to
+ the invasion or removal time sequence set in the main program: this is
+ too expensive for what we want).
+ 
 \end_layout
 
 \begin_layout Standard

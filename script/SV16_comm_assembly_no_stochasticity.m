@@ -1,6 +1,8 @@
 %%% Model of Scranton & Vasseur 2016 (Theor Ecol.)
-%%% Developped by Picoche & Barraquand 2017
-%%% Main for community assembly
+%%% Developped by Picoche & Barraquand 2018
+%%% Based on SV_comm_assembly, the main script for community assembly, but
+%%% removing the stochasticity in the invasion, just to test the different
+%%% options of ode45 and the effect of discontinuity
 
 clc 
 clear all
@@ -14,7 +16,7 @@ S=60 %number of species (60 for SV)
 tau0=293; %reference temperature in Kelvin (SV)
 mu_tau=293; %mean temperature in Kelvin SV
 sigma_tau=5; %standard deviation of temperature in Kelvin SV
-tau_min=15+273; %minimum thermal optimum SV, in Kelvin 
+tau_min=15+273; %minimum thermal optimum SV, in Kelvin
 tau_max=25+273; %maximum thermal optimum SV, in Kelvin
 %Growth-related
 niche_area=(10^3.1)/365; %SV (... why?)
@@ -29,22 +31,17 @@ m=15/365; %mortality rate SV (kg/(kg*year))
 thresh_min=10^(-6); %species considered extinct below this biomass
 yspan=200;
 ysave=200;
-mean_invasion_time=20*365;
+mean_invasion_time=500*365;
 
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% DO
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% NOT
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% WORK
 
 %%%%%% Initialize
-rng(1)
-options= odeset('Reltol',1e-3,'AbsTol',1e-8,'NonNegative',1:60);
+% Time resolution
+tstart = 1.0;
+tstop = 1499.0*365; %5000 years in SV, with 1 day intervals
+tsampling = (tstop-tstart)+1; 
+tspan=linspace(tstart,tstop,tsampling);                        % timespan for the numerical solution
+%distrib_invasion=makedist('Exponential','mu',mean_invasion_time); %stochastic
 
-% Time resolutionCoexistence, community assembly, interspecific competition, network structure, stability.
-tstart0 = 1.0;
-tstop0 = 10001.0*365; %5000 years in SV, with 1 day intervals
-tsampling0 = (tstop0-tstart0)+1; 
-distrib_invasion=makedist('Exponential','mu',mean_invasion_time);
 %Initialize species time optima
 %SV use uniformly spaces thermal optima
 tau_opt=linspace(tau_min,tau_max,S); %maybe do another, more realistic function later on, with a normal distribution, maybe, or hot vs. cold-tolerant species (bimodal distribution)
@@ -58,20 +55,24 @@ for i=1:S
 end;
 
 
-S_invade=17:55; % to be in the range that seems to survive in fig. from SV
-%S_invade=1:60;
+S_invade=[35 42 43]; %always the same invader
 
+ iter=1;
+ tstart = 1.0;
+tstop = 1499.0*365; %5000 years in SV, with 1 day intervals
+tsampling = (tstop-tstart)+1; 
+tspan=linspace(tstart,tstop,tsampling);                        % timespan for the numerical solution
 
- for iter=1:1
 % Seasonality with time
-tspan=linspace(tstart0,tstop0,tsampling0);                        % timespan for the numerical solution
+%tau=compute_temperature(tspan); %this function gives the corresponding temperature of the day. Can be random (as in SV 2016), or based on a seasonal function (as in Taylor et al. 2013 + Sauve&Barraquand) 
+tau=compute_temperature_season(tspan);
+%invasion_time=random(distrib_invasion,1); %stochastic
+% while sum(invasion_time)<tstop
+%     invasion_time=[invasion_time random(distrib_invasion,1)];
+% end
+% invasion_time=floor(cumsum(invasion_time));
 
-tau=compute_temperature(tspan); %this function gives the corresponding temperature of the day. Can be random (as in SV 2016), or based on a seasonal function (as in Taylor et al. 2013 + Sauve&Barraquand) 
-invasion_time=random(distrib_invasion,1);
-while sum(invasion_time)<tstop0
-    invasion_time=[invasion_time random(distrib_invasion,1)];
-end
-invasion_time=floor(cumsum(invasion_time));
+invasion_time=linspace(mean_invasion_time-1,tstop,ceil(tsampling/mean_invasion_time));
 list_species=zeros(length(invasion_time),1);
 
 r=zeros(S,length(tau));
@@ -82,18 +83,20 @@ end;
  
 %for s_first=S_invade
      y0=zeros(1,S);
-    s_first=randi([S_invade(1) S_invade(end)],1);
+    s_first=25;
 
     y0(s_first)=1/(alpha_compet*2)
  
-tstart=tstart0;
-tstop=tstop0;
+tstart=1.0;
 tout = 1.0;
 yout = y0;
 teout = [];
 yeout = [];
 ieout = [];
 
+%options= odeset('Reltol',1e-3);
+options=odeset('NonNegative',1:60);
+tstop_tmp=min(invasion_time(1),tstop);
 for j=1:length(invasion_time)
        tstop_tmp=min(invasion_time(j),tstop);
        tspan=linspace(tstart,tstop_tmp,tstop_tmp-tstart+1.0);
@@ -102,17 +105,18 @@ for j=1:length(invasion_time)
 %tried to work with ode15s
 %%%%%% Integration starts
 if length(tspan)>1
-    [t,y] = ode45(@SV16_ode_integration, tspan , y0,options);       % ode solver
+    [t,y] = ode45(@SV16_ode_integration, tspan , y0);%,options);       % ode solver
 end;
    % Accumulate output.  This could be passed out as output arguments.
    nt = length(t);
    tout = [tout; t(2:nt)];
    yout = [yout; y(2:nt,:)];
-   y0 =  y(nt,:);
-   choose_species=randi([S_invade(1) S_invade(end)],1);
+   y0 = y(nt,:);
+   choose_species=S_invade(j);
    list_species(j)=choose_species;
    if y0(choose_species)<thresh_min
-       y0(choose_species)=thresh_min;
+      % y0(choose_species)=1/(alpha_compet*2);
+       y0(choose_species)=0.1085*10^-4;
    end
    
    tstart = t(nt);
@@ -122,13 +126,15 @@ end
  imin=max(1,length(tout)-ysave*365);
  imax=length(tout);
 
+
+%T=table([tout(imin:imax) yout(imin:imax,:)]); %I can't save everything, so I'm just saving what I'll need afterwards
+%T2=table([tau_opt; b]);
 toutbis=tout(imin:imax);
 youtbis=yout(imin:imax,:);
 mask=youtbis(end,:)
 
-save(strcat('../output_simulation/',dir_output,'/random_init_iter_',num2str(iter),'ode45_no_refine_low_initial_density_minimal_value.mat'),'toutbis','youtbis','tau_opt','b','tau','invasion_time','list_species');
-%writetable(T2,strcat('./output_simulation/SV_same_temp/',num2str(iter),'essai_param.txt'))
-%end;
-end;
+%save(strcat('./output_simulation/',dir_output,'/random_init_iter_',num2str(iter),'ode45_no_refine_low_initial_density_minimal_value.mat'),'toutbis','youtbis','tau_opt','b','tau','invasion_time','list_species');
 
+
+plot(toutbis,youtbis)
 

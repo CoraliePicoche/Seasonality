@@ -7,7 +7,7 @@ thresh_min=10^(-6);
 
 s1=17;
 s2=55; %it will eventually be 1->60, keeping in mind the fact that SV only observe stuff for 14->43 
-extant=3; %will be 2, 3 or more if it happens, but it should not according to first views
+extant=4; %will be 2, 3 or more if it happens, but it should not according to first views
 
 adir='./output_simulation/invasion/';
 allfiles=dir(adir);
@@ -28,16 +28,14 @@ for f=1:length(fileNames)
             id1=min(id);
             id2=max(id);
             if sum(mask)==extant
-                if sum(mask)==2 
-                    mat(id1-s1+1,id2-s1+1)=mat(id1-s1+1,id2-s1+1)+1;
-                end
+               
             if sum(mask)==3
                  mat(id1-s1+1,id2-s1+1)=mat(id1-s1+1,id2-s1+1)+1;
                 mat_col(id1-s1+1,id2-s1+1)=id(id>id1&id<id2)-s1+1;
             end;
 
             if sum(mask)==4
-                find(mask)
+                mask
                 idtmp=id(id<id2);
                 id1tmp=min(idtmp);
                 id2tmp=max(idtmp);

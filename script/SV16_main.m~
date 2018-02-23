@@ -15,7 +15,8 @@ S=60 %number of species (60 for SV)
 %Temperature-related
 tau0=293; %reference temperature in Kelvin (SV)
 mu_tau=293; %mean temperature in Kelvin SV
-sigma_tau=5; %standard deviation of temperature in Kelvin SV
+sigma_tau=2; %standard deviation of temperature in Kelvin SV
+amp_tau=10;% used for seasonal signal, this is the total amplitude of the temperature variation, as opposed to the deviation of the noise
 
 tau_min=15+273; %minimum thermal optimum SV, in Kelvin
 tau_max=25+273; %maximum thermal optimum SV, in Kelvin
@@ -64,8 +65,7 @@ end;
 for iter=1:1
     iter
 % Seasonality with time
-%tau=compute_temperature_season(tspan); %this function gives the corresponding temperature of the day. Can be random (as in SV 2016), or based on a seasonal function (as in Taylor et al. 2013 + Sauve&Barraquand) 
-tau=compute_temperature(tspan); %this function gives the corresponding temperature of the day. Can be random (as in SV 2016)
+tau=compute_temperature_season(tspan); %this function gives the corresponding temperature of the day. Can be random (as in SV 2016), or based on a seasonal function (as in Taylor et al. 2013 + Sauve&Barraquand) 
 
 %%randomize
 tau_mat=zeros(S,length(tau));
@@ -87,8 +87,8 @@ end;
 
 
 %%%%%% Integration starts
-options= odeset('AbsTol',1e-8, 'RelTol',1e-3,'NonNegative',1:60); %NonNegative is necessary and speaking to Alix indicated that Reltol and Absol can be changed quite safely. For
-[tout,yout] = ode45(@SV16_ode_integration, tspan , y0,options);       % ode solver
+options= odeset('Reltol',1e-3, 'Abstol', 1e-8, 'NonNegative',1:60); %NonNegative is necessary and speaking to Alix indicated that Reltol and Absol can be changed quite safely
+[tout,yout] = ode45(@SV16_ode_integration, tspan , y0);%,options);       % ode solver
  imin=tstop-ysave*365;
  imax=tstop;
 

@@ -39,7 +39,7 @@ f=7; %This is the 'best' (as in 'looking like the paper') example I have
 load(strcat([adir,fileNames{f}]));
 mask=youtbis(end,:)<thresh_min;
 sbis=1:S;
-sbis=sbis(~mask); %extant species
+sbis=sbis(~mask) %extant species
 
 rng(f)
 
@@ -60,7 +60,7 @@ for i=1:S
     r(i,:)=fun(tau,b(i),tau_opt(i));
 end;
 
-options_no_event= odeset('Reltol',1e-3,'NonNegative',1:60,'Refine',1);
+options_no_event= odeset('Reltol',1e-3,'AbsTol',1e-8,'NonNegative',1:60);%,'Refine',1);
 options_event= odeset('Reltol',1e-3,'NonNegative',1:60,'Events',@event_is_zero,'Refine',1);
 
 y0=youtbis(end,:);
