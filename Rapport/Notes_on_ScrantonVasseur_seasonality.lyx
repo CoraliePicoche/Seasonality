@@ -1661,12 +1661,127 @@ I also took a lot of time in October 2017 to try and extract a signal from
 \begin_layout Standard
 \begin_inset Formula 
 \[
-\tau(t)=\mu_{\tau}+\sigma_{\tau}sin(\frac{2\pi t}{365.25})+\epsilon,\text{where }\epsilon\sim N(0,\frac{\sigma_{\tau}}{\sqrt{2}})
+\tau(t)=\mu_{\tau}+\theta\sigma_{\tau}sin(\frac{2\pi t}{365})+\epsilon,\text{where }\epsilon\sim N(0,\sigma\sqrt{1-\frac{\theta^{2}}{2}})
 \]
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+where
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula $0\leqslant\theta\leqslant\sqrt{2}$
+\end_inset
+
+ indicates the relative proportion of variance due to the seasonal signal
+ and to stochasticity.
+ When 
+\begin_inset Formula $\theta=0$
+\end_inset
+
+, we recover the original model whereas when 
+\begin_inset Formula $\theta=\sqrt{2}$
+\end_inset
+
+, we have a seasonal-only signal, with no error.
+ It can be a way of measuring the impact of seasonality on the community
+ dynamics.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename graphe/comparison_temperature.png
+	width 45text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Comparison of temperatures with different values of 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+theta$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+First measures of stability can be taken from 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "sakavara_lumpy_2018"
+
+\end_inset
+
+ who use persistence, maximum biomass of each species and total biomass
+ during a cycle as measures of convergence (but we should note that they
+ have a deterministic model).
+ A first visual check can therefore be useful.
+ The coefficient of variation of the total biomass can also be used (suggested
+ by Fred).
+ 
+\end_layout
+
+\begin_layout Standard
+The model was first launched with 
+\begin_inset Formula $\theta=1$
+\end_inset
+
+ for 15000 years, which corresponds to three times the duration of the first
+ simulation with noise-only (as 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "scranton_coexistence_2016"
+
+\end_inset
+
+ seem to consider 5000 years as the necessary time to stabilize but they
+ don't justify it with convergence criteria).
+ We expect that a seasonal signal will lead to a shorter burn-in but want
+ to verify it first.
 \end_layout
 
 \begin_layout Section
