@@ -1703,6 +1703,7 @@ where
 \end_layout
 
 \begin_layout Standard
+\align center
 \begin_inset Float figure
 wide false
 sideways false
@@ -1711,7 +1712,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename graphe/comparison_temperature.png
-	width 45text%
+	width 95text%
 
 \end_inset
 
