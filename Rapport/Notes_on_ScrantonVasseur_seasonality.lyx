@@ -1503,7 +1503,28 @@ alpha}$
 \end_inset
 
 ).
- Authors repeated this simulation 2000 times.
+ Authors repeated this simulation 2000 times
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Dicussing with Fred and Alix, it appears that we could test for possible
+ persistance before the invasion.
+ By using the maximum growth rates and competition competitions, we could
+ first calculate the possibility of an equilibrium, as done by 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "maynard_network_2018"
+
+\end_inset
+
+ in their invasion process.
+ 
+\end_layout
+
+\end_inset
+
+.
  
 \end_layout
 
@@ -1783,6 +1804,208 @@ key "scranton_coexistence_2016"
  don't justify it with convergence criteria).
  We expect that a seasonal signal will lead to a shorter burn-in but want
  to verify it first.
+ However, with these parameters, we can see no clear sign of convergence
+ on Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Number-of-extant"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename graphe/nb_extant_species_with_seasonality_15000y.png
+	width 45text%
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename graphe/max_biomass_with_seasonality_15000y.png
+	width 45text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Number of extant species (left) and maximum biomass over a cycle for two
+ species with extreme values of optimal temperature (right).
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Number-of-extant"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We also launched the same model with 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+theta=
+\backslash
+sqrt{2}$
+\end_layout
+
+\end_inset
+
+ to see if we could reach convergence when no noise can modify the dynamics.
+\end_layout
+
+\begin_layout Section
+Notes on the model
+\end_layout
+
+\begin_layout Standard
+We noticed that the formulation of LV according to 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "scranton_coexistence_2016"
+
+\end_inset
+
+ implies a storage effect.
+ Indeed, it can also be written as :
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula $\frac{dN_{i}}{dt}=r_{i}(\tau)N_{i}-mN_{i}-\sum_{j=1}^{S}r_{i}(\tau)\alpha_{ij}N_{i}N_{j}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This means that growth rates and strengths of competitive interactions covary
+ positively.
+ This assumption is usual in models and can be found under different forms
+ in 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "barabas_community_2012"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "kremer_species_2017"
+
+\end_inset
+
+.
+ This contrasts to the derivation of competition in a chemostat, given in
+ Appendix A of the same paper, which can be written as :
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\begin_inset Formula $\frac{dN_{i}}{dt}=a_{i}R_{in}N_{i}-DN_{i}-\sum_{j=1}^{S}c_{j}N_{i}N_{j}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where 
+\begin_inset Formula $a_{i}$
+\end_inset
+
+ is the growth rate related to the resource inflow 
+\begin_inset Formula $R_{in}$
+\end_inset
+
+, 
+\begin_inset Formula $D$
+\end_inset
+
+ is the dilution rate and 
+\begin_inset Formula $c_{j}$
+\end_inset
+
+ is the consumption rate of species 
+\begin_inset Formula $j$
+\end_inset
+
+.
+ In this case, competition and growth do not covary.
+ This is also the case in 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "sakavara_lumpy_2018"
+
+\end_inset
+
+ (at least, growth rates and resources do not covary explicitly at the first
+ order).
+ We could therefore check if the persistence and dynamics of the species
+ are affected by the deletion of an explicit storage effect in the LV model.
+ We want to check if we still observe clumps and a few remaining species
+ when the temporal partitioning of the niche, due to the storage effect,
+ is removed from the model.
+ 
+\end_layout
+
+\begin_layout Standard
+We therefore have 4 limit cases: with and without storage effect, and with
+ a purely seasonal or purely noisy signal.
+\end_layout
+
+\begin_layout Standard
+We also considered other options: the number of species could be increased
+ to make the proportion of extant species more relevant.
+ In this case, if we don't want to increase the niche overlap, and therefore
+ the competition, we should decrease A, the niche breadth.
+ This would mean that we have more specialist species.
+ We could also vary A to have a combination of generalists and specialists
+ and see the effect on persistance.
+ 
 \end_layout
 
 \begin_layout Section
