@@ -76,7 +76,7 @@
 \html_math_output 0
 \html_css_as_file 0
 \html_be_strict false
-\author -666822487 "frederic"
+\author 274868703 "Coralie PICOCHE"
 \end_header
 
 \begin_body
@@ -101,8 +101,8 @@ key "scranton_coexistence_2016"
  in a fluctuating environment.
  Their model is loosely based on the dynamics of phytoplankton, roughly
  corresponds to how we (and many others) think such dynamics can work, i.e.,
- not necessarily with strong nutrient effects but with a strong effects
- of other abiotic drivers that impose a synchronous forcing).
+ not necessarily with strong nutrient effects but with a strong effect of
+ other abiotic drivers that impose a synchronous forcing.
  Their model is also relatively simple in terms of parameterization, which
  attracted our interest.
  
@@ -175,7 +175,7 @@ We've been puzzled by several elements, largely inspired by our phytoplankton
 \end_layout
 
 \begin_layout Itemize
-The forcing signal, aka temperature, is stronly random (white noise) here,
+The forcing signal, aka temperature, is strongly random (white noise) here,
  whilst it is rather seasonal in competitive communities.
  Would the same results hold in a seasonal environment, where similar species
  can potentially compete over a longer time period (because the season can
@@ -283,41 +283,7 @@ e^{-5|\tau-\tau_{i}^{opt}|^{3}/b_{i}}, & \tau>\tau_{i}^{opt}
 \end_layout
 
 \begin_layout Standard
-In this model, the abundance 
-\change_deleted -666822487 1519739996
-$N$
-\change_inserted -666822487 1519739996
-
-\begin_inset Formula $N$
-\end_inset
-
-
-\change_unchanged
- of species 
-\change_deleted -666822487 1519739998
-$i$
-\change_inserted -666822487 1519740021
-
-\begin_inset Formula $i$
-\end_inset
-
- 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-
-\change_inserted -666822487 1519740027
-Je ne vois pas la transition ici? 
-\change_unchanged
-
-\end_layout
-
-\end_inset
-
-
-\change_unchanged
-
+In this model, temperature is a white noise:
 \end_layout
 
 \begin_layout Standard
@@ -1357,8 +1323,8 @@ name "fig:Thermal-niches-7-species"
 \end_layout
 
 \begin_layout Standard
-We can see the variaibility in growth rates according to thermal optima
- in a 7-species community on Fig.
+We can see the variability in growth rates according to thermal optima in
+ a 7-species community on Fig.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -1616,10 +1582,6 @@ name "fig:Species-coexistence-according"
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Plain Layout
 
 \end_layout
 
@@ -2052,10 +2014,89 @@ sqrt{2}$
 \end_inset
 
  to see if we could reach convergence when no noise can modify the dynamics.
+ We can see on Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Number-of-extant-1"
+
+\end_inset
+
+ that convergence is reached after 2000 time steps.
+ 
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename graphe/nb_extant_species_with_seasonality_5000y_thetasqrt2.png
+	width 45text%
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename graphe/max_biomass_with_seasonality_5000y_thetasqrt2.png
+	width 45text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Number of extant species (left) and maximum biomass over a cycle, using
+ a purely seasonal signal 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Number-of-extant-1"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
 Notes on the model
+\end_layout
+
+\begin_layout Standard
+
+\change_inserted 274868703 1519743671
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 274868703 1519743669
+I left it here but think this could be merged with your intro
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -2586,10 +2627,6 @@ Time spent in the most important functions of the code.
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Plain Layout
 
 \end_layout
 
