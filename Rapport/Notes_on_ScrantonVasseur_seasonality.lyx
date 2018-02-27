@@ -76,6 +76,7 @@
 \html_math_output 0
 \html_css_as_file 0
 \html_be_strict false
+\author -666822487 "frederic"
 \author 274868703 "Coralie PICOCHE"
 \end_header
 
@@ -99,12 +100,60 @@ key "scranton_coexistence_2016"
 
  devised a model to investigate what maintains the diversity of competitors
  in a fluctuating environment.
- Their model is loosely based on the dynamics of phytoplankton, roughly
- corresponds to how we (and many others) think such dynamics can work, i.e.,
- not necessarily with strong nutrient effects but with a strong effect of
- other abiotic drivers that impose a synchronous forcing.
- Their model is also relatively simple in terms of parameterization, which
- attracted our interest.
+ Their model is loosely based on the dynamics of phytoplankton, 
+\change_deleted -666822487 1519744423
+roughly 
+\change_inserted -666822487 1519744433
+and 
+\change_unchanged
+corresponds
+\change_inserted -666822487 1519744440
+ for the most part
+\change_unchanged
+ to how we (and many others) think such dynamics can 
+\change_deleted -666822487 1519744454
+work,
+\change_inserted -666822487 1519744455
+play out.
+ 
+\change_deleted -666822487 1519744458
+ i.e.,
+\change_inserted -666822487 1519744468
+For instance, nutrients do
+\change_unchanged
+ not necessarily 
+\change_deleted -666822487 1519744475
+with
+\change_inserted -666822487 1519744477
+have
+\change_unchanged
+ strong 
+\change_deleted -666822487 1519744480
+nutrient
+\change_inserted -666822487 1519744481
+forcing
+\change_unchanged
+ effects but 
+\change_deleted -666822487 1519744492
+with a strong effect of 
+\change_unchanged
+other abiotic drivers 
+\change_deleted -666822487 1519744496
+that 
+\change_inserted -666822487 1519744496
+may 
+\change_unchanged
+impose a synchronous forcing
+\change_inserted -666822487 1519744509
+, including most notably irradiance and temperature
+\change_unchanged
+.
+ Their model
+\change_inserted -666822487 1519744530
+, which includes thermal preference curves,
+\change_unchanged
+ is also relatively simple in terms of parameterization, which attracted
+ our interest.
  
 \end_layout
 
@@ -134,8 +183,17 @@ clumpy coexistence
 \begin_inset Quotes erd
 \end_inset
 
-, with both competitors having stabilizing differences and equalizing difference
-s, is possible here
+, with 
+\change_deleted -666822487 1519744564
+both competitors having 
+\change_inserted -666822487 1519744566
+ both 
+\change_unchanged
+stabilizing differences and equalizing differences
+\change_inserted -666822487 1519744572
+ between competitors
+\change_unchanged
+, is possible here
 \end_layout
 
 \begin_layout Itemize
@@ -150,11 +208,44 @@ We find that competitors with sufficiently different temperature niches
 \end_inset
 
 )
+\change_inserted -666822487 1519744600
+
+\end_layout
+
+\begin_layout Itemize
+
+\change_inserted -666822487 1519744810
+Equalizing differences between similar competitors presumably maintain near-neut
+ral dynamics within clumps, because the thermal curves of the various species
+ are (i) similar enough and (ii) environmental variability forbids that
+ a clump of competitors maintains itself in good conditions long enough
+ that exclusion could occur.
+ 
+\change_unchanged
+
 \end_layout
 
 \begin_layout Itemize
 Near neutrality results in interspecific synchrony within the groups of
  similar competitors
+\change_inserted -666822487 1519744817
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted -666822487 1519744913
+We may want to investigate this later on, when we tackle synchrony issues.
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+
 \end_layout
 
 \begin_layout Standard
@@ -171,7 +262,15 @@ high diversity in competitive communities where synchrony is commonly observed
 
 \begin_layout Standard
 We've been puzzled by several elements, largely inspired by our phytoplankton
- work (Biorxiv REF):
+ work (
+\change_inserted -666822487 1519744865
+[
+\change_unchanged
+Biorxiv REF
+\change_inserted -666822487 1519744872
+ to insert here]
+\change_unchanged
+):
 \end_layout
 
 \begin_layout Itemize
@@ -197,9 +296,12 @@ key "barabas_community_2012"
 \end_layout
 
 \begin_layout Itemize
-[something we haven't tackled yet but could be useful later on] Are the
- patterns of species synchrony in this model (and in seasonal variants thereof)
- similar to what we see in the field?
+
+\emph on
+[something we haven't tackled yet but could be useful later on]
+\emph default
+ Are the patterns of species synchrony in this model (and in seasonal variants
+ thereof) similar to what we see in the field?
 \end_layout
 
 \begin_layout Standard
@@ -270,11 +372,11 @@ reference "tab:Coefficients-"
 \begin{eqnarray}
 \frac{dN_{i}}{dt} & = & r_{i}(\tau)N_{i}\left(1-\sum_{j=1}^{S}\alpha_{ij}N_{j}\right)-mN_{i}\label{eq:modelLV}\\
 r_{i}(\tau) & = & a_{r}(\tau_{0})e^{E_{r}\frac{(\tau-\tau_{\text{0}})}{k\tau\tau_{0}}}f_{i}(\tau)\label{eq:growth}\\
-\textnormal{where} & f_{i}(\tau) & \begin{cases}
+\textnormal{where} & f_{i}(\tau)= & \begin{cases}
 e^{-|\tau-\tau_{i}^{opt}|^{3}/b_{i}}, & \tau\leq\tau_{i}^{opt}\\
 e^{-5|\tau-\tau_{i}^{opt}|^{3}/b_{i}}, & \tau>\tau_{i}^{opt}
 \end{cases}\label{eq:eppley_curve}\\
-\textnormal{and} & b_{i}, & \int r_{i}(\tau)d\tau=A\label{eq:niche_breadth}
+\textnormal{and} & b_{i}\text{ defined by numerically solving} & \int r_{i}(\tau)d\tau=A\label{eq:niche_breadth}
 \end{eqnarray}
 
 \end_inset
@@ -283,7 +385,17 @@ e^{-5|\tau-\tau_{i}^{opt}|^{3}/b_{i}}, & \tau>\tau_{i}^{opt}
 \end_layout
 
 \begin_layout Standard
-In this model, temperature is a white noise:
+In this model, temperature is
+\change_deleted -666822487 1519745482
+ 
+\change_inserted -666822487 1519745467
+ 
+\change_unchanged
+a white noise
+\change_inserted -666822487 1519745485
+ (surprisingly, perhaps)
+\change_unchanged
+:
 \end_layout
 
 \begin_layout Standard
@@ -1253,12 +1365,31 @@ name "tab:Coefficients-"
 \end_layout
 
 \begin_layout Subsection
-Checking previous results
+
+\change_deleted -666822487 1519745497
+Checking
+\change_inserted -666822487 1519745499
+Reproducing
+\change_unchanged
+ previous results
 \end_layout
 
 \begin_layout Standard
 Before changing the model, we wanted to check that we obtained the same
- results as in Scranton and Vasseur
+ results as in 
+\change_deleted -666822487 1519745513
+Scranton and Vasseur
+\change_inserted -666822487 1519745513
+
+\begin_inset CommandInset citation
+LatexCommand citep
+key "scranton_coexistence_2016"
+
+\end_inset
+
+
+\change_unchanged
+
 \begin_inset Foot
 status open
 
@@ -1367,8 +1498,22 @@ alpha S}$
 \end_inset
 
 .
- Dynamics are simulated for 5000 years with a daily timestep.
- If the density of a species declines below 
+ Dynamics are simulated for 5000 years with a daily 
+\change_inserted -666822487 1519745677
+updating of temperature conditions, i.e., the numerical integration is performed
+ using time intervals lower than a day, but a day constitutes the baseline
+ unit for recording the times series
+\change_deleted -666822487 1519745592
+timestep
+\change_unchanged
+.
+ 
+\change_inserted -666822487 1519745681
+
+\end_layout
+
+\begin_layout Standard
+If the density of a species declines below 
 \begin_inset ERT
 status open
 
@@ -1380,14 +1525,30 @@ $10^{-6}$
 \end_inset
 
 , the species is considered extinct.
- In a first set of simulations, all species are subject to the same temperature
- sequence.
+ 
+\change_inserted -666822487 1519745688
+
+\end_layout
+
+\begin_layout Standard
+In a first set of simulations, all species are subject
+\change_inserted -666822487 1519745697
+ed
+\change_unchanged
+ to the same temperature sequence
+\change_inserted -666822487 1519745718
+ (reflecting what is generally observed in the field)
+\change_unchanged
+.
  In a second set of simulations, the same temperature sequence is shuffled
- differently for every species in order to test the effect of the environmental
- driver on species synchrony.
+ differently for every species in order to test 
+\change_inserted -666822487 1519745731
+for 
+\change_unchanged
+the effect of the environmental driver on species synchrony.
  We ran both simulations 20 times
 \begin_inset Foot
-status open
+status collapsed
 
 \begin_layout Plain Layout
 In contrast with 
@@ -1428,7 +1589,27 @@ rho$
 
 \end_inset
 
- .
+ 
+\change_inserted -666822487 1519745757
+
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted -666822487 1519745840
+F/ This will be very interesting to look at this simulated data -later on
+ - using the measure of Keitt, Loreau and co.
+ BTW [!make sure we output time series of the simulations!]
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+.
  Synchrony is calculated for the last 200 years of dynamics with a moving
  window of 5 years.
 \begin_inset Formula 
@@ -1614,8 +1795,11 @@ alpha}$
 
 \end_inset
 
- and run the simulation for 10,000 years, during which the community the
- community is subjected to invasion events.
+ and run the simulation for 10,000 years, during which 
+\change_deleted -666822487 1519746126
+the community 
+\change_unchanged
+the community is subjected to invasion events.
  The time between invasions is exponentially distributed with a mean of
  20 years and for every invasion event, a species is chosen at random from
  the species pool to be introduced at its extinction threshold (
@@ -1629,9 +1813,21 @@ status open
 
 \begin_layout Plain Layout
 Dicussing with Fred and Alix, it appears that we could test for possible
- persistance before the invasion.
+ persist
+\change_inserted -666822487 1519746111
+e
+\change_deleted -666822487 1519746110
+a
+\change_unchanged
+nce before the invasion.
  By using the maximum growth rates and competition competitions, we could
- first calculate the possibility of an equilibrium, as done by 
+ first calculate the 
+\change_deleted -666822487 1519746158
+possibility
+\change_inserted -666822487 1519746160
+feasibility
+\change_unchanged
+ of an equilibrium, as done by 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "maynard_network_2018"
@@ -1640,6 +1836,12 @@ key "maynard_network_2018"
 
  in their invasion process.
  
+\change_inserted -666822487 1519746266
+[FB Note: feasibility is the consecrated term in ecology for a strictly
+ positive equilibrium; mathematicians would speak of an interior equilibrium
+ point (which may actually be better)]
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -1650,10 +1852,27 @@ key "maynard_network_2018"
 
 \begin_layout Standard
 Considering the time required for each simulation (see below), we only launched
- 20 simulations and checked if we had qualitatively the same results, that
- is a majority of simulations with only 2 or 3 extant species laying on
- opposite sides of the most fit species' thermal optimum, around 20.42°C
- (Species 33).
+ 20 simulations 
+\change_inserted -666822487 1519746292
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted -666822487 1519746299
+with different initials conditions? 
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+and checked if we had qualitatively the same results, that is a majority
+ of simulations with only 2 or 3 extant species laying on opposite sides
+ of the most fit species' thermal optimum, around 20.42°C (Species 33).
  We also reduced the range of explored species to those whose thermal optima
  were within 
 \begin_inset Formula $\pm2$
@@ -1664,8 +1883,11 @@ K) of the previously observed thermal limits.
 \end_layout
 
 \begin_layout Standard
-In the 20 communities we obtained, half of them had 2 secies and 7 had 3
- species; remaining communities had 4 species.
+In the 20 communities we obtained, half of them had 2 s
+\change_inserted -666822487 1519746319
+p
+\change_unchanged
+ecies and 7 had 3 species; remaining communities had 4 species.
  We confirmed that species laid on opposites sides of the thermal optimum,
  with the third species, when present, being in the 
 \begin_inset Quotes eld
@@ -1677,6 +1899,33 @@ optimum clump
 
 .
  
+\change_inserted -666822487 1519746394
+
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted -666822487 1519746592
+F: Really? I was duped by Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Synchrony-of-each"
+
+\end_inset
+
+ as I assumed that the right-hand panels were showing species coexisting.
+ If so, there are no true clumps? 
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+
 \end_layout
 
 \begin_layout Subsubsection
@@ -1721,6 +1970,29 @@ name "fig:Effect-of-knocking"
 
 \end_inset
 
+
+\change_inserted -666822487 1519746513
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted -666822487 1519746654
+There are 3 species there, right? If so we should say this plainly because
+ the graphs may make it look like there are more species and these are 3
+ clumps.
+ We should compare this to the Sheffer and Van Nes 2006 to see how many
+ species they manage to make persist through time.
+ 
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
 
 \end_layout
 
@@ -1772,15 +2044,58 @@ Seasonality
 \end_layout
 
 \begin_layout Standard
-We wanted to keep the same mean and variance as before, with a seasonal
+We wanted to keep the same mean and variance 
+\change_deleted -666822487 1519746665
+as before
+\change_inserted -666822487 1519746669
+of the forcing signal
+\change_unchanged
+, 
+\change_inserted -666822487 1519746681
+and simply change the 
+\change_deleted -666822487 1519746688
+with a
+\change_inserted -666822487 1519746693
+frequency content to include a
+\change_unchanged
+ seasonal 
+\change_deleted -666822487 1519746698
+signal
+\change_inserted -666822487 1519746710
+component (low-frequency component)
+\change_unchanged
+.
+ 
+\change_inserted -666822487 1519747071
+The underlying idea here is that the reaction of any dynamical/physical
+ system forced by a signal depends on the energy content of the forcing
+ (variance) so we'll do best to preserve the total variance of the forcing
  signal.
- We propose the function
+ 
+\end_layout
+
+\begin_layout Standard
+We propose the function
 \begin_inset Foot
 status open
 
 \begin_layout Plain Layout
-We could also consider another type of autocorrelated noise (just to keep
- this in mind)
+We 
+\change_deleted -666822487 1519746722
+could
+\change_inserted -666822487 1519746723
+may
+\change_unchanged
+ also consider
+\change_deleted -666822487 1519746727
+ another type of 
+\change_unchanged
+autocorrelated noise
+\change_inserted -666822487 1519746774
+ if the general shape of the power spectrum governs the results rather than
+ the precise frequency content
+\change_unchanged
+ (just to keep this in mind)
 \end_layout
 
 \end_inset
@@ -1792,6 +2107,11 @@ status open
 \begin_layout Plain Layout
 I also took a lot of time in October 2017 to try and extract a signal from
  real data in Arcachon, but it is still 'under development'.
+
+\change_inserted -666822487 1519746794
+ [F: I don't think this is really needed for now]
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -1802,7 +2122,7 @@ I also took a lot of time in October 2017 to try and extract a signal from
 \begin_layout Standard
 \begin_inset Formula 
 \[
-\tau(t)=\mu_{\tau}+\theta\sigma_{\tau}sin(\frac{2\pi t}{365})+\epsilon,\text{where }\epsilon\sim N(0,\sigma\sqrt{1-\frac{\theta^{2}}{2}})
+\tau(t)=\mu_{\tau}+\theta\sigma_{\tau}\sin\left(\frac{2\pi t}{365}\right)+\epsilon_{t},\text{where }\epsilon_{t}\sim\mathcal{N}(0,\sigma\sqrt{1-\frac{\theta^{2}}{2}})
 \]
 
 \end_inset
@@ -1828,18 +2148,69 @@ where
 \end_inset
 
  indicates the relative proportion of variance due to the seasonal signal
- and to stochasticity.
+ 
+\change_deleted -666822487 1519746858
+and to stochasticity
+\change_inserted -666822487 1519746862
+as opposed to white noise
+\change_unchanged
+.
  When 
 \begin_inset Formula $\theta=0$
 \end_inset
 
-, we recover the original model whereas when 
+, we recover the original model
+\change_inserted -666822487 1519746884
+ (with all frequencies),
+\change_unchanged
+ whereas when 
 \begin_inset Formula $\theta=\sqrt{2}$
 \end_inset
 
-, we have a seasonal-only signal, with no error.
+, we have a seasonal-only signal
+\change_inserted -666822487 1519746896
+ (with only one frequency)
+\change_deleted -666822487 1519746900
+, with no error
+\change_unchanged
+.
  It can be a way of measuring the impact of seasonality on the community
- dynamics.
+ dynamics
+\change_inserted -666822487 1519746916
+
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted -666822487 1519746996
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+Note this signal setup corresponds to a case where we want to compare the
+ effect of the forcing in theoretical models.
+ If we wanted to contrast, say, lab and field conditions we would change
+ the energy content of the signal because the seasonal forcing in the field
+ would increase the energy content.
+ 
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+.
  
 \family default
 \series default
@@ -1919,22 +2290,76 @@ key "sakavara_lumpy_2018"
 \end_layout
 
 \begin_layout Standard
-The model was first launched with 
+The model 
+\change_inserted -666822487 1519749775
+run 
+\change_unchanged
+was first launched with 
 \begin_inset Formula $\theta=1$
 \end_inset
 
  for 15000 years, which corresponds to three times the duration of the first
- simulation with noise-only (as 
+ simulation with noise-only
+\change_inserted -666822487 1519749845
+ forcing.
+
+\change_deleted -666822487 1519749844
+ (as 
+\change_unchanged
+
 \begin_inset CommandInset citation
 LatexCommand citet
 key "scranton_coexistence_2016"
 
 \end_inset
 
- seem to consider 5000 years as the necessary time to stabilize but they
- don't justify it with convergence criteria).
- We expect that a seasonal signal will lead to a shorter burn-in but want
- to verify it first.
+ seem to consider 5000 years as the necessary time to 
+\change_inserted -666822487 1519749833
+reach a stochastic process stable in distribution,
+\change_deleted -666822487 1519749816
+stabilize
+\change_unchanged
+ but they don't justify it with convergence criteria
+\change_inserted -666822487 1519749913
+, hence we topped up the time necessary due to long transients in most seasonal
+ models
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted -666822487 1519749925
+F: I think Alix will be able to add a REF on that later
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+.
+\change_deleted -666822487 1519749887
+).
+
+\change_unchanged
+ 
+\change_deleted -666822487 1519749938
+We expect that a
+\change_inserted -666822487 1519749938
+A
+\change_unchanged
+ seasonal signal 
+\change_deleted -666822487 1519749944
+will
+\change_inserted -666822487 1519749945
+may also
+\change_unchanged
+ lead to a shorter burn-in
+\change_deleted -666822487 1519749951
+ but want to verify it first
+\change_inserted -666822487 1519749958
+though - we will consider this later
+\change_unchanged
+.
  However, with these parameters, we can see no clear sign of convergence
  on Fig.
  
@@ -1957,6 +2382,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename graphe/nb_extant_species_with_seasonality_15000y.png
+	lyxscale 50
 	width 45text%
 
 \end_inset
@@ -1964,6 +2390,7 @@ status open
 
 \begin_inset Graphics
 	filename graphe/max_biomass_with_seasonality_15000y.png
+	lyxscale 50
 	width 45text%
 
 \end_inset
@@ -2064,6 +2491,25 @@ name "fig:Number-of-extant-1"
 \end_inset
 
 
+\change_inserted -666822487 1519750086
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted -666822487 1519750106
+F: what's the violet spike? That may require some explanation in this figure.
+ 
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -2077,7 +2523,13 @@ name "fig:Number-of-extant-1"
 \end_layout
 
 \begin_layout Section
+
+\change_deleted -666822487 1519750137
 Notes on the model
+\change_inserted -666822487 1519750163
+Discussion of the SV16 model and possible variants
+\change_unchanged
+
 \end_layout
 
 \begin_layout Standard
@@ -2090,6 +2542,8 @@ status open
 
 \change_inserted 274868703 1519743669
 I left it here but think this could be merged with your intro
+\change_inserted -666822487 1519750127
+ // F: No this is right here
 \change_unchanged
 
 \end_layout
@@ -2108,7 +2562,13 @@ key "scranton_coexistence_2016"
 \end_inset
 
  implies a storage effect.
- Indeed, it can also be written as :
+ 
+\change_inserted -666822487 1519750170
+
+\end_layout
+
+\begin_layout Standard
+Indeed, it can also be written as :
 \end_layout
 
 \begin_layout Standard
@@ -2122,8 +2582,21 @@ key "scranton_coexistence_2016"
 \begin_layout Standard
 This means that growth rates and strengths of competitive interactions covary
  positively.
- This assumption is usual in models and can be found under different forms
- in 
+ This assumption is usual in 
+\change_inserted -666822487 1519750213
+recent works using Lotka-Volterra competitive 
+\change_unchanged
+models
+\change_inserted -666822487 1519750218
+ in seasonal environments;
+\change_unchanged
+ 
+\change_deleted -666822487 1519750221
+and 
+\change_inserted -666822487 1519750221
+it 
+\change_unchanged
+can be found under different forms in 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "barabas_community_2012"
@@ -2138,8 +2611,51 @@ key "kremer_species_2017"
 \end_inset
 
 .
- This contrasts to the derivation of competition in a chemostat, given in
- Appendix A of the same paper, which can be written as :
+ 
+\change_inserted -666822487 1519750246
+
+\end_layout
+
+\begin_layout Standard
+Th
+\change_deleted -666822487 1519750272
+is
+\change_inserted -666822487 1519750272
+e SV16 model
+\change_unchanged
+ 
+\change_inserted -666822487 1519750262
+actually 
+\change_unchanged
+contrasts 
+\change_inserted -666822487 1519750265
+with
+\change_deleted -666822487 1519750264
+to
+\change_unchanged
+ the derivation of competition in a chemostat, given in Appendix A of 
+\change_deleted -666822487 1519750238
+the same paper,
+\change_inserted -666822487 1519750362
+
+\begin_inset CommandInset citation
+LatexCommand citet
+key "scranton_coexistence_2016"
+
+\end_inset
+
+.
+ Assuming a single shared resource in chemostat framework, and a fast resource
+ dynamics so that an quasi-steady-state approximation is possible, the consumer
+ community dynamics 
+\change_deleted -666822487 1519750365
+ which 
+\change_unchanged
+can be written as
+\change_deleted -666822487 1519750373
+ 
+\change_unchanged
+:
 \end_layout
 
 \begin_layout Standard
@@ -2160,62 +2676,422 @@ key "kremer_species_2017"
 \end_inset
 
 
+\change_inserted -666822487 1519751179
+
+\end_layout
+
+\begin_layout Standard
+
+\change_inserted -666822487 1519751182
+or 
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\change_inserted -666822487 1519751182
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\begin_inset Formula $\frac{dN_{i}}{dt}=N_{i}(a_{i}R_{in}-D-\sum_{j=1}^{S}c_{j}N_{j})$
+\end_inset
+
+
+\change_unchanged
+
 \end_layout
 
 \begin_layout Standard
 where 
-\begin_inset Formula $a_{i}$
+\begin_inset Formula $a_{i}R_{in}$
 \end_inset
 
- is the growth rate related to the resource inflow 
+ is the 
+\change_deleted -666822487 1519750423
+growth rate
+\change_inserted -666822487 1519750439
+per capita rate of consumption
+\change_unchanged
+ related to the resource inflow 
 \begin_inset Formula $R_{in}$
 \end_inset
 
+
+\change_inserted -666822487 1519750483
+ (this is under the assumption of a linear functional response of consumers)
+\change_unchanged
 , 
 \begin_inset Formula $D$
 \end_inset
 
- is the dilution rate and 
+ is the dilution rate
+\change_inserted -666822487 1519750491
+ of the chemostat,
+\change_unchanged
+ and 
 \begin_inset Formula $c_{j}$
 \end_inset
 
- is the consumption rate of species 
+ is 
+\change_deleted -666822487 1519750554
+the consumption rate
+\change_inserted -666822487 1519750568
+a multiplicative coefficient for the losses of resources due
+\change_deleted -666822487 1519750570
+ of
+\change_inserted -666822487 1519750570
+ to
+\change_unchanged
+ species 
 \begin_inset Formula $j$
 \end_inset
 
+
+\change_inserted -666822487 1519750576
+ consumption
+\change_unchanged
 .
- In this case, competition and growth do not covary.
- This is also the case in 
+ 
+\change_inserted -666822487 1519750581
+
+\end_layout
+
+\begin_layout Standard
+I
+\change_inserted -666822487 1519750719
+f we extend this case to a fluctuating resource supply 
+\begin_inset Formula $R_{in}$
+\end_inset
+
+ (assuming a separation of timescales between nutrient and consumer dynamics),
+ the quantity that would be seasonally varying is 
+\begin_inset Formula $R_{in}(\tau)$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\change_inserted -666822487 1519750706
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\begin_inset Formula $\frac{dN_{i}}{dt}=a_{i}R_{in}(\tau)N_{i}-DN_{i}-\sum_{j=1}^{S}c_{j}N_{i}N_{j}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\change_inserted -666822487 1519750684
+In
+\change_unchanged
+ this case, competition and growth do not covary.
+ This
+\change_deleted -666822487 1519750737
+ is
+\change_unchanged
+ also
+\change_inserted -666822487 1519750741
+ seems to be
+\change_unchanged
+ the case in 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "sakavara_lumpy_2018"
 
 \end_inset
 
- (at least, growth rates and resources do not covary explicitly at the first
- order).
- We could therefore check if the persistence and dynamics of the species
- are affected by the deletion of an explicit storage effect in the LV model.
+ 
+\change_inserted -666822487 1519750755
+who considered only seasonal forcing 
+\change_unchanged
+(at least, growth rates and resources do not covary explicitly
+\change_deleted -666822487 1519750401
+ at the first order
+\change_unchanged
+).
+ 
+\change_inserted -666822487 1519750793
+However, 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "sakavara_lumpy_2018"
+
+\end_inset
+
+ consider a more complex model with two resources so any comparison is for
+ now tentative.
+ 
+\change_unchanged
+
+\end_layout
+
+\begin_layout Standard
+We 
+\change_deleted -666822487 1519750804
+c
+\change_inserted -666822487 1519750804
+sh
+\change_unchanged
+ould therefore check if the persistence and dynamics of the species are
+ affected by the deletion of an explicit storage effect in the LV model.
  We want to check if we still observe clumps and a few remaining species
  when the temporal partitioning of the niche, due to the storage effect,
  is removed from the model.
  
+\change_inserted -666822487 1519750829
+
+\end_layout
+
+\begin_layout Section
+
+\change_inserted -666822487 1519750842
+Simulation plan
+\change_unchanged
+
 \end_layout
 
 \begin_layout Standard
 We therefore have 4 limit cases: with and without storage effect, and with
  a purely seasonal or purely noisy signal.
+\change_inserted -666822487 1519750857
+
 \end_layout
 
 \begin_layout Standard
-We also considered other options: the number of species could be increased
- to make the proportion of extant species more relevant.
+
+\change_inserted -666822487 1519750864
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted -666822487 1519750878
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\change_inserted -666822487 1519750886
+Type of environmental signal
+\change_unchanged
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\change_inserted -666822487 1519751614
+Seasonal GR and Seasonal Competition
+\change_unchanged
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\change_inserted -666822487 1519750915
+Seasonal GR
+\change_unchanged
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\change_inserted -666822487 1519750967
+White noise (all frequency components)
+\change_unchanged
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\change_inserted -666822487 1519751523
+Scranton and Vasseur 2016
+\change_unchanged
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\change_inserted -666822487 1519751551
+LV with random growth rates
+\change_unchanged
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\change_inserted -666822487 1519750979
+Seasonal signal (one low-frequency component)
+\change_unchanged
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\change_inserted -666822487 1519751633
+Barabas et al.
+ 2016 [?]
+\change_unchanged
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\change_inserted -666822487 1519751586
+Classic seasonal competitive LV
+\change_unchanged
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\change_unchanged
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\change_inserted -666822487 1519750864
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\change_inserted -666822487 1519751712
+Preliminary simulation setup (limit cases) [we'll add mixtures later, Alix
+ and I have refs to add on the classic seasonal LV I think, we'll need to
+ dig this up]
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+
+\end_layout
+
+\begin_layout Standard
+
+\change_inserted -666822487 1519751064
+For future work: 
+\change_deleted -666822487 1519751067
+We also considered other options:
+\change_unchanged
+ the number of species could be increased to make the proportion of extant
+ species more relevant.
  In this case, if we don't want to increase the niche overlap, and therefore
  the competition, we should decrease A, the niche breadth.
  This would mean that we have more specialist species.
  We could also vary A to have a combination of generalists and specialists
- and see the effect on persistance.
+ and see the effect on persist
+\change_inserted -666822487 1519751059
+e
+\change_deleted -666822487 1519751059
+a
+\change_unchanged
+nce.
  
+\change_inserted -666822487 1519751023
+
+\end_layout
+
+\begin_layout Section
+
+\change_inserted -666822487 1519751071
+Ecological remarks
 \end_layout
 
 \begin_layout Section
