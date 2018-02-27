@@ -1,13 +1,10 @@
-#LyX 2.2 created this file. For more info see http://www.lyx.org/
-\lyxformat 508
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
 \begin_document
 \begin_header
-\save_transient_properties true
-\origin unavailable
 \textclass article
 \begin_preamble
 \usepackage{footnote}
-\usepackage{ae,aecompl}
 \end_preamble
 \use_default_options true
 \maintain_unincluded_children false
@@ -15,16 +12,16 @@
 \language_package default
 \inputencoding auto
 \fontencoding global
-\font_roman "default" "default"
-\font_sans "default" "default"
-\font_typewriter "default" "default"
-\font_math "auto" "auto"
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
 \font_default_family default
 \use_non_tex_fonts false
 \font_sc false
 \font_osf false
-\font_sf_scale 100 100
-\font_tt_scale 100 100
+\font_sf_scale 100
+\font_tt_scale 100
 \graphics default
 \default_output_format default
 \output_sync 0
@@ -71,146 +68,21 @@
 \papercolumns 1
 \papersides 1
 \paperpagestyle default
-\tracking_changes true
+\tracking_changes false
 \output_changes false
 \html_math_output 0
 \html_css_as_file 0
 \html_be_strict false
-\author -666822487 "frederic"
 \end_header
 
 \begin_body
 
 \begin_layout Title
-Seasonal dynamics of a community of competitors with thermal optimums in
- a fluctuating environment
-\change_deleted -666822487 1519740144
-s
-\change_unchanged
-
+Seasonality in a competitive community
 \end_layout
 
 \begin_layout Section
 Introduction
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset citation
-LatexCommand citet
-key "scranton_coexistence_2016"
-
-\end_inset
-
- devised a model to investigate what maintains the diversity of competitors
- in a fluctuating environment.
- Their model is loosely based on the dynamics of phytoplankton, roughly
- corresponds to how we (and many others) think such dynamics can work, i.e.,
- not necessarily with strong nutrient effects but with a strong effects
- of other abiotic drivers that impose a synchronous forcing).
- Their model is also relatively simple in terms of parameterization, which
- attracted our interest.
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset citation
-LatexCommand citet
-key "scranton_coexistence_2016"
-
-\end_inset
-
- have shown that
-\end_layout
-
-\begin_layout Itemize
-\begin_inset Quotes eld
-\end_inset
-
-Lumpy
-\begin_inset Quotes erd
-\end_inset
-
- or 
-\begin_inset Quotes eld
-\end_inset
-
-clumpy coexistence
-\begin_inset Quotes erd
-\end_inset
-
-, with both competitors having stabilizing differences and equalizing difference
-s, is possible here
-\end_layout
-
-\begin_layout Itemize
-Stabilizing differences for coexistence occur here through the storage effect
- (
-\begin_inset Quotes eld
-\end_inset
-
-We find that competitors with sufficiently different temperature niches
- coexist via temporal niche differentiation
-\begin_inset Quotes erd
-\end_inset
-
-)
-\end_layout
-
-\begin_layout Itemize
-Near neutrality results in interspecific synchrony within the groups of
- similar competitors
-\end_layout
-
-\begin_layout Standard
-This helps maintaining a 
-\begin_inset Quotes eld
-\end_inset
-
-high diversity in competitive communities where synchrony is commonly observed
-\begin_inset Quotes erd
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-We've been puzzled by several elements, largely inspired by our phytoplankton
- work (Biorxiv REF):
-\end_layout
-
-\begin_layout Itemize
-The forcing signal, aka temperature, is stronly random (white noise) here,
- whilst it is rather seasonal in competitive communities.
- Would the same results hold in a seasonal environment, where similar species
- can potentially compete over a longer time period (because the season can
- be long compared to the timeframe of plankton generation).
- 
-\end_layout
-
-\begin_layout Itemize
-What's the role of the storage effect there? Is coexistence in a seasonal
- environment necessarily connected to it, as 
-\begin_inset CommandInset citation
-LatexCommand citet
-key "barabas_community_2012"
-
-\end_inset
-
- who equates it with temporal niche differentiation.
- 
-\end_layout
-
-\begin_layout Itemize
-[something we haven't tackled yet but could be useful later on] Are the
- patterns of species synchrony in this model (and in seasonal variants thereof)
- similar to what we see in the field?
-\end_layout
-
-\begin_layout Standard
-We have therefore aimed at reproducing the model and produce new variants
- to test these questions and better understand phytoplankton-like communities,
- that live in fairly seasonal environments.
- 
 \end_layout
 
 \begin_layout Section
@@ -218,18 +90,18 @@ Model
 \end_layout
 
 \begin_layout Subsection
-Introducing the Scranton-Vasseur model
+Introducing the model
 \end_layout
 
 \begin_layout Standard
-The competition model described in 
+We use the coexistence model described in 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "scranton_coexistence_2016"
 
 \end_inset
 
- is based on a variant of the Lotka-Volterra competition model, with growth
+, based on a variant of the Lotka-Volterra competition model with growth
  depending on the temperature 
 \begin_inset ERT
 status open
@@ -287,41 +159,7 @@ e^{-5|\tau-\tau_{i}^{opt}|^{3}/b_{i}}, & \tau>\tau_{i}^{opt}
 \end_layout
 
 \begin_layout Standard
-In this model, the abundance 
-\change_deleted -666822487 1519739996
-$N$
-\change_inserted -666822487 1519739996
-
-\begin_inset Formula $N$
-\end_inset
-
-
-\change_unchanged
- of species 
-\change_deleted -666822487 1519739998
-$i$
-\change_inserted -666822487 1519740021
-
-\begin_inset Formula $i$
-\end_inset
-
- 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-
-\change_inserted -666822487 1519740027
-Je ne vois pas la transition ici? 
-\change_unchanged
-
-\end_layout
-
-\end_inset
-
-
-\change_unchanged
-
+In this model, the abundance $N$ of species $i$
 \end_layout
 
 \begin_layout Standard
@@ -345,7 +183,7 @@ status open
 \align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="19" columns="3">
-<features tabularvalignment="middle">
+<features rotate="0" tabularvalignment="middle">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
@@ -1379,7 +1217,7 @@ reference "fig:Thermal-niches-7-species"
 Species dynamics
 \begin_inset CommandInset label
 LatexCommand label
-name "subsec:Species-dynamics"
+name "sub:Species-dynamics"
 
 \end_inset
 
@@ -1823,139 +1661,12 @@ I also took a lot of time in October 2017 to try and extract a signal from
 \begin_layout Standard
 \begin_inset Formula 
 \[
-\tau(t)=\mu_{\tau}+\theta\sigma_{\tau}sin(\frac{2\pi t}{365})+\epsilon,\text{where }\epsilon\sim N(0,\sigma\sqrt{1-\frac{\theta^{2}}{2}})
+\tau(t)=\mu_{\tau}+\sigma_{\tau}sin(\frac{2\pi t}{365.25})+\epsilon,\text{where }\epsilon\sim N(0,\frac{\sigma_{\tau}}{\sqrt{2}})
 \]
 
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
-where
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-
-\begin_inset Formula $0\leqslant\theta\leqslant\sqrt{2}$
-\end_inset
-
- indicates the relative proportion of variance due to the seasonal signal
- and to stochasticity.
- When 
-\begin_inset Formula $\theta=0$
-\end_inset
-
-, we recover the original model whereas when 
-\begin_inset Formula $\theta=\sqrt{2}$
-\end_inset
-
-, we have a seasonal-only signal, with no error.
- It can be a way of measuring the impact of seasonality on the community
- dynamics.
- 
-\family default
-\series default
-\shape default
-\size default
-\bar default
-\color inherit
-
-\begin_inset Separator latexpar
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\align center
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename graphe/comparison_temperature.png
-	width 95text%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Comparison of temperatures with different values of 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-$
-\backslash
-theta$
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-First measures of stability can be taken from 
-\begin_inset CommandInset citation
-LatexCommand citet
-key "sakavara_lumpy_2018"
-
-\end_inset
-
- who use persistence, maximum biomass of each species and total biomass
- during a cycle as measures of convergence (but we should note that they
- have a deterministic model).
- A first visual check can therefore be useful.
- The coefficient of variation of the total biomass can also be used (suggested
- by Fred).
- 
-\end_layout
-
-\begin_layout Standard
-The model was first launched with 
-\begin_inset Formula $\theta=1$
-\end_inset
-
- for 15000 years, which corresponds to three times the duration of the first
- simulation with noise-only (as 
-\begin_inset CommandInset citation
-LatexCommand citet
-key "scranton_coexistence_2016"
-
-\end_inset
-
- seem to consider 5000 years as the necessary time to stabilize but they
- don't justify it with convergence criteria).
- We expect that a seasonal signal will lead to a shorter burn-in but want
- to verify it first.
 \end_layout
 
 \begin_layout Section
@@ -2010,7 +1721,7 @@ This option is costly (the simulation is about 35% longer) but necessary,
  
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "subsec:Species-dynamics"
+reference "sub:Species-dynamics"
 
 \end_inset
 
@@ -2042,7 +1753,7 @@ status open
 \align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="8" columns="4">
-<features tabularvalignment="middle">
+<features rotate="0" tabularvalignment="middle">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
@@ -2428,7 +2139,7 @@ ion of discontinuities in the dynamics of the community.
 \begin_inset CommandInset bibtex
 LatexCommand bibtex
 bibfiles "MyLibrary"
-options "../ecology_no_url"
+options "/home/cpicoche/Documents/ecology_no_url"
 
 \end_inset
 
