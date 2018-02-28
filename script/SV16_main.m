@@ -7,6 +7,7 @@ clear all
 close all
 
 rng(1)
+dir_output="SV_same_temp";
 %%%%%% Parameters
 global S tau0 mu_tau sigma_tau tau_min tau_max a_r_tau0 E_r k A m thresh_min tspan r
 
@@ -16,7 +17,8 @@ S=60 %number of species (60 for SV)
 tau0=293; %reference temperature in Kelvin (SV)
 mu_tau=293; %mean temperature in Kelvin SV
 sigma_tau=5; %standard deviation of temperature in Kelvin SV
-theta=1;
+%theta=sqrt(2)-eps(sqrt(2)); %just to avoid complex values due to machine imprecision
+theta=0
 
 tau_min=15+273; %minimum thermal optimum SV, in Kelvin
 tau_max=25+273; %maximum thermal optimum SV, in Kelvin
@@ -38,7 +40,7 @@ ysave=500;
 %%%%%% Initialize
 % Time resolution
 tstart = 1.0;
-tstop = 15001.0*365; %5000 years in SV, with 1 day intervals %15 000 used here to test for convergence
+tstop = 5001.0*365; %5000 years in SV, with 1 day intervals %15 000 used here to test for convergence
 tsampling = (tstop-tstart)+1; 
 tspan=linspace(tstart,tstop,tsampling);                        % timespan for the numerical solution
 
@@ -61,7 +63,7 @@ end;
  y0=ones(1,S)*1/(alpha_compet*S);
  
  
-for iter=1:1
+for iter=1:10
 %for iter=1:10
     iter
 % Seasonality with time
@@ -69,31 +71,32 @@ tau=compute_temperature_season(tspan, theta); %this function gives the correspon
 %tau=compute_temperature(tspan); %this function gives the corresponding temperature of the day. Can be random (as in SV 2016)
 
 %%randomize
-tau_mat=zeros(S,length(tau));
-for i=1:S
+%tau_mat=zeros(S,length(tau));
+%for i=1:S
 %    if iter<=10
-        tau_mat(i,:)=tau;
-        dir_output='season';
+%        tau_mat(i,:)=tau;
 %    else
 %         tau_mat(i,:)=tau(randperm(length(tau)));
 %         dir_output='SV_different_temp';
 %     end;
 
-end;
+%end;
 
 r=zeros(S,length(tau));
 for i=1:S
-    r(i,:)=fun(tau_mat(i,:),b(i),tau_opt(i));
+ %   r(i,:)=fun(tau_mat(i,:),b(i),tau_opt(i));
+     r(i,:)=fun(tau,b(i),tau_opt(i));   
 end;
 
 
 %%%%%% Integration starts
 options= odeset('AbsTol',1e-8, 'RelTol',1e-3,'NonNegative',1:60); %NonNegative is necessary and speaking to Alix indicated that Reltol and Absol can be changed quite safely. For
 [tout,yout] = ode45(@SV16_ode_integration, tspan , y0,options);       % ode solver
- imin=tstop-ysave*365;
+ imin=tstop-ysave*365+1;
  imax=tstop;
 
 toutbis=tout(imin:imax);
 youtbis=yout(imin:imax,:);
-save(strcat('./output_simulation/',dir_output,'/',num2str(iter),'essai_wih_stochasticity_rng1.mat'),'toutbis','youtbis','tau_opt','b','tau_mat');
+nb_species=sum(yout'>thresh_min);
+save(strcat('./output_simulation/',dir_output,'/','iter',num2str(iter),'_codeversion_20180228_theta0.mat'),'toutbis','youtbis','tau_opt','b','tau','nb_species');
 end;
