@@ -196,7 +196,20 @@ high diversity in competitive communities where synchrony is commonly observed
 
 \begin_layout Standard
 We've been puzzled by several elements, largely inspired by our phytoplankton
- work ([Biorxiv REF to insert here]):
+ work (
+\change_deleted 274868703 1519824506
+[Biorxiv REF to insert here]
+\change_inserted 274868703 1519824639
+
+\begin_inset CommandInset citation
+LatexCommand citet
+key "barraquand_weak_2017"
+
+\end_inset
+
+
+\change_unchanged
+):
 \end_layout
 
 \begin_layout Itemize
@@ -1715,8 +1728,20 @@ key "maynard_network_2018"
 \end_layout
 
 \begin_layout Standard
-Considering the time required for each simulation (see below), we only launched
- 20 simulations 
+Considering the time required for each simulation (see 
+\change_deleted 274868703 1519825198
+below
+\change_inserted 274868703 1519825242
+section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Notes-algorithm"
+
+\end_inset
+
+.
+\change_unchanged
+), we only launched 20 simulations 
 \begin_inset Note Note
 status open
 
@@ -2788,20 +2813,15 @@ Seasonal signal (one low-frequency component)
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\change_deleted 274868703 1519841104
 Barabas et al.
  2016 [?]
-\change_inserted 274868703 1519813767
+\change_inserted 274868703 1519841111
 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-
-\change_inserted 274868703 1519814093
-Is it not the 2012 one in Theoretical Ecology?
-\change_unchanged
-
-\end_layout
+\begin_inset CommandInset citation
+LatexCommand citet
+key "barabas_community_2012"
 
 \end_inset
 
@@ -2850,22 +2870,32 @@ Preliminary simulation setup (limit cases) [we'll add mixtures later, Alix
 
 \begin_layout Standard
 
-\change_inserted 274868703 1519814212
+\change_inserted 274868703 1519840532
 When growth rates do no affect the values of competition coefficients, we
- can consider two cases: either we use fixed values of $
-\backslash
-alpha_{ij}$ (0.001 for every inter-species interaction) or we weight them
- with the maximum/median growth rate of each species
-\begin_inset Note Note
-status open
+ can consider different parameterization of the competition coefficients:
+\end_layout
+
+\begin_layout Enumerate
+
+\change_inserted 274868703 1519840896
+competition strengths are based on the niche model (see Ashby 2017)
+\end_layout
+
+\begin_layout Enumerate
+
+\change_inserted 274868703 1519840919
+competition strengths are fixed, as in SV16, but with a difference between
+ inter and intra-species competition 
+\begin_inset Foot
+status collapsed
 
 \begin_layout Plain Layout
 
-\change_inserted 274868703 1519814371
-But it wouldn't be realistic either because species with higher thermal
- optima would have higher competition rates; mean value would lead the same
- coefficients as A is constant.
- What about median?
+\change_inserted 274868703 1519840774
+We have to elaborate on the fact that models such as SV or Barabas, which
+ do not differentiate coefficient values for the two types of interactions,
+ are less likely to be stable than the ones with higher intra-species competitio
+n.
 \change_unchanged
 
 \end_layout
@@ -2873,7 +2903,87 @@ But it wouldn't be realistic either because species with higher thermal
 \end_inset
 
 .
- 
+ In this case, 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 274868703 1519840843
+
+$
+\backslash
+alpha_{ij}=
+\backslash
+rho 
+\backslash
+alpha_{ii}$
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+ with 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 274868703 1519840869
+
+|
+\backslash
+rho|<1
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\change_inserted 274868703 1519841093
+competition strengths are chosen as 
+\begin_inset Formula $\alpha_{ij}\sim N(\rho\alpha_{ii},\sigma_{\alpha})$
+\end_inset
+
+, with 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 274868703 1519841067
+
+$
+\backslash
+sigma_{
+\backslash
+alpha}$
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+ computed with the different values of growth-rate-weighted competition
+ in SV.
 \change_unchanged
 
 \end_layout
@@ -2899,6 +3009,17 @@ Ecological remarks
 
 \begin_layout Section
 Notes on the algorithm
+\change_inserted 274868703 1519825221
+
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Notes-algorithm"
+
+\end_inset
+
+
+\change_unchanged
+
 \end_layout
 
 \begin_layout Standard
