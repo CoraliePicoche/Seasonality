@@ -24,7 +24,9 @@ fileNames = {allfiles(~[allfiles.isdir]).name};
     total_biomass_cycle=reshape(total_biomass_cycle(365,:,:),size(youtbis,1)/365,size(youtbis,2));
     max_biomass_cycle=max(biomass_over_year,[],1); % maximum biomass over a cycle
     max_biomass_cycle=reshape(max_biomass_cycle(1,:,:),size(youtbis,1)/365,size(youtbis,2));
-
+    cv_cycle=std(biomass_over_year,[],1)./mean(biomass_over_year,1); % coefficient of variation over a year
+    cv_cycle=reshape(cv_cycle(1,:,:),size(youtbis,1)/365,size(youtbis,2));
+    
     
     plot((1:length(nb_species))/365,nb_species)
     ylim([10 21])
