@@ -391,11 +391,23 @@ status open
 
 \begin_layout Plain Layout
 
+\change_deleted 274868703 1519979698
+
 $S$
+\change_unchanged
+
 \end_layout
 
 \end_inset
 
+
+\change_inserted 274868703 1519979701
+
+\begin_inset Formula $S$
+\end_inset
+
+
+\change_unchanged
 
 \end_layout
 
@@ -425,6 +437,8 @@ Number of species
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\change_deleted 274868703 1519979709
 \begin_inset ERT
 status open
 
@@ -435,6 +449,14 @@ $N_i$
 
 \end_inset
 
+
+\change_inserted 274868703 1519979709
+
+\begin_inset Formula $N_{i}$
+\end_inset
+
+
+\change_unchanged
 
 \end_layout
 
@@ -475,6 +497,8 @@ th species
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\change_deleted 274868703 1519979714
 \begin_inset ERT
 status open
 
@@ -488,6 +512,14 @@ tau$
 \end_inset
 
  
+\change_inserted 274868703 1519979947
+
+\begin_inset Formula $\tau$
+\end_inset
+
+ 
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -516,6 +548,8 @@ K
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\change_deleted 274868703 1519979716
 \begin_inset ERT
 status open
 
@@ -528,6 +562,14 @@ tau)$
 
 \end_inset
 
+
+\change_inserted 274868703 1519979716
+
+\begin_inset Formula $r_{i}(\tau)$
+\end_inset
+
+
+\change_unchanged
 
 \end_layout
 
@@ -557,6 +599,8 @@ $i$
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\change_deleted 274868703 1519979830
 \begin_inset ERT
 status open
 
@@ -574,6 +618,14 @@ text{kg*year}}$
 \end_inset
 
 
+\change_inserted 274868703 1519979830
+
+\begin_inset Formula $\frac{\text{kg}}{\text{kg*year}}$
+\end_inset
+
+
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -584,6 +636,8 @@ text{kg*year}}$
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\change_deleted 274868703 1519979719
 \begin_inset ERT
 status open
 
@@ -596,6 +650,14 @@ alpha_{ij}$
 
 \end_inset
 
+
+\change_inserted 274868703 1519979719
+
+\begin_inset Formula $\alpha_{ij}$
+\end_inset
+
+
+\change_unchanged
 
 \end_layout
 
@@ -647,6 +709,8 @@ $i$
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\change_deleted 274868703 1519979721
 \begin_inset ERT
 status open
 
@@ -657,6 +721,14 @@ $b_i$
 
 \end_inset
 
+
+\change_inserted 274868703 1519979721
+
+\begin_inset Formula $b_{i}$
+\end_inset
+
+
+\change_unchanged
 
 \end_layout
 
@@ -686,6 +758,8 @@ Normalization of the thermal decay rate
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\change_deleted 274868703 1519979723
 \begin_inset ERT
 status open
 
@@ -696,6 +770,14 @@ $m$
 
 \end_inset
 
+
+\change_inserted 274868703 1519979723
+
+\begin_inset Formula $m$
+\end_inset
+
+
+\change_unchanged
 
 \end_layout
 
@@ -714,6 +796,8 @@ Mortality rate
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\change_deleted 274868703 1519979828
 \begin_inset ERT
 status open
 
@@ -731,6 +815,14 @@ text{kg*year}}$
 \end_inset
 
 
+\change_inserted 274868703 1519979828
+
+\begin_inset Formula $15\frac{\text{kg}}{\text{kg*year}}$
+\end_inset
+
+
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -741,6 +833,8 @@ text{kg*year}}$
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\change_deleted 274868703 1519979726
 \begin_inset ERT
 status open
 
@@ -753,6 +847,14 @@ tau_0$
 
 \end_inset
 
+
+\change_inserted 274868703 1519979726
+
+\begin_inset Formula $\tau_{0}$
+\end_inset
+
+
+\change_unchanged
 
 \end_layout
 
@@ -782,6 +884,8 @@ Reference temperature
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\change_deleted 274868703 1519979729
 \begin_inset ERT
 status open
 
@@ -794,6 +898,14 @@ tau_0)$
 
 \end_inset
 
+
+\change_inserted 274868703 1519979729
+
+\begin_inset Formula $a_{r}(\tau_{0})$
+\end_inset
+
+
+\change_unchanged
 
 \end_layout
 
@@ -812,6 +924,8 @@ Growth rate at reference temperature
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\change_deleted 274868703 1519979825
 \begin_inset ERT
 status open
 
@@ -829,6 +943,14 @@ text{kg*year}}$
 \end_inset
 
 
+\change_inserted 274868703 1519979825
+
+\begin_inset Formula $386\frac{\text{kg}}{\text{kg*year}}$
+\end_inset
+
+
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -839,6 +961,8 @@ text{kg*year}}$
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\change_deleted 274868703 1519979731
 \begin_inset ERT
 status open
 
@@ -849,6 +973,14 @@ $E_r$
 
 \end_inset
 
+
+\change_inserted 274868703 1519979731
+
+\begin_inset Formula $E_{r}$
+\end_inset
+
+
+\change_unchanged
 
 \end_layout
 
@@ -878,6 +1010,8 @@ Activation energy
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\change_deleted 274868703 1519979733
 \begin_inset ERT
 status open
 
@@ -888,6 +1022,14 @@ $k$
 
 \end_inset
 
+
+\change_inserted 274868703 1519979733
+
+\begin_inset Formula $k$
+\end_inset
+
+
+\change_unchanged
 
 \end_layout
 
@@ -906,6 +1048,8 @@ Boltzmann's constant
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\change_deleted 274868703 1519979780
 \begin_inset ERT
 status open
 
@@ -917,6 +1061,14 @@ status open
 \end_inset
 
 
+\change_inserted 274868703 1519979815
+
+\begin_inset Formula $8.6173324.10^{-5}\text{eV.K}^{-1}$
+\end_inset
+
+
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -927,6 +1079,8 @@ status open
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\change_deleted 274868703 1519979742
 \begin_inset ERT
 status open
 
@@ -939,6 +1093,14 @@ tau)$
 
 \end_inset
 
+
+\change_inserted 274868703 1519979742
+
+\begin_inset Formula $f_{i}(\tau)$
+\end_inset
+
+
+\change_unchanged
 
 \end_layout
 
@@ -979,6 +1141,8 @@ th species
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\change_deleted 274868703 1519979743
 \begin_inset ERT
 status open
 
@@ -993,6 +1157,14 @@ tau$
 
 \end_inset
 
+
+\change_inserted 274868703 1519979743
+
+\begin_inset Formula $\mu_{\tau}$
+\end_inset
+
+
+\change_unchanged
 
 \end_layout
 
@@ -1022,6 +1194,8 @@ Mean temperature
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\change_deleted 274868703 1519979746
 \begin_inset ERT
 status open
 
@@ -1036,6 +1210,14 @@ tau$
 
 \end_inset
 
+
+\change_inserted 274868703 1519979746
+
+\begin_inset Formula $\sigma_{\tau}$
+\end_inset
+
+
+\change_unchanged
 
 \end_layout
 
@@ -1065,6 +1247,8 @@ Standard deviation for temperature
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\change_deleted 274868703 1519979748
 \begin_inset ERT
 status open
 
@@ -1079,6 +1263,14 @@ text{min}}$
 
 \end_inset
 
+
+\change_inserted 274868703 1519979748
+
+\begin_inset Formula $\tau_{\text{min}}$
+\end_inset
+
+
+\change_unchanged
 
 \end_layout
 
@@ -1108,6 +1300,8 @@ Minimum thermal optimum
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\change_deleted 274868703 1519979751
 \begin_inset ERT
 status open
 
@@ -1122,6 +1316,14 @@ text{max}}$
 
 \end_inset
 
+
+\change_inserted 274868703 1519979751
+
+\begin_inset Formula $\tau_{\text{max}}$
+\end_inset
+
+
+\change_unchanged
 
 \end_layout
 
@@ -1151,6 +1353,8 @@ Maximum thermal optimum
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\change_deleted 274868703 1519979755
 \begin_inset ERT
 status open
 
@@ -1161,6 +1365,14 @@ $A$
 
 \end_inset
 
+
+\change_inserted 274868703 1519979755
+
+\begin_inset Formula $A$
+\end_inset
+
+
+\change_unchanged
 
 \end_layout
 
@@ -1179,6 +1391,8 @@ Niche breadth
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\change_deleted 274868703 1519979769
 \begin_inset ERT
 status open
 
@@ -1195,6 +1409,14 @@ text{kg*year}}$
 
 \end_inset
 
+
+\change_inserted 274868703 1519979769
+
+\begin_inset Formula $10^{3.1}\frac{\text{kg}}{\text{kg*year}}$
+\end_inset
+
+
+\change_unchanged
  
 \end_layout
 
@@ -1206,6 +1428,8 @@ text{kg*year}}$
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\change_deleted 274868703 1519979762
 \begin_inset ERT
 status open
 
@@ -1220,6 +1444,14 @@ text{opt}}$
 
 \end_inset
 
+
+\change_inserted 274868703 1519979762
+
+\begin_inset Formula $\tau_{i}^{\text{opt}}$
+\end_inset
+
+
+\change_unchanged
 
 \end_layout
 
@@ -2487,6 +2719,220 @@ I left it here but think this could be merged with your intro // F: No this
 \end_inset
 
 
+\change_inserted 274868703 1519911913
+
+\end_layout
+
+\begin_layout Paragraph*
+
+\change_inserted 274868703 1519911935
+A few words about the storage effect
+\end_layout
+
+\begin_layout Standard
+
+\change_inserted 274868703 1519986087
+The concept of storage effect emerged in the 1980's 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "chesson_environmental_1981,warner_coexistence_1985,chesson_community_1988"
+
+\end_inset
+
+ and is classically described as the temporal partioning of the niche, encouragi
+ng coexistence.
+ It requires three main features: (1) species-specific responses to the
+ environmental variability, (2) density-dependent covariance between environment
+ and competition and (3) buffered population growth.
+ If we define the instantaneous growth rate 
+\begin_inset Formula $\gamma_{i}(t)=\frac{1}{N_{i}(t)}\frac{dN_{i}(t)}{dt}=K_{i}(E_{i}(t),C_{i}(t))$
+\end_inset
+
+where 
+\begin_inset Formula $K_{i}$
+\end_inset
+
+ is the kernel for species 
+\begin_inset Formula $i$
+\end_inset
+
+, written as a function of 
+\begin_inset Formula $E_{i}$
+\end_inset
+
+, a set of environment-dependent parameters for species 
+\begin_inset Formula $i$
+\end_inset
+
+ and 
+\begin_inset Formula $C_{i},C_{i}(t)=c_{i}(E_{j}(t),N_{j}(t)\forall j)$
+\end_inset
+
+
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 274868703 1519984887
+In 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "ellner_how_2016"
+
+\end_inset
+
+, there is a subtlety between 
+\begin_inset Formula $N_{i}$
+\end_inset
+
+ and 
+\begin_inset Formula $n_{i}$
+\end_inset
+
+ (measure and state of the population of species 
+\begin_inset Formula $i$
+\end_inset
+
+, respectively), which I am not considering here
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+, the competition experienced by species i, which is itself a function of
+ populations and environment 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "ellner_how_2016"
+
+\end_inset
+
+.
+ Conditions for coexistence in a fluctuating environment are then met when
+ 
+\begin_inset Formula $\frac{\partial^{2}\gamma}{\partial E\partial C}<0$
+\end_inset
+
+.
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "barabas_community_2012"
+
+\end_inset
+
+generalized this definition in the case of periodic environments.
+ Shifting from analyzing the 
+\shape italic
+possibility
+\shape default
+ of coexistence to its 
+\shape italic
+likelihood
+\shape default
+, they define the set of environmental conditions in which coexistence is
+ possible as a volume whose form can change with species similarity (in
+ the equilibrium theory, this volume shrinks with increasing similarity).
+ They define a community matrix 
+\begin_inset Formula $a_{ij}(t)=\boldsymbol{S}_{i}(t)\boldsymbol{I}_{j}(t)=\frac{\partial r_{i}(t)}{\partial\boldsymbol{R}(t)}\frac{\partial\boldsymbol{R}(t)}{\partial n_{j}(t)}n_{j}(t)$
+\end_inset
+
+ where 
+\begin_inset Formula $r_{i}$
+\end_inset
+
+ is the growth rate of species 
+\begin_inset Formula $i$
+\end_inset
+
+, a function of the lof of the population densities 
+\begin_inset Formula $n_{j}$
+\end_inset
+
+ and 
+\begin_inset Formula $\boldsymbol{R}$
+\end_inset
+
+, a vector of environmental/regulating conditions depending the instantaneous
+ values of the population densities.
+ The first vector 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula $\boldsymbol{S}_{i}(t)$
+\end_inset
+
+ is the sensitivity niche vector, ie the sensitivity of the population to
+ changes in the environment.
+
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ Species similarity leads to a small sensitivity volume.
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ The second vector 
+\begin_inset Formula $\boldsymbol{I}_{j}(t)$
+\end_inset
+
+ is the impact niche vector, ie the impact of a change in population densities
+ on the regulation factors, which can buffer the growth of the population.
+
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ This factor is only implicit in Chesson's formalism.
+ Provided the periodicity of the environment remains constant and the dynamics
+ of the environment variables are fast compared to population dynamics,they
+ confirm that the product of the volumes spanned by the temporal sensitivity
+ and impact vectors is the proper measure for robustness.
+ This formulation does not rely on the small-fluctuation approach, contrary
+ to Chesson's formalism.
+\end_layout
+
+\begin_layout Standard
+
+\change_inserted 274868703 1519985968
+HERE, I'd like to add the different formulations of the LV model by Ellner
+ and Barabas, comparing to ours.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -2877,13 +3323,45 @@ When growth rates do no affect the values of competition coefficients, we
 
 \begin_layout Enumerate
 
-\change_inserted 274868703 1519840896
-competition strengths are based on the niche model (see Ashby 2017)
+\change_inserted 274868703 1519900162
+competition strengths are based on the niche model (
+\begin_inset CommandInset citation
+LatexCommand citet
+key "ashby_competing_2017"
+
+\end_inset
+
+).
+ The general formulation of the strength of competition exerted by species
+ j on species i is 
+\begin_inset Formula $\alpha_{ij}=\frac{\int U_{i}(\boldsymbol{z})U_{j}(\boldsymbol{z})d\boldsymbol{z}}{\int U_{i}(\boldsymbol{z})^{2}d\boldsymbol{z}}$
+\end_inset
+
+ where 
+\begin_inset Formula $U_{i}(\boldsymbol{z})$
+\end_inset
+
+ is the resource utilization function of the (potentially multidimensional)
+ resource 
+\begin_inset Formula $\boldsymbol{z}$
+\end_inset
+
+ for species 
+\begin_inset Formula $i$
+\end_inset
+
+.
+ A first step would be to use 
+\begin_inset Formula $U_{i}(\boldsymbol{z})=r_{i}(\tau)$
+\end_inset
+
+.
+ 
 \end_layout
 
 \begin_layout Enumerate
 
-\change_inserted 274868703 1519840919
+\change_inserted 274868703 1519986095
 competition strengths are fixed, as in SV16, but with a difference between
  inter and intra-species competition 
 \begin_inset Foot
@@ -2904,37 +3382,37 @@ n.
 
 .
  In this case, 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-\change_inserted 274868703 1519840843
-
-$
-\backslash
-alpha_{ij}=
-\backslash
-rho 
-\backslash
-alpha_{ii}$
-\change_unchanged
-
-\end_layout
-
+\begin_inset Formula $\alpha_{ii}=\rho\alpha_{ij}$
 \end_inset
 
  with 
-\begin_inset ERT
+\begin_inset Formula $|\rho|>1$
+\end_inset
+
+ A first step would be to use 
+\begin_inset Formula $\rho=10$
+\end_inset
+
+ and 
+\begin_inset Formula $\forall i,\forall j,\alpha_{ij}=\alpha=0.001$
+\end_inset
+
+, (
+\begin_inset CommandInset citation
+LatexCommand citet
+key "barraquand_weak_2017"
+
+\end_inset
+
+)
+\begin_inset Foot
 status open
 
 \begin_layout Plain Layout
 
-\change_inserted 274868703 1519840869
-
-|
-\backslash
-rho|<1
+\change_inserted 274868703 1519986115
+This was launched, simulations are saved, I didn't have the time to analyze
+ them yet.
 \change_unchanged
 
 \end_layout
@@ -2946,9 +3424,9 @@ rho|<1
 
 \begin_layout Enumerate
 
-\change_inserted 274868703 1519841093
+\change_inserted 274868703 1519901159
 competition strengths are chosen as 
-\begin_inset Formula $\alpha_{ij}\sim N(\rho\alpha_{ii},\sigma_{\alpha})$
+\begin_inset Formula $\alpha_{ij}\sim N(\frac{1}{\rho}\alpha_{ii},\sigma_{\alpha})$
 \end_inset
 
 , with 
@@ -2964,26 +3442,31 @@ competition strengths are chosen as
 \noun off
 \color none
 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-\change_inserted 274868703 1519841067
-
-$
-\backslash
-sigma_{
-\backslash
-alpha}$
-\change_unchanged
-
-\end_layout
-
+\begin_inset Formula $\sigma_{\alpha}=\alpha\bar{\sigma_{r}}$
 \end_inset
 
- computed with the different values of growth-rate-weighted competition
- in SV.
+where 
+\begin_inset Formula $\bar{\sigma_{r}}$
+\end_inset
+
+ is the median value of the standard deviation of 
+\begin_inset Formula $r_{i}(\tau)$
+\end_inset
+
+ over all species 
+\begin_inset Formula $i$
+\end_inset
+
+.
+ We can keep 
+\begin_inset Formula $\rho=10$
+\end_inset
+
+ and 
+\begin_inset Formula $\forall i,\alpha_{ii}=\rho\alpha=0.01.$
+\end_inset
+
+
 \change_unchanged
 
 \end_layout
@@ -3443,7 +3926,26 @@ In the ode integration function, 50% of the time is required only to load
  therefore time expensive but I don't really see how to do it differently
  if we want to save stochastic temperatures ; and I'm not sure computing
  maxium possible growth rates for each time step would be more effective.
- Should be tried, though.
+ Should be tried, though
+\change_inserted 274868703 1519986134
+
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 274868703 1519986189
+Tried: time spent on SV16 integration was 50% higher.
+ My first implementation was the best one so far.
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+.
 \end_layout
 
 \begin_layout Standard
