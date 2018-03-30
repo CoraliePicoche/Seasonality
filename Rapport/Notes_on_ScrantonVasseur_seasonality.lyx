@@ -1,5 +1,5 @@
-#LyX 2.2 created this file. For more info see http://www.lyx.org/
-\lyxformat 508
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
 \begin_document
 \begin_header
 \save_transient_properties true
@@ -25,6 +25,8 @@
 \font_osf false
 \font_sf_scale 100 100
 \font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
 \graphics default
 \default_output_format default
 \output_sync 0
@@ -55,6 +57,7 @@
 \suppress_date false
 \justification true
 \use_refstyle 1
+\use_minted 0
 \index Index
 \shortcut idx
 \color #008000
@@ -67,7 +70,10 @@
 \tocdepth 3
 \paragraph_separation indent
 \paragraph_indentation default
-\quotes_language english
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
 \papercolumns 1
 \papersides 1
 \paperpagestyle default
@@ -94,6 +100,7 @@ Introduction
 \begin_inset CommandInset citation
 LatexCommand citet
 key "scranton_coexistence_2016"
+literal "true"
 
 \end_inset
 
@@ -114,6 +121,7 @@ key "scranton_coexistence_2016"
 \begin_inset CommandInset citation
 LatexCommand citet
 key "scranton_coexistence_2016"
+literal "true"
 
 \end_inset
 
@@ -136,17 +144,13 @@ clumpy coexistence
 \begin_inset Quotes erd
 \end_inset
 
-, with
-\change_deleted 274868703 1519810096
- 
-\change_unchanged
- both stabilizing differences and equalizing differences between competitors,
- is possible here
+, with both stabilizing differences and equalizing differences between competito
+rs, is possible here
 \end_layout
 
 \begin_layout Itemize
-Stabilizing differences for coexistence occur here through the storage effect
- (
+Stabilizing differences for coexistence occur here through a built-in storage
+ effect (
 \begin_inset Quotes eld
 \end_inset
 
@@ -197,24 +201,19 @@ high diversity in competitive communities where synchrony is commonly observed
 \begin_layout Standard
 We've been puzzled by several elements, largely inspired by our phytoplankton
  work (
-\change_deleted 274868703 1519824506
-[Biorxiv REF to insert here]
-\change_inserted 274868703 1519824639
-
 \begin_inset CommandInset citation
 LatexCommand citet
 key "barraquand_weak_2017"
+literal "true"
 
 \end_inset
 
-
-\change_unchanged
 ):
 \end_layout
 
 \begin_layout Itemize
 The forcing signal, aka temperature, is strongly random (white noise) here,
- whilst it is rather seasonal in competitive communities.
+ whilst it is rather seasonal.
  Would the same results hold in a seasonal environment, where similar species
  can potentially compete over a longer time period (because the season can
  be long compared to the timeframe of plankton generation).
@@ -222,16 +221,33 @@ The forcing signal, aka temperature, is strongly random (white noise) here,
 \end_layout
 
 \begin_layout Itemize
-What's the role of the storage effect there? Is coexistence in a seasonal
- environment necessarily connected to it, as 
+What's the role of the built-in storage effect there? Are coexistence and
+ a fluctuating environment necessarily linked, as suggested by 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "barabas_community_2012"
+literal "true"
 
 \end_inset
 
- who equates it with temporal niche differentiation.
- 
+ who equate it with temporal niche differentiation? 
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+In other words, would the results be the same if there wasn't a built-in
+ storage effect? 
+\emph on
+e.g.
+
+\emph default
+ fluctuating temperature reflects either on intrinsic growth rates or competitio
+n rates, but not both.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
@@ -263,21 +279,13 @@ The competition model described in
 \begin_inset CommandInset citation
 LatexCommand citet
 key "scranton_coexistence_2016"
+literal "true"
 
 \end_inset
 
  is based on a variant of the Lotka-Volterra competition model, with growth
  depending on the temperature 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-$
-\backslash
-tau$
-\end_layout
-
+\begin_inset Formula $\tau$
 \end_inset
 
  (see eq.
@@ -386,28 +394,9 @@ Value (unit)
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-\change_deleted 274868703 1519979698
-
-$S$
-\change_unchanged
-
-\end_layout
-
-\end_inset
-
-
-\change_inserted 274868703 1519979701
-
 \begin_inset Formula $S$
 \end_inset
 
-
-\change_unchanged
 
 \end_layout
 
@@ -437,26 +426,9 @@ Number of species
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_deleted 274868703 1519979709
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-$N_i$
-\end_layout
-
-\end_inset
-
-
-\change_inserted 274868703 1519979709
-
 \begin_inset Formula $N_{i}$
 \end_inset
 
-
-\change_unchanged
 
 \end_layout
 
@@ -467,14 +439,7 @@ $N_i$
 
 \begin_layout Plain Layout
 Biomass density of the 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-$i$
-\end_layout
-
+\begin_inset Formula $i$
 \end_inset
 
 th species
@@ -497,29 +462,10 @@ th species
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_deleted 274868703 1519979714
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-$
-\backslash
-tau$
-\end_layout
-
-\end_inset
-
- 
-\change_inserted 274868703 1519979947
-
 \begin_inset Formula $\tau$
 \end_inset
 
  
-\change_unchanged
-
 \end_layout
 
 \end_inset
@@ -548,28 +494,9 @@ K
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_deleted 274868703 1519979716
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-$r_i(
-\backslash
-tau)$
-\end_layout
-
-\end_inset
-
-
-\change_inserted 274868703 1519979716
-
 \begin_inset Formula $r_{i}(\tau)$
 \end_inset
 
-
-\change_unchanged
 
 \end_layout
 
@@ -580,14 +507,7 @@ tau)$
 
 \begin_layout Plain Layout
 Growth rate of species 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-$i$
-\end_layout
-
+\begin_inset Formula $i$
 \end_inset
 
  as a function of temperature
@@ -599,32 +519,9 @@ $i$
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_deleted 274868703 1519979830
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-$
-\backslash
-frac{
-\backslash
-text{kg}}{
-\backslash
-text{kg*year}}$
-\end_layout
-
-\end_inset
-
-
-\change_inserted 274868703 1519979830
-
 \begin_inset Formula $\frac{\text{kg}}{\text{kg*year}}$
 \end_inset
 
-
-\change_unchanged
 
 \end_layout
 
@@ -636,28 +533,9 @@ text{kg*year}}$
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_deleted 274868703 1519979719
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-$
-\backslash
-alpha_{ij}$
-\end_layout
-
-\end_inset
-
-
-\change_inserted 274868703 1519979719
-
 \begin_inset Formula $\alpha_{ij}$
 \end_inset
 
-
-\change_unchanged
 
 \end_layout
 
@@ -668,25 +546,11 @@ alpha_{ij}$
 
 \begin_layout Plain Layout
 Strength of competition of species 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-$j$
-\end_layout
-
+\begin_inset Formula $j$
 \end_inset
 
  on species 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-$i$
-\end_layout
-
+\begin_inset Formula $i$
 \end_inset
 
 
@@ -709,26 +573,9 @@ $i$
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_deleted 274868703 1519979721
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-$b_i$
-\end_layout
-
-\end_inset
-
-
-\change_inserted 274868703 1519979721
-
 \begin_inset Formula $b_{i}$
 \end_inset
 
-
-\change_unchanged
 
 \end_layout
 
@@ -758,26 +605,9 @@ Normalization of the thermal decay rate
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_deleted 274868703 1519979723
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-$m$
-\end_layout
-
-\end_inset
-
-
-\change_inserted 274868703 1519979723
-
 \begin_inset Formula $m$
 \end_inset
 
-
-\change_unchanged
 
 \end_layout
 
@@ -796,32 +626,9 @@ Mortality rate
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_deleted 274868703 1519979828
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-$15 
-\backslash
-frac{
-\backslash
-text{kg}}{
-\backslash
-text{kg*year}}$
-\end_layout
-
-\end_inset
-
-
-\change_inserted 274868703 1519979828
-
 \begin_inset Formula $15\frac{\text{kg}}{\text{kg*year}}$
 \end_inset
 
-
-\change_unchanged
 
 \end_layout
 
@@ -833,28 +640,9 @@ text{kg*year}}$
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_deleted 274868703 1519979726
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-$
-\backslash
-tau_0$
-\end_layout
-
-\end_inset
-
-
-\change_inserted 274868703 1519979726
-
 \begin_inset Formula $\tau_{0}$
 \end_inset
 
-
-\change_unchanged
 
 \end_layout
 
@@ -884,28 +672,9 @@ Reference temperature
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_deleted 274868703 1519979729
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-$a_r(
-\backslash
-tau_0)$
-\end_layout
-
-\end_inset
-
-
-\change_inserted 274868703 1519979729
-
 \begin_inset Formula $a_{r}(\tau_{0})$
 \end_inset
 
-
-\change_unchanged
 
 \end_layout
 
@@ -924,32 +693,9 @@ Growth rate at reference temperature
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_deleted 274868703 1519979825
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-$386 
-\backslash
-frac{
-\backslash
-text{kg}}{
-\backslash
-text{kg*year}}$
-\end_layout
-
-\end_inset
-
-
-\change_inserted 274868703 1519979825
-
 \begin_inset Formula $386\frac{\text{kg}}{\text{kg*year}}$
 \end_inset
 
-
-\change_unchanged
 
 \end_layout
 
@@ -961,26 +707,9 @@ text{kg*year}}$
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_deleted 274868703 1519979731
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-$E_r$
-\end_layout
-
-\end_inset
-
-
-\change_inserted 274868703 1519979731
-
 \begin_inset Formula $E_{r}$
 \end_inset
 
-
-\change_unchanged
 
 \end_layout
 
@@ -1010,26 +739,9 @@ Activation energy
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_deleted 274868703 1519979733
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-$k$
-\end_layout
-
-\end_inset
-
-
-\change_inserted 274868703 1519979733
-
 \begin_inset Formula $k$
 \end_inset
 
-
-\change_unchanged
 
 \end_layout
 
@@ -1048,26 +760,9 @@ Boltzmann's constant
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_deleted 274868703 1519979780
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-8.6173324.$10^{-5}$ eV.K$^{-1}$
-\end_layout
-
-\end_inset
-
-
-\change_inserted 274868703 1519979815
-
 \begin_inset Formula $8.6173324.10^{-5}\text{eV.K}^{-1}$
 \end_inset
 
-
-\change_unchanged
 
 \end_layout
 
@@ -1079,28 +774,9 @@ status open
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_deleted 274868703 1519979742
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-$f_i(
-\backslash
-tau)$
-\end_layout
-
-\end_inset
-
-
-\change_inserted 274868703 1519979742
-
 \begin_inset Formula $f_{i}(\tau)$
 \end_inset
 
-
-\change_unchanged
 
 \end_layout
 
@@ -1111,14 +787,7 @@ tau)$
 
 \begin_layout Plain Layout
 Fraction of the maximum rate achieved for the 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-$i$
-\end_layout
-
+\begin_inset Formula $i$
 \end_inset
 
 th species
@@ -1141,30 +810,9 @@ th species
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_deleted 274868703 1519979743
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-$
-\backslash
-mu_
-\backslash
-tau$
-\end_layout
-
-\end_inset
-
-
-\change_inserted 274868703 1519979743
-
 \begin_inset Formula $\mu_{\tau}$
 \end_inset
 
-
-\change_unchanged
 
 \end_layout
 
@@ -1194,30 +842,9 @@ Mean temperature
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_deleted 274868703 1519979746
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-$
-\backslash
-sigma_
-\backslash
-tau$
-\end_layout
-
-\end_inset
-
-
-\change_inserted 274868703 1519979746
-
 \begin_inset Formula $\sigma_{\tau}$
 \end_inset
 
-
-\change_unchanged
 
 \end_layout
 
@@ -1247,30 +874,9 @@ Standard deviation for temperature
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_deleted 274868703 1519979748
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-$
-\backslash
-tau_{
-\backslash
-text{min}}$
-\end_layout
-
-\end_inset
-
-
-\change_inserted 274868703 1519979748
-
 \begin_inset Formula $\tau_{\text{min}}$
 \end_inset
 
-
-\change_unchanged
 
 \end_layout
 
@@ -1300,30 +906,9 @@ Minimum thermal optimum
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_deleted 274868703 1519979751
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-$
-\backslash
-tau_{
-\backslash
-text{max}}$
-\end_layout
-
-\end_inset
-
-
-\change_inserted 274868703 1519979751
-
 \begin_inset Formula $\tau_{\text{max}}$
 \end_inset
 
-
-\change_unchanged
 
 \end_layout
 
@@ -1353,26 +938,9 @@ Maximum thermal optimum
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_deleted 274868703 1519979755
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-$A$
-\end_layout
-
-\end_inset
-
-
-\change_inserted 274868703 1519979755
-
 \begin_inset Formula $A$
 \end_inset
 
-
-\change_unchanged
 
 \end_layout
 
@@ -1391,32 +959,9 @@ Niche breadth
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_deleted 274868703 1519979769
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-$10^{3.1} 
-\backslash
-frac{
-\backslash
-text{kg}}{
-\backslash
-text{kg*year}}$
-\end_layout
-
-\end_inset
-
-
-\change_inserted 274868703 1519979769
-
 \begin_inset Formula $10^{3.1}\frac{\text{kg}}{\text{kg*year}}$
 \end_inset
 
-
-\change_unchanged
  
 \end_layout
 
@@ -1428,30 +973,9 @@ text{kg*year}}$
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_deleted 274868703 1519979762
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-$
-\backslash
-tau_i^{
-\backslash
-text{opt}}$
-\end_layout
-
-\end_inset
-
-
-\change_inserted 274868703 1519979762
-
 \begin_inset Formula $\tau_{i}^{\text{opt}}$
 \end_inset
 
-
-\change_unchanged
 
 \end_layout
 
@@ -1462,14 +986,7 @@ text{opt}}$
 
 \begin_layout Plain Layout
 Thermal optimum for growth of the 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-$i$
-\end_layout
-
+\begin_inset Formula $i$
 \end_inset
 
 th species
@@ -1502,6 +1019,7 @@ Coefficients used in
 \begin_inset CommandInset citation
 LatexCommand citet
 key "scranton_coexistence_2016"
+literal "true"
 
 \end_inset
 
@@ -1535,6 +1053,7 @@ Before changing the model, we wanted to check that we obtained the same
 \begin_inset CommandInset citation
 LatexCommand citep
 key "scranton_coexistence_2016"
+literal "true"
 
 \end_inset
 
@@ -1629,21 +1148,10 @@ name "subsec:Species-dynamics"
 \end_layout
 
 \begin_layout Standard
-Species dynamics were explored in a large community of 60 species.
+Species dynamics were explored in communities of 60 species.
  Their thermal optima are spaced regularly on the interval [15°C-25°C] and
  they are all initialized with density 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-$
-\backslash
-frac{1}{
-\backslash
-alpha S}$
-\end_layout
-
+\begin_inset Formula $\frac{1}{\alpha S}$
 \end_inset
 
 .
@@ -1656,17 +1164,10 @@ alpha S}$
 
 \begin_layout Standard
 If the density of a species declines below 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-$10^{-6}$
-\end_layout
-
+\begin_inset Formula $10^{-6}$
 \end_inset
 
-, the species is considered extinct.
+ , the species is considered extinct.
  
 \end_layout
 
@@ -1685,6 +1186,7 @@ In contrast with
 \begin_inset CommandInset citation
 LatexCommand citet
 key "scranton_coexistence_2016"
+literal "true"
 
 \end_inset
 
@@ -1702,37 +1204,44 @@ key "scranton_coexistence_2016"
 \begin_inset CommandInset citation
 LatexCommand citet
 key "scranton_coexistence_2016"
+literal "true"
 
 \end_inset
 
  chose a species-specific synchrony index based on Pearson's correlation
  coefficient 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-$
-\backslash
-rho$
-\end_layout
-
+\begin_inset Formula $\rho$
 \end_inset
 
+
+\change_inserted 274868703 1522400428
+, weighted by the standard deviation of each competitor 
+\begin_inset Formula $j$
+\end_inset
+
+, 
+\begin_inset Formula $\sigma_{j}$
+\end_inset
+
+.
+
+\change_deleted 274868703 1522398166
  
+\change_unchanged
+
 \begin_inset Foot
 status open
 
 \begin_layout Plain Layout
 F/ This will be very interesting to look at this simulated data -later on
  - using the measure of Keitt, Loreau and co.
- BTW [!make sure we output time series of the simulations!]
-\change_inserted 274868703 1519810162
- For now, I'm just keeping the 500 last years, as SV did, and for memory
+ BTW [!make sure we output time series of the simulations!] 
+\change_inserted 274868703 1522400440
+C: 
+\change_unchanged
+For now, I'm just keeping the 500 last years, as SV did, and for memory
  reasons.
  Do we really need longer TS?
-\change_unchanged
-
 \end_layout
 
 \end_inset
@@ -1742,8 +1251,63 @@ F/ This will be very interesting to look at this simulated data -later on
  window of 5 years.
 \begin_inset Formula 
 \[
-\zeta_{i}=\sum_{j=1,j\neq1}^{S}\alpha_{ij}\rho_{i,j}
+\zeta_{i}=\sum_{j=1,j\neq1}^{S}\alpha_{ij}\sigma_{j}\rho_{i,j}
 \]
+
+\end_inset
+
+
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 274868703 1522400456
+A: 
+\change_unchanged
+I'm puzzled by this expression.
+ Since all 
+\begin_inset Formula $\alpha_{ij}$
+\end_inset
+
+ are the same, it is pretty much the relative values of 
+\begin_inset Formula $\rho_{ij}$
+\end_inset
+
+ which matter.
+ However, since these are correlation coefficients - which vary between
+ -1 and 1, they could actually cancel each other out when summed.
+ I wonder whether this metric couldn't obscure that some species are synchronise
+d with some, but asynchronised with others.
+ What do you think?
+\change_inserted 274868703 1522400451
+ C : There was a mistake in the report (not the code): each correlation
+ coefficient is weighted by the standard deviation of the competitor 
+\begin_inset Formula $j$
+\end_inset
+
+.
+ I corrected it.
+ However, it does not change your point: this metric is indeed close to
+ 0 for a species which would be synchronized with the same number of species
+ it would compensate (if all species have the same standard deviation).
+ This is an information in itself (which I have a hard time interpreting
+ for now, I must admit), but should be supplemented by other metrics.
+ I think indices based on variance ratio for the whole community would be
+ interesting (
+\begin_inset CommandInset citation
+LatexCommand citet
+key "loreau_species_2008,gross2013species"
+literal "false"
+
+\end_inset
+
+, which we use in another context).
+ At the individual-scale, we could separate this index into negative and
+ positive values...?
+\change_unchanged
+
+\end_layout
 
 \end_inset
 
@@ -1838,6 +1402,25 @@ reference "fig:Synchrony-of-each"
  When temperatures are different for every species, less species survive,
  with more homogeneous abundances and no patterns of synchrony.
  
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 274868703 1522400465
+A : 
+\change_unchanged
+Later on, this could be summerised with the profile of rank_abundance curves,
+ or evenness mesures?
+\change_inserted 274868703 1522400467
+ C : Very good idea! Thanks
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsubsection
@@ -1877,8 +1460,8 @@ Species coexistence according to their thermal optimum for 2-species communities
  Black lines indicate the thermal optimum of 20.42°C.
  On the left, the frequency of each pair is indicated by the intensity of
  the gray scale.
- On the right, the color corresponds to the third species being present,
- while pairs correspond to extreme values of thermal optima.
+ On the right, the color corresponds to the thermal optimum of third species
+ being present, while pairs correspond to extreme values of thermal optima.
  
 \begin_inset CommandInset label
 LatexCommand label
@@ -1904,23 +1487,17 @@ To model community assembly,
 \begin_inset CommandInset citation
 LatexCommand citet
 key "scranton_coexistence_2016"
+literal "true"
 
 \end_inset
 
  iniate a community with only one species chosen at random from the previous
- 60 species pool, set its density to 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-$
-\backslash
-frac{1}{2
-\backslash
-alpha}$
-\end_layout
-
+ 60 species pool, set its density to
+\change_deleted 274868703 1522400500
+ 
+\change_unchanged
+ 
+\begin_inset Formula $\frac{1}{2\alpha}$
 \end_inset
 
  and run the simulation for 10,000 years, during which the community is
@@ -1937,6 +1514,10 @@ alpha}$
 status open
 
 \begin_layout Plain Layout
+
+\change_inserted 274868703 1522400512
+C : 
+\change_unchanged
 Dicussing with Fred and Alix, it appears that we could test for possible
  persistence before the invasion.
  By using the maximum growth rates and competition competitions, we could
@@ -1944,6 +1525,7 @@ Dicussing with Fred and Alix, it appears that we could test for possible
 \begin_inset CommandInset citation
 LatexCommand citet
 key "maynard_network_2018"
+literal "true"
 
 \end_inset
 
@@ -1960,31 +1542,29 @@ key "maynard_network_2018"
 \end_layout
 
 \begin_layout Standard
-Considering the time required for each simulation (see 
-\change_deleted 274868703 1519825198
-below
-\change_inserted 274868703 1519825242
-section 
+Considering the time required for each simulation (see section 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sec:Notes-algorithm"
 
 \end_inset
 
-.
-\change_unchanged
-), we only launched 20 simulations 
+.), we only launched 20 simulations 
 \begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
+
+\change_inserted 274868703 1522400532
+FB : 
+\change_unchanged
 with different initials conditions?
-\change_inserted 274868703 1519810210
+\change_inserted 274868703 1522400641
+ C :
+\change_unchanged
  I realize that I was using both different temperatures and different first
  species...
  confounding effects indeed.
-
-\change_unchanged
  
 \end_layout
 
@@ -2006,55 +1586,10 @@ K) of the previously observed thermal limits.
 In the 20 communities we obtained, half of them had 2 species and 7 had
  3 species; remaining communities had 4 species.
  We confirmed that species laid on opposites sides of the thermal optimum,
- with the third species, when present, being 
-\change_inserted 274868703 1519810481
-part of the clump which can also include the fittest species in the first
- simulation.
+ with the third species, when present, being part of the clump which can
+ also include the fittest species in the first simulation.
+ .
  
-\change_deleted 274868703 1519810445
-in
-\change_unchanged
- 
-\change_deleted 274868703 1519810434
-the 
-\begin_inset Quotes eld
-\end_inset
-
-optimum clump
-\begin_inset Quotes erd
-\end_inset
-
-
-\change_unchanged
-.
- 
-\begin_inset Foot
-status open
-
-\begin_layout Plain Layout
-F: Really? I was duped by Fig.
- 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:Synchrony-of-each"
-
-\end_inset
-
- as I assumed that the right-hand panels were showing species coexisting.
- If so, there are no true clumps? 
-\change_inserted 274868703 1519810423
-The figure you mention represents a case when we start with all species
- together.
- What I call the 'optimum clump' is a short way to mention the clump including
- the most fit species, ie the one with the thermal optimum around 20.42.
- 
-\change_unchanged
-
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Subsubsection
@@ -2091,25 +1626,8 @@ Effect of knocking out a species (on the y-axis) on the other species abundance
  is higher when no knocking-out took place) while black circles indicate
  positive value (the knocking-out of ones species enable the other one to
  increase its abundance).
- 
-\change_inserted 274868703 1519810556
-The identity of the 11 
-\change_deleted 274868703 1519810557
-S
-\change_inserted 274868703 1519810558
-s
-\change_unchanged
-pecies
-\change_inserted 274868703 1519810573
- present at the beginning of the simulation
-\change_unchanged
- 
-\change_deleted 274868703 1519810564
-identities are
-\change_inserted 274868703 1519810564
-is
-\change_unchanged
- given by their thermal optima shown on the axes.
+ The identity of the 11 species present at the beginning of the simulation
+ is given by their thermal optima shown on the axes.
  
 \begin_inset CommandInset label
 LatexCommand label
@@ -2122,16 +1640,20 @@ name "fig:Effect-of-knocking"
 status open
 
 \begin_layout Plain Layout
+
+\change_inserted 274868703 1522400546
+FB : 
+\change_unchanged
 There are 3 species there, right? If so we should say this plainly because
  the graphs may make it look like there are more species and these are 3
  clumps.
  We should compare this to the Sheffer and Van Nes 2006 to see how many
  species they manage to make persist through time.
  
-\change_inserted 274868703 1519810600
-No, there are indeed 11 species within 3 clumps.
+\change_inserted 274868703 1522400553
+C : 
 \change_unchanged
-
+No, there are indeed 11 species within 3 clumps.
 \end_layout
 
 \end_inset
@@ -2154,6 +1676,7 @@ In this experiment,
 \begin_inset CommandInset citation
 LatexCommand citet
 key "scranton_coexistence_2016"
+literal "true"
 
 \end_inset
 
@@ -2164,7 +1687,7 @@ key "scranton_coexistence_2016"
 \end_inset
 
  (due to stochasticity, the same species is given 9 chances to invade the
- communitiyà and observe the final abundances after 5000 more years.
+ communitiy and observe the final abundances after 5000 more years.
  
 \end_layout
 
@@ -2178,12 +1701,15 @@ reference "fig:Effect-of-knocking"
 \end_inset
 
  that our results are a bit different as the effect of a given clump is
- not restricted to its clump (effect of stochasticity?).
- 
+ not restricted to its clump (effect of stochasticity?
+\change_inserted 274868703 1522399076
+)
+\change_unchanged
+
 \end_layout
 
 \begin_layout Section
-Seasonality
+Implementing a seasonal variation of temperature
 \end_layout
 
 \begin_layout Standard
@@ -2203,7 +1729,7 @@ We propose the function
 status open
 
 \begin_layout Plain Layout
-We may also considerautocorrelated noise if the general shape of the power
+We may also consider autocorrelated noise if the general shape of the power
  spectrum governs the results rather than the precise frequency content
  (just to keep this in mind)
 \end_layout
@@ -2215,16 +1741,8 @@ We may also considerautocorrelated noise if the general shape of the power
 status open
 
 \begin_layout Plain Layout
-
-\change_deleted 274868703 1519810628
-I also took a lot of time in October 2017 to try and extract a signal from
- real data in Arcachon, but it is still 'under development'.
- [F: I don't think this is really needed for now]
-\change_inserted 274868703 1519810653
  We could also consider using a real signal, such as the one with have in
  Arcachon
-\change_unchanged
-
 \end_layout
 
 \end_inset
@@ -2235,11 +1753,29 @@ I also took a lot of time in October 2017 to try and extract a signal from
 \begin_layout Standard
 \begin_inset Formula 
 \[
-\tau(t)=\mu_{\tau}+\theta\sigma_{\tau}\sin\left(\frac{2\pi t}{365}\right)+\epsilon_{t},\text{where }\epsilon_{t}\sim\mathcal{N}(0,\sigma\sqrt{1-\frac{\theta^{2}}{2}})
+\tau(t)=\mu_{\tau}+\theta\sigma_{\tau}\sin\left(\frac{2\pi t}{365}\right)+\epsilon_{t},\text{where }\epsilon_{t}\sim\mathcal{N}(0,\sigma_{\tau}\sqrt{1-\frac{\theta^{2}}{2}})
 \]
 
 \end_inset
 
+
+\change_deleted 274868703 1522400568
+
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+What is 
+\begin_inset Formula $\sigma_{T}$
+\end_inset
+
+?
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
 
 \end_layout
 
@@ -2261,7 +1797,15 @@ where
 \end_inset
 
  indicates the relative proportion of variance due to the seasonal signal
- as opposed to white noise.
+ as opposed to white noise
+\change_inserted 274868703 1522400677
+ and 
+\begin_inset Formula $\sigma_{\tau}$
+\end_inset
+
+ is the standard deviation of the white noise
+\change_unchanged
+.
  When 
 \begin_inset Formula $\theta=0$
 \end_inset
@@ -2295,6 +1839,41 @@ Note this signal setup corresponds to a case where we want to compare the
  the energy content of the signal because the seasonal forcing in the field
  would increase the energy content.
  
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+Why?
+\change_inserted 274868703 1522399737
+ C : I think we meant that the 'field
+\begin_inset Quotes erd
+\end_inset
+
+ forcing may have a larger seasonal amplitude than the 'lab' one.
+ However, if we consider only the standard deviation, it is also around
+ 5K in field condition (Teychan's water temperature), it's just not distributed
+ the same.
+ We need to talk about it again.
+ 
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -2335,20 +1914,15 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Comparison of temperatures with different values of 
-\begin_inset ERT
-status open
+Comparison of temperatures with different values of
+\change_inserted 274868703 1522399501
+ 
+\change_unchanged
 
-\begin_layout Plain Layout
-
-$
-\backslash
-theta$
-\end_layout
-
+\begin_inset Formula $\theta$
 \end_inset
 
-
+ 
 \end_layout
 
 \end_inset
@@ -2366,6 +1940,7 @@ First measures of stability can be taken from
 \begin_inset CommandInset citation
 LatexCommand citet
 key "sakavara_lumpy_2018"
+literal "true"
 
 \end_inset
 
@@ -2373,8 +1948,8 @@ key "sakavara_lumpy_2018"
  during a cycle as measures of convergence (but we should note that they
  have a deterministic model).
  A first visual check can therefore be useful.
- The coefficient of variation of the total biomass can also be used (suggested
- by Fred).
+ The coefficient of variation of the total biomass over one year can also
+ be used (suggested by Fred).
  
 \end_layout
 
@@ -2388,6 +1963,7 @@ The model run was first launched with
 \begin_inset CommandInset citation
 LatexCommand citet
 key "scranton_coexistence_2016"
+literal "true"
 
 \end_inset
 
@@ -2395,18 +1971,66 @@ key "scranton_coexistence_2016"
  process stable in distribution, but they don't justify it with convergence
  criteria, hence we topped up the time necessary due to long transients
  in most seasonal models
+\change_inserted 274868703 1522401335
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "vesipa_impact_2017"
+literal "false"
+
+\end_inset
+
+ 
+\change_unchanged
+
 \begin_inset Foot
 status open
 
 \begin_layout Plain Layout
-F: I think Alix will be able to add a REF on that later
+F: I think Alix will be able to add a REF on that later A: I would say Vesipa
+ & Ridolfi 2017 in J.
+ Theor.
+ Biol.
+ (
+\begin_inset Quotes eld
+\end_inset
+
+Impact of seasonal forcing on reactive ecological systems
+\begin_inset Quotes erd
+\end_inset
+
+) which summerises cases of transient growth.
+
+\change_inserted 274868703 1522401239
+ C: This paper is only determinist, right?
+\change_unchanged
+
 \end_layout
 
 \end_inset
 
 .
- A seasonal signal may also lead to a shorter burn-inthough - we will consider
- this later.
+ A seasonal signal may also lead to a shorter burn-inthough
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Why?
+\change_inserted 274868703 1522400892
+ This is only hypothetical but I would think that decreasing the standard
+ deviation of the noise and increasing the 'regularity' of the signal would
+ stabilize the system: I'm not comparing a system with season to a system
+ without season, but differences in the noise, which, I assume, would change
+ the burn-in.
+ BUT It needs to be tested.
+ 
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+ - we will consider this later.
  However, with these parameters, we can see no clear sign of convergence
  on Fig.
  
@@ -2473,18 +2097,7 @@ name "fig:Number-of-extant"
 
 \begin_layout Standard
 We also launched the same model with 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-$
-\backslash
-theta=
-\backslash
-sqrt{2}$
-\end_layout
-
+\begin_inset Formula $\theta=\sqrt{2}$
 \end_inset
 
  to see if we could reach convergence when no noise can modify the dynamics.
@@ -2530,32 +2143,13 @@ status open
 
 \begin_layout Plain Layout
 Number of extant species (left) and maximum biomass over a cycle, using
- a purely seasonal signal
-\change_inserted 274868703 1519812230
- (right).
+ a purely seasonal signal (right).
  Spikes in species dynamics can be found during the burn-in of the model
  run, such as the one shown in violet on the right-hand side of the panel.
-
-\change_unchanged
  
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:Number-of-extant-1"
-
-\end_inset
-
-
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-F: what's the violet spike? That may require some explanation in this figure.
-
-\change_deleted 274868703 1519810686
- 
-\change_unchanged
-
-\end_layout
 
 \end_inset
 
@@ -2573,28 +2167,24 @@ F: what's the violet spike? That may require some explanation in this figure.
 \end_layout
 
 \begin_layout Standard
-
-\change_inserted 274868703 1519812406
 In addition to these experiments, we launched a longer simulation for a
- model with 
-\begin_inset ERT
-status open
+ model with
+\change_inserted 274868703 1522399602
+ 
+\change_unchanged
 
-\begin_layout Plain Layout
-
-\change_inserted 274868703 1519811209
-
-$
-\backslash
-theta=0$
-\end_layout
-
+\begin_inset Formula $\theta=0$
 \end_inset
 
- and realized the 5000 time steps used by 
+
+\change_deleted 274868703 1522399610
+  
+\change_unchanged
+and realized the 5000 time steps used by 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "scranton_coexistence_2016"
+literal "true"
 
 \end_inset
 
@@ -2614,8 +2204,6 @@ reference "fig:Number-of-extant-2"
 \end_layout
 
 \begin_layout Standard
-
-\change_inserted 274868703 1519812181
 \begin_inset Float figure
 wide false
 sideways false
@@ -2623,8 +2211,6 @@ status open
 
 \begin_layout Plain Layout
 \align center
-
-\change_inserted 274868703 1519812222
 \begin_inset Graphics
 	filename graphe/species_richness_15000y_theta0.png
 	width 45text%
@@ -2639,32 +2225,22 @@ status open
 \end_inset
 
 
-\change_unchanged
-
 \end_layout
 
 \begin_layout Plain Layout
-
-\change_inserted 274868703 1519812181
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-
-\change_inserted 274868703 1519812316
 Number of extant species (left) and coefficient of variation of the whole
  biomass over a year (right)
 \begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
-
-\change_inserted 274868703 1519812388
 I know this does not really make sense when we don't have a seasonal signal
  but we could expect this CV to stabilize over long period of time.
  I could also compute it over a rolling window to smooth things but, seeing
  the results here, I'm not sure it would be really better
-\change_unchanged
-
 \end_layout
 
 \end_inset
@@ -2677,25 +2253,15 @@ name "fig:Number-of-extant-2"
 \end_inset
 
 
-\change_unchanged
-
 \end_layout
 
 \end_inset
 
 
-\change_unchanged
-
-\end_layout
-
-\begin_layout Plain Layout
-
 \end_layout
 
 \end_inset
 
-
-\change_unchanged
 
 \end_layout
 
@@ -2703,39 +2269,16 @@ name "fig:Number-of-extant-2"
 Discussion of the SV16 model and possible variants
 \end_layout
 
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-
-\change_deleted 274868703 1519812855
-I left it here but think this could be merged with your intro // F: No this
- is right here
-\change_unchanged
-
-\end_layout
-
-\end_inset
-
-
-\change_inserted 274868703 1519911913
-
-\end_layout
-
 \begin_layout Paragraph*
-
-\change_inserted 274868703 1519911935
 A few words about the storage effect
 \end_layout
 
 \begin_layout Standard
-
-\change_inserted 274868703 1519986087
 The concept of storage effect emerged in the 1980's 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "chesson_environmental_1981,warner_coexistence_1985,chesson_community_1988"
+literal "true"
 
 \end_inset
 
@@ -2773,12 +2316,11 @@ where
 status open
 
 \begin_layout Plain Layout
-
-\change_inserted 274868703 1519984887
 In 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "ellner_how_2016"
+literal "true"
 
 \end_inset
 
@@ -2795,8 +2337,6 @@ key "ellner_how_2016"
 \end_inset
 
 , respectively), which I am not considering here
-\change_unchanged
-
 \end_layout
 
 \end_inset
@@ -2806,6 +2346,7 @@ key "ellner_how_2016"
 \begin_inset CommandInset citation
 LatexCommand citep
 key "ellner_how_2016"
+literal "true"
 
 \end_inset
 
@@ -2820,6 +2361,7 @@ key "ellner_how_2016"
 \begin_inset CommandInset citation
 LatexCommand citet
 key "barabas_community_2012"
+literal "true"
 
 \end_inset
 
@@ -2929,9 +2471,11 @@ likelihood
 
 \begin_layout Standard
 
-\change_inserted 274868703 1519985968
+\series bold
 HERE, I'd like to add the different formulations of the LV model by Ellner
  and Barabas, comparing to ours.
+
+\series default
  
 \end_layout
 
@@ -2940,6 +2484,7 @@ We noticed that the formulation of LV according to
 \begin_inset CommandInset citation
 LatexCommand citet
 key "scranton_coexistence_2016"
+literal "true"
 
 \end_inset
 
@@ -2968,6 +2513,7 @@ This means that growth rates and strengths of competitive interactions covary
 \begin_inset CommandInset citation
 LatexCommand citet
 key "barabas_community_2012"
+literal "true"
 
 \end_inset
 
@@ -2975,6 +2521,7 @@ key "barabas_community_2012"
 \begin_inset CommandInset citation
 LatexCommand citet
 key "kremer_species_2017"
+literal "true"
 
 \end_inset
 
@@ -2988,6 +2535,7 @@ The SV16 model actually contrasts with the derivation of competition in
 \begin_inset CommandInset citation
 LatexCommand citet
 key "scranton_coexistence_2016"
+literal "true"
 
 \end_inset
 
@@ -3103,25 +2651,63 @@ If we extend this case to a fluctuating resource supply
 
 \begin_layout Standard
 In this case, competition and growth do not covary.
+ Such a model is built on the hypothesis that changes in effective competition
+ only depend on species densities which respond to the temporal forcing
+ embedded in the intrinsic growth rates.
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+A: However, I think the relevance of this model depends on which type of
+ competition we consider.
+ In the case of exploitative competition, this mass-action effect doesn't
+ account for the amount of resources on which consumers feed.
+ A constant 
+\begin_inset Formula $c_{j}$
+\end_inset
+
+ could also be read as reflecting a constant amount of resources which doesn't
+ match the changes in 
+\begin_inset Formula $R_{in}(\tau)$
+\end_inset
+
+.
+ In the case of interference competition, this implementation would make
+ more sense.
+ An increase in resource abundance supports more consumers, and their competitio
+n will increase only because they interact more directly by preventing each
+ other's consumption of the same resource.
+ In this case, the amount of available resource is not the cause of competition,
+ but the density of competitors.
+ Well...
+ I guess that can still depend on whether the resource is rare.
+ So I'm not a big fan of this phenomenological implementation of seasonality.
+\end_layout
+
+\end_inset
+
  This also seems to be the case in 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "sakavara_lumpy_2018"
+literal "true"
 
 \end_inset
 
- who considered only seasonal forcing (at least, growth rates and resources
- do not covary explicitly).
+ who considered only seasonal forcing in resources' abundances (at least,
+ growth rates and resources do not covary explicitly).
  However, 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "sakavara_lumpy_2018"
+literal "true"
 
 \end_inset
 
- consider a more complex model with two resources so any comparison is for
- now tentative.
- 
+ consider a mechanistic model of competition with two resources shared by
+ many consummers so any comparison is for now tentative.
+ Indeed, they explicit the dynamics of resources which only the growth rates
+ embed some seasonal variability.
 \end_layout
 
 \begin_layout Standard
@@ -3198,19 +2784,13 @@ White noise (all frequency components)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_deleted 274868703 1519813757
-Scranton and Vasseur 2016
-\change_inserted 274868703 1519813757
-
 \begin_inset CommandInset citation
 LatexCommand citet
 key "scranton_coexistence_2016"
+literal "true"
 
 \end_inset
 
-
-\change_unchanged
 
 \end_layout
 
@@ -3221,24 +2801,16 @@ key "scranton_coexistence_2016"
 
 \begin_layout Plain Layout
 LV with random growth rates
-\change_inserted 274868703 1519812643
-
 \begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
-
-\change_inserted 274868703 1519812711
 Maybe we should say here that growth rates are indeed 'random', but synchronized
 , right?
-\change_unchanged
-
 \end_layout
 
 \end_inset
 
-
-\change_unchanged
 
 \end_layout
 
@@ -3259,20 +2831,13 @@ Seasonal signal (one low-frequency component)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_deleted 274868703 1519841104
-Barabas et al.
- 2016 [?]
-\change_inserted 274868703 1519841111
-
 \begin_inset CommandInset citation
 LatexCommand citet
 key "barabas_community_2012"
+literal "true"
 
 \end_inset
 
-
-\change_unchanged
 
 \end_layout
 
@@ -3315,19 +2880,16 @@ Preliminary simulation setup (limit cases) [we'll add mixtures later, Alix
 \end_layout
 
 \begin_layout Standard
-
-\change_inserted 274868703 1519840532
 When growth rates do no affect the values of competition coefficients, we
  can consider different parameterization of the competition coefficients:
 \end_layout
 
 \begin_layout Enumerate
-
-\change_inserted 274868703 1519900162
 competition strengths are based on the niche model (
 \begin_inset CommandInset citation
 LatexCommand citet
 key "ashby_competing_2017"
+literal "true"
 
 \end_inset
 
@@ -3357,25 +2919,34 @@ key "ashby_competing_2017"
 
 .
  
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 274868703 1522401403
+A: 
+\change_unchanged
+But in this later case, growth rates DO affect the competition rates, don't
+ they?
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Enumerate
-
-\change_inserted 274868703 1519986095
 competition strengths are fixed, as in SV16, but with a difference between
  inter and intra-species competition 
 \begin_inset Foot
 status collapsed
 
 \begin_layout Plain Layout
-
-\change_inserted 274868703 1519840774
 We have to elaborate on the fact that models such as SV or Barabas, which
  do not differentiate coefficient values for the two types of interactions,
  are less likely to be stable than the ones with higher intra-species competitio
 n.
-\change_unchanged
-
 \end_layout
 
 \end_inset
@@ -3401,6 +2972,7 @@ n.
 \begin_inset CommandInset citation
 LatexCommand citet
 key "barraquand_weak_2017"
+literal "true"
 
 \end_inset
 
@@ -3410,11 +2982,11 @@ status open
 
 \begin_layout Plain Layout
 
-\change_inserted 274868703 1519986115
+\change_inserted 274868703 1522401407
+C: 
+\change_unchanged
 This was launched, simulations are saved, I didn't have the time to analyze
  them yet.
-\change_unchanged
-
 \end_layout
 
 \end_inset
@@ -3423,8 +2995,6 @@ This was launched, simulations are saved, I didn't have the time to analyze
 \end_layout
 
 \begin_layout Enumerate
-
-\change_inserted 274868703 1519901159
 competition strengths are chosen as 
 \begin_inset Formula $\alpha_{ij}\sim N(\frac{1}{\rho}\alpha_{ii},\sigma_{\alpha})$
 \end_inset
@@ -3467,23 +3037,49 @@ where
 \end_inset
 
 
-\change_unchanged
-
 \end_layout
 
 \begin_layout Standard
-For future work:
-\change_deleted 274868703 1519810096
- 
-\change_unchanged
- the number of species could be increased to make the proportion of extant
- species more relevant.
+For future work: the number of species could be increased to make the proportion
+ of extant species more relevant.
  In this case, if we don't want to increase the niche overlap, and therefore
  the competition, we should decrease A, the niche breadth.
  This would mean that we have more specialist species.
- We could also vary A to have a combination of generalists and specialists
- and see the effect on persistence.
+ We could also allow species to have different A so as to consider communities
+ with various distributions of niche breadths and see the effect on persistence.
  
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+A: To me, this depends very much on what we consider to be the cause of
+ species competition.
+ To my understanding, this study focuses on the effect of a seasonal environment
+ on species coexistence.
+ In the model, this seasonal environment affects directly and differentially
+ the intrinsic growth rates and competition rates of species because of
+ their various thermal optima.
+ This may be personal taste, but my feeling is that introducing variables
+ values of 
+\begin_inset Formula $\alpha_{ij}$
+\end_inset
+
+would generate more variability in the results and blurr what is due to
+ seasonality and thermal optimum.
+ Another way to consider this matter would be to answer the question 
+\begin_inset Quotes eld
+\end_inset
+
+Why do consummers have different competition rates?
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -3492,16 +3088,12 @@ Ecological remarks
 
 \begin_layout Section
 Notes on the algorithm
-\change_inserted 274868703 1519825221
-
 \begin_inset CommandInset label
 LatexCommand label
 name "sec:Notes-algorithm"
 
 \end_inset
 
-
-\change_unchanged
 
 \end_layout
 
@@ -3517,6 +3109,7 @@ We should acknowledge the fact that we're trying to keep the same algorithm
 \begin_inset CommandInset citation
 LatexCommand citet
 key "scranton_coexistence_2016"
+literal "true"
 
 \end_inset
 
@@ -3927,24 +3520,16 @@ In the ode integration function, 50% of the time is required only to load
  if we want to save stochastic temperatures ; and I'm not sure computing
  maxium possible growth rates for each time step would be more effective.
  Should be tried, though
-\change_inserted 274868703 1519986134
-
 \begin_inset Foot
 status open
 
 \begin_layout Plain Layout
-
-\change_inserted 274868703 1519986189
 Tried: time spent on SV16 integration was 50% higher.
  My first implementation was the best one so far.
-\change_unchanged
-
 \end_layout
 
 \end_inset
 
-
-\change_unchanged
 .
 \end_layout
 
@@ -3959,12 +3544,23 @@ We could also save b computation for once and load it, but this means we
 \begin_inset CommandInset citation
 LatexCommand citet
 key "scranton_coexistence_2016"
+literal "true"
 
 \end_inset
 
  use 5000 time steps as the necessary time for the model to stabilize.
  However, we can expect the model to stabilize more quickly with seasonality
- (this will be a necessary check before lauching simulations).
+ (this will be a necessary check before lauching simulations)
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+A: I had the opposite trend with deterministic models.
+\end_layout
+
+\end_inset
+
+.
  
 \end_layout
 
@@ -3974,8 +3570,18 @@ ion of discontinuities in the dynamics of the community.
  This can be done in 3 ways using Matlab: using the event function (but
  events do not depend on the dynamics of the community, so are not really
  appropriate for this), integrating on segments of the total time span,
- stopping for every species addition or deletion (our choice, until now),
- or introducing the species for a given time without stopping the simulation
+ stopping for every species addition or deletion (our choice, until now
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+A: I think this is a the neatest, because of discontinuities as you underline
+ it.
+\end_layout
+
+\end_inset
+
+), or introducing the species for a given time without stopping the simulation
  (which would require the model to test each time step and compare it to
  the invasion or removal time sequence set in the main program: this is
  too expensive for what we want).

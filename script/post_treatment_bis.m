@@ -5,14 +5,14 @@ ywindow=5;
 thresh_min=10^(-6);
 alpha=0.001;
 
-adir='./output_simulation/season_cos/';
+adir='./output_simulation/SV_same_temp/';
 allfiles=dir(adir);
 fileNames = {allfiles(~[allfiles.isdir]).name};
-
 
 a_median=zeros(1,length(fileNames));
 %for f=1:1
     for f=1:length(fileNames)
+        if(size(regexp(fileNames{f},'codeversion_20180228_theta0_competitonintrahigherthanextra.mat'))>0)
     load(strcat([adir,fileNames{f}]));
     S=size(youtbis,2); %number of species
     ymax=floor(toutbis(end,1)/365)-ceil(ywindow/2)-toutbis(1,1)/365; %année max-3 to be able to compute the average
@@ -48,18 +48,21 @@ for s1=sbis
     sp=sp+1;
     plot(1:yspan,synchrony(:,s1),'color',c(sp,:));
 end
+       
 hold off;
 
 sp=0;
 figure; hold on;
+fileNames{f}
 for s1=sbis
     sp=sp+1;
-    ymean=mean(youtbis(ymin*365:ymax*365,s1));
+    s1
+    ymean=mean(youtbis(ymin*365:ymax*365,s1))
    bar(tau_opt(s1)-273,ymean,0.1,'FaceColor',c(sp,:));
    set(gca,'yscale','log')
    title(strcat([num2str(f),' : ',fileNames{f}]))
   % xlim([18 23])
 end;
 hold off;
-    
+        end;
 end
