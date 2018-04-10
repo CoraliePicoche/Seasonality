@@ -1,12 +1,14 @@
 %%% Model of Scranton & Vasseur 2016 (Theor Ecol.)
 %%% Developped by Picoche & Barraquand 2017
 %%% Same structure as Main, but with two teaks: we take the environmental
-%%% conditions used in previous simulations (1) to model the dynamics with all things equal, but without
-%%% competition (2)
+%%% conditions used in previous simulations (1) to model the dynamics with
+%%% all things equal, but with no effect of the temperature on interaction
+%%% strengths (2)
 
-dir_output="SV_same_temp";
+close all; clear all; clc;
+dir_output="no_forced_competition";
 
-global S tau0 mu_tau sigma_tau tau_min tau_max a_r_tau0 E_r k A m thresh_min tspan tau b tau_opt%r
+global S tau0 mu_tau sigma_tau tau_min tau_max a_r_tau0 E_r k A m thresh_min tspan tau b tau_opt r
 
 S=60 %number of species (60 for SV)
 
@@ -30,15 +32,15 @@ k=8.6173324*10^(-5); %Boltzmann's constant in eV.K-1
 
 %Other
 alpha_compet=0.001; %area/kg (SV) Strength of competition for all individuals
-A=ones(S,S)*alpha_compet+diag(ones(60,1)*alpha_compet*9); %interaction matrix
+A=ones(S,S)*alpha_compet;%+diag(ones(60,1)*alpha_compet*9); %interaction matrix
 m=15/365; %mortality rate SV (kg/(kg*year))
 thresh_min=10^(-6); %species considered extinct below this biomass
 yspan=200;
 ysave=500;
 
-for iter=1:1
+for iter=2:10
     iter
-    load(strcat('./output_simulation/',dir_output,'/','iter',num2str(iter),'_codeversion_20180228_theta0.mat'))%'toutbis','youtbis','tau_opt','b','tau','nb_species');
+    load(strcat('./output_simulation/SV_same_temp/iter',num2str(iter),'_codeversion_20180228_theta0.mat'));
     %%%%%% Initialize
 % Time resolution
 tstart = 1.0;
@@ -47,20 +49,19 @@ tsampling = (tstop-tstart)+1;
 tspan=linspace(tstart,tstop,tsampling);                        % timespan for the numerical solution
  y0=ones(1,S)*1/(alpha_compet*S);
 
-%     r=zeros(S,length(tau));
-%     for i=1:S
-%         r(i,:)=fun(tau,b(i),tau_opt(i));   
-%     end;
+    r=zeros(S,length(tau));
+     for i=1:S
+         r(i,:)=fun(tau,b(i),tau_opt(i));   
+     end;
     options= odeset('AbsTol',1e-8, 'RelTol',1e-3,'NonNegative',1:60); %NonNegative is necessary and speaking to Alix indicated that Reltol and Absol can be changed quite safely. For
 
-%    [tout,yout] = ode45(@SV16_ode_integration_no_GR_in_competition, tspan , y0,options);       % ode solver
-    [tout,yout] = ode45(@SV16_ode_integration, tspan , y0,options);       % ode solver
+    [tout,yout] = ode45(@SV16_ode_integration_no_GR_in_competition, tspan , y0,options);       % ode solver
      imin=tstop-ysave*365+1;
     imax=tstop;
 
     toutbis=tout(imin:imax);
     youtbis=yout(imin:imax,:);
     nb_species=sum(yout'>thresh_min);
-    save(strcat('./output_simulation/',dir_output,'/','iter',num2str(iter),'_codeversion_20180228_theta0_competitonintrahigherthanextra_testwithrinode.mat'),'toutbis','youtbis','tau_opt','b','tau','nb_species');
+    save(strcat('./output_simulation/',dir_output,'/','iter',num2str(iter),'_codeversion_20180228_theta0_noforcedcompetition.mat'),'toutbis','youtbis','tau_opt','b','tau','nb_species');
 end;
     

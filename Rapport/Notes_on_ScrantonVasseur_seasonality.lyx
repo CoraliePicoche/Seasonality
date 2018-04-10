@@ -1704,12 +1704,22 @@ reference "fig:Effect-of-knocking"
  not restricted to its clump (effect of stochasticity?
 \change_inserted 274868703 1522399076
 )
-\change_unchanged
+\change_deleted 274868703 1523342115
 
 \end_layout
 
 \begin_layout Section
 Implementing a seasonal variation of temperature
+\change_inserted 274868703 1523346568
+
+\end_layout
+
+\begin_layout Paragraph*
+
+\change_inserted 274868703 1523346578
+Description of the forcings
+\change_unchanged
+
 \end_layout
 
 \begin_layout Standard
@@ -1839,6 +1849,11 @@ Note this signal setup corresponds to a case where we want to compare the
  the energy content of the signal because the seasonal forcing in the field
  would increase the energy content.
  
+\end_layout
+
+\end_inset
+
+
 \begin_inset Note Comment
 status open
 
@@ -1855,25 +1870,13 @@ status open
 \uwave off
 \noun off
 \color none
-Why?
-\change_inserted 274868703 1522399737
- C : I think we meant that the 'field
-\begin_inset Quotes erd
-\end_inset
-
- forcing may have a larger seasonal amplitude than the 'lab' one.
+Why? C : I think we meant that the 'field' forcing may have a larger seasonal
+ amplitude than the 'lab' one.
  However, if we consider only the standard deviation, it is also around
  5K in field condition (Teychan's water temperature), it's just not distributed
  the same.
  We need to talk about it again.
  
-\change_unchanged
-
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \end_inset
@@ -1933,6 +1936,12 @@ Comparison of temperatures with different values of
 \end_inset
 
 
+\end_layout
+
+\begin_layout Paragraph
+
+\change_inserted 274868703 1523346612
+Simulation convergence
 \end_layout
 
 \begin_layout Standard
@@ -2262,6 +2271,108 @@ name "fig:Number-of-extant-2"
 
 \end_inset
 
+
+\end_layout
+
+\begin_layout Paragraph
+
+\change_inserted 274868703 1523347590
+Dynamics of a model with a purely seasonal signal
+\end_layout
+
+\begin_layout Standard
+
+\change_inserted 274868703 1523346713
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\change_inserted 274868703 1523347525
+\begin_inset Graphics
+	filename graphe/synchrony_purely_seasonal.png
+	lyxscale 25
+	width 45text%
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename graphe/mean_biomass_purely_seasonal.png
+	lyxscale 25
+	width 45text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+
+\change_inserted 274868703 1523347548
+\begin_inset Graphics
+	filename graphe/dynamics_season_only.png
+	lyxscale 59
+	width 91text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\change_inserted 274868703 1523346713
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\change_inserted 274868703 1523348538
+Synchrony of each species measured as the weighted correlations between
+ species and its heterospecific competitors (left) and species density averaged
+ over the last 200 years of dynamics, arranged on the x-axis by thermal
+ optima.
+ The dynamics of the three extant species for the last two years of simulation
+ is shown at the bottom of the figure.
+ Temperature is a purely seasonal signal.
+ There were 60 species at the beginning of the simulation.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Synchrony-of-each-1"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\change_inserted 274868703 1523347108
+Using a purely seasonal temperature (
+\begin_inset Formula $\theta=\sqrt{2}$
+\end_inset
+
+ ), we can see that only three species survive at the end of the simulation,
+ with extrema of optimal temperatures (15.8°C and 25.0°C, corresponding to
+ indices 6 and 60 in the increasing range of optimal temperatures) and an
+ average optima (20.8°C, corresponding to index 35).
+ The average species has the lowest average biomass.
+ 
+\change_unchanged
 
 \end_layout
 
@@ -2717,10 +2828,496 @@ We should therefore check if the persistence and dynamics of the species
  when the temporal partitioning of the niche, due to the storage effect,
  is removed from the model.
  
+\change_inserted 274868703 1523350638
+
+\end_layout
+
+\begin_layout Paragraph
+
+\change_inserted 274868703 1523350651
+A first 'naive' analysis
+\end_layout
+
+\begin_layout Standard
+
+\change_inserted 274868703 1523350900
+The most straightforward way of removing the forcing on growth rates is
+ to use exactly the same model and set of parameters as LV, re-writing eq.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:modelLV"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ as 
+\end_layout
+
+\begin_layout Standard
+
+\change_inserted 274868703 1523354642
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\begin_inset Formula 
+\begin{equation}
+\frac{dN_{i}}{dt}=N_{i}\left(r_{i}(\tau)-\sum_{j=1}^{S}\alpha_{ij}N_{j}\right)-mN_{i}\label{eq:eqLV_noforcecompetition}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+
+\change_inserted 274868703 1523354642
+Growth rate analysis
+\end_layout
+
+\begin_layout Standard
+
+\change_inserted 274868703 1523354642
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\change_inserted 274868703 1523354642
+\begin_inset Graphics
+	filename graphe/growth_rates_theta0.png
+	lyxscale 50
+	width 95text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\change_inserted 274868703 1523354642
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\change_inserted 274868703 1523354705
+Boxplots of growth rates maximum values, standard deviation and mean value
+ over 10 different simulations for 60 species in the standard SV model.
+ Boxplots are seen as simple lines in the plot because values are similar
+ for a given species.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+
+\change_inserted 274868703 1523342236
+Effect of competitive interactions
+\end_layout
+
+\begin_layout Standard
+
+\change_inserted 274868703 1523350908
+However, we can n
+\change_unchanged
+
+\end_layout
+
+\begin_layout Standard
+
+\change_inserted 274868703 1523342251
+When growth rates do no affect the values of competition coefficients ,
+ we can consider different parameterization of the competition coefficients:
+\end_layout
+
+\begin_layout Enumerate
+
+\change_inserted 274868703 1523342236
+competition strengths are based on the niche model (
+\begin_inset CommandInset citation
+LatexCommand citet
+key "ashby_competing_2017"
+literal "true"
+
+\end_inset
+
+).
+ The general formulation of the strength of competition exerted by species
+ j on species i is 
+\begin_inset Formula $\alpha_{ij}=\frac{\int U_{i}(\boldsymbol{z})U_{j}(\boldsymbol{z})d\boldsymbol{z}}{\int U_{i}(\boldsymbol{z})^{2}d\boldsymbol{z}}$
+\end_inset
+
+ where 
+\begin_inset Formula $U_{i}(\boldsymbol{z})$
+\end_inset
+
+ is the resource utilization function of the (potentially multidimensional)
+ resource 
+\begin_inset Formula $\boldsymbol{z}$
+\end_inset
+
+ for species 
+\begin_inset Formula $i$
+\end_inset
+
+.
+ A first step would be to use 
+\begin_inset Formula $U_{i}(\boldsymbol{z})=r_{i}(\tau)$
+\end_inset
+
+.
+ 
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 274868703 1523342236
+A: But in this later case, growth rates DO affect the competition rates,
+ don't they?
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\change_inserted 274868703 1523342236
+competition strengths are fixed, as in SV16, but with a difference between
+ inter and intra-species competition 
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+
+\change_inserted 274868703 1523342236
+We have to elaborate on the fact that models such as SV or Barabas, which
+ do not differentiate coefficient values for the two types of interactions,
+ are less likely to be stable than the ones with higher intra-species competitio
+n.
+\end_layout
+
+\end_inset
+
+.
+ In this case, 
+\begin_inset Formula $\alpha_{ii}=\rho\alpha_{ij}$
+\end_inset
+
+ with 
+\begin_inset Formula $|\rho|>1$
+\end_inset
+
+ A first step would be to use 
+\begin_inset Formula $\rho=10$
+\end_inset
+
+ and 
+\begin_inset Formula $\forall i,\forall j,i\neq j,\alpha_{ij}=\alpha=0.001$
+\end_inset
+
+, (
+\begin_inset CommandInset citation
+LatexCommand citet
+key "barraquand_weak_2017"
+literal "true"
+
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Enumerate
+
+\change_inserted 274868703 1523342357
+competition strengths are chosen as 
+\begin_inset Formula $\alpha_{ij}\sim N(\frac{1}{\rho}\alpha_{ii},\sigma_{\alpha})$
+\end_inset
+
+, with 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula $\sigma_{\alpha}=\alpha\bar{\sigma_{r}}$
+\end_inset
+
+where 
+\begin_inset Formula $\bar{\sigma_{r}}$
+\end_inset
+
+ is the median value of the standard deviation of 
+\begin_inset Formula $r_{i}(\tau)$
+\end_inset
+
+ over all species 
+\begin_inset Formula $i$
+\end_inset
+
+.
+ We can keep 
+\begin_inset Formula $\rho=10$
+\end_inset
+
+ and 
+\begin_inset Formula $\forall i,\alpha_{ii}=\rho\alpha=0.01.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\change_inserted 274868703 1523343303
+We first considered the second case, where intra-group coefficients of interacti
+ons are ten-fold higher than inter-group coefficients.
+ We used these values directly in the first model (ie., growth rates do affect
+ competition coefficients).
+ Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Convergence-criteria-for"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ is representative of the 10 simulations we launched.
+ The coefficient of variation of the total biomass over a year remains around
+ 0.5 and the total number of extant species is the same at the beginning
+ and at the end of the simulations.
+\end_layout
+
+\begin_layout Standard
+
+\change_inserted 274868703 1523342466
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\change_inserted 274868703 1523342485
+\begin_inset Graphics
+	filename graphe/convergence_criteria_withhigherintra.png
+	width 80text%
+
+\end_inset
+
+
+\change_unchanged
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+
+\change_inserted 274868703 1523342466
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\change_inserted 274868703 1523342505
+Convergence criteria for a simulation where intra-group coefficients are
+ higher than inter-group coefficients
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Convergence-criteria-for"
+
+\end_inset
+
+
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\change_inserted 274868703 1523343974
+We can see on Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Synchrony-of-each-case2"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ that species tend to synchronize according to their thermal optima, with
+ absolute values remaining low when compared with previous simulations with
+ the same interaction coefficients.
+ Results are similar for all simulations: synchrony values remain between
+ -0.01 and 0.01 and mean biomass does not exceed 10 for any species, but does
+ not fall below 2.
+ The most striking features of these simulations is the persistence of all
+ species, with lower average biomass and no clumps formed.
+ It seems that increasing the competition within groups lead to a more even
+ and diverse community.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\change_inserted 274868703 1523342619
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\change_inserted 274868703 1523345438
+\begin_inset Graphics
+	filename graphe/synchrony_iter2.png
+	lyxscale 25
+	width 45text%
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename graphe/mean_biomass_iter2.png
+	lyxscale 25
+	width 45text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+
+\change_inserted 274868703 1523344758
+\begin_inset Graphics
+	filename graphe/synchrony_high_intragroup_competition_iter2.png
+	lyxscale 25
+	width 45text%
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename graphe/mean_biomass_high_intragroup_competition_iter2.png
+	lyxscale 25
+	width 45text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\change_inserted 274868703 1523342619
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\change_inserted 274868703 1523345504
+Synchrony of each species measured as the weighted correlations between
+ species and its heterospecific competitors (left) and species density averaged
+ over the last 200 years of dynamics (right), arranged on the x-axis by
+ thermal optima.
+ Intra-group competition strength is ten times higher than inter-group competiti
+on strength at the bottom whereas all interaction strenghts are the same
+ at the top.
+ Both simulations at the top and bottom share the same environmental forcing.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Synchrony-of-each-case2"
+
+\end_inset
+
+
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
 Simulation plan
+\change_inserted 274868703 1523342078
+
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Simulation-plan"
+
+\end_inset
+
+
+\change_unchanged
+
 \end_layout
 
 \begin_layout Standard
@@ -2755,7 +3352,21 @@ Type of environmental signal
 \begin_inset Text
 
 \begin_layout Plain Layout
-Seasonal GR and Seasonal Competition
+
+\change_deleted 274868703 1523347658
+Seasonal
+\change_inserted 274868703 1523347667
+Forced
+\change_unchanged
+ GR and 
+\change_deleted 274868703 1523347670
+Seasonal
+\change_unchanged
+ 
+\change_inserted 274868703 1523347673
+Forced 
+\change_unchanged
+Competition
 \end_layout
 
 \end_inset
@@ -2764,7 +3375,13 @@ Seasonal GR and Seasonal Competition
 \begin_inset Text
 
 \begin_layout Plain Layout
-Seasonal GR
+
+\change_deleted 274868703 1523347675
+Seasonal
+\change_inserted 274868703 1523347676
+Forced
+\change_unchanged
+ GR
 \end_layout
 
 \end_inset
@@ -2791,6 +3408,10 @@ literal "true"
 
 \end_inset
 
+
+\change_inserted 274868703 1523350603
+ [OK]
+\change_unchanged
 
 \end_layout
 
@@ -2839,6 +3460,10 @@ literal "true"
 \end_inset
 
 
+\change_inserted 274868703 1523350605
+ [OK]
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -2880,11 +3505,15 @@ Preliminary simulation setup (limit cases) [we'll add mixtures later, Alix
 \end_layout
 
 \begin_layout Standard
+
+\change_deleted 274868703 1523342234
 When growth rates do no affect the values of competition coefficients, we
  can consider different parameterization of the competition coefficients:
 \end_layout
 
-\begin_layout Enumerate
+\begin_layout Standard
+
+\change_deleted 274868703 1523342234
 competition strengths are based on the niche model (
 \begin_inset CommandInset citation
 LatexCommand citet
@@ -2936,7 +3565,9 @@ But in this later case, growth rates DO affect the competition rates, don't
 
 \end_layout
 
-\begin_layout Enumerate
+\begin_layout Standard
+
+\change_deleted 274868703 1523342234
 competition strengths are fixed, as in SV16, but with a difference between
  inter and intra-species competition 
 \begin_inset Foot
@@ -2965,7 +3596,7 @@ n.
 \end_inset
 
  and 
-\begin_inset Formula $\forall i,\forall j,\alpha_{ij}=\alpha=0.001$
+\begin_inset Formula $\forall i,\forall j,i\neq j,\alpha_{ij}=\alpha=0.001$
 \end_inset
 
 , (
@@ -2994,7 +3625,9 @@ This was launched, simulations are saved, I didn't have the time to analyze
 
 \end_layout
 
-\begin_layout Enumerate
+\begin_layout Standard
+
+\change_deleted 274868703 1523342234
 competition strengths are chosen as 
 \begin_inset Formula $\alpha_{ij}\sim N(\frac{1}{\rho}\alpha_{ii},\sigma_{\alpha})$
 \end_inset
@@ -3036,6 +3669,8 @@ where
 \begin_inset Formula $\forall i,\alpha_{ii}=\rho\alpha=0.01.$
 \end_inset
 
+
+\change_unchanged
 
 \end_layout
 

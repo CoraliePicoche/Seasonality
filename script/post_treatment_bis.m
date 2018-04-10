@@ -10,6 +10,7 @@ allfiles=dir(adir);
 fileNames = {allfiles(~[allfiles.isdir]).name};
 
 a_median=zeros(1,length(fileNames));
+f=1
 %for f=1:1
     for f=1:length(fileNames)
         if(size(regexp(fileNames{f},'codeversion_20180228_theta0_competitonintrahigherthanextra.mat'))>0)
@@ -59,10 +60,12 @@ for s1=sbis
     s1
     ymean=mean(youtbis(ymin*365:ymax*365,s1))
    bar(tau_opt(s1)-273,ymean,0.1,'FaceColor',c(sp,:));
-   set(gca,'yscale','log')
-   title(strcat([num2str(f),' : ',fileNames{f}]))
-  % xlim([18 23])
+ %  set(gca,'yscale','log')
+%   title(strcat([num2str(f),' : ',fileNames{f}]))
+%title('Mean biomass')
+   ylim([150 350])
 end;
+title('Mean biomass')
 hold off;
         end;
 end
