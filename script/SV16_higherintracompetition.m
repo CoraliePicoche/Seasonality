@@ -31,7 +31,10 @@ k=8.6173324*10^(-5); %Boltzmann's constant in eV.K-1
 
 %Other
 alpha_compet=0.001; %area/kg (SV) Strength of competition for all individuals
-A=ones(S,S)*alpha_compet+diag(ones(60,1)*alpha_compet*9); %interaction matrix
+A=ones(S,S)*alpha_compet+diag(ones(60,1)*alpha_compet*3); %interaction matrix
+%intra is 10-fold higher than inter when taking all coefficients into
+%account in Barraquand et al. 2017. But if we take only significant
+%coefficients, it seems closer to 4.
 m=15/365; %mortality rate SV (kg/(kg*year))
 thresh_min=10^(-6); %species considered extinct below this biomass
 yspan=200;
@@ -61,6 +64,6 @@ tspan=linspace(tstart,tstop,tsampling);                        % timespan for th
     toutbis=tout(imin:imax);
     youtbis=yout(imin:imax,:);
     nb_species=sum(yout'>thresh_min);
-    save(strcat('./output_simulation/',dir_output,'/','iter',num2str(iter),'_codeversion_20180228_theta0_competitonintrahigherthanextra_testwithrinode.mat'),'toutbis','youtbis','tau_opt','b','tau','nb_species');
+    save(strcat('./output_simulation/',dir_output,'/','iter',num2str(iter),'_codeversion_20180228_theta0_competitonintrahigherthanextra_only4timeshigher.mat'),'toutbis','youtbis','tau_opt','b','tau','nb_species');
 end;
     

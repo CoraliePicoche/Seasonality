@@ -2834,8 +2834,8 @@ We should therefore check if the persistence and dynamics of the species
 
 \begin_layout Paragraph
 
-\change_inserted 274868703 1523350651
-A first 'naive' analysis
+\change_inserted 274868703 1523374011
+'Naive' simulations
 \end_layout
 
 \begin_layout Standard
@@ -2858,7 +2858,7 @@ noprefix "false"
 
 \begin_layout Standard
 
-\change_inserted 274868703 1523354642
+\change_inserted 274868703 1523374044
 
 \family roman
 \series medium
@@ -2874,7 +2874,7 @@ noprefix "false"
 \color none
 \begin_inset Formula 
 \begin{equation}
-\frac{dN_{i}}{dt}=N_{i}\left(r_{i}(\tau)-\sum_{j=1}^{S}\alpha_{ij}N_{j}\right)-mN_{i}\label{eq:eqLV_noforcecompetition}
+\frac{dN_{i}}{dt}=N_{i}\left(r_{i}(\tau)-\sum_{j=1}^{S}\alpha N_{j}\right)-mN_{i}\label{eq:eqLV_noforcecompetition}
 \end{equation}
 
 \end_inset
@@ -2882,10 +2882,104 @@ noprefix "false"
 
 \end_layout
 
-\begin_layout Paragraph
+\begin_layout Standard
 
-\change_inserted 274868703 1523354642
-Growth rate analysis
+\change_inserted 274868703 1523377484
+We launched 10 simulations.
+ All of them ended with only one species, whose index felt between 32 and
+ 35 with 50% of them being the 33rd species (with thermal optima being 20.42°C,
+ which corresponds to the highest growth rate observed in 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "scranton_coexistence_2016"
+literal "false"
+
+\end_inset
+
+ and in our simulations (Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Boxplots-of-growth"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+
+\change_inserted 274868703 1523377616
+We then weigthed the competion coefficients to follow eq.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:eqLV_noforcecompetition-case2"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\change_inserted 274868703 1523377618
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\begin_inset Formula 
+\begin{equation}
+\frac{dN_{i}}{dt}=N_{i}\left(r_{i}(\tau)-\sum_{j=1}^{S}\bar{r}_{i}(\tau)\alpha N_{j}\right)-mN_{i}\label{eq:eqLV_noforcecompetition-case2}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\change_inserted 274868703 1523377708
+where 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula $\bar{r}_{i}(\tau)$
+\end_inset
+
+ is the mean value of growth rate over the simulation.
+ In this case, a species is more sensitive to competition when it has a
+ higher growth rate, but we keep the same coefficients within and between
+ groups.
+ 
+\change_unchanged
+
 \end_layout
 
 \begin_layout Standard
@@ -2917,11 +3011,18 @@ status open
 
 \begin_layout Plain Layout
 
-\change_inserted 274868703 1523354705
-Boxplots of growth rates maximum values, standard deviation and mean value
+\change_inserted 274868703 1523374444
+Boxplots of growth rate maximum values, standard deviation and mean value
  over 10 different simulations for 60 species in the standard SV model.
  Boxplots are seen as simple lines in the plot because values are similar
- for a given species.
+ for a given species 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Boxplots-of-growth"
+
+\end_inset
+
+.
 \end_layout
 
 \end_inset
@@ -2938,14 +3039,6 @@ Boxplots of growth rates maximum values, standard deviation and mean value
 
 \change_inserted 274868703 1523342236
 Effect of competitive interactions
-\end_layout
-
-\begin_layout Standard
-
-\change_inserted 274868703 1523350908
-However, we can n
-\change_unchanged
-
 \end_layout
 
 \begin_layout Standard
@@ -3009,7 +3102,7 @@ A: But in this later case, growth rates DO affect the competition rates,
 
 \begin_layout Enumerate
 
-\change_inserted 274868703 1523342236
+\change_inserted 274868703 1523379105
 competition strengths are fixed, as in SV16, but with a difference between
  inter and intra-species competition 
 \begin_inset Foot
@@ -3039,11 +3132,46 @@ n.
 \begin_inset Formula $\rho=10$
 \end_inset
 
+ or 
+\begin_inset Formula $\rho=4$
+\end_inset
+
  and 
 \begin_inset Formula $\forall i,\forall j,i\neq j,\alpha_{ij}=\alpha=0.001$
 \end_inset
 
-, (
+.
+ The two values of 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula $|\rho|$
+\end_inset
+
+ are taken from estimated values in 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+
 \begin_inset CommandInset citation
 LatexCommand citet
 key "barraquand_weak_2017"
@@ -3051,12 +3179,13 @@ literal "true"
 
 \end_inset
 
-)
+, taking all coefficients into account or only the ones significantly different
+ from 0, respectively.
 \end_layout
 
 \begin_layout Enumerate
 
-\change_inserted 274868703 1523342357
+\change_inserted 274868703 1523379526
 competition strengths are chosen as 
 \begin_inset Formula $\alpha_{ij}\sim N(\frac{1}{\rho}\alpha_{ii},\sigma_{\alpha})$
 \end_inset
@@ -3090,8 +3219,57 @@ where
 \end_inset
 
 .
+ We see on Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Boxplots-of-growth"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ that standard deviation varies with the species.
+ The median value is 0.39 (
+\begin_inset Formula $\sigma_{\alpha}=0.0039)$
+\end_inset
+
+.
  We can keep 
 \begin_inset Formula $\rho=10$
+\end_inset
+
+
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 274868703 1523379539
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+Or 
+\xout off
+
+\begin_inset Formula $\rho=4$
+\end_inset
+
+ ? 
+\change_unchanged
+
+\end_layout
+
 \end_inset
 
  and 
@@ -3156,9 +3334,9 @@ status open
 
 \begin_layout Plain Layout
 
-\change_inserted 274868703 1523342505
+\change_inserted 274868703 1523379126
 Convergence criteria for a simulation where intra-group coefficients are
- higher than inter-group coefficients
+ 10-fold higher than inter-group coefficients
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:Convergence-criteria-for"
@@ -3268,13 +3446,13 @@ status open
 
 \begin_layout Plain Layout
 
-\change_inserted 274868703 1523345504
+\change_inserted 274868703 1523379134
 Synchrony of each species measured as the weighted correlations between
  species and its heterospecific competitors (left) and species density averaged
  over the last 200 years of dynamics (right), arranged on the x-axis by
  thermal optima.
- Intra-group competition strength is ten times higher than inter-group competiti
-on strength at the bottom whereas all interaction strenghts are the same
+ Intra-group competition strength is 10 times higher than inter-group competitio
+n strength at the bottom whereas all interaction strenghts are the same
  at the top.
  Both simulations at the top and bottom share the same environmental forcing.
  
@@ -3496,6 +3674,77 @@ Preliminary simulation setup (limit cases) [we'll add mixtures later, Alix
 
 \end_inset
 
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\change_inserted 274868703 1523377821
+Results found so far are summarized in the following rank abundance curves
+ (RAC).
+ 
+\end_layout
+
+\begin_layout Standard
+
+\change_inserted 274868703 1523377825
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\change_inserted 274868703 1523377850
+\begin_inset Graphics
+	filename graphe/RAC_comparison.png
+	lyxscale 50
+	width 95text%
+
+\end_inset
+
+
+\change_unchanged
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\change_inserted 274868703 1523377825
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\change_inserted 274868703 1523377944
+Rank abundance curves for a given environmental forcing and different coefficien
+ts of interactions (left), or a seasonal signal only (right).
+ Marker colors correspond to each species' thermal optimum.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Rank-abundance-curves"
+
+\end_inset
+
+
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+
+\end_layout
+
+\begin_layout Plain Layout
 
 \end_layout
 

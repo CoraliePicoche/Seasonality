@@ -1,5 +1,5 @@
 %%% Model of Scranton & Vasseur 2016 (Theor Ecol.)
-%%% Developped by Picoche & Barraquand 2017
+%%% Developped by Picoche & Barraquand 2018
 %%% Same structure as Main, but with two teaks: we take the environmental
 %%% conditions used in previous simulations (1) to model the dynamics with
 %%% all things equal, but with no effect of the temperature on interaction
@@ -38,7 +38,7 @@ thresh_min=10^(-6); %species considered extinct below this biomass
 yspan=200;
 ysave=500;
 
-for iter=2:10
+for iter=1:10
     iter
     load(strcat('./output_simulation/SV_same_temp/iter',num2str(iter),'_codeversion_20180228_theta0.mat'));
     %%%%%% Initialize
@@ -53,6 +53,12 @@ tspan=linspace(tstart,tstop,tsampling);                        % timespan for th
      for i=1:S
          r(i,:)=fun(tau,b(i),tau_opt(i));   
      end;
+%Here, we can weigh the competition coefficients by the mean growth rate
+    tmp_r=mean(r,2);
+    A=tmp_r.*A;
+%%%
+     
+     
     options= odeset('AbsTol',1e-8, 'RelTol',1e-3,'NonNegative',1:60); %NonNegative is necessary and speaking to Alix indicated that Reltol and Absol can be changed quite safely. For
 
     [tout,yout] = ode45(@SV16_ode_integration_no_GR_in_competition, tspan , y0,options);       % ode solver
@@ -62,6 +68,7 @@ tspan=linspace(tstart,tstop,tsampling);                        % timespan for th
     toutbis=tout(imin:imax);
     youtbis=yout(imin:imax,:);
     nb_species=sum(yout'>thresh_min);
-    save(strcat('./output_simulation/',dir_output,'/','iter',num2str(iter),'_codeversion_20180228_theta0_noforcedcompetition.mat'),'toutbis','youtbis','tau_opt','b','tau','nb_species');
+    nb_species(end)
+    save(strcat('./output_simulation/',dir_output,'/','iter',num2str(iter),'_codeversion_20180228_theta0_noforcedcompetition_weightedinteraction.mat'),'toutbis','youtbis','tau_opt','b','tau','nb_species');
 end;
     
