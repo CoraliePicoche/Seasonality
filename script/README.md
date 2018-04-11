@@ -1,3 +1,4 @@
+#19th March 2018 (AS)
 * `check_for_stability_m`: A script which checks for convergence in the saved files, based on species richness, total abundance over a cycle, maximum biomass of each species over a cycle and coefficent of variation of the total biomass
 * `compute_temperature.m`: A function which returns a vector of temperature for each day of the simulation following a normal distribution. This function is called in `SV16_comm_assembly.m`.
 * `compute_temperature_season.m`: A function which returns a vector of temperature for each day of the simulation. Temperatures are sampled following a normal distribution centred on a mean values which changes sinusoidally over time with period 365 days.
@@ -18,3 +19,10 @@
 * `SV16_ode_integration_no_GR_in_competition.m`:  A function describing species growth rate following the model of Scranton & Vasseur (2016) with environmental forcing embedded only in the intrinsic growth rates.
 * `SV16_species_removal`: *Species removal and re-introduction* simulation from Scranton & Vasseur (2016). Temperatures are generated with `compute_temperature.m` without seasonality. Initial conditions are taken from a previous simulation, and the program mimicks the extinction of each species (as many simulations as there are species) and the dynamics following the primary extinction. Outputs are species dynamics over 500 years.
 * `temperature_visualisation`: A script which draws the differences between different values of theta on the temperature signal.
+
+#11th April 2018 (CP)
+* `myplot_RAC` : A folder which contains the scripts by  Wei-Ting Lin to plot the Rank Abundance Curves for each community obtained at the end of the simulation. The `myplot_RAC.m` script was modified by CP to draw more "readable" graphs.
+* `RAC.m` : A script which draws the RAC plots for the output communities
+* `main_without_forced_competition.m`: A script corresponding to the 'Species sorting' (or `SV_main` in our folder), removing the effect of environmental forcing on the interaction coefficients (ie., removing the embedded storage effect). Different parameterisations of the community matrix A have been tried: same values for all coefficients, rows weighted by the mean growth rate of the corresponding species, or diagonal coefficients larger than the ones out of the diagonal. 
+* `main_without_forced_competition_Ashby.m` : Same as above, but the coefficients of A are computed according to Ashby et al. 2017 formulation.
+* `SV16_Ashbyformulation.m`: Same as `SV16_main.m`, but the coefficients of A are computed according to Ashby et al. 2017 formulation.

@@ -32,13 +32,23 @@ k=8.6173324*10^(-5); %Boltzmann's constant in eV.K-1
 
 %Other
 alpha_compet=0.001; %area/kg (SV) Strength of competition for all individuals
-A=ones(S,S)*alpha_compet;%+diag(ones(60,1)*alpha_compet*9); %interaction matrix
+A=ones(S,S)*alpha_compet+diag(ones(60,1)*alpha_compet*9); %interaction matrix
+% %Here, I'm trying Ashby et al. (2017) formulation
+% for i=1:S
+%     for j=1:S
+%         A(i,j)= alpha_compet*10*integral(@(x)fun(x,b(i),tau_opt(i)).*fun(x,b(j),tau_opt(j)),10+273,30+273)/integral(@(x)(fun(x,b(i),tau_opt(i))).^2,10+273,30+273);
+%     end;
+% end;
+% %max(eig(A))=0.23
+% %Factor 10*alpha_compet is there to keep the same maximum value of competition
+% %intra-group
+
 m=15/365; %mortality rate SV (kg/(kg*year))
 thresh_min=10^(-6); %species considered extinct below this biomass
 yspan=200;
 ysave=500;
 
-for iter=1:10
+for iter=1:1
     iter
     load(strcat('./output_simulation/SV_same_temp/iter',num2str(iter),'_codeversion_20180228_theta0.mat'));
     %%%%%% Initialize
@@ -54,11 +64,9 @@ tspan=linspace(tstart,tstop,tsampling);                        % timespan for th
          r(i,:)=fun(tau,b(i),tau_opt(i));   
      end;
 %Here, we can weigh the competition coefficients by the mean growth rate
-    tmp_r=mean(r,2);
-    A=tmp_r.*A;
+%    tmp_r=mean(r,2);
+%    A=tmp_r.*A;
 %%%
-     
-     
     options= odeset('AbsTol',1e-8, 'RelTol',1e-3,'NonNegative',1:60); %NonNegative is necessary and speaking to Alix indicated that Reltol and Absol can be changed quite safely. For
 
     [tout,yout] = ode45(@SV16_ode_integration_no_GR_in_competition, tspan , y0,options);       % ode solver
@@ -69,6 +77,6 @@ tspan=linspace(tstart,tstop,tsampling);                        % timespan for th
     youtbis=yout(imin:imax,:);
     nb_species=sum(yout'>thresh_min);
     nb_species(end)
-    save(strcat('./output_simulation/',dir_output,'/','iter',num2str(iter),'_codeversion_20180228_theta0_noforcedcompetition_weightedinteraction.mat'),'toutbis','youtbis','tau_opt','b','tau','nb_species');
+    save(strcat('./output_simulation/',dir_output,'/','iter',num2str(iter),'_codeversion_20180228_theta0_noforcedcompetition_10higherintra.mat'),'toutbis','youtbis','tau_opt','b','tau','nb_species');
 end;
     

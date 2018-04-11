@@ -9,8 +9,11 @@ load("output_simulation/SV_same_temp/iter2_codeversion_20180228_theta0.mat")
 comm_SV=mean(youtbis,1);
 load("output_simulation/SV_same_temp/iter2_codeversion_20180228_theta0_competitonintrahigherthanextra.mat")
 comm_higherintra=mean(youtbis,1);
+load("output_simulation/SV_same_temp/iter2_codeversion_20180228_theta0_competitonintrahigherthanextra_only4timeshigher.mat")
+comm_4higherintra=mean(youtbis,1);
 load("output_simulation/season/1no_stochasticity.mat");
 comm_seasononly=mean(youtbis,1);
 
-comm_all=[comm_SV;comm_higherintra;comm_seasononly];
-myplot_RAC(comm_all,{''},{'Regular SV','Higher intragroup comp','Season'},{},jet(60))
+comm_all=[comm_SV;comm_higherintra;comm_4higherintra;comm_seasononly];
+myplot_RAC(comm_all,{''},{'Regular SV','Higher intragroup 10','Higher intragroup 4','Season'},{},jet(60))
+10

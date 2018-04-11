@@ -2840,9 +2840,9 @@ We should therefore check if the persistence and dynamics of the species
 
 \begin_layout Standard
 
-\change_inserted 274868703 1523350900
-The most straightforward way of removing the forcing on growth rates is
- to use exactly the same model and set of parameters as LV, re-writing eq.
+\change_inserted 274868703 1523432747
+A straightforward way of removing the forcing on growth rates is to use
+ exactly the same model and set of parameters as LV, re-writing eq.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -2945,7 +2945,7 @@ noprefix "false"
 \color none
 \begin_inset Formula 
 \begin{equation}
-\frac{dN_{i}}{dt}=N_{i}\left(r_{i}(\tau)-\sum_{j=1}^{S}\bar{r}_{i}(\tau)\alpha N_{j}\right)-mN_{i}\label{eq:eqLV_noforcecompetition-case2}
+\frac{dN_{i}}{dt}=N_{i}\left(r_{i}(\tau)-\sum_{j=1}^{S}\bar{r}_{i}\alpha N_{j}\right)-mN_{i}\label{eq:eqLV_noforcecompetition-case2}
 \end{equation}
 
 \end_inset
@@ -2955,7 +2955,7 @@ noprefix "false"
 
 \begin_layout Standard
 
-\change_inserted 274868703 1523377708
+\change_inserted 274868703 1523433080
 where 
 \family roman
 \series medium
@@ -2970,16 +2970,16 @@ where
 \noun off
 \color none
 
-\begin_inset Formula $\bar{r}_{i}(\tau)$
+\begin_inset Formula $\bar{r}_{i}$
 \end_inset
 
  is the mean value of growth rate over the simulation.
  In this case, a species is more sensitive to competition when it has a
  higher growth rate, but we keep the same coefficients within and between
  groups.
+ In this case, in 9 simulation out of 10, only species 1 survive.
+ In the last simulation, species 39 is the only extant species.
  
-\change_unchanged
-
 \end_layout
 
 \begin_layout Standard
@@ -3050,7 +3050,7 @@ When growth rates do no affect the values of competition coefficients ,
 
 \begin_layout Enumerate
 
-\change_inserted 274868703 1523342236
+\change_inserted 274868703 1523436639
 competition strengths are based on the niche model (
 \begin_inset CommandInset citation
 LatexCommand citet
@@ -3083,6 +3083,24 @@ literal "true"
 \begin_inset Formula $U_{i}(\boldsymbol{z})=r_{i}(\tau)$
 \end_inset
 
+ 
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 274868703 1523436677
+This case was implemented with 
+\begin_inset Formula $\alpha_{ij}=\rho\alpha\frac{\int U_{i}(\boldsymbol{z})U_{j}(\boldsymbol{z})d\boldsymbol{z}}{\int U_{i}(\boldsymbol{z})^{2}d\boldsymbol{z}}$
+\end_inset
+
+, waiting for the results
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
 .
  
 \begin_inset Note Comment
@@ -3090,9 +3108,11 @@ status open
 
 \begin_layout Plain Layout
 
-\change_inserted 274868703 1523342236
+\change_inserted 274868703 1523436690
 A: But in this later case, growth rates DO affect the competition rates,
- don't they?
+ don't they? C : Yes, but they affect the competition rates as a trade-off
+ (they are fixed at the beginning of the simulation) whereas the storage
+ effect implies the plasticity of such competition rates)
 \end_layout
 
 \end_inset
@@ -3317,6 +3337,7 @@ status open
 \change_inserted 274868703 1523342485
 \begin_inset Graphics
 	filename graphe/convergence_criteria_withhigherintra.png
+	lyxscale 50
 	width 80text%
 
 \end_inset
@@ -3420,7 +3441,7 @@ status open
 \begin_layout Plain Layout
 \align center
 
-\change_inserted 274868703 1523344758
+\change_inserted 274868703 1523434703
 \begin_inset Graphics
 	filename graphe/synchrony_high_intragroup_competition_iter2.png
 	lyxscale 25
@@ -3440,20 +3461,42 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
+\align center
+
+\change_inserted 274868703 1523434703
+\begin_inset Graphics
+	filename graphe/synchrony_4high_intragroup_competition_iter2.png
+	lyxscale 25
+	width 45text%
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename graphe/mean_biomass_4high_intragroup_competition_iter2.png
+	lyxscale 25
+	width 45text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
 
 \change_inserted 274868703 1523342619
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
 
-\change_inserted 274868703 1523379134
+\change_inserted 274868703 1523434777
 Synchrony of each species measured as the weighted correlations between
  species and its heterospecific competitors (left) and species density averaged
  over the last 200 years of dynamics (right), arranged on the x-axis by
  thermal optima.
  Intra-group competition strength is 10 times higher than inter-group competitio
-n strength at the bottom whereas all interaction strenghts are the same
- at the top.
+n strength in the 2nd row and 4 times higher in the third row whereas all
+ interaction strenghts are the same at the top.
  Both simulations at the top and bottom share the same environmental forcing.
  
 \begin_inset CommandInset label
@@ -3481,6 +3524,36 @@ name "fig:Synchrony-of-each-case2"
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+
+\change_inserted 274868703 1523434750
+When 
+\begin_inset Formula $\rho=4$
+\end_inset
+
+, even though 
+\begin_inset Formula $\max(\textnormal{eig}(A))<0$
+\end_inset
+
+, only 51 to 52 species are still present at the end of a 5000-year simulation.
+ Extreme values of thermal optima (lowest or highest) lead to the disparition
+ of the corresponding species.
+ Patterns remain the same for both synchronys and mean biomasses (Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Synchrony-of-each-case2"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+), with a higher biomass (which can be explained by the lower number of
+ species).
+ 
 \end_layout
 
 \begin_layout Section
@@ -3601,7 +3674,7 @@ literal "true"
 \begin_layout Plain Layout
 LV with random growth rates
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
 Maybe we should say here that growth rates are indeed 'random', but synchronized
@@ -3610,6 +3683,10 @@ Maybe we should say here that growth rates are indeed 'random', but synchronized
 
 \end_inset
 
+
+\change_inserted 274868703 1523433769
+ [Under progress]
+\change_unchanged
 
 \end_layout
 
@@ -3706,6 +3783,7 @@ status open
 	filename graphe/RAC_comparison.png
 	lyxscale 50
 	width 95text%
+	BoundingBox 0bp 0bp 1920bp 961bp
 
 \end_inset
 
