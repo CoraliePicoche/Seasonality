@@ -12,7 +12,7 @@
 clear all; clc; close all;
 
 thresh_min=10^(-6);
-alpha=0.001;
+alpha=0.001
 
 adir='./output_simulation/SV_same_temp/';
 allfiles=dir(adir);

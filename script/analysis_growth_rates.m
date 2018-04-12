@@ -52,24 +52,42 @@ end;
    subplot(3,1,1)
    var_tmp=reshape(Big_R(:,1,:),size(Big_R,1),size(Big_R,3));
     Max=mean(var_tmp,1);
-boxplot(var_tmp,'BoxStyle','filled','Colors',c,'whisker',1000)
+boxplot(var_tmp,'BoxStyle','filled','Colors','k','whisker',1000) %if you want the coloured version, use c for Colors instead of 'k'
 %   xlim([tau_opt(1)-273 tau_opt(60)-273])
-   title('Max')
+   title('Max','FontSize',16)
+       pos = get(gca, 'Position');
+    pos(1) = 0.03;
+    pos(2)= 0.675;
+    pos(3) = 0.95;
+    pos(4)=0.275;
+    set(gca, 'Position', pos,'Fontsize',14,'XTickLabel',{' '})
  
    subplot(3,1,2)
    var_tmp=reshape(Big_R(:,2,:),size(Big_R,1),size(Big_R,3));
    Standard_deviation=mean(var_tmp,1);
-boxplot(var_tmp,'BoxStyle','filled','Colors',c,'whisker',1000)
+boxplot(var_tmp,'BoxStyle','filled','Colors','k','whisker',1000)
  %  xlim([tau_opt(1)-273 tau_opt(60)-273])
-   title('Sd')
+   title('Sd','FontSize',16)
+          pos = get(gca, 'Position');
+    pos(1) = 0.03;
+    pos(2)=0.365;
+    pos(3) = 0.95;
+    pos(4)=0.275;
+    set(gca, 'Position', pos,'Fontsize',14,'XTickLabel',{' '})
      
 
    subplot(3,1,3)
    var_tmp=reshape(Big_R(:,3,:),size(Big_R,1),size(Big_R,3));
    Mean_value=mean(var_tmp,1);
-boxplot(var_tmp,'BoxStyle','filled','Colors',c,'whisker',1000)
+boxplot(var_tmp,'BoxStyle','filled','Colors','k','whisker',1000)
   % xlim([tau_opt(1)-273 tau_opt(60)-273])
-   title('Mean')
+   title('Mean','FontSize',16)
+          pos = get(gca, 'Position');
+    pos(1) = 0.03;
+    pos(2)=0.05;
+    pos(3) = 0.95;
+    pos(4)=0.275;
+    set(gca, 'Position', pos,'Fontsize',14)
    
    T=table(Max,Standard_deviation,Mean_value)
-   writetable(T,filename="essai.txt")
+   writetable(T,'./output_simulation/SV_same_temp/growth_rate_analysis.txt')

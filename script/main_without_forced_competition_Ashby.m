@@ -40,7 +40,7 @@ thresh_min=10^(-6); %species considered extinct below this biomass
 yspan=200;
 ysave=500;
 
-for iter=1:1
+for iter=2:10
     iter
     load(strcat('./output_simulation/SV_same_temp/iter',num2str(iter),'_codeversion_20180228_theta0.mat'));
     %%%%%% Initialize
