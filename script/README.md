@@ -1,5 +1,5 @@
 #19th March 2018 (AS)
-* `check_for_stability_m`: A script which checks for convergence in the saved files, based on species richness, total abundance over a cycle, maximum biomass of each species over a cycle and coefficent of variation of the total biomass
+* `check_for_stability_m`: A script which checks for convergence in the saved files, based on species richness, total abundance over a cycle, maximum biomass of each species over a cycle and coefficent of variation of the total biomass. UPDATE 2018/04/13 (CP) : consider this script deprecated (see `convergence_function.m`)
 * `compute_temperature.m`: A function which returns a vector of temperature for each day of the simulation following a normal distribution. This function is called in `SV16_comm_assembly.m`.
 * `compute_temperature_season.m`: A function which returns a vector of temperature for each day of the simulation. Temperatures are sampled following a normal distribution centred on a mean values which changes sinusoidally over time with period 365 days.
 * `correlationCircles.m`: A function by David Legland which represents correlation matrix using colored circles.
@@ -9,7 +9,7 @@
 * `frac_max.m`: A function which calculates the fraction of maximum growth achieved for one speceis as a function of temperature, its thermal optimum and its niche breadth.
 * `growth_response.m`: A function which returns a species' maximum growth rate as a function of temperature and reference temperature.
 * `invasion_post_treatment.m`: A script which works on the outputs from `SV16_comm_assembly.m`. It detects communities of 2, 3, or 4 extant species, and looks for their thermal optima to describe the community structure (cf. Fig. 3 in report and Scranton & Vasseur 2016).
-* `post_treatment_bis.m`: This scripts draws species synchrony over time and the distribution of thermal optima for the extant species (cf. Fig. 2 in report).
+* `post_treatment_bis.m`: This scripts draws species synchrony over time and the distribution of thermal optima for the extant species (cf. Fig. 2 in report). UPDATE 2018/04/13 (CP) : consider this script deprecated (see `diagnostics_simulation.m`)
 * `species_removal_post_treatment.m`: A script which works on the outputs from `SV16_LV_no_GR_in_competition.m`, `SV16_main.m`, and `SV16_species_removal.m`. It calculates the density variation caused by each species removal from the community, and draws the effect of knocking out species on the other species density (cf. Fig. 4 in Scranton & Vasseur (2016) and report).
 * `SV16_comm_assembly.m`: *Community assembly* simulation from Scranton & Vasseur (2016) mimicking the assembly of one community starting with one species with regular addition of a new species picked from the pool of species which are not present in the community. Outputs are community dynamics over 200 years of the assembly process, and species thermal optima. Calls `SV16_ode_integration.m` for species growth rates.
 * `SV16_comm_assembly_no_stochasticity.m`: Same as the above, but with the same random seed for all simulations, and the same three invaders. Temperature varies seasonally (calling `compute_temperature_season.m`). Invasion times are regularly spaced over the simulation time.
@@ -26,3 +26,12 @@
 * `main_without_forced_competition.m`: A script corresponding to the 'Species sorting' (or `SV_main` in our folder), removing the effect of environmental forcing on the interaction coefficients (ie., removing the embedded storage effect). Different parameterisations of the community matrix A have been tried: same values for all coefficients, rows weighted by the mean growth rate of the corresponding species, or diagonal coefficients larger than the ones out of the diagonal. 
 * `main_without_forced_competition_Ashby.m` : Same as above, but the coefficients of A are computed according to Ashby et al. 2017 formulation.
 * `SV16_Ashbyformulation.m`: Same as `SV16_main.m`, but the coefficients of A are computed according to Ashby et al. 2017 formulation.
+
+#13th April 2018 (CP)
+* `analysis_growth_rates.m` : A script which compute the maximum, standard deviation and mean values of species-specific growth rates in different environmental conditions. It plots these values and output the text file `growth_rate_analysis` 
+* `community_wide_indices.m` : A function which computes the annual synchrony indices developped by Loreau & Mazancourt (2008) and Gross et al. (2013). It outputs a table (row1=Loreau, row2=Gross, each column corresponds to a year). It is used in `synchronys_comparison`
+* `synchonys_comparison.m` : A script which computes community-level synchrony indices for the regular SV model, with and without randomized temperatures.
+* `species_specific_synchrony.m` : A function which computes the moving-average synchrony indices for each species, given a matrix of abundances. (corresponding to first part of Fig. 2 in SV16)
+* `species_mean_value.m` : A function which computes the mean biomass of each species at the end of a simulation, given a matrix of abundances and a total number of years over which computing the mean value. (corresponding to second part of Fig. 2 in SV16)
+* `convergence_function.m` : A function which computes the variation on total number of extant species and the coefficient of variation of total biomass to be able to check for simulation convergence, given a matrix of abundances. 
+* `diagnostics_simulation.m` : A script which plots a series of diagnostics, given a simulation file.  
