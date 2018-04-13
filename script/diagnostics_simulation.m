@@ -29,10 +29,12 @@ fun=@(x,b,tau_opt) growth_response(x).*frac_max(x,tau_opt,b);
 
 
 X=1;
-type='Ashby_formulation';
-nice_type='Ashby';
-addenda=''; %Here, we can add if we're using no_forced_competition, or theta
-filename=strcat('./output_simulation/SV_same_temp/iter',num2str(X),'_codeversion_20180228_theta0_',type)
+%type='Ashby_formulation';
+type='no_stochasticity';
+nice_type='Regular';
+addenda='Season only'; %Here, we can add if we're using no_forced_competition, or theta
+%filename=strcat('./output_simulation/SV_same_temp/iter',num2str(X),'_codeversion_20180228_theta0_',type,'.mat')
+filename=strcat('./output_simulation/season/',num2str(X),type,'.mat')
 
 load(filename)
 S=size(youtbis,2);
@@ -42,7 +44,6 @@ switch nice_type
             for j=1:S
                 A(i,j)= alpha_compet*10*integral(@(x)fun(x,b(i),tau_opt(i)).*fun(x,b(j),tau_opt(j)),10+273,30+273)/integral(@(x)(fun(x,b(i),tau_opt(i))).^2,10+273,30+273);
             end;
-        
         end
     case 'Regular'
         A=ones(S)*alpha_compet;
@@ -77,8 +78,13 @@ yspan=150;
 ymin=size(youtbis,1)-2*365+1;
 ymax=size(youtbis,1);
 figure; hold on;
+sp=0
 for s1=1:S
-    plot(ymin:ymax,youtbis(ymin:ymax,s1),'LineWidth',2,'color',c(s1,:));
+    if youtbis(end,s1)<thresh_min 
+       plot(ymin:ymax,youtbis(ymin:ymax,s1),'LineWidth',2,'color',c(s1,:), 'HandleVisibility','off');
+    else
+        plot(ymin:ymax,youtbis(ymin:ymax,s1),'LineWidth',2,'color',c(s1,:), 'DisplayName', strcat(num2str(s1),32,num2str(round(tau_opt(s1)-273,2))),'HandleVisibility','on'); %32 is the ASCII code for space
+    end    
 end;
 seq=ymin/365:0.25:ymax/365;
 xticks(seq*365);
@@ -86,6 +92,7 @@ xticklabels(round(seq,2)-round(seq(1),2));
 xlim([seq(1)*365 seq(end)*365])
 ylabel('Abundance')
 set(gca,'Fontsize',16)
+legend show
 title({'Dynamics last 2 years',strcat(num2str(X),nice_type,addenda)},'Fontsize',18)
 hold off;
 
@@ -96,7 +103,9 @@ for s1=1:S
     bar(tau_opt(s1)-273,mean_value(s1),0.1,'FaceColor',c(s1,:));
 end;
 ylabel('Abundance')
-set(gca,'yscale','log','Fontsize',16)
+mini=min(mean_value(mean_value>0));
+ylimit=[mini*0.95 max(mean_value)+0.05*mini]; 
+set(gca,'yscale','log','Fontsize',16,'YLim',ylimit)
 title({'Mean biomass',strcat(num2str(X),nice_type,addenda)},'Fontsize',18)
 hold off;
 
@@ -109,11 +118,16 @@ set(gca,'Fontsize',16)
 spp_synchrony=species_specific_synchrony(youtbis,yspan,ywindow,A); %Here, I'll need to add the community matrix
 figure; hold on;
 for s1=1:S
-    plot(1:size(spp_synchrony,1),spp_synchrony(:,s1),'color',c(s1,:));
+    if youtbis(end,s1)<thresh_min 
+        plot(1:size(spp_synchrony,1),spp_synchrony(:,s1),'color',c(s1,:), 'HandleVisibility','off');
+    else
+        plot(1:size(spp_synchrony,1),spp_synchrony(:,s1),'color',c(s1,:), 'HandleVisibility','on','DisplayName', strcat(num2str(s1),32,num2str(round(tau_opt(s1)-273,2))),'LineWidth',2);
+    end
 end
 line(get(gca,'XLim'),[0 0],'Color','k','LineWidth',1.5)
 title({'Species-specific synchrony',strcat(num2str(X),nice_type,addenda)},'Fontsize',18)
 set(gca,'Fontsize',16)
+legend show
 hold off;
 
 %Community-wide synchrony

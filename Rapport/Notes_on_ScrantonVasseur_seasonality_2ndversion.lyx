@@ -2556,7 +2556,7 @@ status open
 \begin_inset Graphics
 	filename graphe/synchrony_purely_seasonal.png
 	lyxscale 25
-	width 45text%
+	width 49text%
 
 \end_inset
 
@@ -2564,7 +2564,7 @@ status open
 \begin_inset Graphics
 	filename graphe/mean_biomass_purely_seasonal.png
 	lyxscale 25
-	width 45text%
+	width 49text%
 
 \end_inset
 
@@ -2624,7 +2624,6 @@ Using a purely seasonal temperature (
  indices 6 and 60 in the increasing range of optimal temperatures) and an
  average optima (20.8°C, corresponding to index 35).
  The average species has the lowest average biomass.
- [TO DO, re-plot the figure in order to have stg readable]
 \end_layout
 
 \begin_layout Section
