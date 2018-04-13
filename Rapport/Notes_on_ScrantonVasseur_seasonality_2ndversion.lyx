@@ -2894,6 +2894,13 @@ A: But in this later case, growth rates DO affect the competition rates,
 
 \begin_layout Subsection
 Fixed interactions, higher intragroup competition
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:Fixed-interactions,-higher"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -3090,10 +3097,6 @@ When
 \begin_inset Formula $\rho=4$
 \end_inset
 
-, even though 
-\begin_inset Formula $\max(\textnormal{eig}(\mathbf{A}))<1$
-\end_inset
-
 , only 51 to 52 species are still present at the end of a 5000-year simulation.
  Extreme values of thermal optima (lowest or highest) lead to the disparition
  of the corresponding species.
@@ -3118,7 +3121,7 @@ Random interactions, higher intragroup competition
 \end_layout
 
 \begin_layout Standard
-[TO DO]
+[Will be ran during the week-end and checked Monday morning]
 \end_layout
 
 \begin_layout Subsection
@@ -3126,7 +3129,147 @@ Niche-model based interactions
 \end_layout
 
 \begin_layout Standard
-[Ran simulations, have to analyse them]
+With interactions based on the formulation of 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "ashby_competing_2017"
+literal "false"
+
+\end_inset
+
+, the simulations need more time to converge.
+ Species can still be driven to extinction at the end of 5000 time steps
+ (for 1/10 simulations, a species went extinct during the 4850th year).
+ Results presented here should therefore be taken with caution as they correspon
+d to the last years of simulations which may not have reached their equilibrium
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+We need to discuss this before I launch new simulations
+\end_layout
+
+\end_inset
+
+.
+ In 9/10 simulations, there were 33 species at the end of the experiment
+ and one less for the 10th simulation.
+ This is twice the number of species observed with the classic model.
+ The mean total abundance at the end of the simulation remained between
+ 250 and 260 (which is about 5 times below what we observe in the classic
+ model).
+ 
+\end_layout
+
+\begin_layout Standard
+We present the results of one simulation in Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:results_ashby_iter2"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ but they are similar in the 10 simulations.
+ The extreme values of thermal optimum lead to the higher biomass for two
+ species.
+ The remaining biomass is distributed in 3 main clumps in the middle of
+ the thermal range.
+ Contrary to what we observed in the classic model, the 3 clumps are not
+ clearly separated, but are signaled by lower biomasses (just above 18°C
+ and 22°C).
+ We find the same groups in the species-specific synchronies.
+ At the community level, synchrony indices remain very low (not above 0.2
+ for Loreau's index, between -0.15 et 0.01 for Gross' index).
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename graphe/mean_biomass_iter2_Ashby.png
+	lyxscale 50
+	width 90text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename graphe/synchrony_iter2_Ashby.png
+	lyxscale 50
+	width 90text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename graphe/community_level_synchrony_iter2_Ashby.png
+	lyxscale 50
+	width 85text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Mean biomass for the last 150 years of a simulation with niche-based interaction
+s (top), species-specific synchronies (middle) and community-wide synchrony
+ indices (bottom).
+ Environmental forcing was the same as in Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Synchrony-of-each-case2"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:results_ashby_iter2"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -3662,6 +3805,10 @@ noprefix "false"
 \end_inset
 
 ).
+\begin_inset Newline linebreak
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -3728,10 +3875,48 @@ where
  In this case, in 9 simulation out of 10, only species 1 survive.
  In the last simulation, species 39 is the only extant species.
  
+\begin_inset Newline linebreak
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
-[Ran simulation with higher intra, have to analyze them]
+We also increased intragroup competition strength as in section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "subsec:Fixed-interactions,-higher"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, with 
+\begin_inset Formula $\rho=10$
+\end_inset
+
+.
+ In this case, at the end of a simulations, there are between 21 and 24
+ extant species for a total biomass between 120 and 170.
+ Results presented in Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:results_noforced_competition_higherintra"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ are similar for all simulations.
+ The range of extant species is smaller than the full range kept with the
+ classic model, and absolute values of species-specific synchronies are
+ lower.
+ However, synchronies remain above 0, which was not the case previously.
+ Community-level synchronies are also higher than in the regular model.
+ 
 \end_layout
 
 \begin_layout Subsubsection
@@ -3739,7 +3924,182 @@ Niche-model based coefficients
 \end_layout
 
 \begin_layout Standard
-[Ran simulations, have to analyze them]
+In this case, there are between 4 and 8 extant species, for a total biomass
+ around 55 (Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:results_noforced_competition_Ashby"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename graphe/mean_biomass_10high_intragroup_competition_noforcedcompetition.png
+	lyxscale 50
+	width 90text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename graphe/synchrony_high_intragroup_competition_iter2_noforcedcompetition.png
+	lyxscale 50
+	width 90text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename graphe/community_level_synchrony_iter2_noforcedcompetition.png
+	lyxscale 50
+	width 85text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Mean biomass for the last 150 years of a simulation without forced competition
+ and intragoup competition 10 times higher than intergroup competition (top),
+ species-specific synchronies (middle) and community-wide synchrony indices
+ (bottom).
+ Environmental forcing was the same as in Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Synchrony-of-each-case2"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:results_noforced_competition_higherintra"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename graphe/mean_biomass_iter2_Ashby_noforcedcompetition.png
+	lyxscale 50
+	width 90text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename graphe/synchrony_iter2_noforcedcompetition_Ahsby.png
+	lyxscale 50
+	width 90text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename graphe/community_level_synchrony_iter2_noforcedcompetition_Ashby.png
+	lyxscale 50
+	width 85text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Mean biomass for the last 150 years of a simulation with niche-based interaction
+s and no forced competition (top), species-specific synchronies (middle)
+ and community-wide synchrony indices (bottom).
+ Environmental forcing was the same as in Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Synchrony-of-each-case2"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:results_noforced_competition_Ashby"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -3944,7 +4304,53 @@ ts of interactions (left), or a seasonal signal only (right).
  
 \begin_inset CommandInset label
 LatexCommand label
-name "fig:Rank-abundance-curves"
+name "fig:Rank-abundance-curves-regular"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename graphe/RAC_comparison_noforcedcompetition.png
+	lyxscale 50
+	width 95text%
+	BoundingBox 0bp 0bp 1920bp 961bp
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Rank abundance curves for a given environmental forcing, no explicit storage
+ effect, and different coefficients of interactions.
+ Marker colors correspond to each species' thermal optimum.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Rank-abundance-curves-nostorageeffect"
 
 \end_inset
 
@@ -3965,9 +4371,9 @@ name "fig:Rank-abundance-curves"
 For future work: the number of species could be increased to make the proportion
  of extant species more relevant.
  In this case, if we don't want to increase the niche overlap, and therefore
- the competition, we should decrease A, the niche breadth.
+ the competition, we should decrease B, the niche breadth.
  This would mean that we have more specialist species.
- We could also allow species to have different A so as to consider communities
+ We could also allow species to have different B so as to consider communities
  with various distributions of niche breadths and see the effect on persistence.
  
 \begin_inset Note Comment

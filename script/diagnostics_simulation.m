@@ -28,13 +28,18 @@ k=8.6173324*10^(-5); %Boltzmann's constant in eV.K-1
 fun=@(x,b,tau_opt) growth_response(x).*frac_max(x,tau_opt,b);
 
 
-X=1;
+X=2;
 %type='Ashby_formulation';
-type='no_stochasticity';
-nice_type='Regular';
-addenda='Season only'; %Here, we can add if we're using no_forced_competition, or theta
-%filename=strcat('./output_simulation/SV_same_temp/iter',num2str(X),'_codeversion_20180228_theta0_',type,'.mat')
-filename=strcat('./output_simulation/season/',num2str(X),type,'.mat')
+type='';
+%type='no_stochasticity';
+%nice_type='Ashby';
+nice_type='Ashby';
+%addenda='Season only'; %Here, we can add if we're using no_forced_competition, or theta
+addenda=''; %Here, we can add if we're using no_forced_competition, or theta
+for X=2:2
+%filename=strcat('./output_simulation/SV_same_temp/iter',num2str(X),'_codeversion_20180228_theta0',type,'.mat')
+filename=strcat('./output_simulation/no_forced_competition/iter',num2str(X),'_codeversion_20180228_theta0_noforcedcompetition_Ashbyformulation',type,'.mat')
+%filename=strcat('./output_simulation/season/',num2str(X),type,'.mat')
 
 load(filename)
 S=size(youtbis,2);
@@ -92,7 +97,7 @@ xticklabels(round(seq,2)-round(seq(1),2));
 xlim([seq(1)*365 seq(end)*365])
 ylabel('Abundance')
 set(gca,'Fontsize',16)
-legend show
+%legend show
 title({'Dynamics last 2 years',strcat(num2str(X),nice_type,addenda)},'Fontsize',18)
 hold off;
 
@@ -127,7 +132,7 @@ end
 line(get(gca,'XLim'),[0 0],'Color','k','LineWidth',1.5)
 title({'Species-specific synchrony',strcat(num2str(X),nice_type,addenda)},'Fontsize',18)
 set(gca,'Fontsize',16)
-legend show
+%legend show
 hold off;
 
 %Community-wide synchrony
@@ -154,6 +159,6 @@ pos(3)=0.95;
 pos(4)=0.4;
 set(gca,'Position',pos,'Fontsize',16)
 
-
+end;
 
 

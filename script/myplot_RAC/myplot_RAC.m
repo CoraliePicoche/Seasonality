@@ -97,8 +97,8 @@ figure
 [B, I ] = sort( X( 1, : ), 'descend');
 
 if n >1
-    mysubplot(1, n+2, 0, bigtitle)
-    mysubplot(1, n+2, 2, '', 0.3, 0.1)
+ %   mysubplot(1, n+2, 0, bigtitle)
+    mysubplot(1, n, 1, '', 0.25, 0.1)
 end
 
 for s = 1:p
@@ -113,14 +113,14 @@ for s = 1:p
             h = scatter(ranks , X(1, s) ,60, stylesheet{ranks},'Markeredgecolor','none','Markerfacecolor',colorsheet(s, :));   hold on %colorsheet(ranks,:)
         end
      axis([1 p 0 max(max(X))]) ;
-      set(gca,'yscale','log'); %CP added this
      title(titles{1});
      ylabel('Abundance');xlabel('Rank')
+     set(gca,'yscale','log','Fontsize',16);  %CP added this
 %%  2~n
 %X1 =  X( :, I ); % in the new matrix, row 1 is sorted
-X1=X %CP this is modified
+X1=X; %CP this is modified
 for i = 2:n
-    mysubplot(1, n+2, i+1,  '', 0.3, 0.1)
+    mysubplot(1, n, i,  '', 0.25, 0.1)
     [y, id ] = sort(X1(i,:), 'descend'); 
       myplot( 1:p, y , 'L', 1);hold on
     for s = 1:p
@@ -129,7 +129,8 @@ for i = 2:n
    box off
      axis([1 p 0 max(max(X))]) ;
      set(gca, 'ytick', '')
-      set(gca,'yscale','log');  %CP added this
+      
         title(titles{i})
         xlabel('Rank')
+set(gca,'yscale','log','Fontsize',16);  %CP added this
 end
