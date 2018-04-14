@@ -2765,7 +2765,7 @@ noprefix "false"
 
  that standard deviation varies with the species.
  The median value is 0.39 (
-\begin_inset Formula $\sigma_{\alpha}=0.0039)$
+\begin_inset Formula $\sigma_{\alpha}=0.00039)$
 \end_inset
 
 .
@@ -2802,10 +2802,15 @@ Or
 \end_inset
 
  and 
-\begin_inset Formula $\forall i,\alpha_{ii}=\rho\alpha=0.01.$
+\begin_inset Formula $\forall i,\alpha_{ii}\sim N(\rho\alpha,\sigma_{\alpha}),\rho\alpha=0.01.$
 \end_inset
 
+ As we want to keep a competition–only model, we use 
+\begin_inset Formula $\mathbf{A}=|\mathbf{A}|$
+\end_inset
 
+.
+ 
 \end_layout
 
 \begin_layout Enumerate
@@ -3121,7 +3126,23 @@ Random interactions, higher intragroup competition
 \end_layout
 
 \begin_layout Standard
-[Will be ran during the week-end and checked Monday morning]
+For this set of simulations, we kept the same environmental forcing in all
+ simulations
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Corresponding to iteration 2, which is used in every plot
+\end_layout
+
+\end_inset
+
+ but only changed the community matrix.
+ 
+\end_layout
+
+\begin_layout Standard
+[Running, will be checked on Monday morning]
 \end_layout
 
 \begin_layout Subsection

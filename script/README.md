@@ -34,4 +34,6 @@
 * `species_specific_synchrony.m` : A function which computes the moving-average synchrony indices for each species, given a matrix of abundances. (corresponding to first part of Fig. 2 in SV16)
 * `species_mean_value.m` : A function which computes the mean biomass of each species at the end of a simulation, given a matrix of abundances and a total number of years over which computing the mean value. (corresponding to second part of Fig. 2 in SV16)
 * `convergence_function.m` : A function which computes the variation on total number of extant species and the coefficient of variation of total biomass to be able to check for simulation convergence, given a matrix of abundances. 
-* `diagnostics_simulation.m` : A script which plots a series of diagnostics, given a simulation file.  
+* `diagnostics_simulation.m` : A script which plots a series of diagnostics, given a simulation file. 
+* `RAC_noforcedcompetition.m` : Same script as `RAC.m`, to compare communities without explicit storage effect. 
+* `SV16_random_matrix.m` : A script corrresponding to `SV16_main.m`, always using the same environmental forcing but with different community matrices. Coefficients of interactions follow a normal distribution (more details in report). 
