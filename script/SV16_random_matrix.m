@@ -69,6 +69,7 @@ max(eig(A))
     toutbis=tout(imin:imax);
     youtbis=yout(imin:imax,:);
     nb_species=sum(yout'>thresh_min);
+    nb_species(end)
     save(strcat('./output_simulation/',dir_output,'/','iter2_codeversion_20180228_theta0_random_matrix',num2str(iter),'.mat'),'toutbis','youtbis','tau_opt','b','tau','nb_species','A');
 end;
     

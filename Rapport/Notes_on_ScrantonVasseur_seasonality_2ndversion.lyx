@@ -3895,6 +3895,45 @@ where
  groups.
  In this case, in 9 simulation out of 10, only species 1 survive.
  In the last simulation, species 39 is the only extant species.
+\begin_inset Newline linebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Another way of keeping the same average competition values without the storage
+ effect is to keep the growth rate coefficient but remove its synchrony
+ with environmental forcing.
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula 
+\begin{equation}
+\frac{dN_{i}}{dt}=N_{i}\left(r_{i}(\tau)-\sum_{j=1}^{S}r_{i}(\tau')\alpha N_{j}\right)-mN_{i}\label{eq:eqLV_noforcecompetition-case3}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where 
+\begin_inset Formula $\tau'$
+\end_inset
+
+ is a random time index.
  
 \begin_inset Newline linebreak
 \end_inset

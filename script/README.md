@@ -36,4 +36,5 @@
 * `convergence_function.m` : A function which computes the variation on total number of extant species and the coefficient of variation of total biomass to be able to check for simulation convergence, given a matrix of abundances. 
 * `diagnostics_simulation.m` : A script which plots a series of diagnostics, given a simulation file. 
 * `RAC_noforcedcompetition.m` : Same script as `RAC.m`, to compare communities without explicit storage effect. 
-* `SV16_random_matrix.m` : A script corrresponding to `SV16_main.m`, always using the same environmental forcing but with different community matrices. Coefficients of interactions follow a normal distribution (more details in report). 
+* `SV16_random_matrix.m` : A script corrresponding to `SV16_main.m`, always using the same environmental forcing but with different community matrices. Coefficients of interactions follow a normal distribution (more details in report).
+* `SV16_randomGR.m`: Same as above, but instead of random coefficients, randomize growth rate's effects on interaction coefficients (see eq. 10 in Report). Use `SV16_ode_integration_randomGR_in_competition.m` as the function to integrate. 
