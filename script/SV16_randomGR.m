@@ -4,7 +4,7 @@
 clear all; close all; clc;
 dir_output="SV_same_temp";
 
-global S tau0 mu_tau sigma_tau tau_min tau_max a_r_tau0 E_r k A m thresh_min tspan tau b tau_opt r
+global S tau0 mu_tau sigma_tau tau_min tau_max a_r_tau0 E_r k A m thresh_min tspan tau b tau_opt r tbis
 
 S=60 %number of species (60 for SV)
 
@@ -50,8 +50,9 @@ tspan=linspace(tstart,tstop,tsampling);                        % timespan for th
          r(i,:)=fun(tau,b(i),tau_opt(i));   
      end;
     options= odeset('AbsTol',1e-8, 'RelTol',1e-3,'NonNegative',1:60); %NonNegative is necessary and speaking to Alix indicated that Reltol and Absol can be changed quite safely. For
-    rng_seed(42)
+    rng_seed(iter)
     
+    tbis=randsample(tspan,length(tspan));
 [tout,yout] = ode45(@SV16_ode_integration_randomGR_in_competition,tspan,y0,options);       % ode solver
      imin=tstop-ysave*365+1;
     imax=tstop;

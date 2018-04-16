@@ -4,7 +4,7 @@
 
 function dydt = SV16_ode_integration_randomGR_in_competition(t,y)
 
-global A m S r thresh_min
+global A m S r thresh_min tbis
 %A interaction matrix
 %m mortality
 %S number of species
@@ -16,5 +16,5 @@ mask=transpose(find(y>=thresh_min));
 
 %Competition
 comp=A(:,mask)*y(mask);
-dydt(mask)=(r(mask,floor(t))-m-r(mask,randi([1 size(r,2)])).*comp(mask)).*y(mask);
+dydt(mask)=(r(mask,floor(t))-m-r(mask,tbis(floor(t))).*comp(mask)).*y(mask);
 end

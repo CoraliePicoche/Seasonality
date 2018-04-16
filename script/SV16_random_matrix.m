@@ -50,8 +50,8 @@ tspan=linspace(tstart,tstop,tsampling);                        % timespan for th
 
 rng_seed(iter)
 A=random('normal',alpha_compet,alpha_compet*0.39,S);
-idx = 1==eye(S);
-A(idx)=random('normal',10*alpha_compet,alpha_compet*0.39,1,S);
+%idx = 1==eye(S);
+%A(idx)=random('normal',10*alpha_compet,alpha_compet*0.39,1,S);
 A=abs(A); %We want a competitive-only system
 max(eig(A))
 
@@ -70,6 +70,6 @@ max(eig(A))
     youtbis=yout(imin:imax,:);
     nb_species=sum(yout'>thresh_min);
     nb_species(end)
-    save(strcat('./output_simulation/',dir_output,'/','iter2_codeversion_20180228_theta0_random_matrix',num2str(iter),'.mat'),'toutbis','youtbis','tau_opt','b','tau','nb_species','A');
+    save(strcat('./output_simulation/',dir_output,'/','iter2_codeversion_20180228_theta0_random_matrix',num2str(iter),'nohigher.mat'),'toutbis','youtbis','tau_opt','b','tau','nb_species','A');
 end;
     

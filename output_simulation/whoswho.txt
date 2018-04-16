@@ -1,16 +1,24 @@
 Here is a description of the different simulations output:
+
 -in SV_different_temp: simulations based on the classic SV16 model, with randomized temperatures, different for each species (second experiment in the paragraph 'Species Sorting' of the paper)
+
 -in invasion: 20 simulations reproducing the "Community assembly" paragraph of the paper, with the classic SV16 model
+
 -in KO: two simulations reproducing the "Species removal and re-introduction" paragraph of the paper, with the classic SV16 model. The different names correspond to the different steps of the simulation. The "null model" corresponds to a case where no species has been knocked out.The very first 5000 years are taken from the dynamics obtained in SV_same_temp (iterX where X={5,7}), the next 5000 years are output in simuX_KO_SPfirst_5000_years where SP is the species that has been knocked out, and the end of the series is in simuX_KO_SP.mat.
+
 -in season: 1no_stochasticity corresponds to the SV model with storage effect and a purely seasonal signal (theta=sqrt(2))
+
 -in SV_same_temp : all "Xessai.mat" files are previous simulations which are not used any more. The first series of iterX_codeversion_20180228_theta0.mat (where X=1-10) corresponds to the dynamics of all species with the classic SV16 model. There was one iter1_codeversion_20180228_theta0_competitonintrahigherthanextra_testwithrinode.mat which was only meant to test the speed of computation when r was computed in the ode function (it was 3 or 4 times lower). 
 The series iterX_codeversion_20180228_theta0_competitonintrahigherthanextra.mat and iterX_codeversion_20180228_theta0_competitonintrahigherthanextra_only4timeshigher.mat corresponds to the same model (including the storage effect and the same interaction coefficients for all species) ran with the same forcings, changing only the fact that intragroup competition is either 10 or 4 times higher than intergroup coefficients.
 The series iterX_codeversion_20180228_theta0_Ashby_formulation.mat corresponds to the SV16 model (including storage effect) but with different values of competition, based on the niche model described by Ashby 2017.
+The series iter2_codeversion_20180228_theta0_random_matrixX.mat corresponds to the SV16 model (including storage effect) but competition values following a folded normal distribution with mean value=0.001 (except for mean(a_{i,i})=0.01) and standard deviation=0.00039. The same environmental forcing (iter2) is chosen for all simulations, the community matrix is the only change. 
+The series iter2_codeversion_20180228_theta0_random_matrixXnohigher.mat is the same as above, but there are no difference between intra and intergroup coefficient.
+
 -in no_forced_competition: SV16 without storage effect (fixed competition coefficients, which do not depend on the forcing). In the first case, iterX_codeversion_20180228_theta0_noforcedcompetition.mat, simulations are also based on the same temperature as in SV_same_temp but r and A did not multiply anymore.
 In iterX_codeversion_20180228_theta0_noforcedcompetition_weightedinteraction.mat, a_{i,.} was multiplied by the mean value of r_i over the forcings. 
 In iterX_codeversion_20180228_theta0_noforcedcompetition_Ashbyformulation, a_{i,j} are based on Ashby et al 2017 formulation.
 In iterX_codeversion_20180228_theta0_noforcedcompetition_10higherintra, a_{i,j}=0.001 and a_{i,i}=0.01
+In iterX_codeversion_20180228_theta0_random_GRincompetition.mat, the competition coefficients are weighted by random value of r_i (eq. 10 in the report)
 
 Finaly, the file growth_rate_analysis.ods contains the average maximum, standard deviation and mean values of growth rates for each species, over the 10 simulations of SV_same_temp. It can be used to weigh the interaction coefficients or use the standard deviation to compute interactions at random.
 
-Simulations that are currently running: Ashby formulation with and without storage effect; and _noforcedcompetition_10higherintra. 

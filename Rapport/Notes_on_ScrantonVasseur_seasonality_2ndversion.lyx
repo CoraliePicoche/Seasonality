@@ -2809,6 +2809,30 @@ Or
 \begin_inset Formula $\mathbf{A}=|\mathbf{A}|$
 \end_inset
 
+
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+I realized that we are using a folded normal distribution, I think we should
+ correct the initial mean and standard deviations (-> will do if we want
+ to keep working with this model) 
+\end_layout
+
+\end_inset
+
 .
  
 \end_layout
@@ -3122,7 +3146,7 @@ noprefix "false"
 \end_layout
 
 \begin_layout Subsection
-Random interactions, higher intragroup competition
+Random interactions
 \end_layout
 
 \begin_layout Standard
@@ -3138,11 +3162,54 @@ Corresponding to iteration 2, which is used in every plot
 \end_inset
 
  but only changed the community matrix.
+ We tested 
+\begin_inset Formula $\rho=1$
+\end_inset
+
+ or 
+\begin_inset Formula $\rho=10$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+In the first case, the number of extant species at the end of a 5000-year
+ simulations is between 1 and 4 (with half of the simulations leading to
+ 2 species at the end) and a total biomass between 
+\begin_inset Formula $10^{2}$
+\end_inset
+
+ and 
+\begin_inset Formula $10^{4}$
+\end_inset
+
+ (in one case with only one species, it can reach 
+\begin_inset Formula $10^{5}$
+\end_inset
+
+).
+ No common patterns can be found in the 10 different simulations: extant
+ species can either be close or belong to different clumps of thermal optima,
+ and they may, or may not be synchronous.
  
 \end_layout
 
 \begin_layout Standard
-[Running, will be checked on Monday morning]
+When 
+\begin_inset Formula $\rho=10$
+\end_inset
+
+, the number of extant species at the end of a 5000-year simulation is between
+ 57 and 60 (40% counts 59 species, 30% counts 60 species at the end), with
+ a total biomass around 685.
+ Species going extinct are at both ends of the thermal optimum spectrum.
+ When only one species disappears, it belongs to the lower part of the spectrum
+ while communities with 57 species at the end tend to miss species from
+ the higher part of the spectrum.
+ At the community level, Loreau's synchrony index does not exceed 0.1 while
+ Gross's index values oscillate between 0 and 0.25.
+ 
 \end_layout
 
 \begin_layout Subsection
@@ -3934,6 +4001,55 @@ where
 \end_inset
 
  is a random time index.
+ In this case, simulations are very unstable (numerical problems: the last
+ species goes extinct, then reappears...).
+ In all 8 simulations we launched
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Not 10, I stopped before, when I saw signs of instability.
+ I do think we need to correct this if we are to use this implementation.
+\end_layout
+
+\end_inset
+
+, we ended up with 1 species only at the end of the simulation.
+ Extinction is very quick, happening in the first 100 years of the simulation.
+ In all but one case, the corresponding optimum temperatures are above 21.7°C,
+ which mean that the extant species belong to the higher 33% of the spectrum.
+ In 3 cases out of 8, it was the last species (index 60) which survived.
+ In one case only, species 14 survived (
+\begin_inset Formula $\tau_{opt}=17.2$
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+°C).
+
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
  
 \begin_inset Newline linebreak
 \end_inset
