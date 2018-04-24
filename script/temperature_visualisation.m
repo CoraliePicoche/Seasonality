@@ -13,7 +13,7 @@ tau05=compute_temperature_season(t,1/2);
 tau1=compute_temperature_season(t,1);
 tausq2=compute_temperature_season(t,sqrt(2));
 tau13=compute_temperature_season(t,1.3);
-subplot(2,2,1)
+subplot(1,2,2)
 plot(t,tau0,'-k')
 title('\theta=0')
 subplot(2,2,2)
