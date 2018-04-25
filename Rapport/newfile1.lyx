@@ -1502,6 +1502,13 @@ Times series of temperature (top) and extant species (bottom) for the 2
  The forcing temperature is either a white noise (left) or a noisy season
  signal (right).
  Line colors of species biomasses correspond to their thermal optima.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Times-series_temperature_species"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -1523,8 +1530,15 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename graphe/figureX.pdf
-	width 95text%
+	filename graphe/60species.pdf
+	width 45text%
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename graphe/1species.pdf
+	width 45text%
 
 \end_inset
 
@@ -1535,7 +1549,25 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-??
+Mean biomass over the last 200 years of simulation for the two stable cases
+ : with storage effect and stabilizing niche differences (left, all species
+ are always present at the end of the simulation, their mean biomass is
+ represented by boxplots of the mean value for 50 simulations) and without
+ storage effect nor stabilizing niche differences (right, only one species
+ is extant at the end of simulation, its mean value is represented by a
+ dot for one simulation.
+ There can be several dots for the same species, corresponding to multiple
+ simulations ending with this species alone).
+ Temperature is either a white noise (top) or a seasonal signal (bottom).
+ Each species is identified by its thermal optimum and its color code.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Mean-biomass-in_stable_cases"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
