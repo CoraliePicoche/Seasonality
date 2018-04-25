@@ -1592,6 +1592,17 @@ status open
 
 \begin_layout Plain Layout
 \align center
+\begin_inset Graphics
+	filename graphe/extant_species.pdf
+	width 80text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="3" columns="3">
 <features tabularvalignment="middle">
@@ -1795,7 +1806,9 @@ No stabilizing niche differences
 
 \begin_layout Plain Layout
 Median value [min-max] for the first ten simulations [Will be replaced -?-
- by corresponding boxplots]
+ by corresponding boxplots.
+ In grey, white noise.
+ In blue, season]
 \end_layout
 
 \end_inset
