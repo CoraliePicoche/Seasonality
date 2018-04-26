@@ -90,7 +90,7 @@ end;
 %Filename for -SE-SND
 extension='_noforcedcompetition_weightedinteraction.mat';
 season_comm=zeros(1,50);
-for iter=11:50 %I'm re-running the first 10
+for iter=1:50
     filename=strcat(dir_output,'/iter',num2str(iter),'_codeversion_20180228_theta1p3',extension);
     load(filename)
     nb_species=sum(youtbis'>thresh_min);

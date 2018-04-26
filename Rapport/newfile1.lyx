@@ -1468,12 +1468,39 @@ Results
 \end_layout
 
 \begin_layout Standard
-[We should have a figure where thermal optima for each species would be
- represented by its color as in SV.
- We can either represent growth rates as suggested by Fred, or maybe the
- mean biomass at the end of a simulation for storage effect+stabilizing
- niche differences, which would give an idea of the dome-shaped distribution
- of abundances (and we would have something to discuss it afterwards 2.]
+Summary of main results so far :
+\end_layout
+
+\begin_layout Itemize
+Stabilizing niche differences are more important than storage effect to
+ maintain biodiversity
+\end_layout
+
+\begin_layout Itemize
+Storage effect without stabilizing niche differences lead to multimodal
+ abundance distribution (which is quite stable : always 3 modes.
+ 
+\series bold
+Why ?
+\series default
+) whereas no storage effect with stabilizing niche differences lead to a
+ unimodal, more even distribution (in line with previous point, not sure
+ that's really a result).
+ 
+\end_layout
+
+\begin_layout Itemize
+Seasonality tends to decrease the total number of extant species when compared
+ to white noise (small fitness differences for longer: species are driven
+ to extinction whereas they can recover before crashing with a white noise).
+ 
+\end_layout
+
+\begin_layout Itemize
+Seasonality tends to favor maximum growth rates even though it also leads
+ to higher competition whereas white noise tends to favor balanced growth
+ rates and competition.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -1594,7 +1621,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename graphe/extant_species.pdf
-	width 80text%
+	width 65text%
 
 \end_inset
 
@@ -1661,7 +1688,7 @@ Stabilizing niche differences
 \begin_inset Text
 
 \begin_layout Plain Layout
-28 [25-29]
+28 [20-32]
 \end_layout
 
 \end_inset
@@ -1681,7 +1708,7 @@ No stabilizing niche differences
 \begin_inset Text
 
 \begin_layout Plain Layout
-14.5 [11-19]
+15 [11-20]
 \end_layout
 
 \end_inset
@@ -1779,7 +1806,7 @@ No stabilizing niche differences
 \begin_inset Text
 
 \begin_layout Plain Layout
-4 [3-6]
+4 [2-6]
 \end_layout
 
 \end_inset
@@ -1805,14 +1832,60 @@ No stabilizing niche differences
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Median value [min-max] for the first ten simulations [Will be replaced -?-
- by corresponding boxplots.
- In grey, white noise.
- In blue, season]
+Median value [min-max] for 50 simulations per combination of parameters
+ [Will we keep the boxplots? In grey, white noise.
+ In blue, season.
+ +SE-SND=Storage effect, no stabilizing niche differences.
+ -SE+SND=No storage effect, with stabilizing niche difference]
 \end_layout
 
 \end_inset
 
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename graphe/biomass_unstable_cases.png
+	lyxscale 50
+	width 85text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+[Preliminary, still searching for a better graph] Biomass distribution of
+ species, ranked by their thermal optimum, with storage effect without stabilizi
+ng niche differences (left) and no storage effect with stabilizing niche
+ differences (right).
+ Shadowed area corresponds to the range of values for 50 simulations, lines
+ correspond to a typical simulation.
+ Temperature is either a white noise (blue) or a seasonal signal (red)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
 
 \end_layout
 
