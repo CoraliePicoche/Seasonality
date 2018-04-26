@@ -400,7 +400,7 @@ literal "false"
 
 \begin_layout Standard
 
-\change_inserted -666822487 1524760044
+\change_inserted -666822487 1524759527
 Because many phytoplankton species or genera respond in similar ways to
  temperature despite having different optimas, we hypothetized that a large
  seasonal variation might not necessarily affect coexistence in a positive
@@ -409,15 +409,12 @@ Because many phytoplankton species or genera respond in similar ways to
  partitioning between the species.
  How seasonality affects coexistence (as opposed to a purely randomly fluctuatin
 g environment) is therefore a key feature of this paper.
- In particular, we contrast cases where the storage effect is present vs.
- absent, which elegantly maps to two different versions of the forced Lotka-Volt
-erra model (see Methods).
  
 \end_layout
 
 \begin_layout Standard
 
-\change_inserted -666822487 1524759831
+\change_inserted -666822487 1524759679
 Moreover, we realized while running 
 \begin_inset CommandInset citation
 LatexCommand citet
@@ -432,23 +429,7 @@ literal "false"
  and multivariate autoregressive models (REF), we found that despite a large
  influence of the environment (including temperature, irradiance, and other
  factors), intraspecific (or intragenus) competition was rather large and
- most likely the main reason for coexistence; in other words, stabilizing
- niche differences had a large role to play in maintaining species diversity
- in coastal phytoplankton (REF).
- Here, we therefore try to establish what are the relative contributions
- of the storage effect vs intraspecific density-dependence to coexistence
- in a phytoplankton-like theoretical community model.
- 
-\end_layout
-
-\begin_layout Standard
-
-\change_inserted -666822487 1524759964
-This multifaceted objectives led us to cross different combinations of seasonali
-ty in the forcing signal, presence of the storage effect or not, and intra-
- vs interspecific competition, in order to disentangle the contributions
- of all these factors to biodiversity maintenance.
- 
+ most likely the main reason for coex
 \change_unchanged
 
 \end_layout
