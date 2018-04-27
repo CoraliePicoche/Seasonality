@@ -79,6 +79,7 @@
 \html_css_as_file 0
 \html_be_strict false
 \author -666822487 "frederic"
+\author 274868703 "Coralie PICOCHE"
 \end_header
 
 \begin_body
@@ -2147,10 +2148,26 @@ No stabilizing niche differences
 
 \begin_layout Plain Layout
 Median value [min-max] for 50 simulations per combination of parameters
- [Will we keep the boxplots? In grey, white noise.
- In blue, season.
+ [Will we keep the boxplots? In 
+\change_deleted 274868703 1524820164
+grey
+\change_inserted 274868703 1524820165
+blue
+\change_unchanged
+, white noise.
+ In 
+\change_deleted 274868703 1524820166
+blue
+\change_inserted 274868703 1524820166
+red
+\change_unchanged
+, season.
  +SE-SND=Storage effect, no stabilizing niche differences.
  -SE+SND=No storage effect, with stabilizing niche difference]
+\change_inserted 274868703 1524820167
+ 
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -2179,23 +2196,150 @@ status open
 \end_inset
 
 
+\change_inserted 274868703 1524818862
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+
+\change_inserted 274868703 1524818896
+\begin_inset Graphics
+	filename graphe/fancy_distrib_YesSE_NoSND.png
+	lyxscale 40
+	width 45text%
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename graphe/fancy_distrib_NoSE_YesSND.png
+	lyxscale 40
+	width 45text%
+
+\end_inset
+
+
+\change_unchanged
+
 \end_layout
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-[Preliminary, still searching for a better graph] Biomass distribution of
- species, ranked by their thermal optimum, with storage effect without stabilizi
-ng niche differences (left) and no storage effect with stabilizing niche
- differences (right).
- Shadowed area corresponds to the range of values for 50 simulations, lines
- correspond to a typical simulation.
+[
+\change_deleted 274868703 1524819087
+Preliminary, still searching for a better graph
+\change_inserted 274868703 1524819264
+Alternative, maybe less is more, actually
+\change_unchanged
+] 
+\change_inserted 274868703 1524819071
+[TOP description] 
+\change_unchanged
+Biomass distribution of species, ranked by their thermal optimum, with storage
+ effect without stabilizing niche differences (left) and no storage effect
+ with stabilizing niche differences (right).
+ Shadowed area corresponds to the range of values for 50 simulations
+\change_inserted 274868703 1524819704
+[TOP ; for Bottom line, shades correspond to the 50th, 90th and 100th percentile
+]
+\change_unchanged
+, lines correspond to a typical simulation.
  Temperature is either a white noise (blue) or a seasonal signal (red)
+\change_inserted 274868703 1524820091
+[Bottom description]
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:MeanDistrib_unstablecases"
+
+\end_inset
+
+
+\change_unchanged
+
 \end_layout
 
 \end_inset
 
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\change_inserted 274868703 1524818932
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\change_inserted 274868703 1524818965
+\begin_inset Graphics
+	filename graphe/unimodal_explanation.png
+	lyxscale 45
+	width 85text%
+
+\end_inset
+
+
+\change_unchanged
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\change_inserted 274868703 1524818932
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\change_inserted 274868703 1524820072
+Mean (squares) and maximum (circles) growth rates values, depending on the
+ thermal optimum of each species.
+ Values are scaled by their maximum.
+ The maximum of mean growth rates is indicated by a dotted line.
+ Biomass distribution for a white noise (blue) or a seasonal signal (red)
+ without storage effect with stabilizing niche differences are indexed on
+ the left y-axis.
+ Different shades correspond to the 50th, 90th and 100th percentile.
+ For the sake of clarity, two simulations were withdrawn from the distribution
+ as they had a different behaviour.
+ They are shown in Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Not_representative_behaviour"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:GrowthRates_-SE+SND"
+
+\end_inset
+
+
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
 
 \end_layout
 
@@ -2210,6 +2354,71 @@ ng niche differences (left) and no storage effect with stabilizing niche
 
 \begin_layout Section
 Discussion
+\change_inserted 274868703 1524819770
+
+\end_layout
+
+\begin_layout Standard
+\start_of_appendix
+
+\change_inserted 274868703 1524819781
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\change_inserted 274868703 1524819945
+\begin_inset Graphics
+	filename graphe/different_behaviour_NoSE_YesSND.png
+	lyxscale 40
+	width 80text%
+
+\end_inset
+
+
+\change_unchanged
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\change_inserted 274868703 1524819781
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\change_inserted 274868703 1524820043
+Mean distribution of species at the end of a simulation without storage
+ effect with stabilizing niche differences, for the only 2 cases in which
+ seasonal (red) and white noise (blue) dsitributions overlapped
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Not_representative_behaviour"
+
+\end_inset
+
+
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard

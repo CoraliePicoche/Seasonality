@@ -56,9 +56,9 @@ boxplot(tmp,'positions',[1.2 1.3 1.5 1.6],'colors','kb','whisker',10000,'labels'
 xtick([1.25 1.55])
 xticklabels({'+SE-SND','-SE+SND'})
 h = findobj(gca,'Tag','Box');
-col=['b','k','b','k'];
+col=['r','b','r','b'];
 for j=1:length(h)
-patch(get(h(j),'XData'),get(h(j),'YData'),col(j),'FaceAlpha',.3);
+patch(get(h(j),'XData'),get(h(j),'YData'),col(j),'FaceAlpha',.5);
 end
 ylabel('Number of extant species')
 set(gca,'Fontsize',afontsize)
