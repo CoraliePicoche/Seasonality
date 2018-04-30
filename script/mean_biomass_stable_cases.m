@@ -5,7 +5,7 @@
 clear all; close all; clc;
 thresh_min=10^(-6);
 yspan=200;
-afontsize=13;
+afontsize=20;
 col=jet(60);
 
 dir_output='./output_simulation/white_noise/';
@@ -30,31 +30,36 @@ for iter=1:50
 end;
 
 
-mini=min(biomass_final_60(:));
-maxi=max(biomass_final_60(:));
 subplot(2,1,1)
     boxplot(biomass_final_60(:,:,1)','BoxStyle','filled','Colors',col,'whisker',1000)
+    maxi=get(gca,'Ylim');
+maxi=maxi(2);
+text(2,0.95*maxi,'c','Fontsize',afontsize)
     %ylim([mini maxi])
-    ylabel('Biomass')
     box off;
 %left bottom width height
     pos = get(gca, 'Position');
-    pos(2)=0.575;
-    pos(4)=0.4;
+    pos(2)=0.57;
+    pos(4)=0.32;
+    pos(1)=0.18;
+    title('60 species (+SE+SND)','Fontsize',afontsize);
     set(gca,'Position',pos,'Fontsize',afontsize,'xtick',[])
 
     subplot(2,1,2)
         boxplot(biomass_final_60(:,:,2)','BoxStyle','filled','Colors',col,'whisker',1000) 
-        xticklabels(tau_opt-273)
-        ylabel('Biomass')
-        %ylim([mini maxi])
+            maxi=get(gca,'Ylim');
+maxi=maxi(2);
+text(2,0.95*maxi,'d','Fontsize',afontsize)
+
+        xticklabels(tau_opt-273)       %ylim([mini maxi])
         xaxlabel=cell(1,length(tau_opt));
-        xaxlabel(1:4:length(tau_opt))=sprintfc("%.2f",tau_opt(1:4:length(tau_opt))-273);
+        xaxlabel(1:4:length(tau_opt))=sprintfc("%.1f",tau_opt(1:4:length(tau_opt))-273);
         set(gca,'XTickLabel',xaxlabel)
         xtickangle(90)
             pos = get(gca, 'Position');
-            pos(2)=0.132;
-   pos(4)=0.4;
+            pos(1)=0.17;
+            pos(2)=0.165;
+   pos(4)=0.32;
     set(gca,'Position',pos,'Fontsize',afontsize)
 box off;
 fig = gcf;
@@ -114,11 +119,16 @@ for s1=1:60
 end
 xlim([min(tau_opt)-273-0.5 max(tau_opt)-273+0.5])
 ylim([750 850])
+    ylabel('Biomass')
 box off
+text(14.9,845,'a','Fontsize',afontsize)
+
 hold off;
-    pos = get(gca, 'Position');1
-    pos(2)=0.575;
-    pos(4)=0.4;
+    pos = get(gca, 'Position');
+    pos(2)=0.57;
+    pos(4)=0.32;
+    pos(1)=0.17;
+        title('1 species (-SE-SND)','Fontsize',afontsize);
     set(gca,'Position',pos,'Fontsize',afontsize,'xtick',[])
    
 subplot(2,1,2)
@@ -128,15 +138,20 @@ for s1=1:60
 end
 xlim([min(tau_opt)-273-0.5 max(tau_opt)-273+0.5])
 ylim([750 850])
+
+    ylabel('Biomass')
 box off
+text(14.9,845,'b','Fontsize',afontsize)
+
 hold off;
         xtick(tau_opt-273)
         %ylim([mini maxi])
         set(gca,'XTickLabel',xaxlabel)
         xtickangle(90)
             pos = get(gca, 'Position');
-            pos(2)=0.132;
-   pos(4)=0.4;
+            pos(2)=0.165;
+   pos(4)=0.32;
+   pos(1)=0.17;
     set(gca,'Position',pos,'Fontsize',afontsize)
 box off;
 fig = gcf;

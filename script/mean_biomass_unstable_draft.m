@@ -8,6 +8,15 @@ yspan=200;
 afontsize=13;
 col=jet(60);
 
+subplot_id=zeros(1,2);
+
+T = readtable("output_simulation/SV_same_temp/growth_rate_analysis.csv","Delimiter",";");
+max_growth_rate=table2array(T(:,1));
+mean_growth_rate=table2array(T(:,3));
+
+max_growth_rate=max_growth_rate/max(max_growth_rate);
+mean_growth_rate=mean_growth_rate/max(mean_growth_rate);
+
 dir_output='./output_simulation/white_noise/';
 %Filename for +SE-SND
 extension='.mat';
@@ -29,8 +38,6 @@ for iter=1:50
     biomass_final_1(:,iter,2)=mean_value;
 end;
 
-figure
-subplot(1,1,1)
 % tmp=zeros(length(tau_opt),2);
 % for t=1:length(tau_opt)
 %     tmp(t,1)=min(biomass_final_1(t,:,1));
@@ -53,7 +60,6 @@ for t=1:length(tau_opt)
     tmp(t,3,2)=prctile(biomass_final_1(t,:,2),50);
     tmp(t,4,2)=prctile(biomass_final_1(t,:,2),90);    
 end
-hold on
 
 %Feeling fancy
 plou1=[tau_opt fliplr(tau_opt)]-273;
@@ -64,7 +70,12 @@ nin_max_wn=[tmp(:,4,1)' fliplr(tmp(:,2,1)')];
 min_median_season=[tmp(:,1,2)' fliplr(tmp(:,3,2)')];
 median_90_season=[tmp(:,3,2)' fliplr(tmp(:,4,2)')];
 nin_max_season=[tmp(:,4,2)' fliplr(tmp(:,2,2)')];
+fig=figure;
+set(fig,'defaultAxesColorOrder',[[0 0 0]; [0 0 0]]);
+subplot(2,1,1)
+hold on
 
+yyaxis left;
 fill(plou1,min_median_wn,'b','EdgeColor','none','FaceAlpha',.3)
 fill(plou1,median_90_wn,'b','EdgeColor','none','FaceAlpha',.5)
 fill(plou1,nin_max_wn,'b','EdgeColor','none','FaceAlpha',.7)
@@ -76,12 +87,35 @@ fill(plou1,nin_max_season,'r','EdgeColor','none','FaceAlpha',.7)
 iter=7;
      plot(tau_opt-273,biomass_final_1(:,iter,1),'-o','MarkerFaceColor','b','LineWidth',2,'color','b')
 plot(tau_opt-273,biomass_final_1(:,iter,2),'-o','MarkerFaceColor','r','LineWidth',2,'color','r')
+      xticks(tau_opt-273)     
+        xaxlabel=cell(1,length(tau_opt));
+        %xaxlabel(1:4:length(tau_opt))=sprintfc("%.1f",tau_opt(1:4:length(tau_opt))-273);
+        set(gca,'XTickLabel',xaxlabel)
+        xtickangle(90)
 %end
-hold off;
+subplot_id(1)=ylabel('Biomass');
 set(gca,'Fontsize',14)
 
-figure
-subplot(1,1,1)
+yyaxis right;
+plot(tau_opt-273,max_growth_rate,'o','MarkerFaceColor','k','MarkerEdgeColor','k','MarkerSize',3)
+plot(tau_opt-273,mean_growth_rate,'s','MarkerFaceColor','k','MarkerEdgeColor','k','MarkerSize',3)
+id=find(mean_growth_rate==1);
+
+text(15.1,1.*0.95,'a','Fontsize',afontsize)
+plot([tau_opt(id) tau_opt(id)]-273,[0 mean_growth_rate(id)],'--k','LineWidth',2)
+hold off;
+% fig.PaperPositionMode = 'auto'
+% fig_pos = fig.PaperPosition;
+% fig.PaperSize = [fig_pos(3) fig_pos(4)];
+% print(fig,'./Rapport/graphe/fancy_distrib_YesSE_NoSND','-dtiff')
+pos=get(gca,'Position')
+pos(4)=0.40;
+pos(2)=0.57;
+set(gca,'Position',pos)
+subplot(2,1,2)
+% 
+% set(fig,'defaultAxesColorOrder',[[0 0 0]; [0 0 0]]);
+% subplot(1,1,1)
 extension='_noforcedcompetition_10higherintra_weightedinteraction.mat';
 
 biomass_final_2=zeros(60,50,2);
@@ -165,8 +199,35 @@ plot(tau_opt-273,biomass_final_2(:,iter,1),'-o','MarkerFaceColor','b','LineWidth
 %for iter=1:50
 iter=7;
 plot(tau_opt-273,biomass_final_2(:,iter,2),'-o','MarkerFaceColor','r','LineWidth',2,'color','r')
+      xticks(tau_opt-273)       %ylim([mini maxi])
+        xaxlabel=cell(1,length(tau_opt));
+        xaxlabel(1:4:length(tau_opt))=sprintfc("%.1f",tau_opt(1:4:length(tau_opt))-273);
+        set(gca,'XTickLabel',xaxlabel)
+         xtickangle(90)
+subplot_id(2)=ylabel('Biomass');
 set(gca,'Fontsize',14)
 %end
-hold off;
 
+yyaxis right;
+plot(tau_opt-273,max_growth_rate,'o','MarkerFaceColor','k','MarkerEdgeColor','k','MarkerSize',3)
+plot(tau_opt-273,mean_growth_rate,'s','MarkerFaceColor','k','MarkerEdgeColor','k','MarkerSize',3)
+text(15.1,1*0.95,'b','Fontsize',afontsize)
+
+id=find(mean_growth_rate==1);
+plot([tau_opt(id) tau_opt(id)]-273,[0 mean_growth_rate(id)],'--k','LineWidth',2)
+
+pos=get(gca,'Position');
+pos(4)=0.4;
+pos(2)=0.13;
+set(gca,'Position',pos)
+positions = cell2mat(get(subplot_id([1 2]), 'Position'));
+xpos = min(positions(:,1));
+for i=[1 2]
+    set(subplot_id(i), 'Position',[xpos, positions(i,2), positions(i,3)]);
+end
+hold off;
+fig.PaperPositionMode = 'auto'
+fig_pos = fig.PaperPosition;
+fig.PaperSize = [fig_pos(3) fig_pos(4)];
+print(fig,'./Rapport/graphe/figure_4','-dtiff')
 

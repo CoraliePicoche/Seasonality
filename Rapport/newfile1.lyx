@@ -73,41 +73,22 @@
 \papercolumns 1
 \papersides 1
 \paperpagestyle default
-\tracking_changes true
+\tracking_changes false
 \output_changes false
 \html_math_output 0
 \html_css_as_file 0
 \html_be_strict false
-\author -666822487 "frederic"
-\author 274868703 "Coralie PICOCHE"
 \end_header
 
 \begin_body
 
 \begin_layout Title
-
-\change_deleted -666822487 1524757959
-Coexistence in species-rich communities still needs s
-\change_inserted -666822487 1524757959
-S
-\change_unchanged
-tabilizing niche differences
-\change_inserted -666822487 1524757971
- are still required to maintain species-rich communities
-\change_unchanged
- in temporally variable environment
-\change_inserted -666822487 1524757974
-s
-\change_unchanged
-
+Stabilizing niche differences are still required to maintain species-rich
+ communities in temporally variable environments
 \end_layout
 
 \begin_layout Running Title
-Coexistence in 
-\change_inserted -666822487 1524757940
-species-
-\change_unchanged
-rich communities
+Coexistence in species-rich communities
 \end_layout
 
 \begin_layout Date
@@ -136,20 +117,7 @@ Coralie Picoche
 
 \end_inset
 
-,
-\change_deleted -666822487 1524758007
- Frédéric Barraquand 
-\begin_inset script superscript
-
-\begin_layout Plain Layout
-1,2
-\end_layout
-
-\end_inset
-
-,
-\change_unchanged
- Alix Sauve
+, Alix Sauve
 \begin_inset script superscript
 
 \begin_layout Plain Layout
@@ -158,21 +126,15 @@ Coralie Picoche
 
 \end_inset
 
-
-\change_inserted -666822487 1524758009
 , Frédéric Barraquand 
 \begin_inset script superscript
 
 \begin_layout Plain Layout
-
-\change_inserted -666822487 1524758009
 1,2
 \end_layout
 
 \end_inset
 
-
-\change_unchanged
 
 \end_layout
 
@@ -185,31 +147,8 @@ Coralie Picoche
 
 \end_inset
 
-I
-\change_inserted -666822487 1524758018
-ntegrative and 
-\change_unchanged
-T
-\change_inserted -666822487 1524758022
-heoretical 
-\change_unchanged
-E
-\change_inserted -666822487 1524758025
-cology Chair
-\change_unchanged
-, 
-\change_inserted -666822487 1524758030
-Labex COTE, 
-\change_unchanged
-U
-\change_inserted -666822487 1524758035
-niversity of 
-\change_unchanged
-B
-\change_inserted -666822487 1524758038
-ordeaux
-\change_unchanged
-, 
+Integrative and Theoretical Ecology Chair, Labex COTE, University of Bordeaux,
+ 
 \begin_inset script superscript
 
 \begin_layout Plain Layout
@@ -218,15 +157,7 @@ ordeaux
 
 \end_inset
 
-I
-\change_inserted -666822487 1524758046
-nstitute of Mathematics
-\change_deleted -666822487 1524758051
-MB
-\change_inserted -666822487 1524758053
-of Bordeaux
-\change_unchanged
-, CNRS
+Institute of Mathematicsof Bordeaux, CNRS
 \end_layout
 
 \begin_layout Standard
@@ -249,14 +180,8 @@ Introduction
 \end_layout
 
 \begin_layout Standard
-
-\change_deleted -666822487 1524758087
-Unifying niche and neutral perspectives still under debate 
-\change_inserted -666822487 1524758121
 There has been a rich debate in theoretical ecology on how to reconcile
  niche and neutral perspectives 
-\change_unchanged
-
 \begin_inset CommandInset citation
 LatexCommand citep
 key "scheffer_self-organized_2006,barabas_emergent_2013,vergnon_interpretation_2013"
@@ -264,9 +189,7 @@ literal "false"
 
 \end_inset
 
- 
-\change_inserted -666822487 1524758812
-[we can add or replace this by refs Dom Gravel and others here].For instance,
+ [we can add or replace this by refs Dom Gravel and others here].For instance,
  
 \begin_inset CommandInset citation
 LatexCommand citet
@@ -333,8 +256,6 @@ literal "false"
 \end_layout
 
 \begin_layout Standard
-
-\change_inserted -666822487 1524759324
 Here, we build on the work of 
 \begin_inset CommandInset citation
 LatexCommand citet
@@ -395,13 +316,9 @@ literal "false"
  into a mixture of stochastic and deterministic environmental forces affecting
  Lotka-Volterra community dynamics.
  
-\change_unchanged
-
 \end_layout
 
 \begin_layout Standard
-
-\change_inserted -666822487 1524760044
 Because many phytoplankton species or genera respond in similar ways to
  temperature despite having different optimas, we hypothetized that a large
  seasonal variation might not necessarily affect coexistence in a positive
@@ -417,8 +334,6 @@ erra model (see Methods).
 \end_layout
 
 \begin_layout Standard
-
-\change_inserted -666822487 1524759831
 Moreover, we realized while running 
 \begin_inset CommandInset citation
 LatexCommand citet
@@ -443,26 +358,18 @@ literal "false"
 \end_layout
 
 \begin_layout Standard
-
-\change_inserted -666822487 1524759964
 This multifaceted objectives led us to cross different combinations of seasonali
 ty in the forcing signal, presence of the storage effect or not, and intra-
  vs interspecific competition, in order to disentangle the contributions
  of all these factors to biodiversity maintenance.
  
-\change_unchanged
-
 \end_layout
 
 \begin_layout Standard
-
-\change_inserted -666822487 1524758861
 \begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
-
-\change_inserted -666822487 1524758861
 Influence of the seasonality on temporal niche partitioning 
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -483,8 +390,6 @@ literal "false"
 \end_layout
 
 \begin_layout Plain Layout
-
-\change_inserted -666822487 1524758861
 Focus SV model 
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -494,46 +399,10 @@ literal "false"
 \end_inset
 
 
-\change_unchanged
-
 \end_layout
 
 \end_inset
 
-
-\change_deleted -666822487 1524758861
-Influence of the seasonality on temporal niche partitioning 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "barabas_community_2012,sakavara_lumpy_2018"
-literal "false"
-
-\end_inset
-
- + definition of the storage effect 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "barabas_community_2012,ellner_how_2016"
-literal "false"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-
-\change_deleted -666822487 1524758861
-Focus SV model 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "scranton_coexistence_2016"
-literal "false"
-
-\end_inset
-
-
-\change_unchanged
 
 \end_layout
 
@@ -1843,7 +1712,21 @@ Times series of temperature (top) and extant species (bottom) for the 2
  last years of a 5000 year simulation.
  The forcing temperature is either a white noise (left) or a noisy season
  signal (right).
- Line colors of species biomasses correspond to their thermal optima.
+ Line colors of species biomasses correspond to their thermal optima (from
+ blue, corresponding to low thermal optima, to red, corresponding to high
+ thermal optima.
+ The all range is shown on Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Mean-biomass-in_stable_cases"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:Times-series_temperature_species"
@@ -1872,14 +1755,56 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename graphe/60species.pdf
+	filename graphe/extant_species.pdf
+	width 65text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Number of species still present at the end of 5000-year simulations, initialized
+ with 60 species, with a white noise forcing signal (blue) or a noisy seasonal
+ signal (red).
+ For each model type (with and without Storage Effect, + / - SE, respectively;
+ with and without Stabilizing Niche Differences, + / - SND, respectively),
+ 50 simulations were launched.
+ Community compositions are stable in the cases -SE-SND and +SE+SND (1 or
+ 60 species are still present at the end of all simulations, respectively).
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename graphe/1species.pdf
 	width 45text%
 
 \end_inset
 
 
 \begin_inset Graphics
-	filename graphe/1species.pdf
+	filename graphe/60species.pdf
 	width 45text%
 
 \end_inset
@@ -1891,16 +1816,17 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Mean biomass over the last 200 years of simulation for the two stable cases
- : with storage effect and stabilizing niche differences (left, all species
- are always present at the end of the simulation, their mean biomass is
- represented by boxplots of the mean value for 50 simulations) and without
- storage effect nor stabilizing niche differences (right, only one species
+Mean biomass distribution over the last 200 years of 50 simulations, as
+ a function of thermal optima, for the two stable-composition cases: without
+ storage effect nor stabilizing niche differences (left, only one species
  is extant at the end of simulation, its mean value is represented by a
  dot for one simulation.
  There can be several dots for the same species, corresponding to multiple
- simulations ending with this species alone).
- Temperature is either a white noise (top) or a seasonal signal (bottom).
+ simulations ending with this species alone) and with storage effect and
+ stabilizing niche differences (right, all species are present at the end
+ of the simulation, their mean biomass is represented by boxplots of the
+ mean value for 50 simulations).
+ The forcing signal is either a white noise (top) or a seasonal signal (bottom).
  Each species is identified by its thermal optimum and its color code.
  
 \begin_inset CommandInset label
@@ -1917,7 +1843,118 @@ name "fig:Mean-biomass-in_stable_cases"
 
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
 \begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename graphe/figure_4.tif
+	lyxscale 50
+	width 65text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Mean biomass distribution over the last 200 years of 50 simulations, as
+ a function of thermal optima, with storage effect and no stabilizing niche
+ differences (top) and without storage effect, with stabilizing niche difference
+s (bottom).
+ The forcing signal is either a white noise (blue) or a seasonal signal
+ (red).
+ Shades of the same colour corresponds to the 50th, 90th and 100th percentiles
+ of the distributions while coloured lines correspond to one representative
+ simulation.
+ Scaled average (whose optimum is indicated by the dotted line) and maximum
+ growth rates are shown as squares and circles, respectively, and indexed
+ on the left y-axis.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Discussion
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+btprint "btPrintCited"
+bibfiles "MyLibrary"
+options "../spbasic_nicer"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+\start_of_appendix
+Supplementary Material
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename graphe/example_iteration.tif
+	lyxscale 50
+	width 75text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Mean biomass distribution over the last 200 years of 9 representative simulation
+s, as a function of thermal optima, without storage effect with stabilizing
+ niche differences, in which temperature is either a seasonal signal (red)
+ or a white noise (blue).
+ The distribution induced by a white noise overlaps the one obtained with
+ a seasonal signal in only 2 simulations out of 50.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Not_representative_behaviour"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
 
 \end_layout
 
@@ -1931,17 +1968,6 @@ name "fig:Mean-biomass-in_stable_cases"
 wide false
 sideways false
 status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename graphe/extant_species.pdf
-	width 65text%
-
-\end_inset
-
-
-\end_layout
 
 \begin_layout Plain Layout
 \align center
@@ -2147,286 +2173,19 @@ No stabilizing niche differences
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Median value [min-max] for 50 simulations per combination of parameters
- [Will we keep the boxplots? In 
-\change_deleted 274868703 1524820164
-grey
-\change_inserted 274868703 1524820165
-blue
-\change_unchanged
-, white noise.
- In 
-\change_deleted 274868703 1524820166
-blue
-\change_inserted 274868703 1524820166
-red
-\change_unchanged
-, season.
- +SE-SND=Storage effect, no stabilizing niche differences.
- -SE+SND=No storage effect, with stabilizing niche difference]
-\change_inserted 274868703 1524820167
- 
-\change_unchanged
-
+Table corresponding to Fig.
+ 2.
+ Which one to choose?
 \end_layout
 
 \end_inset
 
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename graphe/biomass_unstable_cases.png
-	lyxscale 50
-	width 85text%
-
-\end_inset
-
-
-\change_inserted 274868703 1524818862
-
-\end_layout
-
-\begin_layout Plain Layout
-\align center
-
-\change_inserted 274868703 1524818896
-\begin_inset Graphics
-	filename graphe/fancy_distrib_YesSE_NoSND.png
-	lyxscale 40
-	width 45text%
-
-\end_inset
-
-
-\begin_inset Graphics
-	filename graphe/fancy_distrib_NoSE_YesSND.png
-	lyxscale 40
-	width 45text%
-
-\end_inset
-
-
-\change_unchanged
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-[
-\change_deleted 274868703 1524819087
-Preliminary, still searching for a better graph
-\change_inserted 274868703 1524819264
-Alternative, maybe less is more, actually
-\change_unchanged
-] 
-\change_inserted 274868703 1524819071
-[TOP description] 
-\change_unchanged
-Biomass distribution of species, ranked by their thermal optimum, with storage
- effect without stabilizing niche differences (left) and no storage effect
- with stabilizing niche differences (right).
- Shadowed area corresponds to the range of values for 50 simulations
-\change_inserted 274868703 1524819704
-[TOP ; for Bottom line, shades correspond to the 50th, 90th and 100th percentile
-]
-\change_unchanged
-, lines correspond to a typical simulation.
- Temperature is either a white noise (blue) or a seasonal signal (red)
-\change_inserted 274868703 1524820091
-[Bottom description]
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:MeanDistrib_unstablecases"
-
-\end_inset
-
-
-\change_unchanged
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-
-\change_inserted 274868703 1524818932
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-
-\change_inserted 274868703 1524818965
-\begin_inset Graphics
-	filename graphe/unimodal_explanation.png
-	lyxscale 45
-	width 85text%
-
-\end_inset
-
-
-\change_unchanged
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\change_inserted 274868703 1524818932
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-
-\change_inserted 274868703 1524820072
-Mean (squares) and maximum (circles) growth rates values, depending on the
- thermal optimum of each species.
- Values are scaled by their maximum.
- The maximum of mean growth rates is indicated by a dotted line.
- Biomass distribution for a white noise (blue) or a seasonal signal (red)
- without storage effect with stabilizing niche differences are indexed on
- the left y-axis.
- Different shades correspond to the 50th, 90th and 100th percentile.
- For the sake of clarity, two simulations were withdrawn from the distribution
- as they had a different behaviour.
- They are shown in Fig.
- 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:Not_representative_behaviour"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
- 
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:GrowthRates_-SE+SND"
-
-\end_inset
-
-
-\change_unchanged
-
-\end_layout
-
-\end_inset
-
-
-\change_unchanged
 
 \end_layout
 
 \begin_layout Plain Layout
 
 \end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Section
-Discussion
-\change_inserted 274868703 1524819770
-
-\end_layout
-
-\begin_layout Standard
-\start_of_appendix
-
-\change_inserted 274868703 1524819781
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-
-\change_inserted 274868703 1524819945
-\begin_inset Graphics
-	filename graphe/different_behaviour_NoSE_YesSND.png
-	lyxscale 40
-	width 80text%
-
-\end_inset
-
-
-\change_unchanged
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\change_inserted 274868703 1524819781
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-
-\change_inserted 274868703 1524820043
-Mean distribution of species at the end of a simulation without storage
- effect with stabilizing niche differences, for the only 2 cases in which
- seasonal (red) and white noise (blue) dsitributions overlapped
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:Not_representative_behaviour"
-
-\end_inset
-
-
-\change_unchanged
-
-\end_layout
-
-\end_inset
-
-
-\change_unchanged
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset bibtex
-LatexCommand bibtex
-btprint "btPrintCited"
-bibfiles "MyLibrary"
-options "../spbasic_nicer"
 
 \end_inset
 

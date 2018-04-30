@@ -103,3 +103,10 @@ plot(tau_opt-273,max_growth_rate,'o','MarkerFaceColor','k','MarkerEdgeColor','k'
 plot(tau_opt-273,mean_growth_rate,'s','MarkerFaceColor','k','MarkerEdgeColor','k')
 id=find(mean_growth_rate==1);fig=gcf
 plot([tau_opt(id) tau_opt(id)]-273,[0 mean_growth_rate(id)],'--k','LineWidth',2)
+
+
+fig = gcf;
+fig.PaperPositionMode = 'auto'
+fig_pos = fig.PaperPosition;
+fig.PaperSize = [fig_pos(3) fig_pos(4)];
+print(fig,'./Rapport/graphe/extant_species','-dpdf')

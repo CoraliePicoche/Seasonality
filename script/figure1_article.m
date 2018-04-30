@@ -12,10 +12,10 @@ S=60;
 
 %Graphics
 afontsize=12;
-alinewidth=2;
+alinewidth=2.;
 
 %a) Theta=0
-load("output_simulation/SV_same_temp/iter2_codeversion_20180228_theta0.mat")
+load("output_simulation/white_noise/iter2_codeversion_20180228_theta0.mat")
 yend=size(tau,2);
 use_temperature=tau((yend-ylast):yend);
 yend=size(youtbis,1);
@@ -25,7 +25,7 @@ h=zeros(1,4)
 yl=zeros(1,2)
 
 h(1)=subplot(2,2,1)
-plot(use_temperature-273.15,'-k','LineWidth',alinewidth)
+plot(use_temperature-273.15,'-k','LineWidth',.5)
 max=get(gca,'Ylim');
 max=max(2);
 text(2,0.95*max,'a','Fontsize',afontsize)
@@ -66,7 +66,7 @@ yend=size(youtbis,1);
 use_community=youtbis((yend-ylast):yend,:);
 
 h(2)=subplot(2,2,2)
-plot(use_temperature-273.15,'-k','LineWidth',alinewidth)
+plot(use_temperature-273.15,'-k','LineWidth',.5)
 max=get(gca,'Ylim');
 max=max(2);
 text(2,0.95*max,'b','Fontsize',afontsize)
