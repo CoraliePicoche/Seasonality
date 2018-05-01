@@ -1710,12 +1710,12 @@ status open
 \begin_layout Plain Layout
 Times series of temperature (top) and extant species (bottom) for the 2
  last years of a 5000 year simulation.
- The forcing temperature is either a white noise (left) or a noisy season
+ The forcing temperature is either a white noise (left) or a noisy seasonal
  signal (right).
  Line colors of species biomasses correspond to their thermal optima (from
  blue, corresponding to low thermal optima, to red, corresponding to high
  thermal optima.
- The all range is shown on Fig.
+ The whole range of the biomass distribution is shown on Fig.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -1770,11 +1770,11 @@ status open
 Number of species still present at the end of 5000-year simulations, initialized
  with 60 species, with a white noise forcing signal (blue) or a noisy seasonal
  signal (red).
- For each model type (with and without Storage Effect, + / - SE, respectively;
- with and without Stabilizing Niche Differences, + / - SND, respectively),
+ For each model type (with and without Storage Effect, + / - storage, respective
+ly; with and without Stabilizing Niche Differences, + / - SND, respectively),
  50 simulations were launched.
- Community compositions are stable in the cases -SE-SND and +SE+SND (1 or
- 60 species are still present at the end of all simulations, respectively).
+ Community compositions are stable in the cases -storage-SND and +storage+SND
+ (1 or 60 species are still present at the end of all simulations, respectively).
  
 \end_layout
 
@@ -1792,20 +1792,13 @@ Number of species still present at the end of 5000-year simulations, initialized
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename graphe/1species.pdf
-	width 45text%
-
-\end_inset
-
-
-\begin_inset Graphics
-	filename graphe/60species.pdf
-	width 45text%
+	filename graphe/60_and_1species.pdf
+	width 95text%
 
 \end_inset
 

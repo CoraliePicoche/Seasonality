@@ -30,43 +30,12 @@ for iter=1:50
 end;
 
 
-subplot(2,1,1)
-    boxplot(biomass_final_60(:,:,1)','BoxStyle','filled','Colors',col,'whisker',1000)
-    maxi=get(gca,'Ylim');
-maxi=maxi(2);
-text(2,0.95*maxi,'c','Fontsize',afontsize)
-    %ylim([mini maxi])
-    box off;
-%left bottom width height
-    pos = get(gca, 'Position');
-    pos(2)=0.57;
-    pos(4)=0.32;
-    pos(1)=0.18;
-    title('60 species (+SE+SND)','Fontsize',afontsize);
-    set(gca,'Position',pos,'Fontsize',afontsize,'xtick',[])
 
-    subplot(2,1,2)
-        boxplot(biomass_final_60(:,:,2)','BoxStyle','filled','Colors',col,'whisker',1000) 
-            maxi=get(gca,'Ylim');
-maxi=maxi(2);
-text(2,0.95*maxi,'d','Fontsize',afontsize)
-
-        xticklabels(tau_opt-273)       %ylim([mini maxi])
-        xaxlabel=cell(1,length(tau_opt));
-        xaxlabel(1:4:length(tau_opt))=sprintfc("%.1f",tau_opt(1:4:length(tau_opt))-273);
-        set(gca,'XTickLabel',xaxlabel)
-        xtickangle(90)
-            pos = get(gca, 'Position');
-            pos(1)=0.17;
-            pos(2)=0.165;
-   pos(4)=0.32;
-    set(gca,'Position',pos,'Fontsize',afontsize)
-box off;
-fig = gcf;
-fig.PaperPositionMode = 'auto'
-fig_pos = fig.PaperPosition;
-fig.PaperSize = [fig_pos(3) fig_pos(4)];
-print(fig,'./Rapport/graphe/60species','-dpdf')
+%fig = gcf;
+% fig.PaperPositionMode = 'auto'
+% fig_pos = fig.PaperPosition;
+% fig.PaperSize = [fig_pos(3) fig_pos(4)];
+% print(fig,'./Rapport/graphe/60species','-dpdf')
 
 
 
@@ -111,8 +80,8 @@ for iter=1:50
     end;
 end;
 
-figure
-subplot(2,1,1)
+%figure
+subplot(2,2,1)
 hold on
 for s1=1:60
  plot(tau_opt(s1)-273,biomass_final_1(s1,:,1),'o','MarkerFaceColor',col(s1,:),'MarkerEdgeColor','k')
@@ -120,18 +89,20 @@ end
 xlim([min(tau_opt)-273-0.5 max(tau_opt)-273+0.5])
 ylim([750 850])
     ylabel('Biomass')
+   
 box off
 text(14.9,845,'a','Fontsize',afontsize)
 
 hold off;
-    pos = get(gca, 'Position');
-    pos(2)=0.57;
-    pos(4)=0.32;
-    pos(1)=0.17;
-        title('1 species (-SE-SND)','Fontsize',afontsize);
+    pos = get(gca, 'Position')
+     pos(1)=0.09;
+     pos(2)=0.58;
+     pos(3)=0.42;
+     pos(4)=0.34;
+        title('1 species (-storage-SND)','Fontsize',afontsize);
     set(gca,'Position',pos,'Fontsize',afontsize,'xtick',[])
    
-subplot(2,1,2)
+subplot(2,2,3)
 hold on
 for s1=1:60
  plot(tau_opt(s1)-273,biomass_final_1(s1,:,2),'o','MarkerFaceColor',col(s1,:),'MarkerEdgeColor','k')
@@ -140,22 +111,67 @@ xlim([min(tau_opt)-273-0.5 max(tau_opt)-273+0.5])
 ylim([750 850])
 
     ylabel('Biomass')
+    xlabel('Thermal optimum')
 box off
-text(14.9,845,'b','Fontsize',afontsize)
+text(14.9,845,'c','Fontsize',afontsize)
 
 hold off;
         xtick(tau_opt-273)
-        %ylim([mini maxi])
+        %ylim([mini maxi
+        xaxlabel=cell(1,length(tau_opt));
+        xaxlabel(1:4:length(tau_opt))=sprintfc("%.1f",tau_opt(1:4:length(tau_opt))-273);
+        
         set(gca,'XTickLabel',xaxlabel)
+        
         xtickangle(90)
-            pos = get(gca, 'Position');
-            pos(2)=0.165;
-   pos(4)=0.32;
-   pos(1)=0.17;
+            pos = get(gca, 'Position')
+     pos(1)=0.09;
+     pos(2)=0.17;
+     pos(3)=0.42;
+     pos(4)=0.34;
     set(gca,'Position',pos,'Fontsize',afontsize)
 box off;
+
+subplot(2,2,2)
+    boxplot(biomass_final_60(:,:,1)','BoxStyle','filled','Colors',col,'whisker',1000)
+    maxi=get(gca,'Ylim');
+maxi=maxi(2);
+text(2,0.95*maxi,'b','Fontsize',afontsize)
+    %ylim([mini maxi])
+    box off;
+%left bottom width height
+    pos = get(gca, 'Position')
+     pos(1)=0.57;
+     pos(2)=0.58;
+     pos(3)=0.42;
+     pos(4)=0.34;
+
+    title('60 species (+storage+SND)','Fontsize',afontsize);
+    set(gca,'Position',pos,'Fontsize',afontsize,'xtick',[])
+
+    subplot(2,2,4)
+        boxplot(biomass_final_60(:,:,2)','BoxStyle','filled','Colors',col,'whisker',1000) 
+            maxi=get(gca,'Ylim');
+maxi=maxi(2);
+text(2,12.75,'d','Fontsize',afontsize)
+
+        xticklabels(tau_opt-273)       %ylim([mini maxi])
+        set(gca,'XTickLabel',xaxlabel)
+        xtickangle(90)
+            pos = get(gca, 'Position')
+             pos(1)=0.57;
+             pos(3)=0.42;
+             pos(2)=0.17;
+    pos(4)=0.34;
+            xlabel('Thermal optimum')
+
+    set(gca,'Position',pos,'Fontsize',afontsize)
+box off;
+
+
 fig = gcf;
+set(gcf,'Position',[675 549 1100 600])
 fig.PaperPositionMode = 'auto'
 fig_pos = fig.PaperPosition;
 fig.PaperSize = [fig_pos(3) fig_pos(4)];
-print(fig,'./Rapport/graphe/1species','-dpdf')
+print(fig,'./Rapport/graphe/60_and_1species','-dpdf')

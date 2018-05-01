@@ -88,9 +88,21 @@ for iter=1:50
 end;
 
 tmp=[extant_species_wn(:,1) extant_species_season(:,1) extant_species_wn(:,2) extant_species_season(:,2) extant_species_wn(:,3) extant_species_season(:,3) extant_species_wn(:,4) extant_species_season(:,4)];
-boxplot(tmp,'positions',[1.2 1.3 1.5 1.6 1.8 1.9 2.1 2.2],'colors','k','whisker',10000,'labels',{'','','','','','','',''})
-xtick([1.25 1.55 1.85 2.15])
-xticklabels({'-SE-SND','+SE-SND','-SE+SND','+SE+SND'})
+% boxplot(tmp,'positions',[1.2 1.3 1.5 1.6 1.8 1.9 2.1 2.2],'colors','k','whisker',10000,'labels',{'','','','','','','',''})
+% xtick([1.25 1.55 1.85 2.15])
+% xticklabels({'-SE-SND','+SE-SND','-SE+SND','+SE+SND'})
+% h = findobj(gca,'Tag','Box');
+% col=['r','b','r','b','r','b','r','b'];
+% ll=[2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 2.0,2.0];
+% for j=1:length(h)
+% patch(get(h(j),'XData'),get(h(j),'YData'),col(j),'FaceAlpha',.5,'LineWidth',ll(j));
+% end
+% ylabel('Number of extant species')
+% set(gca,'Fontsize',afontsize)
+
+boxplot(tmp,'positions',[1.2 1.3 1.6 1.7 2.0 2.1 2.4 2.5],'colors','k','whisker',10000,'labels',{'','','','','','','',''})
+xtick([1.25 1.65 2.05 2.45])
+xticklabels({'-storage-SND','+storage-SND','-storage+SND','+storage+SND'})
 h = findobj(gca,'Tag','Box');
 col=['r','b','r','b','r','b','r','b'];
 ll=[2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 2.0,2.0];
@@ -100,7 +112,9 @@ end
 ylabel('Number of extant species')
 set(gca,'Fontsize',afontsize)
 
+
 fig = gcf;
+set(fig,'Position',[680 558 800 320])
 fig.PaperPositionMode = 'auto'
 fig_pos = fig.PaperPosition;
 fig.PaperSize = [fig_pos(3) fig_pos(4)];

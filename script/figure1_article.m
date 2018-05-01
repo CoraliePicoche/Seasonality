@@ -28,7 +28,7 @@ h(1)=subplot(2,2,1)
 plot(use_temperature-273.15,'-k','LineWidth',.5)
 max=get(gca,'Ylim');
 max=max(2);
-text(2,0.95*max,'a','Fontsize',afontsize)
+text(15,0.95*max,'a','Fontsize',afontsize)
 seq=0/365:0.5:ylast/365;
 xticks(seq*365);
 xticklabels(round(seq,2)-round(seq(1),2));
@@ -47,7 +47,7 @@ for s1=1:S
 end;
 max=get(gca,'Ylim');
 max=max(2);
-text(2,0.95*max,'c','Fontsize',afontsize)
+text(15,0.95*max,'c','Fontsize',afontsize)
 xticks(seq*365);
 xticklabels(round(seq,2)-round(seq(1),2));
 xlim([seq(1)*365 seq(end)*365])
@@ -69,7 +69,7 @@ h(2)=subplot(2,2,2)
 plot(use_temperature-273.15,'-k','LineWidth',.5)
 max=get(gca,'Ylim');
 max=max(2);
-text(2,0.95*max,'b','Fontsize',afontsize)
+text(15,0.95*max,'b','Fontsize',afontsize)
 xticks(seq*365);
 xticklabels(round(seq,2)-round(seq(1),2));
 xlim([seq(1)*365 seq(end)*365])
@@ -86,7 +86,7 @@ for s1=1:S
 end;
 max=get(gca,'Ylim');
 max=max(2);
-text(2,0.95*max,'d','Fontsize',afontsize)
+text(15,0.95*max,'d','Fontsize',afontsize)
 xticks(seq*365);
 xticklabels(round(seq,2)-round(seq(1),2));
 xlim([seq(1)*365 seq(end)*365])
