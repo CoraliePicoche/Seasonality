@@ -1756,7 +1756,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename graphe/extant_species.pdf
-	width 65text%
+	width 95text%
 
 \end_inset
 
@@ -1792,7 +1792,7 @@ ly; with and without Stabilizing Niche Differences, + / - SND, respectively),
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -1852,7 +1852,7 @@ status open
 \begin_inset Graphics
 	filename graphe/figure_4.tif
 	lyxscale 50
-	width 65text%
+	width 85text%
 
 \end_inset
 
@@ -1919,7 +1919,7 @@ status open
 \begin_inset Graphics
 	filename graphe/example_iteration.tif
 	lyxscale 50
-	width 75text%
+	width 95text%
 
 \end_inset
 

@@ -109,8 +109,8 @@ hold off;
 % fig.PaperSize = [fig_pos(3) fig_pos(4)];
 % print(fig,'./Rapport/graphe/fancy_distrib_YesSE_NoSND','-dtiff')
 pos=get(gca,'Position')
-pos(4)=0.40;
-pos(2)=0.57;
+pos(4)=0.35;
+pos(2)=0.62;
 set(gca,'Position',pos)
 subplot(2,1,2)
 % 
@@ -202,6 +202,7 @@ plot(tau_opt-273,biomass_final_2(:,iter,2),'-o','MarkerFaceColor','r','LineWidth
       xticks(tau_opt-273)       %ylim([mini maxi])
         xaxlabel=cell(1,length(tau_opt));
         xaxlabel(1:4:length(tau_opt))=sprintfc("%.1f",tau_opt(1:4:length(tau_opt))-273);
+        xlabel('Thermal optimum')
         set(gca,'XTickLabel',xaxlabel)
          xtickangle(90)
 subplot_id(2)=ylabel('Biomass');
@@ -217,11 +218,11 @@ id=find(mean_growth_rate==1);
 plot([tau_opt(id) tau_opt(id)]-273,[0 mean_growth_rate(id)],'--k','LineWidth',2)
 
 pos=get(gca,'Position');
-pos(4)=0.4;
-pos(2)=0.13;
+pos(4)=0.35;
+pos(2)=0.19;
 set(gca,'Position',pos)
 positions = cell2mat(get(subplot_id([1 2]), 'Position'));
-xpos = min(positions(:,1));
+xpos = min(positions(:,1))-0.2;
 for i=[1 2]
     set(subplot_id(i), 'Position',[xpos, positions(i,2), positions(i,3)]);
 end
