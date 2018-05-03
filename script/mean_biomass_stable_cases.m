@@ -86,6 +86,11 @@ hold on
 for s1=1:60
  plot(tau_opt(s1)-273,biomass_final_1(s1,:,1),'o','MarkerFaceColor',col(s1,:),'MarkerEdgeColor','k')
 end
+
+tau_tmp=zeros(1,length(tau_opt));
+for s1=1:60
+    tau_tmp(s1)=sum(biomass_final_1(s1,:,1)>0);
+end;
 xlim([min(tau_opt)-273-0.5 max(tau_opt)-273+0.5])
 ylim([750 850])
     ylabel('Biomass')
@@ -175,3 +180,31 @@ fig.PaperPositionMode = 'auto'
 fig_pos = fig.PaperPosition;
 fig.PaperSize = [fig_pos(3) fig_pos(4)];
 print(fig,'./Rapport/graphe/60_and_1species','-dpdf')
+
+%
+id_min=60;
+id_max=0;
+
+for iter=1:50
+    min_tmp=find(biomass_final_1(:,iter,1)>thresh_min);
+    if id_min>min_tmp
+        id_min=min_tmp;
+    end;
+    if id_max<min_tmp
+        id_max=min_tmp;
+    end
+end
+
+
+%Few tests
+% tau_tmp=zeros(1,length(tau_opt));
+% for s1=1:60
+% tau_tmp(s1)=sum(biomass_final_1(s1,:,2)>0);
+% end;
+%median(std(biomass_final_60(:,:,1),[],2)./mean(biomass_final_60(:,:,1),2))
+
+% for f=1:60
+%     f
+%     mean(biomass_final_60(f,:,2),2)
+% end
+% %f=13 and f=57

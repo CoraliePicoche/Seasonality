@@ -56,7 +56,7 @@ set(gca,'Fontsize',afontsize)
 xlabel('Time (year)')
 hold off;
 box off;
-
+stop()
 
 %b) Theta=1.3 just to show the season
 load("output_simulation/season/iter2_codeversion_20180228_theta1p3.mat")
@@ -91,7 +91,7 @@ xticks(seq*365);
 xticklabels(round(seq,2)-round(seq(1),2));
 xlim([seq(1)*365 seq(end)*365])
 xlabel('Time (year)')
-set(gca,'Fontsize',afontsize)
+set(gca,'Fontsize',afontsize);
 hold off;
 box off;
 

@@ -232,3 +232,21 @@ fig_pos = fig.PaperPosition;
 fig.PaperSize = [fig_pos(3) fig_pos(4)];
 print(fig,'./Rapport/graphe/figure_4','-dtiff')
 
+
+%
+id_min=60;
+id_max=zeros(1,50);
+for iter=1:50
+    min_tmp=min(find(biomass_final_2(:,iter,2)>thresh_min))
+    if id_min>min_tmp
+        id_min=min_tmp;
+    end;
+        id_max(iter)=min_tmp;
+end
+
+tau_tmp=zeros(1,length(tau_opt));
+for s1=1:60
+tau_tmp(s1)=sum(biomass_final_1(s1,:,2)>0);
+end;
+
+

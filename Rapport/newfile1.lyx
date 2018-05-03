@@ -1357,7 +1357,7 @@ noprefix "false"
 \end_layout
 
 \begin_layout Standard
-Under our latitudes, however, temperature is a seasonal signal, which can
+Under most latitudes, however, temperature is a seasonal signal, which can
  affect the dynamics of the community considered 
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -1413,7 +1413,18 @@ The upper limit for
 \begin_inset Formula $\theta=1.3$
 \end_inset
 
-.
+ (see Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Times-series_temperature_species"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+b).
  
 \end_layout
 
@@ -1607,13 +1618,13 @@ We focused on the dynamics of a community initialized with 60 species with
 
 .
  Each simulation was run for 5000 years in 1-day intervals.
- When the density of a species drops below 
+ When the density of a species dropped below 
 \begin_inset Formula $10^{-6}$
 \end_inset
 
-, it is considered extinct.
- This corresponds to the first experiment, so called 'Species sorting',
- in 
+, it was considered extinct.
+ This framework corresponds to the first experiment, so called 'Species
+ sorting', in 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "scranton_coexistence_2016"
@@ -1628,7 +1639,7 @@ literal "false"
 status open
 
 \begin_layout Plain Layout
-Later, 100 ?
+ Running 100 right now
 \end_layout
 
 \end_inset
@@ -1652,38 +1663,87 @@ Results
 \end_layout
 
 \begin_layout Standard
-Summary of main results so far :
-\end_layout
-
-\begin_layout Itemize
-Stabilizing niche differences are more important than storage effect to
- maintain biodiversity
-\end_layout
-
-\begin_layout Itemize
-Storage effect without stabilizing niche differences lead to multimodal
- abundance distribution (which is quite stable : always 3 modes.
+Typical dynamics of the community following Eq.
  
-\series bold
-Why ?
-\series default
-) whereas no storage effect with stabilizing niche differences lead to a
- unimodal, more even distribution (in line with previous point, not sure
- that's really a result).
- 
-\end_layout
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:modelLV"
+plural "false"
+caps "false"
+noprefix "false"
 
-\begin_layout Itemize
-Seasonality tends to decrease the total number of extant species when compared
- to white noise (small fitness differences for longer: species are driven
- to extinction whereas they can recover before crashing with a white noise).
- 
-\end_layout
+\end_inset
 
-\begin_layout Itemize
-Seasonality tends to favor maximum growth rates even though it also leads
- to higher competition whereas white noise tends to favor balanced growth
- rates and competition.
+ with the environmental signals described in Eq.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:WN"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:Seasonal_signal"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ are shown in Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Times-series_temperature_species"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Even though only 5 species can be distinguished in Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Times-series_temperature_species"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+c), there were 14 species still present at the end of the simulation forced
+ by a white noise, with large disparities in the range of variation of their
+ biomasses.
+ A third of the species kept a biomass above 10 kg/area while 6 out of the
+ 14 remained below the unit.
+ All species were clustered along a 3.2°C-range of thermal optima.
+ No pattern can be distinguished in their dynamics.
+ On the other hand, cycles were clear in the seasonal example in Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Times-series_temperature_species"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ d).
+ Only 4 species coexisted at the end of the simulation, gathered in two
+ groups with large thermal optimum differences (5.7°C between the maximum
+ thermal optimum of the first group and the minimum thermal optimum of the
+ second group).
+ When temperatures are high, species with a higher thermal optima reached
+ their maximum biomass, then left room for the growth of lower-temperature
+ tolerant species.
  
 \end_layout
 
@@ -1709,7 +1769,8 @@ status open
 
 \begin_layout Plain Layout
 Times series of temperature (top) and extant species (bottom) for the 2
- last years of a 5000 year simulation.
+ last years of a 5000 year simulation, with storage effect and no stabilizing
+ niche differences.
  The forcing temperature is either a white noise (left) or a noisy seasonal
  signal (right).
  Line colors of species biomasses correspond to their thermal optima (from
@@ -1747,6 +1808,41 @@ name "fig:Times-series_temperature_species"
 \end_layout
 
 \begin_layout Standard
+The decrease in persistence due to seasonality observed in the first example
+ was confirmed in all our simulations (Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Persistence-of-species"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+ In cases where richness at the end of the simulation varied (namely, with
+ storage effect, without stabilizing niche differences, and without storage,
+ with stabilizing niche differences), seasonality reduced the number of
+ extant species to, in average, 29% and 49% of its original value, respectively.
+ A seasonal signal tended to constrain the system to a smaller persistence
+ range.
+ Neither the storage effect nor stabilizing niche differences alone could
+ ensure the coexistence of all species at the end of the simulations.
+ Without any of these coexistence mechanisms, only one species persisted
+ at the end of the simulation.
+ When only the storage effect was present, the number of extant species
+ varied between 11 and 20 with a white noise, or 2 and 6 with a seasonal
+ signal.
+ On the other hand, when only stabilizing niche differences were present,
+ the number of extant species nearly doubled, varying between 20 and 32,
+ or 12 and 14, with a white noise or a seasonal signal respectively.
+ When storage effect and stabilizing niche differences both affected the
+ dynamics, all species persisted in the community.
+ 
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
@@ -1776,7 +1872,9 @@ ly; with and without Stabilizing Niche Differences, + / - SND, respectively),
  Community compositions are stable in the cases -storage-SND and +storage+SND
  (1 or 60 species are still present at the end of all simulations, respectively).
  
-\end_layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Persistence-of-species"
 
 \end_inset
 
@@ -1786,6 +1884,90 @@ ly; with and without Stabilizing Niche Differences, + / - SND, respectively),
 \end_inset
 
 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+When the richness of the community was stable (either 1 or 60 species at
+ the end of the simulation, in the absence or presence of coexistence mechanisms
+), there were still differences in the structure of the community due to
+ both stochasticity and type of forcing (Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Mean-biomass-in_stable_cases"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+ Without coexistence mechanisms, a white noise forcing favoured species
+ whose thermal optima lied between 17.4°C and 24.3°C, with 66% of the simulations
+ ending with a species with a thermal optima between 19.1°C and 21.1°C and
+ reaching a maximum average biomass in this range (Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Mean-biomass-in_stable_cases"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ a).
+ This distribution can be related to the maximization of the long-term averaged
+ growth rates (see normalized growth rates in Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Unstable_cases"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+ On the contrary, seasonality tended to favour species with larger maximum
+ growth rates, with thermal optima above 22°C, their frequency of persistence
+ and mean biomass increasing with the thermal optimum.
+ 46% of the simulations ended with the species having the highest temperature
+ optimum, 25°C.
+ 
+\end_layout
+
+\begin_layout Standard
+When both coexistence mechanisms were present, the 60 initial species coexisted
+ with small variations in biomasses over the 50 simulations (mean CV=0.01
+ with either a white noise or a seasonal signal, Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Mean-biomass-in_stable_cases"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+b and d).
+ The forcing signal modified the distribution of biomasses.
+ With a white noise, the distribution was unimodal with a maximum biomass
+ reached for the best average growth rate (corresponding to a thermal optimum
+ of 22.4°C).
+ On the contrary, a seasonal signal led to a bi-modal distribution (centered
+ on 17.4°C and 24.4°C) with higher biomasses for higher thermal optima.
+ The minimum biomass was reached for a thermal optimum of 22.4°C, corresponding
+ to the maximum biomass in the white noise case.
+ The two modes in the biomass distribution correspond to the two modes in
+ the seasonal signal.
 \end_layout
 
 \begin_layout Standard
@@ -1842,6 +2024,57 @@ name "fig:Mean-biomass-in_stable_cases"
 \end_layout
 
 \begin_layout Standard
+In cases where the richness of the community varied, distributions of extant
+ species were similar for the two types of forcings but differed according
+ to the type of coexistence mechanism taken into account (Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Unstable_cases"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+ The storage effect led to a multi-modal distribution (always 3 modes with
+ a white noise and in 94% of the seasonal simulations, Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Unstable_cases"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+a).
+ With a white noise, extant species always had a thermal optimum between
+ 18.8°C and 22.2°C whereas clumps tend to be further apart in the seasonal
+ case, covering a total range of 8°C, with species grouping in the higher
+ part of the thermal range, above 22°C.
+ On the other hand, stabilizing niche differences led to a quasi-uniform
+ distribution (Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Unstable_cases"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ b).
+ Species subject to a white noise lay in the lower range of temperatures
+ (in 96% of the time, the highest thermal optimum was 22.8°C) whereas species
+ subject to a seasonal signal were favored by temperatures above 20.5°C.
+ 
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
@@ -1875,6 +2108,14 @@ s (bottom).
  Scaled average (whose optimum is indicated by the dotted line) and maximum
  growth rates are shown as squares and circles, respectively, and indexed
  on the left y-axis.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Unstable_cases"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -1889,6 +2130,54 @@ s (bottom).
 
 \begin_layout Section
 Discussion
+\end_layout
+
+\begin_layout Standard
+Summary of main results so far :
+\end_layout
+
+\begin_layout Itemize
+Stabilizing niche differences can sustain more diversity than the storage
+ effect.
+ 
+\end_layout
+
+\begin_layout Itemize
+Storage effect without stabilizing niche differences leads to a stable multimoda
+l abundance distribution.
+ It is unclear whether this regularity is a by-product of limiting similarities
+ for our parameter values.
+ Conversely, no storage effect with stabilizing niche differences leasd
+ to an even distribution (in line with previous point and may be discussed
+ with the help of 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "barabas_emergent_2013"
+literal "false"
+
+\end_inset
+
+).
+ 
+\end_layout
+
+\begin_layout Itemize
+Seasonality decreases the total number of extant species when compared to
+ white noise.
+ The autocorrelation in the seasonal signal drives species to extinction
+ as similar species compete for a longer time: temporal niche partitioning
+ leads to larger differences in clumps.
+ In this situation, even though a species has the best long-term averaged
+ growth rates, it can disappear as a result of a strong competition from
+ both low- and high-temperature tolerant species, with and without storage
+ effect.
+ 
+\end_layout
+
+\begin_layout Itemize
+In the absence of storage effect, seasonality tends to favor maximum growth
+ rates even though it also leads to higher competition whereas white noise
+ tends to favor balanced growth rates and competition.
 \end_layout
 
 \begin_layout Standard

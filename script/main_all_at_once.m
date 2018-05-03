@@ -5,7 +5,7 @@
 clc 
 clear all
 close all
-
+ dir_output='season'
 %%%%%% Parameters
 global S tau0 mu_tau sigma_tau tau_min tau_max a_r_tau0 E_r k A m thresh_min tspan r
 
@@ -62,7 +62,7 @@ end;
 
  
  
-for iter=31:50
+for iter=76:100
     rng(iter)
 %for iter=1:10
     iter
@@ -74,11 +74,12 @@ for i=1:S
      r(i,:)=fun(tau,b(i),tau_opt(i));   
 end;
 
+
 %First case : regular SV model with storage effect and no difference
 %between intra and intergroup coefficient
  y0=ones(1,S)*1/(alpha_compet*S);
  A=ones(S,S)*alpha_compet; %interaction matrix
- dir_output='SV_same_temp'
+
 
 %%%%%% Integration starts
 [tout,yout] = ode45(@SV16_ode_integration, tspan , y0,options);       % ode solver
@@ -92,7 +93,6 @@ clear tout yout;
 %Second case : SV model with storage effect and intra >> inter
  y0=ones(1,S)*1/(alpha_compet*S);
  A=ones(S,S)*alpha_compet+diag(ones(60,1)*alpha_compet*(rho-1)); %interaction matrix
- dir_output='SV_same_temp'
 
 %%%%%% Integration starts
 [tout,yout] = ode45(@SV16_ode_integration, tspan , y0,options);       % ode solver
@@ -108,7 +108,6 @@ clear tout yout;
  A=ones(S,S)*alpha_compet;
  tmp_r=mean(r,2);
  A=tmp_r.*A;
- dir_output='no_forced_competition'
 
 %%%%%% Integration starts
 [tout,yout] = ode45(@SV16_ode_integration_no_GR_in_competition, tspan , y0,options);       % ode solver
@@ -123,7 +122,6 @@ clear tout yout;
  y0=ones(1,S)*1/(alpha_compet*S);
  A=ones(S,S)*alpha_compet+diag(ones(60,1)*alpha_compet*(rho-1)); 
  A=tmp_r.*A;
- dir_output='no_forced_competition'
 
 %%%%%% Integration starts
 [tout,yout] = ode45(@SV16_ode_integration_no_GR_in_competition, tspan , y0,options);       % ode solver
