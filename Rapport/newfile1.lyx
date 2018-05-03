@@ -73,11 +73,12 @@
 \papercolumns 1
 \papersides 1
 \paperpagestyle default
-\tracking_changes false
+\tracking_changes true
 \output_changes false
 \html_math_output 0
 \html_css_as_file 0
 \html_be_strict false
+\author -666822487 "frederic"
 \end_header
 
 \begin_body
@@ -189,8 +190,12 @@ literal "false"
 
 \end_inset
 
- [we can add or replace this by refs Dom Gravel and others here].For instance,
+ [we can add or replace this by refs Dom Gravel and others here].
+
+\change_inserted -666822487 1525383533
  
+\change_unchanged
+For instance, 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "scheffer_self-organized_2006"
@@ -1674,7 +1679,23 @@ noprefix "false"
 
 \end_inset
 
- with the environmental signals described in Eq.
+
+\change_inserted -666822487 1525377873
+ (the model of 
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "scranton_coexistence_2016"
+literal "false"
+
+\end_inset
+
+),
+\change_unchanged
+ with 
+\change_inserted -666822487 1525377885
+both 
+\change_unchanged
+the environmental signals described in Eq.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -1685,7 +1706,19 @@ noprefix "false"
 
 \end_inset
 
- and 
+ 
+\change_inserted -666822487 1525377920
+(original choice of 
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "scranton_coexistence_2016"
+literal "false"
+
+\end_inset
+
+) 
+\change_unchanged
+and 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:Seasonal_signal"
@@ -1695,6 +1728,10 @@ noprefix "false"
 
 \end_inset
 
+
+\change_inserted -666822487 1525377926
+ (our variant),
+\change_unchanged
  are shown in Fig.
  
 \begin_inset CommandInset ref
@@ -1707,7 +1744,21 @@ noprefix "false"
 \end_inset
 
 .
- Even though only 5 species can be distinguished in Fig.
+
+\change_inserted -666822487 1525377916
+ Forcing by a seasonal signal produces the strongly seasonally structured
+ dynamics that are typical of phytoplankton.
+ 
+\change_deleted -666822487 1525377468
+ 
+\change_unchanged
+Even though only 5 species can be 
+\change_deleted -666822487 1525377530
+distinguished 
+\change_inserted -666822487 1525377916
+seen 
+\change_unchanged
+in Fig.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -1721,11 +1772,98 @@ noprefix "false"
 c), there were 14 species still present at the end of the simulation forced
  by a white noise, with large disparities in the range of variation of their
  biomasses.
- A third of the species kept a biomass above 10 kg/area while 6 out of the
- 14 remained below the unit.
- All species were clustered along a 3.2°C-range of thermal optima.
- No pattern can be distinguished in their dynamics.
- On the other hand, cycles were clear in the seasonal example in Fig.
+ A third of the species kept a biomass above 10 kg/area
+\change_inserted -666822487 1525377916
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted -666822487 1525378069
+can we replace 
+\begin_inset Quotes eld
+\end_inset
+
+area
+\begin_inset Quotes erd
+\end_inset
+
+ by smthg else by using something typical of plankton too?
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+ while 6 out of the 14 remained below the unit.
+ All species 
+\change_inserted -666822487 1525377916
+in the white noise simulations 
+\change_unchanged
+were clustered along a 3.2°C-range of thermal optima
+\change_inserted -666822487 1525377916
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted -666822487 1525377706
+Is there another figure saying this? If so, we could refer to it
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+.
+ 
+\change_deleted -666822487 1525377717
+No pattern can be distinguished in their dynamics.
+\change_inserted -666822487 1525377916
+
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+
+\change_inserted -666822487 1525377777
+Ici c'est difficile de savoir de quel panel on parle et de quel type de
+ pattern (en fonction de t, de l'optimum thermique, de la relative species
+ abondance...
+ 
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+ 
+\change_inserted -666822487 1525377916
+No obvious temporal patterns (e.g., cycles) could be seen in 
+\change_unchanged
+On the other hand, 
+\change_inserted -666822487 1525377978
+seasonal 
+\change_unchanged
+cycles were clear in the seasonal
+\change_inserted -666822487 1525377985
+ly-forced
+\change_unchanged
+ 
+\change_deleted -666822487 1525377990
+example in
+\change_inserted -666822487 1525377993
+case of
+\change_unchanged
+ Fig.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -1737,13 +1875,39 @@ noprefix "false"
 \end_inset
 
  d).
- Only 4 species coexisted at the end of the simulation, gathered in two
- groups with large thermal optimum differences (5.7°C between the maximum
- thermal optimum of the first group and the minimum thermal optimum of the
- second group).
+ Only 4 species coexisted at the end of the simulation
+\change_inserted -666822487 1525378022
+ with seasonal forcing
+\change_unchanged
+, gathered in two groups with large thermal optimum differences (5.7°C between
+ the maximum thermal optimum of the first group and the minimum thermal
+ optimum of the second group).
  When temperatures are high, species with a higher thermal optima reached
- their maximum biomass, then left room for the growth of lower-temperature
- tolerant species.
+ 
+\change_deleted -666822487 1525378456
+their 
+\change_unchanged
+maximum biomass, then left room for the growth of lower-temperature tolerant
+ species
+\change_inserted -666822487 1525378483
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted -666822487 1525378506
+je ne suis pas complètement sûr d'avoir compris l'idée ici.
+ 
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+.
  
 \end_layout
 
@@ -1808,7 +1972,23 @@ name "fig:Times-series_temperature_species"
 \end_layout
 
 \begin_layout Standard
-The decrease in persistence due to seasonality observed in the first example
+The decrease in persistence due to seasonality observed in 
+\change_deleted -666822487 1525378529
+the first example
+\change_inserted -666822487 1525378612
+Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Times-series_temperature_species"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+
+\change_unchanged
  was confirmed in all our simulations (Fig.
  
 \begin_inset CommandInset ref
@@ -1822,13 +2002,83 @@ noprefix "false"
 
 ).
  In cases where richness at the end of the simulation varied (namely, with
- storage effect, without stabilizing niche differences, and without storage,
+ storage effect
+\change_inserted -666822487 1525378558
+ but
+\change_deleted -666822487 1525378556
+,
+\change_unchanged
+ without stabilizing niche differences, 
+\change_deleted -666822487 1525378570
+and
+\change_inserted -666822487 1525378570
+or
+\change_unchanged
+ without storage
+\change_inserted -666822487 1525378575
+ but
+\change_deleted -666822487 1525378574
+,
+\change_unchanged
  with stabilizing niche differences), seasonality reduced the number of
- extant species to, in average, 29% and 49% of its original value, respectively.
- A seasonal signal tended to constrain the system to a smaller persistence
- range.
- Neither the storage effect nor stabilizing niche differences alone could
+ extant species to, in average, 29% and 49% of its original value, respectively
+\change_inserted -666822487 1525378600
+ (Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Persistence-of-species"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+)
+\change_unchanged
+.
+ A seasonal signal 
+\change_inserted -666822487 1525378637
+therefore 
+\change_deleted -666822487 1525378641
+tended to constrain the system
+\change_inserted -666822487 1525378642
+led
+\change_unchanged
+ to a smaller persistence range.
+ 
+\change_deleted -666822487 1525378676
+N
+\change_inserted -666822487 1525378732
+
+\end_layout
+
+\begin_layout Standard
+
+\change_inserted -666822487 1525378793
+Both the stabilizing niche differences and the storage effect have a marked
+ effect on increasing persistence.
+ 
+\change_deleted -666822487 1525378814
+either the storage effect nor stabilizing niche differences alone could
  ensure the coexistence of all species at the end of the simulations.
+\change_inserted -666822487 1525378817
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted -666822487 1525378825
+this is true but not at the right place
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
  Without any of these coexistence mechanisms, only one species persisted
  at the end of the simulation.
  When only the storage effect was present, the number of extant species
@@ -1837,8 +2087,30 @@ noprefix "false"
  On the other hand, when only stabilizing niche differences were present,
  the number of extant species nearly doubled, varying between 20 and 32,
  or 12 and 14, with a white noise or a seasonal signal respectively.
- When storage effect and stabilizing niche differences both affected the
- dynamics, all species persisted in the community.
+ 
+\change_inserted -666822487 1525378860
+Remarkably, w
+\change_deleted -666822487 1525378860
+W
+\change_unchanged
+hen 
+\change_inserted -666822487 1525378865
+the 
+\change_unchanged
+storage effect and stabilizing niche differences
+\change_inserted -666822487 1525378923
+ (SNDs)
+\change_unchanged
+ both affected the
+\change_inserted -666822487 1525378878
+ community
+\change_unchanged
+ dynamics, all species persisted in the community
+\change_inserted -666822487 1525378950
+, while neither the storage nor SNDs were able in isolation to produce that
+ result, for both white noise and seasonal forcing
+\change_unchanged
+.
  
 \end_layout
 
@@ -1893,9 +2165,33 @@ name "fig:Persistence-of-species"
 
 \begin_layout Standard
 When the richness of the community was stable (either 1 or 60 species at
- the end of the simulation, in the absence or presence of coexistence mechanisms
-), there were still differences in the structure of the community due to
- both stochasticity and type of forcing (Fig.
+ the end of the simulation, 
+\change_deleted -666822487 1525378998
+in the absence or presence of coexistence mechanisms
+\change_inserted -666822487 1525378999
+Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Mean-biomass-in_stable_cases"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+
+\change_unchanged
+), there were still 
+\change_inserted -666822487 1525379013
+large 
+\change_unchanged
+differences in the structure of the community due to both stochasticity
+ and 
+\change_inserted -666822487 1525379022
+the 
+\change_unchanged
+type of forcing (Fig.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -1907,10 +2203,16 @@ noprefix "false"
 \end_inset
 
 ).
- Without coexistence mechanisms, a white noise forcing favoured species
- whose thermal optima lied between 17.4°C and 24.3°C, with 66% of the simulations
- ending with a species with a thermal optima between 19.1°C and 21.1°C and
- reaching a maximum average biomass in this range (Fig.
+ Without 
+\change_deleted -666822487 1525379047
+coexistence mechanisms
+\change_inserted -666822487 1525379053
+storage effect and SNDs
+\change_unchanged
+, a white noise forcing favoured species whose thermal optima lied between
+ 17.4°C and 24.3°C, with 66% of the simulations ending with a species with
+ a thermal optima between 19.1°C and 21.1°C and reaching a maximum average
+ biomass in this range (Fig.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -1922,8 +2224,29 @@ noprefix "false"
 \end_inset
 
  a).
- This distribution can be related to the maximization of the long-term averaged
- growth rates (see normalized growth rates in Fig.
+ This distribution can be related 
+\change_inserted -666822487 1525379096
+a selection for 
+\change_deleted -666822487 1525379098
+to 
+\change_unchanged
+the 
+\change_deleted -666822487 1525379159
+maximization of
+\change_inserted -666822487 1525379162
+highest
+\change_unchanged
+ the long-term
+\change_deleted -666822487 1525379177
+ averaged 
+\change_inserted -666822487 1525379180
+ 
+\change_unchanged
+growth rates
+\change_inserted -666822487 1525379190
+, averaged over time
+\change_unchanged
+ (see normalized growth rates in Fig.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -1934,19 +2257,87 @@ noprefix "false"
 
 \end_inset
 
+
+\change_inserted -666822487 1525379393
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted -666822487 1525379410
+For Alix: this refers to 
+\begin_inset Quotes eld
+\end_inset
+
+stable composition
+\begin_inset Quotes erd
+\end_inset
+
+
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
 ).
  On the contrary, seasonality tended to favour species with larger maximum
- growth rates, with thermal optima above 22°C, their frequency of persistence
- and mean biomass increasing with the thermal optimum.
- 46% of the simulations ended with the species having the highest temperature
- optimum, 25°C.
+\change_inserted -666822487 1525379224
+ 
+\change_unchanged
+growth rates, with thermal optima above 22°C, their frequency of persistence
+ and mean biomass increasing with the thermal optimum
+\change_inserted -666822487 1525379370
+ (Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Mean-biomass-in_stable_cases"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+)
+\change_unchanged
+.
+ 46% of the simulations 
+\change_inserted -666822487 1525379433
+therefore 
+\change_unchanged
+ended with the species having the highest temperature optimum, 25°C.
  
 \end_layout
 
 \begin_layout Standard
 When both coexistence mechanisms were present, the 60 initial species coexisted
  with small variations in biomasses over the 50 simulations (mean CV=0.01
- with either a white noise or a seasonal signal, Fig.
+\change_inserted -666822487 1525379463
+ across simulations 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted -666822487 1525379466
+check Coralie
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+ with either a white noise or a seasonal 
+\change_inserted -666822487 1525379480
+forcing 
+\change_unchanged
+signal, Fig.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -1958,16 +2349,46 @@ noprefix "false"
 \end_inset
 
 b and d).
- The forcing signal modified the distribution of biomasses.
+ The forcing signal modified 
+\change_inserted -666822487 1525379488
+only 
+\change_unchanged
+the distribution of biomasses.
  With a white noise, the distribution was unimodal with a maximum biomass
- reached for the best average growth rate (corresponding to a thermal optimum
- of 22.4°C).
+ reached for the best 
+\change_inserted -666822487 1525379503
+long-term 
+\change_unchanged
+average growth rate (corresponding to a thermal optimum of 22.4°C).
  On the contrary, a seasonal signal led to a bi-modal distribution (centered
- on 17.4°C and 24.4°C) with higher biomasses for higher thermal optima.
+ on 17.4°C and 24.4°C) with higher biomasses for higher thermal optima
+\change_inserted -666822487 1525379546
+ Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Mean-biomass-in_stable_cases"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ d
+\change_unchanged
+.
  The minimum biomass was reached for a thermal optimum of 22.4°C, corresponding
- to the maximum biomass in the white noise case.
- The two modes in the biomass distribution correspond to the two modes in
- the seasonal signal.
+ to the maximum biomass in the white noise case
+\change_inserted -666822487 1525379632
+, thus there are quite broad changes in community composition even though
+ the richness is equal for the two forcing signals
+\change_unchanged
+.
+ The two modes in the
+\change_inserted -666822487 1525379639
+ seasonal
+\change_unchanged
+ biomass distribution correspond to the two modes in the seasonal signal.
 \end_layout
 
 \begin_layout Standard
@@ -2038,8 +2459,32 @@ noprefix "false"
 \end_inset
 
 ).
- The storage effect led to a multi-modal distribution (always 3 modes with
- a white noise and in 94% of the seasonal simulations, Fig.
+ 
+\change_inserted -666822487 1525379763
+
+\end_layout
+
+\begin_layout Standard
+The storage effect led to a multi-modal 
+\change_inserted -666822487 1525379679
+biomass 
+\change_unchanged
+distribution 
+\change_inserted -666822487 1525379702
+with respect to thermal optima.
+ We 
+\change_deleted -666822487 1525379705
+(
+\change_unchanged
+always 
+\change_inserted -666822487 1525379708
+observed 
+\change_unchanged
+3 modes with a white noise and 
+\change_inserted -666822487 1525379719
+3 modes 
+\change_unchanged
+in 94% of the seasonal simulations, Fig.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -2050,13 +2495,30 @@ noprefix "false"
 
 \end_inset
 
-a).
+a
+\change_deleted -666822487 1525379724
+)
+\change_unchanged
+.
  With a white noise, extant species always had a thermal optimum between
- 18.8°C and 22.2°C whereas clumps tend to be further apart in the seasonal
- case, covering a total range of 8°C, with species grouping in the higher
- part of the thermal range, above 22°C.
- On the other hand, stabilizing niche differences led to a quasi-uniform
- distribution (Fig.
+ 18.8°C and 22.2°C whereas clumps tend
+\change_inserted -666822487 1525379736
+ed
+\change_unchanged
+ to be further apart in the seasonal case, covering a total range of 8°C,
+ with species grouping in the higher part of the thermal range, above 22°C.
+ 
+\change_inserted -666822487 1525379757
+
+\end_layout
+
+\begin_layout Standard
+On the other hand, stabilizing niche differences led to a quasi-uniform
+ 
+\change_inserted -666822487 1525379814
+biomass 
+\change_unchanged
+distribution (Fig.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -2068,9 +2530,84 @@ noprefix "false"
 \end_inset
 
  b).
- Species subject to a white noise lay in the lower range of temperatures
- (in 96% of the time, the highest thermal optimum was 22.8°C) whereas species
- subject to a seasonal signal were favored by temperatures above 20.5°C.
+ Species subject
+\change_inserted -666822487 1525379819
+ed
+\change_unchanged
+ to a white noise 
+\change_deleted -666822487 1525379835
+lay
+\change_inserted -666822487 1525379836
+stayed
+\change_unchanged
+ in the lower range of temperatures (
+\change_deleted -666822487 1525379790
+in 
+\change_unchanged
+96% of the time
+\change_inserted -666822487 1525379795
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted -666822487 1525379807
+do you mean time or is it across simulations?
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+, the highest thermal optimum was 22.8°C) whereas species subject
+\change_inserted -666822487 1525379845
+ed
+\change_unchanged
+ to a seasonal signal were 
+\change_deleted -666822487 1525379861
+favored by
+\change_inserted -666822487 1525379863
+observed
+\change_unchanged
+ temperatures above 20.5°C
+\change_inserted -666822487 1525379868
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted -666822487 1525379909
+Attention, eviter les interpretations qui donne un objectif à un processus,
+ 
+\begin_inset Quotes eld
+\end_inset
+
+favoured by
+\begin_inset Quotes erd
+\end_inset
+
+, 
+\begin_inset Quotes eld
+\end_inset
+
+optimized by
+\begin_inset Quotes erd
+\end_inset
+
+ etc.
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+.
  
 \end_layout
 
@@ -2130,16 +2667,226 @@ name "fig:Unstable_cases"
 
 \begin_layout Section
 Discussion
+\change_inserted -666822487 1525379916
+
 \end_layout
 
 \begin_layout Standard
-Summary of main results so far :
+
+\change_inserted -666822487 1525383263
+[F: I left Coralie's remarks that I hadn't tackled below, so we don't loose
+ them, but I tried to quickstart the discussion!]
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\change_inserted -666822487 1525380701
+We have simulated competitive Lotka-Volterra dynamics forced by an external
+ signal (temperature) under a range of scenarios allowing more or less coexisten
+ce.
+ Two coexistence mechanisms, the storage effect and stabilizing niches differenc
+es, could be present or absent which led to four scenarios.
+ These four scenarios were crossed with two possibilities for the forcing
+ signal, a white noise and a stochastic seasonal signal, with equal temporal
+ variance.
+ Our investigation therefore built on the model of 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "scranton_coexistence_2016"
+literal "false"
+
+\end_inset
+
+, which included white noise forcing and a storage effect, but also considered
+ more diverse ecological scenarios.
+ This was motivated by our desire to include two observed features of phytoplank
+ton dynamics: seasonal cycles (REF) and stabilizing niche differences 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "barraquand_weak_2017"
+literal "false"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\change_inserted -666822487 1525383379
+We have found that first, forced Lotka-Volterra dynamics cannot sustain
+ any diversity unless the structure is geared to include a storage effect.
+ Although this has already been stated by other authors 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "barabas_community_2012,fox_intermediate_2013,scranton_coexistence_2016"
+literal "false"
+
+\end_inset
+
+, this is not always intuitive 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "fox_intermediate_2013"
+literal "false"
+
+\end_inset
+
+, so we feel compelled to stress it once more: temporal variation in growth
+ rate alone cannot help coexistence.
+ A nice point made by 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "scranton_coexistence_2016"
+literal "false"
+
+\end_inset
+
+ was that a built-in storage effect in the forced Lotka-Volterra dynamics
+ could lead to some degree of coexistence.
+ Our investigation confirms this to be true for the white noise scenario
+ considered by 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "scranton_coexistence_2016"
+literal "false"
+
+\end_inset
+
+, but an arguably more realistic seasonal forcing by temperature (in the
+ case of phytoplankton) will considerably lessen the number of species coexistin
+g after 5000 timesteps from around 15 to 4.
+ Even imagining that groups represented here are genera or classes rather
+ than species, this is a fairly low diversity.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\change_inserted -666822487 1525382041
+We have therefore sought out whether stabilizing niche differences (SNDs)
+ could produce a higher diversity maintenance, using field-based intra-
+ vs inter-group (species or genera) competition coefficients 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "barraquand_weak_2017"
+literal "false"
+
+\end_inset
+
+, where the intra-group density-dependence is approximately 10 times stronger.
+ On their own, SNDs produced a higher level of diversity than the storage
+ effect (almost double for white noise).
+ 
+\end_layout
+
+\begin_layout Standard
+
+\change_inserted -666822487 1525382077
+However, the seasonal forcing still considerably reduced diversity when
+ SNDs were considered, especially the 
+\begin_inset Quotes eld
+\end_inset
+
+neutral
+\begin_inset Quotes erd
+\end_inset
+
+ kind, diversity within clumps of similar traits.
+ This occurs because within a season, the signal autocorrelation gives to
+ the best competitor has a longer time to exclude its less adapted heterospecifi
+cs, while white noise also contains very low forcing signal frequencies
+ that forbid such competitive exclusion.
+ In this situation, even though a species has the best long-term averaged
+ growth rate, it can disappear as a result of a strong competition from
+ both low- and high-temperature tolerant species, with and without storage
+ effect.
+ Our results are therefore at odds with recent proposals that seasonal forcing
+ would help maintain diversity 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "sakavara_lumpy_2018"
+literal "false"
+
+\end_inset
+
+, at least not when seasonal forcing is compared to other forcing signals.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\change_inserted -666822487 1525382678
+In our previous empirical study of coastal phytoplankton dynamics 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "barraquand_weak_2017"
+literal "false"
+
+\end_inset
+
+, we have not found any storage effect (which certainly does not mean that
+ it could not be observed in other plankton-like systems).
+ Given the results presented here, we are skeptical that temporal niche
+ partitioning through the storage effect could, on its own, help explaining
+ the phytoplankton diversity, especially given that stabilizing niches differenc
+es seem fairly strong when estimated from phytoplankton time series.
+ However, our results suggest that in phytoplankton-like seasonal environments,
+ even though empirically-based stabilizing niche differences produce more
+ diversity than the storage effect, the combination storage effect + SNDs
+ is non-additive: the cases were both SNDs and the storage effect were present
+ showed more diversity than generated by any mechanism on its own.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\change_inserted -666822487 1525383209
+This suggests the very exciting possibility that coexistence mechanisms
+ might combine superadditively in general, thus helping us to better understand
+ the astounding diversity of primary producers.
+ The same logic could, in principle, be extended to mechanisms that we have
+ not considered here (e.g., spatial structure, specialized natural enemies,
+ that could be as important here for plankton as they are for tropical trees
+ [a few refs on Janzen Connell effects in trees]).
+ Better explaining plant or microbial diversity would then not be about
+ selecting the best unique mechanism susceptible to explain the observed
+ diversity, but rather better combining those mechanisms together.
+ This may obviously be an annoyance for those who like to sharpen Occam's
+ razor, but it clearly holds opportunities for theoreticians wishing to
+ investigate synergies between coexistence mechanisms.
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\change_deleted -666822487 1525381972
+
+\series bold
+Summary of main results so far
+\change_inserted -666822487 1525383204
+[Other points not tackled so far]
+\change_unchanged
+ :
 \end_layout
 
 \begin_layout Itemize
+
+\change_deleted -666822487 1525381976
 Stabilizing niche differences can sustain more diversity than the storage
  effect.
  
+\change_unchanged
+
 \end_layout
 
 \begin_layout Itemize
@@ -2178,6 +2925,23 @@ Seasonality decreases the total number of extant species when compared to
 In the absence of storage effect, seasonality tends to favor maximum growth
  rates even though it also leads to higher competition whereas white noise
  tends to favor balanced growth rates and competition.
+\change_inserted -666822487 1525383559
+
+\end_layout
+
+\begin_layout Itemize
+
+\change_inserted -666822487 1525383919
+[Would it be correct to say that one of the model limitation is that all
+ species are equally affected by the forcing? We could hypothetize (or couldn't
+ we) that some of the rare species might be less affected by the seasonal
+ cycles and more by white noise – or is this completely off? Cf.
+ my comment in the email.
+ That said I think I've seen some papers saying that rare species were 
+\emph on
+more 
+\emph default
+strongly self-regulated not less...] 
 \end_layout
 
 \begin_layout Standard
@@ -2462,10 +3226,6 @@ Table corresponding to Fig.
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Plain Layout
 
 \end_layout
 
