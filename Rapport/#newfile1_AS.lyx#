@@ -1,0 +1,4142 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\usepackage{lineno} 
+\linenumbers
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "times" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family rmdefault
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement H
+\paperfontsize 12
+\spacing double
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine natbib
+\cite_engine_type authoryear
+\biblio_style plainnat
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2cm
+\topmargin 2cm
+\rightmargin 2cm
+\bottommargin 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes true
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\author -666822487 "frederic"
+\author 274868703 "Coralie PICOCHE"
+\author 2088930707 "Alix"
+\end_header
+
+\begin_body
+
+\begin_layout Title
+
+\change_inserted 274868703 1525420322
+Stabilizing niche differences are still required to maintain species-rich
+ communities in temporally variable environments
+\end_layout
+
+\begin_layout Date
+
+\change_inserted 274868703 1525420329
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 274868703 1525420329
+
+
+\backslash
+today
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Author
+Coralie Picoche 
+\begin_inset script superscript
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+
+, Alix Sauve
+\begin_inset script superscript
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+
+, Frédéric Barraquand 
+\begin_inset script superscript
+
+\begin_layout Plain Layout
+1,2
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Address
+\begin_inset script superscript
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+
+Integrative and Theoretical Ecology Chair, Labex COTE, University of Bordeaux,
+ 
+\begin_inset script superscript
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+
+Institute of Mathematicsof Bordeaux, CNRS
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+I needed all the info above to compile.
+ I know this will be changed but I've spent way too much time fighting against
+ the machine
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Introduction
+\end_layout
+
+\begin_layout Standard
+There has been a rich debate in theoretical ecology on how to reconcile
+ niche and neutral perspectives
+\change_inserted 2088930707 1525468419
+ on species coexistence
+\change_unchanged
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "scheffer_self-organized_2006,barabas_emergent_2013,vergnon_interpretation_2013"
+literal "false"
+
+\end_inset
+
+ [we can add or replace this by refs Dom Gravel and others here].
+\change_inserted 2088930707 1525467957
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 2088930707 1525470514
+It would be good to briefly remind these two perspectives, and why they
+ need to be reconciled.
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_inserted -666822487 1525383533
+ 
+\change_unchanged
+For instance, 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "scheffer_self-organized_2006"
+literal "false"
+
+\end_inset
+
+ suggested that niche and neutrality 
+\change_deleted 2088930707 1525470241
+can occur at the same time
+\change_inserted 2088930707 1525470386
+may simultaneously act on communities
+\change_unchanged
+, 
+\change_deleted 2088930707 1525470391
+with
+\change_inserted 2088930707 1525470405
+selecting
+\change_unchanged
+ clumps of similar species 
+\change_deleted 2088930707 1525470411
+on
+\change_inserted 2088930707 1525470412
+along
+\change_unchanged
+ a
+\change_inserted 2088930707 1525470419
+ single
+\change_unchanged
+ trait axis.
+ 
+\change_inserted 2088930707 1525470637
+Classical stabilizing niche differences promote the 
+\change_deleted 2088930707 1525470638
+C
+\change_inserted 2088930707 1525470638
+c
+\change_unchanged
+oexistence 
+\change_deleted 2088930707 1525470642
+between
+\change_inserted 2088930707 1525470643
+of multiple
+\change_unchanged
+ clumps 
+\change_inserted 2088930707 1525470769
+through stronger intraspecific competition
+\change_deleted 2088930707 1525470648
+is provided by classical stabilizing niche differences
+\change_unchanged
+, while within-clump coexistence occur through neutral processes
+\change_inserted 2088930707 1525470933
+ by which species differ too little to compete each other out 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 2088930707 1525470933
+Not sure my phrasing is better, but overall, the idea would be to clarify
+ all the concepts that are thrown to the reader in this paragraph.
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+.
+ Although 
+\change_deleted 2088930707 1525471024
+eventually, in absence of immigration,
+\change_unchanged
+ clumps 
+\change_inserted 2088930707 1525471015
+eventually 
+\change_deleted 2088930707 1525471218
+do 
+\change_unchanged
+thin out
+\change_inserted 2088930707 1525471028
+ in absence of immigration
+\change_unchanged
+, transient coexistence can last for extended periods of time.
+ However, the
+\change_inserted 2088930707 1525471047
+se
+\change_unchanged
+ findings 
+\change_deleted 2088930707 1525471058
+of 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "scheffer_self-organized_2006"
+literal "false"
+
+\end_inset
+
+ 
+\change_unchanged
+have been disputed 
+\change_deleted 2088930707 1525471092
+due to
+\change_inserted 2088930707 1525471093
+because
+\change_unchanged
+ hidden niches 
+\change_inserted 2088930707 1525471107
+can arise 
+\change_unchanged
+in the original model 
+\change_deleted 2088930707 1525471145
+
+\begin_inset CommandInset citation
+LatexCommand citep
+key "barabas_emergent_2013"
+literal "false"
+
+\end_inset
+
+, that occur because of
+\change_inserted 2088930707 1525471146
+through
+\change_unchanged
+ stronger intraspecific competition
+\change_inserted 2088930707 1525471273
+,
+\change_unchanged
+ 
+\change_deleted 2088930707 1525471159
+(
+\change_unchanged
+as in the classical Lotka-Volterra model
+\change_deleted 2088930707 1525471162
+,
+\change_unchanged
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "barabas_effect_2016,barabas_emergent_2013"
+literal "false"
+
+\end_inset
+
+
+\change_deleted 2088930707 1525471164
+)
+\change_unchanged
+.
+ Since then, several studies have 
+\change_deleted 2088930707 1525471288
+look
+\change_inserted 2088930707 1525471289
+search
+\change_unchanged
+ed for this clumpy coexistence in theoretical models using other frameworks
+\change_inserted 2088930707 1525471940
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 2088930707 1525471979
+Is it really about alternative 
+\begin_inset Quotes eld
+\end_inset
+
+frameworks
+\begin_inset Quotes erd
+\end_inset
+
+? Later, you talk about 
+\begin_inset Quotes eld
+\end_inset
+
+mechanisms
+\begin_inset Quotes erd
+\end_inset
+
+ which I find more appropriate.
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+, most notably incorporating temporal variation 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "scranton_coexistence_2016,sakavara_lumpy_2018"
+literal "false"
+
+\end_inset
+
+.
+ In these models, equal competitive strengths are combined with other mechanisms
+ like the storage effect that increase the possibility of coexistence (see
+ also 
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "barabas_community_2012"
+literal "false"
+
+\end_inset
+
+).
+ 
+\end_layout
+
+\begin_layout Standard
+Here, we build on the work of 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "scranton_coexistence_2016"
+literal "false"
+
+\end_inset
+
+ to investigate the possibility of coexistence through fluctuating environments
+ (the so-called storage effect or temporal niche partitioning, that seem
+ equivalent for forced Lotka-Volterra models
+\change_inserted 2088930707 1525471469
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 2088930707 1525471478
+What's in brackets deserves to be developped.
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+, 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "barabas_community_2012,scranton_coexistence_2016"
+literal "false"
+
+\end_inset
+
+.
+ Our enthusiasm for the model stems from phytoplankton communities, a key
+ inspiration for the thermal preferences curves in 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "scranton_coexistence_2016"
+literal "false"
+
+\end_inset
+
+ .
+ Despite some interesting results, one key limitation of 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "scranton_coexistence_2016"
+literal "false"
+
+\end_inset
+
+'s model from the perspective of plankton ecology seemed to be the assumption
+ of a randomly fluctuating thermal environment.
+ Temperature usually fluctuates seasonally, and random temporal variation
+ only add noise to a largely deterministic trend .
+ Our present work can therefore be seen as an attempt to blend 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "scranton_coexistence_2016"
+literal "false"
+
+\end_inset
+
+ with the periodic environments of 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "barabas_community_2012"
+literal "false"
+
+\end_inset
+
+ into a mixture of stochastic and deterministic environmental forces affecting
+ Lotka-Volterra community dynamics.
+ 
+\change_inserted 2088930707 1525471560
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 2088930707 1525471927
+All of this paragraph makes very good points about Scranton and Vasseur's
+ work.
+ For later, it would be helpful to relate these to the rest of the literature
+ on the same topic.
+ Actually, it's mostly about polishing the transition with the above paragraph.
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+
+\end_layout
+
+\begin_layout Standard
+Because many phytoplankton species or genera respond in similar ways to
+ temperature despite having different optimas
+\change_inserted 2088930707 1525472029
+ [Insert REF here]
+\change_unchanged
+, we hypothetized that a large seasonal variation might not necessarily
+ 
+\change_deleted 2088930707 1525471696
+affect
+\change_inserted 2088930707 1525471709
+foster species
+\change_unchanged
+ coexistence
+\change_deleted 2088930707 1525471702
+ in a positive way
+\change_unchanged
+.
+ In fact, an increased synchrony
+\change_inserted 2088930707 1525472058
+ of species abundances
+\change_unchanged
+ 
+\change_inserted 2088930707 1525471732
+sh
+\change_deleted 2088930707 1525471731
+c
+\change_unchanged
+ould theoretical
+\change_inserted 2088930707 1525471715
+ly
+\change_unchanged
+ decrease the
+\change_inserted 2088930707 1525472067
+ir
+\change_unchanged
+ temporal partitioning
+\change_deleted 2088930707 1525472072
+ between the species
+\change_unchanged
+.
+ How seasonality affects coexistence (as opposed to a purely randomly fluctuatin
+g environment) is therefore a key feature of this paper.
+ In particular, we contrast cases where the storage effect is present vs.
+ absent, which elegantly maps to two different versions of the forced Lotka-Volt
+erra model (see Methods).
+ 
+\end_layout
+
+\begin_layout Standard
+Moreover, we realized while running 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "scranton_coexistence_2016"
+literal "false"
+
+\end_inset
+
+'s model that the overall diversity obtained after 5000 years was relatively
+ low compared to what we usually observe in phytoplankton communities.
+ In an empirical study combining phytoplankton community-level time series
+ and multivariate autoregressive models (REF), we found that despite a large
+ influence of the environment (including temperature, irradiance, and other
+ factors), intraspecific (or intragenus) competition was rather large and
+ most likely the 
+\change_deleted 2088930707 1525472978
+main reason
+\change_inserted 2088930707 1525472979
+key driver
+\change_unchanged
+ 
+\change_deleted 2088930707 1525472981
+for
+\change_inserted 2088930707 1525472992
+of species
+\change_unchanged
+ coexistence
+\change_deleted 2088930707 1525473032
+;
+\change_inserted 2088930707 1525473033
+.
+
+\change_unchanged
+ 
+\change_deleted 2088930707 1525473035
+i
+\change_inserted 2088930707 1525473035
+I
+\change_unchanged
+n other words, stabilizing niche differences had a large role to play in
+ maintaining species diversity in coastal phytoplankton (REF).
+ Here, we therefore try to establish what are the relative contributions
+ of the storage effect vs intraspecific density-dependence to coexistence
+ in a phytoplankton-like theoretical community model.
+ 
+\change_inserted 2088930707 1525473098
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 2088930707 1525473141
+I suggest to merge these two last paragraphs to further talk about the phytoplan
+kton-like communities (why they are relevant here, etc.).
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+
+\end_layout
+
+\begin_layout Standard
+This multifaceted objectives
+\change_inserted 2088930707 1525473388
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 2088930707 1525473393
+To be clustered in a single paragraph? e.g.
+ 
+\begin_inset Quotes eld
+\end_inset
+
+Herein, we aim at investigating the relative contribution of various mechanisms
+ favouring coexistence, namely (...).
+\begin_inset Quotes erd
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Or list sub-objectives?
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+ led us to cross different combinations of seasonality in the forcing signal,
+ presence of the storage effect or not, and intra- vs interspecific competition,
+ in order to disentangle the contributions of all these factors to biodiversity
+ maintenance.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Influence of the seasonality on temporal niche partitioning 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "barabas_community_2012,sakavara_lumpy_2018"
+literal "false"
+
+\end_inset
+
+ + definition of the storage effect 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "barabas_community_2012,ellner_how_2016"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+Focus SV model 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "scranton_coexistence_2016"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Methods
+\end_layout
+
+\begin_layout Subsection*
+
+\emph on
+Description
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Seems that sv3jour does not want Subsection -or any section- in bold.
+ They are however in bold in real articles, i need to change this.
+ After
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The model described in 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "scranton_coexistence_2016"
+literal "true"
+
+\end_inset
+
+ is based on a variant of the Lotka-Volterra competition model.
+ Fluctuations in the environment are introduced in the model by temperature-depe
+ndant growth rates (see eq.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:modelLV"
+
+\end_inset
+
+-
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:growth"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, all coefficients are defined in Tab.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:Coefficients-"
+
+\end_inset
+
+)
+\change_inserted 2088930707 1525473418
+ so that species growth rates write:
+\change_deleted 2088930707 1525473410
+.
+ 
+\change_unchanged
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray}
+\frac{dN_{i}}{dt} & = & r_{i}(\tau)N_{i}\left(1-\sum_{j=1}^{S}\alpha_{ij}N_{j}\right)-mN_{i}\label{eq:modelLV}\\
+r_{i}(\tau) & = & a_{r}(\tau_{0})e^{E_{r}\frac{(\tau-\tau_{\text{0}})}{k\tau\tau_{0}}}f_{i}(\tau)\label{eq:growth}\\
+\textnormal{where} & f_{i}(\tau)= & \begin{cases}
+e^{-|\tau-\tau_{i}^{opt}|^{3}/b_{i}}, & \tau\leq\tau_{i}^{opt}\\
+e^{-5|\tau-\tau_{i}^{opt}|^{3}/b_{i}}, & \tau>\tau_{i}^{opt}
+\end{cases}\label{eq:eppley_curve}\\
+\textnormal{and} & b_{i}\text{ defined by numerically solving} & \int r_{i}(\tau)d\tau=A\label{eq:niche_breadth}
+\end{eqnarray}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\change_inserted 2088930707 1525473446
+Model parameters are detailed in Table 
+\change_deleted 2088930707 1525473449
+The coefficient values (Tab.
+
+\change_unchanged
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:Coefficients-"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+
+\change_deleted 2088930707 1525473459
+)
+\change_inserted 2088930707 1525473475
+, and set their values to match the features of
+\change_deleted 2088930707 1525473482
+ characterize a
+\change_unchanged
+ phytoplankton communit
+\change_inserted 2088930707 1525473485
+ies
+\change_deleted 2088930707 1525473484
+y
+\change_unchanged
+
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Do I repeat here page 3 of model description in SV ?
+\end_layout
+
+\end_inset
+
+.
+ The niche of each species is defined by its thermal optimum 
+\begin_inset Formula $\tau_{i}^{opt}$
+\end_inset
+
+.
+ Thermal performance curves defined in eq.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:eppley_curve"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ are parameterized so that all species share the same niche area (eq.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:niche_breadth"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+), which sets a trade-off between maximum growth rates and niche width.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Parameter definition and values of the model described in eq.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:modelLV"
+
+\end_inset
+
+-
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:niche_breadth"
+
+\end_inset
+
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Coefficients-"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="21" columns="3">
+<features booktabs="true" tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0pt">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Name
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Definition
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Value (unit)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $S$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Number of species
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+60
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $N_{i}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Biomass density of the 
+\begin_inset Formula $i$
+\end_inset
+
+th species
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(kg/area)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\tau$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Temperature
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+K
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $r_{i}(\tau)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Growth rate of species 
+\begin_inset Formula $i$
+\end_inset
+
+ as a function of temperature
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\frac{\text{kg}}{\text{kg*year}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\alpha_{ij}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Strength of competition of species 
+\begin_inset Formula $j$
+\end_inset
+
+ on species 
+\begin_inset Formula $i$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.001 area/kg
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $b_{i}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Normalization of the thermal decay rate
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $m$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Mortality rate
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $15\frac{\text{kg}}{\text{kg*year}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\tau_{0}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Reference temperature
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+293 K
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $a_{r}(\tau_{0})$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Growth rate at reference temperature
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $386\frac{\text{kg}}{\text{kg*year}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $E_{r}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Activation energy
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.467 eV
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $k$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Boltzmann's constant
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $8.6173324.10^{-5}\text{eV.K}^{-1}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $f_{i}(\tau)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Fraction of the maximum rate achieved for the 
+\begin_inset Formula $i$
+\end_inset
+
+th species
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\mu_{\tau}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Mean temperature
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+293 K
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\sigma_{\tau}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Standard deviation for temperature
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5 K
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\tau_{\text{min}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Minimum thermal optimum
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+288K
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\tau_{\text{max}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Maximum thermal optimum
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+298 K
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Niche breadth
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $10^{3.1}\frac{\text{kg}}{\text{kg*year}}$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\tau_{i}^{\text{opt}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Thermal optimum for growth of the 
+\begin_inset Formula $i$
+\end_inset
+
+th species
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+K
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\theta$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Scaling between white noise to seasonal signal
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+[0,
+\begin_inset Formula $\sqrt{(}2)$
+\end_inset
+
+]
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Or maybe (0;1.3) would be more exact?
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\rho$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Ratio of intra-to-intergroup competition strengths
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(1;10)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset citation
+LatexCommand citet
+key "scranton_coexistence_2016"
+literal "false"
+
+\end_inset
+
+ described temperature as a white noise
+\change_inserted 2088930707 1525473561
+ which corresponds to a randomly fluctuating environment
+\change_unchanged
+ (eq.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:WN"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\tau_{t}\sim N(\mu_{\tau},\sigma_{\tau})\label{eq:WN}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\change_inserted 2088930707 1525473579
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 2088930707 1525474369
+I would move this kind of sentence in the introduction to justify why it
+ is investigated in this paper and would start the following one with 
+\begin_inset Quotes eld
+\end_inset
+
+To mode a seasonal environment, we kept...
+\begin_inset Quotes erd
+\end_inset
+
+.
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+Under most latitudes, however, temperature is a seasonal signal, which can
+ affect the dynamics of the community considered 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "vesipa_impact_2017"
+literal "false"
+
+\end_inset
+
+.
+ We kept the mean and standard deviation of the signal but included a lower-freq
+uency component (eq.
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:Seasonal_signal"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+ The ratio of low-to-high frequency depends on the variable 
+\begin_inset Formula $\theta$
+\end_inset
+
+, enabling us to keep the same energy content in the forcing signal.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\tau(t)=\mu_{\tau}+\theta\sigma_{\tau}\sin\left(\frac{2\pi t}{365}\right)+\epsilon_{t},\text{where }\epsilon_{t}\sim\mathcal{N}(0,\sigma_{\tau}\sqrt{1-\frac{\theta^{2}}{2}})\label{eq:Seasonal_signal}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The upper limit for 
+\begin_inset Formula $\theta$
+\end_inset
+
+, 
+\begin_inset Formula $\sqrt{2}$
+\end_inset
+
+, corresponds to a completely determinist model.
+ We chose to keep the stochasticity in the signal and to model a plausible
+ temperature signal with 
+\begin_inset Formula $\theta=1.3$
+\end_inset
+
+ (see Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Times-series_temperature_species"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+b).
+ 
+\end_layout
+
+\begin_layout Standard
+
+\change_deleted 2088930707 1525473621
+The formulation of Lotka-Volterra according to 
+\change_unchanged
+
+\begin_inset CommandInset citation
+LatexCommand citet
+key "scranton_coexistence_2016"
+literal "true"
+
+\end_inset
+
+
+\change_inserted 2088930707 1525473624
+'s model
+\change_unchanged
+ implies a storage effect, as the competition strengths covary positively
+ with the growth rate value 
+\begin_inset Formula $r_{i}(\tau)$
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand citep
+key "ellner_how_2016"
+literal "false"
+
+\end_inset
+
+.
+ To test for the effect of an explicit storage effect in the model, we removed
+ this assumption by using the mean value of a species' growth rate (
+\begin_inset Formula $\bar{r_{i}}$
+\end_inset
+
+) to weight the interaction coefficients.
+\end_layout
+
+\begin_layout Standard
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\begin_inset Formula 
+\begin{equation}
+\frac{dN_{i}}{dt}=N_{i}\left(r_{i}(\tau)-\sum_{j=1}^{S}\bar{r}_{i}\alpha_{ij}N_{j}\right)-mN_{i}\label{eq:eqLV_noforcecompetition}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In eq.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:eqLV_noforcecompetition"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, competition strengths 
+\change_inserted 2088930707 1525473664
+remain unaffected by the 
+\change_deleted 2088930707 1525473670
+depend on the species considered, but not on the
+\change_unchanged
+ environmental conditions
+\change_deleted 2088930707 1525473676
+ which affect 
+\change_inserted 2088930707 1525473693
+contrary to 
+\change_unchanged
+growth rates.
+\end_layout
+
+\begin_layout Standard
+
+\change_deleted 2088930707 1525473748
+Stabilizing niche differences
+\change_inserted 2088930707 1525473760
+Intraspecific competition is 
+\change_deleted 2088930707 1525473786
+ are ensured
+\change_inserted 2088930707 1525473787
+implemented
+\change_unchanged
+ by 
+\change_deleted 2088930707 1525473799
+the addition of the
+\change_inserted 2088930707 1525473801
+means of an additional
+\change_unchanged
+ coefficient 
+\begin_inset Formula $\rho$
+\end_inset
+
+, which is the ratio of intra-to-intergroup competition strength.
+ We can therefore re-write the interaction coefficients 
+\begin_inset Formula $\alpha_{ij}$
+\end_inset
+
+ in eq.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:alpha_def"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\alpha_{ij}=\alpha\left(1+(\rho-1)\delta_{ij}\right)\label{eq:alpha_def}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where 
+\begin_inset Formula $\delta_{ij}$
+\end_inset
+
+is the Kronecker symbol, equal to 1 if 
+\begin_inset Formula $i=j$
+\end_inset
+
+ and to 0 otherwise.
+ The value of the parameter 
+\begin_inset Formula $\rho=10$
+\end_inset
+
+ was chosen from analyses of phytoplanktonic data
+\change_inserted 2088930707 1525473780
+ to ensure stabilising niche differences
+\change_unchanged
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "barraquand_weak_2017"
+literal "false"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+In addition to 
+\change_inserted 2088930707 1525473849
+two
+\change_deleted 2088930707 1525473849
+2
+\change_unchanged
+ types of environmental forcings (white noise,
+\begin_inset Formula $\theta=0$
+\end_inset
+
+, and seasonal, 
+\begin_inset Formula $\theta=1.3$
+\end_inset
+
+), we therefore compare the results for 
+\change_deleted 2088930707 1525473862
+4
+\change_inserted 2088930707 1525473862
+four
+\change_unchanged
+ formulations of the model: with and without an explicit storage effect
+ (eq.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:modelLV"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ and eq.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:eqLV_noforcecompetition"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, respectively) ; with and without stabilizing niche differences (
+\begin_inset Formula $\rho=10$
+\end_inset
+
+ or 
+\begin_inset Formula $\rho=1$
+\end_inset
+
+, respectively).
+\change_inserted 2088930707 1525473874
+
+\end_layout
+
+\begin_layout Standard
+
+\change_inserted 2088930707 1525473876
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 2088930707 1525474100
+I'm starting to think that a table/figure in the same spirit as what was
+ on Fred's 
+\begin_inset Quotes eld
+\end_inset
+
+blackboard
+\begin_inset Quotes erd
+\end_inset
+
+ would be nice to visualise and synthetise the different versions of the
+ community model.
+ Each cell could be the model description (equations) so we can contrast
+ the different models without running through the manuscript all the time.
+ Still, all the above is super helpful, it's just a suggestion to synthetise
+ everything.
+\end_layout
+
+\end_inset
+
+
+\change_deleted 2088930707 1525473874
+ 
+\change_unchanged
+
+\end_layout
+
+\begin_layout Subsection*
+Set-up
+\end_layout
+
+\begin_layout Standard
+
+\change_inserted 2088930707 1525474227
+We repeat the 'Species sorting' experiment of 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "scranton_coexistence_2016"
+literal "false"
+
+\end_inset
+
+ so as to investigate on how synthetic phytoplankton communities structure
+ under the various scenarios we descrbed above.
+ 
+\change_unchanged
+We focused on the dynamics of a community initialized with 60 species with
+ thermal optima uniformly spaced along the interval [15°C, 25°C].
+ All species started with the same initial density 
+\begin_inset Formula $\left(\frac{\ensuremath{1}}{\alpha S}\right)$
+\end_inset
+
+.
+ Each simulation was run for 5000 years in 1-day intervals.
+ When the density of a species dropped below 
+\begin_inset Formula $10^{-6}$
+\end_inset
+
+, it was considered extinct.
+
+\change_deleted 2088930707 1525474232
+ This framework corresponds to the first experiment, so called 'Species
+ sorting', in 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "scranton_coexistence_2016"
+literal "false"
+
+\end_inset
+
+
+\change_unchanged
+.
+ For each combination of the parameters of the model (type of environmental
+ signal, storage effect and stabilizing niche differences), we ran 50
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+ Running 100 right now
+\end_layout
+
+\end_inset
+
+ simulations.
+ 
+\end_layout
+
+\begin_layout Standard
+All simulations were ran with Matlab's ode45 algorithm, an explicit Runge-Kutta
+ (4,5) algorithm with an absolute error tolerance of 
+\begin_inset Formula $10^{-8}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Section
+Results 
+\end_layout
+
+\begin_layout Standard
+Typical dynamics of the community following Eq.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:modelLV"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+
+\change_inserted -666822487 1525377873
+ (the model of 
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "scranton_coexistence_2016"
+literal "false"
+
+\end_inset
+
+),
+\change_unchanged
+ with 
+\change_inserted -666822487 1525377885
+both 
+\change_unchanged
+the environmental signals described in Eq.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:WN"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ 
+\change_inserted -666822487 1525377920
+(original choice of 
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "scranton_coexistence_2016"
+literal "false"
+
+\end_inset
+
+) 
+\change_unchanged
+and 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:Seasonal_signal"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+
+\change_inserted -666822487 1525377926
+ (our variant),
+\change_unchanged
+ are shown in Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Times-series_temperature_species"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+
+\change_inserted -666822487 1525377916
+ 
+\change_inserted 2088930707 1525474255
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 2088930707 1525474276
+Is this first sentence useful here? It's typically what's in the figure
+ caption, isn't it?
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_inserted -666822487 1525377916
+Forcing by a 
+\change_deleted 2088930707 1525474411
+seasonal
+\change_inserted 2088930707 1525474412
+sinusoidal
+\change_inserted -666822487 1525377916
+ signal produces the strongly seasonally structured dynamics that are typical
+ of phytoplankton.
+ 
+\change_deleted -666822487 1525377468
+ 
+\change_unchanged
+Even though only 5 species can be 
+\change_deleted -666822487 1525377530
+distinguished 
+\change_inserted -666822487 1525377916
+seen 
+\change_unchanged
+in Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Times-series_temperature_species"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+c), there were 14 species still present at the end of the simulation forced
+ by a white noise, with large disparities in the range of variation of their
+ biomasses
+\change_inserted 2088930707 1525474439
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 2088930707 1525474532
+So is Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Times-series_temperature_species"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ the best to talk about persistence? I think this is Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Persistence-of-species"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+'s job.
+ Time series should be kept for sure, but might not be the best to argue
+ about species persistence.
+ 
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+.
+ A third of the species kept a biomass above 10 kg/area
+\change_inserted -666822487 1525377916
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted -666822487 1525378069
+can we replace 
+\begin_inset Quotes eld
+\end_inset
+
+area
+\begin_inset Quotes erd
+\end_inset
+
+ by smthg else by using something typical of plankton too?
+\change_inserted 274868703 1525420700
+ m3 or L ??
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+ while 6 out of the 14 remained below the unit.
+ All species 
+\change_inserted -666822487 1525377916
+in the white noise simulations 
+\change_unchanged
+were clustered along a 3.2°C-range of thermal optima
+\change_inserted -666822487 1525377916
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted -666822487 1525377706
+Is there another figure saying this? If so, we could refer to it
+\change_inserted 274868703 1525420674
+.
+ Non.
+ C'est propre à la simulation que je représente ici.
+ 
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+.
+ 
+\change_deleted -666822487 1525377717
+No pattern can be distinguished in their dynamics.
+\change_inserted -666822487 1525377916
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted -666822487 1525377777
+Ici c'est difficile de savoir de quel panel on parle et de quel type de
+ pattern (en fonction de t, de l'optimum thermique, de la relative species
+ abondance...
+ 
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+ 
+\change_inserted -666822487 1525377916
+No obvious temporal patterns (e.g., cycles) could be seen in 
+\change_unchanged
+On the other hand, 
+\change_inserted -666822487 1525377978
+seasonal 
+\change_unchanged
+cycles were clear in the seasonal
+\change_inserted -666822487 1525377985
+ly-forced
+\change_unchanged
+ 
+\change_deleted -666822487 1525377990
+example in
+\change_inserted -666822487 1525377993
+case of
+\change_unchanged
+ Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Times-series_temperature_species"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ d).
+ Only 4 species coexisted at the end of the simulation
+\change_inserted -666822487 1525378022
+ with seasonal forcing
+\change_unchanged
+, gathered in two groups with large thermal optimum differences (5.7°C between
+ the maximum thermal optimum of the first group and the minimum thermal
+ optimum of the second group).
+ When temperatures are high, species with a higher thermal optima reached
+ 
+\change_deleted -666822487 1525378456
+their 
+\change_unchanged
+maximum biomass, then left room for the growth of lower-temperature tolerant
+ species
+\change_inserted -666822487 1525378483
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted -666822487 1525378506
+je ne suis pas complètement sûr d'avoir compris l'idée ici.
+
+\change_inserted 274868703 1525420656
+ Juste un essai d'explication du partitionnement temporel de niche.
+ On peut l'enlever si c'est trop évident
+\change_deleted 274868703 1525420489
+ 
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename graphe/essai.pdf
+	width 95text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Times series of temperature (top) and extant species (bottom) for the 2
+ last years of a 5000 year simulation, with storage effect and no stabilizing
+ niche differences.
+ The forcing temperature is either a white noise (left) or a noisy seasonal
+ signal (right).
+ Line colors of species biomasses correspond to their thermal optima (from
+ blue, corresponding to low thermal optima, to red, corresponding to high
+ thermal optima.
+ The whole range of the biomass distribution is shown on Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Mean-biomass-in_stable_cases"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Times-series_temperature_species"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The decrease in persistence due to seasonality observed in 
+\change_deleted -666822487 1525378529
+the first example
+\change_inserted -666822487 1525378612
+Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Times-series_temperature_species"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+
+\change_unchanged
+ was confirmed in all our simulations (Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Persistence-of-species"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+ In cases where 
+\change_inserted 2088930707 1525474724
+final species 
+\change_unchanged
+richness 
+\change_deleted 2088930707 1525474731
+at the end of the simulation 
+\change_unchanged
+varied
+\change_inserted 2088930707 1525474737
+ from one simulation to another
+\change_unchanged
+ (namely, with storage effect
+\change_inserted -666822487 1525378558
+ but
+\change_deleted -666822487 1525378556
+,
+\change_unchanged
+ without stabilizing niche differences, 
+\change_deleted -666822487 1525378570
+and
+\change_inserted -666822487 1525378570
+or
+\change_unchanged
+ without storage
+\change_inserted -666822487 1525378575
+ but
+\change_deleted -666822487 1525378574
+,
+\change_unchanged
+ with stabilizing niche differences), seasonality reduced the number of
+ extant species to, in average, 29% and 49% of its original value, respectively
+\change_inserted -666822487 1525378600
+ (Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Persistence-of-species"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+)
+\change_unchanged
+.
+ A seasonal signal 
+\change_inserted -666822487 1525378637
+therefore 
+\change_deleted -666822487 1525378641
+tended to constrain the system
+\change_inserted -666822487 1525378642
+led
+\change_unchanged
+ to a smaller persistence range.
+ 
+\change_deleted -666822487 1525378676
+N
+\change_inserted -666822487 1525378732
+
+\end_layout
+
+\begin_layout Standard
+
+\change_inserted -666822487 1525378793
+Both the stabilizing niche differences and the storage effect have a marked
+ effect on increasing persistence.
+ 
+\change_deleted -666822487 1525378814
+either the storage effect nor stabilizing niche differences alone could
+ ensure the coexistence of all species at the end of the simulations.
+\change_inserted -666822487 1525378817
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted -666822487 1525378825
+this is true but not at the right place
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+ Without any of these coexistence mechanisms, only one species persisted
+ at the end of the simulation.
+ When only the storage effect was present, the number of extant species
+ varied between 11 and 20 with a white noise, or 2 and 6 with a seasonal
+ signal.
+ On the other hand, when only stabilizing niche differences were present,
+ the number of extant species nearly doubled, varying between 20 and 32,
+ or 12 and 14, with a white noise or a seasonal signal respectively.
+ 
+\change_inserted -666822487 1525378860
+Remarkably, w
+\change_deleted -666822487 1525378860
+W
+\change_unchanged
+hen 
+\change_inserted -666822487 1525378865
+the 
+\change_unchanged
+storage effect and stabilizing niche differences
+\change_inserted -666822487 1525378923
+ (SNDs)
+\change_unchanged
+ both affected the
+\change_inserted -666822487 1525378878
+ community
+\change_unchanged
+ dynamics, all species persisted in the community
+\change_inserted -666822487 1525378950
+, while neither the storage nor SNDs were able in isolation to produce that
+ result, for both white noise and seasonal forcing
+\change_unchanged
+.
+ 
+\change_inserted 2088930707 1525474762
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 2088930707 1525474771
+Nice!
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename graphe/extant_species.pdf
+	width 95text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Number of species still present at the end of 5000-year simulations, initialized
+ with 60 species, with a white noise forcing signal (blue) or a noisy seasonal
+ signal (red).
+ For each model type (with and without Storage Effect, + / - storage, respective
+ly; with and without Stabilizing Niche Differences, + / - SND, respectively),
+ 50 simulations were launched.
+ Community compositions are stable in the cases -storage-SND and +storage+SND
+ (1 or 60 species are still present at the end of all simulations, respectively).
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Persistence-of-species"
+
+\end_inset
+
+
+\change_inserted 2088930707 1525474791
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 2088930707 1525474798
+I like this figure!
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+When the richness of the community was stable (either 1 or 60 species at
+ the end of the simulation, 
+\change_deleted -666822487 1525378998
+in the absence or presence of coexistence mechanisms
+\change_inserted -666822487 1525378999
+Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Mean-biomass-in_stable_cases"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+
+\change_unchanged
+), there were still 
+\change_inserted -666822487 1525379013
+large 
+\change_unchanged
+differences in the structure of the community due to both stochasticity
+ and 
+\change_inserted -666822487 1525379022
+the 
+\change_unchanged
+type of forcing (Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Mean-biomass-in_stable_cases"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+ Without 
+\change_deleted -666822487 1525379047
+coexistence mechanisms
+\change_inserted -666822487 1525379053
+storage effect and SNDs
+\change_unchanged
+, a white noise forcing favoured species w
+\change_deleted 2088930707 1525474843
+hose
+\change_inserted 2088930707 1525474846
+ith intermediate
+\change_unchanged
+ thermal optima
+\change_deleted 2088930707 1525474852
+ lied between 17.4°C and 24.3°C
+\change_unchanged
+, with 66% of the simulations ending with a species with a thermal optima
+ between 19.1°C and 21.1°C and reaching a maximum average biomass in this
+ range (Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Mean-biomass-in_stable_cases"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ a).
+ This distribution can be related
+\change_inserted 2088930707 1525477087
+ to
+\change_unchanged
+ 
+\change_inserted -666822487 1525379096
+a selection for 
+\change_deleted -666822487 1525379098
+to 
+\change_unchanged
+the 
+\change_deleted -666822487 1525379159
+maximization of
+\change_inserted -666822487 1525379162
+highest
+\change_unchanged
+ 
+\change_deleted 2088930707 1525475076
+the 
+\change_unchanged
+long-term
+\change_deleted -666822487 1525379177
+ averaged 
+\change_inserted -666822487 1525379180
+ 
+\change_unchanged
+growth rates
+\change_inserted -666822487 1525379190
+, averaged over time
+\change_unchanged
+ (see normalized growth rates in Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Unstable_cases"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+
+\change_inserted -666822487 1525379393
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted -666822487 1525379410
+For Alix: this refers to 
+\begin_inset Quotes eld
+\end_inset
+
+stable composition
+\begin_inset Quotes erd
+\end_inset
+
+
+\change_inserted 2088930707 1525477138
+ [A]: I'm confused here.
+ Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Unstable_cases"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ refers to +storage/-SND and -storage/+SND cases according to the figure
+ caption, not to the -storage/-SND case that is discussed here, doesn't
+ it? Do you mean the legend is wrong?
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+).
+ On the contrary, seasonality tended to favour species with larger maximum
+\change_inserted -666822487 1525379224
+ 
+\change_unchanged
+growth rates, with thermal optima above 22°C, their frequency of persistence
+ and mean biomass increasing with the thermal optimum
+\change_inserted -666822487 1525379370
+ (Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Mean-biomass-in_stable_cases"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+)
+\change_unchanged
+.
+ 46% of the simulations 
+\change_inserted -666822487 1525379433
+therefore 
+\change_unchanged
+ended with the species having the highest temperature optimum, 25°C.
+ 
+\end_layout
+
+\begin_layout Standard
+When both coexistence mechanisms were present, the 60 initial species coexisted
+ with small variations in biomasses over the 50 simulations (mean CV=0.01
+\change_inserted -666822487 1525379463
+ across simulations 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted -666822487 1525379466
+check Coralie
+\change_inserted 274868703 1525420618
+.
+ Correct.
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+ with either a white noise or a seasonal 
+\change_inserted -666822487 1525379480
+forcing 
+\change_unchanged
+signal, Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Mean-biomass-in_stable_cases"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+b and d).
+ The forcing signal modified 
+\change_inserted -666822487 1525379488
+only 
+\change_unchanged
+the distribution of biomasses.
+ With a white noise, the distribution was unimodal with a maximum biomass
+ reached for the best 
+\change_inserted -666822487 1525379503
+long-term 
+\change_unchanged
+average growth rate (corresponding to a thermal optimum of 22.4°C).
+ On the contrary, a seasonal signal led to a bi-modal distribution (centered
+ on 17.4°C and 24.4°C) with higher biomasses for higher thermal optima
+\change_inserted -666822487 1525379546
+ Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Mean-biomass-in_stable_cases"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ d
+\change_unchanged
+.
+ The minimum biomass was reached for a thermal optimum of 22.4°C, corresponding
+ to the maximum biomass in the white noise case
+\change_inserted -666822487 1525379632
+, thus there are quite broad changes in community composition even though
+ the richness is equal for the two forcing signals
+\change_unchanged
+.
+ The two modes in the
+\change_inserted -666822487 1525379639
+ seasonal
+\change_unchanged
+ biomass distribution correspond to the two modes in the seasonal signal.
+\change_inserted 2088930707 1525475116
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 2088930707 1525475125
+You mean 
+\begin_inset Quotes eld
+\end_inset
+
+winter
+\begin_inset Quotes erd
+\end_inset
+
+ and 
+\begin_inset Quotes eld
+\end_inset
+
+summer
+\begin_inset Quotes erd
+\end_inset
+
+?
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename graphe/60_and_1species.pdf
+	width 95text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Mean biomass distribution over the last 200 years of 50 simulations, as
+ a function of thermal optima, for the two stable-composition cases: without
+ storage effect nor stabilizing niche differences (left, only one species
+ is extant at the end of simulation, its mean value is represented by a
+ dot for one simulation.
+ There can be several dots for the same species, corresponding to multiple
+ simulations ending with this species alone) and with storage effect and
+ stabilizing niche differences (right, all species are present at the end
+ of the simulation, their mean biomass is represented by boxplots of the
+ mean value for 50 simulations).
+ The forcing signal is either a white noise (top) or a seasonal signal (bottom).
+ Each species is identified by its thermal optimum and its color code.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Mean-biomass-in_stable_cases"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In cases where the richness of the community varied, distributions of extant
+ species were similar for 
+\change_deleted 2088930707 1525475170
+the two
+\change_inserted 2088930707 1525475170
+both
+\change_unchanged
+ types of 
+\change_inserted 2088930707 1525475156
+environmental 
+\change_unchanged
+forcings 
+\change_deleted 2088930707 1525475265
+but
+\change_inserted 2088930707 1525475265
+while
+\change_unchanged
+ 
+\change_deleted 2088930707 1525475234
+differed according to 
+\change_unchanged
+the type of coexistence mechanism 
+\change_inserted 2088930707 1525475247
+generated contrasted trends
+\change_deleted 2088930707 1525475250
+taken into account
+\change_unchanged
+ (Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Unstable_cases"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+ 
+\change_deleted 2088930707 1525475178
+
+\end_layout
+
+\begin_layout Standard
+
+\change_inserted 2088930707 1525475276
+On one hand, 
+\change_deleted 2088930707 1525475276
+T
+\change_inserted 2088930707 1525475276
+t
+\change_unchanged
+he storage effect led to a multi-modal 
+\change_inserted -666822487 1525379679
+biomass 
+\change_unchanged
+distribution 
+\change_inserted -666822487 1525379702
+with respect to thermal optima.
+ We 
+\change_deleted -666822487 1525379705
+(
+\change_unchanged
+always 
+\change_inserted -666822487 1525379708
+observed 
+\change_unchanged
+3 modes with a white noise and 
+\change_inserted -666822487 1525379719
+3 modes 
+\change_unchanged
+in 94% of the seasonal simulations, Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Unstable_cases"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+a
+\change_deleted -666822487 1525379724
+)
+\change_unchanged
+.
+ With a white noise, extant species 
+\change_inserted 2088930707 1525475465
+are grouped in rather similar clumps regarding species
+\change_deleted 2088930707 1525475468
+always had a
+\change_unchanged
+ thermal optimum 
+\change_inserted 2088930707 1525475482
+(
+\change_unchanged
+between 18.8°C and 22.2°C whereas clumps tend
+\change_inserted -666822487 1525379736
+ed
+\change_unchanged
+ to be further apart in the seasonal case, covering a total range of 8°C,
+ with species grouping in the higher part of the thermal range, above 22°C.
+ 
+\change_inserted -666822487 1525379757
+
+\end_layout
+
+\begin_layout Standard
+On the other hand, stabilizing niche differences led to a quasi-uniform
+ 
+\change_inserted -666822487 1525379814
+biomass 
+\change_unchanged
+distribution (Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Unstable_cases"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ b).
+ Species 
+\change_inserted 2088930707 1525475558
+characterising communities undergoing random environmental fluctuations
+\change_deleted 2088930707 1525475562
+subjected to a white noise
+\change_unchanged
+ 
+\change_deleted -666822487 1525379835
+lay
+\change_inserted -666822487 1525379836
+stayed
+\change_unchanged
+ in the lower range of temperatures (
+\change_deleted -666822487 1525379790
+in 
+\change_unchanged
+96% of the 
+\change_deleted 274868703 1525420740
+time
+\change_inserted 274868703 1525420743
+simulations
+\change_inserted -666822487 1525379795
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted -666822487 1525379807
+do you mean time or is it across simulations?
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+, the highest thermal optimum was 22.8°C) 
+\change_inserted 2088930707 1525475625
+while they were filtered out in communities
+\change_deleted 2088930707 1525475630
+whereas species 
+\change_inserted 2088930707 1525475630
+ 
+\change_unchanged
+subject
+\change_inserted -666822487 1525379845
+ed
+\change_unchanged
+ to a seasonal 
+\change_deleted 2088930707 1525475639
+signal
+\change_inserted 2088930707 1525475744
+fluctuations of their environment while species with thermal optima
+\change_deleted 2088930707 1525475750
+ were 
+\change_deleted -666822487 1525379861
+favored by
+\change_deleted 2088930707 1525475750
+observed temperatures 
+\change_unchanged
+above 20.5°C
+\change_inserted 2088930707 1525475757
+ persisted
+\change_inserted -666822487 1525379868
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted -666822487 1525379909
+Attention, eviter les interpretations qui donne un objectif à un processus,
+ 
+\begin_inset Quotes eld
+\end_inset
+
+favoured by
+\begin_inset Quotes erd
+\end_inset
+
+, 
+\begin_inset Quotes eld
+\end_inset
+
+optimized by
+\begin_inset Quotes erd
+\end_inset
+
+ etc.
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename graphe/figure_4.tif
+	lyxscale 50
+	width 85text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Mean biomass distribution over the last 200 years of 50 simulations, as
+ a function of thermal optima, with storage effect and no stabilizing niche
+ differences (top) and without storage effect, with stabilizing niche difference
+s (bottom).
+ The forcing signal is either a white noise (blue) or a seasonal signal
+ (red).
+ Shades of the same colour corresponds to the 50th, 90th and 100th percentiles
+ of the distributions while coloured lines correspond to one representative
+ simulation.
+ Scaled average (whose optimum is indicated by the d
+\change_deleted 2088930707 1525475822
+otted
+\change_inserted 2088930707 1525475822
+ashed
+\change_unchanged
+ line) and maximum growth rates are shown as squares and circles, respectively,
+ and indexed on the left y-axis.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Unstable_cases"
+
+\end_inset
+
+
+\change_inserted 2088930707 1525475771
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 2088930707 1525475802
+Circles and squares are difficult to distinguish on the figure.
+ Maybe try open- and full-circles?
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Discussion
+\change_inserted -666822487 1525379916
+
+\end_layout
+
+\begin_layout Standard
+
+\change_inserted -666822487 1525383263
+[F: I left Coralie's remarks that I hadn't tackled below, so we don't loose
+ them, but I tried to quickstart the discussion!]
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\change_inserted -666822487 1525380701
+We have simulated competitive Lotka-Volterra dynamics forced by an external
+ signal 
+\change_inserted 2088930707 1525475905
+mimicking 
+\change_deleted 2088930707 1525475905
+(
+\change_inserted -666822487 1525380701
+temperature
+\change_inserted 2088930707 1525475910
+ fluctuations
+\change_deleted 2088930707 1525475911
+)
+\change_inserted -666822487 1525380701
+ under a range of scenarios allowing more or less coexistence.
+ Two coexistence mechanisms, the storage effect and stabilizing niches differenc
+es, could be present or absent which led to four scenarios.
+ These four scenarios were crossed with two possibilities for the forcing
+ signal, a white noise and a stochastic seasonal signal, with equal temporal
+ variance.
+ Our investigation therefore built on the model of 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "scranton_coexistence_2016"
+literal "false"
+
+\end_inset
+
+, which included white noise forcing and a storage effect, but also considered
+ more diverse ecological scenarios.
+ This was motivated by our desire to include two observed features of phytoplank
+ton dynamics: seasonal cycles (REF) and stabilizing niche differences 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "barraquand_weak_2017"
+literal "false"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\change_inserted -666822487 1525383379
+We have found that first, forced Lotka-Volterra dynamics cannot sustain
+ any diversity unless the structure is geared to include a storage effect
+\change_inserted 2088930707 1525475943
+ or SNDs
+\change_inserted -666822487 1525383379
+.
+ Although this has already been stated by other authors 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "barabas_community_2012,fox_intermediate_2013,scranton_coexistence_2016"
+literal "false"
+
+\end_inset
+
+, this is not always intuitive 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "fox_intermediate_2013"
+literal "false"
+
+\end_inset
+
+, so we feel compelled to stress it once more: temporal variation in growth
+ rate alone cannot help coexistence
+\change_inserted 2088930707 1525475985
+ within competitive communities
+\change_inserted -666822487 1525383379
+.
+ A nice point made by 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "scranton_coexistence_2016"
+literal "false"
+
+\end_inset
+
+ was that a built-in storage effect in the forced Lotka-Volterra dynamics
+ could lead to some degree of coexistence.
+ Our investigation confirms this to be true for the white noise scenario
+ considered by 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "scranton_coexistence_2016"
+literal "false"
+
+\end_inset
+
+, but an arguably more realistic seasonal forcing by temperature (in the
+ case of phytoplankton) will considerably lessen the number of species coexistin
+g after 5000 timesteps from around 15 to 4.
+ Even imagining that groups represented here are genera or classes rather
+ than species, this is a fairly low diversity
+\change_inserted 2088930707 1525476021
+ for a phytoplankton-like community (REF)
+\change_inserted -666822487 1525383379
+.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\change_inserted -666822487 1525382041
+We have therefore sought out whether stabilizing niche differences (SNDs)
+ could produce a higher diversity maintenance, using field-based intra-
+ vs inter-group (species or genera) competition coefficients 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "barraquand_weak_2017"
+literal "false"
+
+\end_inset
+
+, where the intra-group density-dependence is approximately 10 times stronger.
+ On their own, SNDs produced a higher level of diversity than the storage
+ effect (almost double for white noise).
+ 
+\change_inserted 2088930707 1525476058
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 2088930707 1525477735
+To be related to lower biomasses (Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Unstable_cases"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+) which we can illustrate with less interspecific encounters within the
+ water column.
+ Would match phytoplankton species working as aggregates of individuals
+ (providing biological illustration would be fun here)? Storage effect combine
+ mass-action and the positive correlation between growth rates and interspecific
+ competition rates which amplifies considerably specie ability to outcompete
+ each other.
+ Examples? (So it would be about species adjusting their 
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_inserted -666822487 1525382041
+
+\end_layout
+
+\begin_layout Standard
+
+\change_inserted -666822487 1525382077
+However, the seasonal forcing still considerably reduced diversity when
+ SNDs were considered, especially the 
+\begin_inset Quotes eld
+\end_inset
+
+neutral
+\begin_inset Quotes erd
+\end_inset
+
+ kind, diversity within clumps of similar traits.
+ This occurs because within a season, the signal autocorrelation gives 
+\change_inserted 2088930707 1525476310
+more time 
+\change_inserted -666822487 1525382077
+to the best competitor 
+\change_deleted 2088930707 1525476305
+has a longer time 
+\change_inserted -666822487 1525382077
+to exclude its less adapted heterospecifics, while white noise also contains
+ very low forcing signal frequencies that forbid such competitive exclusion.
+ In this situation, even though a species has the best long-term averaged
+ growth rate, it can disappear as a result of a strong competition from
+ both low- and high-temperature tolerant species, with and without storage
+ effect.
+ Our results are therefore at odds with recent proposals that seasonal forcing
+ would help maintain diversity 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "sakavara_lumpy_2018"
+literal "false"
+
+\end_inset
+
+, at least not when seasonal forcing is compared to other forcing signals.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\change_inserted -666822487 1525382678
+In our previous empirical study of coastal phytoplankton dynamics 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "barraquand_weak_2017"
+literal "false"
+
+\end_inset
+
+, we have not found any storage effect (which certainly does not mean that
+ it could not be observed in other plankton-like systems).
+ Given the results presented here, we are skeptical that temporal niche
+ partitioning through the storage effect could, on its own, help explaining
+ the phytoplankton diversity, especially given that stabilizing niches differenc
+es seem fairly strong when estimated from phytoplankton time series.
+ However, our results suggest that in phytoplankton-like seasonal environments,
+ even though empirically-based stabilizing niche differences produce more
+ diversity than the storage effect
+\change_inserted 2088930707 1525476361
+.
+ Indeed,
+\change_deleted 2088930707 1525476359
+,
+\change_inserted -666822487 1525382678
+ the combination storage effect + SNDs is non-additive: the cases were both
+ SNDs and the storage effect were present showed more diversity than generated
+ by any mechanism on its own.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\change_inserted -666822487 1525383209
+This suggests the very exciting possibility that coexistence mechanisms
+ might combine superadditively in general, thus helping us to better understand
+ the astounding diversity of primary producers.
+ The same logic could, in principle, be extended to mechanisms that we have
+ not considered here (e.g., spatial structure, specialized natural enemies,
+ that could be as important here for plankton as they are for tropical trees
+ [a few refs on Janzen Connell effects in trees]).
+ Better explaining plant or microbial diversity would then not be about
+ selecting the best unique mechanism susceptible to explain the observed
+ diversity, but rather better combining those mechanisms together.
+ This may obviously be an annoyance for those who like to sharpen Occam's
+ razor, but it clearly holds opportunities for theoreticians wishing to
+ investigate synergies between coexistence mechanisms.
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\change_deleted -666822487 1525381972
+
+\series bold
+Summary of main results so far
+\change_inserted -666822487 1525383204
+[Other points not tackled so far]
+\change_unchanged
+ :
+\end_layout
+
+\begin_layout Itemize
+
+\change_deleted -666822487 1525381976
+Stabilizing niche differences can sustain more diversity than the storage
+ effect.
+ 
+\change_unchanged
+
+\end_layout
+
+\begin_layout Itemize
+Storage effect without stabilizing niche differences leads to a stable multimoda
+l abundance distribution.
+ It is unclear whether this regularity is a by-product of limiting similarities
+ for our parameter values.
+\change_inserted 2088930707 1525476418
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 2088930707 1525476424
+What would be the alternative then?
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+ Conversely, no storage effect with stabilizing niche differences leasd
+ to an even distribution (in line with previous point and may be discussed
+ with the help of 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "barabas_emergent_2013"
+literal "false"
+
+\end_inset
+
+).
+ 
+\end_layout
+
+\begin_layout Itemize
+Seasonality decreases the total number of extant species when compared to
+ white noise.
+ The autocorrelation in the seasonal signal drives species to extinction
+ as similar species compete for a longer time: temporal niche partitioning
+ leads to larger differences in clumps.
+ In this situation, even though a species has the best long-term averaged
+ growth rates, it can disappear as a result of a strong competition from
+ both low- and high-temperature tolerant species, with and without storage
+ effect.
+ 
+\end_layout
+
+\begin_layout Itemize
+In the absence of storage effect, seasonality tends to favor maximum growth
+ rates even though it also leads to higher competition whereas white noise
+ tends to favor balanced growth rates and competition.
+\change_inserted -666822487 1525383559
+
+\end_layout
+
+\begin_layout Itemize
+
+\change_inserted -666822487 1525383919
+[Would it be correct to say that one of the model limitation is that all
+ species are equally affected by the forcing?
+\change_inserted 2088930707 1525476457
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 2088930707 1525476846
+I'm not sure about that.
+ The forcing affects species growth rate in proportion to their growth rate
+ at thermal optima, doesn't it? I partly agree with you if all growth rate
+ at reference temperature are the same (though growth rates are maximum
+ for different temperatures).
+ Also, since species do not have the same thermal optimum, but are subjected
+ to the same temperature, they are not affected the same way at the same
+ time since their thermal optima do not happen at the same time.
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_inserted -666822487 1525383919
+ We could hypothetize (or couldn't we) that some of the rare species might
+ be less affected by the seasonal cycles and more by white noise – or is
+ this completely off? 
+\change_inserted 2088930707 1525476746
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 2088930707 1525476869
+So it would rather be a matter of interaction strength/mass-action than
+ similarity of forcing?
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_inserted -666822487 1525383919
+Cf.
+ my comment in the email.
+ That said I think I've seen some papers saying that rare species were 
+\emph on
+more 
+\emph default
+strongly self-regulated not less...] 
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+btprint "btPrintCited"
+bibfiles "MyLibrary"
+options "../spbasic_nicer"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+\start_of_appendix
+Supplementary Material
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename graphe/example_iteration.tif
+	lyxscale 50
+	width 95text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Mean biomass distribution over the last 200 years of 9 representative simulation
+s, as a function of thermal optima, without storage effect with stabilizing
+ niche differences, in which temperature is either a seasonal signal (red)
+ or a white noise (blue).
+ The distribution induced by a white noise overlaps the one obtained with
+ a seasonal signal in only 2 simulations out of 50.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Not_representative_behaviour"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+White noise
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Storage effect
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+No storage effect
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Stabilizing niche differences
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+60
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+28 [20-32]
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+No stabilizing niche differences
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+15 [11-20]
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Season+White noise
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Storage effect
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+No storage effect
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Stabilizing niche differences
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+60
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+13 [12-14]
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+No stabilizing niche differences
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4 [2-6]
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Table corresponding to Fig.
+ 2.
+ Which one to choose?
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
