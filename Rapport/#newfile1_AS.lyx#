@@ -743,8 +743,14 @@ Methods
 
 \begin_layout Subsection*
 
+\change_inserted 2088930707 1525511009
+
 \emph on
-Description
+Models d
+\change_deleted 2088930707 1525510945
+D
+\change_unchanged
+escription
 \end_layout
 
 \begin_layout Standard
@@ -847,8 +853,8 @@ noprefix "false"
 
 \change_deleted 2088930707 1525473459
 )
-\change_inserted 2088930707 1525473475
-, and set their values to match the features of
+\change_inserted 2088930707 1525510891
+, and we set their values to match the features of
 \change_deleted 2088930707 1525473482
  characterize a
 \change_unchanged
@@ -2130,7 +2136,11 @@ literal "false"
 status open
 
 \begin_layout Plain Layout
- Running 100 right now
+
+\change_deleted 2088930707 1525511135
+ 
+\change_unchanged
+Running 100 right now
 \end_layout
 
 \end_inset
@@ -3584,7 +3594,7 @@ status open
 
 \begin_layout Plain Layout
 
-\change_inserted 2088930707 1525477735
+\change_inserted 2088930707 1525477866
 To be related to lower biomasses (Fig.
  
 \begin_inset CommandInset ref
@@ -3603,7 +3613,7 @@ noprefix "false"
  mass-action and the positive correlation between growth rates and interspecific
  competition rates which amplifies considerably specie ability to outcompete
  each other.
- Examples? (So it would be about species adjusting their 
+ Examples with photosynthetic taxa?
 \change_unchanged
 
 \end_layout
