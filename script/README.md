@@ -38,3 +38,16 @@
 * `RAC_noforcedcompetition.m` : Same script as `RAC.m`, to compare communities without explicit storage effect. 
 * `SV16_random_matrix.m` : A script corrresponding to `SV16_main.m`, always using the same environmental forcing but with different community matrices. Coefficients of interactions follow a normal distribution (more details in report).
 * `SV16_randomGR.m`: Same as above, but instead of random coefficients, randomize growth rate's effects on interaction coefficients (see eq. 10 in Report). Use `SV16_ode_integration_randomGR_in_competition.m` as the function to integrate. 
+
+#3rd May 2018 (CP)
+* `test_concatenate_simulations.m`: A test on ode45 different integrations of a 15000-time step integration and three 
+* `figureX_article.m` : Deprecated script which drew an example of mean biomasses at the end of stable-composition cases
+* `check_stable_cases.m` : Deprecated script which checked that stable-composition cases were really stable in terms of richness
+* `check_temperature.m` : A script looking at the quantiles of the forcing to explain differences in distribution at the end of the simulations.
+* `growth_rates_explanation.m` : Deprecated script, draft for `mean_biomass_unstable_draft.m`
+* `figure1_article.m`: Script for figure 1
+* `nb_extant_species.m` : Script for figure 2
+* `mean_biomass_stable_cases.m` : Script for figure 3
+* `mean_biomass_unstable_cases_draft.m` : Script for figure 4
+* `distribution_for_each_iteration.m` : Script for figure 5
+ 
