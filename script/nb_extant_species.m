@@ -12,7 +12,7 @@ extant_species_wn=zeros(50,4);
 
 %Filename for -SE-SND
 extension='_noforcedcompetition_weightedinteraction.mat';
-for iter=1:50
+for iter=1:100
     filename=strcat(dir_output,'/iter',num2str(iter),'_codeversion_20180228_theta0',extension);
     load(filename)
     nb_species=sum(youtbis'>thresh_min);
@@ -22,7 +22,7 @@ end;
 
 %Filename for +SE-SND
 extension='.mat';
-for iter=1:50
+for iter=1:100
     filename=strcat(dir_output,'/iter',num2str(iter),'_codeversion_20180228_theta0',extension);
     load(filename)
     nb_species=sum(youtbis'>thresh_min);
@@ -31,7 +31,7 @@ end;
 
 %Filename for -SE+SND
 extension='_noforcedcompetition_10higherintra_weightedinteraction.mat';
-for iter=1:50
+for iter=1:100
     filename=strcat(dir_output,'/iter',num2str(iter),'_codeversion_20180228_theta0',extension);
     load(filename)
     nb_species=sum(youtbis'>thresh_min);
@@ -40,7 +40,7 @@ end;
 
 %Filename for +SE+SND
 extension='_10higher.mat';
-for iter=1:50
+for iter=1:100
     filename=strcat(dir_output,'/iter',num2str(iter),'_codeversion_20180228_theta0',extension);
     load(filename)
     nb_species=sum(youtbis'>thresh_min);
@@ -52,7 +52,7 @@ extant_species_season=zeros(50,4);
 
 %Filename for -SE-SND
 extension='_noforcedcompetition_weightedinteraction.mat';
-for iter=1:50
+for iter=1:100
     filename=strcat(dir_output,'/iter',num2str(iter),'_codeversion_20180228_theta1p3',extension);
     load(filename)
     nb_species=sum(youtbis'>thresh_min);
@@ -61,7 +61,7 @@ end;
 
 %Filename for +SE-SND
 extension='.mat';
-for iter=1:50
+for iter=1:100
     filename=strcat(dir_output,'/iter',num2str(iter),'_codeversion_20180228_theta1p3',extension);
     load(filename)
     nb_species=sum(youtbis'>thresh_min);
@@ -71,7 +71,7 @@ end;
 %Filename for -SE+SND
 extension='_noforcedcompetition_10higherintra_weightedinteraction.mat';
 
-for iter=1:50
+for iter=1:100
     filename=strcat(dir_output,'/iter',num2str(iter),'_codeversion_20180228_theta1p3',extension);
     load(filename)
     nb_species=sum(youtbis'>thresh_min);
@@ -80,7 +80,7 @@ end;
 
 %Filename for +SE+SND
 extension='_10higher.mat';
-for iter=1:50
+for iter=1:100
     filename=strcat(dir_output,'/iter',num2str(iter),'_codeversion_20180228_theta1p3',extension);
     load(filename)
     nb_species=sum(youtbis'>thresh_min);
@@ -100,7 +100,7 @@ tmp=[extant_species_wn(:,1) extant_species_season(:,1) extant_species_wn(:,2) ex
 % ylabel('Number of extant species')
 % set(gca,'Fontsize',afontsize)
 
-boxplot(tmp,'positions',[1.2 1.3 1.6 1.7 2.0 2.1 2.4 2.5],'colors','k','whisker',10000,'labels',{'','','','','','','',''})
+boxplot(tmp,'positions',[1.2 1.3 1.6 1.7 2.0 2.1 2.4 2.5],'colors','k','whisker',10^500,'labels',{'','','','','','','',''},'Symbol','+k')
 xtick([1.25 1.65 2.05 2.45])
 xticklabels({'-storage-SND','+storage-SND','-storage+SND','+storage+SND'})
 h = findobj(gca,'Tag','Box');

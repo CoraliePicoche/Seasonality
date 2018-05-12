@@ -21,9 +21,9 @@ dir_output='./output_simulation/white_noise/';
 %Filename for +SE-SND
 extension='.mat';
 
-biomass_final_1=zeros(60,50,2);
+biomass_final_1=zeros(60,100,2);
 
-for iter=1:50
+for iter=1:100
     filename=strcat(dir_output,'/iter',num2str(iter),'_codeversion_20180228_theta0',extension);
     load(filename)
     mean_value=species_mean_value(youtbis, yspan);
@@ -31,7 +31,7 @@ for iter=1:50
 end;
 
 dir_output='./output_simulation/season';
-for iter=1:50
+for iter=1:100
     filename=strcat(dir_output,'/iter',num2str(iter),'_codeversion_20180228_theta1p3',extension);
     load(filename)
     mean_value=species_mean_value(youtbis, yspan);
@@ -97,8 +97,8 @@ subplot_id(1)=ylabel('Biomass');
 set(gca,'Fontsize',14)
 
 yyaxis right;
-plot(tau_opt-273,max_growth_rate,'o','MarkerFaceColor','k','MarkerEdgeColor','k','MarkerSize',3)
-plot(tau_opt-273,mean_growth_rate,'s','MarkerFaceColor','k','MarkerEdgeColor','k','MarkerSize',3)
+plot(tau_opt-273,max_growth_rate,'o','k','MarkerEdgeColor','k','MarkerSize',3)
+plot(tau_opt-273,mean_growth_rate,'o','MarkerFaceColor','k','MarkerEdgeColor','k','MarkerSize',3)
 id=find(mean_growth_rate==1);
 
 text(15.1,1.*0.95,'a','Fontsize',afontsize)
@@ -118,9 +118,9 @@ subplot(2,1,2)
 % subplot(1,1,1)
 extension='_noforcedcompetition_10higherintra_weightedinteraction.mat';
 
-biomass_final_2=zeros(60,50,2);
+biomass_final_2=zeros(60,100,2);
 dir_output='./output_simulation/white_noise/';
-for iter=1:50
+for iter=1:100
     filename=strcat(dir_output,'/iter',num2str(iter),'_codeversion_20180228_theta0',extension);
     load(filename)
     mean_value=species_mean_value(youtbis, yspan);
@@ -128,7 +128,7 @@ for iter=1:50
 end;
 
 dir_output='./output_simulation/season';
-for iter=1:50
+for iter=1:100
     filename=strcat(dir_output,'/iter',num2str(iter),'_codeversion_20180228_theta1p3',extension);
     load(filename)
     mean_value=species_mean_value(youtbis, yspan);
@@ -210,8 +210,8 @@ set(gca,'Fontsize',14)
 %end
 
 yyaxis right;
-plot(tau_opt-273,max_growth_rate,'o','MarkerFaceColor','k','MarkerEdgeColor','k','MarkerSize',3)
-plot(tau_opt-273,mean_growth_rate,'s','MarkerFaceColor','k','MarkerEdgeColor','k','MarkerSize',3)
+plot(tau_opt-273,max_growth_rate,'o','MarkerEdgeColor','k','MarkerSize',3)
+plot(tau_opt-273,mean_growth_rate,'o','MarkerFaceColor','k','MarkerEdgeColor','k','MarkerSize',3)
 text(15.1,1*0.95,'b','Fontsize',afontsize)
 
 id=find(mean_growth_rate==1);
@@ -235,7 +235,7 @@ print(fig,'./Rapport/graphe/figure_4','-dtiff')
 
 %
 id_min=60;
-id_max=zeros(1,50);
+id_max=zeros(1,100);
 for iter=1:50
     min_tmp=min(find(biomass_final_2(:,iter,2)>thresh_min))
     if id_min>min_tmp

@@ -90,27 +90,19 @@
 \begin_body
 
 \begin_layout Title
-
-\change_inserted 274868703 1525420322
 Stabilizing niche differences are still required to maintain species-rich
  communities in temporally variable environments
 \end_layout
 
 \begin_layout Date
-
-\change_inserted 274868703 1525420329
 \begin_inset ERT
 status open
 
 \begin_layout Plain Layout
 
-\change_inserted 274868703 1525420329
-
 
 \backslash
 today
-\change_unchanged
-
 \end_layout
 
 \end_inset
@@ -171,18 +163,37 @@ Integrative and Theoretical Ecology Chair, Labex COTE, University of Bordeaux,
 Institute of Mathematicsof Bordeaux, CNRS
 \end_layout
 
-\begin_layout Standard
-\begin_inset Note Comment
-status open
-
-\begin_layout Plain Layout
-I needed all the info above to compile.
- I know this will be changed but I've spent way too much time fighting against
- the machine
-\end_layout
-
-\end_inset
-
+\begin_layout Abstract
+Explaining coexistence in species-rich communities of primary producers
+ (e.g., tropical trees, phytoplankton) remains a challenge for ecologists
+ because of the likely competition for shared basal resources.
+ Following Hutchinson’s seminal suggestion, many theoreticians have tried
+ to create diversity through a fluctuating environment, which impairs or
+ slows down competitive exclusion.
+ There are now several fluctuating-environments models that allow coexistence,
+ but they often produce only a dozen of coexisting species at best.
+ Here, we investigate what it would take to create even richer communities
+ in fluctuating environments using an empirically parameterized model.
+ Building on the forced multi-species Lotka-Volterra model of Scranton and
+ Vasseur (2016), we have investigated the effect of two coexistence mechanisms,
+ namely the storage effect and stabilizing niche differences (SNDs).
+ SNDs occur when intraspecific competition is stronger than interspecific
+ (as opposed to neutral models where competition is symmetric), and we tuned
+ the competition ratio based on empirical phytoplankton data.
+ Although SNDs maintained more species than the storage effect (50 % w.r.t
+ 25%), we show that none of the two coexistence mechanisms considered could,
+ by itself, ensure the coexistence of all species present at the beginning
+ of our simulations.
+ Realistic seasonal environments only aggravated that picture, as they decreased
+ persistence relative to white noise.
+ Our results suggest that combining different mechanisms for biodiversity
+ maintenance into community models might be more fruitful than trying to
+ find which explains best the observed diversity levels.
+ Our results on community composition (formation of clumps, biomass distribution
+) in the different scenarios give further hints on how to empirically weight
+ the influence of coexistence mechanisms.
+ 
+\change_inserted 274868703 1526040997
 
 \end_layout
 
@@ -2139,7 +2150,15 @@ bed above.
 \change_unchanged
 .
  For each combination of the parameters of the model (type of environmental
- signal, storage effect and stabilizing niche differences), we ran 50
+ signal, storage effect and stabilizing niche differences), we ran 
+\change_deleted 274868703 1526142443
+5
+\change_inserted 274868703 1526142443
+10
+\change_unchanged
+0
+\change_deleted 274868703 1526142440
+
 \begin_inset Foot
 status open
 
@@ -2153,6 +2172,8 @@ Running 100 right now
 
 \end_inset
 
+
+\change_unchanged
  simulations.
  
 \end_layout
@@ -2444,9 +2465,24 @@ noprefix "false"
 \end_inset
 
 ): with storage effect but without stabilizing niche differences, or without
- storage but with stabilizing niche differences), seasonality reduced the
- number of extant species to, on average, 29% and 49% of its original value,
- respectively (Fig.
+ storage
+\change_inserted 274868703 1526142794
+ effect
+\change_unchanged
+ but with stabilizing niche differences), seasonality reduced the number
+ of extant species to, on average, 2
+\change_deleted 274868703 1526142367
+9
+\change_inserted 274868703 1526142367
+7
+\change_unchanged
+% and 4
+\change_deleted 274868703 1526142384
+9
+\change_inserted 274868703 1526142384
+8
+\change_unchanged
+% of its original value, respectively (Fig.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -2470,11 +2506,22 @@ Both the stabilizing niche differences and the storage effect have a marked
  Without any of these coexistence mechanisms, only one species persisted
  at the end of the simulation.
  When only the storage effect was present, the number of extant species
- varied between 11 and 20 with a white noise, or 2 and 6 with a seasonal
- signal.
+ varied between 
+\change_deleted 274868703 1526142390
+11
+\change_inserted 274868703 1526142390
+8
+\change_unchanged
+ and 20 with a white noise, or 2 and 6 with a seasonal signal.
  On the other hand, when only stabilizing niche differences were present,
  the number of extant species nearly doubled, varying between 20 and 32,
- or 12 and 14, with a white noise or a seasonal signal respectively.
+ or 12 and 1
+\change_deleted 274868703 1526142417
+4
+\change_inserted 274868703 1526142417
+5
+\change_unchanged
+, with a white noise or a seasonal signal respectively.
  Remarkably, when the storage effect and stabilizing niche differences (SNDs)
  both affected the community dynamics, all species persisted in the community,
  while neither the storage nor SNDs were able in isolation to produce that
@@ -2505,9 +2552,26 @@ status open
 Number of species still present at the end of 5000-year simulations, initialized
  with 60 species, with a white noise forcing signal (blue) or a noisy seasonal
  signal (red).
- For each model type (with and without Storage Effect, + / - storage, respective
-ly; with and without Stabilizing Niche Differences, + / - SND, respectively),
- 50 simulations were launched.
+ For each model type (with and without 
+\change_deleted 274868703 1526142460
+Storage
+\change_inserted 274868703 1526142463
+storage
+\change_unchanged
+ 
+\change_deleted 274868703 1526142464
+E
+\change_inserted 274868703 1526142464
+e
+\change_unchanged
+ffect, + / - storage, respectively; with and without Stabilizing Niche Differenc
+es, + / - SND, respectively), 
+\change_deleted 274868703 1526142457
+5
+\change_inserted 274868703 1526142457
+10
+\change_unchanged
+0 simulations were launched.
  Community compositions are stable in the cases -storage-SND and +storage+SND
  (1 or 60 species are still present at the end of all simulations, respectively).
  
@@ -2728,11 +2792,16 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Mean biomass distribution over the last 200 years of 50 simulations, as
- a function of thermal optima, for the two stable-composition cases: without
- storage effect nor stabilizing niche differences (left, only one species
- is extant at the end of simulation, its mean value is represented by a
- dot for one simulation.
+Mean biomass distribution over the last 200 years of 
+\change_deleted 274868703 1526146610
+5
+\change_inserted 274868703 1526146610
+10
+\change_unchanged
+0 simulations, as a function of thermal optima, for the two stable-composition
+ cases: without storage effect nor stabilizing niche differences (left,
+ only one species is extant at the end of simulation, its mean value is
+ represented by a dot for one simulation.
  There can be several dots for the same species, corresponding to multiple
  simulations ending with this species alone) and with storage effect and
  stabilizing niche differences (right, all species are present at the end
@@ -2740,6 +2809,12 @@ Mean biomass distribution over the last 200 years of 50 simulations, as
  mean value for 50 simulations).
  The forcing signal is either a white noise (top) or a seasonal signal (bottom).
  Each species is identified by its thermal optimum and its color code.
+
+\change_inserted 274868703 1526146641
+ Mean (filled circles) and maximum (open circles) growth rates for each
+ species are index on the right axis.
+
+\change_unchanged
  
 \begin_inset CommandInset label
 LatexCommand label
@@ -3423,7 +3498,13 @@ No stabilizing niche differences
 \begin_inset Text
 
 \begin_layout Plain Layout
-15 [11-20]
+15 [
+\change_deleted 274868703 1526142230
+11
+\change_inserted 274868703 1526142230
+8
+\change_unchanged
+-20]
 \end_layout
 
 \end_inset
@@ -3501,7 +3582,13 @@ Stabilizing niche differences
 \begin_inset Text
 
 \begin_layout Plain Layout
-13 [12-14]
+13 [12-1
+\change_deleted 274868703 1526142310
+4
+\change_inserted 274868703 1526142310
+5
+\change_unchanged
+]
 \end_layout
 
 \end_inset
