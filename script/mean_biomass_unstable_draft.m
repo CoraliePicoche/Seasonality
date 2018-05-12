@@ -87,7 +87,7 @@ fill(plou1,nin_max_season,'r','EdgeColor','none','FaceAlpha',.7)
 iter=7;
      plot(tau_opt-273,biomass_final_1(:,iter,1),'-o','MarkerFaceColor','b','LineWidth',2,'color','b')
 plot(tau_opt-273,biomass_final_1(:,iter,2),'-o','MarkerFaceColor','r','LineWidth',2,'color','r')
-      xticks(tau_opt-273)     
+      xticks(tau_opt(1:9:length(tau_opt))-273)     
         xaxlabel=cell(1,length(tau_opt));
         %xaxlabel(1:4:length(tau_opt))=sprintfc("%.1f",tau_opt(1:4:length(tau_opt))-273);
         set(gca,'XTickLabel',xaxlabel)
@@ -97,7 +97,7 @@ subplot_id(1)=ylabel('Biomass');
 set(gca,'Fontsize',14)
 
 yyaxis right;
-plot(tau_opt-273,max_growth_rate,'o','k','MarkerEdgeColor','k','MarkerSize',3)
+plot(tau_opt-273,max_growth_rate,'o','MarkerEdgeColor','k','MarkerSize',3)
 plot(tau_opt-273,mean_growth_rate,'o','MarkerFaceColor','k','MarkerEdgeColor','k','MarkerSize',3)
 id=find(mean_growth_rate==1);
 
@@ -199,12 +199,11 @@ plot(tau_opt-273,biomass_final_2(:,iter,1),'-o','MarkerFaceColor','b','LineWidth
 %for iter=1:50
 iter=7;
 plot(tau_opt-273,biomass_final_2(:,iter,2),'-o','MarkerFaceColor','r','LineWidth',2,'color','r')
-      xticks(tau_opt-273)       %ylim([mini maxi])
-        xaxlabel=cell(1,length(tau_opt));
-        xaxlabel(1:4:length(tau_opt))=sprintfc("%.1f",tau_opt(1:4:length(tau_opt))-273);
+      xticks(tau_opt(1:9:length(tau_opt))-273)       %ylim([mini maxi])%        xaxlabel=cell(1,length(tau_opt));
+           xaxlabel=sprintfc("%.1f",tau_opt(1:9:length(tau_opt))-273);
         xlabel('Thermal optimum')
         set(gca,'XTickLabel',xaxlabel)
-         xtickangle(90)
+       %  xtickangle(90)
 subplot_id(2)=ylabel('Biomass');
 set(gca,'Fontsize',14)
 %end

@@ -2810,9 +2810,10 @@ Mean biomass distribution over the last 200 years of
  The forcing signal is either a white noise (top) or a seasonal signal (bottom).
  Each species is identified by its thermal optimum and its color code.
 
-\change_inserted 274868703 1526146641
+\change_inserted 274868703 1526146979
  Mean (filled circles) and maximum (open circles) growth rates for each
- species are index on the right axis.
+ species are index on the right axis [CP: Not sure about showing GR on this
+ figure, though].
 
 \change_unchanged
  
@@ -2922,18 +2923,28 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Mean biomass distribution over the last 200 years of 50 simulations, as
- a function of thermal optima, with storage effect and no stabilizing niche
- differences (top) and without storage effect, with stabilizing niche difference
-s (bottom).
+Mean biomass distribution over the last 200 years of 
+\change_deleted 274868703 1526147670
+5
+\change_inserted 274868703 1526147670
+10
+\change_unchanged
+0 simulations, as a function of thermal optima, with storage effect and
+ no stabilizing niche differences (top) and without storage effect, with
+ stabilizing niche differences (bottom).
  The forcing signal is either a white noise (blue) or a seasonal signal
  (red).
  Shades of the same colour corresponds to the 50th, 90th and 100th percentiles
  of the distributions while coloured lines correspond to one representative
  simulation.
  Scaled average (whose optimum is indicated by the dashed line) and maximum
- growth rates are shown as squares and circles, respectively, and indexed
- on the left y-axis.
+ growth rates are shown as 
+\change_deleted 274868703 1526147684
+squares
+\change_inserted 274868703 1526147687
+filled and open
+\change_unchanged
+ and circles, respectively, and indexed on the left y-axis.
  
 \begin_inset CommandInset label
 LatexCommand label
