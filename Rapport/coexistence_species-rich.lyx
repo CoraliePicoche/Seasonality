@@ -2303,7 +2303,20 @@ area
 in the white noise simulations 
 \change_unchanged
 were clustered along a 3.2°C-range of thermal optima
-\change_inserted -666822487 1525377916
+\change_inserted 274868703 1526289857
+ (Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Appendix_mean_biomass_iter2"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+)
+\change_deleted 274868703 1526289801
 
 \begin_inset Note Note
 status open
@@ -2639,9 +2652,38 @@ noprefix "false"
 
 ).
  Without storage effect and SNDs, a white noise forcing favoured species
- with intermediate thermal optima, with 66% of the simulations ending with
- a species with a thermal optima between 19.1°C and 21.1°C and reaching a
- maximum average biomass in this range (Fig.
+ with intermediate thermal optima, with
+\change_inserted 274868703 1526282776
+ 
+\change_deleted 274868703 1526282876
+ 66% 
+\change_inserted 274868703 1526282879
+two thirds 
+\change_unchanged
+of the simulations ending with a species with a thermal optima between 1
+\change_deleted 274868703 1526282654
+9
+\change_inserted 274868703 1526282654
+8
+\change_unchanged
+.
+\change_deleted 274868703 1526282656
+1
+\change_inserted 274868703 1526282896
+9
+\change_unchanged
+°C and 21.
+\change_deleted 274868703 1526282677
+1
+\change_inserted 274868703 1526282677
+4
+\change_unchanged
+°C
+\change_inserted 274868703 1526282883
+ (corresponding to 25% of the range of thermal optima present at the beginning
+ of the simulation)
+\change_unchanged
+ and reaching a maximum average biomass in this range (Fig.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -2725,14 +2767,25 @@ noprefix "false"
 \end_inset
 
 ).
- 46% of the simulations therefore ended with the species having the highest
+ 
+\change_deleted 274868703 1526282478
+46
+\change_inserted 274868703 1526282478
+38
+\change_unchanged
+% of the simulations therefore ended with the species having the highest
  temperature optimum, 25°C.
  
 \end_layout
 
 \begin_layout Standard
 When both coexistence mechanisms were present, the 60 initial species coexisted
- with small variations in biomasses over the 50 simulations (mean CV=0.01
+ with small variations in biomasses over the 50 simulations (mean CV=0.0
+\change_deleted 274868703 1526282986
+1
+\change_inserted 274868703 1526283010
+08
+\change_unchanged
  across simulations with either a white noise or a seasonal forcing signal,
  Fig.
  
@@ -2748,10 +2801,29 @@ noprefix "false"
 b and d).
  The forcing signal modified only the distribution of biomasses.
  With a white noise, the distribution was unimodal with a maximum biomass
- reached for the best long-term average growth rate (corresponding to a
- thermal optimum of 22.4°C).
+ reached for the
+\change_inserted 274868703 1526283424
+ second
+\change_unchanged
+ best long-term average growth rate
+\change_deleted 274868703 1526283279
+ 
+\change_unchanged
+(corresponding to a thermal optimum of 
+\change_inserted 274868703 1526283520
+20.2°C)
+\change_deleted 274868703 1526283512
+22.4°C)
+\change_unchanged
+.
  On the contrary, a seasonal signal led to a bi-modal distribution (centered
- on 17.4°C and 24.4°C) with higher biomasses for higher thermal optima Fig.
+ on 17.
+\change_deleted 274868703 1526283342
+4
+\change_inserted 274868703 1526283342
+0
+\change_unchanged
+°C and 24.4°C) with higher biomasses for higher thermal optima Fig.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -2763,8 +2835,21 @@ noprefix "false"
 \end_inset
 
  d.
- The minimum biomass was reached for a thermal optimum of 22.4°C, corresponding
- to the maximum biomass in the white noise case, thus there are quite broad
+ The minimum biomass was reached for 
+\change_deleted 274868703 1526283451
+a thermal optimum of 22.4°C
+\change_inserted 274868703 1526283546
+the best long_term average growth rate (20.4°C)
+\change_unchanged
+, 
+\change_deleted 274868703 1526283575
+corresponding
+\change_inserted 274868703 1526283580
+one species apart from
+\change_deleted 274868703 1526283584
+ to
+\change_unchanged
+ the maximum biomass in the white noise case, thus there are quite broad
  changes in community composition even though the richness is equal for
  the two forcing signals.
  The two modes in the seasonal biomass distribution correspond to the two
@@ -2810,10 +2895,11 @@ Mean biomass distribution over the last 200 years of
  The forcing signal is either a white noise (top) or a seasonal signal (bottom).
  Each species is identified by its thermal optimum and its color code.
 
-\change_inserted 274868703 1526146979
+\change_inserted 274868703 1526282377
  Mean (filled circles) and maximum (open circles) growth rates for each
  species are index on the right axis [CP: Not sure about showing GR on this
- figure, though].
+ figure, though.
+ I have another one without GR if necessary].
 
 \change_unchanged
  
@@ -2859,8 +2945,13 @@ noprefix "false"
 \begin_layout Standard
 The storage effect led to a multi-modal biomass distribution with respect
  to thermal optima.
- We always observed 3 modes with a white noise and 3 modes in 94% of the
- seasonal simulations, Fig.
+ We always observed 3 modes with a white noise and 3 modes in 9
+\change_deleted 274868703 1526284283
+4
+\change_inserted 274868703 1526284283
+5
+\change_unchanged
+% of the seasonal simulations, Fig.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -2875,8 +2966,14 @@ a.
  With a white noise, extant species are grouped in rather similar clumps
  regarding species thermal optimum (between 18.8°C and 22.2°C whereas clumps
  tended to be further apart in the seasonal case, covering a total range
- of 8°C, with species grouping in the higher part of the thermal range,
- above 22°C.
+ of 
+\change_deleted 274868703 1526284553
+8
+\change_inserted 274868703 1526284555
+7.7
+\change_unchanged
+°C, with species grouping in the higher part of the thermal range, above
+ 22°C.
  
 \end_layout
 
@@ -2895,10 +2992,19 @@ noprefix "false"
 
  b).
  Species characterising communities forced by a white noise stayed in the
- lower range of temperatures (96% of the simulations, the highest thermal
- optimum was 22.8°C) while they were filtered out in communities subjected
- to a seasonal fluctuations of their environment, for which species with
- thermal optima above 20.5°C persisted.
+ lower range of temperatures (
+\change_inserted 274868703 1526285204
+in 
+\change_unchanged
+96% of the simulations, the highest thermal optimum was 22.
+\change_deleted 274868703 1526285228
+8
+\change_inserted 274868703 1526285228
+4
+\change_unchanged
+°C) while they were filtered out in communities subjected to a seasonal
+ fluctuations of their environment, for which species with thermal optima
+ above 20.5°C persisted.
 \end_layout
 
 \begin_layout Standard
@@ -3373,6 +3479,85 @@ options "../spbasic_nicer"
 \begin_layout Section
 \start_of_appendix
 Supplementary Material
+\change_inserted 274868703 1526289588
+
+\end_layout
+
+\begin_layout Standard
+
+\change_inserted 274868703 1526289591
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\change_inserted 274868703 1526289667
+\begin_inset Graphics
+	filename graphe/iter2_mean_biomass.pdf
+	lyxscale 50
+	width 95text%
+
+\end_inset
+
+
+\change_unchanged
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\change_inserted 274868703 1526289591
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\change_inserted 274868703 1526289787
+Mean biomasses over the last 200 years of 5000-year simulations as a function
+ of the thermal optimum defining each species, for a white noise (left)
+ or a seasonal signal (right) with storage effect and no stabilizing niche
+ differences.
+ This simulation is the one described in Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Times-series_temperature_species"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Appendix_mean_biomass_iter2"
+
+\end_inset
+
+
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+
 \end_layout
 
 \begin_layout Standard

@@ -26,9 +26,9 @@ yl=zeros(1,2)
 
 h(1)=subplot(2,2,1)
 plot(use_temperature-273.15,'-k','LineWidth',.5)
-max=get(gca,'Ylim');
-max=max(2);
-text(15,0.95*max,'a','Fontsize',afontsize)
+maxi=get(gca,'Ylim');
+maxi=maxi(2);
+text(15,0.95*maxi,'a','Fontsize',afontsize)
 seq=0/365:0.5:ylast/365;
 xticks(seq*365);
 xticklabels(round(seq,2)-round(seq(1),2));
@@ -45,9 +45,9 @@ for s1=1:S
        plot(use_community(:,s1),'LineWidth',alinewidth,'color',col(s1,:));
     end    
 end;
-max=get(gca,'Ylim');
-max=max(2);
-text(15,0.95*max,'c','Fontsize',afontsize)
+maxi=get(gca,'Ylim');
+maxi=maxi(2);
+text(15,0.95*maxi,'c','Fontsize',afontsize)
 xticks(seq*365);
 xticklabels(round(seq,2)-round(seq(1),2));
 xlim([seq(1)*365 seq(end)*365])
@@ -56,7 +56,8 @@ set(gca,'Fontsize',afontsize)
 xlabel('Time (year)')
 hold off;
 box off;
-stop()
+
+youtbis_wn=youtbis;
 
 %b) Theta=1.3 just to show the season
 load("output_simulation/season/iter2_codeversion_20180228_theta1p3.mat")
@@ -67,9 +68,9 @@ use_community=youtbis((yend-ylast):yend,:);
 
 h(2)=subplot(2,2,2)
 plot(use_temperature-273.15,'-k','LineWidth',.5)
-max=get(gca,'Ylim');
-max=max(2);
-text(15,0.95*max,'b','Fontsize',afontsize)
+maxi=get(gca,'Ylim');
+maxi=maxi(2);
+text(15,0.95*maxi,'b','Fontsize',afontsize)
 xticks(seq*365);
 xticklabels(round(seq,2)-round(seq(1),2));
 xlim([seq(1)*365 seq(end)*365])
@@ -84,9 +85,9 @@ for s1=1:S
        plot(use_community(:,s1),'LineWidth',alinewidth,'color',col(s1,:));
     end    
 end;
-max=get(gca,'Ylim');
-max=max(2);
-text(15,0.95*max,'d','Fontsize',afontsize)
+maxi=get(gca,'Ylim');
+maxi=max(2);
+text(15,0.95*maxi,'d','Fontsize',afontsize)
 xticks(seq*365);
 xticklabels(round(seq,2)-round(seq(1),2));
 xlim([seq(1)*365 seq(end)*365])
@@ -94,6 +95,8 @@ xlabel('Time (year)')
 set(gca,'Fontsize',afontsize);
 hold off;
 box off;
+
+youtbis_season=youtbis;
 
 %Adjust everything
 positions = cell2mat(get(h([1 3]), 'Position'));
@@ -113,3 +116,42 @@ fig.PaperPositionMode = 'auto'
 fig_pos = fig.PaperPosition;
 fig.PaperSize = [fig_pos(3) fig_pos(4)];
 print(fig,'./Rapport/graphe/essai','-dpdf')
+
+
+% Appendices
+yspan=200;
+    mean_value=species_mean_value(youtbis_wn, yspan);
+    figure;subplot(1,2,1); hold on;
+for s1=1:S
+    bar(tau_opt(s1)-273,mean_value(s1),0.1,'FaceColor',col(s1,:));
+end;
+pos=get(gca,'Position')
+pos(1)=0.07;
+pos(3)=0.43;
+set(gca,'Position',pos)
+ylabel('Biomass')
+mini=min(mean_value(mean_value>0));
+ylimit=[mini*0.95 max(mean_value)+0.05*mini]; 
+set(gca,'yscale','log','Fontsize',16,'YLim',ylimit)
+hold off;
+
+    mean_value=species_mean_value(youtbis_season, yspan);
+    subplot(1,2,2); hold on;
+for s1=1:S
+    bar(tau_opt(s1)-273,mean_value(s1),0.1,'FaceColor',col(s1,:));
+end;
+%ylabel('Biomass')
+pos=get(gca,'Position')
+pos(1)=0.56
+pos(3)=0.43;
+set(gca,'Position',pos)
+mini=min(mean_value(mean_value>0));
+ylimit=[mini*0.95 max(mean_value)+0.05*mini]; 
+set(gca,'yscale','log','Fontsize',16,'YLim',ylimit)
+hold off;
+fig = gcf;
+set(fig,'Position',[680 558 1200 420])
+fig.PaperPositionMode = 'auto'
+fig_pos = fig.PaperPosition;
+fig.PaperSize = [fig_pos(3) fig_pos(4)];
+print(fig,'./Rapport/graphe/iter2_mean_biomass','-dpdf')
