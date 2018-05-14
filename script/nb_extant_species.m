@@ -7,7 +7,7 @@ thresh_min=10^(-6);
 afontsize=14;
 
 dir_output='./output_simulation/white_noise/';
-extant_species_wn=zeros(50,4);
+extant_species_wn=zeros(100,4);
 
 
 %Filename for -SE-SND
@@ -48,7 +48,7 @@ for iter=1:100
 end;
 
 dir_output='./output_simulation/season/';
-extant_species_season=zeros(50,4);
+extant_species_season=zeros(100,4);
 
 %Filename for -SE-SND
 extension='_noforcedcompetition_weightedinteraction.mat';

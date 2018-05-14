@@ -235,12 +235,12 @@ print(fig,'./Rapport/graphe/figure_4','-dtiff')
 %
 id_min=60;
 id_max=zeros(1,100);
-for iter=1:50
+for iter=1:100
     min_tmp=min(find(biomass_final_2(:,iter,2)>thresh_min))
     if id_min>min_tmp
         id_min=min_tmp;
     end;
-        id_max(iter)=min_tmp;
+        id_max(iter)=max(find(biomass_final_2(:,iter,2)>thresh_min));
 end
 
 tau_tmp=zeros(1,length(tau_opt));
