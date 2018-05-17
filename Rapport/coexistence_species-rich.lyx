@@ -2074,6 +2074,250 @@ noprefix "false"
 \end_inset
 
 , respectively).
+\change_inserted 274868703 1526549612
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\change_inserted 274868703 1526549822
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\change_inserted 274868703 1526549822
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\change_inserted 274868703 1526549834
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\begin_inset Formula $\frac{dN_{i}}{dt}+mN_{i}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\change_inserted 274868703 1526549822
+Storage effect
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\change_inserted 274868703 1526549822
+No storage effect
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\change_inserted 274868703 1526549822
+Stabilizing niche differences
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\change_inserted 274868703 1526549822
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\begin_inset Formula $r_{i}(\tau)N_{i}\left(1-\sum_{j=1}^{S}\alpha\left(1+9\delta_{ij}\right)N_{j}\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\change_inserted 274868703 1526549822
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\begin_inset Formula $N_{i}\left(r_{i}(\tau)-\sum_{j=1}^{S}\bar{r}_{i}\alpha\left(1+9\delta_{ij}\right)N_{j}\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\change_inserted 274868703 1526549822
+No stabilizing niche differences
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\change_inserted 274868703 1526549822
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\begin_inset Formula $r_{i}(\tau)N_{i}\left(1-\sum_{j=1}^{S}\alpha N_{j}\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\change_inserted 274868703 1526549822
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\begin_inset Formula $N_{i}\left(r_{i}(\tau)-\sum_{j=1}^{S}\bar{r}_{i}\alpha N_{j}\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\change_unchanged
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\change_inserted 274868703 1526549822
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\change_inserted 274868703 1526549945
+Growth rate of species 
+\begin_inset Formula $i$
+\end_inset
+
+ in the four formulations of the model we present
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
 \change_inserted 2088930707 1525473874
 
 \end_layout
@@ -3596,6 +3840,152 @@ name "fig:Not_representative_behaviour"
 \end_inset
 
  
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\change_inserted 274868703 1526550870
+NOTE: figures below are here for discussion between us.
+ I am not sure we should keep them in the paper.
+ I think this illustrates an issue (?) in the model: when I removed the
+ storage effect, I must have changed the total carrying capacity of the
+ environment.
+ Should we correct it? Note from Fred: there is clear underyielding which
+ can be confirmed by field data 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "andrea_schmidtke_mechanistic_2010"
+literal "false"
+
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand citep
+key "andrea_schmidtke_mechanistic_2010"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\change_inserted 274868703 1526550603
+I also computed the evenness, not as an explanation but as a further exploration
+ of the community.
+\end_layout
+
+\begin_layout Standard
+
+\change_inserted 274868703 1526549979
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\change_inserted 274868703 1526550022
+\begin_inset Graphics
+	filename graphe/biomass_total_end_of_simulation.png
+	lyxscale 50
+	width 95text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\change_inserted 274868703 1526549979
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\change_inserted 274868703 1526550183
+Sum of the average biomasses of all species for the last 200 years of a
+ 5000-year simulation, initialized with 60 species with total initial biomass
+ 
+\begin_inset Formula $10^{3}$
+\end_inset
+
+, with a white noise forcing signal (blue) or a noisy seasonal signal (red).
+ For each model type (with and without storage effect, + / - storage, respective
+ly; with and without Stabilizing Niche Differences, + / - SND, respectively),
+ 100 simulations were launched.
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\change_inserted 274868703 1526550200
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\change_inserted 274868703 1526550200
+\begin_inset Graphics
+	filename graphe/evenness_all_simulations.png
+	lyxscale 50
+	width 95text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\change_inserted 274868703 1526550200
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\change_inserted 274868703 1526550273
+Normalized species evenness of the community, initialized with 60 species
+ with total initial biomass 
+\begin_inset Formula $10^{3}$
+\end_inset
+
+, with a white noise forcing signal (blue) or a noisy seasonal signal (red).
+ For each model type (with and without storage effect, + / - storage, respective
+ly; with and without Stabilizing Niche Differences, + / - SND, respectively),
+ 100 simulations were launched.
 \end_layout
 
 \end_inset
