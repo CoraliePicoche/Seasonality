@@ -160,7 +160,11 @@ Integrative and Theoretical Ecology Chair, Labex COTE, University of Bordeaux,
 
 \end_inset
 
-Institute of Mathematicsof Bordeaux, CNRS
+Institute of Mathematics
+\change_inserted 274868703 1526978915
+ 
+\change_unchanged
+of Bordeaux, CNRS
 \end_layout
 
 \begin_layout Abstract
@@ -203,7 +207,19 @@ Introduction
 
 \begin_layout Standard
 There has been a rich debate in theoretical ecology on how to reconcile
- niche and neutral perspectives on species coexistence 
+ niche and neutral perspectives on species coexistence
+\change_inserted 274868703 1527582812
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "gravel_reconciling_2006,carmel_using_2017"
+literal "false"
+
+\end_inset
+
+
+\change_deleted 274868703 1527582837
+ 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "scheffer_self-organized_2006,barabas_emergent_2013,vergnon_interpretation_2013"
@@ -214,18 +230,47 @@ literal "false"
  [we can add or replace this by refs Dom Gravel and 
 \change_deleted -666822487 1525854208
 others
-\change_inserted -666822487 1525854215
-Mutshinda+O'Hara
+\change_deleted 274868703 1527253422
+Mutshinda+O'Hara here]
 \change_unchanged
- here].
+.
 
 \change_inserted -666822487 1525855210
  Under the neutral perspective, all species have equal birth and death rates
  and compete equally (for space) whilst under the niche perspective, birth
  and death rates can vary between species and various mechanisms contribute
- to increasing intraspecific over interspecific competition.
- But as it has been pointed out repeatedly (REFs Gravel and co.), niche and
- neutral processes are not mutually exclusive.
+ to increasing intraspecific over interspecific competition
+\change_inserted 274868703 1527255220
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "hubbell_unified_2001"
+literal "false"
+
+\end_inset
+
+
+\change_inserted -666822487 1525855210
+.
+ But as it has been pointed out repeatedly
+\change_deleted 274868703 1527582882
+ (REFs Gravel and co.)
+\change_inserted -666822487 1525855210
+, niche and neutral processes are not mutually exclusive
+\change_inserted 274868703 1527255610
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "gravel_reconciling_2006,mutshinda_what_2009,gotzenberger_ecological_2012"
+literal "false"
+
+\end_inset
+
+[Fred, you said we should explain the model developped by Gravel et al.,
+ but we already have lots of info on other models.
+ I think it would be too much, for the intro at least.]
+\change_inserted -666822487 1525855210
+.
 
 \change_unchanged
  
@@ -246,13 +291,17 @@ literal "false"
 \change_deleted -666822487 1525856238
 suggested
 \change_inserted -666822487 1525856272
-put forward the concept of 'clumpy coexistence', whereby 
+put forward the concept of 'clumpy coexistence', whereby
+\change_deleted 274868703 1527600868
+ 
 \change_deleted -666822487 1525856269
  that 
 \change_unchanged
 niche
 \change_deleted -666822487 1525855328
  and neutrality
+\change_inserted 274868703 1526985461
+ 
 \change_inserted -666822487 1525855346
 and neutral community assembly
 \change_unchanged
@@ -289,7 +338,15 @@ along
  trait axis.
  
 \change_inserted 2088930707 1525470637
-Classical stabilizing niche differences promote
+Classic
+\change_unchanged
+al
+\change_inserted 2088930707 1525470637
+ stabilizing niche differences 
+\change_inserted 274868703 1527582994
+enable
+\change_deleted 274868703 1527582991
+promote
 \change_deleted -666822487 1525855423
  the
 \change_inserted 2088930707 1525470637
@@ -322,12 +379,24 @@ is provided by classical stabilizing niche differences
 s
 \change_unchanged
  through neutral processes
+\change_inserted 274868703 1527256613
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "hubbell_unified_2001,munoz_neutral_2016"
+literal "false"
+
+\end_inset
+
+
+\change_deleted 274868703 1527256390
+ (Hubbell 2000, a new ref)
 \change_inserted -666822487 1525856180
- (Hubbell 2000, a new ref), as species that differ too little in their fitnesses
- cannot exclude themselves out on reasonable timeframes
+, as species that differ too little in their fitnesses cannot exclude themselves
+ out on reasonable timeframes
 \change_deleted -666822487 1525855413
  by which species differ too little to compete each other out
-\change_inserted 2088930707 1525470933
+\change_deleted 274868703 1527583051
  
 \change_deleted -666822487 1525855402
 
@@ -349,6 +418,8 @@ Not sure my phrasing is better, but overall, the idea would be to clarify
  
 \change_inserted -666822487 1525855549
 Indeed
+\change_inserted 274868703 1527583080
+,
 \change_deleted -666822487 1525855551
 Although
 \change_unchanged
@@ -375,6 +446,19 @@ thin out
 but 
 \change_unchanged
 transient coexistence can last for extended periods of time.
+
+\change_inserted 274868703 1527584550
+ This 'emergent neutrality' within groups 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "holt_emergent_2006"
+literal "false"
+
+\end_inset
+
+ has been proposed as a unifying concept for the niche and neutral theories.
+
+\change_unchanged
  However, the findings of 
 \begin_inset CommandInset citation
 LatexCommand citet
@@ -429,7 +513,19 @@ literal "false"
 
 , so that coexistence within clumps is not exactly neutral.
  But the idea that niche and neutral assembly can mould communities stays
- potent, and since then,
+ potent
+\change_inserted 274868703 1527257656
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "vergnon_interpretation_2013"
+literal "false"
+
+\end_inset
+
+
+\change_inserted -666822487 1525856093
+, and since then,
 \change_deleted -666822487 1525855766
 ,
 \change_unchanged
@@ -450,7 +546,7 @@ clumpy coexistence
  in theoretical models
 \change_deleted -666822487 1525855799
  using other frameworks
-\change_inserted -666822487 1525855799
+\change_deleted 274868703 1527584613
 ,
 \change_deleted -666822487 1525855803
 
@@ -535,6 +631,8 @@ are
  concepts
 \change_unchanged
  for forced Lotka-Volterra models
+\change_inserted 274868703 1527584745
+,
 \change_deleted -666822487 1525855870
 
 \begin_inset Note Note
@@ -658,7 +756,17 @@ All of this paragraph makes very good points about Scranton and Vasseur's
 \begin_layout Standard
 Because many phytoplankton species or genera respond in similar ways to
  temperature despite having different optimas
-\change_inserted 2088930707 1525472029
+\change_inserted 274868703 1527258100
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "moisan_modelling_2002"
+literal "false"
+
+\end_inset
+
+
+\change_deleted 274868703 1527584770
  [Insert REF here]
 \change_unchanged
 , we hypothetized that a large seasonal variation might not necessarily
@@ -3352,9 +3460,12 @@ Discussion
 \end_layout
 
 \begin_layout Standard
-We have simulated competitive Lotka-Volterra dynamics forced by an a fluctuating
- environment (e.g., temperature fluctuations) under a range of scenarios allowing
- more or less coexistence.
+We have simulated competitive Lotka-Volterra dynamics forced by 
+\change_deleted 274868703 1527582630
+an 
+\change_unchanged
+a fluctuating environment (e.g., temperature fluctuations) under a range of
+ scenarios allowing more or less coexistence.
  Two coexistence mechanisms, the storage effect and stabilizing niches differenc
 es, could be either present or absent, which led to four scenarios.
  These four scenarios were crossed with two possibilities for the forcing
@@ -3368,8 +3479,12 @@ literal "false"
 
 \end_inset
 
-, which included white noise forcing and a storage effect, but considered
- seven additional combinations of mechanisms.
+, which included
+\change_inserted 274868703 1527582640
+ a
+\change_unchanged
+ white noise forcing and a storage effect, but considered seven additional
+ combinations of mechanisms.
  This was motivated by our wish to include two observed features of phytoplankto
 n dynamics: seasonal cycles 
 \begin_inset CommandInset citation
@@ -3393,8 +3508,11 @@ literal "false"
 
 \begin_layout Standard
 We have found that first, forced Lotka-Volterra dynamics cannot sustain
- any diversity unless the structure is geared to include a storage effect
- or SNDs.
+ any diversity
+\change_inserted 274868703 1527585257
+ with our phytoplankton-based set of parameters,
+\change_unchanged
+ unless the structure is geared to include a storage effect or SNDs.
  Although this has already been stated by other authors 
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -3433,18 +3551,57 @@ literal "false"
 \end_inset
 
 , but an arguably more realistic seasonal forcing by temperature (thinking
- of phytoplankton) will considerably lessen the number of species coexisting
- after 5000 timesteps, decreasing from 15 on average to 4 on average.
+ of phytoplankton) 
+\change_deleted 274868703 1527582788
+will 
+\change_unchanged
+considerably lessen
+\change_inserted 274868703 1527582792
+ed
+\change_unchanged
+ the number of species coexisting after 5000 timesteps, decreasing from
+ 15 on average to 4 on average.
  Even imagining that groups represented here are genera or classes rather
  than species, this is a fairly low diversity for a phytoplankton-like community
- (REF Reynolds?).
+\change_inserted 274868703 1527586961
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "reynolds2006ecology"
+literal "false"
+
+\end_inset
+
+
+\change_unchanged
+ 
+\change_deleted 274868703 1527585330
+(REF Reynolds?)
+\change_unchanged
+.
  
 \end_layout
 
 \begin_layout Standard
-We have therefore sought out whether stabilizing niche differences (SNDs)
- could produce a higher diversity maintenance, using field-based intra-
- vs inter-group (species or genera) competition coefficients 
+We have therefore sought out whethe
+\change_inserted 274868703 1527589599
+
+\end_layout
+
+\begin_layout Standard
+
+\change_inserted 274868703 1527589601
+A
+\change_unchanged
+r stabilizing niche differences (SNDs) could produce a higher diversity
+ maintenance, using field-based intra- vs inter-group (species or genera)
+ competition coefficient
+\change_inserted 274868703 1527587308
+ ratio
+\change_deleted 274868703 1527587307
+s
+\change_unchanged
+ 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "barraquand_weak_2017"
@@ -3503,10 +3660,13 @@ neutral
 s chunks of time to the best competitor to exclude its less adapted heterospecif
 ics, while white noise contains very low forcing signal frequencies that
  forbid such competitive exclusion.
- In a seasonal settin, even though a species has the best long-term averaged
- growth rate, it can disappear as a result of a strong competition from
- both low- and high-temperature tolerant species, with and without storage
- effect.
+ In a seasonal settin
+\change_inserted 274868703 1527587496
+g
+\change_unchanged
+, even though a species has the best long-term averaged growth rate, it
+ can disappear as a result of a strong competition from both low- and high-tempe
+rature tolerant species, with and without storage effect.
  Our results are therefore at odds with recent proposals that seasonal forcing
  would help maintain diversity 
 \begin_inset CommandInset citation
