@@ -296,8 +296,21 @@ literal "false"
 niche and neutral community assembly may be simultaneously at work, creating
  several clumps of similar species along a single trait axis.
  Classical stabilizing niche differences enable coexistence of multiple
- clumps through stronger net intraspecific competition (Chesson 2000), while
- within-clump coexistence occurs through neutral processes 
+ clumps through stronger net intraspecific competition 
+\change_inserted -1378791593 1528292074
+
+\begin_inset CommandInset citation
+LatexCommand citep
+key "chesson_mechanisms_2000"
+literal "false"
+
+\end_inset
+
+
+\change_deleted -1378791593 1528292087
+(Chesson 2000)
+\change_unchanged
+, while within-clump coexistence occurs through neutral processes 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "hubbell_unified_2001,munoz_neutral_2016"
@@ -401,8 +414,8 @@ status open
 
 \begin_layout Plain Layout
 
-\change_inserted -1378791593 1528098559
-I think this phrasing is actually slightly misleading.
+\change_inserted -1378791593 1528292102
+I think this phrasing was actually slightly misleading.
 \change_unchanged
 
 \end_layout
@@ -748,7 +761,7 @@ status open
 
 \begin_layout Plain Layout
 
-\change_inserted -1378791593 1528121490
+\change_inserted -1378791593 1528291751
 I think this is a key point that is addressed by this MS, and it could be
  better showcased.
  What do you think about a paragraph dedicated to briefly discussing the
@@ -756,7 +769,7 @@ I think this is a key point that is addressed by this MS, and it could be
  discussion on combining mechanisms (e.g.
  idea and perspective of Clark et al.)? I think it would strengthen why multiple
  mechanisms are combined here.
- I'm happy to do it later on.
+ I'm happy to do it.
 \change_unchanged
 
 \end_layout
@@ -822,8 +835,10 @@ status open
 
 \begin_layout Plain Layout
 
-\change_inserted -1378791593 1528120573
+\change_inserted -1378791593 1528292967
 They are more on the emergent neutrality team.
+ Actually, since there are some contrasted results, it even more necessary
+ to do what's in this MS.
 \change_unchanged
 
 \end_layout
@@ -3661,8 +3676,8 @@ e have simulated competitive Lotka-Volterra dynamics forced by a fluctuating
  
 \change_deleted -1378791593 1528127143
 (e.g., 
-\change_inserted -1378791593 1528127146
-examplified with 
+\change_inserted -1378791593 1528288816
+exemplified with 
 \change_unchanged
 temperature 
 \change_deleted -1378791593 1528127150
@@ -3694,7 +3709,7 @@ to four scenarios
  were crossed with two possibilities for the forcing signal, a white noise
  and a stochastic yet seasonal signal, both with equal temporal variance.
 
-\change_inserted -1378791593 1528128909
+\change_inserted -1378791593 1528296458
  Simulations resulted in various levels of persistence, with combined mechanisms
  triggering maximum diversity while each led to intermediate level of species
  coexistence when acting alone on community dynamics.
@@ -3702,7 +3717,11 @@ to four scenarios
  to lower diversity levels.
  Aside of species diversity, the type of environmental forcing and coexistence
  mechanisms produced contrasted community structures both in terms of traits
- and biomass distributions.
+ and biomass distributions, unveiling that clumpy-coexistence is not the
+ only mode of species coexistence.
+ Our combined examination of coexistence mechanisms sheds light on how they
+ mix to promote species coexistence, and thus summarises the various community
+ structures that drivers of species coexistence may lead to.
 \end_layout
 
 \begin_layout Standard
@@ -3739,6 +3758,25 @@ literal "false"
 
 .
  
+\change_inserted -1378791593 1528291903
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted -1378791593 1528296529
+Not convinced we need this here (it might be better in the introduction
+ to strengthen the aim and motivations), but I leave it for now.
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+
 \end_layout
 
 \begin_layout Standard
@@ -3764,7 +3802,7 @@ pure
  has already been stated by other authors 
 \begin_inset CommandInset citation
 LatexCommand citep
-key "barabas_community_2012,fox_intermediate_2013,scranton_coexistence_2016"
+key "barabas_community_2012,scranton_coexistence_2016,chesson_roles_1997"
 literal "false"
 
 \end_inset
@@ -3778,7 +3816,11 @@ literal "false"
 \end_inset
 
 , so we feel compelled to stress it once more: temporal variation in growth
- rate alone cannot help coexistence within competitive communities.
+ rate alone cannot help coexistence within competitive communities
+\change_inserted -1378791593 1528293199
+, but serves as a case-control simulation here
+\change_unchanged
+.
  A nice point made by 
 \begin_inset CommandInset citation
 LatexCommand citet
@@ -3803,7 +3845,11 @@ model,
 \change_inserted -666822487 1527668919
 parameterised for phytoplankton communities, 
 \change_unchanged
-could lead to some degree of coexistence.
+could lead to some degree of coexistence
+\change_inserted -1378791593 1528296133
+ without SNDs
+\change_unchanged
+.
  Our investigation reproduced these results, using the white noise forcing
  considered by 
 \begin_inset CommandInset citation
@@ -3826,8 +3872,16 @@ literal "false"
 
 \end_inset
 
- .
+
+\change_deleted -1378791593 1528291844
  
+\change_unchanged
+.
+
+\change_deleted -1378791593 1528291844
+ 
+\change_unchanged
+
 \end_layout
 
 \begin_layout Standard
