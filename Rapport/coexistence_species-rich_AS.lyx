@@ -78,7 +78,7 @@
 \papersides 1
 \paperpagestyle default
 \tracking_changes true
-\output_changes false
+\output_changes true
 \html_math_output 0
 \html_css_as_file 0
 \html_be_strict false
@@ -3660,8 +3660,8 @@ Discussion
 
 \begin_layout Standard
 
-\change_inserted -1378791593 1528127434
-To explore the contribution of various coexistence mechanisms to community
+\change_inserted -1378791593 1528371925
+To synthetise the contribution of various hypothetised drivers of community
  diversity, 
 \change_deleted -1378791593 1528127435
 W
@@ -3690,6 +3690,8 @@ variations
 .
  Two coexistence mechanisms, the storage effect and stabilizing niches differenc
 es
+\change_inserted -1378791593 1528397082
+,
 \change_deleted -1378791593 1528127197
 , could be either present or absent, which led
 \change_inserted -1378791593 1528127200
@@ -3709,7 +3711,7 @@ to four scenarios
  were crossed with two possibilities for the forcing signal, a white noise
  and a stochastic yet seasonal signal, both with equal temporal variance.
 
-\change_inserted -1378791593 1528296458
+\change_inserted -1378791593 1528393193
  Simulations resulted in various levels of persistence, with combined mechanisms
  triggering maximum diversity while each led to intermediate level of species
  coexistence when acting alone on community dynamics.
@@ -3722,6 +3724,36 @@ to four scenarios
  Our combined examination of coexistence mechanisms sheds light on how they
  mix to promote species coexistence, and thus summarises the various community
  structures that drivers of species coexistence may lead to.
+ Hereafter, we discuss these results from the perspective of our two focuses:
+ the impact of seasonality and combined coexistence mechanisms.
+\end_layout
+
+\begin_layout Standard
+
+\change_inserted -1378791593 1528393194
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted -1378791593 1528393779
+I tried to separate the discussion on the various results to highlight their
+ different inputs, but maybe subsections should be swapped? This suggestion
+ is questionable, so I'm fine if we don't stick to it.
+ At least, it helped me to think this through.
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+
+\change_inserted -1378791593 1528391735
+Effect of seasonality of fluctuating environments
 \end_layout
 
 \begin_layout Standard
@@ -3729,7 +3761,13 @@ to four scenarios
 \change_deleted -1378791593 1528127615
  
 \change_unchanged
-Our investigation therefore built on the model of 
+Our investigation 
+\change_deleted -1378791593 1528391832
+therefore
+\change_inserted -1378791593 1528391835
+primarily
+\change_unchanged
+ built on the model of 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "scranton_coexistence_2016"
@@ -3737,10 +3775,17 @@ literal "false"
 
 \end_inset
 
-, which included a white noise forcing and a storage effect, but considered
+, 
+\change_inserted -1378791593 1528391946
+which we modified to investigate on the effect of seasonality in the attempt
+ to mirror the seasonal cycles observed in phytoplanton communities 
+\change_deleted -1378791593 1528391962
+which included a white noise forcing and a storage effect, but considered
  seven additional combinations of mechanisms.
  This was motivated by our wish to include two observed features of phytoplankto
 n dynamics: seasonal cycles 
+\change_unchanged
+
 \begin_inset CommandInset citation
 LatexCommand citep
 key "winder_annual_2010"
@@ -3748,6 +3793,11 @@ literal "false"
 
 \end_inset
 
+
+\change_inserted -1378791593 1528391965
+.
+
+\change_deleted -1378791593 1528391968
  and stabilizing niche differences 
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -3758,38 +3808,17 @@ literal "false"
 
 .
  
-\change_inserted -1378791593 1528291903
-
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-
-\change_inserted -1378791593 1528296529
-Not convinced we need this here (it might be better in the introduction
- to strengthen the aim and motivations), but I leave it for now.
-\change_unchanged
-
-\end_layout
-
-\end_inset
-
-
-\change_unchanged
+\change_inserted -1378791593 1528391776
 
 \end_layout
 
 \begin_layout Standard
+
+\change_deleted -1378791593 1528391682
 We have found that first, forced Lotka-Volterra dynamics cannot sustain
  any diversity with our phytoplankton-based set of parameters, unless the
- structure is geared to include 
-\change_inserted -666822487 1527668835
-either 
-\change_unchanged
-a storage effect or SNDs.
- Although this
-\change_inserted -666822487 1527668867
- absence of diversity-enhancing effect of 
+ structure is geared to include either a storage effect or SNDs.
+ Although this absence of diversity-enhancing effect of 
 \begin_inset Quotes eld
 \end_inset
 
@@ -3797,9 +3826,7 @@ pure
 \begin_inset Quotes erd
 \end_inset
 
- environmental variation
-\change_unchanged
- has already been stated by other authors 
+ environmental variation has already been stated by other authors 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "barabas_community_2012,scranton_coexistence_2016,chesson_roles_1997"
@@ -3816,11 +3843,7 @@ literal "false"
 \end_inset
 
 , so we feel compelled to stress it once more: temporal variation in growth
- rate alone cannot help coexistence within competitive communities
-\change_inserted -1378791593 1528293199
-, but serves as a case-control simulation here
-\change_unchanged
-.
+ rate alone cannot help coexistence within competitive communities.
  A nice point made by 
 \begin_inset CommandInset citation
 LatexCommand citet
@@ -3832,24 +3855,13 @@ literal "false"
  was that a built-in storage effect in 
 \change_deleted -666822487 1527668905
 the
-\change_inserted -666822487 1527668905
-a
-\change_unchanged
- forced Lotka-Volterra 
+\change_deleted -1378791593 1528391682
+a forced Lotka-Volterra 
 \change_deleted -666822487 1527668908
 dynamics
-\change_inserted -666822487 1527668909
-model,
-\change_unchanged
- 
-\change_inserted -666822487 1527668919
-parameterised for phytoplankton communities, 
-\change_unchanged
-could lead to some degree of coexistence
-\change_inserted -1378791593 1528296133
- without SNDs
-\change_unchanged
-.
+\change_deleted -1378791593 1528391682
+model, parameterised for phytoplankton communities, could lead to some degree
+ of coexistence.
  Our investigation reproduced these results, using the white noise forcing
  considered by 
 \begin_inset CommandInset citation
@@ -3872,19 +3884,13 @@ literal "false"
 
 \end_inset
 
-
-\change_deleted -1378791593 1528291844
+ .
  
-\change_unchanged
-.
-
-\change_deleted -1378791593 1528291844
- 
-\change_unchanged
-
 \end_layout
 
 \begin_layout Standard
+
+\change_deleted -1378791593 1528391682
 We have therefore sought out whether stabilizing niche differences (SNDs)
  could produce a higher diversity maintenance, using field-based intra-
  vs inter-group (species or genera) competition coefficient ratio 
@@ -3899,11 +3905,24 @@ literal "false"
  On their own, SNDs produced a higher level of diversity than the storage
  effect (almost double for white noise).
  
+\change_unchanged
+
 \end_layout
 
 \begin_layout Standard
-However, the seasonal forcing still considerably reduced diversity when
- SNDs were considered, especially the 
+
+\change_deleted -1378791593 1528393544
+However, t
+\change_inserted -1378791593 1528393544
+T
+\change_unchanged
+he seasonal forcing 
+\change_deleted -1378791593 1528397158
+still 
+\change_unchanged
+considerably reduced diversity when 
+\change_deleted -1378791593 1528397308
+SNDs were considered, especially the 
 \begin_inset Quotes eld
 \end_inset
 
@@ -3911,15 +3930,22 @@ neutral
 \begin_inset Quotes erd
 \end_inset
 
- kind
-\change_inserted -666822487 1527669030
- of diversity
+ kind of diversity, i.e., diversity within clumps of similar trait
+\change_inserted -1378791593 1528397371
+only one coexistence mechanism was considered, SNDs were considered, especially
+ the 
+\begin_inset Quotes eld
+\end_inset
+
+neutral
+\begin_inset Quotes erd
+\end_inset
+
+ kind of diversity, i.e., diversity within clumps of similar traits
+\change_deleted -1378791593 1528397320
+s
 \change_unchanged
-, 
-\change_inserted -666822487 1527669034
-i.e., 
-\change_unchanged
-diversity within clumps of similar traits.
+.
  This
 \change_inserted -666822487 1527669044
  diversity reduction
@@ -3942,8 +3968,20 @@ very low forcing signal frequencies that
  growth rate, it can disappear as a result of a strong competition from
  both low- and high-temperature tolerant species, with and without storage
  effect.
- Our results are therefore at odds with recent proposals that seasonal forcing
  
+\change_inserted -1378791593 1528397812
+Hence, a seasonal forcing of the environment also selected species with
+ more extreme thermal optima than when a white noise is used, imprinting
+ the community with its thermal pattern.
+ 
+\change_unchanged
+Our results
+\change_deleted -1378791593 1528397868
+ are therefore
+\change_inserted -1378791593 1528397869
+may appear
+\change_unchanged
+ at odds with recent proposals that seasonal forcing 
 \change_inserted -666822487 1527669132
 in itself 
 \change_unchanged
@@ -3955,17 +3993,210 @@ literal "false"
 
 \end_inset
 
-, at least not when seasonal forcing is compared to other forcing signals
- of equal variance
+
+\change_deleted -1378791593 1528397873
+,
+\change_inserted -1378791593 1528397876
+.
+ However,
+\change_unchanged
+ 
+\change_deleted -1378791593 1528397888
+at least not when
+\change_inserted -1378791593 1528397890
+we compared
+\change_unchanged
+ 
+\change_inserted -1378791593 1528397900
+the effect of 
+\change_unchanged
+seasonal forcing 
+\change_inserted -1378791593 1528397913
+to that of 
+\change_deleted -1378791593 1528397895
+is compared to 
+\change_unchanged
+other forcing signals
+\change_deleted -1378791593 1528397917
+ of
+\change_inserted -1378791593 1528397920
+ while controlling
+\change_deleted -1378791593 1528397923
+ equal
+\change_unchanged
+ variance
 \change_inserted -666822487 1527669252
 .
- Seasonality may be slightly better than no forcing at all in maintaining
- diversity, but on its own, seasonal forcing of parameters combined to a
- storage effect does little to improve coexistence and it does not really
- help to maintain diversity within clumps here
+
+\change_inserted -1378791593 1528398031
+ Thus, the contrast between our results and those of Sakavara et al.
+ pins down the key role of forcing variance over time in structuring ecological
+ communities.
+
+\change_inserted -666822487 1527669252
+ 
+\change_inserted -1378791593 1528398048
+Overall, 
+\change_deleted -1378791593 1528398049
+S
+\change_inserted -1378791593 1528398049
+s
+\change_inserted -666822487 1527669252
+easonality may be slightly better than no forcing at all in maintaining
+ diversity, but on its own, seasonal forcing of parameters 
+\change_deleted -1378791593 1528398068
+combined to a storage effect 
+\change_inserted -1378791593 1528398091
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted -1378791593 1528398131
+I removed this bit because seasonal forcing descreases coexistence when
+ SNDs are implemented alone as well.
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_inserted -666822487 1527669252
+does little to improve coexistence and it does not really 
+\change_deleted -1378791593 1528371807
+help to maintain
+\change_inserted -1378791593 1528397363
+foster
+\change_inserted -666822487 1527669252
+ diversity within clumps here
 \change_unchanged
 .
+\change_inserted -1378791593 1528397363
+
+\end_layout
+
+\begin_layout Subsection
+
+\change_inserted -1378791593 1528391712
+Contribution of various coexistence mechanisms
+\end_layout
+
+\begin_layout Standard
+
+\change_inserted -1378791593 1528394361
+A nice point made by 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "scranton_coexistence_2016"
+literal "false"
+
+\end_inset
+
+ was that the highlight on the ability of built-in storage to lead to some
+ degree of coexistence without SNDs in a forced Lotka-Volterra model parameteris
+ed for phytoplankton communities.
+ In the present study, we sought to further their disentangling by exploring
+ various combination of coexistence mechanisms and their contribution to
+ community persistence and structuring.
+ As a case-control simulation here, we reproduce the absence of diversity-enhanc
+ing effect of 
+\begin_inset Quotes eld
+\end_inset
+
+pure
+\begin_inset Quotes erd
+\end_inset
+
+ environmental variation which has already been stated by other authors
  
+\begin_inset CommandInset citation
+LatexCommand citep
+key "barabas_community_2012,scranton_coexistence_2016,chesson_roles_1997"
+literal "false"
+
+\end_inset
+
+.
+ Although this is not always intuitive 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "fox_intermediate_2013"
+literal "false"
+
+\end_inset
+
+, so we feel compelled to stress it once more: temporal variation in growth
+ rate alone cannot help coexistence within competitive communities.
+ 
+\change_deleted -1378791593 1528393425
+
+\end_layout
+
+\begin_layout Standard
+
+\change_inserted -1378791593 1528398340
+We also have found that forced Lotka-Volterra dynamics cannot sustain any
+ diversity with our phytoplankton-based set of parameters, unless the structure
+ is geared to include either a storage effect or SNDs, whether using a white
+ noise or a seasonal forcing.
+ On their own, SNDs produced a higher level of diversity than the storage
+ effect (almost double for white noise), which shows their ability to substantia
+lly contribute to community maintenance.
+ Still, when only one coexistence mechanism was implemented in our model,
+ diversity reached arguably low diversity, ranging from 5 to 32 taxa.
+ Even imagining that groups represented here are genera or classes rather
+ than species, this is a fairly low diversity for a phytoplankton-like community
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "reynolds2006ecology"
+literal "false"
+
+\end_inset
+
+, despite 
+\change_deleted -1378791593 1528393980
+
+\end_layout
+
+\begin_layout Standard
+
+\change_inserted -1378791593 1528394719
+using field-based intra- vs inter-group (species or genera) competition
+ coefficient ratio where the intra-group density-dependence is approximately
+ 10 times stronger 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "barraquand_weak_2017"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\change_inserted -1378791593 1528398367
+When not combined, SNDs and storage effect also resulted in contrasted community
+ structures, with SNDs always producing unimodal distribution when acting
+ on community dynamics, while storage effect led to clumpy-coexistence as
+ found by Scranton and Vasseur 
+\begin_inset CommandInset citation
+LatexCommand citeyearpar
+key "scranton_coexistence_2016"
+literal "false"
+
+\end_inset
+
+.
+
+\change_deleted -1378791593 1528391684
+ 
+\change_unchanged
+
 \end_layout
 
 \begin_layout Standard
@@ -3999,13 +4230,34 @@ literal "false"
  Indeed, the combination storage effect + SNDs is non-additive: the cases
  were both SNDs and the storage effect were present showed more diversity
  than generated by any mechanism on its own.
+\change_inserted -1378791593 1528393634
+
+\end_layout
+
+\begin_layout Subsection
+
+\change_inserted -1378791593 1528393699
+Implications of combining multiple coexistence mechanisms
+\change_deleted -1378791593 1528393633
  
+\change_unchanged
+
 \end_layout
 
 \begin_layout Standard
-This suggests the very exciting idea that multiple coexistence mechanisms
- might combine superadditively, thus helping us to better understand the
- astounding diversity of primary producers.
+Th
+\change_deleted -1378791593 1528394593
+is
+\change_inserted -1378791593 1528394596
+e above results
+\change_unchanged
+ suggest
+\change_deleted -1378791593 1528394591
+s
+\change_unchanged
+ the very exciting idea that multiple coexistence mechanisms might combine
+ superadditively, thus helping us to better understand the astounding diversity
+ of primary producers.
  This logic could, in principle, be extended to mechanisms that we have
  not considered here (e.g., spatial structure, specialized natural enemies,
  that could be as important here for plankton as they are for tropical trees
@@ -4167,6 +4419,10 @@ literal "false"
 
 ).
  
+\change_inserted -1378791593 1528372025
+But distribution is unimodal.
+\change_unchanged
+
 \end_layout
 
 \begin_layout Plain Layout
@@ -4175,6 +4431,8 @@ literal "false"
  as a proportion).
  May interact with species intraspecific density-dependence.
  
+\change_inserted -1378791593 1528398385
+
 \end_layout
 
 \end_inset
