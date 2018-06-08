@@ -3932,8 +3932,11 @@ neutral
 
  kind of diversity, i.e., diversity within clumps of similar trait
 \change_inserted -1378791593 1528397371
-only one coexistence mechanism was considered, SNDs were considered, especially
- the 
+only one coexistence mechanism was considered, 
+\change_deleted 2088930707 1528440984
+SNDs were considered, 
+\change_inserted -1378791593 1528397371
+especially the 
 \begin_inset Quotes eld
 \end_inset
 
@@ -3955,13 +3958,23 @@ s
 long, 
 \change_unchanged
 contiguous chunks of time to the best competitor to exclude its less adapted
- heterospecifics, while white noise contains 
-\change_inserted -666822487 1527669067
-also 
-\change_unchanged
-very low forcing signal frequencies that
+ heterospecifics, while white noise 
+\change_deleted 2088930707 1528441219
+contains also very low forcing signal frequencies that make
+\change_inserted 2088930707 1528441224
+generates large
 \change_inserted -666822487 1527669098
- make thermal optima shift more frequently, and thereby
+ 
+\change_deleted 2088930707 1528441140
+thermal optima
+\change_inserted 2088930707 1528441142
+temperature
+\change_inserted -666822487 1527669098
+ shift
+\change_inserted 2088930707 1528441263
+s
+\change_inserted -666822487 1527669098
+ more frequently, and thereby
 \change_unchanged
  forbid such competitive exclusion.
  In a seasonal setting, even though a species has the best long-term averaged
