@@ -82,6 +82,7 @@
 \html_math_output 0
 \html_css_as_file 0
 \html_be_strict false
+\author -2100369821 "cpicoche"
 \author -1378791593 "Alix SAUVE"
 \author -666822487 "frederic"
 \author 274868703 "Coralie PICOCHE"
@@ -2158,7 +2159,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename graphe/essai.pdf
+	filename graphe/Fig1.eps
 	width 95text%
 
 \end_inset
@@ -2324,7 +2325,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename graphe/extant_species.pdf
+	filename graphe/Fig2.eps
 	width 95text%
 
 \end_inset
@@ -2570,7 +2571,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename graphe/60_and_1species.pdf
+	filename graphe/Fig3.eps
 	width 95text%
 
 \end_inset
@@ -2721,7 +2722,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename graphe/figure_4.tif
+	filename graphe/Fig4.eps
 	lyxscale 80
 	width 85text%
 
@@ -3046,12 +3047,41 @@ literal "false"
  this research would be interactions with spatial structure.
  Spatial structure occurs both endogeneously, through spatially restricted
  movements and interactions, and exogeneously, through spatial variation
- in environmental covariates (Bolker TPB 2003).
- Numerous studies (Bolker and Pacala Am Nat 2000, Murrell and Law Ecology
- 2002) have shown that spatially restricted movements and interactions -
- very small-scale spatial structure - can help coexistence, which we believe
- would be especially important for phytoplankton since many species form
- colonies (
+ in environmental covariates
+\change_inserted -2100369821 1530543324
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "bolker_combining_2003"
+literal "false"
+
+\end_inset
+
+
+\change_unchanged
+ 
+\change_deleted -2100369821 1530543304
+(Bolker TPB 2003)
+\change_unchanged
+.
+ Numerous studies (
+\change_deleted -2100369821 1530544483
+Bolker and Pacala Am Nat 2000
+\change_inserted -2100369821 1530544489
+
+\begin_inset CommandInset citation
+LatexCommand citet
+key "bolker_spatial_1999"
+literal "false"
+
+\end_inset
+
+
+\change_unchanged
+, Murrell and Law Ecology 2002) have shown that spatially restricted movements
+ and interactions - very small-scale spatial structure - can help coexistence,
+ which we believe would be especially important for phytoplankton since
+ many species form colonies (
 \begin_inset CommandInset citation
 LatexCommand citealp
 key "reynolds2006ecology"
@@ -3147,13 +3177,21 @@ literal "false"
 \end_inset
 
 
+\change_deleted -2100369821 1530543285
+
+\end_layout
+
+\begin_layout Standard
+
+\change_inserted -2100369821 1530543269
+
 \end_layout
 
 \begin_layout Standard
 \begin_inset CommandInset bibtex
 LatexCommand bibtex
 btprint "btPrintCited"
-bibfiles "MyLibrary"
+bibfiles "My_actual_Library"
 options "../spbasic_nicer"
 
 \end_inset
@@ -3175,7 +3213,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename graphe/iter2_mean_biomass.pdf
+	filename graphe/FigS1.eps
 	lyxscale 50
 	width 95text%
 
@@ -3269,9 +3307,13 @@ name "fig:Not_representative_behaviour"
 \end_inset
 
 
+\change_deleted -2100369821 1530543413
+
 \end_layout
 
 \begin_layout Standard
+
+\change_deleted -2100369821 1530543413
 NOTE: figures below are here for discussion between us.
  I am not sure we should keep them in the paper.
  I think this illustrates an issue (?) in the model: when I removed the
@@ -3292,11 +3334,15 @@ literal "false"
 \end_layout
 
 \begin_layout Standard
+
+\change_deleted -2100369821 1530543413
 I also computed the evenness, not as an explanation but as a further exploration
  of the community.
 \end_layout
 
 \begin_layout Standard
+
+\change_deleted -2100369821 1530543413
 \begin_inset Float figure
 wide false
 sideways false
@@ -3341,6 +3387,8 @@ ly; with and without Stabilizing Niche Differences, + / - SND, respectively),
 \end_layout
 
 \begin_layout Standard
+
+\change_deleted -2100369821 1530543413
 \begin_inset Float figure
 wide false
 sideways false
@@ -3386,6 +3434,8 @@ ly; with and without Stabilizing Niche Differences, + / - SND, respectively),
 \end_layout
 
 \begin_layout Standard
+
+\change_deleted -2100369821 1530543406
 \begin_inset Float table
 wide false
 sideways false
@@ -3607,6 +3657,8 @@ Table corresponding to Fig.
 
 \end_inset
 
+
+\change_unchanged
 
 \end_layout
 

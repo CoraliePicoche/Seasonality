@@ -12,7 +12,7 @@ dir_output='./output_simulation/white_noise/';
 %Filename for +SE+SND
 extension='_10higher.mat';
 
-T = readtable("output_simulation/SV_same_temp/growth_rate_analysis.csv","Delimiter",";");
+T = readtable("output_simulation/growth_rate_analysis.txt","Delimiter",";");
 max_growth_rate=table2array(T(:,1));
 mean_growth_rate=table2array(T(:,3));
 
@@ -111,19 +111,19 @@ ylim([750 850])
 box off
 text(15.15,845,'a','Fontsize',afontsize)
 
-% yyaxis right;
-% plot(tau_opt-273,max_growth_rate,'o','MarkerEdgeColor','k','MarkerSize',3)
-% plot(tau_opt-273,mean_growth_rate,'o','MarkerFaceColor','k','MarkerEdgeColor','k','MarkerSize',3)
+yyaxis right;
+plot(tau_opt-273,max_growth_rate,'o','MarkerEdgeColor','k','MarkerSize',3)
+plot(tau_opt-273,mean_growth_rate,'o','MarkerFaceColor','k','MarkerEdgeColor','k','MarkerSize',3)
 
 hold off;
     pos = get(gca, 'Position')
      pos(1)=0.09;
      pos(2)=0.58;
-     pos(3)=0.41;
+     pos(3)=0.38;
      pos(4)=0.34;
-        tt1=title('1 species (-storage-SND)','Fontsize',afontsize);
+        tt1=title('1 species (-storage-SND)','Fontsize',afontsize,'FontWeight','Normal');
         titlePos = get( tt1 , 'position');
-        titlePos(2)=855;
+        titlePos(2)=858.6;
         set(tt1,'position',titlePos);
     set(gca,'Position',pos,'Fontsize',afontsize,'xtick',[])%,'ytick',[])
    
@@ -140,9 +140,9 @@ ylim([750 850])
     xlabel('Thermal optimum')
 box off
 text(15.15,845,'c','Fontsize',afontsize)
-% yyaxis right;
-% plot(tau_opt-273,max_growth_rate,'o','MarkerEdgeColor','k','MarkerSize',3)
-% plot(tau_opt-273,mean_growth_rate,'o','MarkerFaceColor','k','MarkerEdgeColor','k','MarkerSize',3)
+yyaxis right;
+plot(tau_opt-273,max_growth_rate,'o','MarkerEdgeColor','k','MarkerSize',3)
+plot(tau_opt-273,mean_growth_rate,'o','MarkerFaceColor','k','MarkerEdgeColor','k','MarkerSize',3)
 
 hold off;
         xtick(tau_opt(1:9:length(tau_opt))-273)
@@ -156,7 +156,7 @@ hold off;
             pos = get(gca, 'Position')
      pos(1)=0.09;
      pos(2)=0.17;
-     pos(3)=0.41;
+     pos(3)=0.38;
      pos(4)=0.34;
     set(gca,'Position',pos,'Fontsize',afontsize)
 box off;
@@ -174,19 +174,21 @@ text(2,0.95*maxi,'b','Fontsize',afontsize)
     pos = get(gca, 'Position')
      pos(1)=0.55;
      pos(2)=0.58;
-     pos(3)=0.41;
+     pos(3)=0.38;
      pos(4)=0.34;
 
-    tt2=title('60 species (+storage+SND)','Fontsize',afontsize);
+    tt2=title('60 species (+storage+SND)','Fontsize',afontsize,'FontWeight','Normal');
             titlePos = get( tt2 , 'position');
-            titlePos(2)=16.3;
+            titlePos(2)=16.9;
         set(tt2,'position',titlePos);
 
-%         yyaxis right;
-%         hold on;
-% plot(1:60,max_growth_rate,'o','MarkerEdgeColor','k','MarkerSize',3)
-% plot(1:60,mean_growth_rate,'o','MarkerFaceColor','k','MarkerEdgeColor','k','MarkerSize',3)
-% hold off;
+        yyaxis right;
+        hold on;
+plot(1:60,max_growth_rate,'o','MarkerEdgeColor','k','MarkerSize',3)
+plot(1:60,mean_growth_rate,'o','MarkerFaceColor','k','MarkerEdgeColor','k','MarkerSize',3)
+    ylabel('Scaled GR','Fontsize',afontsize)
+
+hold off;
 %         
     set(gca,'Position',pos,'Fontsize',afontsize,'xtick',[])
 
@@ -198,18 +200,20 @@ text(2,0.95*maxi,'b','Fontsize',afontsize)
             maxi=get(gca,'Ylim');
 maxi=maxi(2);
 text(2,12.75,'d','Fontsize',afontsize)
-% yyaxis right;
-% hold on;
-% plot(1:60,max_growth_rate,'o','MarkerEdgeColor','k','MarkerSize',3)
-% plot(1:60,mean_growth_rate,'o','MarkerFaceColor','k','MarkerEdgeColor','k','MarkerSize',3)
-% hold off;       
+yyaxis right;
+hold on;
+plot(1:60,max_growth_rate,'o','MarkerEdgeColor','k','MarkerSize',3)
+plot(1:60,mean_growth_rate,'o','MarkerFaceColor','k','MarkerEdgeColor','k','MarkerSize',3)
+    ylabel('Scaled GR','Fontsize',afontsize)
+
+hold off;       
 xtick(1:9:60)
         xticklabels(tau_opt(1:9:length(tau_opt))-273)       %ylim([mini maxi])
         set(gca,'XTickLabel',xaxlabel)
   %      xtickangle(90)
             pos = get(gca, 'Position')
              pos(1)=0.55;
-             pos(3)=0.41;
+             pos(3)=0.38;
              pos(2)=0.17;
     pos(4)=0.34;
             xlabel('Thermal optimum')
@@ -224,32 +228,78 @@ set(gcf,'Position',[675 549 1250 600])
 fig.PaperPositionMode = 'auto'
 fig_pos = fig.PaperPosition;
 fig.PaperSize = [fig_pos(3) fig_pos(4)];
-print(fig,'./Rapport/graphe/60_and_1species_no_GR','-dpdf')
+print(fig,'./article/graphe/Fig3','-depsc')
 
 %
-id_min=60;
-id_max=0;
-
-for iter=1:50
-    min_tmp=find(biomass_final_1(:,iter,1)>thresh_min);
-    if id_min>min_tmp
-        id_min=min_tmp;
-    end;
-    if id_max<min_tmp
-        id_max=min_tmp;
-    end
-end
-
-
-%Few tests
-tau_tmp=zeros(1,length(tau_opt));
- for s1=1:60
- tau_tmp(s1)=sum(biomass_final_1(s1,:,2)>0);
- end;
- median(std(biomass_final_60(:,:,1),[],2)./mean(biomass_final_60(:,:,1),2))
-
-% for f=1:60
-%     f
-%     mean(biomass_final_60(f,:,2),2)
+% id_min=60;
+% id_max=0;
+% 
+% for iter=1:50
+%     min_tmp=find(biomass_final_1(:,iter,1)>thresh_min);
+%     if id_mi[])
+% 
+%     subplot(2,2,4)
+%   %  yyaxis left
+%         boxplot(biomass_final_60(:,:,2)','BoxStyle','filled','Colors',col,'whisker',1000) 
+%         xlim([1 60.1])
+%     
+%             maxi=get(gca,'Ylim');
+% maxi=maxi(2);
+% text(2,12.75,'d','Fontsize',afontsize)
+% yyaxis right;
+% hold on;
+% plot(1:60,max_growth_rate,'o','MarkerEdgeColor','k','MarkerSize',3)
+% plot(1:60,mean_growth_rate,'o','MarkerFaceColor','k','MarkerEdgeColor','k','MarkerSize',3)
+%     ylabel('Normalized growth rate','Fontsize',afontsize)
+% 
+% hold off;       
+% xtick(1:9:60)
+%         xticklabels(tau_opt(1:9:length(tau_opt))-273)       %ylim([mini maxi])
+%         set(gca,'XTickLabel',xaxlabel)
+%   %      xtickangle(90)
+%             pos = get(gca, 'Position')
+%              pos(1)=0.55;
+%              pos(3)=0.41;
+%              pos(2)=0.17;
+%     pos(4)=0.34;
+%             xlabel('Thermal optimum')
+% 
+% 
+%     set(gca,'Position',pos,'Fontsize',afontsize)
+% box off;
+% 
+% 
+% %fig = gcf;
+% set(gcf,'Position',[675 549 1250 600])
+% fig.PaperPositionMode = 'auto'
+% fig_pos = fig.PaperPosition;
+% fig.PaperSize = [fig_pos(3) fig_pos(4)];
+% print(fig,'./article/graphe/Fig3','-depsc')
+% 
+% %
+% id_min=60;
+% id_max=0;
+% 
+% for iter=1:50
+%     min_tmp=find(biomass_final_1(:,iter,1)>thresh_min);
+%     if id_min>min_tmp
+%         id_min=min_tmp;
+%     end;
+%     if id_max<min_tmp
+%         id_max=min_tmp;
+%     end
 % end
-% %f=13 and f=57
+% 
+% 
+% %Few tests
+% tau_tmp=zeros(1,length(tau_opt));
+%  for s1=1:60
+%  tau_tmp(s1)=sum(biomass_final_1(s1,:,2)>0);
+%  end;
+%  median(std(biomass_final_60(:,:,1),[],2)./mean(biomass_final_60(:,:,1),2))
+% 
+% % for f=1:60
+% %     f
+% %     mean(biomass_final_60(f,:,2),2)
+% % end
+% % %f=13 and f=57

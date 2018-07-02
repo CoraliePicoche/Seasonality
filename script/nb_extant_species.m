@@ -4,7 +4,7 @@
 
 clear all; close all; clc;
 thresh_min=10^(-6);
-afontsize=14;
+afontsize=12;
 
 dir_output='./output_simulation/white_noise/';
 extant_species_wn=zeros(100,4);
@@ -114,8 +114,8 @@ set(gca,'Fontsize',afontsize)
 
 
 fig = gcf;
-set(fig,'Position',[680 558 800 320])
+set(fig,'Position',[680 558 800 420])
 fig.PaperPositionMode = 'auto'
 fig_pos = fig.PaperPosition;
 fig.PaperSize = [fig_pos(3) fig_pos(4)];
-print(fig,'./Rapport/graphe/extant_species','-dpdf')
+print(fig,'./article/graphe/Fig2','-depsc')

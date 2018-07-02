@@ -30,9 +30,9 @@ k=8.6173324*10^(-5); %Boltzmann's constant in eV.K-1
 
 c=jet(60);
 Big_R=zeros(10,3,60);
-for iter=1:10
+for iter=1:100
     iter
-    load(strcat('./output_simulation/SV_same_temp/iter',num2str(iter),'_codeversion_20180228_theta0.mat'));
+    load(strcat('./output_simulation/white_noise/iter',num2str(iter),'_codeversion_20180228_theta0.mat'));
         r=zeros(S,length(tau));
      for i=1:S
          r(i,:)=fun(tau,b(i),tau_opt(i));   
@@ -90,4 +90,4 @@ boxplot(var_tmp,'BoxStyle','filled','Colors','k','whisker',1000)
     set(gca, 'Position', pos,'Fontsize',14)
    
    T=table(Max,Standard_deviation,Mean_value)
-   writetable(T,'./output_simulation/SV_same_temp/growth_rate_analysis.txt')
+   writetable(T,'./output_simulation/growth_rate_analysis.txt','Delimiter',';')

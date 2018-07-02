@@ -5,12 +5,12 @@
 clear all; close all; clc;
 thresh_min=10^(-6);
 yspan=200;
-afontsize=13;
+afontsize=10;
 col=jet(60);
 
 subplot_id=zeros(1,2);
 
-T = readtable("output_simulation/SV_same_temp/growth_rate_analysis.csv","Delimiter",";");
+T = readtable("output_simulation/growth_rate_analysis.txt","Delimiter",";");
 max_growth_rate=table2array(T(:,1));
 mean_growth_rate=table2array(T(:,3));
 
@@ -94,12 +94,13 @@ plot(tau_opt-273,biomass_final_1(:,iter,2),'-o','MarkerFaceColor','r','LineWidth
         xtickangle(90)
 %end
 subplot_id(1)=ylabel('Biomass');
-set(gca,'Fontsize',14)
+set(gca,'Fontsize',afontsize)
 
 yyaxis right;
 plot(tau_opt-273,max_growth_rate,'o','MarkerEdgeColor','k','MarkerSize',3)
 plot(tau_opt-273,mean_growth_rate,'o','MarkerFaceColor','k','MarkerEdgeColor','k','MarkerSize',3)
 id=find(mean_growth_rate==1);
+ylabel('Scaled GR');
 
 text(15.1,1.*0.95,'a','Fontsize',afontsize)
 plot([tau_opt(id) tau_opt(id)]-273,[0 mean_growth_rate(id)],'--k','LineWidth',2)
@@ -205,12 +206,13 @@ plot(tau_opt-273,biomass_final_2(:,iter,2),'-o','MarkerFaceColor','r','LineWidth
         set(gca,'XTickLabel',xaxlabel)
        %  xtickangle(90)
 subplot_id(2)=ylabel('Biomass');
-set(gca,'Fontsize',14)
+set(gca,'Fontsize',afontsize)
 %end
 
 yyaxis right;
 plot(tau_opt-273,max_growth_rate,'o','MarkerEdgeColor','k','MarkerSize',3)
 plot(tau_opt-273,mean_growth_rate,'o','MarkerFaceColor','k','MarkerEdgeColor','k','MarkerSize',3)
+ylabel('Scaled GR');
 text(15.1,1*0.95,'b','Fontsize',afontsize)
 
 id=find(mean_growth_rate==1);
@@ -226,26 +228,27 @@ for i=[1 2]
     set(subplot_id(i), 'Position',[xpos, positions(i,2), positions(i,3)]);
 end
 hold off;
+get(fig,'Position')
 fig.PaperPositionMode = 'auto'
 fig_pos = fig.PaperPosition;
 fig.PaperSize = [fig_pos(3) fig_pos(4)];
-print(fig,'./Rapport/graphe/figure_4','-dtiff')
+print(fig,'./article/graphe/Fig4','-depsc')
 
 
 %
-id_min=60;
-id_max=zeros(1,100);
-for iter=1:100
-    min_tmp=min(find(biomass_final_2(:,iter,2)>thresh_min))
-    if id_min>min_tmp
-        id_min=min_tmp;
-    end;
-        id_max(iter)=max(find(biomass_final_2(:,iter,2)>thresh_min));
-end
-
-tau_tmp=zeros(1,length(tau_opt));
-for s1=1:60
-tau_tmp(s1)=sum(biomass_final_1(s1,:,2)>0);
-end;
+% id_min=60;
+% id_max=zeros(1,100);
+% for iter=1:100
+%     min_tmp=min(find(biomass_final_2(:,iter,2)>thresh_min))
+%     if id_min>min_tmp
+%         id_min=min_tmp;
+%     end;
+%         id_max(iter)=max(find(biomass_final_2(:,iter,2)>thresh_min));
+% end
+% 
+% tau_tmp=zeros(1,length(tau_opt));
+% for s1=1:60
+% tau_tmp(s1)=sum(biomass_final_1(s1,:,2)>0);
+% end;
 
 

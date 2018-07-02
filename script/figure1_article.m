@@ -11,7 +11,7 @@ col=jet(60);
 S=60;
 
 %Graphics
-afontsize=12;
+afontsize=8;
 alinewidth=2.;
 
 %a) Theta=0
@@ -69,8 +69,8 @@ use_community=youtbis((yend-ylast):yend,:);
 h(2)=subplot(2,2,2)
 plot(use_temperature-273.15,'-k','LineWidth',.5)
 maxi=get(gca,'Ylim');
-maxi=maxi(2);
-text(15,0.95*maxi,'b','Fontsize',afontsize)
+maxi=maxi(2)
+text(15,0.95*35,'b','Fontsize',afontsize)
 xticks(seq*365);
 xticklabels(round(seq,2)-round(seq(1),2));
 xlim([seq(1)*365 seq(end)*365])
@@ -86,7 +86,7 @@ for s1=1:S
     end    
 end;
 maxi=get(gca,'Ylim');
-maxi=max(2);
+maxi=maxi(2);
 text(15,0.95*maxi,'d','Fontsize',afontsize)
 xticks(seq*365);
 xticklabels(round(seq,2)-round(seq(1),2));
@@ -112,10 +112,13 @@ for i=[1 2]
 end
 
 fig = gcf;
+set(fig,'Position',[680 558 520 420])
 fig.PaperPositionMode = 'auto'
 fig_pos = fig.PaperPosition;
 fig.PaperSize = [fig_pos(3) fig_pos(4)];
-print(fig,'./Rapport/graphe/essai','-dpdf')
+get(fig,'Position')
+get(gca,'FontSize')
+print(fig,'./article/graphe/Fig1','-depsc')
 
 
 % Appendices
@@ -126,10 +129,11 @@ for s1=1:S
     bar(tau_opt(s1)-273,mean_value(s1),0.1,'FaceColor',col(s1,:));
 end;
 pos=get(gca,'Position')
-pos(1)=0.07;
+pos(1)=0.07;pos(2)=0.15;
 pos(3)=0.43;
 set(gca,'Position',pos)
 ylabel('Biomass')
+xlabel('Thermal optimum')
 mini=min(mean_value(mean_value>0));
 ylimit=[mini*0.95 max(mean_value)+0.05*mini]; 
 set(gca,'yscale','log','Fontsize',16,'YLim',ylimit)
@@ -142,16 +146,18 @@ for s1=1:S
 end;
 %ylabel('Biomass')
 pos=get(gca,'Position')
-pos(1)=0.56
+pos(1)=0.56;pos(2)=0.15;
 pos(3)=0.43;
 set(gca,'Position',pos)
 mini=min(mean_value(mean_value>0));
 ylimit=[mini*0.95 max(mean_value)+0.05*mini]; 
 set(gca,'yscale','log','Fontsize',16,'YLim',ylimit)
+xlabel('Thermal optimum')
 hold off;
 fig = gcf;
 set(fig,'Position',[680 558 1200 420])
+get(gca,'FontSize')
 fig.PaperPositionMode = 'auto'
 fig_pos = fig.PaperPosition;
 fig.PaperSize = [fig_pos(3) fig_pos(4)];
-print(fig,'./Rapport/graphe/iter2_mean_biomass','-dpdf')
+print(fig,'./article/graphe/FigS1','-depsc')
