@@ -100,7 +100,7 @@ yyaxis right;
 plot(tau_opt-273,max_growth_rate,'o','MarkerEdgeColor','k','MarkerSize',3)
 plot(tau_opt-273,mean_growth_rate,'o','MarkerFaceColor','k','MarkerEdgeColor','k','MarkerSize',3)
 id=find(mean_growth_rate==1);
-ylabel('Scaled GR');
+ylabel('Growth rate');
 
 text(15.1,1.*0.95,'a','Fontsize',afontsize)
 plot([tau_opt(id) tau_opt(id)]-273,[0 mean_growth_rate(id)],'--k','LineWidth',2)
@@ -212,7 +212,7 @@ set(gca,'Fontsize',afontsize)
 yyaxis right;
 plot(tau_opt-273,max_growth_rate,'o','MarkerEdgeColor','k','MarkerSize',3)
 plot(tau_opt-273,mean_growth_rate,'o','MarkerFaceColor','k','MarkerEdgeColor','k','MarkerSize',3)
-ylabel('Scaled GR');
+ylabel('Growth rate');
 text(15.1,1*0.95,'b','Fontsize',afontsize)
 
 id=find(mean_growth_rate==1);

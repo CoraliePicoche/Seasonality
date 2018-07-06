@@ -114,7 +114,7 @@ text(15.15,845,'a','Fontsize',afontsize)
 yyaxis right;
 plot(tau_opt-273,max_growth_rate,'o','MarkerEdgeColor','k','MarkerSize',3)
 plot(tau_opt-273,mean_growth_rate,'o','MarkerFaceColor','k','MarkerEdgeColor','k','MarkerSize',3)
-
+set(gca,'YTickLabel',[]);
 hold off;
     pos = get(gca, 'Position')
      pos(1)=0.09;
@@ -143,7 +143,7 @@ text(15.15,845,'c','Fontsize',afontsize)
 yyaxis right;
 plot(tau_opt-273,max_growth_rate,'o','MarkerEdgeColor','k','MarkerSize',3)
 plot(tau_opt-273,mean_growth_rate,'o','MarkerFaceColor','k','MarkerEdgeColor','k','MarkerSize',3)
-
+set(gca,'YTickLabel',[]);
 hold off;
         xtick(tau_opt(1:9:length(tau_opt))-273)
         %ylim([mini maxi
@@ -186,7 +186,7 @@ text(2,0.95*maxi,'b','Fontsize',afontsize)
         hold on;
 plot(1:60,max_growth_rate,'o','MarkerEdgeColor','k','MarkerSize',3)
 plot(1:60,mean_growth_rate,'o','MarkerFaceColor','k','MarkerEdgeColor','k','MarkerSize',3)
-    ylabel('Scaled GR','Fontsize',afontsize)
+    ylabel('Growth rate','Fontsize',afontsize)
 
 hold off;
 %         
@@ -204,7 +204,7 @@ yyaxis right;
 hold on;
 plot(1:60,max_growth_rate,'o','MarkerEdgeColor','k','MarkerSize',3)
 plot(1:60,mean_growth_rate,'o','MarkerFaceColor','k','MarkerEdgeColor','k','MarkerSize',3)
-    ylabel('Scaled GR','Fontsize',afontsize)
+    ylabel('Growth rate','Fontsize',afontsize)
 
 hold off;       
 xtick(1:9:60)

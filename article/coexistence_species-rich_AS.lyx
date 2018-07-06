@@ -3957,7 +3957,7 @@ But distribution is unimodal.
 \begin_inset CommandInset bibtex
 LatexCommand bibtex
 btprint "btPrintCited"
-bibfiles "MyLibrary"
+bibfiles "My_actual_Library"
 options "../spbasic_nicer"
 
 \end_inset

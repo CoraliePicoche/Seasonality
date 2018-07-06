@@ -4,7 +4,10 @@
 
 clear all; close all; clc;
 thresh_min=10^(-6);
-afontsize=12;
+afontsize=8;
+
+max_temp=20+273.15;
+min_temp=20+273.15;
 
 dir_output='./output_simulation/white_noise/';
 extant_species_wn=zeros(100,4);
@@ -17,6 +20,12 @@ for iter=1:100
     load(filename)
     nb_species=sum(youtbis'>thresh_min);
     extant_species_wn(iter,1)=nb_species(end);
+            if max(tau)>max_temp
+        max_temp=max(tau);
+    end
+    if min(tau)<min_temp
+        min_temp=min(tau);
+    end;
 end;
 
 
@@ -57,6 +66,7 @@ for iter=1:100
     load(filename)
     nb_species=sum(youtbis'>thresh_min);
     extant_species_season(iter,1)=nb_species(end);
+
 end;
 
 %Filename for +SE-SND
@@ -66,6 +76,7 @@ for iter=1:100
     load(filename)
     nb_species=sum(youtbis'>thresh_min);
     extant_species_season(iter,2)=nb_species(end);
+
 end;
 
 %Filename for -SE+SND
@@ -76,6 +87,7 @@ for iter=1:100
     load(filename)
     nb_species=sum(youtbis'>thresh_min);
     extant_species_season(iter,3)=nb_species(end);
+
 end;
 
 %Filename for +SE+SND
@@ -85,6 +97,7 @@ for iter=1:100
     load(filename)
     nb_species=sum(youtbis'>thresh_min);
     extant_species_season(iter,4)=nb_species(end); 
+
 end;
 
 tmp=[extant_species_wn(:,1) extant_species_season(:,1) extant_species_wn(:,2) extant_species_season(:,2) extant_species_wn(:,3) extant_species_season(:,3) extant_species_wn(:,4) extant_species_season(:,4)];
@@ -110,11 +123,15 @@ for j=1:length(h)
 patch(get(h(j),'XData'),get(h(j),'YData'),col(j),'FaceAlpha',.5,'LineWidth',ll(j));
 end
 ylabel('Number of extant species')
-set(gca,'Fontsize',afontsize)
-
+set(gca,'Fontsize',9)
+pos=get(gca,'Position')
+pos(1)=0.12;
+pos(3)=0.8;
+set(gca,'Position',pos)
+%box off;
 
 fig = gcf;
-set(fig,'Position',[680 558 800 420])
+set(fig,'Position',[680 558 520 350])
 fig.PaperPositionMode = 'auto'
 fig_pos = fig.PaperPosition;
 fig.PaperSize = [fig_pos(3) fig_pos(4)];

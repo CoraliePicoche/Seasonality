@@ -1495,7 +1495,7 @@ literal "false"
 
 
 \begin_inset Note Note
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
@@ -1506,6 +1506,12 @@ They go from -1.8°C to 30°C, so the temperature range here is slightly more
  to get closer to empirical environmental fluctuations.
  Not sure it is necessary to address this right away, but it might arise
  in reviewers' comments.
+
+\change_inserted -2100369821 1530869066
+ Here, when considering all seasonal simulations, temperatures range from
+ 2.4°C to 36.5°C : it's an even larger range! I'm wondering if we really need
+ that info, or at least if we shouldn't give it the range also for the white
+ noise? ([-8;48] Whoops...)
 \change_unchanged
 
 \end_layout
@@ -2035,7 +2041,12 @@ literal "false"
 
 \end_inset
 
-) and 
+) and
+\change_inserted -2100369821 1530623365
+ Eq.
+
+\change_unchanged
+ 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:Seasonal_signal"
@@ -2093,6 +2104,17 @@ area
  m3 or L ??
 \change_inserted -666822487 1527668352
  YES
+\change_inserted -2100369821 1530869796
+.
+ I took values from Reynolds 2006 (table 3.4).
+ If we consider a temperate ocean, standing biomass is between 20 and 70
+ mgC.m^-3.
+ If we take the average ocean depth around 3.7 km, it gives use between 80
+ and 280 gC m^-2 (compared to about 800 kgC/area !).
+ If we consider a hypertrophic lake (500-2500 mgC.m^-3) and a *very* deep
+ lake (around 1000m), we have a maximum of 2.5 kgC.m^-2 (still 100 times lower).
+ I have no idea what area they're considering to find this biomass...
+ 
 \change_unchanged
 
 \end_layout
@@ -2217,6 +2239,8 @@ d
  missing on the fourth graph?
 \change_inserted -666822487 1530477784
  YES
+\change_inserted -2100369821 1530869808
+ Corrected
 \change_unchanged
 
 \end_layout
@@ -2288,7 +2312,27 @@ noprefix "false"
 
 \end_inset
 
-).
+)
+\change_inserted -2100369821 1530869842
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted -2100369821 1530869906
+Alix, I saw you asked for the mean+SD of this value but I'm not sure it
+ would make sense: I can't compute a ratio for each couple of iteration
+ (wn/season), cause they have nothing to do with one another
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+.
  A seasonal signal therefore led to a much smaller average persistence.
  There was also less variance in persistence between seasonally forced simulatio
 ns when compared to white noise simulations.
@@ -2305,11 +2349,41 @@ s
 \change_unchanged
 .
  When only the storage effect was present, the number of extant species
- varied between 8 and 20 with a white noise, or 2 and 6 with a seasonal
- signal.
+ varied between 8 and 20 with a white noise
+\change_inserted -2100369821 1530870253
+ (14.8 
+\begin_inset Formula $\pm$
+\end_inset
+
+ 2.4)
+\change_unchanged
+, or 2 and 6 with a seasonal signal
+\change_inserted -2100369821 1530870276
+ (4.1 
+\begin_inset Formula $\pm$
+\end_inset
+
+ 0.7)
+\change_unchanged
+.
  On the other hand, when only stabilizing niche differences were present,
- the number of extant species nearly doubled, varying between 20 and 32,
- or 12 and 15, with a white noise or a seasonal signal respectively.
+ the number of extant species nearly doubled, varying between 20 and 32
+\change_inserted -2100369821 1530870295
+ (27.5 
+\begin_inset Formula $\pm$
+\end_inset
+
+ 2.4)
+\change_unchanged
+, or 12 and 15
+\change_inserted -2100369821 1530870309
+ (13.3 
+\begin_inset Formula $\pm$
+\end_inset
+
+ 0.6)
+\change_unchanged
+, with a white noise or a seasonal signal respectively.
  Remarkably, when the storage effect and stabilizing niche differences (SNDs)
  both affected the community dynamics, all species persisted in the community,
  while neither the storage nor SNDs were able to produce that result alone,
@@ -2352,6 +2426,28 @@ name "fig:Persistence-of-species"
 
 \end_inset
 
+
+\change_inserted -2100369821 1530870076
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted -2100369821 1530870155
+Ok, I know this fig.
+ looks weirdly blurry but I have no idea what's going on.
+ Size of the figure, font, fonsizes have been taken from fig.1 and it did
+ not correct anything.
+ This is the least bad figure I got (same applies to the following 2)
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
 
 \end_layout
 
@@ -2409,6 +2505,19 @@ noprefix "false"
  a).
  This distribution can be related to a selection for the highest long-term
  growth rates, averaged over time (see normalized growth rates in Fig.
+\change_inserted -2100369821 1530869941
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Mean-biomass-in_stable_cases"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+
+\change_deleted -2100369821 1530869939
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -2420,10 +2529,8 @@ noprefix "false"
 \end_inset
 
 
-\change_inserted -1378791593 1528124907
-
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -2449,9 +2556,24 @@ noprefix "false"
 \change_unchanged
 ).
  On the contrary, seasonality tended to favour species with larger maximum
- growth rates, with thermal optima above 22°C, their frequency of persistence
-\change_inserted -1378791593 1528125070
-
+ growth rates
+\change_deleted -2100369821 1530869953
+, 
+\change_inserted -2100369821 1530869954
+ (
+\change_deleted -2100369821 1530869958
+with 
+\change_unchanged
+thermal optima above 22°C
+\change_deleted -2100369821 1530869963
+,
+\change_inserted -2100369821 1530870001
+).
+ Species with a higher thermal optima are more likely to persist and to
+ reach a higher biomass at the end of the simulation.
+ 
+\change_deleted -2100369821 1530870013
+ their frequency of persistence
 \begin_inset Note Note
 status open
 
@@ -2467,8 +2589,6 @@ This is a funny phrasing.
 
 \end_inset
 
-
-\change_unchanged
  and mean biomass increasing with the thermal optimum (Fig.
  
 \begin_inset CommandInset ref
@@ -2481,7 +2601,9 @@ noprefix "false"
 \end_inset
 
 ).
- 38% of the simulations therefore ended with the species having the highest
+ 
+\change_unchanged
+38% of the simulations therefore ended with the species having the highest
  temperature optimum, 25°C.
  
 \end_layout
@@ -2546,6 +2668,9 @@ status open
 
 \change_inserted -1378791593 1528125807
 Is the last bit necessary?
+\change_inserted -2100369821 1530870167
+ No.
+ 
 \change_unchanged
 
 \end_layout
@@ -2591,7 +2716,11 @@ Mean biomass distribution over the last 200 years of 100 simulations, as
  There can be several dots for the same species, corresponding to multiple
  simulations ending with this species alone) and with storage effect and
  stabilizing niche differences (right, all species are present at the end
- of the simulation, their mean biomass
+ of the simulation, 
+\change_inserted -2100369821 1530870049
+the mean biomass of each species
+\change_deleted -2100369821 1530870044
+their mean biomass
 \change_inserted -1378791593 1528124760
 
 \begin_inset Note Note
@@ -2632,6 +2761,8 @@ Growth rate
 \end_inset
 
 
+\change_inserted -2100369821 1530870069
+ Done
 \change_inserted 274868703 1526282377
 ].
 
@@ -2765,6 +2896,8 @@ Growth rates
 \end_inset
 
 ]
+\change_inserted -2100369821 1530870180
+ Done.
 \change_unchanged
 
 \end_layout
@@ -3070,18 +3203,22 @@ Bolker and Pacala Am Nat 2000
 \change_inserted -2100369821 1530544489
 
 \begin_inset CommandInset citation
-LatexCommand citet
-key "bolker_spatial_1999"
+LatexCommand citep
+key "bolker_spatial_1999,murrell_2002"
 literal "false"
 
 \end_inset
 
 
 \change_unchanged
-, Murrell and Law Ecology 2002) have shown that spatially restricted movements
- and interactions - very small-scale spatial structure - can help coexistence,
- which we believe would be especially important for phytoplankton since
- many species form colonies (
+, 
+\change_deleted -2100369821 1530712815
+Murrell and Law Ecology 2002
+\change_unchanged
+) have shown that spatially restricted movements and interactions - very
+ small-scale spatial structure - can help coexistence, which we believe
+ would be especially important for phytoplankton since many species form
+ colonies (
 \begin_inset CommandInset citation
 LatexCommand citealp
 key "reynolds2006ecology"
