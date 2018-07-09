@@ -93,8 +93,15 @@ fig=figure;
 set(fig,'defaultAxesColorOrder',[[0 0 0]; [0 0 0]]);
 
 subplot(2,2,1)
+
 hold on
-%yyaxis left
+
+yyaxis right;
+plot(tau_opt-273,max_growth_rate,'o','MarkerEdgeColor','k','MarkerSize',3)
+plot(tau_opt-273,mean_growth_rate,'o','MarkerFaceColor','k','MarkerEdgeColor','k','MarkerSize',3)
+set(gca,'YTickLabel',[]);
+
+yyaxis left
 for s1=1:60
  plot(tau_opt(s1)-273,biomass_final_1(s1,:,1),'o','MarkerFaceColor',col(s1,:),'MarkerEdgeColor','k')
 end
@@ -107,15 +114,11 @@ xlim([min(tau_opt)-273 max(tau_opt)-273+0.1])
 ylim([750 850])
     ylabel('Biomass')
  
-   
+   hold off;
 box off
 text(15.15,845,'a','Fontsize',afontsize)
 
-yyaxis right;
-plot(tau_opt-273,max_growth_rate,'o','MarkerEdgeColor','k','MarkerSize',3)
-plot(tau_opt-273,mean_growth_rate,'o','MarkerFaceColor','k','MarkerEdgeColor','k','MarkerSize',3)
-set(gca,'YTickLabel',[]);
-hold off;
+
     pos = get(gca, 'Position')
 pos(1)=0.13;
 pos(2)=0.5838;
@@ -129,7 +132,12 @@ pos(4)=0.3412;
    
 subplot(2,2,3)
 hold on
-%yyaxis left
+yyaxis right;
+plot(tau_opt-273,max_growth_rate,'o','MarkerEdgeColor','k','MarkerSize',3)
+plot(tau_opt-273,mean_growth_rate,'o','MarkerFaceColor','k','MarkerEdgeColor','k','MarkerSize',3)
+set(gca,'YTickLabel',[]);
+
+yyaxis left
 for s1=1:60
  plot(tau_opt(s1)-273,biomass_final_1(s1,:,2),'o','MarkerFaceColor',col(s1,:),'MarkerEdgeColor','k')
 end
@@ -140,10 +148,7 @@ ylim([750 850])
     xlabel('Thermal optimum')
 box off
 text(15.15,845,'c','Fontsize',afontsize)
-yyaxis right;
-plot(tau_opt-273,max_growth_rate,'o','MarkerEdgeColor','k','MarkerSize',3)
-plot(tau_opt-273,mean_growth_rate,'o','MarkerFaceColor','k','MarkerEdgeColor','k','MarkerSize',3)
-set(gca,'YTickLabel',[]);
+
 hold off;
         xtick(tau_opt(1:9:length(tau_opt))-273)
         %ylim([mini maxi
@@ -162,13 +167,20 @@ pos(4)=0.3412;
 box off;
 
 subplot(2,2,2)
-%yyaxis left
+        yyaxis right;
+        hold on;
+plot(1:60,max_growth_rate,'o','MarkerEdgeColor','k','MarkerSize',3)
+plot(1:60,mean_growth_rate,'o','MarkerFaceColor','k','MarkerEdgeColor','k','MarkerSize',3)
+    ylabel('Growth rate','Fontsize',afontsize)
+
+yyaxis left
     boxplot(biomass_final_60(:,:,1)','BoxStyle','filled','Colors',col,'whisker',1000)
     xlim([1 60.1])
     maxi=get(gca,'Ylim');
 maxi=maxi(2);
 text(2,0.95*maxi,'b','Fontsize',afontsize)
     %ylim([mini maxi])
+
     box off;
 %left bottom width height
     pos = get(gca, 'Position')
@@ -182,29 +194,25 @@ pos(4)=0.3412;
             titlePos(2)=16.9;
         set(tt2,'position',titlePos);
 
-        yyaxis right;
-        hold on;
-plot(1:60,max_growth_rate,'o','MarkerEdgeColor','k','MarkerSize',3)
-plot(1:60,mean_growth_rate,'o','MarkerFaceColor','k','MarkerEdgeColor','k','MarkerSize',3)
-    ylabel('Growth rate','Fontsize',afontsize)
 
 hold off;
 %         
     set(gca,'Position',pos,'Fontsize',afontsize,'xtick',[])
 
     subplot(2,2,4)
-  %  yyaxis left
+    yyaxis right;
+hold on;
+plot(1:60,max_growth_rate,'o','MarkerEdgeColor','k','MarkerSize',3)
+plot(1:60,mean_growth_rate,'o','MarkerFaceColor','k','MarkerEdgeColor','k','MarkerSize',3)
+    ylabel('Growth rate','Fontsize',afontsize)
+    yyaxis left
         boxplot(biomass_final_60(:,:,2)','BoxStyle','filled','Colors',col,'whisker',1000) 
         xlim([1 60.1])
     
             maxi=get(gca,'Ylim');
 maxi=maxi(2);
 text(2,12.75,'d','Fontsize',afontsize)
-yyaxis right;
-hold on;
-plot(1:60,max_growth_rate,'o','MarkerEdgeColor','k','MarkerSize',3)
-plot(1:60,mean_growth_rate,'o','MarkerFaceColor','k','MarkerEdgeColor','k','MarkerSize',3)
-    ylabel('Growth rate','Fontsize',afontsize)
+
 
 hold off;       
 xtick(1:9:60)

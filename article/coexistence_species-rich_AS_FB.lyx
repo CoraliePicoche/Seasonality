@@ -175,16 +175,53 @@ Explaining coexistence in species-rich communities of primary producers
  Following Hutchinson’s seminal suggestion, many theoreticians have tried
  to create diversity through a fluctuating environment, which impairs or
  slows down competitive exclusion.
- There are now several fluctuating-environments models that allow coexistence,
- but they often produce only a dozen of coexisting species at best.
+ There are now several fluctuating-environment
+\change_deleted -2100369821 1531131330
+s
+\change_unchanged
+ models that allow coexistence, but they often produce only a dozen of coexistin
+g species at best.
  Here, we investigate what it would take to create even richer communities
  in fluctuating environments using an empirically parameterized model.
  Building on the forced multi-species Lotka-Volterra model of Scranton and
- Vasseur (2016), we have investigated the effect of two coexistence mechanisms,
- namely the storage effect and stabilizing niche differences (SNDs).
+ Vasseur (2016)
+\change_inserted -2100369821 1531139653
+ inspired by phytoplankton communities
+\change_unchanged
+, we have investigated the effect of two coexistence mechanisms, namely
+ the storage effect and stabilizing niche differences (SNDs).
  SNDs occur when intraspecific competition is stronger than interspecific
- (as opposed to neutral models where competition is symmetric), and we tuned
- the competition ratio based on empirical phytoplankton data.
+ (as opposed to neutral models where competition is symmetric
+\change_inserted -2100369821 1531139475
+
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted -2100369821 1531139563
+May be a stupid remark, but for me, a symmetric competition would mean 
+\begin_inset Formula $\alpha_{ij}=\alpha_{ji}$
+\end_inset
+
+, not necessarily 
+\begin_inset Formula $\alpha_{ij}=\alpha_{ii}$
+\end_inset
+
+
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+), and we tuned the competition ratio based on empirical 
+\change_deleted -2100369821 1531139672
+phytoplankton 
+\change_unchanged
+data.
  Although SNDs maintained more species than the storage effect (50 % w.r.t
  25%), we show that none of the two coexistence mechanisms considered could,
  by itself, ensure the coexistence of all species present at the beginning
@@ -253,8 +290,12 @@ literal "false"
  put forward the concept of 'clumpy coexistence', whereby niche and neutral
  community assembly may be simultaneously at work, creating several clumps
  of similar species along a single trait axis.
- Classical stabilizing niche differences enable coexistence of multiple
- clumps through stronger net intraspecific competition 
+ Classical stabilizing niche differences
+\change_inserted -2100369821 1531140895
+ (SNDs)
+\change_unchanged
+ enable coexistence of multiple clumps through stronger net intraspecific
+ competition 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "chesson_mechanisms_2000"
@@ -347,9 +388,28 @@ literal "false"
 
 .
  In these temporal-variation models, equal competitive strengths are combined
- with other mechanisms like the storage effect that increase the possibility
- of coexistence by making the interaction strength covary with a fluctuating
- environment (see also 
+ with other mechanisms like the storage effect
+\change_inserted -2100369821 1531139961
+ (or temporal niche partitioning, that is equivalent concepts for forced
+ Lotka-Volterra models, 
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "barabas_community_2012,scranton_coexistence_2016"
+literal "false"
+
+\end_inset
+
+)
+\change_unchanged
+ that increase
+\change_inserted -2100369821 1531139966
+s
+\change_unchanged
+ the possibility of coexistence by making the interaction strength covary
+\change_inserted -2100369821 1531139949
+ positively
+\change_unchanged
+ with a fluctuating environment (see also 
 \begin_inset CommandInset citation
 LatexCommand citealp
 key "barabas_community_2012"
@@ -371,9 +431,10 @@ literal "false"
 \end_inset
 
  to investigate the possibility of coexistence through species response
- to fluctuating environments (the so-called storage effect or temporal niche
- partitioning, that are equivalent concepts for forced Lotka-Volterra models,
- 
+ to fluctuating environments
+\change_deleted -2100369821 1531139941
+ (the so-called storage effect or temporal niche partitioning, that are
+ equivalent concepts for forced Lotka-Volterra models, 
 \begin_inset CommandInset citation
 LatexCommand citealp
 key "barabas_community_2012,scranton_coexistence_2016"
@@ -381,7 +442,9 @@ literal "false"
 
 \end_inset
 
-).
+)
+\change_unchanged
+.
  Our enthusiasm for the 
 \begin_inset CommandInset citation
 LatexCommand citet
@@ -391,8 +454,15 @@ literal "false"
 \end_inset
 
  model stems from our interest in phytoplankton communities, that were the
- key inspiration for the thermal preferences curves modelling intrinsic
- growth rates in 
+ key inspiration for the thermal preference
+\change_deleted -2100369821 1531139829
+s
+\change_unchanged
+ curves model
+\change_deleted -2100369821 1531139839
+l
+\change_unchanged
+ing intrinsic growth rates in 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "scranton_coexistence_2016"
@@ -422,8 +492,11 @@ literal "false"
 \end_inset
 
 .
- Over short timescales, random temporal variation therefore often only add
- noise to a largely deterministic seasonal trend.
+ Over short timescales, random temporal variation
+\change_inserted -2100369821 1531139852
+s
+\change_unchanged
+ therefore often only add noise to a largely deterministic seasonal trend.
  Our present work can therefore be seen as an attempt to blend 
 \begin_inset CommandInset citation
 LatexCommand citet
@@ -440,8 +513,12 @@ literal "false"
 
 \end_inset
 
-, to better representthe mixture of stochastic and deterministic environmental
- forces affecting phytoplankton community dynamics.
+, to better represent
+\change_inserted -2100369821 1531139859
+ 
+\change_unchanged
+the mixture of stochastic and deterministic environmental forces affecting
+ phytoplankton community dynamics.
  
 \end_layout
 
@@ -455,8 +532,14 @@ literal "false"
 
 \end_inset
 
-, we hypothetized that a large seasonal variation might not necessarily
- foster species coexistence.
+, we hypothe
+\change_deleted -2100369821 1531139980
+t
+\change_inserted -2100369821 1531139980
+s
+\change_unchanged
+ized that a large seasonal variation might not necessarily foster species
+ coexistence.
  In fact, similar responses to seasonal fluctuations should lead to an increased
  synchrony of species abundances which, in turn, should theoretically mitigate
  the expected temporal partitioning.
@@ -473,11 +556,21 @@ literal "false"
 
 \end_inset
 
-'s model that the overall diversity obtained after 5000 years was relatively
- low compared to what we usually observe in phytoplankton communities (several
- dozens to hundreds of species).
- We have therefore sought out which mechanisms to add to attain a truly
- species-rich community for extended periods of time.
+'s model that the overall diversity obtained 
+\change_deleted -2100369821 1531139998
+after 5000 years
+\change_inserted -2100369821 1531140006
+at the end of the simulations
+\change_unchanged
+ was relatively low compared to what we usually observe in phytoplankton
+ communities (several dozens to hundreds of species).
+ We have therefore sought out which mechanisms
+\change_deleted -2100369821 1531140025
+ to add to attain
+\change_inserted -2100369821 1531140032
+ would foster
+\change_unchanged
+ a truly species-rich community for extended periods of time.
  
 \end_layout
 
@@ -485,7 +578,7 @@ literal "false"
 In an empirical study combining phytoplankton community-level time series
  and multivariate autoregressive models 
 \begin_inset CommandInset citation
-LatexCommand citealp
+LatexCommand citep
 key "barraquand_weak_2017"
 literal "false"
 
@@ -493,8 +586,11 @@ literal "false"
 
 , we found that despite a large influence of the environment (including
  temperature, irradiance, and other factors), intraspecific (or intragenus)
- competition was rather large and most likely the key driver of species
- coexistence.
+ competition was
+\change_deleted -2100369821 1531140064
+ rather large and 
+\change_unchanged
+most likely the key driver of species coexistence.
  In other words, stabilizing niche differences had a large role to play
  in maintaining species diversity in coastal phytoplankton 
 \begin_inset CommandInset citation
@@ -509,8 +605,13 @@ literal "false"
 
 \begin_layout Standard
 Here, we therefore try to establish what are the relative contributions
- of the storage effect vs intraspecific density-dependence to coexistence
- in a phytoplankton-like theoretical community model.
+ of the storage effect vs 
+\change_deleted -2100369821 1531140090
+intraspecific density-dependence
+\change_inserted -2100369821 1531140091
+SNDs
+\change_unchanged
+ to coexistence in a phytoplankton-like theoretical community model.
  This led us to cross different combinations of seasonality in the forcing
  signal, presence of the storage effect or not, and intra- vs interspecific
  competition, in order to disentangle the contributions of all these factors
@@ -1342,7 +1443,13 @@ K
 \begin_inset Text
 
 \begin_layout Plain Layout
-Scaling between white noise to seasonal signal
+Scaling between white noise 
+\change_deleted -2100369821 1531140158
+to
+\change_inserted -2100369821 1531140158
+and
+\change_unchanged
+ seasonal signal
 \end_layout
 
 \end_inset
@@ -1433,8 +1540,11 @@ noprefix "false"
 \begin_inset Formula $\theta$
 \end_inset
 
- so as to keep the same energy content - equal total variance - in the forcing
- signal.
+ so as to keep the same energy content - 
+\change_inserted -2100369821 1531140222
+ie., 
+\change_unchanged
+equal total variance - in the forcing signal.
 \end_layout
 
 \begin_layout Standard
@@ -1460,7 +1570,7 @@ Note that the upper limit for
 , corresponds to a completely determinist model which we do not explore
  here (but see 
 \begin_inset CommandInset citation
-LatexCommand citealp
+LatexCommand citet
 key "zhao1991qualitative"
 literal "false"
 
@@ -1474,7 +1584,25 @@ literal "false"
 
  
 \change_inserted -1378791593 1528118372
-with temperature ranging from ## to ## over one year 
+with temperature ranging from ## to ## over one year
+\change_inserted -2100369821 1531140173
+
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted -2100369821 1531140179
+See note in .lyx
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_inserted -1378791593 1528118372
+ 
 \change_unchanged
 (see Fig.
  
@@ -1546,7 +1674,11 @@ literal "true"
 \end_inset
 
  implies a storage effect, as the competition strengths covary positively
- with the growth rate value 
+ with the growth rate value
+\change_inserted -2100369821 1531140254
+s
+\change_unchanged
+ 
 \begin_inset Formula $r_{i}(\tau)$
 \end_inset
 
@@ -1735,6 +1867,24 @@ noprefix "false"
 
 \end_inset
 
+
+\change_inserted -2100369821 1531140272
+
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted -2100369821 1531140282
+Should we number the equations in the table?
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
 .
 \end_layout
 
@@ -1967,8 +2117,27 @@ literal "false"
 
 \end_inset
 
- so as to investigate on how synthetic phytoplankton communities structure
- under the various scenarios we described above.
+ so as to investigate
+\change_deleted -2100369821 1531140291
+ on
+\change_unchanged
+ how
+\change_inserted -2100369821 1531140297
+ the structure of
+\change_unchanged
+ synthetic phytoplankton communities 
+\change_deleted -2100369821 1531140300
+structure
+\change_inserted -2100369821 1531140301
+varies
+\change_unchanged
+ under the 
+\change_deleted -2100369821 1531140303
+various
+\change_inserted -2100369821 1531140304
+different
+\change_unchanged
+ scenarios we described above.
  We focused on the dynamics of a community initialized with 60 species with
  thermal optima uniformly spaced along the interval [15°C, 25°C], and with
  the same initial density 
@@ -1982,9 +2151,16 @@ literal "false"
 \end_inset
 
 , it was considered extinct.
- For each combination of the parameters of the model (type of environmental
- signal, storage effect and stabilizing niche differences), we ran 100 simulatio
-ns.
+ For each combination of 
+\change_deleted -2100369821 1531140317
+the 
+\change_unchanged
+parameters
+\change_deleted -2100369821 1531140322
+ of the model
+\change_unchanged
+ (type of environmental signal, storage effect and stabilizing niche differences
+), we ran 100 simulations.
  
 \end_layout
 
@@ -2006,7 +2182,7 @@ All simulations were ran with Matlab's ode45 algorithm, an explicit Runge-Kutta
 Results 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 Typical dynamics of the community following Eq.
  
 \begin_inset CommandInset ref
@@ -2072,9 +2248,19 @@ noprefix "false"
 \end_inset
 
 .
- Forcing by a sinusoidal signal produces the strongly seasonally structured
- dynamics that are typical of phytoplankton.Even though only 5 species can
- be seen in Fig.
+ 
+\change_deleted -2100369821 1531140331
+Forcing by a sinusoidal signal
+\change_inserted -2100369821 1531140334
+A sinusoidal forcing
+\change_unchanged
+ produces the strongly seasonally structured dynamics that are typical of
+ phytoplankton.
+
+\change_inserted -2100369821 1531140347
+ 
+\change_unchanged
+Even though only 5 species can be seen in Fig.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -2127,7 +2313,11 @@ area
 
  while 6 out of the 14 remained below the unit.
  All species in the white noise simulations were clustered along a 3.2°C-range
- of thermal optima (Fig.
+ of thermal optima (
+\change_inserted -2100369821 1531140642
+see the biomass distribution according to the thermal optimum in 
+\change_unchanged
+Fig.
 
 \change_inserted -2100369821 1531127697
  
@@ -2143,11 +2333,13 @@ noprefix "false"
 
 \change_deleted -2100369821 1531125217
  
+\change_inserted -2100369821 1531140654
+ in the Supplementary Material
 \change_unchanged
 ).
  
 \begin_inset Note Note
-status collapsed
+status open
 
 \begin_layout Plain Layout
 Ici c'est difficile de savoir de quel panel on parle et de quel type de
@@ -2160,8 +2352,13 @@ Ici c'est difficile de savoir de quel panel on parle et de quel type de
 
 No obvious temporal patterns (e.g., cycles) could be seen in the communities
  forced by white noise.
- On the other hand, seasonal cycles were clear in the seasonally-forced
- case of Fig.
+ 
+\change_deleted -2100369821 1531140690
+On the other hand
+\change_inserted -2100369821 1531140695
+On the contrary
+\change_unchanged
+, seasonal cycles were clear in the seasonally-forced case of Fig.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -2177,8 +2374,15 @@ noprefix "false"
  gathered in two groups with large thermal optimum differences (5.7°C between
  the maximum thermal optimum of the first group and the minimum thermal
  optimum of the second group).
- When temperatures are high, the group with a higher thermal optima reach
- maximum biomass, then as temperature decreases through the season, they
+ When temperatures are high, the group with 
+\change_deleted -2100369821 1531140710
+a 
+\change_unchanged
+higher thermal optima reach 
+\change_inserted -2100369821 1531140715
+its 
+\change_unchanged
+maximum biomass, then as temperature decreases through the season, they
  leave room for the growth of the low-temperature group.
 \end_layout
 
@@ -2203,15 +2407,21 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Times series of temperature (top) and extant species (bottom) for the 2
- last years of a 5000 year simulation, with storage effect and no stabilizing
+Time
+\change_deleted -2100369821 1531140733
+s
+\change_unchanged
+ series of temperature (top) and extant species (bottom) for the 2 last
+ years of a 5000 year simulation, with storage effect and no stabilizing
  niche differences.
  The forcing temperature is either a white noise (left) or a noisy seasonal
  signal (right).
  Line colors of species biomasses correspond to their thermal optima (from
  blue, corresponding to low thermal optima, to red, corresponding to high
  thermal optima.
- The whole range of the biomass distribution is shown on Fig.
+ 
+\change_deleted -2100369821 1531140740
+The whole range of the biomass distribution is shown on Fig.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -2222,7 +2432,9 @@ noprefix "false"
 
 \end_inset
 
-).
+)
+\change_unchanged
+.
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:Times-series_temperature_species"
@@ -2308,7 +2520,11 @@ noprefix "false"
 
 \end_inset
 
-): with storage effect but without stabilizing niche differences, or without
+
+\change_deleted -2100369821 1531140751
+)
+\change_unchanged
+: with storage effect but without stabilizing niche differences, or without
  storage effect but with stabilizing niche differences), seasonality reduced
  the number of extant species to, on average, 27% and 48% of its original
  value, respectively (Fig.
@@ -2394,10 +2610,34 @@ with a seasonal signal.
  0.6)
 \change_unchanged
 , with a white noise or a seasonal signal respectively.
- Remarkably, when the storage effect and stabilizing niche differences (SNDs)
+ Remarkably, when the storage effect and 
+\change_deleted -2100369821 1531140822
+stabilizing niche differences (
+\change_unchanged
+SNDs
+\change_deleted -2100369821 1531140824
+)
+\change_unchanged
  both affected the community dynamics, all species persisted in the community,
- while neither the storage nor SNDs were able to produce that result alone,
- for both white noise and seasonal forcing.
+ while neither
+\change_deleted -2100369821 1531140834
+ the storage nor SNDs
+\change_inserted -2100369821 1531140866
+ of these mechanisms
+\change_unchanged
+ 
+\change_deleted -2100369821 1531140868
+were
+\change_inserted -2100369821 1531140868
+was
+\change_unchanged
+ able to produce that result alone, for 
+\change_deleted -2100369821 1531140876
+both
+\change_inserted -2100369821 1531140879
+either
+\change_unchanged
+ white noise and seasonal forcing.
 \end_layout
 
 \begin_layout Standard
@@ -2497,11 +2737,22 @@ noprefix "false"
 \end_inset
 
 ).
- Without storage effect and SNDs, a white noise forcing favoured species
- with intermediate thermal optima, with two thirds of the simulations ending
- with a species with a thermal optima between 18.9°C and 21.4°C (corresponding
- to 25% of the range of thermal optima present at the beginning of the simulatio
-n) and reaching a maximum average biomass in this range (Fig.
+ Without storage effect 
+\change_deleted -2100369821 1531140934
+and
+\change_inserted -2100369821 1531140934
+nor
+\change_unchanged
+ SNDs, a white noise forcing favoured species with intermediate thermal
+ optima, with two thirds of the simulations ending with a species with a
+ thermal optima between 18.9°C and 21.4°C (corresponding to 
+\change_deleted -2100369821 1531140943
+25%
+\change_inserted -2100369821 1531140945
+only one fourth
+\change_unchanged
+ of the range of thermal optima present at the beginning of the simulation)
+ and reaching a maximum average biomass in this range (Fig.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -2514,7 +2765,13 @@ noprefix "false"
 
  a).
  This distribution can be related to a selection for the highest long-term
- growth rates, averaged over time (see normalized growth rates in Fig.
+ growth rates, averaged over time (see 
+\change_deleted -2100369821 1531140952
+normalized
+\change_inserted -2100369821 1531140953
+scaled
+\change_unchanged
+ growth rates in Fig.
 \change_inserted -2100369821 1530869941
 
 \begin_inset CommandInset ref
@@ -2565,8 +2822,11 @@ noprefix "false"
 
 \change_unchanged
 ).
- On the contrary, seasonality tended to favour species with larger maximum
- growth rates
+ On the contrary, seasonality tended to favo
+\change_deleted -2100369821 1531140960
+u
+\change_unchanged
+r species with larger maximum growth rates
 \change_deleted -2100369821 1530869953
 , 
 \change_inserted -2100369821 1530869954
@@ -2749,18 +3009,27 @@ Per species?
 
 
 \change_unchanged
- is represented by boxplots of the mean value for 50 simulations).
+ is represented by boxplots of the mean value for 
+\change_deleted -2100369821 1531141034
+50
+\change_inserted -2100369821 1531141034
+100
+\change_unchanged
+ simulations).
  The forcing signal is either a white noise (top) or a seasonal signal (bottom).
  Each species is identified by its thermal optimum and its color code.
 
 \change_inserted 274868703 1526282377
- Mean (filled circles) and maximum (open circles) growth rates for each
- species are index
-\change_inserted -666822487 1527668552
-ed
-\change_inserted 274868703 1526282377
- on the right axis [CP: Not sure about showing GR on this figure, though.
+ 
+\change_deleted -2100369821 1531141003
+Mean (filled circles) and maximum (open circles) growth rates for each species
+ are indexed on the right axis [CP: Not sure about showing GR on this figure,
+ though.
  I have another one without GR if necessary
+\change_inserted -2100369821 1531141018
+Scaled average and maximum growth rates are shown as filled and open and
+ circles, respectively, and indexed on the right y-axis.
+
 \change_inserted -666822487 1527668632
  Fred: if you do this, you need to make it a yy-plot, with a right-hand
  y-axis labelled 
@@ -2851,7 +3120,7 @@ noprefix "false"
  Species characterising communities forced by a white noise stayed in the
  lower range of temperatures (in 96% of the simulations, the highest thermal
  optimum was 22.4°C
-\change_inserted -2100369821 1531128536
+\change_inserted -2100369821 1531141055
 , see Fig.
  
 \begin_inset CommandInset ref
@@ -2863,7 +3132,7 @@ noprefix "false"
 
 \end_inset
 
-
+ in the Supplementary Material
 \change_unchanged
 ) while they were filtered out in communities subjected to a seasonal fluctuatio
 ns of their environment, for which species with thermal optima above 20.5°C
@@ -2899,12 +3168,28 @@ Mean biomass distribution over the last 200 years of 100 simulations, as
 s (bottom).
  The forcing signal is either a white noise (blue) or a seasonal signal
  (red).
- Shades of the same colour corresponds to the 50th, 90th and 100th percentiles
- of the distributions while coloured lines correspond to one representative
- simulation.
+ Shades of the same colo
+\change_deleted -2100369821 1531141069
+u
+\change_unchanged
+r correspond
+\change_deleted -2100369821 1531141071
+s
+\change_unchanged
+ to the 50th, 90th and 100th percentiles of the distributions while colo
+\change_deleted -2100369821 1531141074
+u
+\change_unchanged
+red lines correspond to one representative simulation.
  Scaled average (whose optimum is indicated by the dashed line) and maximum
  growth rates are shown as filled and open and circles, respectively, and
- indexed on the left y-axis.
+ indexed on the 
+\change_deleted -2100369821 1531141024
+left
+\change_inserted -2100369821 1531141025
+right
+\change_unchanged
+ y-axis.
  
 \begin_inset CommandInset label
 LatexCommand label
@@ -3022,7 +3307,12 @@ literal "false"
 \end_inset
 
  was that a built-in storage effect in a forced Lotka-Volterra model, parameteri
-sed for phytoplankton communities, could lead to some degree of coexistence.
+\change_inserted -2100369821 1531141124
+z
+\change_deleted -2100369821 1531141123
+s
+\change_unchanged
+ed for phytoplankton communities, could lead to some degree of coexistence.
  Our investigation reproduced these results, using the white noise forcing
  considered by 
 \begin_inset CommandInset citation
@@ -3032,9 +3322,39 @@ literal "false"
 
 \end_inset
 
-, but an arguably more realistic seasonal forcing by temperature (thinking
- of phytoplankton) considerably lessened the number of species coexisting
- after 5000 timesteps, decreasing from 15 on average to 4 on average.
+, but an arguably more realistic seasonal forcing by temperature 
+\change_deleted -2100369821 1531141133
+(thinking of phytoplankton) 
+\change_unchanged
+considerably lessened the 
+\change_deleted -2100369821 1531141153
+number of species
+\change_inserted -2100369821 1531141162
+richness of the community
+\change_deleted -2100369821 1531141166
+ coexisting
+\change_unchanged
+ after 5000 
+\change_deleted -2100369821 1531141170
+timesteps
+\change_inserted -2100369821 1531141171
+years
+\change_unchanged
+, decreasing from
+\change_deleted -2100369821 1531141190
+ 
+\change_inserted -2100369821 1531141174
+ 
+\change_unchanged
+15
+\change_deleted -2100369821 1531141178
+ on average 
+\change_unchanged
+to 4
+\change_inserted -2100369821 1531141182
+ species
+\change_unchanged
+ on average.
  Even imagining that groups represented here are genera or classes rather
  than species, this is a fairly low diversity for a phytoplankton-like community
  
@@ -3049,9 +3369,31 @@ literal "false"
 \end_layout
 
 \begin_layout Standard
-We have therefore sought out whether stabilizing niche differences (SNDs)
- could produce a higher diversity maintenance, using field-based intra-
- vs inter-group (species or genera) competition coefficient ratio 
+We have therefore sought out whether stabilizing niche differences
+\change_deleted -2100369821 1531141210
+ (SNDs)
+\change_unchanged
+ could 
+\change_deleted -2100369821 1531141222
+produce
+\change_inserted -2100369821 1531141223
+maintain
+\change_unchanged
+ a higher diversity
+\change_deleted -2100369821 1531141228
+ maintenance
+\change_unchanged
+, using field-based intra- vs inter
+\change_deleted -2100369821 1531141231
+-
+\change_unchanged
+group (species or genera) competition 
+\change_deleted -2100369821 1531141236
+coefficient
+\change_inserted -2100369821 1531141237
+strength
+\change_unchanged
+ ratio 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "barraquand_weak_2017"
@@ -3059,9 +3401,26 @@ literal "false"
 
 \end_inset
 
-, where the intra-group density-dependence is approximately 10 times stronger.
+, where the intra
+\change_deleted -2100369821 1531141242
+-
+\change_unchanged
+group density-dependence is approximately 10 times stronger.
  On their own, SNDs produced a higher level of diversity than the storage
- effect (almost double for white noise).
+ effect (almost double for white noise)
+\change_inserted -2100369821 1531141373
+, which not only aligns with our results on phytoplankton but also with
+ results on perennial plants 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "adler_coexistence_2010"
+literal "false"
+
+\end_inset
+
+
+\change_unchanged
+.
  
 \end_layout
 
@@ -3078,8 +3437,12 @@ neutral
  kind of diversity, i.e., diversity within clumps of similar traits.
  This diversity reduction occurs because within a season, the signal autocorrela
 tion gives long, contiguous chunks of time to the best competitor to exclude
- its less adapted heterospecifics, while white noise generates large temperature
- shifts more frequently, and thereby forbid such competitive exclusion.
+ its less adapted heterospecifics, while 
+\change_inserted -2100369821 1531141386
+a 
+\change_unchanged
+white noise generates large temperature shifts more frequently, and thereby
+ forbid such competitive exclusion.
  In a seasonal setting, even though a species has the best long-term averaged
  growth rate, it can disappear as a result of a strong competition from
  both low- and high-temperature tolerant species, with and without storage
@@ -3156,9 +3519,12 @@ The above results suggest the very exciting idea that multiple coexistence
  This logic could, in principle, be extended to mechanisms that we have
  not considered here (e.g., spatial structure, specialized natural enemies,
  that could be as important here for plankton as they are for tropical trees
+\change_inserted -2100369821 1531141437
+, see
+\change_unchanged
  
 \begin_inset CommandInset citation
-LatexCommand citeauthor
+LatexCommand citealp
 key "bagchi_pathogens_2014,comita_testing_2014,stump_distance-responsive_2015,barraquand_weak_2017"
 literal "false"
 
