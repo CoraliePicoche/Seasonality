@@ -35,6 +35,7 @@ xticklabels(round(seq,2)-round(seq(1),2));
 xlim([seq(1)*365 seq(end)*365])
 yl(1)=ylabel('Temperature (°C)')
 set(gca,'Fontsize',afontsize)
+get(gca,'Position')
 box off;
 
 %c) Time series for theta=0
@@ -51,9 +52,11 @@ text(15,0.95*maxi,'c','Fontsize',afontsize)
 xticks(seq*365);
 xticklabels(round(seq,2)-round(seq(1),2));
 xlim([seq(1)*365 seq(end)*365])
-yl(2)=ylabel('Biomass (kg/area)')
+%yl(2)=ylabel('Biomass (kg/area)')
+yl(2)=ylabel('Biomass')
 set(gca,'Fontsize',afontsize)
 xlabel('Time (year)')
+get(gca,'Position')
 hold off;
 box off;
 
@@ -75,6 +78,7 @@ xticks(seq*365);
 xticklabels(round(seq,2)-round(seq(1),2));
 xlim([seq(1)*365 seq(end)*365])
 set(gca,'Fontsize',afontsize)
+get(gca,'Position')
 box off;
 
 %d) Time series for theta=1.3
@@ -93,6 +97,7 @@ xticklabels(round(seq,2)-round(seq(1),2));
 xlim([seq(1)*365 seq(end)*365])
 xlabel('Time (year)')
 set(gca,'Fontsize',afontsize);
+get(gca,'Position')
 hold off;
 box off;
 
@@ -118,10 +123,11 @@ fig_pos = fig.PaperPosition;
 fig.PaperSize = [fig_pos(3) fig_pos(4)];
 get(fig,'Position')
 get(gca,'FontSize')
+get(gca,'FontName')
 print(fig,'./article/graphe/Fig1','-depsc')
 
-
-% Appendices
+% 
+% % Appendices
 yspan=200;
     mean_value=species_mean_value(youtbis_wn, yspan);
     figure;subplot(1,2,1); hold on;
@@ -129,14 +135,14 @@ for s1=1:S
     bar(tau_opt(s1)-273,mean_value(s1),0.1,'FaceColor',col(s1,:));
 end;
 pos=get(gca,'Position')
-pos(1)=0.07;pos(2)=0.15;
-pos(3)=0.43;
+pos(1)=0.10;pos(2)=0.11;
+pos(3)=0.38;
 set(gca,'Position',pos)
 ylabel('Biomass')
 xlabel('Thermal optimum')
 mini=min(mean_value(mean_value>0));
 ylimit=[mini*0.95 max(mean_value)+0.05*mini]; 
-set(gca,'yscale','log','Fontsize',16,'YLim',ylimit)
+set(gca,'yscale','log','Fontsize',8,'YLim',ylimit)
 hold off;
 
     mean_value=species_mean_value(youtbis_season, yspan);
@@ -146,16 +152,16 @@ for s1=1:S
 end;
 %ylabel('Biomass')
 pos=get(gca,'Position')
-pos(1)=0.56;pos(2)=0.15;
-pos(3)=0.43;
+pos(1)=0.5803;pos(2)=0.11;
+pos(3)=0.38;
 set(gca,'Position',pos)
 mini=min(mean_value(mean_value>0));
 ylimit=[mini*0.95 max(mean_value)+0.05*mini]; 
-set(gca,'yscale','log','Fontsize',16,'YLim',ylimit)
+set(gca,'yscale','log','Fontsize',8,'YLim',ylimit)
 xlabel('Thermal optimum')
 hold off;
 fig = gcf;
-set(fig,'Position',[680 558 1200 420])
+set(fig,'Position',[680 558 520 280])
 get(gca,'FontSize')
 get(gca,'FontName') %Helvetica
 fig.PaperPositionMode = 'auto'

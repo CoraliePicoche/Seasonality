@@ -5,7 +5,7 @@
 clear all; close all; clc;
 thresh_min=10^(-6);
 yspan=200;
-afontsize=10;
+afontsize=8;
 col=jet(60);
 
 subplot_id=zeros(1,2);
@@ -110,8 +110,6 @@ hold off;
 % fig.PaperSize = [fig_pos(3) fig_pos(4)];
 % print(fig,'./Rapport/graphe/fancy_distrib_YesSE_NoSND','-dtiff')
 pos=get(gca,'Position')
-pos(4)=0.35;
-pos(2)=0.62;
 set(gca,'Position',pos)
 subplot(2,1,2)
 % 
@@ -228,7 +226,10 @@ for i=[1 2]
     set(subplot_id(i), 'Position',[xpos, positions(i,2), positions(i,3)]);
 end
 hold off;
-get(fig,'Position')
+pos=get(gca,'Position');
+pos(2)=0.11;
+set(gca,'Position',pos)
+set(fig,'Position',[680 558 520 420])
 fig.PaperPositionMode = 'auto'
 fig_pos = fig.PaperPosition;
 fig.PaperSize = [fig_pos(3) fig_pos(4)];

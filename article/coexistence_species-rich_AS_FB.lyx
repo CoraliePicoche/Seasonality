@@ -8,6 +8,10 @@
 \begin_preamble
 \usepackage{lineno} 
 \linenumbers
+
+
+\usepackage{xr}
+\externaldocument{SupplementaryMaterial}
 \end_preamble
 \use_default_options true
 \maintain_unincluded_children false
@@ -2124,6 +2128,8 @@ area
  while 6 out of the 14 remained below the unit.
  All species in the white noise simulations were clustered along a 3.2°C-range
  of thermal optima (Fig.
+
+\change_inserted -2100369821 1531127697
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -2134,6 +2140,10 @@ noprefix "false"
 
 \end_inset
 
+
+\change_deleted -2100369821 1531125217
+ 
+\change_unchanged
 ).
  
 \begin_inset Note Note
@@ -2349,26 +2359,26 @@ s
 \change_unchanged
 .
  When only the storage effect was present, the number of extant species
- varied between 8 and 20 with a white noise
-\change_inserted -2100369821 1530870253
+ varied between 8 and 20
+\change_inserted -2100369821 1531128608
  (14.8 
 \begin_inset Formula $\pm$
 \end_inset
 
  2.4)
 \change_unchanged
-, or 2 and 6 with a seasonal signal
-\change_inserted -2100369821 1530870276
- (4.1 
+ with a white noise, or 2 and 6 
+\change_inserted -2100369821 1531128619
+(4.1 
 \begin_inset Formula $\pm$
 \end_inset
 
- 0.7)
+ 0.7) 
 \change_unchanged
-.
+with a seasonal signal.
  On the other hand, when only stabilizing niche differences were present,
  the number of extant species nearly doubled, varying between 20 and 32
-\change_inserted -2100369821 1530870295
+\change_inserted -2100369821 1531128608
  (27.5 
 \begin_inset Formula $\pm$
 \end_inset
@@ -2376,7 +2386,7 @@ s
  2.4)
 \change_unchanged
 , or 12 and 15
-\change_inserted -2100369821 1530870309
+\change_inserted -2100369821 1531128608
  (13.3 
 \begin_inset Formula $\pm$
 \end_inset
@@ -2400,7 +2410,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename graphe/Fig2.eps
-	width 95text%
+	width 75text%
 
 \end_inset
 
@@ -2698,6 +2708,7 @@ status open
 \begin_inset Graphics
 	filename graphe/Fig3.eps
 	width 95text%
+	BoundingBox 17bp 10bp 356bp 296bp
 
 \end_inset
 
@@ -2839,9 +2850,24 @@ noprefix "false"
  b).
  Species characterising communities forced by a white noise stayed in the
  lower range of temperatures (in 96% of the simulations, the highest thermal
- optimum was 22.4°C) while they were filtered out in communities subjected
- to a seasonal fluctuations of their environment, for which species with
- thermal optima above 20.5°C persisted.
+ optimum was 22.4°C
+\change_inserted -2100369821 1531128536
+, see Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Not_representative_behaviour"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+
+\change_unchanged
+) while they were filtered out in communities subjected to a seasonal fluctuatio
+ns of their environment, for which species with thermal optima above 20.5°C
+ persisted.
 \end_layout
 
 \begin_layout Standard
@@ -2856,6 +2882,7 @@ status open
 	filename graphe/Fig4.eps
 	lyxscale 80
 	width 85text%
+	BoundingBox 17bp 10bp 428bp 338bp
 
 \end_inset
 
@@ -3334,468 +3361,11 @@ options "../spbasic_nicer"
 \end_inset
 
 
-\end_layout
-
-\begin_layout Section
-\start_of_appendix
-Supplementary Material
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename graphe/FigS1.eps
-	lyxscale 50
-	width 95text%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Mean biomasses over the last 200 years of 5000-year simulations as a function
- of the thermal optimum defining each species, for a white noise (left)
- or a seasonal signal (right) with storage effect and no stabilizing niche
- differences.
- This simulation is the one described in Fig.
- 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:Times-series_temperature_species"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-.
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:Appendix_mean_biomass_iter2"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
+\change_deleted -2100369821 1531125767
 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename graphe/example_iteration.tif
-	lyxscale 50
-	width 95text%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Mean biomass distribution over the last 200 years of 9 representative simulation
-s, as a function of thermal optima, without storage effect with stabilizing
- niche differences, in which temperature is either a seasonal signal (red)
- or a white noise (blue).
- The distribution induced by a white noise overlaps the one obtained with
- a seasonal signal in only 2 simulations out of 50.
- 
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:Not_representative_behaviour"
-
-\end_inset
-
- 
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\change_deleted -2100369821 1530543413
-
-\end_layout
-
-\begin_layout Standard
-
-\change_deleted -2100369821 1530543413
-NOTE: figures below are here for discussion between us.
- I am not sure we should keep them in the paper.
- I think this illustrates an issue (?) in the model: when I removed the
- storage effect, I must have changed the total carrying capacity of the
- environment.
- Should we correct it? 
-\series bold
-Note from Fred: there is clear underyielding which can be confirmed by field
- data 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "andrea_schmidtke_mechanistic_2010"
-literal "false"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-
-\change_deleted -2100369821 1530543413
-I also computed the evenness, not as an explanation but as a further exploration
- of the community.
-\end_layout
-
-\begin_layout Standard
-
-\change_deleted -2100369821 1530543413
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename graphe/biomass_total_end_of_simulation.png
-	lyxscale 50
-	width 95text%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Sum of the average biomasses of all species for the last 200 years of a
- 5000-year simulation, initialized with 60 species with total initial biomass
- 
-\begin_inset Formula $10^{3}$
-\end_inset
-
-, with a white noise forcing signal (blue) or a noisy seasonal signal (red).
- For each model type (with and without storage effect, + / - storage, respective
-ly; with and without Stabilizing Niche Differences, + / - SND, respectively),
- 100 simulations were launched.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-
-\change_deleted -2100369821 1530543413
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename graphe/evenness_all_simulations.png
-	lyxscale 50
-	width 95text%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Normalized species evenness of the community, initialized with 60 species
- with total initial biomass 
-\begin_inset Formula $10^{3}$
-\end_inset
-
-, with a white noise forcing signal (blue) or a noisy seasonal signal (red).
- For each model type (with and without storage effect, + / - storage, respective
-ly; with and without Stabilizing Niche Differences, + / - SND, respectively),
- 100 simulations were launched.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\change_inserted 274868703 1526550200
-
-\end_layout
-
-\begin_layout Standard
-
-\change_deleted -2100369821 1530543406
-\begin_inset Float table
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Tabular
-<lyxtabular version="3" rows="3" columns="3">
-<features tabularvalignment="middle">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
-<row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-White noise
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Storage effect
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-No storage effect
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Stabilizing niche differences
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-60
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-28 [20-32]
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-No stabilizing niche differences
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-15 [8-20]
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-1
-\end_layout
-
-\end_inset
-</cell>
-</row>
-</lyxtabular>
-
-\end_inset
-
-
-\begin_inset Tabular
-<lyxtabular version="3" rows="3" columns="3">
-<features tabularvalignment="middle">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
-<row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Season+White noise
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Storage effect
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-No storage effect
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Stabilizing niche differences
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-60
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-13 [12-15]
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-No stabilizing niche differences
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-4 [2-6]
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-1
-\end_layout
-
-\end_inset
-</cell>
-</row>
-</lyxtabular>
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Table corresponding to Fig.
- 2.
- Which one to choose?
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\change_unchanged
 
 \end_layout
 

@@ -5,7 +5,7 @@
 clear all; close all; clc;
 thresh_min=10^(-6);
 yspan=200;
-afontsize=20;
+afontsize=8;
 col=jet(60);
 
 dir_output='./output_simulation/white_noise/';
@@ -117,10 +117,10 @@ plot(tau_opt-273,mean_growth_rate,'o','MarkerFaceColor','k','MarkerEdgeColor','k
 set(gca,'YTickLabel',[]);
 hold off;
     pos = get(gca, 'Position')
-     pos(1)=0.09;
-     pos(2)=0.58;
-     pos(3)=0.38;
-     pos(4)=0.34;
+pos(1)=0.13;
+pos(2)=0.5838;
+pos(3)=0.3347;
+pos(4)=0.3412;
         tt1=title('1 species (-storage-SND)','Fontsize',afontsize,'FontWeight','Normal');
         titlePos = get( tt1 , 'position');
         titlePos(2)=858.6;
@@ -154,10 +154,10 @@ hold off;
         
  %       xtickangle(90)
             pos = get(gca, 'Position')
-     pos(1)=0.09;
-     pos(2)=0.17;
-     pos(3)=0.38;
-     pos(4)=0.34;
+pos(1)=0.13;
+pos(2)=0.11;
+pos(3)=0.3347;
+pos(4)=0.3412;
     set(gca,'Position',pos,'Fontsize',afontsize)
 box off;
 
@@ -172,10 +172,10 @@ text(2,0.95*maxi,'b','Fontsize',afontsize)
     box off;
 %left bottom width height
     pos = get(gca, 'Position')
-     pos(1)=0.55;
-     pos(2)=0.58;
-     pos(3)=0.38;
-     pos(4)=0.34;
+pos(1)=0.5703;
+pos(2)=0.5838;
+pos(3)=0.3347;
+pos(4)=0.3412;
 
     tt2=title('60 species (+storage+SND)','Fontsize',afontsize,'FontWeight','Normal');
             titlePos = get( tt2 , 'position');
@@ -212,10 +212,10 @@ xtick(1:9:60)
         set(gca,'XTickLabel',xaxlabel)
   %      xtickangle(90)
             pos = get(gca, 'Position')
-             pos(1)=0.55;
-             pos(3)=0.38;
-             pos(2)=0.17;
-    pos(4)=0.34;
+pos(1)=0.57304;
+pos(2)=0.11;
+pos(3)=0.3347;
+pos(4)=0.3412;
             xlabel('Thermal optimum')
 
 
@@ -224,7 +224,7 @@ box off;
 
 
 %fig = gcf;
-set(gcf,'Position',[675 549 1250 600])
+set(gcf,'Position',[680 558 520 420])
 fig.PaperPositionMode = 'auto'
 fig_pos = fig.PaperPosition;
 fig.PaperSize = [fig_pos(3) fig_pos(4)];
