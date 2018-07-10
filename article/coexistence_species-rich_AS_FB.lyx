@@ -3436,8 +3436,14 @@ neutral
 
  kind of diversity, i.e., diversity within clumps of similar traits.
  This diversity reduction occurs because within a season, the signal autocorrela
-tion gives long, contiguous chunks of time to the best competitor to exclude
- its less adapted heterospecifics, while 
+tion gives long, contiguous 
+\change_deleted -2100369821 1531210204
+chunks of time
+\change_inserted -2100369821 1531210227
+periods of time
+\change_unchanged
+ to the best competitor to exclude its less adapted heterospecifics, while
+ 
 \change_inserted -2100369821 1531141386
 a 
 \change_unchanged

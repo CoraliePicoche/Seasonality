@@ -220,6 +220,7 @@ xtick(1:9:60)
         set(gca,'XTickLabel',xaxlabel)
   %      xtickangle(90)
             pos = get(gca, 'Position')
+            
 pos(1)=0.57304;
 pos(2)=0.11;
 pos(3)=0.3347;
@@ -233,6 +234,7 @@ box off;
 
 %fig = gcf;
 set(gcf,'Position',[680 558 520 420])
+fig.Renderer='Painters';
 fig.PaperPositionMode = 'auto'
 fig_pos = fig.PaperPosition;
 fig.PaperSize = [fig_pos(3) fig_pos(4)];

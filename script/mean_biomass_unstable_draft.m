@@ -5,7 +5,7 @@
 clear all; close all; clc;
 thresh_min=10^(-6);
 yspan=200;
-afontsize=8;
+afontsize=10;
 col=jet(60);
 
 subplot_id=zeros(1,2);
@@ -100,7 +100,8 @@ yyaxis right;
 plot(tau_opt-273,max_growth_rate,'o','MarkerEdgeColor','k','MarkerSize',3)
 plot(tau_opt-273,mean_growth_rate,'o','MarkerFaceColor','k','MarkerEdgeColor','k','MarkerSize',3)
 id=find(mean_growth_rate==1);
-ylabel('Growth rate');
+ylabel('Growth rate','Fontsize',afontsize);
+ylim([0 1.1])
 
 text(15.1,1.*0.95,'a','Fontsize',afontsize)
 plot([tau_opt(id) tau_opt(id)]-273,[0 mean_growth_rate(id)],'--k','LineWidth',2)
@@ -200,17 +201,18 @@ iter=7;
 plot(tau_opt-273,biomass_final_2(:,iter,2),'-o','MarkerFaceColor','r','LineWidth',2,'color','r')
       xticks(tau_opt(1:9:length(tau_opt))-273)       %ylim([mini maxi])%        xaxlabel=cell(1,length(tau_opt));
            xaxlabel=sprintfc("%.1f",tau_opt(1:9:length(tau_opt))-273);
-        xlabel('Thermal optimum')
+        xlabel('Thermal optimum','Fontsize',afontsize)
         set(gca,'XTickLabel',xaxlabel)
        %  xtickangle(90)
-subplot_id(2)=ylabel('Biomass');
+subplot_id(2)=ylabel('Biomass','Fontsize',afontsize);
 set(gca,'Fontsize',afontsize)
 %end
 
 yyaxis right;
 plot(tau_opt-273,max_growth_rate,'o','MarkerEdgeColor','k','MarkerSize',3)
 plot(tau_opt-273,mean_growth_rate,'o','MarkerFaceColor','k','MarkerEdgeColor','k','MarkerSize',3)
-ylabel('Growth rate');
+ylabel('Growth rate','Fontsize',afontsize);
+ylim([0 1.1])
 text(15.1,1*0.95,'b','Fontsize',afontsize)
 
 id=find(mean_growth_rate==1);
@@ -229,7 +231,9 @@ hold off;
 pos=get(gca,'Position');
 pos(2)=0.11;
 set(gca,'Position',pos)
+
 set(fig,'Position',[680 558 520 420])
+fig.Renderer='Painters';
 fig.PaperPositionMode = 'auto'
 fig_pos = fig.PaperPosition;
 fig.PaperSize = [fig_pos(3) fig_pos(4)];

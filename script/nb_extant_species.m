@@ -137,6 +137,7 @@ set(gca,'Position',pos)
 
 fig = gcf;
 set(fig,'Position',[680 558 520 420])
+fig.Renderer='Painters';
 fig.PaperPositionMode = 'auto'
 fig_pos = fig.PaperPosition;
 fig.PaperSize = [fig_pos(3) fig_pos(4)];
