@@ -87,6 +87,7 @@
 \html_css_as_file 0
 \html_be_strict false
 \author -2100369821 "cpicoche"
+\author -666822487 "frederic"
 \end_header
 
 \begin_body
@@ -143,8 +144,12 @@ Coralie Picoche
 
 \end_inset
 
-Integrative and Theoretical Ecology Chair, Labex COTE, University of Bordeaux,
+Integrative and Theoretical Ecology Chair, Labex COTE, University of Bordeaux
  
+\begin_inset Newline newline
+\end_inset
+
+
 \begin_inset script superscript
 
 \begin_layout Plain Layout
@@ -277,7 +282,13 @@ literal "false"
  out on reasonable timeframes.
  Indeed, clumps on the trait axis eventually thin out in absence of immigration,
  but transient coexistence can last for extended periods of time.
- This 'emergent neutrality' within groups 
+ This 
+\change_inserted -666822487 1531503143
+`
+\change_deleted -666822487 1531503140
+'
+\change_unchanged
+emergent neutrality' within groups 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "holt_emergent_2006"
@@ -506,7 +517,17 @@ literal "false"
 
 \change_inserted -2100369821 1531489146
 .
- These SNDs minor those found in a number of plant communities 
+ These SNDs mi
+\change_inserted -666822487 1531503223
+rr
+\change_deleted -666822487 1531503223
+n
+\change_inserted -2100369821 1531489146
+or those found in a number of 
+\change_inserted -666822487 1531503265
+terrestrial 
+\change_inserted -2100369821 1531489146
+plant communities 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "adler_competition_2018"
@@ -561,13 +582,7 @@ literal "true"
 
  is based on a variant of the Lotka-Volterra competition model.
  Fluctuations in the environment are introduced in the model by temperature-depe
-ndent intrinsic growth rates (see 
-\change_deleted -2100369821 1531493178
-e
-\change_inserted -2100369821 1531493178
-E
-\change_unchanged
-q.
+ndent intrinsic growth rates (see Eq.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -639,13 +654,7 @@ literal "false"
 \end_inset
 
 .
- Thermal performance curves defined in 
-\change_deleted -2100369821 1531493182
-e
-\change_inserted -2100369821 1531493182
-E
-\change_unchanged
-q.
+ Thermal performance curves defined in Eq.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -656,13 +665,7 @@ noprefix "false"
 
 \end_inset
 
- are parameterized so that all species share the same niche area (
-\change_deleted -2100369821 1531493188
-e
-\change_inserted -2100369821 1531493188
-E
-\change_unchanged
-q.
+ are parameterized so that all species share the same niche area (Eq.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -687,13 +690,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Parameter definition and values of the model described in 
-\change_deleted -2100369821 1531493193
-e
-\change_inserted -2100369821 1531493193
-E
-\change_unchanged
-q.
+Parameter definition and values of the model described in Eq.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -1455,13 +1452,7 @@ Ratio of intra-to-intergroup competition strengths
 \begin_layout Standard
 We kept the mean and standard deviation of the forcing signal but included
  a lower-frequency component using a sinusoidal function with a period of
- 365 days (1 time unit being one day, 
-\change_deleted -2100369821 1531493201
-e
-\change_inserted -2100369821 1531493201
-E
-\change_unchanged
-q.
+ 365 days (1 time unit being one day, Eq.
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:Seasonal_signal"
@@ -1558,9 +1549,7 @@ d a new version of this model, where we removed this assumption by using
 \begin_inset Formula $\bar{r_{i}}$
 \end_inset
 
-) to weight the interaction coefficients
-\change_inserted -2100369821 1531489421
- (see Table 
+) to weight the interaction coefficients (see Table 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "tab:ModelsOfGrowthRates"
@@ -1570,9 +1559,7 @@ noprefix "false"
 
 \end_inset
 
-)
-\change_unchanged
-.
+).
 \end_layout
 
 \begin_layout Standard
@@ -1612,13 +1599,7 @@ noprefix "false"
 
 \end_inset
 
-), while preserving the same average magnitude as in 
-\change_deleted -2100369821 1531493210
-e
-\change_inserted -2100369821 1531493210
-E
-\change_unchanged
-q.
+), while preserving the same average magnitude as in Eq.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -1690,10 +1671,18 @@ literal "false"
 
 \end_inset
 
-.
  
-\change_inserted -2100369821 1531493386
-The values reported in 
+\change_inserted -666822487 1531503541
+
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted -666822487 1531503610
+The values of non-zero interspecific competition coefficients reported in
+ Fig.
+ 5 of 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "barraquand_weak_2017"
@@ -1701,8 +1690,28 @@ literal "false"
 
 \end_inset
 
- are higher because some intergroup competition coefficients were set to
- 0 in the best model.
+ are somewhat higher than here (and 
+\begin_inset Formula $\rho$
+\end_inset
+
+ lower, closer to 4) because the best-fitting model actually set to zero
+ some intergroup competition coefficients; using a model where all 
+\begin_inset Formula $\alpha_{ij}$
+\end_inset
+
+ are non-zero leads in contrast to 
+\begin_inset Formula $\rho=10$
+\end_inset
+
+.
+ 
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+.
  
 \change_unchanged
 
@@ -1823,7 +1832,7 @@ No storage effect
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1832,7 +1841,7 @@ Stabilizing niche differences
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1857,7 +1866,7 @@ Stabilizing niche differences
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2079,7 +2088,11 @@ noprefix "false"
 
 \end_inset
 
- a) and Eq.
+
+\change_deleted -666822487 1531503801
+ 
+\change_unchanged
+a) and Eq.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -2101,7 +2114,11 @@ noprefix "false"
 
 \end_inset
 
- b), are shown in Fig.
+
+\change_deleted -666822487 1531503804
+ 
+\change_unchanged
+b), are shown in Fig.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -2112,7 +2129,11 @@ noprefix "false"
 
 \end_inset
 
- c and d.
+
+\change_deleted -666822487 1531503806
+ 
+\change_unchanged
+c and d.
  A sinusoidal forcing produces the strongly seasonally structured dynamics
  that are typical of phytoplankton.
  Even though only 5 species can be seen in Fig.
@@ -2129,8 +2150,27 @@ noprefix "false"
 c), there were 14 species still present at the end of the simulation forced
  by a white noise, with large disparities in the range of variation of their
  biomasses.
- A third of the species kept a biomass above 10 kg/area (area=ha with a
- depth of a few meters produce a realistic standing biomasses 
+ A third of the species kept a biomass above 10 kg/area (
+\change_inserted -666822487 1531503828
+setting 
+\change_unchanged
+area
+\change_inserted -666822487 1531503818
+ 
+\change_unchanged
+=
+\change_inserted -666822487 1531503835
+ 1 
+\change_unchanged
+ha
+\change_inserted -666822487 1531503825
+,
+\change_unchanged
+ with a depth of a few meters
+\change_inserted -666822487 1531503840
+,
+\change_unchanged
+ produce a realistic standing biomasses 
 \begin_inset CommandInset citation
 LatexCommand citealp
 key "reynolds2006ecology"
@@ -2143,6 +2183,8 @@ literal "false"
 status collapsed
 
 \begin_layout Plain Layout
+
+\change_deleted -666822487 1531503871
 can we replace 
 \begin_inset Quotes eld
 \end_inset
@@ -2152,7 +2194,11 @@ area
 \end_inset
 
  by smthg else by using something typical of plankton too? m3 or L ?? YES.
- I took values from Reynolds 2006 (table 3.4).
+ 
+\change_inserted -666822487 1531503882
+Indicate the page in Reynolds and the Table – 
+\change_unchanged
+I took values from Reynolds 2006 (table 3.4).
  If we consider a temperate ocean, standing biomass is between 20 and 70
  mgC.m^-3.
  If we take the average ocean depth around 3.7 km, it gives use between 80
@@ -2194,7 +2240,11 @@ noprefix "false"
 
 \end_inset
 
- d).
+
+\change_deleted -666822487 1531503939
+ 
+\change_unchanged
+d).
  Only 4 species coexisted at the end of the simulation with seasonal forcing,
  gathered in two groups with large thermal optimum differences (5.7°C between
  the maximum thermal optimum of the first group and the minimum thermal
@@ -2225,15 +2275,52 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Time series of temperature (top) and extant species (bottom) for the 2 last
- years of a 5000 year simulation, with storage effect and no stabilizing
- niche differences.
- The forcing temperature is either a white noise (left) or a noisy seasonal
- signal (right).
+Time series of temperature (top
+\change_inserted -666822487 1531504000
+; a-b
+\change_unchanged
+) and extant species (bottom
+\change_inserted -666822487 1531504005
+; c-d
+\change_unchanged
+) for the 2 last years of a 5000 year
+\change_inserted -666822487 1531504156
+s
+\change_unchanged
+ simulation, with storage effect and no stabilizing niche differences.
+ The forcing temperature is either a white noise (
+\change_deleted -666822487 1531504063
+left
+\change_inserted -666822487 1531504063
+a
+\change_unchanged
+) or a noisy seasonal signal (
+\change_deleted -666822487 1531504065
+right
+\change_inserted -666822487 1531504065
+b
+\change_unchanged
+)
+\change_inserted -666822487 1531504144
+, leading to community dynamics with more erratic fluctuations (d) vs seasonally
+ structured fluctuations (d)
+\change_unchanged
+.
  Line colors of species biomasses correspond to their thermal optimum (from
- blue, corresponding to low thermal optima, to red, corresponding to high
- thermal optima.
- .
+ blue, corresponding to low thermal optim
+\change_inserted -666822487 1531504126
+um
+\change_deleted -666822487 1531504125
+a
+\change_unchanged
+, to red, corresponding to high thermal optim
+\change_deleted -666822487 1531504131
+a.
+ 
+\change_inserted -666822487 1531504133
+um)
+\change_unchanged
+.
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:Times-series_temperature_species"
@@ -2291,8 +2378,17 @@ noprefix "false"
 
 : with storage effect but without stabilizing niche differences, or without
  storage effect but with stabilizing niche differences), seasonality reduced
- the number of extant species to, on average, 27% and 48% of its original
- value, respectively (Fig.
+ the number of extant species to, on average, 27% and 48% of 
+\change_inserted -666822487 1531504232
+their
+\change_deleted -666822487 1531504231
+its
+\change_unchanged
+ original value
+\change_inserted -666822487 1531504234
+s
+\change_unchanged
+, respectively (Fig.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -2363,14 +2459,62 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Number of species still present at the end of 5000-year simulations, initialized
- with 60 species, with a white noise forcing signal (blue) or a noisy seasonal
- signal (red).
- For each model type (with and without storage effect, + / - storage, respective
-ly; with and without Stabilizing Niche Differences, + / - SND, respectively),
- 100 simulations were launched.
+Number of species still present at the end of 
+\change_inserted -666822487 1531504277
+100 
+\change_deleted -666822487 1531504283
+5000-year
+\change_unchanged
+ simulations
+\change_inserted -666822487 1531504291
+ (5000 years each)
+\change_unchanged
+, initialized with 60 species, with a white noise forcing signal (blue)
+ or a noisy seasonal signal (red).
+ 
+\change_deleted -666822487 1531504328
+For each model type (with and without storage effect, 
+\change_inserted -666822487 1531504335
+The signs 
+\change_unchanged
++ 
+\change_inserted -666822487 1531504340
+or
+\change_deleted -666822487 1531504339
+/
+\change_unchanged
+ - storage
+\change_inserted -666822487 1531504350
+ refer to presence or absence of a storage effect
+\change_unchanged
+, respectively; 
+\change_inserted -666822487 1531504364
++ / - SND, 
+\change_deleted -666822487 1531504385
+with and without
+\change_inserted -666822487 1531504388
+presence or absence of
+\change_unchanged
+ Stabilizing Niche Differences, 
+\change_deleted -666822487 1531504361
++ / - SND,
+\change_unchanged
+ respectively.
+\change_deleted -666822487 1531504395
+.
+
+\change_unchanged
  Community compositions are stable in the cases -storage-SND and +storage+SND
- (1 or 60 species are still present at the end of all simulations, respectively).
+\change_deleted -666822487 1531504407
+ (
+\change_inserted -666822487 1531504413
+, for which 
+\change_unchanged
+1 or 60 species are still present at the end of all simulations, respectively
+\change_deleted -666822487 1531504416
+)
+\change_unchanged
+.
  
 \begin_inset CommandInset label
 LatexCommand label
@@ -2520,23 +2664,82 @@ status open
 
 \begin_layout Plain Layout
 Mean biomass distribution over the last 200 years for 100 simulations, as
- a function of thermal optima, for the two stable-composition cases and
- two types of forcing signal.
- On the left, simulations without storage effect nor stabilizing niche differenc
-es are represented.
+ a function of 
+\change_inserted -666822487 1531504492
+the species 
+\change_unchanged
+thermal optima
+\change_inserted -666822487 1531504495
+.
+\change_deleted -666822487 1531504504
+, for
+\change_inserted -666822487 1531504508
+ Here we consider
+\change_unchanged
+ the two stable-composition cases and two types of forcing signal.
+ On the left
+\change_inserted -666822487 1531504526
+ column
+\change_unchanged
+, simulations without storage effect nor stabilizing niche differences are
+ represented.
  Only one species is present at the end of the simulations and its mean
  value is represented by one point per simulation.
  There can be several dots for the same species, corresponding to multiple
  simulations ending with this species alone.
- On the right, simulations with storage effect and stabilizing niche differences
- are represented.
- All species are present at the end of the simulations and boxplots correspond
- to the mean biomass of each speciesfor 100 simulations.
+ On the right
+\change_inserted -666822487 1531504585
+ column
+\change_unchanged
+, simulations with storage effect and stabilizing niche differences are
+ represented.
+ All species are present at the end of the simulations and boxplots 
+\change_deleted -666822487 1531504638
+correspond
+\change_inserted -666822487 1531504642
+present the variation 
+\change_deleted -666822487 1531504647
+ to the mean biomass of each speciesfor
+\change_inserted -666822487 1531504846
+in the temporal average of biomass with a given trait, for
+\change_unchanged
+ 100 simulations.
  The forcing signal is either a white noise (top) or a seasonal signal (bottom).
- Each species is identified by its thermal optimum and its color code.
+ Each species is identified by its thermal optimum 
+\change_deleted -666822487 1531504705
+and
+\change_inserted -666822487 1531504706
+through
+\change_unchanged
+ its color code
+\change_inserted -666822487 1531504865
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted -666822487 1531504870
+is this correct?
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+.
  Scaled (divided by maximum) average and maximum growth rates are shown
- as filled and open and circles, respectively, and indexed on the right
- y-axis.
+ as filled and open
+\change_deleted -666822487 1531504768
+ and
+\change_unchanged
+ circles, respectively, and 
+\change_inserted -666822487 1531504778
+are 
+\change_unchanged
+indexed on the right y-axis.
  
 \begin_inset CommandInset label
 LatexCommand label
@@ -2880,13 +3083,61 @@ ng diversity, but on its own, seasonal forcing of parameters does little
 \begin_layout Standard
 
 \change_inserted -2100369821 1531498331
-In addition to community diversity, the species abundance distribution (SAD)
- also varied from one set of simulation to another.
+In addition to community diversity, the 
+\change_deleted -666822487 1531505335
+species abundance distribution (SAD)
+\change_inserted -666822487 1531505798
+biomass-trait relationship
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted -666822487 1531505805
+we do not look at SADs at all
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_inserted -2100369821 1531498331
+ also varied from one 
+\change_deleted -666822487 1531506211
+set of 
+\change_inserted -2100369821 1531498331
+simulation to another.
+
+\change_inserted -666822487 1531506224
+ Some regularities did emerge across simulations though.
+
+\change_inserted -2100369821 1531498331
  The storage effect begot several clumps along the trait space, with seasonality
  leading to more distant clumps.
  Conversely, SNDs alone led to uniform distributions, with species forming
  a single cluster along a fraction of the initial trait space.
- The idenfitication of multiples modes in SAD is relatively recent 
+ The iden
+\change_inserted -666822487 1531505370
+t
+\change_deleted -666822487 1531505365
+f
+\change_inserted -2100369821 1531498331
+i
+\change_inserted -666822487 1531505372
+f
+\change_deleted -666822487 1531505372
+t
+\change_inserted -2100369821 1531498331
+ication of multiples modes in 
+\change_inserted -666822487 1531505390
+biomass-trait relationships and 
+\change_inserted -2100369821 1531498331
+SAD
+\change_inserted -666822487 1531505382
+s
+\change_inserted -2100369821 1531498331
+ is relatively recent 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "dornelas_multiple_2008,matthews_multimodal_2014"
@@ -2903,7 +3154,11 @@ literal "false"
 \end_inset
 
 .
- While 
+ 
+\change_deleted -666822487 1531505400
+While 
+\change_inserted -2100369821 1531498331
+
 \begin_inset CommandInset citation
 LatexCommand citet
 key "barabas_emergent_2013"
@@ -2911,13 +3166,113 @@ literal "false"
 
 \end_inset
 
- argue that multimodality can arise from artifical model formulation or
- demographic stochasticity, without underlying ecological processes, we
- note that this does not hold for our results, since storage effect alone,
- or storage effect and SNDs in a seasonal context both consistantly produced
- multimodal distribution, while other sets of simulations always led to
- a single cluster along the trait axis.
- This might indicate that multimodality is indeed dependent on the community
+ 
+\change_inserted -666822487 1531505405
+convincingly 
+\change_inserted -2100369821 1531498331
+argue
+\change_inserted -666822487 1531505407
+d
+\change_inserted -2100369821 1531498331
+ that multimodality c
+\change_inserted -666822487 1531506253
+ould
+\change_deleted -666822487 1531506252
+an
+\change_inserted -2100369821 1531498331
+ arise from 
+\change_deleted -666822487 1531505422
+artifical model formulation or
+\change_inserted -666822487 1531505422
+the
+\change_inserted -2100369821 1531498331
+ demographic stochasticity
+\change_inserted -666822487 1531506275
+ of a single model run (with SNDs or neutrality, but without clumpy coexistence)
+\change_deleted -666822487 1531505462
+, without underlying ecological processes, we note that this does not hold
+ for our results
+\change_inserted -666822487 1531505476
+.
+ However, our results are based on many model runs
+\change_inserted -2100369821 1531498331
+, 
+\change_deleted -666822487 1531505485
+since 
+\change_inserted -666822487 1531506291
+for which either the 
+\change_inserted -2100369821 1531498331
+storage effect alone
+\change_deleted -666822487 1531506293
+,
+\change_inserted -2100369821 1531498331
+ or 
+\change_inserted -666822487 1531506295
+a 
+\change_inserted -2100369821 1531498331
+storage effect
+\change_deleted -666822487 1531505511
+ and 
+\change_inserted -666822487 1531505511
++
+\change_inserted -2100369821 1531498331
+SNDs in a seasonal context 
+\change_deleted -666822487 1531505875
+both 
+\change_inserted -2100369821 1531498331
+consist
+\change_inserted -666822487 1531505493
+e
+\change_deleted -666822487 1531505493
+a
+\change_inserted -2100369821 1531498331
+ntly produced multimodal distribution
+\change_inserted -666822487 1531505496
+s
+\change_inserted -2100369821 1531498331
+, while other sets of simulations always led to a single cluster along the
+ trait axis.
+ 
+\change_inserted -666822487 1531506454
+If only one spatial location is observed, caution is of course required
+ as 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "barabas_emergent_2013"
+literal "false"
+
+\end_inset
+
+ highlighted.
+ However, with several locations - or in a theoretical context - one could
+ average across locations to reproduce similar graphs to the ones produced
+ here.
+ Clumps in the trait axis when averaged across repeats is a feature that
+ we found to emerge only through the combination of a fluctuating environment
+ and a storage effect.
+ Of course, biomass clustering on the environmental trait axis may not always
+ indicate a storage effect in real-world ecosystems, as other mechanisms
+ that we did not include in our model may produce similar patterns.
+ Still, clustering on the trait axis may suggest to look more closely for
+ potential storage effects at work.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted -666822487 1531506480
+Ici je me dis qu'il faut peut-être qu'on regarde ce qu'avait conclu Scranton
+ & Vasseur sur ces questions.
+ 
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+ 
+\change_deleted -666822487 1531505538
+This might indicate that multimodality is indeed dependent on the community
  and ecological setting considered, which would explain the different results
  obtained until now on empirical SADs.
 \change_unchanged
@@ -2976,6 +3331,9 @@ literal "false"
  thus different mechanisms might not always combine superadditively as we
  found here.
  That said, superadditivity has been found in some cases, i.e.
+\change_inserted -666822487 1531506178
+,
+\change_unchanged
  pathogens could enhance the storage effect 
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -2984,7 +3342,11 @@ literal "false"
 
 \end_inset
 
- .
+
+\change_deleted -666822487 1531506173
+ 
+\change_unchanged
+.
  Better explaining plant or microbial diversity would then not be about
  selecting the best unique mechanism susceptible to explain the observed
  diversity, but rather better combining those mechanisms together.
@@ -3077,8 +3439,14 @@ Acknowledgements
 \begin_layout Standard
 
 \change_inserted -2100369821 1531494439
-We thank Alix Sauve for numerous thoughtful comments and references.
+We thank Alix Sauve for numerous thoughtful comments and 
+\change_inserted -666822487 1531506555
+some bibliographic 
+\change_inserted -2100369821 1531494439
+references.
  
+\change_inserted -666822487 1531506534
+This study was supported by the French ANR through LabEx COTE (ANR-10-LABX-45).
 \change_unchanged
 
 \end_layout

@@ -89,83 +89,23 @@
 
 \begin_body
 
-\begin_layout Title
+\begin_layout Standard
+
+\emph on
+Supplementary Material
+\emph default
+ for 
+\series bold
 Stabilizing niche differences are still required to maintain species-rich
- communities in temporally variable environments
-\end_layout
-
-\begin_layout Date
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-today
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Author
-Coralie Picoche 
-\begin_inset script superscript
-
-\begin_layout Plain Layout
-1
-\end_layout
-
-\end_inset
-
-, Alix Sauve
-\begin_inset script superscript
-
-\begin_layout Plain Layout
-1
-\end_layout
-
-\end_inset
-
-, Frédéric Barraquand 
-\begin_inset script superscript
-
-\begin_layout Plain Layout
-1,2
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Address
-\begin_inset script superscript
-
-\begin_layout Plain Layout
-1
-\end_layout
-
-\end_inset
-
-Integrative and Theoretical Ecology Chair, Labex COTE, University of Bordeaux,
- 
-\begin_inset script superscript
-
-\begin_layout Plain Layout
-2
-\end_layout
-
-\end_inset
-
-Institute of Mathematics of Bordeaux, CNRS
+ communities in temporally variable environments 
+\series default
+- Picoche, C.
+ & Barraquand, F.
 \end_layout
 
 \begin_layout Section
 \start_of_appendix
-Supplementary Material
+Supplementary Figures
 \end_layout
 
 \begin_layout Standard
@@ -192,6 +132,7 @@ arabic{figure}}
 
 \begin_layout Standard
 \begin_inset Float figure
+placement H
 wide false
 sideways false
 status open
@@ -212,10 +153,11 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Mean biomasses over the last 200 years of 5000-year simulations as a function
- of the thermal optimum defining each species, for a white noise (left)
- or a seasonal signal (right) with storage effect and no stabilizing niche
- differences.
+Temporal mean of biomass, taken over the last 200 years, for XXX 5000-years
+ simulations as a function of the thermal optimum defining each species,
+ for a white noise (left) or a seasonal signal (right).
+ The coexistence mechanism implemented is the storage effect, and no stabilizing
+ niche differences were considered (same competition inter- and intra-specific).
  This simulation is the one described in Fig.
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -248,6 +190,7 @@ name "fig:Appendix_mean_biomass_iter2"
 
 \begin_layout Standard
 \begin_inset Float figure
+placement H
 wide false
 sideways false
 status open
@@ -268,12 +211,16 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Mean biomass distribution over the last 200 years of 9 representative simulation
-s, as a function of thermal optima, without storage effect with stabilizing
- niche differences, in which temperature is either a seasonal signal (red)
- or a white noise (blue).
- The distribution induced by a white noise overlaps the one obtained with
- a seasonal signal in only 2 simulations out of 50.
+Temporal mean biomass distribution, taken over the last 200 years, for 9
+ representative simulations, as a function of the thermal optima of the
+ species.
+ These simulations are done without storage effect but with stabilizing
+ niche differences.
+ Temperature is either a seasonal signal (in red) or a white noise (in blue).
+ The distribution induced by a white noise forcing overlaps the one obtained
+ with a seasonal forcing signal in only 2 simulations out of 50, hence the
+ two signals lead in general to very different biomass distributions on
+ the environmental trait axis.
  
 \begin_inset CommandInset label
 LatexCommand label
