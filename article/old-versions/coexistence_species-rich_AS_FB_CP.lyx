@@ -282,13 +282,7 @@ literal "false"
  out on reasonable timeframes.
  Indeed, clumps on the trait axis eventually thin out in absence of immigration,
  but transient coexistence can last for extended periods of time.
- This 
-\change_inserted -666822487 1531503143
-`
-\change_deleted -666822487 1531503140
-'
-\change_unchanged
-emergent neutrality' within groups 
+ This `emergent neutrality' within groups 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "holt_emergent_2006"

@@ -1,0 +1,47 @@
+This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: coexistence_species-rich.aux
+The style file: ../spbasic_nicer.bst
+Database file #1: coexistence.bib
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+You've used 42 entries,
+            3265 wiz_defined-function locations,
+            955 strings with 15353 characters,
+and the built_in function-call counts, 49669 in all, are:
+= -- 4580
+> -- 1423
+< -- 23
++ -- 504
+- -- 450
+* -- 4501
+:= -- 6738
+add.period$ -- 42
+call.type$ -- 42
+change.case$ -- 358
+chr.to.int$ -- 42
+cite$ -- 42
+duplicate$ -- 4379
+empty$ -- 4567
+format.name$ -- 576
+if$ -- 10433
+int.to.chr$ -- 1
+int.to.str$ -- 1
+missing$ -- 468
+newline$ -- 136
+num.names$ -- 168
+pop$ -- 955
+preamble$ -- 1
+purify$ -- 318
+quote$ -- 0
+skip$ -- 737
+stack$ -- 0
+substring$ -- 5845
+swap$ -- 1094
+text.length$ -- 1
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 372
+warning$ -- 0
+while$ -- 382
+width$ -- 0
+write$ -- 490
