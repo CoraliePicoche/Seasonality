@@ -100,19 +100,18 @@ Building on the forced Lotka-Volterra model of Scranton and Vasseur
 (2016) inspired by phytoplankton communities, we have investigated
 the effect of two coexistence mechanisms, namely the storage effect
 and stabilizing niche differences (SNDs). SNDs occur when intraspecific
-competition is stronger than interspecific, and we tuned the competition
+competition is stronger than interspecific; we tuned the competition
 ratio based on empirical data. Although SNDs maintained more species
-than the storage effect (50\% w.r.t 25\%), we show that none of the
-two coexistence mechanisms considered could, by itself, ensure the
-coexistence of all species present at the beginning of our simulations.
-Realistic seasonal environments only aggravated that picture, as they
-decreased persistence relative to white noise. Our results suggest
-that combining different mechanisms for biodiversity maintenance into
-community models might be more fruitful than trying to find which
-mechanism explains best the observed diversity levels. Our results
-on community composition (formation of clumps, biomass distribution)
-in the different scenarios give further hints about likely coexistence
-mechanisms at work. 
+(50\%) than the storage effect (25\%), we show that none of the two
+coexistence mechanisms considered could, by itself, ensure the coexistence
+of all species present at the beginning of our simulations. Realistic
+seasonal environments only aggravated that picture, as they decreased
+persistence relative to white noise. Our results suggest that combining
+different mechanisms for biodiversity maintenance into community models
+might be more fruitful than trying to find which mechanism explains
+best the observed diversity levels. Our results on community composition
+(formation of clumps, biomass distribution) in the different scenarios
+give further hints about likely coexistence mechanisms at work. 
 
 \textbf{Number of words: 240}
 \end{abstract}
@@ -129,13 +128,13 @@ Under the neutral perspective, all species have equal birth and death
 rates and compete equally (since space is limited) whilst under the
 niche perspective, birth and death rates can vary between species
 and various mechanisms contribute to increasing intraspecific over
-interspecific competition \citep{hubbell_unified_2001}. However as
-it has been pointed out repeatedly, niche and neutral processes are
-not mutually exclusive, and may actually act together to produce observed
-species coexistence \citep{gravel_reconciling_2006,mutshinda_what_2009,gotzenberger_ecological_2012}. 
+interspecific competition \citep{hubbell_unified_2001}. However,
+as it has been pointed out repeatedly, niche and neutral processes
+are not mutually exclusive: they may actually act together to produce
+observed species coexistence \citep{gravel_reconciling_2006,mutshinda_what_2009,gotzenberger_ecological_2012}. 
 
 For instance, \citet{scheffer_self-organized_2006} put forward the
-concept of 'clumpy coexistence', whereby a simultaneous influence
+concept of `clumpy coexistence', whereby a simultaneous influence
 of both niche and neutral processes create several clumps of similar
 species along a single trait axis. Classical stabilizing niche differences
 (SNDs) enable coexistence of multiple clumps through stronger net
@@ -161,28 +160,28 @@ models, most notably models incorporating temporal variation \citep{scranton_coe
 In these temporal-variation models, equal competitive strengths are
 combined with other mechanisms like the storage effect (or temporal
 niche partitioning, that is an equivalent concept for forced Lotka-Volterra
-models, \citealp{barabas_community_2012,scranton_coexistence_2016})
-that increases the possibility of coexistence by making the interaction
-strength covary positively with a fluctuating environment (see also
-\citealp{barabas_community_2012}). 
+models, \citealp{barabas_community_2012,scranton_coexistence_2016}).
+The storage effect increases the possibility of coexistence by making
+the interaction strength covary positively with a fluctuating environment
+(see also \citealp{barabas_community_2012}). 
 
 Here, we build on the work of \citet{scranton_coexistence_2016} to
 investigate the possibility of coexistence through species response
 to fluctuating environments. Our enthusiasm for the \citet{scranton_coexistence_2016}
-model stems from our interest in phytoplankton communities, that were
-the key inspiration for the thermal preference curves modeling intrinsic
-growth rates in \citet{scranton_coexistence_2016}. However, \citet{scranton_coexistence_2016}
-described temperature as a white noise, i.e. independent and identically
-distributed Gaussian random variates over time. This appeared to us
-as a key assumption to relax. Under most latitudes, temperature is
-indeed a seasonal signal, and seasonal forcing can strongly affect
-the dynamics of the community considered \citep{vesipa_impact_2017}.
-Over short timescales, random temporal variations therefore often
-only add noise to a largely deterministic seasonal trend. Our present
-work can therefore be seen as an attempt to blend \citet{scranton_coexistence_2016}'s
-framework with the periodic environments of \citet{barabas_community_2012},
-to better represent the mixture of stochastic and deterministic environmental
-forces affecting phytoplankton community dynamics. 
+model stems from our interest in phytoplankton communities, that inspired
+their thermal preference curves modeling intrinsic growth rates. However,
+\citet{scranton_coexistence_2016} described temperature as a white
+noise, i.e., independent and identically distributed Gaussian random
+variates over time. This appeared to us a key assumption to relax.
+Under most latitudes, temperature is indeed a seasonal signal, and
+seasonal forcing can strongly affect the dynamics of the community
+considered \citep{vesipa_impact_2017}. Hence, over short timescales,
+random temporal variations often only add noise to a largely deterministic
+seasonal trend. Our present work can therefore be seen as an attempt
+to blend \citet{scranton_coexistence_2016}'s framework with the periodic
+environments of \citet{barabas_community_2012}, to better represent
+the mixture of stochastic and deterministic environmental forces affecting
+phytoplankton community dynamics. 
 
 Because many phytoplankton species or genera respond in similar ways
 to temperature despite having different optimas \citep{moisan_modelling_2002},
@@ -194,21 +193,20 @@ partitioning. How seasonality affects coexistence (as opposed to a
 purely randomly fluctuating environment) is therefore a key feature
 of this paper. In particular, we contrast cases where the storage
 effect is present vs. absent, which conveniently maps to two different
-parameterizations of the forced Lotka-Volterra model. Moreover, we
-realized while running \citet{scranton_coexistence_2016}'s model
-that the overall diversity obtained at the end of the simulations
-was relatively low compared to what we usually observe in phytoplankton
+parameterizations of the forced Lotka-Volterra model. Moreover, the
+overall diversity obtained at the end of the simulations with \citet{scranton_coexistence_2016}'s
+model was relatively low compared to what we usually observe in phytoplankton
 communities (several dozens to hundreds of species). We have therefore
 sought out which mechanisms would foster a truly species-rich community
 for extended periods of time. 
 
 In an empirical study combining phytoplankton community-level time
-series and multivariate autoregressive models \citep{barraquand2018coastal},
-we found that despite a large influence of the environment (including
+series and multivariate autoregressive models \citep{barraquand2018coastal}\footnote{Preprint version available: see \citet{barraquand_weak_2017} in the
+reference list}, we found that despite a large influence of the environment (including
 temperature, irradiance, and other factors), intraspecific (or intragenus)
 competition was most likely the key driver of species coexistence.
 In other words, stabilizing niche differences had a large role to
-play in maintaining species diversity in coastal phytoplankton \citep{barraquand2018coastal}\footnote{Preprint version available: \citep{barraquand_weak_2017}}.
+play in maintaining species diversity in coastal phytoplankton \citep{barraquand2018coastal}.
 These SNDs mirror those found in a number of terrestrial plant communities
 \citep{adler_competition_2018} and in animal communities \citep{mutshinda_what_2009}.
 
@@ -227,7 +225,7 @@ The model described in \citet{scranton_coexistence_2016} is based
 on a variant of the Lotka-Volterra competition model. Fluctuations
 in the environment are introduced in the model by temperature-dependent
 intrinsic growth rates (see Eq. \ref{eq:modelLV}-\ref{eq:growth},
-all coefficients are defined in Tab. \ref{tab:Coefficients-}) so
+all coefficients are defined in Table \ref{tab:Coefficients-}) so
 that species growth rates can be expressed as:
 
 \begin{eqnarray}
@@ -283,7 +281,7 @@ $\rho$ & Ratio of intra-to-intergroup competition strengths & (1;10)\tabularnewl
 
 We kept the mean and standard deviation of the forcing signal but
 included a lower-frequency component using a sinusoidal function with
-a period of 365 days (1 time unit being one day, Eq.\ref{eq:Seasonal_signal}).
+a period of 365 days (1 time unit being one day, Eq. \ref{eq:Seasonal_signal}).
 We tune the ratio of low-to-high frequency with the variable $\theta$
 so as to keep the same energy content - i.e., equal total variance
 - in the forcing signal.
@@ -293,7 +291,7 @@ so as to keep the same energy content - i.e., equal total variance
 \end{equation}
 
 Note that the upper limit for $\theta$, $\sqrt{2}$, corresponds
-to a completely determinist model which we do not explore here (but
+to a completely deterministic model which we do not explore here (but
 see \citet{zhao1991qualitative} proving bounded coexistence). We
 chose to keep the stochasticity in the signal and to model a plausible
 temperature signal with $\theta=1.3$ (see Fig. \ref{fig:Times-series_temperature_species}b)
@@ -360,7 +358,7 @@ four formulations of the model we present}
 
 \subsection*{Set-up}
 
-We replicate the 'Species sorting' experiment of \citet{scranton_coexistence_2016}
+We replicate the `Species sorting' experiment of \citet{scranton_coexistence_2016}
 so as to investigate how the structure of synthetic phytoplankton
 communities varies under the different scenarios we described above.
 We focused on the dynamics of a community initialized with 60 species
@@ -375,31 +373,31 @@ All simulations were ran with Matlab's ode45 algorithm, an explicit
 Runge-Kutta (4,5) algorithm with an absolute error tolerance of $10^{-8}$,
 and relative error tolerance $10^{-3}$. The code is available in
 a GitHub repository \footnote{\url{https://github.com/CoraliePicoche/Seasonality}, will be made
-public upon acceptance or at the reviewer's request.} 
+public upon acceptance or at the reviewer's request} .
 
 \section{Results }
 
 Typical dynamics of the community following Eq. \ref{eq:modelLV}
 (the model of \citealp{scranton_coexistence_2016}), with both the
 environmental signals described in Eq. \ref{eq:modelLV} (original
-choice of \citealp{scranton_coexistence_2016} ; Fig. \ref{fig:Times-series_temperature_species}a)
+choice of \citealp{scranton_coexistence_2016}; Fig. \ref{fig:Times-series_temperature_species}a)
 and Eq. \ref{eq:Seasonal_signal} (our variant, Fig. \ref{fig:Times-series_temperature_species}b),
 are shown in Fig. \ref{fig:Times-series_temperature_species}c and
 d. A sinusoidal forcing produces the strongly seasonally structured
 dynamics that are typical of phytoplankton. Even though only 5 species
-can be seen in Fig. \ref{fig:Times-series_temperature_species}c),
+can be seen in Fig. \ref{fig:Times-series_temperature_species}c,
 there were 14 species still present at the end of the simulation forced
 by a white noise, with large disparities in the range of variation
 of their biomasses. A third of the species kept a biomass above 10
 kg/area (setting area = 1 ha, with a depth of a few meters, produce
-a realistic standing biomasses \citealp{reynolds2006ecology})  while
+a realistic standing biomasses; \citealp{reynolds2006ecology}) while
 6 out of the 14 remained below the unit. All persisting species in
 the white noise simulations were clustered within a 3.2°C-range of
 thermal optima (see the biomass distribution as a function of the
 thermal optimum in Fig. A1 in the Supplementary Material). No obvious
 temporal patterns (e.g., cycles) could be seen in the communities
 forced by white noise. On the contrary, seasonal cycles were clear
-in the seasonally-forced case of Fig. \ref{fig:Times-series_temperature_species}d).
+in the seasonally-forced case of Fig. \ref{fig:Times-series_temperature_species}d.
 Only 4 species coexisted at the end of the simulation with seasonal
 forcing, gathered in two groups with large thermal optimum differences
 (5.7°C between the maximum thermal optimum of the first group and
@@ -416,7 +414,7 @@ leave room for the growth of the low-temperature group.
 c-d) for the 2 last years of a 5000 years simulation, with storage
 effect and no stabilizing niche differences. The forcing temperature
 is either a white noise (a) or a noisy seasonal signal (b), leading
-to community dynamics with more erratic fluctuations (d) vs seasonally
+to community dynamics with more erratic fluctuations (c) vs seasonally
 structured fluctuations (d). Line colors of species biomasses correspond
 to their thermal optimum (from blue, corresponding to low thermal
 optimum, to red, corresponding to high thermal optimum).\label{fig:Times-series_temperature_species}}
@@ -464,23 +462,23 @@ and max rather than 1.5 interquartile range. \label{fig:Persistence-of-species} 
 \end{figure}
 
 When the richness of the community was stable (either 1 or 60 species
-at the end of the simulation, Fig. \ref{fig:Mean-biomass-in_stable_cases}),
-there were still large differences in the structure of the community
-with respect to temperature, due to both stochasticity and the type
-of forcing (Fig. \ref{fig:Mean-biomass-in_stable_cases}). Without
-storage effect nor SNDs, a white noise forcing favoured species with
-intermediate thermal optima, with two thirds of the simulations ending
-with a species with a thermal optimum between 18.9°C and 21.4°C (corresponding
-to only one fourth of the range of thermal optima present at the beginning
-of the simulation) and reaching a maximum average biomass in this
-range (Fig. \ref{fig:Mean-biomass-in_stable_cases} a). This distribution
-can be related to a selection for the highest long-term growth rates,
-averaged over time (see scaled growth rates in Fig.\ref{fig:Mean-biomass-in_stable_cases}).
-On the contrary, seasonality tended to favor species with larger maximum
-growth rates (thermal optima above 22°C). Species with a higher thermal
-optima are more likely to persist and to reach a higher biomass at
-the end of the simulation. 38\% of the simulations therefore ended
-with the species having the highest temperature optimum, 25°C. 
+at the end of the simulation), there were still large differences
+in the structure of the community with respect to temperature, due
+to both stochasticity and the type of forcing (Fig. \ref{fig:Mean-biomass-in_stable_cases}).
+Without storage effect nor SNDs, a white noise forcing favored species
+with intermediate thermal optima, with two thirds of the simulations
+ending with a species with a thermal optimum between 18.9°C and 21.4°C
+(corresponding to only one fourth of the range of thermal optima present
+at the beginning of the simulation) and reaching a maximum average
+biomass in this range (Fig. \ref{fig:Mean-biomass-in_stable_cases}a).
+This distribution can be related to a selection for the highest long-term
+growth rates, averaged over time (see scaled growth rates in Fig.
+\ref{fig:Mean-biomass-in_stable_cases}). On the contrary, seasonality
+tended to favor species with larger maximum growth rates (thermal
+optima above 22°C). Species with a higher thermal optimum are more
+likely to persist and to reach a higher biomass at the end of the
+simulation. 38\% of the simulations therefore ended with the species
+having the highest temperature optimum, 25°C. 
 
 When both coexistence mechanisms were present, the 60 initial species
 coexisted with small variations in biomasses for each species over
@@ -493,10 +491,10 @@ unimodal with a maximum biomass reached for the second best long-term
 average growth rate (corresponding to a thermal optimum of 20.2°C).
 On the contrary, a seasonal signal led to a bi-modal distribution
 (centered on 17.0°C and 24.4°C), each corresponding to one season,
-with highest biomasses for higher thermal optima (Fig. \ref{fig:Mean-biomass-in_stable_cases}
-d). The minimum biomass was reached for the best long-term average
-growth rate at an intermediate temperature (20.4°C), one species apart
-from the maximum biomass in the white noise case 
+with highest biomasses for higher thermal optima (Fig. \ref{fig:Mean-biomass-in_stable_cases}d).
+The minimum biomass was reached for the best long-term average growth
+rate at an intermediate temperature (20.4°C), one species apart from
+the maximum biomass in the white noise case. 
 
 \begin{figure}[H]
 \begin{centering}
@@ -507,18 +505,18 @@ as a function of the species thermal optima. Here we consider the
 two stable-composition cases and two types of forcing signal. On the
 left column, simulations without storage effect nor stabilizing niche
 differences are presented. Only one species is present at the end
-of the simulations and its mean value is represented by one point
-per simulation. There can be several dots for the same species, corresponding
-to multiple simulations ending with this species alone. On the right
-column, simulations with storage effect and stabilizing niche differences
-are represented. All species are present at the end of the simulations
-and small boxplots present the variation in the temporal average of
-biomass with a given trait, for 100 simulations. The forcing signal
-is either a white noise (top) or a seasonal signal (bottom). Each
-species is identified by its thermal optimum through its color code.
-Scaled (divided by maximum) average and maximum growth rates are shown
-as filled and open circles, respectively, and are indexed on the right
-y-axis. \label{fig:Mean-biomass-in_stable_cases}}
+of the simulations and its mean value is represented by one large
+colored circle per simulation. There can be several circles for the
+same species, corresponding to multiple simulations ending with this
+species alone. On the right column, simulations with storage effect
+and stabilizing niche differences are represented. All species are
+present at the end of the simulations and small boxplots present the
+variation in the temporal average of biomass with a given trait, for
+100 simulations. The forcing signal is either a white noise (top)
+or a seasonal signal (bottom). Each species is identified by its thermal
+optimum through its color code. Scaled (divided by maximum) average
+and maximum growth rates are shown as small filled and open circles,
+respectively, and are indexed on the right y-axis. \label{fig:Mean-biomass-in_stable_cases}}
 \end{figure}
 
 In cases where the richness of the community varied, the overall shape
@@ -528,9 +526,9 @@ forcings (Fig. \ref{fig:Unstable_cases}). By contrast, the type of
 coexistence mechanism generated different shapes. Indeed, the storage
 effect led to a multimodal biomass distribution with respect to thermal
 optima. We always observed 3 modes with a white noise and 3 modes
-in 95\% of the seasonal simulations, Fig. \ref{fig:Unstable_cases}a.
+in 95\% of the seasonal simulations (Fig. \ref{fig:Unstable_cases}a).
 With a white noise, extant species are grouped in rather similar clumps
-regarding species thermal optima (between 18.8°C and 22.2°C whereas
+regarding species thermal optima (between 18.8°C and 22.2°C) whereas
 clumps tended to be further apart in the seasonal case, covering a
 total range of 7.7°C, with species grouping in the higher part of
 the thermal range, above 22°C. On the other hand, stabilizing niche
@@ -539,7 +537,7 @@ b). Species characterising communities forced by a white noise stayed
 in the lower range of temperatures (in 96\% of the simulations, the
 highest thermal optimum was 22.4°C, see Fig. A2 in the Supplementary
 Material) while they were filtered out in communities subjected to
-a seasonal fluctuations of their environment, for which species with
+a seasonal fluctuation of their environment, for which species with
 thermal optima above 20.5°C persisted.
 
 \begin{figure}[H]
@@ -577,8 +575,8 @@ differences \citep{chesson_mechanisms_2000,adler_coexistence_2010,barraquand2018
 Stabilizing niche differences, that occur whenever intraspecific competition
 is stronger than interspecific competition, can arise from many mechanisms:
 nonlinearities in the functional forms of competition or mutualism
-that contribute to increasing self-regulation, predation or parasitism
-(see e.g. the generalist predators in \citealp{haydon1994pivotal}),
+that contribute to increasing self-regulation \citep{kawatsu2018density},
+predation or parasitism (see e.g., the generalist predators in \citealp{haydon1994pivotal}),
 etc. They seem nonetheless an ubiquitous feature in primary producers
 \citep{adler_competition_2018}.
 
@@ -605,22 +603,22 @@ to maintain species-rich communities (e.g., dozens to hundreds of
 species). We have therefore sought out whether stabilizing niche differences
 could maintain a higher diversity, using field-based intra- vs intergroup
 (species or genera) competition strength ratio \citep{barraquand2018coastal},
-where the intragroup density-dependence was chosen approximately 10
-times stronger. On their own, SNDs produced a higher level of diversity
-than the storage effect (almost double for white noise), which not
-only aligns with our results on phytoplankton but also with results
-on perennial plants \citep{adler_coexistence_2010}. 
+where the intragroup density-dependence was chosen 10 times stronger.
+On their own, SNDs produced a higher level of diversity than the storage
+effect (almost double for white noise), which not only aligns with
+our results on phytoplankton but also with results on perennial plants
+\citep{adler_coexistence_2010}. 
 
 However, the seasonal forcing still considerably reduced diversity
-when SNDs were considered, especially the ``neutral'' kind of diversity,
-i.e., diversity within clumps of similar traits. This diversity reduction
-occurs because within a season, the signal autocorrelation gives long,
-contiguous time intervals to the best competitor to exclude its less
-adapted heterospecifics. This makes the results likely to hold not
-only for seasonal environments, but also autocorrelated ones, i.e.,
-``red'' noise (this could be relevant for species whose population
-dynamics occurs at timescales largely above one year). In contrast,
-a white noise generates large temperature shifts more frequently,
+when only SNDs were considered, especially the ``neutral'' kind
+of diversity, i.e., diversity within clumps of similar traits. This
+diversity reduction occurs because within a season, the signal autocorrelation
+gives long, contiguous time intervals to the best competitor to exclude
+its less adapted heterospecifics. This makes the results likely to
+hold not only for seasonal environments, but more generally for autocorrelated
+ones, i.e., ``red'' noise. This could be relevant for species whose
+population dynamics occurs at timescales largely above one year. In
+contrast, a white noise generates large temperature shifts more frequently,
 and thereby forbid such competitive exclusion. In a seasonal setting,
 a species with the highest long-term averaged growth rate may not
 be the best competitor, and can disappear as a result of a strong
@@ -630,7 +628,7 @@ This holds with or without a storage effect.
 Our results may appear at odds with recent proposals that seasonal
 forcing in itself would help maintain diversity \citep{sakavara_lumpy_2018}.
 However, we compared the effect of seasonal forcing to that of other
-forcing signals while controlling total variance. Thus, the contrast
+forcing signals while controlling for total variance. Thus, the contrast
 between our results and those of \citet{sakavara_lumpy_2018} may
 be due to the role of forcing variance over time (we compare scenarios
 under a constant total variance). Overall, while seasonality may be
@@ -645,9 +643,9 @@ clumps along the trait space (as observed by \citealp{scranton_coexistence_2016}
 The seasonality that we added to the temperature signal led to more
 distant clumps on the trait axis (as said above, less species per
 clump). Conversely, SNDs alone led to relatively uniform biomass distributions,
-with species forming a single large cluster, which covers some fraction
-of the initial trait space. The identification of multiples modes
-in biomass-trait relationships and SADs is relatively recent \citep{dornelas_multiple_2008,matthews_multimodal_2014}
+with species forming a single large cluster, which covers a fraction
+of the initial trait space. The identification of multiple modes in
+biomass-trait relationships and SADs is relatively recent \citep{dornelas_multiple_2008,matthews_multimodal_2014}
 and is a rare pattern in theoretical models \citep{mcgill_species_2007}.
 \citet{barabas_emergent_2013} convincingly argued that multimodality
 could arise from the demographic stochasticity of a single model run
@@ -707,9 +705,9 @@ effects and SNDs or storage effects (on the temporal axis), one obvious
 follow-up of this research would be interactions with spatial structure.
 Spatial structure occurs both endogeneously, through spatially restricted
 movements and interactions, and exogeneously, through spatial variation
-in environmental covariates \citet{bolker_combining_2003}. Numerous
-studies \citep{bolker_spatial_1999,murrell_2002}, have shown that
-spatially restricted movements and interactions - very small-scale
+in environmental covariates \citep{bolker_combining_2003}. Numerous
+studies \citep[e.g.,][]{bolker_spatial_1999,murrell_2002} have shown
+that spatially restricted movements and interactions - very small-scale
 spatial structure - can help coexistence, which we believe would be
 especially important for phytoplankton since many species form colonies
 (\citealp{reynolds2006ecology}; see discussion in \citealp{barraquand2018coastal}).
