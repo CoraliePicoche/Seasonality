@@ -41,7 +41,7 @@ theta=0 %white noise. Could also be 1.3
 %%%%%% Initialize
 % Time resolution
 tstart = 1.0;
-tstop = 5001.0*365; %5000 years in SV, with 1 day intervals %15 000 used here to test for convergence
+tstop = 10001.0*365; %5000 years in SV, with 1 day intervals %15 000 used here to test for convergence
 tsampling = (tstop-tstart)+1; 
 tspan=linspace(tstart,tstop,tsampling);                        % timespan for the numerical solution
  imin=tstop-ysave*365+1;
@@ -62,7 +62,7 @@ end;
 
  
  
-for iter=100:100
+for iter=1:1
     rng(iter)
 %for iter=1:10
     iter
@@ -87,7 +87,7 @@ toutbis=tout(imin:imax);
 youtbis=yout(imin:imax,:);
 nb_species=sum(yout'>thresh_min);
 nb_species(end)
-save(strcat('./output_simulation/',dir_output,'/','iter',num2str(iter),'_codeversion_20180228_theta0.mat'),'toutbis','youtbis','tau_opt','b','tau','nb_species','A');
+save(strcat('./output_simulation/',dir_output,'/','iter',num2str(iter),'_codeversion_20180228_theta0_10000y.mat'),'toutbis','youtbis','tau_opt','b','tau','nb_species','A');
 clear tout yout;
 
 %Second case : SV model with storage effect and intra >> inter
@@ -100,7 +100,7 @@ toutbis=tout(imin:imax);
 youtbis=yout(imin:imax,:);
 nb_species=sum(yout'>thresh_min);
 nb_species(end)
-save(strcat('./output_simulation/',dir_output,'/','iter',num2str(iter),'_codeversion_20180228_theta0_10higher.mat'),'toutbis','youtbis','tau_opt','b','tau','nb_species','A');
+save(strcat('./output_simulation/',dir_output,'/','iter',num2str(iter),'_codeversion_20180228_theta0_10higher_10000y.mat'),'toutbis','youtbis','tau_opt','b','tau','nb_species','A');
 clear tout yout;
 
 %Third case : SV model without storage effect and intra == inter
@@ -115,7 +115,7 @@ toutbis=tout(imin:imax);
 youtbis=yout(imin:imax,:);
 nb_species=sum(yout'>thresh_min);
 nb_species(end)
-save(strcat('./output_simulation/',dir_output,'/','iter',num2str(iter),'_codeversion_20180228_theta0_noforcedcompetition_weightedinteraction.mat'),'toutbis','youtbis','tau_opt','b','tau','nb_species','A');
+save(strcat('./output_simulation/',dir_output,'/','iter',num2str(iter),'_codeversion_20180228_theta0_noforcedcompetition_weightedinteraction_10000y.mat'),'toutbis','youtbis','tau_opt','b','tau','nb_species','A');
 clear tout yout;
 
 %Fourth case : SV model without storage effect and intra >> inter
@@ -129,7 +129,7 @@ toutbis=tout(imin:imax);
 youtbis=yout(imin:imax,:);
 nb_species=sum(yout'>thresh_min);
 nb_species(end)
-save(strcat('./output_simulation/',dir_output,'/','iter',num2str(iter),'_codeversion_20180228_theta0_noforcedcompetition_10higherintra_weightedinteraction.mat'),'toutbis','youtbis','tau_opt','b','tau','nb_species','A');
+save(strcat('./output_simulation/',dir_output,'/','iter',num2str(iter),'_codeversion_20180228_theta0_noforcedcompetition_10higherintra_weightedinteraction_10000y.mat'),'toutbis','youtbis','tau_opt','b','tau','nb_species','A');
 clear tout yout;
 
 end;

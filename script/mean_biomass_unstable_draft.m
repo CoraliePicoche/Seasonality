@@ -93,7 +93,7 @@ plot(tau_opt-273,biomass_final_1(:,iter,2),'-o','MarkerFaceColor','r','LineWidth
         set(gca,'XTickLabel',xaxlabel)
         xtickangle(90)
 %end
-subplot_id(1)=ylabel('Biomass');
+subplot_id(1)=ylabel({"Storage effect";'Biomass'});
 set(gca,'Fontsize',afontsize)
 
 yyaxis right;
@@ -204,7 +204,7 @@ plot(tau_opt-273,biomass_final_2(:,iter,2),'-o','MarkerFaceColor','r','LineWidth
         xlabel('Thermal optimum','Fontsize',afontsize)
         set(gca,'XTickLabel',xaxlabel)
        %  xtickangle(90)
-subplot_id(2)=ylabel('Biomass','Fontsize',afontsize);
+subplot_id(2)=ylabel({"Self-regulation";'Biomass'},'Fontsize',afontsize);
 set(gca,'Fontsize',afontsize)
 %end
 
@@ -223,7 +223,7 @@ pos(4)=0.35;
 pos(2)=0.19;
 set(gca,'Position',pos)
 positions = cell2mat(get(subplot_id([1 2]), 'Position'));
-xpos = min(positions(:,1))-0.2;
+xpos = min(positions(:,1))-0.025;
 for i=[1 2]
     set(subplot_id(i), 'Position',[xpos, positions(i,2), positions(i,3)]);
 end

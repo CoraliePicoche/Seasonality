@@ -112,7 +112,7 @@ for s1=1:60
 end;
 xlim([min(tau_opt)-273 max(tau_opt)-273+0.1])
 ylim([750 850])
-    ylabel('Biomass')
+    ylabel({"Noise";'Biomass'})
  
    hold off;
 box off
@@ -144,7 +144,7 @@ end
 xlim([min(tau_opt)-273 max(tau_opt)-273+0.1])
 ylim([750 850])
 
-    ylabel('Biomass')
+    ylabel({'Season';'Biomass'})
     xlabel('Thermal optimum')
 box off
 text(15.15,845,'c','Fontsize',afontsize)
