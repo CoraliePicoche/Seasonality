@@ -83,7 +83,7 @@
 \papersides 1
 \paperpagestyle default
 \tracking_changes true
-\output_changes true
+\output_changes false
 \html_math_output 0
 \html_css_as_file 0
 \html_be_strict false
@@ -291,7 +291,17 @@ SNDs
  none of the two coexistence mechanisms considered could, by itself, ensure
  the coexistence of all species present at the beginning of our simulations.
  Realistic seasonal environments only aggravated that picture, as they decreased
- persistence relative to white noise.
+ persistence relative to 
+\change_deleted -2100369821 1538666009
+white
+\change_unchanged
+ 
+\change_deleted -2100369821 1538666116
+noise
+\change_inserted -2100369821 1538666131
+ a random environment
+\change_unchanged
+.
  Our results suggest that combining different mechanisms for biodiversity
  maintenance into community models might be more fruitful than trying to
  find which mechanism explains best the observed diversity levels.
@@ -539,8 +549,14 @@ literal "false"
 
 \end_inset
 
- described temperature as a white noise, i.e., independent and identically
- distributed Gaussian random variates over time.
+ described temperature as a 
+\change_deleted -2100369821 1538666187
+white
+\change_inserted -2100369821 1538666189
+random
+\change_unchanged
+ noise, i.e., independent and identically distributed Gaussian random variates
+ over time.
  This appeared to us a key assumption to relax.
  Under most latitudes, temperature is indeed a seasonal signal, and seasonal
  forcing can strongly affect the dynamics of the community considered 
@@ -643,6 +659,8 @@ literal "false"
  temperature, irradiance, and other factors), intraspecific (or intragenus)
  competition was most likely the key driver of species coexistence.
  In other words, 
+\change_inserted -2100369821 1538666244
+a 
 \change_deleted -2100369821 1538399464
 stabilizing niche differences
 \change_inserted -2100369821 1538408929
@@ -1628,7 +1646,17 @@ K
 \begin_inset Text
 
 \begin_layout Plain Layout
-Scaling between white noise and seasonal signal
+Scaling between 
+\change_deleted -2100369821 1538666281
+white
+\change_inserted -2100369821 1538666284
+random and seasonal
+\change_unchanged
+ noise
+\change_deleted -2100369821 1538666288
+ and seasonal signal
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -2132,11 +2160,23 @@ relatively stronger
 \end_layout
 
 \begin_layout Standard
-In addition to two types of environmental forcings (white noise with 
+In addition to two types of environmental forcings (
+\change_deleted -2100369821 1538666349
+white
+\change_inserted -2100369821 1538666350
+random
+\change_unchanged
+ noise with 
 \begin_inset Formula $\theta=0$
 \end_inset
 
-, and seasonal forcing with 
+, and seasonal 
+\change_deleted -2100369821 1538666354
+forcing
+\change_inserted -2100369821 1538666354
+noise
+\change_unchanged
+ with 
 \begin_inset Formula $\theta=1.3$
 \end_inset
 
@@ -2628,8 +2668,13 @@ noprefix "false"
 \end_inset
 
 c, there were 14 species still present at the end of the simulation forced
- by a white noise, with large disparities in the range of variation of their
- biomasses.
+ by a 
+\change_deleted -2100369821 1538666382
+white
+\change_inserted -2100369821 1538666383
+random
+\change_unchanged
+ noise, with large disparities in the range of variation of their biomasses.
  A third of the species kept a biomass above 10 kg/area (setting area =
  1 ha, with a depth of a few meters, produce a realistic standing biomasses;
  
@@ -2640,13 +2685,42 @@ literal "false"
 
 \end_inset
 
+
+\change_inserted -2100369821 1538666393
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted -2100369821 1538666411
+Is this still necessary? We never use the info on the area
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
 ) while 6 out of the 14 remained below the unit.
- All persisting species in the white noise simulations were clustered within
- a 3.2°C-range of thermal optima (see the biomass distribution as a function
- of the thermal optimum in Fig.
+ All persisting species in the 
+\change_deleted -2100369821 1538666419
+white
+\change_inserted -2100369821 1538666420
+random
+\change_unchanged
+ noise simulations were clustered within a 3.2°C-range of thermal optima
+ (see the biomass distribution as a function of the thermal optimum in Fig.
  A1 in the Supplementary Material).
  No obvious temporal patterns (e.g., cycles) could be seen in the communities
- forced by white noise.
+ forced by 
+\change_deleted -2100369821 1538666422
+white
+\change_inserted -2100369821 1538666423
+random
+\change_unchanged
+ noise.
  On the contrary, seasonal cycles were clear in the seasonally-forced case
  of Fig.
  
@@ -2660,8 +2734,13 @@ noprefix "false"
 \end_inset
 
 d.
- Only 4 species coexisted at the end of the simulation with seasonal forcing,
- gathered in two groups with large thermal optimum differences (5.7°C between
+ Only 4 species coexisted at the end of the simulation with seasonal 
+\change_deleted -2100369821 1538666430
+forcing
+\change_inserted -2100369821 1538666431
+noise
+\change_unchanged
+, gathered in two groups with large thermal optimum differences (5.7°C between
  the maximum thermal optimum of the first group and the minimum thermal
  optimum of the second group).
  When temperatures are high, the group with higher thermal optima reaches
@@ -2698,9 +2777,24 @@ no stabilizing niche differences
 no differences between intraspecific and interspecific competition strengths
 \change_unchanged
 .
- The forcing temperature is either a white noise (a) or a noisy seasonal
- signal (b), leading to community dynamics with more erratic fluctuations
- (c) vs seasonally structured fluctuations (d).
+ The forcing temperature is either a 
+\change_deleted -2100369821 1538666445
+white
+\change_inserted -2100369821 1538666447
+random
+\change_unchanged
+ noise (a) or a 
+\change_deleted -2100369821 1538666451
+noisy 
+\change_unchanged
+seasonal 
+\change_deleted -2100369821 1538666453
+signal
+\change_inserted -2100369821 1538666453
+noise
+\change_unchanged
+ (b), leading to community dynamics with more erratic fluctuations (c) vs
+ seasonally structured fluctuations (d).
  Line colors of species biomasses correspond to their thermal optimum (from
  blue, corresponding to low thermal optimum, to red, corresponding to high
  thermal optimum).
@@ -2786,7 +2880,13 @@ noprefix "false"
 ).
  A seasonal signal therefore led to a much smaller average persistence.
  There was also less variance in persistence between seasonally forced simulatio
-ns when compared to white noise simulations.
+ns when compared to 
+\change_deleted -2100369821 1538666479
+white
+\change_inserted -2100369821 1538666479
+random
+\change_unchanged
+ noise simulations.
  
 \end_layout
 
@@ -2835,7 +2935,23 @@ was
 \begin_inset Formula $\pm$
 \end_inset
 
- 0.6), with a white noise or a seasonal signal, respectively.
+ 0.6), with a 
+\change_deleted -2100369821 1538666492
+white
+\change_inserted -2100369821 1538666492
+random
+\change_unchanged
+ 
+\change_deleted -2100369821 1538666498
+noise 
+\change_unchanged
+or a seasonal 
+\change_deleted -2100369821 1538666495
+signal
+\change_inserted -2100369821 1538666496
+noise
+\change_unchanged
+, respectively.
  Remarkably, when the storage effect and 
 \change_deleted -2100369821 1538409608
 SNDs
@@ -2844,7 +2960,21 @@ a strong self-regulation
 \change_unchanged
  both affected the community dynamics, all species persisted in the community,
  while neither of these mechanisms was able to produce that result alone,
- for either white noise and seasonal forcing.
+ for either 
+\change_deleted -2100369821 1538666506
+white
+\change_inserted -2100369821 1538666507
+random
+\change_deleted -2100369821 1538666509
+ noise
+\change_unchanged
+ and seasonal 
+\change_deleted -2100369821 1538666512
+forcing
+\change_inserted -2100369821 1538666513
+noise
+\change_unchanged
+.
 \end_layout
 
 \begin_layout Standard
@@ -2869,8 +2999,23 @@ status open
 
 \begin_layout Plain Layout
 Number of species still present at the end of 100 simulations (5000 years
- each), initialized with 60 species, with a white noise forcing signal (blue)
- or a noisy seasonal signal (red).
+ each), initialized with 60 species, with a 
+\change_deleted -2100369821 1538666520
+white
+\change_inserted -2100369821 1538666521
+random
+\change_unchanged
+ noise forcing signal (blue) or a 
+\change_deleted -2100369821 1538666525
+noisy 
+\change_unchanged
+seasonal 
+\change_deleted -2100369821 1538666527
+signal
+\change_inserted -2100369821 1538666527
+noise
+\change_unchanged
+ (red).
  The signs + or - storage refer to presence or absence of a storage effect,
  respectively; + / - 
 \change_deleted -2100369821 1538409627
@@ -2973,7 +3118,17 @@ a
 \change_inserted -2100369821 1538484580
 A
 \change_unchanged
- white noise forcing favored species with intermediate thermal optima
+ 
+\change_deleted -2100369821 1538666540
+white
+\change_inserted -2100369821 1538666541
+random
+\change_unchanged
+ noise 
+\change_deleted -2100369821 1538666547
+forcing 
+\change_unchanged
+favored species with intermediate thermal optima
 \change_deleted -2100369821 1538484318
 ,
 \change_inserted -2100369821 1538650654
@@ -3079,12 +3234,12 @@ were
  more likely to persist and to reach a higher biomass at the end of the
  simulation.
 
-\change_inserted -2100369821 1538650754
+\change_inserted -2100369821 1538666573
  38% of the simulations therefore ended with the species having the highest
  temperature optimum, 25°C.
  The shift in trait distribution towards higher maximum growth rates with
  seasonality vs.
- higher average growth rates with a white noise was consistent in all sets
+ higher average growth rates with a random noise was consistent in all sets
  of simulations (see below).
 
 \change_deleted -2100369821 1538643590
@@ -3104,7 +3259,19 @@ storage effect and strong self-regulation
 \change_unchanged
  were present, the 60 initial species coexisted with small variations in
  biomasses for each species over the 100 simulations (mean CV=0.008 across
- simulations with either a white noise or a seasonal forcing signal, Fig.
+ simulations with either a 
+\change_deleted -2100369821 1538666599
+white noise 
+\change_inserted -2100369821 1538666600
+random 
+\change_unchanged
+or a seasonal 
+\change_deleted -2100369821 1538666604
+forcing signal
+\change_inserted -2100369821 1538666604
+noise
+\change_unchanged
+, Fig.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -3119,9 +3286,15 @@ b and d).
  The forcing signal modified only the distribution of biomasses resulting
  in contrasted community structures despite equal richness in both simulation
  types.
- With a white noise, the distribution was unimodal with a maximum biomass
- reached for the second best long-term average growth rate (corresponding
- to a thermal optimum of 20.2°C).
+ With a 
+\change_deleted -2100369821 1538666624
+white
+\change_inserted -2100369821 1538666624
+random
+\change_unchanged
+ noise, the distribution was unimodal with a maximum biomass reached for
+ the second best long-term average growth rate (corresponding to a thermal
+ optimum of 20.2°C).
  On the contrary, a seasonal signal led to a bi-modal distribution (centered
  on 17.0°C and 24.4°C), each corresponding to one season, with highest biomasses
  for higher thermal optima (Fig.
@@ -3138,7 +3311,13 @@ noprefix "false"
 d).
  The minimum biomass was reached for the best long-term average growth rate
  at an intermediate temperature (20.4°C), one species apart from the maximum
- biomass in the white noise case.
+ biomass in the 
+\change_deleted -2100369821 1538666633
+white
+\change_inserted -2100369821 1538666634
+random
+\change_unchanged
+ noise case.
  
 \end_layout
 
@@ -3189,7 +3368,21 @@ strong self-regulation
  All species are present at the end of the simulations and small boxplots
  present the variation in the temporal average of biomass with a given trait,
  for 100 simulations.
- The forcing signal is either a white noise (top) or a seasonal signal (bottom).
+ The forcing signal is either a 
+\change_deleted -2100369821 1538666663
+white
+\change_inserted -2100369821 1538666664
+random
+\change_deleted -2100369821 1538666666
+ noise
+\change_unchanged
+ (top) or a seasonal 
+\change_deleted -2100369821 1538666670
+signal
+\change_inserted -2100369821 1538666670
+noise
+\change_unchanged
+ (bottom).
  Each species is identified by its thermal optimum through its color code.
  Scaled (divided by maximum) average and maximum growth rates are shown
  as small filled and open circles, respectively, and are indexed on the
@@ -3233,8 +3426,13 @@ noprefix "false"
  By contrast, the type of coexistence mechanism generated different shapes.
  Indeed, the storage effect led to a multimodal biomass distribution with
  respect to thermal optima.
- We always observed 3 modes with a white noise and 3 modes in 95% of the
- seasonal simulations (Fig.
+ We always observed 3 modes with a 
+\change_deleted -2100369821 1538666691
+white
+\change_inserted -2100369821 1538666691
+random
+\change_unchanged
+ noise and 3 modes in 95% of the seasonal simulations (Fig.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -3246,11 +3444,16 @@ noprefix "false"
 \end_inset
 
 a).
- With a white noise, extant species are grouped in rather similar clumps
- regarding species thermal optima (between 18.8°C and 22.2°C) whereas clumps
- tended to be further apart in the seasonal case, covering a total range
- of 7.7°C, with species grouping in the higher part of the thermal range,
- above 22°C.
+ With a 
+\change_deleted -2100369821 1538666698
+white
+\change_inserted -2100369821 1538666699
+random
+\change_unchanged
+ noise, extant species are grouped in rather similar clumps regarding species
+ thermal optima (between 18.8°C and 22.2°C) whereas clumps tended to be further
+ apart in the seasonal case, covering a total range of 7.7°C, with species
+ grouping in the higher part of the thermal range, above 22°C.
  On the other hand, 
 \change_deleted -2100369821 1538409835
 stabilizing niche differences
@@ -3269,14 +3472,19 @@ noprefix "false"
 \end_inset
 
  b).
- Species characterising communities forced by a white noise stayed in the
- lower range of temperatures (in 96% of the simulations, the highest thermal
- optimum was 22.4°C, see Fig.
+ Species characterising communities forced by a 
+\change_deleted -2100369821 1538666714
+white
+\change_inserted -2100369821 1538666715
+random
+\change_unchanged
+ noise stayed in the lower range of temperatures (in 96% of the simulations,
+ the highest thermal optimum was 22.4°C, see Fig.
  A2 in the Supplementary Material) while they were filtered out in communities
  subjected to a seasonal fluctuation of their environment, for which species
  with thermal optima above 20.5°C persisted.
 
-\change_inserted -2100369821 1538650787
+\change_inserted -2100369821 1538666734
  As before (Fig.
  
 \begin_inset CommandInset ref
@@ -3290,7 +3498,7 @@ noprefix "false"
 
 ), seasonality promoted species with a higher maximum growth rates since
  the autocorrelated temperatures enabled them to achieve this highest growth
- rate for a longer period of time than a white noise would have.
+ rate for a longer period of time than a random noise would have.
  
 \begin_inset Note Note
 status open
@@ -3353,7 +3561,18 @@ stabilizing niche differences
 strong self-regulation
 \change_unchanged
  (b).
- The forcing signal is either a white noise (in blue) or a seasonal signal
+ The forcing signal is either a 
+\change_deleted -2100369821 1538666743
+white noise
+\change_inserted -2100369821 1538666743
+random
+\change_unchanged
+ (in blue) or a seasonal 
+\change_deleted -2100369821 1538666747
+signal
+\change_inserted -2100369821 1538666748
+noise
+\change_unchanged
  (in red).
  Shades of the same color correspond to the 50th, 90th and 100th percentiles
  of the distributions while colored lines correspond to one representative
@@ -3397,8 +3616,13 @@ strong self-regulation
 \change_unchanged
 , could be either present or absent, which led to four scenarios.
  These four scenarios were crossed with two possibilities for the forcing
- signal, a white noise and a stochastic yet seasonal signal, both with equal
- temporal variance.
+ signal, a 
+\change_deleted -2100369821 1538666767
+white
+\change_inserted -2100369821 1538666769
+random
+\change_unchanged
+ noise and a stochastic yet seasonal signal, both with equal temporal variance.
  Our investigation therefore built on the model of 
 \begin_inset CommandInset citation
 LatexCommand citet
@@ -3407,8 +3631,14 @@ literal "false"
 
 \end_inset
 
-, which included a white noise forcing and a storage effect, but considered
- seven additional combinations of mechanisms.
+, which included a 
+\change_deleted -2100369821 1538666785
+white noise forcing
+\change_inserted -2100369821 1538666787
+noisy forcing
+\change_unchanged
+ and a storage effect, but considered seven additional combinations of mechanism
+s.
  This was motivated by our wish to include two observed features of phytoplankto
 n dynamics: seasonal cycles 
 \begin_inset CommandInset citation
@@ -3528,8 +3758,17 @@ literal "false"
 
  was that a built-in storage effect in a forced Lotka-Volterra model, parameteri
 zed for phytoplankton communities, could lead to some degree of coexistence.
- Our investigation reproduced these results, using the white noise forcing
- considered by 
+ Our investigation reproduced these results, using the 
+\change_deleted -2100369821 1538666840
+white
+\change_inserted -2100369821 1538666841
+random
+\change_unchanged
+ noise 
+\change_deleted -2100369821 1538666844
+forcing 
+\change_unchanged
+considered by 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "scranton_coexistence_2016"
@@ -3595,8 +3834,14 @@ SNDs
 a stronger self-regulation
 \change_unchanged
  produced a higher level of diversity than the storage effect (almost double
- for white noise), which not only aligns with our results on phytoplankton
- but also with results on perennial plants 
+ for 
+\change_deleted -2100369821 1538666867
+white
+\change_inserted -2100369821 1538666868
+random
+\change_unchanged
+ noise), which not only aligns with our results on phytoplankton but also
+ with results on perennial plants 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "adler_coexistence_2010"
@@ -3659,7 +3904,9 @@ diversity within clumps of similar traits
  This diversity reduction occurs because within a season, the signal autocorrela
 tion gives long, contiguous time intervals to the best competitor to exclude
  its less adapted heterospecifics.
- This makes the results likely to hold not only for seasonal environments,
+ 
+\change_deleted -2100369821 1538666909
+This makes the results likely to hold not only for seasonal environments,
  but more generally for autocorrelated ones, i.e., 
 \begin_inset Quotes eld
 \end_inset
@@ -3669,10 +3916,18 @@ red
 \end_inset
 
  noise.
+
+\change_unchanged
  This could be relevant for species whose population dynamics occurs at
  timescales largely above one year.
- In contrast, a white noise generates large temperature shifts more frequently,
- and thereby forbid such competitive exclusion.
+ In contrast, a 
+\change_deleted -2100369821 1538666913
+white
+\change_inserted -2100369821 1538666914
+random
+\change_unchanged
+ noise generates large temperature shifts more frequently, and thereby forbid
+ such competitive exclusion.
  In a seasonal setting, a species with the highest long-term averaged growth
  rate may not be the best competitor, and can disappear as a result of a
  strong competition from both low- and high-temperature tolerant species.
@@ -3804,35 +4059,21 @@ literal "false"
 \end_inset
 
 
-\change_inserted -2100369821 1538646268
+\change_deleted -2100369821 1538667079
 .
- Conversely, the same mechanisms may lead to other trait abundance relationships
- with other models
+\change_inserted -2100369821 1538667079
+.
+
 \change_unchanged
-.
  Still, clustering on the trait axis, in scenarios where the environment
  fluctuates strongly in time, suggests that storage effects could be at
  work
-\change_inserted -2100369821 1538647327
- 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-
-\change_inserted -2100369821 1538647735
-I think this last sentence is too strong a statement: it depends on the
- trait that is considered, its link with the environment, trade-offs or
- trait-covariation.
-\change_unchanged
-
-\end_layout
-
-\end_inset
-
-
-\change_unchanged
+\change_deleted -2100369821 1538667101
 .
+\change_inserted -2100369821 1538667101
+.
+\change_unchanged
+
 \end_layout
 
 \begin_layout Standard

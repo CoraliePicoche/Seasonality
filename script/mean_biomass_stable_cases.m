@@ -112,7 +112,7 @@ for s1=1:60
 end;
 xlim([min(tau_opt)-273 max(tau_opt)-273+0.1])
 ylim([750 850])
-    ylabel({"Noise";'Biomass'})
+    ylabel({"Random noise";'Biomass'})
  
    hold off;
 box off

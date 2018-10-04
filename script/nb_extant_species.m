@@ -116,7 +116,7 @@ tmp=[extant_species_wn(:,1) extant_species_season(:,1) extant_species_wn(:,2) ex
 afontsize=10;
 boxplot(tmp,'positions',[1.2 1.3 1.6 1.7 2.0 2.1 2.4 2.5],'colors','k','whisker',10^500,'labels',{'','','','','','','',''},'Symbol','+k')
 xtick([1.25 1.65 2.05 2.45])
-xticklabels({'-storage-SND','+storage-SND','-storage+SND','+storage+SND'})
+xticklabels({'-storage-SSR','+storage-SSR','-storage+SSR','+storage+SSR'})
 a=get(gca,'xticklabel');
 set(gca,'XTickLabel',a,'FontSize',afontsize);
 h = findobj(gca,'Tag','Box');
