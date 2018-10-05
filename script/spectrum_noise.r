@@ -12,8 +12,8 @@ wn=rep(NA,t*sub)
 for (i in 1:t){
 	wn[(1+(i-1)*sub):(i*sub)]=rep(a[i],sub)
 }
-x = spectrum(wn, spans=50)
+x = spectrum(wn, spans=3,plot=F) #I want a small smoother
 
 pdf("spectrum_white_noise.pdf")
-plot(x$freq[(x$freq<0.1)],x$spec[(x$freq<0.1)])
+plot(x$freq[(x$freq<=(1/(30*24)))],x$spec[(x$freq<=(1/(24*30)))]) #monthly and below
 dev.off()

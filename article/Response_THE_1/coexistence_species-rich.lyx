@@ -83,7 +83,7 @@
 \papersides 1
 \paperpagestyle default
 \tracking_changes true
-\output_changes false
+\output_changes true
 \html_math_output 0
 \html_css_as_file 0
 \html_be_strict false
@@ -93,8 +93,15 @@
 \begin_body
 
 \begin_layout Title
+
+\change_deleted -2100369821 1538719508
 Stabilizing niche differences are required to maintain species-rich communities
  in temporally variable environments
+\change_inserted -2100369821 1538719509
+How self-regulation, storage effect and their interaction contribute to
+ coexistence in stochastic and seasonal environments
+\change_unchanged
+
 \end_layout
 
 \begin_layout Date
@@ -1713,8 +1720,8 @@ status open
 
 \begin_layout Plain Layout
 
-\change_inserted -2100369821 1538403160
-I took SV's way of writing dimensionless value ; we would also say n.d.
+\change_inserted -2100369821 1538727601
+I took SV's way of writing dimensionless value ; we could also say n.d.
  -maybe more elegant?
 \change_unchanged
 
@@ -1743,6 +1750,27 @@ I took SV's way of writing dimensionless value ; we would also say n.d.
 \end_layout
 
 \begin_layout Standard
+
+\change_inserted -2100369821 1538728794
+The original environmental forcing is a normally distributed variable centered
+ on 293 K, with a 5K dispersion.
+ This variable varies from one day to another but is kept constant throughout
+ the day.
+ At the macro-temporal scale usually used in ecological studies, temperature
+ could therefore be considered as a white noise 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "vasseur_color_2004"
+literal "false"
+
+\end_inset
+
+ but it is slightly auto-correlated as the integration process goes below
+ the daily time step.
+ We have therefore chosen to use the word 'random noise' to describe this
+ forcing and remain coherent with the 'seasonal noise' described hereafter.
+ 
+\change_unchanged
 We 
 \change_deleted -2100369821 1538403182
 kept
@@ -1754,7 +1782,11 @@ keep
 d
 \change_unchanged
  a lower-frequency component using a sinusoidal function with a period of
- 365 days (1 time unit being one day, Eq.
+ 365 days (
+\change_deleted -2100369821 1538727912
+1 time unit being one day, 
+\change_unchanged
+Eq.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -3896,9 +3928,13 @@ neutral
 
  kind of diversity, i.e., 
 \change_unchanged
-diversity within clumps of similar traits
-\change_inserted -2100369821 1538642389
- was considerably decreased
+diversity within clumps of similar
+\change_inserted -2100369821 1538730842
+ values of 
+\change_deleted -2100369821 1538730853
+ traits
+\change_inserted -2100369821 1538730876
+ growth rates was considerably decreased
 \change_unchanged
 .
  This diversity reduction occurs because within a season, the signal autocorrela
@@ -3987,7 +4023,26 @@ strong self-regulatory mechanisms
 \change_unchanged
  alone led to relatively uniform biomass distributions, with species forming
  a single large cluster, which covers a fraction of the initial trait space.
- The identification of multiple modes in biomass-trait relationships and
+ 
+\change_inserted -2100369821 1538724871
+Therefore, the shape of the disitribution was affected by the coexistence
+ mechanism at stake while the average trait value was modified by the type
+ of environmental forcing, even though the mean value of the environmental
+ signal did not change.
+ The relationships between trait patterns and filters applied on local communiti
+es are complex and still need to be clarified but they constitute an additional
+ clue on species dynamics 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "dandrea_challenges_2016,loranger_what_2018"
+literal "false"
+
+\end_inset
+
+.
+ 
+\change_unchanged
+The identification of multiple modes in biomass-trait relationships and
  SADs is relatively recent 
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -4132,7 +4187,26 @@ literal "false"
 
 \end_inset
 
-).
+)
+\change_inserted -2100369821 1538726477
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted -2100369821 1538726502
+I'm not sure for Stump and Chesson 2015 -> They show that there is only
+ little effect of the interaction between mechanisms
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+.
  Previous research has however demonstrated that generalist seed predation
  could weaken the storage effect 
 \begin_inset CommandInset citation
