@@ -412,17 +412,27 @@ literal "false"
 \end_layout
 
 \begin_layout Standard
+
+\change_deleted -666822487 1539178401
 For instance, 
+\change_inserted -666822487 1539178429
+An intriguing offshoot of the niche vs.
+ neutrality debate is the concept of `clumpy coexistence' 
+\change_unchanged
+
 \begin_inset CommandInset citation
-LatexCommand citet
+LatexCommand citep
 key "scheffer_self-organized_2006"
 literal "false"
 
 \end_inset
 
- put forward the concept of `clumpy coexistence', whereby a simultaneous
- influence of both niche and neutral processes create several clumps of
- similar species along a single trait axis.
+
+\change_deleted -666822487 1539178436
+ put forward the concept of `clumpy coexistence'
+\change_unchanged
+, whereby a simultaneous influence of both niche and neutral processes create
+ several clumps of similar species along a single trait axis.
  Classical stabilizing niche differences (SNDs)
 \change_inserted -2100369821 1538399294
 , such as
@@ -582,8 +592,12 @@ literal "false"
 
 \end_inset
 
- described temperature as a random noise, i.e., independent and identically
- distributed Gaussian random variates over time.
+ described 
+\change_inserted -666822487 1539178462
+daily 
+\change_unchanged
+temperature as a random noise, i.e., independent and identically distributed
+ Gaussian random variates over time.
  This appeared to us a key assumption to relax.
  Under most latitudes, temperature is indeed a seasonal signal, and seasonal
  forcing can strongly affect the dynamics of the community considered 
@@ -958,7 +972,11 @@ Number of species
 \begin_layout Plain Layout
 60
 \change_inserted -2100369821 1538399890
- ()
+ (
+\change_inserted -666822487 1539178513
+NA
+\change_inserted -2100369821 1538399890
+)
 \change_unchanged
 
 \end_layout
@@ -1826,23 +1844,36 @@ random noise' to describe this forcing
 \change_inserted -2100369821 1538728794
 seasonal noise' described hereafter.
  
-\change_inserted -666822487 1539018677
-To construct our seasonal noise, w
+\change_inserted -666822487 1539178535
+To construct the seasonal noise, w
 \change_deleted -666822487 1539018676
 W
 \change_unchanged
 e 
 \change_deleted -2100369821 1538403182
 kept
-\change_inserted -2100369821 1538403183
-keep
+\change_deleted -666822487 1539178674
+keep the mean and standard deviation of the
+\change_inserted -666822487 1539178678
+add to the
 \change_unchanged
- the mean and standard deviation of the forcing signal but include
+ 
+\change_inserted -666822487 1539178643
+random 
+\change_unchanged
+forcing signal 
+\change_deleted -666822487 1539178683
+but include
 \change_deleted -2100369821 1538403185
 d
+\change_deleted -666822487 1539178683
+ 
 \change_unchanged
- a lower-frequency component using a sinusoidal function with a period of
- 365 days (
+a lower-frequency component
+\change_inserted -666822487 1539178550
+,
+\change_unchanged
+ using a sinusoidal function with a period of 365 days (
 \change_deleted -2100369821 1538727912
 1 time unit being one day, 
 \change_unchanged
@@ -1857,7 +1888,27 @@ noprefix "false"
 
 \end_inset
 
-).
+)
+\change_inserted -666822487 1539178687
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted -666822487 1539178726
+Actually we don't keep the same variance in the random part since we have
+ to correct it later on to keep the same total energy for the signal.
+ 
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+.
  We tune the ratio of low-to-high frequency with the variable 
 \begin_inset Formula $\theta$
 \end_inset
@@ -1869,7 +1920,7 @@ noprefix "false"
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-\tau(t)=\mu_{\tau}+\theta\sigma_{\tau}\sin\left(2\pi t\right)+\epsilon_{t},\text{where }\epsilon_{t}\sim\mathcal{N}(0,\sigma_{\tau}\sqrt{1-\frac{\theta^{2}}{2}})\label{eq:Seasonal_signal}
+\tau(t)=\mu_{\tau}+\theta\sigma_{\tau}\sin\left(2\pi t\right)+\epsilon_{t},\text{where }\epsilon_{t}\sim\mathcal{N}\left(0,\sigma_{\tau}\sqrt{1-\frac{\theta^{2}}{2}}\right)\label{eq:Seasonal_signal}
 \end{equation}
 
 \end_inset
@@ -3217,8 +3268,32 @@ noprefix "false"
 
 d).
  The minimum biomass was reached for the best long-term average growth rate
- at an intermediate temperature (20.4°C), one species apart from the maximum
- biomass in the random noise case.
+ at an intermediate temperature (20.4°C)
+\change_deleted -666822487 1539178758
+, one species apart from the maximum biomass in the random noise case
+\change_inserted -666822487 1539178760
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted -666822487 1539178895
+This last part has to be better explained or suppressed (if not essential):
+ it is really hard to understand – perhaps you mean that if we ranked the
+ species by order of maximum biomass, then the last biomass rank (min biomass)
+ in the seasonal case would equal the second rank in the random noise case.
+ Not sure that it is easy to get that.
+ 
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+.
  
 \end_layout
 
@@ -3507,7 +3582,17 @@ literal "false"
 
 \end_inset
 
-, predation or parasitism (see e.g., the generalist predators in 
+, 
+\change_inserted -666822487 1539178937
+or 
+\change_unchanged
+predation 
+\change_inserted -666822487 1539178947
+as well as
+\change_deleted -666822487 1539178945
+or
+\change_unchanged
+ parasitism (see e.g., the generalist predators in 
 \begin_inset CommandInset citation
 LatexCommand citealp
 key "haydon1994pivotal"
@@ -3515,8 +3600,26 @@ literal "false"
 
 \end_inset
 
-), etc.
- They seem nonetheless an ubiquitous feature in primary producers 
+)
+\change_deleted -666822487 1539178952
+, etc
+\change_unchanged
+.
+ 
+\change_deleted -666822487 1539178958
+They
+\change_inserted -666822487 1539178962
+Strong self-regulation
+\change_unchanged
+ seem
+\change_inserted -666822487 1539178965
+s
+\change_unchanged
+ nonetheless an ubiquitous feature in
+\change_inserted -666822487 1539178990
+ competition networks of
+\change_unchanged
+ primary producers 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "adler_competition_2018"
@@ -3524,11 +3627,72 @@ literal "false"
 
 \end_inset
 
+
+\change_inserted -666822487 1539179033
+, and perhaps even more general networks (Barabas et al.
+ Nature Eco Evo 2018 [ADD REF])
+\change_unchanged
 .
+\change_inserted -666822487 1539179043
+
 \end_layout
 
 \begin_layout Standard
-We have found that first, temporally forced Lotka-Volterra dynamics cannot
+
+\change_inserted -666822487 1539180754
+Before discussing the ecological interpretation of our results, we first
+ recall some technical assumptions made in this study.
+ All our simulations relied upon the 5000 timesteps for numerical integration
+ that were also used by 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "scranton_coexistence_2016"
+literal "false"
+
+\end_inset
+
+.
+ This means that short- and medium-term transients (a few years to hundreds
+ of years) are completely negligible at the end of the time series, but
+ very long transients can remain.
+ We realized that convergence could in some cases be incomplete after 5000
+ years (e.g., random noise + storage effect + equal competitive strength).
+ These would not even be stabilized well after 10 000 years, they would
+ take ~ 15 000 years and the rate of convergence would slow over time.
+ We kept a fixed time integration window rather than waiting for convergence
+ for both technical and ecological reasons.
+ From a technical standpoint, adding 10 000 years of numerical integration
+ for the sake of reaching the equilibrium would have been very computationally
+ challenging, and comparison with the values reported by 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "scranton_coexistence_2016"
+literal "false"
+
+\end_inset
+
+ would have been compromised.
+ From an ecological standpoint, waiting for full convergence when there
+ are extremely long transients (Hastings et al.
+ 2018) is also quite artificial: there is no reason to believe that very
+ long transients (i.e., one that maintains for thousands of year) has any
+ less ecological reality than an attractor that is deemed stable because
+ convergence has been reached.
+ Speed of convergence is therefore an issue to judge whether transients
+ should be considered or excluded, and very long yet fixed time window for
+ integration allows advantageously to compare mechanisms for which speed
+ of convergence might differ.
+ 
+\change_unchanged
+
+\end_layout
+
+\begin_layout Standard
+W
+\change_inserted -666822487 1539180722
+ith these assumptions in mind, w
+\change_unchanged
+e have found that first, temporally forced Lotka-Volterra dynamics cannot
  sustain any diversity with our phytoplankton-based set of parameters, unless
  the structure is geared to include either a storage effect or a strong
  self-regulation.
@@ -3608,55 +3772,59 @@ literal "false"
 
 \change_deleted -2100369821 1538642033
  
-\change_inserted -2100369821 1538642273
- 
-\change_deleted -666822487 1539019950
-The
-\change_inserted -666822487 1539019951
-Our
-\change_inserted -2100369821 1538642273
- comparison of both coexistence mechanisms, the storage effect and a strong
- self-regu
-\change_inserted -666822487 1539019937
-l
-\change_inserted -2100369821 1538642273
-ation, depends on the 
-\change_inserted -666822487 1539019956
-chosen 
-\change_inserted -2100369821 1538642273
-intensity of self-regulation of each species and the type of dynamics considered
-\change_inserted -666822487 1539020011
- - although 
-\change_deleted -666822487 1539019982
-, which calls for further analyses on different networks before drawing
- a general conclusion
+\change_deleted -666822487 1539179216
+ The comparison of both coexistence mechanisms, the storage effect and a
+ strong self-reguation, depends on the intensity of self-regulation of each
+ species and the type of dynamics considered, which calls for further analyses
+ on different networks before drawing a general conclusion
 \change_inserted -2100369821 1538642273
 .
  
-\change_unchanged
+\change_deleted -666822487 1539179226
 On 
 \change_deleted -2100369821 1538410070
 their
-\change_inserted -2100369821 1538410070
-its
-\change_unchanged
- own, 
+\change_deleted -666822487 1539179226
+its own, in a Lotka-Volterra model applied to phytoplankton species
+\change_inserted -666822487 1539179262
+Implementing such strong self-regulation in the forced Lotka-Volterra models
+ that we considered
 \change_inserted -2100369821 1538642113
-in a Lotka-Volterra model applied to phytoplankton species, 
+, 
 \change_deleted -2100369821 1538410060
 SNDs
-\change_inserted -2100369821 1538410068
+\change_deleted -666822487 1539179296
 a stronger self-regulation
+\change_inserted -666822487 1539179298
+it
 \change_unchanged
  produced a higher level of diversity than the storage effect (almost double
+\change_deleted -666822487 1539179322
  for 
 \change_deleted -2100369821 1538666867
 white
-\change_inserted -2100369821 1538666868
-random
+\change_deleted -666822487 1539179318
+random noise
 \change_unchanged
- noise), which not only aligns with our results on phytoplankton but also
- with results on perennial plants 
+)
+\change_inserted -666822487 1539179370
+.
+ Of course, the result is somehow contingent upon the strength of self-regulatio
+n.
+ Our estimates 
+\change_deleted -666822487 1539179375
+, which not only aligns with our results on phytoplankton but also with
+ results
+\change_inserted -666822487 1539179386
+are a little stronger than what was found
+\change_unchanged
+ 
+\change_deleted -666822487 1539179390
+on
+\change_inserted -666822487 1539179390
+in
+\change_unchanged
+ perennial plants 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "adler_coexistence_2010"
@@ -3664,19 +3832,47 @@ literal "false"
 
 \end_inset
 
+
+\change_inserted -666822487 1539179422
+, where interspecific competition was suggested 4 or 5 times stronger than
+ intraspecific
+\change_unchanged
 .
 
 \change_deleted -2100369821 1538641752
+ 
+\change_inserted -666822487 1539179657
+Still, the widespread effects of natural enemies in phytoplankton (zooplankton,
+ parasites) may contribute to increase the strength of self-regulation (Gaedke
+ et al.
+ XXXX, Barraquand et al.
+ 2018) relative to other systems, hence we believe that 10 times stronger
+ intraspecific competition constitutes a reasonable order of magnitude.
  
 \change_unchanged
 
 \end_layout
 
 \begin_layout Standard
-However, self-regulation was still insufficient to maintain the whole community
- diversity by itself, especially when the seasonal forcing was considered.
+However, 
+\change_inserted -666822487 1539179543
+such strong 
+\change_unchanged
+self-regulation was still insufficient to maintain the whole community diversity
+\change_inserted -666822487 1539179345
+ (60 species)
+\change_unchanged
+ by itself, especially when the seasonal forcing 
+\change_inserted -666822487 1539179563
+(always decreasing species richness) 
+\change_unchanged
+was considered.
  The diversity within clumps of similar values of growth rates was considerably
- decreased.
+ decreased
+\change_inserted -666822487 1539179593
+ once seasonality was implemented
+\change_unchanged
+.
  This diversity reduction occurs because within a season, the signal autocorrela
 tion gives long, contiguous time intervals to the best competitor to exclude
  its less adapted heterospecifics.
@@ -3710,13 +3906,15 @@ We can actually keep this.
 \change_unchanged
  This could be relevant for species whose population dynamics occurs at
  timescales largely above one year.
- In contrast, a 
-\change_inserted -666822487 1539020094
-truly 
+ In contrast, 
+\change_deleted -666822487 1539180791
+a 
+\change_inserted -666822487 1539180798
+the 
 \change_unchanged
 random noise
-\change_inserted -666822487 1539020120
-, which can be considered white noise above the daily temporal scales,
+\change_inserted -666822487 1539180812
+ – which can be considered white noise above the daily temporal scales –
 \change_unchanged
  generates large temperature shifts more frequently, and thereby forbid
 \change_inserted -666822487 1539020130
@@ -3906,10 +4104,33 @@ literal "false"
 \end_inset
 
 , we did not find any storage effect (which does not mean that it could
- not be observed in other systems).
- Given the results on species richness and composition presented here, we
- are skeptical that the storage effect alone could help explaining phytoplankton
- diversity.
+ not be observed in other 
+\change_inserted -666822487 1539180838
+planktonic 
+\change_unchanged
+systems).
+ Given the 
+\change_deleted -666822487 1539180854
+results
+\change_inserted -666822487 1539180862
+consequences of the storage effect
+\change_unchanged
+ 
+\change_deleted -666822487 1539180891
+on
+\change_inserted -666822487 1539180891
+for
+\change_unchanged
+ species richness and composition presented here, we are skeptical that
+ the storage effect
+\change_inserted -666822487 1539180874
+ could
+\change_deleted -666822487 1539180877
+ alone
+\change_inserted -666822487 1539180880
+by itself
+\change_unchanged
+ could help explaining phytoplankton diversity.
  However, our results suggest that in phytoplankton-like seasonal environments,
  even though empirically-based self-regulation produce much more diversity
  than the storage effect when considered in isolation, the storage effect
@@ -3930,7 +4151,7 @@ The above results suggest the very exciting idea that multiple coexistence
  see 
 \begin_inset CommandInset citation
 LatexCommand citealp
-key "bagchi_pathogens_2014,comita_testing_2014,barraquand_weak_2017"
+key "bagchi_pathogens_2014,comita_testing_2014,barraquand2018coastal"
 literal "false"
 
 \end_inset
@@ -4061,8 +4282,15 @@ Acknowledgements
 \end_layout
 
 \begin_layout Standard
-We thank Alix Sauve for numerous thoughtful comments and some bibliographic
- references.
+We thank Alix Sauve for 
+\change_deleted -666822487 1539180927
+numerous 
+\change_unchanged
+thoughtful comments and some bibliographic references
+\change_inserted -666822487 1539180945
+, as well as Gyuri Barabas and an anonymous referee for feedback
+\change_unchanged
+.
  This study was supported by the French ANR through LabEx COTE (ANR-10-LABX-45).
 \end_layout
 
