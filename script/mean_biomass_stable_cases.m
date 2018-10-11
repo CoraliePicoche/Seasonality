@@ -124,7 +124,7 @@ pos(1)=0.13;
 pos(2)=0.5838;
 pos(3)=0.3347;
 pos(4)=0.3412;
-        tt1=title('1 species (-storage-SND)','Fontsize',afontsize,'FontWeight','Normal');
+        tt1=title('1 species (-storage-SSR)','Fontsize',afontsize,'FontWeight','Normal');
         titlePos = get( tt1 , 'position');
         titlePos(2)=858.6;
         set(tt1,'position',titlePos);
@@ -189,7 +189,7 @@ pos(2)=0.5838;
 pos(3)=0.3347;
 pos(4)=0.3412;
 
-    tt2=title('60 species (+storage+SND)','Fontsize',afontsize,'FontWeight','Normal');
+    tt2=title('60 species (+storage+SSR)','Fontsize',afontsize,'FontWeight','Normal');
             titlePos = get( tt2 , 'position');
             titlePos(2)=16.9;
         set(tt2,'position',titlePos);
