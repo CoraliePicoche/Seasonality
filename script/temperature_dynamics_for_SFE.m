@@ -26,7 +26,9 @@ yl=zeros(1,2);
 xl=zeros(1,2);
 
 h(1)=subplot(2,2,1)
-plot(use_temperature-273.15,'-k','LineWidth',.5)
+%line1=plot(use_temperature-273.15,'-k','LineWidth',.5)
+line1=plot(use_temperature-273.15,'-b','LineWidth',.5);
+line1.Color(4) = 0.5;  % 50% transparent
 maxi=get(gca,'Ylim');
 maxi=maxi(2);
 text(15,0.95*maxi,'a','Fontsize',afontsize)
@@ -36,7 +38,7 @@ xticklabels(round(seq,2)-round(seq(1),2));
 xlim([seq(1)*365 seq(end)*365])
 yl(1)=ylabel('Temperature (°C)')
 set(gca,'Fontsize',afontsize)
-get(gca,'Position')
+title("Random",'Fontsize',afontsize,'FontWeight','Normal')
 box off;
 
 %c) Time series for theta=0
@@ -70,9 +72,12 @@ yend=size(youtbis,1);
 use_community=youtbis((yend-ylast):yend,:);
 
 h(2)=subplot(2,2,2)
-plot(use_temperature-273.15,'-k','LineWidth',.5)
+line2=plot(use_temperature-273.15,'-r','LineWidth',.5);
+line2.Color(4) = 0.5;  % 50% transparent
 maxi=get(gca,'Ylim');
 maxi=maxi(2)
+title("Seasonal",'Fontsize',afontsize,'FontWeight','Normal')
+
 text(15,0.95*maxi,'b','Fontsize',afontsize)
 xticks(seq*365);
 xticklabels(round(seq,2)-round(seq(1),2));
@@ -122,5 +127,6 @@ for i=[1 2]
 end
 
 fig = gcf;
+fig.Renderer='Painters';
 print(fig,'./Pres/Fig1_SFE','-depsc')
 

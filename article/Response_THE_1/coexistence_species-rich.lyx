@@ -264,71 +264,16 @@ Explaining coexistence in species-rich communities of primary producers
  environments, using an empirically parameterized model.
  Building on the forced Lotka-Volterra model of Scranton and Vasseur (2016)
  inspired by phytoplankton communities, we have investigated the effect
- of two coexistence mechanisms, namely the storage effect and
-\change_inserted -2100369821 1538649806
- 
-\change_deleted -666822487 1539018138
-differences in
-\change_inserted -666822487 1539018139
-higher
-\change_inserted -2100369821 1538649806
- intra- 
-\change_deleted -666822487 1539018142
-and
-\change_inserted -666822487 1539018142
-than
-\change_inserted -2100369821 1538649806
- interspecific competition strength
-\change_inserted -666822487 1539018213
-s (i.e., strong self-regulation)
-\change_inserted -2100369821 1538649806
-.
+ of two coexistence mechanisms, namely the storage effect and higher intra-
+ than interspecific competition strengths (i.e., strong self-regulation).
  We tuned the competition ratio on empirical data, in which self-regulation
- 
-\change_deleted -666822487 1539018158
-supersedes
-\change_inserted -666822487 1539018174
-usually dominates
-\change_inserted -2100369821 1538649806
- interspecific interactions
-\change_deleted -666822487 1539018178
- in phytoplankton dynamics
-\change_inserted -2100369821 1538649806
-.
-
-\change_unchanged
- 
-\change_deleted -2100369821 1538397823
-stabilizing niche differences (SNDs)
-\change_unchanged
-.
- 
-\change_deleted -2100369821 1538398648
-SNDs occur when intraspecific competition is stronger than interspecific;
- we tuned the competition ratio based on empirical data.
-
-\change_unchanged
- Although 
-\change_deleted -2100369821 1538398082
-SNDs
-\change_inserted -2100369821 1538649823
- a strong self-regulation
-\change_unchanged
- maintained more species (50%) than the storage effect (25%), we show that
- none of the two coexistence mechanisms considered could, by itself, ensure
- the coexistence of all species present at the beginning of our simulations.
+ usually dominates interspecific interactions.
+ Although a strong self-regulation maintained more species (50%) than the
+ storage effect (25%), we show that none of the two coexistence mechanisms
+ considered could, by itself, ensure the coexistence of all species present
+ at the beginning of our simulations.
  Realistic seasonal environments only aggravated that picture, as they decreased
- persistence relative to 
-\change_deleted -2100369821 1538666009
-white
-\change_unchanged
- 
-\change_deleted -2100369821 1538666116
-noise
-\change_inserted -2100369821 1538666131
- a random environment
-\change_unchanged
-.
+ persistence relative to a random environment.
  Our results suggest that combining different mechanisms for biodiversity
  maintenance into community models might be more fruitful than trying to
  find which mechanism explains best the observed diversity levels.
@@ -341,11 +286,7 @@ noise
 \begin_layout Abstract
 
 \series bold
-Number of words: 
-\change_deleted -2100369821 1538398065
-240
-\change_unchanged
-
+Number of words: 240 
 \end_layout
 
 \begin_layout Standard
@@ -412,14 +353,8 @@ literal "false"
 \end_layout
 
 \begin_layout Standard
-
-\change_deleted -666822487 1539178401
-For instance, 
-\change_inserted -666822487 1539178429
-An intriguing offshoot of the niche vs.
- neutrality debate is the concept of `clumpy coexistence' 
-\change_unchanged
-
+An intriguing offshoot of the niche vs neutrality debate is the concept
+ of `clumpy coexistence' 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "scheffer_self-organized_2006"
@@ -427,31 +362,11 @@ literal "false"
 
 \end_inset
 
-
-\change_deleted -666822487 1539178436
- put forward the concept of `clumpy coexistence'
-\change_unchanged
 , whereby a simultaneous influence of both niche and neutral processes create
  several clumps of similar species along a single trait axis.
- Classical stabilizing niche differences (SNDs)
-\change_inserted -2100369821 1538399294
-, such as
-\change_unchanged
- 
-\change_inserted -666822487 1539018273
-a 
-\change_inserted -2100369821 1538399316
-stronger net intraspecific competition
-\change_inserted -666822487 1539018307
- than interspecific competition
-\change_inserted -2100369821 1538399316
-, 
-\change_unchanged
-enable coexistence of multiple clumps
-\change_deleted -2100369821 1538399322
- through stronger net intraspecific competition
-\change_unchanged
- 
+ Classical stabilizing niche differences (SNDs), such as a stronger net
+ intraspecific competition than interspecific competition, enable coexistence
+ of multiple clumps 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "chesson_mechanisms_2000"
@@ -592,12 +507,8 @@ literal "false"
 
 \end_inset
 
- described 
-\change_inserted -666822487 1539178462
-daily 
-\change_unchanged
-temperature as a random noise, i.e., independent and identically distributed
- Gaussian random variates over time.
+ described daily temperature as a random noise, i.e., independent and identically
+ distributed Gaussian random variates over time.
  This appeared to us a key assumption to relax.
  Under most latitudes, temperature is indeed a seasonal signal, and seasonal
  forcing can strongly affect the dynamics of the community considered 
@@ -649,7 +560,7 @@ literal "false"
  the expected temporal partitioning.
  How seasonality affects coexistence (as opposed to a purely randomly fluctuatin
 g environment) is therefore a key feature of this paper.
- In particular, we contrast cases where the storage effect is present vs.
+ In particular, we contrast cases where the storage effect is present vs
  absent, which conveniently maps to two different parameterizations of the
  forced Lotka-Volterra model.
  Moreover, the overall diversity obtained at the end of the simulations
@@ -678,34 +589,10 @@ literal "false"
 
 \end_inset
 
-
-\begin_inset Foot
-status open
-
-\begin_layout Plain Layout
-Preprint version available: see 
-\begin_inset CommandInset citation
-LatexCommand citet
-key "barraquand_weak_2017"
-literal "false"
-
-\end_inset
-
- in the reference list
-\end_layout
-
-\end_inset
-
 , we found that despite a large influence of the environment (including
- temperature, irradiance, and other factors), 
-\change_inserted -666822487 1539018390
-a strong 
-\change_unchanged
-intraspecific (or intragenus) competition
-\change_inserted -666822487 1539018396
-, when compared to interspecific interaction coefficients,
-\change_unchanged
- was most likely the key driver of species coexistence.
+ temperature, irradiance, and other factors), a strong intraspecific (or
+ intragenus) competition, when compared to interspecific interaction coefficient
+s, was most likely the key driver of species coexistence.
  In other words, strong self-regulation had a large role to play in maintaining
  species diversity in coastal phytoplankton 
 \begin_inset CommandInset citation
@@ -737,9 +624,16 @@ literal "false"
 \end_layout
 
 \begin_layout Standard
-Here, we therefore try to establish what are the relative contributions
- of the storage effect vs strong self-regulation to coexistence in a phytoplankt
-on-like theoretical community model.
+Here, we therefore try to establish what 
+\change_deleted -2100369821 1539685354
+are 
+\change_unchanged
+the relative contributions of the storage effect vs strong self-regulation
+ to coexistence
+\change_inserted -2100369821 1539685360
+ are
+\change_unchanged
+ in a phytoplankton-like theoretical community model.
  This led us to cross different combinations of seasonality in the forcing
  signal, presence of the storage effect or not, and intra- vs interspecific
  competition, in order to disentangle the contributions of all these factors
@@ -970,15 +864,7 @@ Number of species
 \begin_inset Text
 
 \begin_layout Plain Layout
-60
-\change_inserted -2100369821 1538399890
- (
-\change_inserted -666822487 1539178513
-NA
-\change_inserted -2100369821 1538399890
-)
-\change_unchanged
-
+60 (NA)
 \end_layout
 
 \end_inset
@@ -1046,15 +932,7 @@ Temperature
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_inserted -2100369821 1538399980
-(
-\change_unchanged
-K
-\change_inserted -2100369821 1538399979
-)
-\change_unchanged
-
+(K)
 \end_layout
 
 \end_inset
@@ -1093,11 +971,7 @@ Growth rate of species
 \begin_inset Formula $(\frac{\text{kg}}{\text{kg*year}}$
 \end_inset
 
-
-\change_inserted -2100369821 1538399913
 )
-\change_unchanged
-
 \end_layout
 
 \end_inset
@@ -1137,15 +1011,7 @@ Strength of competition of species
 \begin_inset Text
 
 \begin_layout Plain Layout
-0.001 
-\change_inserted -2100369821 1538399907
-(
-\change_unchanged
-area/kg
-\change_inserted -2100369821 1538399909
-)
-\change_unchanged
-
+0.001 (area/kg)
 \end_layout
 
 \end_inset
@@ -1177,14 +1043,10 @@ Normalization of the thermal decay rate
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_inserted -2100369821 1538399905
 \begin_inset Formula $(K^{3}$
 \end_inset
 
 )
-\change_unchanged
-
 \end_layout
 
 \end_inset
@@ -1219,11 +1081,7 @@ Mortality rate
 \begin_inset Formula $15(\frac{\text{kg}}{\text{kg*year}}$
 \end_inset
 
-
-\change_inserted -2100369821 1538399930
 )
-\change_unchanged
-
 \end_layout
 
 \end_inset
@@ -1255,15 +1113,7 @@ Reference temperature
 \begin_inset Text
 
 \begin_layout Plain Layout
-293 
-\change_inserted -2100369821 1538399937
-(
-\change_unchanged
-K
-\change_inserted -2100369821 1538399937
-)
-\change_unchanged
-
+293 (K) / 20 (°C)
 \end_layout
 
 \end_inset
@@ -1298,11 +1148,7 @@ Growth rate at reference temperature
 \begin_inset Formula $386(\frac{\text{kg}}{\text{kg*year}}$
 \end_inset
 
-
-\change_inserted -2100369821 1538399947
 )
-\change_unchanged
-
 \end_layout
 
 \end_inset
@@ -1334,15 +1180,7 @@ Activation energy
 \begin_inset Text
 
 \begin_layout Plain Layout
-0.467 
-\change_inserted -2100369821 1538399988
-(
-\change_unchanged
-eV
-\change_inserted -2100369821 1538399985
-)
-\change_unchanged
-
+0.467 (eV)
 \end_layout
 
 \end_inset
@@ -1413,15 +1251,7 @@ th species
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_inserted -2100369821 1538399997
-(
-\change_inserted -666822487 1539018493
-NA
-\change_inserted -2100369821 1538399997
-)
-\change_unchanged
-
+(NA)
 \end_layout
 
 \end_inset
@@ -1453,15 +1283,7 @@ Mean temperature
 \begin_inset Text
 
 \begin_layout Plain Layout
-293 
-\change_inserted -2100369821 1538400000
-(
-\change_unchanged
-K
-\change_inserted -2100369821 1538399999
-)
-\change_unchanged
-
+293 (K)
 \end_layout
 
 \end_inset
@@ -1493,15 +1315,7 @@ Standard deviation for temperature
 \begin_inset Text
 
 \begin_layout Plain Layout
-5 
-\change_inserted -2100369821 1538400009
-(
-\change_unchanged
-K
-\change_inserted -2100369821 1538400008
-)
-\change_unchanged
-
+5 (K)
 \end_layout
 
 \end_inset
@@ -1533,15 +1347,7 @@ Minimum thermal optimum
 \begin_inset Text
 
 \begin_layout Plain Layout
-288
-\change_inserted -2100369821 1538400011
- (
-\change_unchanged
-K
-\change_inserted -2100369821 1538400012
-)
-\change_unchanged
-
+288 (K)
 \end_layout
 
 \end_inset
@@ -1573,15 +1379,7 @@ Maximum thermal optimum
 \begin_inset Text
 
 \begin_layout Plain Layout
-298 
-\change_inserted -2100369821 1538400014
-(
-\change_unchanged
-K
-\change_inserted -2100369821 1538400015
-)
-\change_unchanged
-
+298 (K)
 \end_layout
 
 \end_inset
@@ -1649,15 +1447,7 @@ th species
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_inserted -2100369821 1538400090
-(
-\change_unchanged
-K
-\change_inserted -2100369821 1538400088
-)
-\change_unchanged
-
+(K)
 \end_layout
 
 \end_inset
@@ -1680,17 +1470,7 @@ K
 \begin_inset Text
 
 \begin_layout Plain Layout
-Scaling between 
-\change_deleted -2100369821 1538666281
-white
-\change_inserted -2100369821 1538666284
-random and seasonal
-\change_unchanged
- noise
-\change_deleted -2100369821 1538666288
- and seasonal signal
-\change_unchanged
-
+Scaling between random and seasonal noise
 \end_layout
 
 \end_inset
@@ -1703,15 +1483,7 @@ random and seasonal
 \begin_inset Formula $\sqrt{(}2)$
 \end_inset
 
-]
-\change_inserted -2100369821 1538400092
- (
-\change_inserted -666822487 1539018490
-NA
-\change_inserted -2100369821 1538400092
-)
-\change_unchanged
-
+] (NA)
 \end_layout
 
 \end_inset
@@ -1722,7 +1494,7 @@ NA
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\rho$
+\begin_inset Formula $\kappa$
 \end_inset
 
 
@@ -1743,15 +1515,7 @@ Ratio of intra-to-intergroup competition strengths
 \begin_inset Text
 
 \begin_layout Plain Layout
-(1;10)
-\change_inserted -2100369821 1538400098
- (
-\change_inserted -666822487 1539018488
-NA
-\change_inserted -2100369821 1538400098
-)
-\change_unchanged
-
+(1;10) (NA)
 \end_layout
 
 \end_inset
@@ -1770,29 +1534,21 @@ NA
 \end_layout
 
 \begin_layout Standard
-
-\change_inserted -2100369821 1538728794
 The original environmental forcing is a normally distributed variable centered
- on 293 K
-\change_inserted -666822487 1539018537
- (XX C [indicate in Celsius as well, do that also in the Table])
-\change_inserted -2100369821 1538728794
-, with a 5K dispersion.
- This variable varies from one day to 
-\change_deleted -666822487 1539018548
-another
-\change_inserted -666822487 1539018551
-the next,
-\change_inserted -2100369821 1538728794
- but is kept constant throughout the day.
- At the 
-\change_deleted -666822487 1539018561
-macro-temporal
-\change_inserted -666822487 1539018566
-monthly or annual temporal
-\change_inserted -2100369821 1538728794
- scale usually used in ecological studies, temperature could therefore be
- considered as a white noise 
+ on 293 K (20°C), with a 5
+\change_inserted -2100369821 1539684249
+ 
+\change_unchanged
+K dispersion.
+ T
+\change_deleted -2100369821 1539685544
+his variable
+\change_inserted -2100369821 1539685545
+emperature
+\change_unchanged
+ varies from one day to the next, but is kept constant throughout the day.
+ At the monthly or annual temporal scale usually used in ecological studies,
+ temperature could therefore be considered as a white noise 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "vasseur_color_2004"
@@ -1800,84 +1556,21 @@ literal "false"
 
 \end_inset
 
-
-\change_inserted -666822487 1539018583
 .
- However, from a mathematical viewpoint, the noise
-\change_deleted -666822487 1539018585
- but it
-\change_inserted -2100369821 1538728794
- is slightly auto-correlated as the integration process goes
-\change_inserted -666822487 1539018594
- slightly
-\change_inserted -2100369821 1538728794
- below the daily time step.
- We 
-\change_deleted -666822487 1539018605
-have 
-\change_inserted -2100369821 1538728794
-therefore 
-\change_deleted -666822487 1539018611
-chosen to 
-\change_inserted -2100369821 1538728794
-use
-\change_deleted -666822487 1539018614
- the word
-\change_inserted -2100369821 1538728794
- 
-\change_inserted -666822487 1539018619
-`
-\change_deleted -666822487 1539018618
-'
-\change_inserted -2100369821 1538728794
-random noise' to describe this forcing
-\change_deleted -666822487 1539018629
- and remain coherent with the
-\change_inserted -666822487 1539018635
-, as opposed to
-\change_inserted -2100369821 1538728794
- 
-\change_inserted -666822487 1539018636
-`
-\change_deleted -666822487 1539018636
-'
-\change_inserted -2100369821 1538728794
-seasonal noise' described hereafter.
- 
-\change_inserted -666822487 1539178535
-To construct the seasonal noise, w
-\change_deleted -666822487 1539018676
-W
+ However, from a mathematical viewpoint, the noise is slightly auto-correlated
+ as the integration process goes slightly below the daily time step.
+ We therefore use 
+\change_inserted -2100369821 1539685582
+the expression 
 \change_unchanged
-e 
-\change_deleted -2100369821 1538403182
-kept
-\change_deleted -666822487 1539178674
-keep the mean and standard deviation of the
-\change_inserted -666822487 1539178678
-add to the
+`random noise' to describe this forcing, as opposed to
+\change_inserted -2100369821 1539685585
+ the
 \change_unchanged
- 
-\change_inserted -666822487 1539178643
-random 
-\change_unchanged
-forcing signal 
-\change_deleted -666822487 1539178683
-but include
-\change_deleted -2100369821 1538403185
-d
-\change_deleted -666822487 1539178683
- 
-\change_unchanged
-a lower-frequency component
-\change_inserted -666822487 1539178550
-,
-\change_unchanged
- using a sinusoidal function with a period of 365 days (
-\change_deleted -2100369821 1538727912
-1 time unit being one day, 
-\change_unchanged
-Eq.
+ `seasonal noise' described hereafter.
+ To construct the seasonal noise, we add to the random forcing signal a
+ lower-frequency component, using a sinusoidal function with a period of
+ 365 days (Eq.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -1888,27 +1581,7 @@ noprefix "false"
 
 \end_inset
 
-)
-\change_inserted -666822487 1539178687
-
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-
-\change_inserted -666822487 1539178726
-Actually we don't keep the same variance in the random part since we have
- to correct it later on to keep the same total energy for the signal.
- 
-\change_unchanged
-
-\end_layout
-
-\end_inset
-
-
-\change_unchanged
-.
+).
  We tune the ratio of low-to-high frequency with the variable 
 \begin_inset Formula $\theta$
 \end_inset
@@ -1925,28 +1598,6 @@ Actually we don't keep the same variance in the random part since we have
 
 \end_inset
 
-
-\change_inserted -2100369821 1538473980
-
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-
-\change_inserted -2100369821 1538486307
-It does not appear in the edits but I have deleted the division by 365 to
- keep a yearly basis, as suggested by Barabas
-\change_inserted -666822487 1539018707
-.
- OK.
-\change_unchanged
-
-\end_layout
-
-\end_inset
-
-
-\change_unchanged
 
 \end_layout
 
@@ -1969,12 +1620,8 @@ literal "false"
 \end_inset
 
  proving bounded coexistence).
- We ch
-\change_inserted -2100369821 1538403210
-o
-\change_unchanged
-ose to keep the stochasticity in the signal and to model a plausible temperature
- signal with 
+ We choose to keep the stochasticity in the signal and to model a plausible
+ temperature signal with 
 \begin_inset Formula $\theta=1.3$
 \end_inset
 
@@ -2028,8 +1675,8 @@ exerted by species
 and the 
 \change_deleted -666822487 1539018898
 sum of 
-\change_inserted -2100369821 1538474232
-competitive strength
+\change_inserted -2100369821 1539685658
+product of competitive strength
 \change_deleted -666822487 1539018900
 s
 \change_inserted -666822487 1539018756
@@ -2042,13 +1689,25 @@ s
  exerted by 
 \change_deleted -666822487 1539018907
 other species
+\change_deleted -2100369821 1539685687
+an individual of
 \change_inserted -666822487 1539018916
-an individual of species 
+ species 
 \begin_inset Formula $j$
 \end_inset
 
+
+\change_inserted -2100369821 1539361479
+ with the abundance 
+\begin_inset Formula $N_{j}$
+\end_inset
+
+
+\change_inserted -666822487 1539018916
 .
  
+\change_unchanged
+
 \begin_inset Note Note
 status open
 
@@ -2059,6 +1718,11 @@ Not sure this is correct.
  Either you sum over all species and you include densities in the definition,
  or you do not sum.
  
+\change_inserted -2100369821 1539361586
+I think your sentence is more accurate, but we still need to take into account
+ the density if we're talking about the effect of species j on species i.
+ Or we can talk abut the net effect of competition exerted by an individual
+ of species j on i.
 \change_unchanged
 
 \end_layout
@@ -2066,21 +1730,14 @@ Not sure this is correct.
 \end_inset
 
 
-\change_inserted -2100369821 1538474232
-.
- Therefore, 
-\change_deleted -2100369821 1538474122
- competition strengths
-\change_inserted -2100369821 1538474124
-net competition
+\change_deleted -2100369821 1539684314
+ 
 \change_unchanged
- covar
-\change_deleted -2100369821 1538474126
-y
-\change_inserted -2100369821 1538474132
-ies
+Therefore,
+\change_inserted -2100369821 1539684258
+ 
 \change_unchanged
- positively with the growth rate values 
+net competition covaries positively with the growth rate values 
 \begin_inset Formula $r_{i}(\tau)$
 \end_inset
 
@@ -2092,39 +1749,14 @@ literal "false"
 
 \end_inset
 
+
+\change_deleted -2100369821 1539684264
 .
- 
-\change_deleted -2100369821 1538650214
-To test for the effect of an explicit storage effect in the model
+ , 
 \change_unchanged
-, 
-\change_deleted -2100369821 1538488216
-we formulated a new version of this model, where 
-\change_deleted -666822487 1539018957
-we removed
-\change_inserted -666822487 1539018959
 .
- To remove
-\change_unchanged
- th
-\change_deleted -2100369821 1538650216
-is
-\change_inserted -2100369821 1538650216
-e
-\change_unchanged
- assumption
-\change_inserted -2100369821 1538650225
- of an explicit storage effect
-\change_inserted -666822487 1539018965
-, we created
-\change_deleted -666822487 1539018967
- in
-\change_inserted -2100369821 1538650225
- another version of the model
-\change_deleted -2100369821 1538488276
- by
-\change_unchanged
- using the mean value of a species' growth rate (
+ To remove the assumption of an explicit storage effect, we created another
+ version of the model using the mean value of a species' growth rate (
 \begin_inset Formula $\bar{r_{i}}$
 \end_inset
 
@@ -2139,46 +1771,17 @@ noprefix "false"
 \end_inset
 
 ).
-
-\change_inserted -2100369821 1538650288
  The mean growth rate value was computed by first generating the temperature
  time series and averaging all 
 \begin_inset Formula $r_{i}$
 \end_inset
 
- over the corresponding 
-\change_deleted -666822487 1539018991
-simulation
-\change_inserted -666822487 1539019066
-sequences of 
+ over the corresponding sequences of 
 \begin_inset Formula $\tau$
 \end_inset
 
  values.
  
-\change_inserted -2100369821 1538650288
-
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-
-\change_inserted -2100369821 1538486707
-Maybe I should say 'run' instead of simulation?
-\change_inserted -666822487 1539019076
- Best to refer to the 
-\backslash
-tau values I think.
- 
-\change_unchanged
-
-\end_layout
-
-\end_inset
-
-.
-\change_unchanged
-
 \end_layout
 
 \begin_layout Standard
@@ -2206,17 +1809,12 @@ tau values I think.
 \end_layout
 
 \begin_layout Standard
-In this way, 
-\change_deleted -666822487 1539019099
-competition strengths
-\change_inserted -666822487 1539019101
-net competition
+In this way, net competition remain
+\change_inserted -2100369821 1539685779
+s
 \change_unchanged
- remain unaffected by the environmental conditions, in contrast to 
-\change_inserted -666822487 1539019124
-intrinsic 
-\change_unchanged
-growth rates (Eq.
+ unaffected by the environmental conditions, in contrast to intrinsic growth
+ rates (Eq.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -2242,37 +1840,11 @@ noprefix "false"
 \end_layout
 
 \begin_layout Standard
-
-\change_deleted -2100369821 1538403051
-Stabilizing niche differences are
-\change_inserted -2100369821 1538408976
-Strong self-regulation is
-\change_unchanged
- ensured by the addition of the coefficient 
-\begin_inset Formula $\rho$
+Strong self-regulation is ensured by the addition of the coefficient 
+\begin_inset Formula $\kappa$
 \end_inset
 
-, which is the ratio of intra-to-intergroup competition strength
-\change_inserted -666822487 1539019140
-
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-
-\change_inserted -666822487 1539019179
-I've been wondering whether we should keep rho because it is often use to
- denote niche overlap that varies between zero and one – do you recall why
- we picked rho?
-\change_unchanged
-
-\end_layout
-
-\end_inset
-
-
-\change_unchanged
-.
+, which is the ratio of intra-to-intergroup competition strength.
  We can therefore re-write the interaction coefficients 
 \begin_inset Formula $\alpha_{ij}$
 \end_inset
@@ -2292,23 +1864,13 @@ noprefix "false"
 \end_layout
 
 \begin_layout Standard
-
-\change_deleted -2100369821 1538485609
-\begin_inset Formula $\alpha_{ij}=\alpha\left(1+(\rho-1)\delta_{ij}\right)$
-\end_inset
-
-
-\change_inserted -2100369821 1538485609
-
 \begin_inset Formula 
 \begin{equation}
-\alpha_{ij}=\alpha\left(1+(\rho-1)\delta_{ij}\right)\label{eq:alpha_def}
+\alpha_{ij}=\alpha\left(1+(\kappa-1)\delta_{ij}\right)\label{eq:alpha_def}
 \end{equation}
 
 \end_inset
 
-
-\change_unchanged
 
 \end_layout
 
@@ -2323,7 +1885,7 @@ where
 
  and to 0 otherwise.
  The value of the parameter 
-\begin_inset Formula $\rho=10$
+\begin_inset Formula $\kappa=10$
 \end_inset
 
  was chosen from analyses of phytoplanktonic data 
@@ -2350,7 +1912,7 @@ literal "false"
 \end_inset
 
  are somewhat higher than here (and 
-\begin_inset Formula $\rho$
+\begin_inset Formula $\kappa$
 \end_inset
 
  lower, closer to 4) because the best-fitting model actually set to zero
@@ -2359,50 +1921,29 @@ literal "false"
 \end_inset
 
  are non-zero leads in contrast to 
-\begin_inset Formula $\rho=10$
+\begin_inset Formula $\kappa=10$
 \end_inset
 
 .
- 
-\change_inserted -2100369821 1538485554
-
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-
-\change_inserted -2100369821 1538486600
-We may not want to keep this note in the final version(?)
-\change_inserted -666822487 1539019209
- We can keep it for now.
- So long as we are in the review process at least.
-\change_unchanged
-
-\end_layout
-
-\end_inset
-
-
-\change_unchanged
-
 \end_layout
 
 \end_inset
 
 .
  
-\change_inserted -2100369821 1538650475
+\change_inserted -2100369821 1539611728
 Hereafter, the phrase 
 \begin_inset Quotes eld
 \end_inset
 
-strong (and respectively, weak) self-regulation
+strong self-regulation
 \begin_inset Quotes erd
 \end_inset
 
  characterizes dynamics where the intraspecific competition strength is
- 10 times higher than (and respectively, equal to) the interspecific competition
- strength.
+ 10 times higher than the interspecific competition strength, as opposed
+ to the equal competitive strengths where intra- and interspecific competition
+ strengths are equal.
  When we use the word 
 \begin_inset Quotes eld
 \end_inset
@@ -2422,23 +1963,6 @@ relatively stronger
  self-regulation but do not wish to compare our interaction values to those
  used outside of our framework.
  
-\change_inserted -666822487 1539019230
-
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-
-\change_inserted -666822487 1539019237
-A revoir avec le nouveau wording.
- 
-\change_unchanged
-
-\end_layout
-
-\end_inset
-
-
 \change_unchanged
 
 \end_layout
@@ -2452,11 +1976,7 @@ In addition to two types of environmental forcings (random noise with
 \begin_inset Formula $\theta=1.3$
 \end_inset
 
-), we
-\change_deleted -666822487 1539019255
- 
-\change_unchanged
- compare the results for four formulations of the model: with and without
+), we compare the results for four formulations of the model: with and without
  an explicit storage effect (Eq.
  
 \begin_inset CommandInset ref
@@ -2480,11 +2000,11 @@ noprefix "false"
 \end_inset
 
 , respectively) ; with and without strong self-regulation (
-\begin_inset Formula $\rho=10$
+\begin_inset Formula $\kappa=10$
 \end_inset
 
  or 
-\begin_inset Formula $\rho=1$
+\begin_inset Formula $\kappa=1$
 \end_inset
 
 , respectively).
@@ -2567,7 +2087,7 @@ No storage effect
 
 \begin_layout Plain Layout
 Strong self-regulation (
-\begin_inset Formula $\rho=10$
+\begin_inset Formula $\kappa=10$
 \end_inset
 
 )
@@ -2631,17 +2151,11 @@ Strong self-regulation (
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_deleted -666822487 1539019322
-Weakself-regulation
-\change_inserted -666822487 1539019327
 Equal competitive strengths (
-\begin_inset Formula $\rho=1$
+\begin_inset Formula $\kappa=1$
 \end_inset
 
 )
-\change_unchanged
-
 \end_layout
 
 \end_inset
@@ -2770,7 +2284,11 @@ All simulations were ran with Matlab's ode45 algorithm, an explicit Runge-Kutta
 \begin_inset Formula $10^{-8}$
 \end_inset
 
-, and relative error tolerance 
+, and relative error tolerance
+\change_inserted -2100369821 1539685872
+ of
+\change_unchanged
+ 
 \begin_inset Formula $10^{-3}$
 \end_inset
 
@@ -2912,21 +2430,6 @@ literal "false"
 
 \end_inset
 
-
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Is this still necessary? We never use the info on the area
-\change_inserted -666822487 1539019377
-.
- F: we can discuss this together next time.
-\change_unchanged
-
-\end_layout
-
-\end_inset
-
 ) while 6 out of the 14 remained below the unit.
  All persisting species in the random noise simulations were clustered within
  a 3.2°C-range of thermal optima (see the biomass distribution as a function
@@ -2978,8 +2481,18 @@ status open
 
 \begin_layout Plain Layout
 Time series of temperature (top; a-b) and extant species (bottom; c-d) for
- the 2 last years of a 5000 years simulation, with storage effect and no
- differences between intraspecific and interspecific competition strengths.
+ the 2 last years of a 5000
+\change_inserted -2100369821 1539685984
+-
+\change_deleted -2100369821 1539685984
+ 
+\change_unchanged
+year
+\change_deleted -2100369821 1539685982
+s
+\change_unchanged
+ simulation, with storage effect and no differences between intraspecific
+ and interspecific competition strengths.
  The forcing temperature is either a random noise (a) or a seasonal noise
  (b), leading to community dynamics with more erratic fluctuations (c) vs
  seasonally structured fluctuations (d).
@@ -3077,8 +2590,12 @@ Both a strong self-regulation and the storage effect markedly increased
 \end_inset
 
  0.7) with a seasonal signal.
- On the other hand, when only a strong self-regulationwas present, the number
- of extant species nearly doubled, varying between 20 and 32 (27.5 
+ On the other hand, when only a strong self-regulation
+\change_inserted -2100369821 1539686534
+ 
+\change_unchanged
+was present, the number of extant species nearly doubled, varying between
+ 20 and 32 (27.5 
 \begin_inset Formula $\pm$
 \end_inset
 
@@ -3115,8 +2632,11 @@ status open
 
 \begin_layout Plain Layout
 Number of species still present at the end of 100 simulations (5000 years
- each), initialized with 60 species, with a random noise forcing signal
- (blue) or a seasonal noise (red).
+ each), initialized with 60 species, with a random 
+\change_deleted -2100369821 1539686573
+noise 
+\change_unchanged
+forcing signal (blue) or a seasonal noise (red).
  The signs + or - storage refer to presence or absence of a storage effect,
  respectively; + / - SSR, presence or absence of Strong Self-Regulation,
  respectively.
@@ -3146,10 +2666,6 @@ name "fig:Persistence-of-species"
 \end_layout
 
 \begin_layout Standard
-
-\change_deleted -666822487 1539019583
- 
-\change_unchanged
 The trait pattern of the community was affected by the type of forcing even
  when the richness of the community was stable (Fig.
  
@@ -3167,8 +2683,12 @@ noprefix "false"
  left at the end of a simulation.
  A random noise favored species with intermediate thermal optima: the final
  species had a thermal optimum between 18.9°C and 21.4°C (only a fourth of
- the initial range of thermal optima) for two simulation out of three and
- the maximum final biomasses over 100 simulations was reached in this range(Fig.
+ the initial range of thermal optima) for two simulation
+\change_inserted -2100369821 1539686633
+s
+\change_unchanged
+ out of three and the maximum final biomasses over 100 simulations was reached
+ in this range (Fig.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -3180,12 +2700,14 @@ noprefix "false"
 \end_inset
 
 a).
- 
-\change_inserted -2100369821 1538484901
-[[[
+ This distribution 
+\change_deleted -2100369821 1539615227
+can be related to
+\change_inserted -2100369821 1539615230
+may indicate
 \change_unchanged
-This distribution can be related to a selection for the highest long-term
- growth rates, averaged over time (see scaled growth rates in Fig.
+ a selection for the highest long-term growth rates, averaged over time
+ (see scaled growth rates in Fig.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -3197,37 +2719,16 @@ noprefix "false"
 \end_inset
 
 ).
-\change_inserted -2100369821 1538484905
-]]]
-\change_deleted -2100369821 1538474605
- 
-\change_unchanged
-.
- Seasonality with no coexistence mechanisms also
-\change_deleted -666822487 1539019565
- 
-\change_unchanged
- led to a single final species but, in this case, the species always had
- a higher maximum growth rate (thermal optimum above 22°C).
+ Seasonality with no coexistence mechanisms also led to a single final species
+ but, in this case, the species always had a higher maximum growth rate
+ (thermal optimum above 22°C).
  Species with a higher thermal optimum were more likely to persist and to
  reach a higher biomass at the end of the simulation.
  38% of the simulations therefore ended with the species having the highest
  temperature optimum, 25°C.
  The shift in trait distribution towards higher maximum growth rates with
- seasonality vs.
- higher average growth rates with a random noise was consistent 
-\change_deleted -666822487 1539019598
-in
-\change_inserted -666822487 1539019598
-for
-\change_unchanged
- all 
-\change_deleted -666822487 1539019592
-sets of simulations
-\change_inserted -666822487 1539019605
-model types considered
-\change_unchanged
- (see below).
+ seasonality vs higher average growth rates with a random noise was consistent
+ for all model types considered (see below).
  
 \end_layout
 
@@ -3269,32 +2770,10 @@ noprefix "false"
 d).
  The minimum biomass was reached for the best long-term average growth rate
  at an intermediate temperature (20.4°C)
-\change_deleted -666822487 1539178758
-, one species apart from the maximum biomass in the random noise case
-\change_inserted -666822487 1539178760
-
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-
-\change_inserted -666822487 1539178895
-This last part has to be better explained or suppressed (if not essential):
- it is really hard to understand – perhaps you mean that if we ranked the
- species by order of maximum biomass, then the last biomass rank (min biomass)
- in the seasonal case would equal the second rank in the random noise case.
- Not sure that it is easy to get that.
- 
-\change_unchanged
-
-\end_layout
-
-\end_inset
-
-
-\change_unchanged
+\change_inserted -2100369821 1539686706
 .
- 
+\change_unchanged
+
 \end_layout
 
 \begin_layout Standard
@@ -3323,23 +2802,13 @@ Mean biomass distribution over the last 200 years for 100 simulations, as
  a function of the species thermal optima.
  Here we consider the two stable-composition cases and two types of forcing
  signal.
- On the left column, simulations without storage effect nor 
-\change_deleted -2100369821 1538409793
-stabilizing niche differences
-\change_inserted -2100369821 1538409798
-strong self-regulation
-\change_unchanged
- are presented.
+ On the left column, simulations without storage effect nor strong self-regulati
+on are presented.
  Only one species is present at the end of the simulations and its mean
  value is represented by one large colored circle per simulation.
  There can be several circles for the same species, corresponding to multiple
  simulations ending with this species alone.
- On the right column, simulations with storage effect and 
-\change_deleted -2100369821 1538409807
-stabilizing niche differences
-\change_inserted -2100369821 1538409814
-strong self-regulation
-\change_unchanged
+ On the right column, simulations with storage effect and strong self-regulation
  are represented.
  All species are present at the end of the simulations and small boxplots
  present the variation in the temporal average of biomass with a given trait,
@@ -3371,9 +2840,9 @@ name "fig:Mean-biomass-in_stable_cases"
 
 \begin_layout Standard
 In cases where the richness of the community varied, the overall shape (multimod
-al vs.
- unimodal) of the marginal distribution of extant species with respect to
- the trait axis were similar for both types of environmental forcings (Fig.
+al vs unimodal) of the marginal distribution of extant species with respect
+ to the trait axis were similar for both types of environmental forcings
+ (Fig.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -3402,7 +2871,12 @@ noprefix "false"
 
 a).
  With a random noise, extant species are grouped in rather similar clumps
- regarding species thermal optima (between 18.8°C and 22.2°C) whereas clumps
+ regarding species thermal optima (between 18.8°C and 22.2°C) whereas 
+\change_deleted -2100369821 1539686823
+clumps
+\change_inserted -2100369821 1539686824
+species
+\change_unchanged
  tended to be further apart in the seasonal case, covering a total range
  of 7.7°C, with species grouping in the higher part of the thermal range,
  above 22°C.
@@ -3440,29 +2914,6 @@ noprefix "false"
  the autocorrelated temperatures enabled them to achieve this highest growth
  rate for a longer period of time than a random noise would have.
  
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-We never touch on this trait shift in the discussion, that's why I've added
- two lines in the result to answer R1's comment about l.
- 182.
- That's borderline Discussion, but I feel we would have to develop much
- more if that were in the following section, and I'm not sure it would be
- useful -we already say a lot.
- 
-\change_inserted -666822487 1539019706
-F: I think that's OK – people are less picky about what goes into results
- vs discussion in theoretical papers.
- it is good as it is.
- 
-\change_unchanged
-
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -3489,13 +2940,8 @@ status open
 
 \begin_layout Plain Layout
 Mean biomass distribution over the last 200 years for 100 simulations, as
- a function of thermal optima, with storage effect and 
-\change_deleted -666822487 1539019723
-weak self-regulation
-\change_inserted -666822487 1539019728
-equal competitive strengths
-\change_unchanged
- (a) and without storage effect, with strong self-regulation (b).
+ a function of thermal optima, with storage effect and equal competitive
+ strengths (a) and without storage effect, with strong self-regulation (b).
  The forcing signal is either a random (in blue) or a seasonal noise (in
  red).
  Shades of the same color correspond to the 50th, 90th and 100th percentiles
@@ -3533,10 +2979,8 @@ We have simulated competitive Lotka-Volterra dynamics forced by a fluctuating
  environment (e.g., temperature fluctuations) under a range of scenarios allowing
  more or less coexistence.
  Two coexistence mechanisms, the storage effect and strong self-regulation
-\change_inserted -666822487 1539019839
- (i.e., intraspecific competition much stronger than interspecific competition)
-\change_unchanged
-, could be either present or absent, which led to four scenarios.
+ (i.e., intraspecific competition much stronger than interspecific competition),
+ could be either present or absent, which led to four scenarios.
  These four scenarios were crossed with two possibilities for the forcing
  signal, a random noise (mostly white) and a stochastic yet seasonal signal,
  both with equal temporal variance.
@@ -3569,12 +3013,8 @@ literal "false"
 
 .
  Many mechanisms can lead to intraspecific competition being stronger than
- interspecific competition
-\change_deleted -666822487 1539019852
- 
-\change_unchanged
-: nonlinearities in the functional forms of competition or mutualism that
- contribute to increasing self-regulation 
+ interspecific competition: nonlinearities in the functional forms of competitio
+n or mutualism that contribute to increasing self-regulation 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "kawatsu2018density"
@@ -3582,17 +3022,8 @@ literal "false"
 
 \end_inset
 
-, 
-\change_inserted -666822487 1539178937
-or 
-\change_unchanged
-predation 
-\change_inserted -666822487 1539178947
-as well as
-\change_deleted -666822487 1539178945
-or
-\change_unchanged
- parasitism (see e.g., the generalist predators in 
+, or predation as well as parasitism (see e.g., the generalist predators in
+ 
 \begin_inset CommandInset citation
 LatexCommand citealp
 key "haydon1994pivotal"
@@ -3600,26 +3031,9 @@ literal "false"
 
 \end_inset
 
-)
-\change_deleted -666822487 1539178952
-, etc
-\change_unchanged
-.
- 
-\change_deleted -666822487 1539178958
-They
-\change_inserted -666822487 1539178962
-Strong self-regulation
-\change_unchanged
- seem
-\change_inserted -666822487 1539178965
-s
-\change_unchanged
- nonetheless an ubiquitous feature in
-\change_inserted -666822487 1539178990
- competition networks of
-\change_unchanged
- primary producers 
+).
+ Strong self-regulation seems nonetheless an ubiquitous feature in competition
+ networks of primary producers 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "adler_competition_2018"
@@ -3627,11 +3041,14 @@ literal "false"
 
 \end_inset
 
+, and perhaps even more general networks 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "barabas_self-regulation_2017"
+literal "false"
 
-\change_inserted -666822487 1539179033
-, and perhaps even more general networks (Barabas et al.
- Nature Eco Evo 2018 [ADD REF])
-\change_unchanged
+\end_inset
+
 .
 \change_inserted -666822487 1539179043
 
@@ -3642,8 +3059,31 @@ literal "false"
 \change_inserted -666822487 1539180754
 Before discussing the ecological interpretation of our results, we first
  recall some technical assumptions made in this study.
- All our simulations relied upon the 5000 timesteps for numerical integration
- that were also used by 
+ All our simulations 
+\change_deleted -2100369821 1539679903
+relied upon the
+\change_inserted -2100369821 1539679918
+lasted a fixed period of time
+\change_deleted -2100369821 1539680068
+ 
+\change_inserted -2100369821 1539680068
+ (
+\change_inserted -666822487 1539180754
+5000 timesteps
+\change_inserted -2100369821 1539680071
+)
+\change_inserted -666822487 1539180754
+ 
+\change_deleted -2100369821 1539679933
+for numerical integration that were also used
+\change_inserted -2100369821 1539679939
+as was also the case 
+\change_deleted -2100369821 1539679942
+ by
+\change_inserted -2100369821 1539679942
+in
+\change_inserted -666822487 1539180754
+ 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "scranton_coexistence_2016"
@@ -3655,10 +3095,48 @@ literal "false"
  This means that short- and medium-term transients (a few years to hundreds
  of years) are completely negligible at the end of the time series, but
  very long transients can remain.
- We realized that convergence could in some cases be incomplete after 5000
- years (e.g., random noise + storage effect + equal competitive strength).
- These would not even be stabilized well after 10 000 years, they would
- take ~ 15 000 years and the rate of convergence would slow over time.
+ We realized that convergence could
+\change_deleted -2100369821 1539680004
+ in some cases
+\change_inserted -666822487 1539180754
+ be incomplete after 5000 years
+\change_deleted -2100369821 1539680010
+ 
+\change_inserted -2100369821 1539680012
+ in some cases 
+\change_inserted -666822487 1539180754
+(e.g., random noise + storage effect + equal competitive strength).
+ 
+\change_deleted -2100369821 1539680026
+These would not even be stabilized well after 10 000 years, t
+\change_inserted -2100369821 1539680032
+Such simulations
+\change_deleted -2100369821 1539680035
+hey
+\change_inserted -666822487 1539180754
+ would take 
+\change_inserted -2100369821 1539680087
+up to
+\change_deleted -2100369821 1539680086
+~
+\change_inserted -666822487 1539180754
+ 15 000 years
+\change_inserted -2100369821 1539680094
+ to converge
+\change_inserted -666822487 1539180754
+ and the rate of convergence would slow over time
+\change_inserted -2100369821 1539680301
+, as can also be observed for similar models 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "scheffer_self-organized_2006"
+literal "false"
+
+\end_inset
+
+
+\change_inserted -666822487 1539180754
+.
  We kept a fixed time integration window rather than waiting for convergence
  for both technical and ecological reasons.
  From a technical standpoint, adding 10 000 years of numerical integration
@@ -3673,11 +3151,25 @@ literal "false"
 
  would have been compromised.
  From an ecological standpoint, waiting for full convergence when there
- are extremely long transients (Hastings et al.
- 2018) is also quite artificial: there is no reason to believe that very
- long transients (i.e., one that maintains for thousands of year) has any
- less ecological reality than an attractor that is deemed stable because
- convergence has been reached.
+ are extremely long transients 
+\change_inserted -2100369821 1539596525
+
+\begin_inset CommandInset citation
+LatexCommand citep
+key "hastings_transient_2018"
+literal "false"
+
+\end_inset
+
+
+\change_deleted -2100369821 1539596518
+(Hastings et al.
+ 2018)
+\change_inserted -666822487 1539180754
+ is also quite artificial: there is no reason to believe that very long
+ transients (i.e., one that maintains for thousands of year) has any less
+ ecological reality than an attractor that is deemed stable because convergence
+ has been reached.
  Speed of convergence is therefore an issue to judge whether transients
  should be considered or excluded, and very long yet fixed time window for
  integration allows advantageously to compare mechanisms for which speed
@@ -3688,14 +3180,10 @@ literal "false"
 \end_layout
 
 \begin_layout Standard
-W
-\change_inserted -666822487 1539180722
-ith these assumptions in mind, w
-\change_unchanged
-e have found that first, temporally forced Lotka-Volterra dynamics cannot
- sustain any diversity with our phytoplankton-based set of parameters, unless
- the structure is geared to include either a storage effect or a strong
- self-regulation.
+With these assumptions in mind, we have found that first, temporally forced
+ Lotka-Volterra dynamics cannot sustain any diversity with our phytoplankton-bas
+ed set of parameters, unless the structure is geared to include either a
+ storage effect or a strong self-regulation.
  Although this absence of diversity-enhancing effect of 
 \begin_inset Quotes eld
 \end_inset
@@ -3769,62 +3257,13 @@ literal "false"
 \end_inset
 
 , where the intragroup density-dependence was chosen 10 times stronger.
-
-\change_deleted -2100369821 1538642033
- 
-\change_deleted -666822487 1539179216
- The comparison of both coexistence mechanisms, the storage effect and a
- strong self-reguation, depends on the intensity of self-regulation of each
- species and the type of dynamics considered, which calls for further analyses
- on different networks before drawing a general conclusion
-\change_inserted -2100369821 1538642273
-.
- 
-\change_deleted -666822487 1539179226
-On 
-\change_deleted -2100369821 1538410070
-their
-\change_deleted -666822487 1539179226
-its own, in a Lotka-Volterra model applied to phytoplankton species
-\change_inserted -666822487 1539179262
-Implementing such strong self-regulation in the forced Lotka-Volterra models
- that we considered
-\change_inserted -2100369821 1538642113
-, 
-\change_deleted -2100369821 1538410060
-SNDs
-\change_deleted -666822487 1539179296
-a stronger self-regulation
-\change_inserted -666822487 1539179298
-it
-\change_unchanged
- produced a higher level of diversity than the storage effect (almost double
-\change_deleted -666822487 1539179322
- for 
-\change_deleted -2100369821 1538666867
-white
-\change_deleted -666822487 1539179318
-random noise
-\change_unchanged
-)
-\change_inserted -666822487 1539179370
-.
+ Implementing such strong self-regulation in the forced Lotka-Volterra models
+ that we considered, it produced a higher level of diversity than the storage
+ effect (almost double).
  Of course, the result is somehow contingent upon the strength of self-regulatio
 n.
- Our estimates 
-\change_deleted -666822487 1539179375
-, which not only aligns with our results on phytoplankton but also with
- results
-\change_inserted -666822487 1539179386
-are a little stronger than what was found
-\change_unchanged
+ Our estimates are a little stronger than what was found in perennial plants
  
-\change_deleted -666822487 1539179390
-on
-\change_inserted -666822487 1539179390
-in
-\change_unchanged
- perennial plants 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "adler_coexistence_2010"
@@ -3832,25 +3271,24 @@ literal "false"
 
 \end_inset
 
-
-\change_inserted -666822487 1539179422
 , where interspecific competition was suggested 4 or 5 times stronger than
- intraspecific
-\change_unchanged
-.
+ intraspecific.
 
-\change_deleted -2100369821 1538641752
+\change_inserted -2100369821 1539680677
  
-\change_inserted -666822487 1539179657
+\change_unchanged
 Still, the widespread effects of natural enemies in phytoplankton (zooplankton,
- parasites) may contribute to increase the strength of self-regulation (Gaedke
- et al.
- XXXX, Barraquand et al.
- 2018) relative to other systems, hence we believe that 10 times stronger
- intraspecific competition constitutes a reasonable order of magnitude.
- 
-\change_unchanged
+ parasites) may contribute to increase the strength of self-regulation 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "huber_role_2006,barraquand2018coastal"
+literal "false"
 
+\end_inset
+
+ relative to other systems, hence we believe that 10 times stronger intraspecifi
+c competition constitutes a reasonable order of magnitude.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -3859,20 +3297,10 @@ However,
 such strong 
 \change_unchanged
 self-regulation was still insufficient to maintain the whole community diversity
-\change_inserted -666822487 1539179345
- (60 species)
-\change_unchanged
- by itself, especially when the seasonal forcing 
-\change_inserted -666822487 1539179563
-(always decreasing species richness) 
-\change_unchanged
-was considered.
+ (60 species) by itself, especially when the seasonal forcing (always decreasing
+ species richness) was considered.
  The diversity within clumps of similar values of growth rates was considerably
- decreased
-\change_inserted -666822487 1539179593
- once seasonality was implemented
-\change_unchanged
-.
+ decreased once seasonality was implemented.
  This diversity reduction occurs because within a season, the signal autocorrela
 tion gives long, contiguous time intervals to the best competitor to exclude
  its less adapted heterospecifics.
@@ -3886,48 +3314,15 @@ red
 \end_inset
 
  noise.
-\change_inserted -666822487 1539020066
-
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-
-\change_inserted -666822487 1539020075
-We can actually keep this.
- 
-\change_unchanged
-
-\end_layout
-
-\end_inset
-
-
-\change_unchanged
  This could be relevant for species whose population dynamics occurs at
  timescales largely above one year.
- In contrast, 
-\change_deleted -666822487 1539180791
-a 
-\change_inserted -666822487 1539180798
-the 
-\change_unchanged
-random noise
-\change_inserted -666822487 1539180812
- – which can be considered white noise above the daily temporal scales –
-\change_unchanged
- generates large temperature shifts more frequently, and thereby forbid
-\change_inserted -666822487 1539020130
-s
-\change_unchanged
- such competitive exclusion.
- In a seasonal setting, a species with the highest long-term 
-\change_inserted -666822487 1539020157
-(arithmetically) 
-\change_unchanged
-averaged growth rate may not be the best competitor, and can disappear as
- a result of a strong competition from both low- and high-temperature tolerant
- species.
+ In contrast, the random noise – which can be considered white noise above
+ the daily temporal scales – generates large temperature shifts more frequently,
+ and thereby forbids such competitive exclusion.
+ In a seasonal setting, a species with the highest long-term (arithmetically)
+ averaged growth rate may not be the best competitor, and can disappear
+ as a result of a strong competition from both low- and high-temperature
+ tolerant species.
  This holds with or without a storage effect.
  
 \end_layout
@@ -3976,43 +3371,15 @@ literal "false"
 ).
  The seasonality that we added to the temperature signal led to more distant
  clumps on the trait axis (as said above, less species per clump).
- Conversely, 
-\change_deleted -2100369821 1538410138
-SNDs
-\change_inserted -2100369821 1538410167
-strong self-regulatory mechanisms
-\change_unchanged
- alone led to relatively uniform biomass distributions, with species forming
- a single large cluster, which covers a fraction of the initial trait space.
- 
-\change_inserted -2100369821 1538724871
-Therefore, the shape of the dis
-\change_deleted -666822487 1539020241
-i
-\change_inserted -2100369821 1538724871
-tribution was affected by the coexistence mechanism at 
-\change_deleted -666822487 1539020246
-stake
-\change_inserted -666822487 1539020247
-work
-\change_inserted -2100369821 1538724871
- while the average trait value was modified by the type of environmental
- forcing, even though the mean value of the environmental signal did not
- change.
- The 
-\change_deleted -666822487 1539020270
-relationships between trait patterns and filters applied on local communities
- are complex and still need to be clarified but they
-\change_inserted -666822487 1539020281
-biomass-trait distributions therefore
-\change_inserted -2100369821 1538724871
- constitute 
-\change_deleted -666822487 1539020290
-an additional clue on species
-\change_inserted -666822487 1539020301
-clues to interpret community
-\change_inserted -2100369821 1538724871
- dynamics 
+ Conversely, strong self-regulatory mechanisms alone led to relatively uniform
+ biomass distributions, with species forming a single large cluster, which
+ covers a fraction of the initial trait space.
+ Therefore, the shape of the distribution was affected by the coexistence
+ mechanism at work while the average trait value was modified by the type
+ of environmental forcing, even though the mean value of the environmental
+ signal did not change.
+ The biomass-trait distributions therefore constitute clues to interpret
+ community dynamics 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "dandrea_challenges_2016,loranger_what_2018"
@@ -4020,15 +3387,9 @@ literal "false"
 
 \end_inset
 
-
-\change_inserted -666822487 1539020325
 , although we certainly recommend to interpret them with caution to avoid
- over-generalization
-\change_inserted -2100369821 1538724871
-.
- 
-\change_unchanged
-The identification of multiple modes in biomass-trait relationships and
+ over-generalization.
+ The identification of multiple modes in biomass-trait relationships and
  SADs is relatively recent 
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -4076,9 +3437,9 @@ literal "false"
  However, with several locations - or in a theoretical context - one could
  average across locations to reproduce similar graphs to the ones produced
  here.
- Clumps in the trait axis when averaged across model runs/locations is therefore
- a signature of the storage effect for the cases that we considered in the
- article.
+ Clumps in the trait axis when averaged across model runs/locations are
+ therefore a signature of the storage effect for the cases that we considered
+ in the article.
  Of course, other mechanisms that we did not include in our models may produce
  similar patterns 
 \begin_inset CommandInset citation
@@ -4104,32 +3465,9 @@ literal "false"
 \end_inset
 
 , we did not find any storage effect (which does not mean that it could
- not be observed in other 
-\change_inserted -666822487 1539180838
-planktonic 
-\change_unchanged
-systems).
- Given the 
-\change_deleted -666822487 1539180854
-results
-\change_inserted -666822487 1539180862
-consequences of the storage effect
-\change_unchanged
- 
-\change_deleted -666822487 1539180891
-on
-\change_inserted -666822487 1539180891
-for
-\change_unchanged
- species richness and composition presented here, we are skeptical that
- the storage effect
-\change_inserted -666822487 1539180874
- could
-\change_deleted -666822487 1539180877
- alone
-\change_inserted -666822487 1539180880
-by itself
-\change_unchanged
+ not be observed in other planktonic systems).
+ Given the consequences of the storage effect for species richness and compositi
+on presented here, we are skeptical that the storage effect couldby itself
  could help explaining phytoplankton diversity.
  However, our results suggest that in phytoplankton-like seasonal environments,
  even though empirically-based self-regulation produce much more diversity
@@ -4156,20 +3494,7 @@ literal "false"
 
 \end_inset
 
-)
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-I'm not sure for Stump and Chesson 2015 -> They show that there is only
- little effect of the interaction between mechanisms.
- OK, I deleted.
- 
-\end_layout
-
-\end_inset
-
-.
+).
  Previous research has however demonstrated that generalist seed predation
  could weaken the storage effect 
 \begin_inset CommandInset citation
@@ -4194,20 +3519,31 @@ literal "false"
  Better explaining plant or microbial diversity would then not be about
  selecting the best unique mechanism susceptible to explain the observed
  diversity, but rather better combining those mechanisms together.
- This may obviously be an annoyance for those who like to sharpen Occam's
+ 
+\change_inserted -2100369821 1539684109
+
+\begin_inset CommandInset citation
+LatexCommand citet
+key "stump_multispecies_2017"
+literal "false"
+
+\end_inset
+
+ has defined a model that reveals two types of storage effect and expects
+ competition strength to vary with phylogenetic similarities: such general
+ model shows at least three ensuing effects which can affect coexistence
+ at the same time (central niche effect, common competitor effect and community
+ redistribution effect).
+ 
+\change_unchanged
+This may obviously be an annoyance for those who like to sharpen Occam's
  razor, but it clearly holds opportunities for theoreticians wishing to
  investigate synergies between coexistence mechanisms in highly diverse
  communities.
- Aside from the synergies between predator diversity-enhancing effects
-\change_inserted -666822487 1539020572
-, strong self-regulation through various means
-\change_unchanged
- and 
-\change_deleted -666822487 1539020511
-SNDs or
-\change_unchanged
- storage effects (on the temporal axis), one obvious follow-up of this research
- would be interactions with spatial structure.
+ Aside from the synergies between predator diversity-enhancing effects,
+ strong self-regulation through various means and storage effects (on the
+ temporal axis), one obvious follow-up of this research would be interactions
+ with spatial structure.
  Spatial structure occurs both endogeneously, through spatially restricted
  movements and interactions, and exogeneously, through spatial variation
  in environmental covariates 
@@ -4282,15 +3618,20 @@ Acknowledgements
 \end_layout
 
 \begin_layout Standard
-We thank Alix Sauve for 
-\change_deleted -666822487 1539180927
-numerous 
+We thank Alix Sauve for thoughtful comments and some bibliographic references,
+ as well as Gy
+\change_deleted -2100369821 1539687030
+uri
+\change_inserted -2100369821 1539687036
+örgy
 \change_unchanged
-thoughtful comments and some bibliographic references
-\change_inserted -666822487 1539180945
-, as well as Gyuri Barabas and an anonymous referee for feedback
+ Barab
+\change_inserted -2100369821 1539687075
+á
+\change_deleted -2100369821 1539687047
+a
 \change_unchanged
-.
+s and an anonymous referee for feedback.
  This study was supported by the French ANR through LabEx COTE (ANR-10-LABX-45).
 \end_layout
 

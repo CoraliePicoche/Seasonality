@@ -93,7 +93,8 @@ end
         titlePos(2)=858.6;
         set(tt1,'position',titlePos);
         set(gca,'Fontsize',afontsize)
-hold off;
+         hold off;
+
 
 subplot(2,2,4)
 mi1=prctile(biomass_final_60(:,:,1)',10);
@@ -109,7 +110,11 @@ hold on;
     fill(plou1,minmax2,'r','EdgeColor','none','FaceAlpha',.5)
     xlabel("Thermal optimum","Fontsize",afontsize)
             set(gca,'Fontsize',afontsize)
-
+    plou=get(gca,'xlim');
+fake1=patch(-1,-1,'b','FaceAlpha',.5,'LineWidth',1);
+fake2=patch(-1,-1,'r','FaceAlpha',.5,'LineWidth',1);
+xlim(plou)
+leg=legend([fake1,fake2],{'Random','Seasonal'},'Location','SouthWest','Fontsize',afontsize,'Box','off')
 hold off;
 
 %%%%%%%%%%%%%%%%%%UNSTABLE CASES%%%%%%%%%%%%%%%%
@@ -153,7 +158,7 @@ fill(plou1,min_max_seas,'r','EdgeColor','none','FaceAlpha',.5)
 ylim([0 400])
         tt1=title('Storage effect','Fontsize',afontsize,'FontWeight','Normal');
         titlePos = get( tt1 , 'position');
-        titlePos(2)=430;
+        titlePos(2)=425;
         set(tt1,'position',titlePos);
         set(gca,'Fontsize',afontsize)
 hold off;
@@ -195,6 +200,8 @@ fill(plou1,min_max_seas,'r','EdgeColor','none','FaceAlpha',.5)
     ylabel({"Intra>>Inter";'Biomass'},'Fontsize',afontsize)
     xlabel("Thermal optimum","Fontsize",afontsize)
     set(gca,'Fontsize',afontsize)
+
+       
 hold off;
 fig=gcf;
 fig.Renderer='Painters';
