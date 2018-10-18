@@ -204,7 +204,7 @@ plot(tau_opt-273,biomass_final_2(:,iter,2),'-o','MarkerFaceColor','r','LineWidth
         xlabel('Thermal optimum','Fontsize',afontsize)
         set(gca,'XTickLabel',xaxlabel)
        %  xtickangle(90)
-subplot_id(2)=ylabel({"Self-regulation";'Biomass'},'Fontsize',afontsize);
+subplot_id(2)=ylabel({"Strong Self-Regulation";'Biomass'},'Fontsize',afontsize);
 set(gca,'Fontsize',afontsize)
 %end
 
