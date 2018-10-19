@@ -87,8 +87,6 @@
 \html_math_output 0
 \html_css_as_file 0
 \html_be_strict false
-\author -2100369821 "cpicoche"
-\author -666822487 "frederic"
 \end_header
 
 \begin_body
@@ -226,55 +224,6 @@ CNRS, Institute of Mathematics of Bordeaux, 351 Cours de la Libération,
 \begin_layout Standard
 * Corresponding author.
  Email: coralie.picoche@u-bordeaux.fr
-\change_inserted -666822487 1539864767
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-I am having some doubts about the English in the title: Should we say 
-\begin_inset Quotes eld
-\end_inset
-
-storage effect
-\begin_inset Quotes erd
-\end_inset
-
- or 
-\begin_inset Quotes eld
-\end_inset
-
-the storage effect
-\begin_inset Quotes erd
-\end_inset
-
-? (mind that's a perplexed interrogation not a polite comment – I have no
- idea...) I'm mentioning this because I have a dubious English sentence in
- one published title: it has bugged me for years after that.
- So we should probably double-check.
- A quick look at titles in scholar indicates that it always employed as
- 
-\begin_inset Quotes eld
-\end_inset
-
-the storage effect
-\begin_inset Quotes erd
-\end_inset
-
- when referring to this specific mechanism.
- 
-\change_inserted -666822487 1539939631
-Good to know!
-\change_unchanged
-
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Address
@@ -321,27 +270,8 @@ Explaining coexistence in species-rich communities of primary producers
  storage effect (25%), we show that none of the two coexistence mechanisms
  considered could, by itself, ensure the coexistence of all species present
  at the beginning of our simulations.
- Realistic seasonal environments only aggravated that
-\change_inserted -2100369821 1539870648
-
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-
-\change_inserted -2100369821 1539870653
-Shouldn't we say this?
-\change_inserted -666822487 1539939718
- Hm, why not, why do you ask? Or do you mean should we say this?
-\change_unchanged
-
-\end_layout
-
-\end_inset
-
-
-\change_unchanged
- picture, as they decreased persistence relative to a random environment.
+ Realistic seasonal environments only aggravated that picture, as they decreased
+ persistence relative to a random environment.
  Our results suggest that combining different mechanisms for biodiversity
  maintenance into community models might be more fruitful than trying to
  find which mechanism explains best the observed diversity levels.
@@ -693,75 +623,12 @@ literal "false"
 
 \begin_layout Standard
 Here, we therefore try to establish what are the relative contributions
- 
-\change_inserted -666822487 1539939800
-to coexistence 
-\change_unchanged
-of the storage effect vs strong self-regulation
-\change_deleted -666822487 1539939804
- are to coexistence
-\change_inserted -666822487 1539939804
-,
-\change_unchanged
- in a phytoplankton-like theoretical community model
-\change_inserted -666822487 1539865232
-
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-
-\change_inserted -666822487 1539865251
-Not sure about this English edit – can you double check?
-\change_inserted -2100369821 1539869988
- C'est du discours indirect, il n'y a pas lieu d'inverser verbe et sujet
- à mon sens.
-
-\change_inserted -666822487 1539939829
- Ah OK, je comprends la règle, mais je pense que la phrase n'est pas compréhensi
-ble comme ça donc j'ai modifié un peu.
- 
-\change_unchanged
-
-\end_layout
-
-\end_inset
-
-
-\change_unchanged
-.
+ to coexistence of the storage effect vs strong self-regulation, in a phytoplank
+ton-like theoretical community model.
  This led us to cross different combinations of seasonality in the forcing
  signal, presence of the storage effect or not, and intra- vs interspecific
- competition
-\change_inserted -666822487 1539939878
- intensity
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-
-\change_inserted -666822487 1539939901
-J'ai enlevé 
-\begin_inset Quotes eld
-\end_inset
-
-different ratio
-\begin_inset Quotes erd
-\end_inset
-
- parce que ça suggère qu'on l'a fait varier continuellement.
- Ca va bien comme ça.
- 
-\change_unchanged
-
-\end_layout
-
-\end_inset
-
-
-\change_unchanged
-, in order to disentangle the contributions of all these factors to biodiversity
- maintenance.
+ competition intensity, in order to disentangle the contributions of all
+ these factors to biodiversity maintenance.
 \end_layout
 
 \begin_layout Section
@@ -2014,19 +1881,8 @@ noprefix "false"
 
 \end_inset
 
-, respectively) ; with 
-\change_deleted -2100369821 1539872561
-and without 
-\change_unchanged
-strong
-\change_deleted -666822487 1539939920
- or weak
-\change_unchanged
- self-regulation
-\change_inserted -666822487 1539939939
- or equal intra- and inter-competition strength
-\change_unchanged
- (
+, respectively) ; with strong self-regulation or equal intra- and inter-competit
+ion strength (
 \begin_inset Formula $\kappa=10$
 \end_inset
 
@@ -2045,11 +1901,7 @@ noprefix "false"
 
 \end_inset
 
-
-\change_inserted -2100369821 1539872652
 .
-\change_unchanged
-
 \end_layout
 
 \begin_layout Standard
@@ -2367,18 +2219,7 @@ literal "false"
 
 \end_inset
 
-), with both a purely Gaussian noise 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Actually, we don't 'describe' an environmental signal in Eq.
- 1
-\end_layout
-
-\end_inset
-
-(original choice of 
+), with both a purely Gaussian noise(original choice of 
 \begin_inset CommandInset citation
 LatexCommand citealp
 key "scranton_coexistence_2016"
@@ -2457,25 +2298,10 @@ literal "false"
 
 \end_inset
 
-) while 6 out of the 14 
-\change_inserted -2100369821 1539873000
-species biomass
-\change_inserted -666822487 1539940100
-es
-\change_inserted -2100369821 1539873000
- 
-\change_unchanged
-remained below the unit.
- All persisting species in the random noise simulation
-\change_deleted -2100369821 1539873071
-s
-\change_unchanged
- were clustered within a 3.2°C-range of thermal optima (see the biomass distribut
-ion as a function of the thermal optimum in
-\change_deleted -666822487 1539940117
- 
-\change_unchanged
- Supplementary Material, Fig.
+) while 6 out of the 14 species biomasses remained below the unit.
+ All persisting species in the random noise simulation were clustered within
+ a 3.2°C-range of thermal optima (see the biomass distribution as a function
+ of the thermal optimum in Supplementary Material, Fig.
  A1).
  No obvious temporal patterns (e.g., cycles) could be seen in the community
  forced by random noise.
@@ -2586,45 +2412,10 @@ noprefix "false"
 
 \end_inset
 
-: with storage effect but without strong self-regulation
-\change_inserted -666822487 1539940147
-
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-
-\change_inserted -666822487 1539940223
-You replaced by 
-\begin_inset Quotes eld
-\end_inset
-
-weak
-\begin_inset Quotes erd
-\end_inset
-
- but I corrected - we do not say 
-\begin_inset Quotes eld
-\end_inset
-
-weak self-regulation
-\begin_inset Quotes erd
-\end_inset
-
-.
- It's completely OK to say with/without SSR, it is actually easier to understand.
- 
-\change_unchanged
-
-\end_layout
-
-\end_inset
-
-
-\change_unchanged
-, or without storage effect but with strong self-regulation), seasonality
- reduced the number of extant species to, on average, 27% and 48% of their
- original values, respectively (Fig.
+: with storage effect but without strong self-regulation, or without storage
+ effect but with strong self-regulation), seasonality reduced the number
+ of extant species to, on average, 27% and 48% of their original values,
+ respectively (Fig.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -2652,57 +2443,7 @@ Both a strong self-regulation and the storage effect markedly increased
 \begin_inset Formula $\pm$
 \end_inset
 
- 2.4) with 
-\change_deleted -666822487 1539940237
-a 
-\change_deleted -2100369821 1539873422
-white
-\change_inserted -2100369821 1539873423
-random
-\change_unchanged
- noise
-\change_inserted -666822487 1539940249
-
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-
-\change_inserted -666822487 1539940280
-it is 
-\begin_inset Quotes eld
-\end_inset
-
-our
-\begin_inset Quotes erd
-\end_inset
-
- random noise, not 
-\begin_inset Quotes eld
-\end_inset
-
-a
-\begin_inset Quotes erd
-\end_inset
-
- random noise, so we call it 
-\begin_inset Quotes eld
-\end_inset
-
-random noise
-\begin_inset Quotes erd
-\end_inset
-
- without an indefinite pronoun
-\change_unchanged
-
-\end_layout
-
-\end_inset
-
-
-\change_unchanged
-, or 2 and 6 (4.1 
+ 2.4) with random noise, or 2 and 6 (4.1 
 \begin_inset Formula $\pm$
 \end_inset
 
@@ -2748,12 +2489,9 @@ status open
 Number of species still present at the end of 100 simulations (5000 years
  each), initialized with 60 species, with a random forcing signal (blue)
  or a seasonal noise (red).
- The signs + or -
-\change_deleted -2100369821 1539873551
- 
-\change_unchanged
-storage refer to presence or absence of the storage effect, respectively;
- + / - SSR, presence or absence of Strong Self-Regulation, respectively.
+ The signs + or -storage refer to presence or absence of the storage effect,
+ respectively; + / - SSR, presence or absence of Strong Self-Regulation,
+ respectively.
  Community compositions are stable in the cases -storage-SSR and +storage+SSR,
  for which 1 or 60 species are still present at the end of all simulations,
  respectively.
