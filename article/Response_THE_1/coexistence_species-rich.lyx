@@ -528,7 +528,7 @@ literal "false"
 
 \end_inset
 
-'s framework with the periodic environments of 
+'s stochastic framework with the periodic environments of 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "barabas_community_2012"
@@ -1470,11 +1470,7 @@ Scaling between random and seasonal noise
 \begin_inset Text
 
 \begin_layout Plain Layout
-[0,
-\begin_inset Formula $\sqrt{2}$
-\end_inset
-
-] (NA)
+(0;1.3) (NA)
 \end_layout
 
 \end_inset
@@ -1844,8 +1840,15 @@ strong self-regulation
 
  characterizes dynamics where the intraspecific competition strength is
  10 times higher than the interspecific competition strength, as opposed
- to the equal competitive strengths where intra- and interspecific competition
- strengths are equal.
+ to 
+\begin_inset Quotes eld
+\end_inset
+
+equal competitive strengths
+\begin_inset Quotes erd
+\end_inset
+
+ where intra- and interspecific competition strengths are equal.
  
 \end_layout
 
@@ -2219,7 +2222,7 @@ literal "false"
 
 \end_inset
 
-), with both a purely Gaussian noise(original choice of 
+), with both a purely Gaussian noise (original choice of 
 \begin_inset CommandInset citation
 LatexCommand citealp
 key "scranton_coexistence_2016"
@@ -2271,7 +2274,7 @@ noprefix "false"
 
 \end_inset
 
-c and d.
+c and d, respectively.
  A sinusoidal forcing produces the strongly seasonally structured dynamics
  that are typical of phytoplankton.
  Even though only 5 species can be seen in Fig.
@@ -2570,8 +2573,8 @@ noprefix "false"
  38% of the simulations therefore ended with the species having the highest
  temperature optimum, 25°C.
  The shift in trait distribution towards higher maximum growth rates with
- seasonality vs higher average growth rates with a random noise was consistent
- for all model types considered (see below).
+ a seasonal noise vs higher average growth rates with a random noise was
+ consistent for all model types considered.
  
 \end_layout
 
@@ -2709,7 +2712,7 @@ noprefix "false"
 \end_inset
 
 a).
- With a random noise, extant species are grouped in rather similar clumps
+ With a random noise, extant species were grouped in rather similar clumps
  regarding species thermal optima (between 18.8°C and 22.2°C) whereas species
  tended to be further apart in the seasonal case, covering a total range
  of 7.7°C, with species grouping in the higher part of the thermal range,
@@ -2728,7 +2731,7 @@ noprefix "false"
 
  b).
  Species in communities forced by a random noise stayed in the lower range
- of temperatures (in 96% of the simulations, the highest thermal optimum
+ of thermal optima (in 96% of the simulations, the highest thermal optimum
  was 22.4°C, see Fig.
  A2 in the Supplementary Material) while they were filtered out in communities
  subjected to a seasonal fluctuation of their environment, for which species
