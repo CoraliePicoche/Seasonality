@@ -1673,7 +1673,11 @@ literal "false"
 
 .
  However, from a mathematical viewpoint, the noise is slightly autocorrelated
- as the integration process goes slightly below the daily time step.
+ as the integration process goes 
+\change_deleted -666822487 1540725788
+slightly 
+\change_unchanged
+below the daily time step.
  We therefore use the expression `random noise' to describe this forcing,
  as opposed to the `seasonal noise' described hereafter.
  To construct the seasonal noise, we add to the random forcing signal a
@@ -1769,7 +1773,15 @@ literal "true"
 \begin_inset Formula $r_{i}(\tau)$
 \end_inset
 
- and the product of competitive strength 
+ and
+\change_deleted -666822487 1540724941
+ the product of 
+\change_unchanged
+ 
+\change_inserted -666822487 1540724962
+the 
+\change_unchanged
+competitive strength 
 \begin_inset Formula $\alpha_{ij}$
 \end_inset
 
@@ -1777,13 +1789,32 @@ literal "true"
 \begin_inset Formula $j$
 \end_inset
 
- with the abundance 
+ 
+\change_deleted -666822487 1540724878
+with
+\change_inserted -666822487 1540724880
+multiplied by
+\change_unchanged
+ 
+\change_deleted -666822487 1540724968
+the
+\change_inserted -666822487 1540724969
+its
+\change_unchanged
+ abundance 
 \begin_inset Formula $N_{j}$
 \end_inset
 
 .
- Therefore, net competition covaries positively with the growth rate values
- 
+ Therefore, net competition
+\change_inserted -666822487 1540725067
+ (
+\begin_inset Formula $\sum_{j=S}^{S}r_{i}(\tau)\alpha_{ij}N_{j}$
+\end_inset
+
+)
+\change_unchanged
+ covaries positively with the growth rate values 
 \begin_inset Formula $r_{i}(\tau)$
 \end_inset
 
@@ -3243,7 +3274,7 @@ literal "false"
 
 , with a majority of weak interactions (as suggested in 
 \begin_inset CommandInset citation
-LatexCommand citet
+LatexCommand citealp
 key "wootton_measurement_2005"
 literal "false"
 
@@ -3277,8 +3308,12 @@ literal "false"
 \end_inset
 
  for a classification of the various effects).
- Setting the coefficients using a multidimensional trait-based framework,
- like that of 
+ Setting the 
+\change_inserted -666822487 1540727896
+competition 
+\change_unchanged
+coefficients using a multidimensional trait-based framework, like that of
+ 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "ashby_competing_2017"
@@ -3291,6 +3326,40 @@ literal "false"
  both intra- and interspecific competition coefficient variances may matter
  to community persistence.
  
+\change_inserted -666822487 1540728502
+
+\end_layout
+
+\begin_layout Standard
+
+\change_inserted -666822487 1540729173
+Finally, our study is limited to communities whose species have fast population
+ dynamics relative to the yearly timescale, like phytoplankton and likely
+ other fast-living organisms, so that many generations can occur in a year.
+ Different effects of seasonality may occur in species that have slower
+ dynamics or with generations that extend over multiple years (e.g., multiyear
+ cycles and chaotic attractors, Rinaldi 1993, Taylor et al.
+ 2013, Tyson & Lutcher 2018).
+ Persistence may be affected differently by seasonality in such cases with
+ slower community dynamics.
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted -666822487 1540729177
+Comme ça on ouvre une porte sans citer de papiers qu'on a pas...
+ 
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+ 
+\change_unchanged
+
 \end_layout
 
 \begin_layout Standard
@@ -3307,6 +3376,24 @@ pure
 \end_inset
 
  environmental variation has already been stated by other authors 
+\change_inserted -666822487 1540727940
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted -666822487 1540727954
+We lack the Chesson and Huntly 1997, it is good to cite the first ref.
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+
 \begin_inset CommandInset citation
 LatexCommand citep
 key "barabas_community_2012,fox_intermediate_2013,scranton_coexistence_2016"
@@ -3391,11 +3478,32 @@ literal "false"
  parasites) may contribute to increase the strength of self-regulation 
 \begin_inset CommandInset citation
 LatexCommand citep
-key "huber_role_2006,barraquand2018coastal"
+key "barraquand2018coastal"
 literal "false"
 
 \end_inset
 
+
+\change_inserted -666822487 1540728052
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted -666822487 1540728103
+J'ai enlevé le Huber and Gaedke qui n'était pas pertinent en fait parce
+ qu'il ne montre pas ça, par contre on peut citer le récent J Ecol de Chesson,
+ ça sera idéal: https://besjournals.onlinelibrary.wiley.com/doi/abs/10.1111/1365-274
+5.13035 
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
  relative to other systems, hence we believe that 10 times stronger intraspecifi
 c competition constitutes a reasonable order of magnitude.
  
@@ -3405,13 +3513,22 @@ c competition constitutes a reasonable order of magnitude.
 However, such strong self-regulation was still insufficient to maintain
  the whole community diversity (60 species) by itself, especially when the
  seasonal forcing (always decreasing species richness) was considered.
- The diversity within clumps of similar values of growth rates was considerably
- decreased once seasonality was implemented.
+ The diversity within clumps of similar values of 
+\change_deleted -666822487 1540728126
+growth rates
+\change_inserted -666822487 1540728128
+thermal optima
+\change_unchanged
+ was considerably decreased once seasonality was implemented.
  This diversity reduction occurs because within a season, the signal autocorrela
 tion gives long, contiguous time intervals to the best competitor to exclude
  its less adapted heterospecifics.
  This makes the results likely to hold not only for seasonal environments,
- but more generally for autocorrelated ones, i.e., 
+ but more generally for autocorrelated ones
+\change_inserted -666822487 1540728439
+ above the daily scale
+\change_unchanged
+, i.e., 
 \begin_inset Quotes eld
 \end_inset
 
@@ -3420,11 +3537,36 @@ red
 \end_inset
 
  noise.
- This could be relevant for species whose population dynamics occur at timescale
-s largely above one year.
- In contrast, the random noise – which can be considered white noise above
- the daily temporal scales – generates large temperature shifts more frequently,
- and thereby forbids such competitive exclusion.
+ 
+\change_deleted -666822487 1540728400
+This could be relevant for species whose population dynamics occur at timescales
+ largely above one year.
+\change_inserted -666822487 1540728403
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted -666822487 1540728468
+Je me suis rendu compte que je ne pouvais dire ça sans entrer dans une discussio
+n sur la vitesse de la dynamique.
+ 
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+ In contrast, the random noise
+\change_inserted -666822487 1540728479
+ scenario
+\change_unchanged
+ – which can be considered white noise above the daily temporal scales –
+ generates large temperature shifts more frequently, and thereby forbids
+ such competitive exclusion.
  In a seasonal setting, a species with the highest long-term (arithmetically)
  averaged growth rate may not be the best competitor, and can disappear
  as a result of a strong competition from both low- and high-temperature
