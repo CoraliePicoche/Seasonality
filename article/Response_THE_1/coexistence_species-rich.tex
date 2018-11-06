@@ -1,30 +1,59 @@
-\documentclass[smallcondensed,referee]{svjour3}       % onecolumn (second format)
+%\documentclass[smallcondensed,referee]{svjour3}       % onecolumn (second format)
+ \documentclass[a4paper,12pt]{article}
  \usepackage{textcomp} %for degree C
  \usepackage{url}
  \usepackage{amsmath}
  \usepackage{graphicx}
  \usepackage[authoryear]{natbib}
  \usepackage{lineno} 
+ \usepackage{geometry}
+ \geometry{margin=2cm}
+ \usepackage{setspace}
+ \doublespacing
  
 \begin{document}
-\title{How self-regulation, the storage effect and their interaction contribute
+\title{\Huge How self-regulation, the storage effect and their interaction contribute
 to coexistence in stochastic and seasonal environments}
 \date{\today}
-\author{Coralie Picoche$^{*,1}$ \and Fr\'ed\'eric Barraquand$^{1,2}$}
-\titlerunning{Coexistence in seasonal environments}
-\authorrunning{C.Picoche \& F.Barraquand}
-\institute{{*}\email{coralie.picoche@u-bordeaux.fr}\\
-$^{1}$ University of
-Bordeaux, Integrative and Theoretical Ecology, LabEx COTE, B\^at. B2
-- All\'ee Geoffroy St-Hilaire, 33615 Pessac, France \\
-$^{2}$ CNRS, Institute
-of Mathematics of Bordeaux, 351 Cours de la Lib\'eration, 33405 Talence,
-France}
-\journalname{Theoretical Ecology}
+\author{\Large Coralie Picoche$^{*,1}$, Fr\'ed\'eric Barraquand$^{1,2}$}
+%\titlerunning{Coexistence in seasonal environments}
+%\authorrunning{C.Picoche \& F.Barraquand}
+% \institute{{*}\email{coralie.picoche@u-bordeaux.fr}\\
+% $^{1}$ University of
+% Bordeaux, Integrative and Theoretical Ecology, LabEx COTE, B\^at. B2
+% - All\'ee Geoffroy St-Hilaire, 33615 Pessac, France \\
+% $^{2}$ CNRS, Institute
+% of Mathematics of Bordeaux, 351 Cours de la Lib\'eration, 33405 Talence,
+% France}
+% \journalname{Theoretical Ecology}
 
 \maketitle
  
+{\large{}}\textsuperscript{{\large{}1}}{\large{}~University of
+Bordeaux, Integrative and Theoretical Ecology, LabEx COTE, Bât. B2
+- Allée Geoffroy St-Hilaire, 33615 Pessac, France \bigskip{}
+}{\large\par}
+
+{\large{}}\textsuperscript{{\large{}2}}{\large{}~CNRS, Institute
+of Mathematics of Bordeaux, 351 Cours de la Libération, 33405 Talence,
+France}{\large\par}
+
+{\large{}\bigskip{}
+}{\large\par}
+
+{\large{}\bigskip{}
+}{\large\par}
+
+{\large{}\bigskip{}
+}{\large\par}
+
+{\large{}\bigskip{}
+}{\large\par}
+
+{*} Corresponding author. Email: coralie.picoche@u-bordeaux.fr
+ 
 \linenumbers
+\pagebreak{}
 \begin{abstract}
 Explaining coexistence in species-rich communities of primary producers
 remains a challenge for ecologists because of the likely competition
@@ -342,21 +371,6 @@ Zenodo} .
  
 \section*{Results}
 
-\begin{figure}[!ht]
-\begin{centering}
-\includegraphics[width=0.95\textwidth]{Fig1}
-\par\end{centering}
-\caption{Time series of temperature (top; a-b) and extant species (bottom;
-c-d) for the 2 last years of a 5000-year simulation, with storage
-effect but no differences between intraspecific and interspecific
-competition strengths. The forcing temperature is either a random
-noise (a) or a seasonal noise (b), leading to community dynamics with
-more erratic fluctuations (c) vs seasonally structured fluctuations
-(d). Line colors of species biomasses correspond to their thermal
-optimum (from blue, corresponding to low thermal optimum, to red,
-corresponding to high thermal optimum).\label{fig:Times-series_temperature_species}}
-\end{figure}
-
 Typical dynamics of the community following Eq. \ref{eq:modelLV}
 (the model of \citealp{scranton_coexistence_2016}), with both a purely
 Gaussian noise (original choice of \citealp{scranton_coexistence_2016};
@@ -388,17 +402,17 @@ room for the growth of the low-temperature group.
 
 \begin{figure}[!ht]
 \begin{centering}
-\includegraphics[width=0.75\textwidth]{Fig2}
+\includegraphics[width=0.85\textwidth]{Fig1}
 \par\end{centering}
-\caption{Number of species still present at the end of 100 simulations (5000
-years each), initialized with 60 species, with a random forcing signal
-(blue) or a seasonal noise (red). The signs + or -storage refer to
-presence or absence of the storage effect, respectively; + / - SSR,
-presence or absence of Strong Self-Regulation, respectively. Community
-compositions are stable in the cases -storage-SSR and +storage+SSR,
-for which 1 or 60 species are still present at the end of all simulations,
-respectively. Due to low variance, the whiskers here represent min
-and max rather than 1.5 interquartile range. \label{fig:Persistence-of-species} }
+\caption{Time series of temperature (top; a-b) and extant species (bottom;
+c-d) for the 2 last years of a 5000-year simulation, with storage
+effect but no differences between intraspecific and interspecific
+competition strengths. The forcing temperature is either a random
+noise (a) or a seasonal noise (b), leading to community dynamics with
+more erratic fluctuations (c) vs seasonally structured fluctuations
+(d). Line colors of species biomasses correspond to their thermal
+optimum (from blue, corresponding to low thermal optimum, to red,
+corresponding to high thermal optimum).\label{fig:Times-series_temperature_species}}
 \end{figure}
 
 The decrease in persistence due to seasonality observed in Fig. \ref{fig:Times-series_temperature_species}
@@ -412,6 +426,22 @@ original values, respectively (Fig. \ref{fig:Persistence-of-species}).
 A seasonal signal therefore led to a much smaller average persistence.
 There was also less variance in persistence between seasonally forced
 simulations compared to random noise simulations. 
+
+\begin{figure}[!ht]
+\begin{centering}
+\includegraphics[width=0.75\textwidth]{Fig2}
+\par\end{centering}
+\caption{Number of species still present at the end of 100 simulations (5000
+years each), initialized with 60 species, with a random forcing signal
+(blue) or a seasonal noise (red). The signs + or -storage refer to
+presence or absence of the storage effect, respectively; + / - SSR,
+presence or absence of Strong Self-Regulation, respectively. Community
+compositions are stable in the cases -storage-SSR and +storage+SSR,
+for which 1 or 60 species are still present at the end of all simulations,
+respectively. Due to low variance, the whiskers here represent min
+and max rather than 1.5 interquartile range. \label{fig:Persistence-of-species} }
+\end{figure}
+
 
 Both a strong self-regulation and the storage effect markedly increased
 persistence. Without any of these coexistence mechanisms, only one
@@ -770,12 +800,11 @@ alone. Whether the diversity-enhancing effects of these mechanisms
 combine subadditively (as in \citealp{kuang_interacting_2010}) or
 superadditively like here is therefore worthy of further research. 
 
-\begin{acknowledgements} 
+\section*{Acknowledgements} 
 We thank Alix Sauve for thoughtful comments and some bibliographic
 references, as well as Gy\"orgy Barab\'as and an anonymous referee for
 constructive feedback. This study was supported by the French ANR
 through LabEx COTE (ANR-10-LABX-45).
-\end{acknowledgements}
 % 
 \begin{thebibliography}{56}
 \providecommand{\natexlab}[1]{#1}
