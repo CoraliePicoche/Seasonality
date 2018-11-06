@@ -1,0 +1,317 @@
+\begin{thebibliography}{56}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{{#1}}
+\providecommand{\urlprefix}{URL }
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{DOI~\discretionary{}{}{}#1}\else
+  \providecommand{\doi}{DOI~\discretionary{}{}{}\begingroup
+  \urlstyle{rm}\Url}\fi
+\providecommand{\eprint}[2][]{\url{#2}}
+
+\bibitem[{Adler et~al.(2010)Adler, Ellner, and Levine}]{adler_coexistence_2010}
+Adler PB, Ellner SP, Levine JM (2010) Coexistence of perennial plants: an
+  embarrassment of niches. Ecology letters 13(8):1019--1029,
+  \doi{10.1111/j.1461-0248.2010.01496.x}
+
+\bibitem[{Adler et~al.(2018)Adler, Smull, Beard, Choi, Furniss, Kulmatiski,
+  Meiners, Tredennick, and Veblen}]{adler_competition_2018}
+Adler PB, Smull D, Beard KH, Choi RT, Furniss T, Kulmatiski A, Meiners JM,
+  Tredennick AT, Veblen KE (2018) Competition and coexistence in plant
+  communities: intraspecific competition is stronger than interspecific
+  competition. Ecology Letters 21(9):1319--1329, \doi{10.1111/ele.13098}
+
+\bibitem[{Ashby et~al.(2017)Ashby, Watkins, Louren\c{c}o, Gupta, and
+  Foster}]{ashby_competing_2017}
+Ashby B, Watkins E, Louren\c{c}o J, Gupta S, Foster KR (2017) Competing species
+  leave many potential niches unfilled. Nature Ecology \& Evolution
+  1(10):1495--1501, \doi{10.1038/s41559-017-0295-3}
+
+\bibitem[{Bagchi et~al.(2014)Bagchi, Gallery, Gripenberg, Gurr, Narayan, Addis,
+  Freckleton, and Lewis}]{bagchi_pathogens_2014}
+Bagchi R, Gallery RE, Gripenberg S, Gurr SJ, Narayan L, Addis CE, Freckleton
+  RP, Lewis OT (2014) Pathogens and insect herbivores drive rainforest plant
+  diversity and composition. Nature 506(7486):85--88, \doi{10.1038/nature12911}
+
+\bibitem[{Barab\'as et~al.(2012)Barab\'as, Mesz\'ena, and
+  Ostling}]{barabas_community_2012}
+Barab\'as G, Mesz\'ena G, Ostling A (2012) Community robustness and limiting
+  similarity in periodic environments. Theoretical Ecology 5(2):265--282,
+  \doi{10.1007/s12080-011-0127-z}
+
+\bibitem[{Barab\'as et~al.(2013)Barab\'as, D'Andrea, Rael, Mesz\'ena, and
+  Ostling}]{barabas_emergent_2013}
+Barab\'as G, D'Andrea R, Rael R, Mesz\'ena G, Ostling A (2013) Emergent
+  neutrality or hidden niches? Oikos 122(11):1565--1572,
+  \doi{10.1111/j.1600-0706.2013.00298.x}
+
+\bibitem[{Barab\'as et~al.(2016)Barab\'as, Michalska-Smith, and
+  Allesina}]{barabas_effect_2016}
+Barab\'as G, Michalska-Smith MJ, Allesina S (2016) The {Effect} of {Intra}- and
+  {Interspecific} {Competition} on {Coexistence} in {Multispecies}
+  {Communities}. The American Naturalist 188(1):E1--E12, \doi{10.1086/686901}
+
+\bibitem[{Barab\'as et~al.(2017)Barab\'as, Michalska-Smith, and
+  Allesina}]{barabas_self-regulation_2017}
+Barab\'as G, Michalska-Smith MJ, Allesina S (2017) Self-regulation and the
+  stability of large ecological networks. Nature Ecology \& Evolution
+  1(12):1870--1875, \doi{10.1038/s41559-017-0357-6}
+
+\bibitem[{Barraquand et~al.(2018)Barraquand, Picoche, Maurer, Carassou, and
+  Auby}]{barraquand2018coastal}
+Barraquand F, Picoche C, Maurer D, Carassou L, Auby I (2018) Coastal
+  phytoplankton community dynamics and coexistence driven by intragroup
+  density-dependence, light and hydrodynamics. Oikos In press,
+  \doi{10.1101/171264}
+
+\bibitem[{Bolker and Pacala(1999)}]{bolker_spatial_1999}
+Bolker B, Pacala S (1999) Spatial {Moment} {Equations} for {Plant}
+  {Competition}: {Understanding} {Spatial} {Strategies} and the {Advantages} of
+  {Short} {Dispersal}. The American Naturalist 153(6):575--602,
+  \doi{10.1086/303199}
+
+\bibitem[{Bolker(2003)}]{bolker_combining_2003}
+Bolker BM (2003) Combining endogenous and exogenous spatial variability in
+  analytical population models. Theoretical Population Biology 64(3):255--270,
+  \doi{10.1016/S0040-5809(03)00090-X}
+
+\bibitem[{Carmel et~al.(2017)Carmel, Suprunenko, Kunin, Kent, Belmaker,
+  Bar-Massada, and Cornell}]{carmel_using_2017}
+Carmel Y, Suprunenko YF, Kunin WE, Kent R, Belmaker J, Bar-Massada A, Cornell
+  SJ (2017) Using exclusion rate to unify niche and neutral perspectives on
+  coexistence. Oikos 126(10):1451--1458, \doi{10.1111/oik.04380}
+
+\bibitem[{Chesson(1994)}]{chesson_multispecies_1994}
+Chesson P (1994) Multispecies {Competition} in {Variable} {Environments}.
+  Theoretical Population Biology 45:227--276, \doi{10.1006/tpbi.1994.1013}
+
+\bibitem[{Chesson(2000)}]{chesson_mechanisms_2000}
+Chesson P (2000) Mechanisms of maintenance of species diversity. Annual review
+  of Ecology and Systematics 31:343--366,
+  \doi{10.1146/annurev.ecolsys.31.1.343}
+
+\bibitem[{Chesson(2018)}]{chesson_updates_2018}
+Chesson P (2018) Updates on mechanisms of maintenance of species diversity.
+  Journal of Ecology 106(5):1773--1794, \doi{10.1111/1365-2745.13035}
+
+\bibitem[{Chesson and Huntly(1997)}]{chesson_roles_1997}
+Chesson P, Huntly N (1997) The roles of harsh and fluctuating conditions in the
+  dynamics of ecological communities. The American Naturalist 150(5):519--553,
+  \doi{10.1086/286080}
+
+\bibitem[{Comita et~al.(2014)Comita, Queenborough, Murphy, Eck, Xu, Krishnadas,
+  Beckman, and Zhu}]{comita_testing_2014}
+Comita LS, Queenborough SA, Murphy SJ, Eck JL, Xu K, Krishnadas M, Beckman N,
+  Zhu Y (2014) {Testing predictions of the Janzen-Connell hypothesis: a
+  meta-analysis of experimental evidence for distance- and density-dependent
+  seed and seedling survival}. Journal of Ecology 102(4):845--856,
+  \doi{10.1111/1365-2745.12232}
+
+\bibitem[{D'Andrea and Ostling(2016)}]{dandrea_challenges_2016}
+D'Andrea R, Ostling A (2016) Challenges in linking trait patterns to niche
+  differentiation. Oikos 125(10):1369--1385, \doi{10.1111/oik.02979}
+
+\bibitem[{Dornelas and Connolly(2008)}]{dornelas_multiple_2008}
+Dornelas M, Connolly SR (2008) Multiple modes in a coral species abundance
+  distribution. Ecology Letters 11(10):1008--1016,
+  \doi{10.1111/j.1461-0248.2008.01208.x}
+
+\bibitem[{Ellner et~al.(2016)Ellner, Snyder, and Adler}]{ellner_how_2016}
+Ellner SP, Snyder RE, Adler PB (2016) How to quantify the temporal storage
+  effect using simulations instead of math. Ecology Letters 19(11):1333--1342,
+  \doi{10.1111/ele.12672}
+
+\bibitem[{Fox(2013)}]{fox_intermediate_2013}
+Fox JW (2013) The intermediate disturbance hypothesis should be abandoned.
+  Trends in Ecology \& Evolution 28(2):86--92, \doi{10.1016/j.tree.2012.08.014}
+
+\bibitem[{G\"{o}tzenberger et~al.(2012)G\"{o}tzenberger, de~Bello, Br\r{a}then,
+  Davison, Dubuis, Guisan, Lep\v{s}, Lindborg, Moora, P\"{a}rtel, Pellissier,
+  Pottier, Vittoz, Zobel, and Zobel}]{gotzenberger_ecological_2012}
+G\"{o}tzenberger L, de~Bello F, Br\r{a}then KA, Davison J, Dubuis A, Guisan A,
+  Lep\v{s} J, Lindborg R, Moora M, P\"{a}rtel M, Pellissier L, Pottier J,
+  Vittoz P, Zobel K, Zobel M (2012) Ecological assembly rules in plant
+  communities-approaches, patterns and prospects. Biological Reviews
+  87(1):111--127, \doi{10.1111/j.1469-185X.2011.00187.x}
+
+\bibitem[{Gravel et~al.(2006)Gravel, Canham, Beaudet, and
+  Messier}]{gravel_reconciling_2006}
+Gravel D, Canham CD, Beaudet M, Messier C (2006) Reconciling niche and
+  neutrality: the continuum hypothesis: {Reconciling} niche and neutrality.
+  Ecology Letters 9(4):399--409, \doi{10.1111/j.1461-0248.2006.00884.x}
+
+\bibitem[{Haegeman and Loreau(2011)}]{haegeman_mathematical_2011}
+Haegeman B, Loreau M (2011) A mathematical synthesis of niche and neutral
+  theories in community ecology. Journal of Theoretical Biology
+  269(1):150--165, \doi{10.1016/j.jtbi.2010.10.006}
+
+\bibitem[{Hastings et~al.(2018)Hastings, Abbott, Cuddington, Francis, Gellner,
+  Lai, Morozov, Petrovskii, Scranton, and Zeeman}]{hastings_transient_2018}
+Hastings A, Abbott KC, Cuddington K, Francis T, Gellner G, Lai YC, Morozov A,
+  Petrovskii S, Scranton K, Zeeman ML (2018) Transient phenomena in ecology.
+  Science 361(6406):eaat6412, \doi{10.1126/science.aat6412}
+
+\bibitem[{Haydon(1994)}]{haydon1994pivotal}
+Haydon D (1994) Pivotal assumptions determining the relationship between
+  stability and complexity: an analytical synthesis of the stability-complexity
+  debate. The American Naturalist 144(1):14--29, \doi{10.1086/285658}
+
+\bibitem[{Holt(2006)}]{holt_emergent_2006}
+Holt R (2006) Emergent neutrality. Trends in Ecology \& Evolution
+  21(10):531--533, \doi{10.1016/j.tree.2006.08.003}
+
+\bibitem[{Hubbell(2001)}]{hubbell_unified_2001}
+Hubbell SP (2001) The {Unified} {Neutral} {Theory} of {Biodiversity} and
+  {Biogeography} ({MPB}-32). Princeton University Press
+
+\bibitem[{Kawatsu and Kondoh(2018)}]{kawatsu2018density}
+Kawatsu K, Kondoh M (2018) Density-dependent interspecific interactions and the
+  complexity--stability relationship. Proc R Soc B 285(1879):20180698,
+  \doi{10.1098/rspb.2018.0698}
+
+\bibitem[{Kokkoris et~al.(2002)Kokkoris, Jansen, Loreau, and
+  Troumbis}]{kokkoris_variability_2002}
+Kokkoris GD, Jansen VAA, Loreau M, Troumbis AY (2002) Variability in
+  interaction strength and implications for biodiversity. Journal of Animal
+  Ecology 71(2):362--371, \doi{10.1046/j.1365-2656.2002.00604.x}
+
+\bibitem[{Kuang and Chesson(2009)}]{kuang_coexistence_2009}
+Kuang JJ, Chesson P (2009) Coexistence of annual plants: generalist seed
+  predation weakens the storage effect. Ecology 90(1):170--182,
+  \doi{10.1890/08-0207.1}
+
+\bibitem[{Kuang and Chesson(2010)}]{kuang_interacting_2010}
+Kuang JJ, Chesson P (2010) Interacting coexistence mechanisms in annual plant
+  communities: frequency-dependent predation and the storage effect.
+  Theoretical population biology 77(1):56--70, \doi{10.1016/j.tpb.2009.11.002}
+
+\bibitem[{Loranger et~al.(2018)Loranger, Munoz, Shipley, and
+  Violle}]{loranger_what_2018}
+Loranger J, Munoz F, Shipley B, Violle C (2018) What makes trait-abundance
+  relationships when both environmental filtering and stochastic neutral
+  dynamics are at play? Oikos \doi{10.1111/oik.05398}
+
+\bibitem[{Matthews et~al.(2014)Matthews, Borges, and
+  Whittaker}]{matthews_multimodal_2014}
+Matthews TJ, Borges PAV, Whittaker RJ (2014) Multimodal species abundance
+  distributions: a deconstruction approach reveals the processes behind the
+  pattern. Oikos 123(5):533--544, \doi{10.1111/j.1600-0706.2013.00829.x}
+
+\bibitem[{McGill et~al.(2007)McGill, Etienne, Gray, Alonso, Anderson, Benecha,
+  Dornelas, Enquist, Green, He, Hurlbert, Magurran, Marquet, Maurer, Ostling,
+  Soykan, Ugland, and White}]{mcgill_species_2007}
+McGill BJ, Etienne RS, Gray JS, Alonso D, Anderson MJ, Benecha HK, Dornelas M,
+  Enquist BJ, Green JL, He F, Hurlbert AH, Magurran AE, Marquet PA, Maurer BA,
+  Ostling A, Soykan CU, Ugland KI, White EP (2007) Species abundance
+  distributions: moving beyond single prediction theories to integration within
+  an ecological framework. Ecology Letters 10(10):995--1015,
+  \doi{10.1111/j.1461-0248.2007.01094.x}
+
+\bibitem[{Moisan et~al.(2002)Moisan, Moisan, and
+  Abbott}]{moisan_modelling_2002}
+Moisan JR, Moisan TA, Abbott MR (2002) Modelling the effect of temperature on
+  the maximum growth rates of phytoplankton populations. Ecological Modelling
+  153(3):197--215, \doi{10.1016/S0304-3800(02)00008-X}
+
+\bibitem[{Mordecai(2015)}]{mordecai_pathogen_2015}
+Mordecai EA (2015) Pathogen impacts on plant diversity in variable
+  environments. Oikos 124(4):414--420, \doi{10.1111/oik.01328}
+
+\bibitem[{Munoz and Huneman(2016)}]{munoz_neutral_2016}
+Munoz F, Huneman P (2016) From the neutral theory to a comprehensive and
+  multiscale theory of ecological equivalence. The Quarterly Review of Biology
+  91(3):321--342, \doi{10.1086/688098}
+
+\bibitem[{Murrell and Law(2002)}]{murrell_2002}
+Murrell DJ, Law R (2002) Heteromyopia and the spatial coexistence of similar
+  competitors. Ecology Letters 6(1):48--59,
+  \doi{10.1046/j.1461-0248.2003.00397.x}
+
+\bibitem[{Mutshinda et~al.(2009)Mutshinda, O'Hara, and
+  Woiwod}]{mutshinda_what_2009}
+Mutshinda CM, O'Hara RB, Woiwod IP (2009) What drives community dynamics?
+  Proceedings of the Royal Society B: Biological Sciences 276(1669):2923--2929,
+  \doi{10.1098/rspb.2009.0523}
+
+\bibitem[{Rael et~al.(2018)Rael, D'Andrea, Barab{\'a}s, and
+  Ostling}]{rael2018emergent}
+Rael RC, D'Andrea R, Barab{\'a}s G, Ostling A (2018) Emergent niche structuring
+  leads to increased differences from neutrality in species abundance
+  distributions. Ecology 99(7):1633--1643, \doi{10.1002/ecy.2238}
+
+\bibitem[{Reynolds(2006)}]{reynolds2006ecology}
+Reynolds CS (2006) The ecology of phytoplankton. Cambridge University Press
+
+\bibitem[{Rinaldi et~al.(1993)Rinaldi, Murator, and
+  Kuznetsov}]{rinaldi_multiple_1993}
+Rinaldi S, Murator S, Kuznetsov Y (1993) Multiple attractors, catastrophes and
+  chaos in seasonally perturbed predator-prey communities. Bulletin of
+  Mathematical Biology 55(1):15--35, \doi{10.1007/BF02460293}
+
+\bibitem[{Sakavara et~al.(2018)Sakavara, Tsirtsis, Roelke, Mancy, and
+  Spatharis}]{sakavara_lumpy_2018}
+Sakavara A, Tsirtsis G, Roelke DL, Mancy R, Spatharis S (2018) Lumpy species
+  coexistence arises robustly in fluctuating resource environments. Proceedings
+  of the National Academy of Sciences 115(4):738--743,
+  \doi{10.1073/pnas.1705944115}
+
+\bibitem[{Scheffer and van Nes(2006)}]{scheffer_self-organized_2006}
+Scheffer M, van Nes EH (2006) Self-organized similarity, the evolutionary
+  emergence of groups of similar species. Proceedings of the National Academy
+  of Sciences 103(16):6230--6235, \doi{10.1073/pnas.0508024103}
+
+\bibitem[{Scranton and Vasseur(2016)}]{scranton_coexistence_2016}
+Scranton K, Vasseur DA (2016) Coexistence and emergent neutrality generate
+  synchrony among competitors in fluctuating environments. Theoretical Ecology
+  9(3):353--363, \doi{10.1007/s12080-016-0294-z}
+
+\bibitem[{Snyder(2008)}]{snyder_when_2008}
+Snyder RE (2008) When does environmental variation most influence species
+  coexistence? Theoretical Ecology 1(3):129--139,
+  \doi{10.1007/s12080-008-0015-3}
+
+\bibitem[{Stump(2017)}]{stump_multispecies_2017}
+Stump SM (2017) Multispecies {Coexistence} without {Diffuse} {Competition}; or,
+  {Why} {Phylogenetic} {Signal} and {Trait} {Clustering} {Weaken}
+  {Coexistence}. The American Naturalist 190(2):213--228, \doi{10.1086/692470}
+
+\bibitem[{Taylor et~al.(2013)Taylor, White, and Sherratt}]{taylor_how_2013}
+Taylor RA, White A, Sherratt JA (2013) How do variations in seasonality affect
+  population cycles? Proceedings of the Royal Society B: Biological Sciences
+  280(1754), \doi{10.1098/rspb.2012.2714}
+
+\bibitem[{Tyson and Lutscher(2016)}]{tyson_seasonally_2016}
+Tyson R, Lutscher F (2016) Seasonally {Varying} {Predation} {Behavior} and
+  {Climate} {Shifts} {Are} {Predicted} to {Affect} {Predator}-{Prey} {Cycles}.
+  The American Naturalist 188(5):539--553, \doi{10.1086/688665}
+
+\bibitem[{Vasseur and Yodzis(2004)}]{vasseur_color_2004}
+Vasseur DA, Yodzis P (2004) {T}he {C}olor {O}f {E}nvironmental {N}oise. Ecology
+  85(4):1146--1152, \doi{10.1890/02-3122}
+
+\bibitem[{Vergnon et~al.(2013)Vergnon, van Nes, and
+  Scheffer}]{vergnon_interpretation_2013}
+Vergnon R, van Nes EH, Scheffer M (2013) Interpretation and predictions of the
+  {Emergent} neutrality model: a reply to {Barab\'as} et al. Oikos
+  122(11):1573--1575, \doi{10.1111/j.1600-0706.2013.00790.x}
+
+\bibitem[{Vesipa and Ridolfi(2017)}]{vesipa_impact_2017}
+Vesipa R, Ridolfi L (2017) Impact of seasonal forcing on reactive ecological
+  systems. Journal of Theoretical Biology 419:23--35,
+  \doi{10.1016/j.jtbi.2017.01.036}
+
+\bibitem[{Winder and Cloern(2010)}]{winder_annual_2010}
+Winder M, Cloern JE (2010) The annual cycles of phytoplankton biomass.
+  Philosophical Transactions of the Royal Society B: Biological Sciences
+  365(1555):3215--3226, \doi{10.1098/rstb.2010.0125}
+
+\bibitem[{Wootton and Emmerson(2005)}]{wootton_measurement_2005}
+Wootton JT, Emmerson M (2005) Measurement of {Interaction} {Strength} in
+  {Nature}. Annual Review of Ecology, Evolution, and Systematics
+  36(1):419--444, \doi{10.1146/annurev.ecolsys.36.091704.175535}
+
+\bibitem[{Zhao(1991)}]{zhao1991qualitative}
+Zhao XQ (1991) The qualitative analysis of n-species {L}otka-{V}olterra
+  periodic competition systems. Mathematical and Computer Modelling
+  15(11):3--8, \doi{10.1016/0895-7177(91)90100-L}
+
+\end{thebibliography}
