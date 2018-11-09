@@ -1,5 +1,5 @@
 %\documentclass[smallcondensed,referee]{svjour3}       % onecolumn (second format)
- \documentclass[a4paper,10pt]{article}
+ \documentclass[a4paper,12pt]{article}
  \usepackage{textcomp} %for degree C
  \usepackage{url}
  \usepackage{amsmath}
@@ -9,27 +9,51 @@
  \usepackage{geometry}
  \geometry{margin=2cm}
  \usepackage{setspace}
+ \doublespacing
  
 \begin{document}
-\title{How self-regulation, the storage effect and their interaction contribute
+\title{\Huge How self-regulation, the storage effect and their interaction contribute
 to coexistence in stochastic and seasonal environments}
 \date{\today}
-\author{Coralie Picoche$^{*,1}$ \and Fr\'ed\'eric Barraquand$^{1,2}$}
+\author{\Large Coralie Picoche$^{*,1}$, Fr\'ed\'eric Barraquand$^{1,2}$}
 %\titlerunning{Coexistence in seasonal environments}
 %\authorrunning{C.Picoche \& F.Barraquand}
-\institute{{*}\email{coralie.picoche@u-bordeaux.fr}\\
-$^{1}$ University of
-Bordeaux, Integrative and Theoretical Ecology, LabEx COTE, B\^at. B2
-- All\'ee Geoffroy St-Hilaire, 33615 Pessac, France \\
-$^{2}$ CNRS, Institute
-of Mathematics of Bordeaux, 351 Cours de la Lib\'eration, 33405 Talence,
-France}
-\journalname{Theoretical Ecology}
+% \institute{{*}\email{coralie.picoche@u-bordeaux.fr}\\
+% $^{1}$ University of
+% Bordeaux, Integrative and Theoretical Ecology, LabEx COTE, B\^at. B2
+% - All\'ee Geoffroy St-Hilaire, 33615 Pessac, France \\
+% $^{2}$ CNRS, Institute
+% of Mathematics of Bordeaux, 351 Cours de la Lib\'eration, 33405 Talence,
+% France}
+% \journalname{Theoretical Ecology}
 
 \maketitle
  
+{\large{}}\textsuperscript{{\large{}1}}{\large{}~University of
+Bordeaux, Integrative and Theoretical Ecology, LabEx COTE, Bât. B2
+- Allée Geoffroy St-Hilaire, 33615 Pessac, France \bigskip{}
+}{\large\par}
+
+{\large{}}\textsuperscript{{\large{}2}}{\large{}~CNRS, Institute
+of Mathematics of Bordeaux, 351 Cours de la Libération, 33405 Talence,
+France}{\large\par}
+
+{\large{}\bigskip{}
+}{\large\par}
+
+{\large{}\bigskip{}
+}{\large\par}
+
+{\large{}\bigskip{}
+}{\large\par}
+
+{\large{}\bigskip{}
+}{\large\par}
+
+{*} Corresponding author. Email: coralie.picoche@u-bordeaux.fr
+ 
 \linenumbers
-\doublespacing
+\pagebreak{}
 \begin{abstract}
 Explaining coexistence in species-rich communities of primary producers
 remains a challenge for ecologists because of the likely competition
@@ -44,7 +68,7 @@ Building on the forced Lotka-Volterra model of Scranton and Vasseur
 (2016) inspired by phytoplankton communities, we have investigated
 the effect of two coexistence mechanisms, namely the storage effect
 and higher intra- than interspecific competition strengths (i.e.,
-strong self-regulation). We tuned the competition ratio based on empirical
+strong self-regulation). We tuned the competition ratio on empirical
 analyses, in which self-regulation usually dominates interspecific
 interactions. Although a strong self-regulation maintained more species
 (50\%) than the storage effect (25\%), we show that none of the two
@@ -55,10 +79,10 @@ persistence relative to a random environment. Our results suggest
 that combining different mechanisms for biodiversity maintenance into
 community models might be more fruitful than trying to find which
 mechanism explains best the observed diversity levels. We additionally
-highlight that while trait-biomass distributions provide some clues
+highlight that while biomass-trait distributions provide some clues
 regarding coexistence mechanisms, they cannot indicate by themselves
 which coexistence mechanisms are at play. \\
-\textbf{Number of words: 242}\\
+\textbf{Number of words: 241}\\
 \textbf{Keywords: }coexistence; seasonality; competition; phytoplankton;
 Lotka-Volterra; storage effect\\
 \end{abstract}
@@ -140,7 +164,7 @@ purely randomly fluctuating environment) is therefore a key feature
 of this paper. In particular, we contrast cases where the storage
 effect is present vs absent, which conveniently maps to two different
 parameterizations of the forced Lotka-Volterra model. Moreover, the
-overall diversity obtained at the end of the simulations with \citet{scranton_coexistence_2016}'s
+overall diversity obtained at the end of the simulations with \citet{scranton_coexistence_2016}
 model was relatively low compared to what we usually observe in phytoplankton
 communities (several dozens to hundreds of species). We have therefore
 sought out which mechanisms would foster a truly species-rich community
@@ -190,7 +214,7 @@ e^{-5|\tau-\tau_{i}^{opt}|^{3}/b_{i}}, & \tau>\tau_{i}^{opt}
 Model parameters are detailed in Table \ref{tab:Coefficients-}, and
 we set their values to match the features of phytoplankton communities
 as in Scranton and Vasseur's work \citeyearpar{scranton_coexistence_2016}.
-The niche of each species is defined by its thermal optimum $\tau_{i}^{opt}$.
+The niche of each species $i$ is defined by its thermal optimum $\tau_{i}^{opt}$.
 Thermal performance curves defined in Eq. \ref{eq:eppley_curve} are
 parameterized so that all species share the same niche area (Eq. \ref{eq:niche_breadth}),
 which sets a trade-off between maximum growth rates and niche width. 
@@ -305,14 +329,14 @@ In addition to two types of environmental forcings (random noise with
 $\theta=0$, and seasonal noise with $\theta=1.3$), we compare the
 results for four formulations of the model: with and without an explicit
 storage effect (Eq. \ref{eq:modelLV} and Eq. \ref{eq:eqLV_noforcecompetition},
-respectively); with strong self-regulation or equal intra- and inter-competition
+respectively); with strong self-regulation or equal intra- and interspecific competition
 strength ($\kappa=10$ or $\kappa=1$, respectively). These are summed
 up in Table \ref{tab:ModelsOfGrowthRates}.
 \begin{center}
 \begin{table}[!ht]
 \begin{centering}
 \caption{\label{tab:ModelsOfGrowthRates}Growth rate of species $i$ in the
-four formulations of the model we present}
+four formulations of the model we present.}
 \begin{tabular}{ccc}
 \hline 
 $\frac{1}{N_{i}}\frac{dN_{i}}{dt}+m{}_{i}$ & Storage effect & No storage effect\\
@@ -328,22 +352,22 @@ Equal competitive strengths ($\kappa=1$) & $r_{i}(\tau)\left(1-\sum_{j=1}^{S}\al
 \subsection*{\emph{Set-up}}
 
 We replicate the `Species sorting' experiment of \citet{scranton_coexistence_2016}
-so as to investigate how the structure of synthetic phytoplankton
+to investigate how the structure of synthetic phytoplankton
 communities varies under the different scenarios we described above.
 We focused on the dynamics of a community initialized with 60 species
 with thermal optima uniformly spaced along the interval {[}15\textdegree C, 25\textdegree C{]},
 and with the same initial density $\left(\frac{\ensuremath{1}}{\alpha S}\right)$.
 Each simulation was run for 5000 years in 1-day intervals. When the
-density of a species dropped below $10^{-6}$, it was considered extinct.
-For each combination of parameters (type of environmental signal,
-storage effect and stabilizing niche differences), we ran 100 simulations. 
+density of a species dropped below $10^{-6}$ kg/area, it was considered extinct.
+We ran 100 simulations for each combination of parameters (type of environmental signal,
+storage effect and value of $\kappa$). 
 
 All simulations were run with Matlab's ode45 algorithm, an explicit
 Runge-Kutta (4,5) integration scheme with an absolute error tolerance
 of $10^{-8}$, and relative error tolerance of $10^{-3}$. The code
 is available in a GitHub repository\footnote{\url{https://github.com/CoraliePicoche/Seasonality}, will be made
 public upon acceptance or at the reviewer's request and stored in
-Zenodo} .
+Zenodo.}.
  
 \section*{Results}
 
@@ -456,7 +480,7 @@ small filled and open circles, respectively, and are indexed on the
 right y-axis. \label{fig:Mean-biomass-in_stable_cases}}
 \end{figure}
 
-The trait-biomass distribution of the community was affected by the
+The biomass-trait distribution of the community was affected by the
 type of forcing even when the richness of the community was stable
 (Fig. \ref{fig:Mean-biomass-in_stable_cases}). Without storage effect
 nor strong self-regulation, there was only one species left at the
@@ -561,7 +585,7 @@ perhaps even more general networks \citep{barabas_self-regulation_2017}.
 
 Before discussing the ecological interpretation of our results, we
 first recall some technical assumptions made in this study. All our
-simulations lasted for a fixed duration (5000 timesteps) as in \citet{scranton_coexistence_2016}.
+simulations lasted for a fixed duration (5000 time steps) as in \citet{scranton_coexistence_2016}.
 This means that short- and medium-term transients (a few years to
 hundreds of years) are completely negligible at the end of the time
 series, but very long transients can remain. We realized that convergence
@@ -776,12 +800,11 @@ alone. Whether the diversity-enhancing effects of these mechanisms
 combine subadditively (as in \citealp{kuang_interacting_2010}) or
 superadditively like here is therefore worthy of further research. 
 
-\begin{acknowledgements} 
+\section*{Acknowledgements} 
 We thank Alix Sauve for thoughtful comments and some bibliographic
 references, as well as Gy\"orgy Barab\'as and an anonymous referee for
 constructive feedback. This study was supported by the French ANR
 through LabEx COTE (ANR-10-LABX-45).
-\end{acknowledgements}
 % 
 \begin{thebibliography}{56}
 \providecommand{\natexlab}[1]{#1}

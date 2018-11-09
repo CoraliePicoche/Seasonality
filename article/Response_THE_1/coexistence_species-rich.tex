@@ -79,7 +79,7 @@ persistence relative to a random environment. Our results suggest
 that combining different mechanisms for biodiversity maintenance into
 community models might be more fruitful than trying to find which
 mechanism explains best the observed diversity levels. We additionally
-highlight that while trait-biomass distributions provide some clues
+highlight that while biomass-trait distributions provide some clues
 regarding coexistence mechanisms, they cannot indicate by themselves
 which coexistence mechanisms are at play. \\
 \textbf{Number of words: 242}\\
@@ -164,7 +164,7 @@ purely randomly fluctuating environment) is therefore a key feature
 of this paper. In particular, we contrast cases where the storage
 effect is present vs absent, which conveniently maps to two different
 parameterizations of the forced Lotka-Volterra model. Moreover, the
-overall diversity obtained at the end of the simulations with \citet{scranton_coexistence_2016}'s
+overall diversity obtained at the end of the simulations with \citet{scranton_coexistence_2016}
 model was relatively low compared to what we usually observe in phytoplankton
 communities (several dozens to hundreds of species). We have therefore
 sought out which mechanisms would foster a truly species-rich community
@@ -214,7 +214,7 @@ e^{-5|\tau-\tau_{i}^{opt}|^{3}/b_{i}}, & \tau>\tau_{i}^{opt}
 Model parameters are detailed in Table \ref{tab:Coefficients-}, and
 we set their values to match the features of phytoplankton communities
 as in Scranton and Vasseur's work \citeyearpar{scranton_coexistence_2016}.
-The niche of each species is defined by its thermal optimum $\tau_{i}^{opt}$.
+The niche of each species $i$ is defined by its thermal optimum $\tau_{i}^{opt}$.
 Thermal performance curves defined in Eq. \ref{eq:eppley_curve} are
 parameterized so that all species share the same niche area (Eq. \ref{eq:niche_breadth}),
 which sets a trade-off between maximum growth rates and niche width. 
@@ -329,14 +329,14 @@ In addition to two types of environmental forcings (random noise with
 $\theta=0$, and seasonal noise with $\theta=1.3$), we compare the
 results for four formulations of the model: with and without an explicit
 storage effect (Eq. \ref{eq:modelLV} and Eq. \ref{eq:eqLV_noforcecompetition},
-respectively); with strong self-regulation or equal intra- and inter-competition
+respectively); with strong self-regulation or equal intra- and interspecific competition
 strength ($\kappa=10$ or $\kappa=1$, respectively). These are summed
 up in Table \ref{tab:ModelsOfGrowthRates}.
 \begin{center}
 \begin{table}[!ht]
 \begin{centering}
 \caption{\label{tab:ModelsOfGrowthRates}Growth rate of species $i$ in the
-four formulations of the model we present}
+four formulations of the model we present.}
 \begin{tabular}{ccc}
 \hline 
 $\frac{1}{N_{i}}\frac{dN_{i}}{dt}+m{}_{i}$ & Storage effect & No storage effect\\
@@ -352,22 +352,22 @@ Equal competitive strengths ($\kappa=1$) & $r_{i}(\tau)\left(1-\sum_{j=1}^{S}\al
 \subsection*{\emph{Set-up}}
 
 We replicate the `Species sorting' experiment of \citet{scranton_coexistence_2016}
-so as to investigate how the structure of synthetic phytoplankton
+to investigate how the structure of synthetic phytoplankton
 communities varies under the different scenarios we described above.
 We focused on the dynamics of a community initialized with 60 species
 with thermal optima uniformly spaced along the interval {[}15\textdegree C, 25\textdegree C{]},
 and with the same initial density $\left(\frac{\ensuremath{1}}{\alpha S}\right)$.
 Each simulation was run for 5000 years in 1-day intervals. When the
-density of a species dropped below $10^{-6}$, it was considered extinct.
-For each combination of parameters (type of environmental signal,
-storage effect and stabilizing niche differences), we ran 100 simulations. 
+density of a species dropped below $10^{-6}$ kg/area, it was considered extinct.
+We ran 100 simulations for each combination of parameters (type of environmental signal,
+storage effect and value of $\kappa$). 
 
 All simulations were run with Matlab's ode45 algorithm, an explicit
 Runge-Kutta (4,5) integration scheme with an absolute error tolerance
 of $10^{-8}$, and relative error tolerance of $10^{-3}$. The code
 is available in a GitHub repository\footnote{\url{https://github.com/CoraliePicoche/Seasonality}, will be made
 public upon acceptance or at the reviewer's request and stored in
-Zenodo} .
+Zenodo.}.
  
 \section*{Results}
 
@@ -384,7 +384,7 @@ there were 14 species still present at the end of the simulation forced
 by a random noise, with large disparities in the range of their biomasses.
 A third of the species kept a biomass above 10 kg/area (setting area
 = 1 ha, with a depth of a few meters, produces a realistic standing
-biomasses; \citealp{reynolds2006ecology}) while 6 out of the 14 species
+biomass; \citealp{reynolds2006ecology}) while 6 out of the 14 species
 biomasses remained below the unit. All persisting species in the random
 noise simulation were clustered within a 3.2\textdegree C-range of thermal optima
 (see the biomass distribution as a function of the thermal optimum
@@ -455,7 +455,7 @@ varying between 20 and 32 (27.5 $\pm$ 2.4), or 12 and 15 (13.3 $\pm$
 when the storage effect and a strong self-regulation both affected
 the community dynamics, all species persisted in the community, while
 neither of these mechanisms was able to produce that result alone,
-for either random and seasonal noise.
+for either random or seasonal noise.
 
 \begin{figure}[!ht]
 \begin{centering}
@@ -480,7 +480,7 @@ small filled and open circles, respectively, and are indexed on the
 right y-axis. \label{fig:Mean-biomass-in_stable_cases}}
 \end{figure}
 
-The trait-biomass distribution of the community was affected by the
+The biomass-trait distribution of the community was affected by the
 type of forcing even when the richness of the community was stable
 (Fig. \ref{fig:Mean-biomass-in_stable_cases}). Without storage effect
 nor strong self-regulation, there was only one species left at the
@@ -585,10 +585,10 @@ perhaps even more general networks \citep{barabas_self-regulation_2017}.
 
 Before discussing the ecological interpretation of our results, we
 first recall some technical assumptions made in this study. All our
-simulations lasted for a fixed duration (5000 timesteps) as in \citet{scranton_coexistence_2016}.
+simulations lasted for a fixed duration (5000 time steps) as in \citet{scranton_coexistence_2016}.
 This means that short- and medium-term transients (a few years to
-hundreds of years) are completely negligible at the end of the time
-series, but very long transients can remain. We realized that convergence
+hundreds of years) were completely negligible at the end of the time
+series, but very long transients could remain. We realized that convergence
 could be incomplete after 5000 years in some cases (e.g., random noise
 + storage effect + equal competitive strength). Such simulations would
 take up to 15 000 years to converge and the rate of convergence would
@@ -601,7 +601,7 @@ and comparison with the values reported by \citet{scranton_coexistence_2016}
 would have been compromised. From an ecological standpoint, waiting
 for full convergence when there are extremely long transients \citep{hastings_transient_2018}
 is also quite artificial: there is no reason to believe that very
-long transients (i.e., transients that maintains for thousands of
+long transients (i.e., transients that are maintained for thousands of
 years) have any less ecological reality than an attractor that is
 deemed stable. Speed of convergence is therefore an issue to judge
 whether transients should be considered or excluded, and a very long
@@ -638,12 +638,12 @@ with slower community dynamics.
 With these assumptions in mind, we have found that first, temporally
 forced Lotka-Volterra dynamics cannot sustain any diversity with our
 phytoplankton-based set of parameters, unless the structure is geared
-to include either a storage effect or a strong self-regulation. Although
+to include either the storage effect or a strong self-regulation. Although
 this absence of diversity-enhancing effect of ``pure'' environmental
 variation has already been stated by other authors \citep{chesson_roles_1997,barabas_community_2012,fox_intermediate_2013,scranton_coexistence_2016},
 this is not always intuitive \citep{fox_intermediate_2013}, so we
 feel compelled to stress it once more: temporal variation in growth
-rate alone cannot help coexistence within competitive communities.
+rate alone cannot ensure coexistence within competitive communities.
 A nice point made by \citet{scranton_coexistence_2016} was that a
 built-in storage effect in a forced Lotka-Volterra model, parameterized
 for phytoplankton communities, could lead to some degree of coexistence.
@@ -668,7 +668,7 @@ upon the strength of self-regulation. Our estimates are a little stronger
 than what was found in perennial plants \citep{adler_coexistence_2010},
 where interspecific competition was suggested 4 or 5 times stronger
 than intraspecific. Still, the widespread effects of natural enemies
-in phytoplankton (zooplankton, parasites) may contribute to increase
+in phytoplankton (zooplankton, parasites) may contribute to increasing
 the strength of self-regulation \citep{barraquand2018coastal,chesson_updates_2018}
 relative to other systems, hence we believe that 10 times stronger
 intraspecific competition constitutes a reasonable order of magnitude. 
@@ -699,7 +699,7 @@ between our results and those of \citet{sakavara_lumpy_2018} may
 be due to the role of forcing variance over time (we compare scenarios
 under a constant total variance). Overall, while seasonality may be
 slightly better than no forcing at all in maintaining diversity if
-a storage effect is present, seasonal forcing of parameters does not
+the storage effect is present, seasonal forcing of parameters does not
 improve coexistence when compared to white noise.
 
 In addition to community diversity, the biomass-trait relationship
@@ -710,7 +710,7 @@ The seasonality that we added to the temperature signal led to more
 distant clumps on the trait axis, with less species per clump. Conversely,
 strong self-regulatory mechanisms alone led to relatively uniform
 biomass distributions, with species forming a single large cluster,
-which covers a fraction of the initial trait space. Therefore, the
+which covered a fraction of the initial trait space. Therefore, the
 shape of the distribution was affected by the coexistence mechanism
 at work while the average trait value was modified by the type of
 environmental forcing, even though the mean value of the environmental
@@ -723,9 +723,9 @@ and is a rare pattern in theoretical models \citep{mcgill_species_2007}.
 \citet{barabas_emergent_2013} convincingly argued that multimodality
 could arise from the demographic stochasticity of a single model run
 (with either self-regulation or neutrality, but without the clumpy
-coexistence emerging from a storage effect). However, our results
+coexistence emerging from the storage effect). However, our results
 are based on many model runs, for which either the storage effect
-alone or a storage effect + strong self-regulation in a seasonal context
+alone or the storage effect + strong self-regulation in a seasonal context
 consistently produced multimodal distributions, while simulations
 without the storage effect always led to a single cluster along the
 trait axis. Our suggestion for empirical studies is as follows: if
