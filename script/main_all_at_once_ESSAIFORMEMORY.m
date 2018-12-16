@@ -64,7 +64,7 @@ end;
 
  
  
-for iter=11:15
+for iter=11:20
     rng(iter)
 %for iter=1:10
     iter
@@ -82,28 +82,30 @@ end;
  y0=ones(1,S)*1/(alpha_compet*S);
  A=ones(S,S)*alpha_compet; %interaction matrix
 
+ %ESSAI
+tspan_bis=[tstart tspan(imin:imax)];
 
 %%%%%% Integration starts
-[tout,yout] = ode45(@SV16_ode_integration, tspan , y0,options);       % ode solver
-toutbis=tout(imin:imax);
-youtbis=yout(imin:imax,:);
-nb_species=sum(yout'>thresh_min);
+[toutbis,youtbis] = ode45(@SV16_ode_integration, tspan_bis , y0,options);       % ode solver
+%toutbis=tout(imin:imax);
+%youtbis=yout(imin:imax,:);
+nb_species=sum(youtbis'>thresh_min);
 nb_species(end)
-save(strcat('./output_simulation/',dir_output,'/','iter',num2str(iter),'_codeversion_20180228_theta0.mat'),'toutbis','youtbis','tau_opt','b','tau','nb_species','A');
-clear tout yout toutbis youtbis nb_species;
+save(strcat('./output_simulation/',dir_output,'/','iter',num2str(iter),'_codeversion_20180228_theta0_ESSAI.mat'),'toutbis','youtbis','tau_opt','b','tau','nb_species','A');
+clear toutbis youtbis nb_species;
 
 %Second case : SV model with storage effect and intra >> inter
  y0=ones(1,S)*1/(alpha_compet*S);
  A=ones(S,S)*alpha_compet+diag(ones(60,1)*alpha_compet*(rho-1)); %interaction matrix
 
 %%%%%% Integration starts
-[tout,yout] = ode45(@SV16_ode_integration, tspan , y0,options);       % ode solver
-toutbis=tout(imin:imax);
-youtbis=yout(imin:imax,:);
-nb_species=sum(yout'>thresh_min);
+[toutbis,youtbis] = ode45(@SV16_ode_integration, tspan_bis , y0,options);       % ode solver
+%toutbis=tout(imin:imax);
+%youtbis=yout(imin:imax,:);
+nb_species=sum(youtbis'>thresh_min);
 nb_species(end)
-save(strcat('./output_simulation/',dir_output,'/','iter',num2str(iter),'_codeversion_20180228_theta0_10higher.mat'),'toutbis','youtbis','tau_opt','b','tau','nb_species','A');
-clear tout yout toutbis youtbis nb_species;
+save(strcat('./output_simulation/',dir_output,'/','iter',num2str(iter),'_codeversion_20180228_theta0_10higher_ESSAI.mat'),'toutbis','youtbis','tau_opt','b','tau','nb_species','A');
+clear toutbis youtbis nb_species;
 
 %Third case : SV model without storage effect and intra == inter
  y0=ones(1,S)*1/(alpha_compet*S);
@@ -112,13 +114,13 @@ clear tout yout toutbis youtbis nb_species;
  A=tmp_r.*A;
 
 %%%%%% Integration starts
-[tout,yout] = ode45(@SV16_ode_integration_no_GR_in_competition, tspan , y0,options);       % ode solver
-toutbis=tout(imin:imax);
-youtbis=yout(imin:imax,:);
-nb_species=sum(yout'>thresh_min);
+[toutbis,youtbis] = ode45(@SV16_ode_integration_no_GR_in_competition, tspan_bis , y0,options);       % ode solver
+%toutbis=tout(imin:imax);
+%youtbis=yout(imin:imax,:);
+nb_species=sum(youtbis'>thresh_min);
 nb_species(end)
-save(strcat('./output_simulation/',dir_output,'/','iter',num2str(iter),'_codeversion_20180228_theta0_noforcedcompetition_weightedinteraction.mat'),'toutbis','youtbis','tau_opt','b','tau','nb_species','A');
-clear tout yout toutbis youtbis nb_species;
+save(strcat('./output_simulation/',dir_output,'/','iter',num2str(iter),'_codeversion_20180228_theta0_noforcedcompetition_weightedinteraction_ESSAI.mat'),'toutbis','youtbis','tau_opt','b','tau','nb_species','A');
+clear toutbis youtbis nb_species;
 
 %Fourth case : SV model without storage effect and intra >> inter
  y0=ones(1,S)*1/(alpha_compet*S);
@@ -126,12 +128,12 @@ clear tout yout toutbis youtbis nb_species;
  A=tmp_r.*A;
 
 %%%%%% Integration starts
-[tout,yout] = ode45(@SV16_ode_integration_no_GR_in_competition, tspan , y0,options);       % ode solver
-toutbis=tout(imin:imax);
-youtbis=yout(imin:imax,:);
-nb_species=sum(yout'>thresh_min);
+[toutbis,youtbis] = ode45(@SV16_ode_integration_no_GR_in_competition, tspan_bis , y0,options);       % ode solver
+%toutbis=tout(imin:imax);
+%youtbis=yout(imin:imax,:);
+nb_species=sum(youtbis'>thresh_min);
 nb_species(end)
-save(strcat('./output_simulation/',dir_output,'/','iter',num2str(iter),'_codeversion_20180228_theta0_noforcedcompetition_10higherintra_weightedinteraction.mat'),'toutbis','youtbis','tau_opt','b','tau','nb_species','A');
-clear tout yout tau r toutbis youtbis nb_species;
+save(strcat('./output_simulation/',dir_output,'/','iter',num2str(iter),'_codeversion_20180228_theta0_noforcedcompetition_10higherintra_weightedinteraction_ESSAI.mat'),'toutbis','youtbis','tau_opt','b','tau','nb_species','A');
+clear tau r toutbis youtbis nb_species;
 
 end;

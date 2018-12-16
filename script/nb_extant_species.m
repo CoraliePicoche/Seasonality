@@ -9,7 +9,7 @@ afontsize=8;
 max_temp=20+273.15;
 min_temp=20+273.15;
 
-dir_output='./output_simulation/white_noise/';
+dir_output='./output_simulation/white_noise/z';
 extant_species_wn=zeros(100,4);
 
 
