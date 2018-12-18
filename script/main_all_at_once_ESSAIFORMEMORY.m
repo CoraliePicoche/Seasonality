@@ -5,7 +5,7 @@
 clc 
 clear all
 close all
- dir_output='white_noise/morta_variable/'
+ dir_output='season/morta_variable/'
 %%%%%% Parameters
 global S tau0 mu_tau sigma_tau tau_min tau_max a_r_tau0 E_r k A m thresh_min tspan r morta_vect
 
@@ -36,7 +36,7 @@ ysave=500;
 %My addition
 rho=10; %proportionality between intra and intergroup coefficient : \alpha_{ii}=rho * \alpha_{ij}
 options= odeset('AbsTol',1e-8, 'RelTol',1e-3,'NonNegative',1:60); %NonNegative is necessary and speaking to Alix indicated that Reltol and Absol can be changed quite safely. 
-theta=0
+theta=1.3
 %white noise. Could also be 1.3
 
 
@@ -64,7 +64,7 @@ end;
 
  
  
-for iter=11:20
+for iter=21:25
     rng(iter)
 %for iter=1:10
     iter
