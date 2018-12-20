@@ -5,7 +5,7 @@
 clc 
 clear all
 close all
- dir_output='season/morta_variable/'
+% dir_output='white_noise/morta_variable/'
 %%%%%% Parameters
 global S tau0 mu_tau sigma_tau tau_min tau_max a_r_tau0 E_r k A m thresh_min tspan r morta_vect
 
@@ -36,7 +36,6 @@ ysave=500;
 %My addition
 rho=10; %proportionality between intra and intergroup coefficient : \alpha_{ii}=rho * \alpha_{ij}
 options= odeset('AbsTol',1e-8, 'RelTol',1e-3,'NonNegative',1:60); %NonNegative is necessary and speaking to Alix indicated that Reltol and Absol can be changed quite safely. 
-theta=1.3
 %white noise. Could also be 1.3
 
 
@@ -62,14 +61,18 @@ for i=1:S
 end;
 
 
+theta=[0 1.3];
+dir_output={'white_noise/morta_variable/','season/morta_variable/'};
  
- 
-for iter=21:25
+for cond=1:2
+ theta(cond)
+ dir_output{cond}
+for iter=26:100
     rng(iter)
 %for iter=1:10
     iter
 % Seasonality with time
-tau=compute_temperature_season(tspan, theta); %this function gives the corresponding temperature of the day. Can be random (as in SV 2016), or based on a seasonal function (as in Taylor et al. 2013 + Sauve&Barraquand) 
+tau=compute_temperature_season(tspan, theta(cond)); %this function gives the corresponding temperature of the day. Can be random (as in SV 2016), or based on a seasonal function (as in Taylor et al. 2013 + Sauve&Barraquand) 
 morta_vect= (-1 + (1+1)*rand(S,1))*m_var+m;
 r=zeros(S,length(tau));
 for i=1:S
@@ -91,7 +94,7 @@ tspan_bis=[tstart tspan(imin:imax)];
 %youtbis=yout(imin:imax,:);
 nb_species=sum(youtbis'>thresh_min);
 nb_species(end)
-save(strcat('./output_simulation/',dir_output,'/','iter',num2str(iter),'_codeversion_20180228_theta0_ESSAI.mat'),'toutbis','youtbis','tau_opt','b','tau','nb_species','A');
+save(strcat('./output_simulation/',dir_output{cond},'/','iter',num2str(iter),'_codeversion_20180228.mat'),'toutbis','youtbis','tau_opt','b','tau','nb_species','A','morta_vect');
 clear toutbis youtbis nb_species;
 
 %Second case : SV model with storage effect and intra >> inter
@@ -104,7 +107,7 @@ clear toutbis youtbis nb_species;
 %youtbis=yout(imin:imax,:);
 nb_species=sum(youtbis'>thresh_min);
 nb_species(end)
-save(strcat('./output_simulation/',dir_output,'/','iter',num2str(iter),'_codeversion_20180228_theta0_10higher_ESSAI.mat'),'toutbis','youtbis','tau_opt','b','tau','nb_species','A');
+save(strcat('./output_simulation/',dir_output{cond},'/','iter',num2str(iter),'_codeversion_20180228_10higher.mat'),'toutbis','youtbis','tau_opt','b','tau','nb_species','A','morta_vect');
 clear toutbis youtbis nb_species;
 
 %Third case : SV model without storage effect and intra == inter
@@ -119,7 +122,7 @@ clear toutbis youtbis nb_species;
 %youtbis=yout(imin:imax,:);
 nb_species=sum(youtbis'>thresh_min);
 nb_species(end)
-save(strcat('./output_simulation/',dir_output,'/','iter',num2str(iter),'_codeversion_20180228_theta0_noforcedcompetition_weightedinteraction_ESSAI.mat'),'toutbis','youtbis','tau_opt','b','tau','nb_species','A');
+save(strcat('./output_simulation/',dir_output{cond},'/','iter',num2str(iter),'_codeversion_20180228_noforcedcompetition_weightedinteraction.mat'),'toutbis','youtbis','tau_opt','b','tau','nb_species','A','morta_vect');
 clear toutbis youtbis nb_species;
 
 %Fourth case : SV model without storage effect and intra >> inter
@@ -133,7 +136,9 @@ clear toutbis youtbis nb_species;
 %youtbis=yout(imin:imax,:);
 nb_species=sum(youtbis'>thresh_min);
 nb_species(end)
-save(strcat('./output_simulation/',dir_output,'/','iter',num2str(iter),'_codeversion_20180228_theta0_noforcedcompetition_10higherintra_weightedinteraction_ESSAI.mat'),'toutbis','youtbis','tau_opt','b','tau','nb_species','A');
+save(strcat('./output_simulation/',dir_output{cond},'/','iter',num2str(iter),'_codeversion_20180228_noforcedcompetition_10higherintra_weightedinteraction.mat'),'toutbis','youtbis','tau_opt','b','tau','nb_species','A','morta_vect');
 clear tau r toutbis youtbis nb_species;
+
+end;
 
 end;
