@@ -10,17 +10,14 @@ max_iter=100;
 max_temp=20+273.15;
 min_temp=20+273.15;
 
-dir_output='./output_simulation/white_noise';
+dir_output='./output_simulation/white_noise/morta_variable';
 extant_species_wn=zeros(max_iter,4);
 
 
 %Filename for -SE-SND
 extension='_noforcedcompetition_weightedinteraction.mat';
 for iter=1:max_iter
-%    if iter>10
-%        extension='_noforcedcompetition_weightedinteraction_ESSAI.mat';
-%    end
-    filename=strcat(dir_output,'/iter',num2str(iter),'_codeversion_20180228_theta0',extension);
+    filename=strcat(dir_output,'/iter',num2str(iter),'_codeversion_20180228',extension);
     load(filename)
     nb_species=sum(youtbis'>thresh_min);
     extant_species_wn(iter,1)=nb_species(end);
@@ -36,10 +33,7 @@ end;
 %Filename for +SE-SND
 extension='.mat';
 for iter=1:max_iter
-%     if iter>10
-%         extension='_ESSAI.mat';
-%     end
-    filename=strcat(dir_output,'/iter',num2str(iter),'_codeversion_20180228_theta0',extension);
+    filename=strcat(dir_output,'/iter',num2str(iter),'_codeversion_20180228',extension);
     load(filename)
     nb_species=sum(youtbis'>thresh_min);
     extant_species_wn(iter,2)=nb_species(end);
@@ -48,10 +42,7 @@ end;
 %Filename for -SE+SND
 extension='_noforcedcompetition_10higherintra_weightedinteraction.mat';
 for iter=1:max_iter
-%     if iter>10
-%         extension='_noforcedcompetition_10higherintra_weightedinteraction_ESSAI.mat';
-%     end
-    filename=strcat(dir_output,'/iter',num2str(iter),'_codeversion_20180228_theta0',extension);
+    filename=strcat(dir_output,'/iter',num2str(iter),'_codeversion_20180228',extension);
     load(filename)
     nb_species=sum(youtbis'>thresh_min);
     extant_species_wn(iter,3)=nb_species(end); 
@@ -60,25 +51,19 @@ end;
 %Filename for +SE+SND
 extension='_10higher.mat';
 for iter=1:max_iter
-%     if iter>10
-%         extension='_10higher_ESSAI.mat';
-%     end
-    filename=strcat(dir_output,'/iter',num2str(iter),'_codeversion_20180228_theta0',extension);
+    filename=strcat(dir_output,'/iter',num2str(iter),'_codeversion_20180228',extension);
     load(filename)
     nb_species=sum(youtbis'>thresh_min);
     extant_species_wn(iter,4)=nb_species(end); 
 end;
 
-dir_output='./output_simulation/season';
+dir_output='./output_simulation/season/morta_variable';
 extant_species_season=zeros(max_iter,4);
 
 %Filename for -SE-SND
 extension='_noforcedcompetition_weightedinteraction.mat';
 for iter=1:max_iter
-%     if iter>10
-%         extension='_noforcedcompetition_weightedinteraction_ESSAI.mat';
-%     end
-    filename=strcat(dir_output,'/iter',num2str(iter),'_codeversion_20180228_theta1p3',extension);
+    filename=strcat(dir_output,'/iter',num2str(iter),'_codeversion_20180228',extension);
     load(filename)
     nb_species=sum(youtbis'>thresh_min);
     extant_species_season(iter,1)=nb_species(end);
@@ -88,10 +73,7 @@ end;
 %Filename for +SE-SND
 extension='.mat';
 for iter=1:max_iter
-%     if iter>10
-%         extension='_ESSAI.mat';
-%     end
-    filename=strcat(dir_output,'/iter',num2str(iter),'_codeversion_20180228_theta1p3',extension);
+    filename=strcat(dir_output,'/iter',num2str(iter),'_codeversion_20180228',extension);
     load(filename)
     nb_species=sum(youtbis'>thresh_min);
     extant_species_season(iter,2)=nb_species(end);
@@ -102,10 +84,7 @@ end;
 extension='_noforcedcompetition_10higherintra_weightedinteraction.mat';
 
 for iter=1:max_iter
-%     if iter>10
-%         extension='_noforcedcompetition_10higherintra_weightedinteraction_ESSAI.mat';
-%     end
-    filename=strcat(dir_output,'/iter',num2str(iter),'_codeversion_20180228_theta1p3',extension);
+    filename=strcat(dir_output,'/iter',num2str(iter),'_codeversion_20180228',extension);
     load(filename)
     nb_species=sum(youtbis'>thresh_min);
     extant_species_season(iter,3)=nb_species(end);
@@ -115,10 +94,7 @@ end;
 %Filename for +SE+SND
 extension='_10higher.mat';
 for iter=1:max_iter
-%     if iter>10
-%         extension='_10higher_ESSAI.mat';
-%     end
-    filename=strcat(dir_output,'/iter',num2str(iter),'_codeversion_20180228_theta1p3',extension);
+    filename=strcat(dir_output,'/iter',num2str(iter),'_codeversion_20180228',extension);
     load(filename)
     nb_species=sum(youtbis'>thresh_min);
     extant_species_season(iter,4)=nb_species(end); 
@@ -166,5 +142,5 @@ fig.Renderer='Painters';
 fig.PaperPositionMode = 'auto'
 fig_pos = fig.PaperPosition;
 fig.PaperSize = [fig_pos(3) fig_pos(4)];
-print(fig,'./article/graphe/Fig2','-depsc')
-print(fig,'./article/graphe/Fig2','-dpdf')
+print(fig,'./article/graphe/Fig2_mortavariable','-depsc')
+print(fig,'./article/graphe/Fig2_mortavariable','-dpdf')

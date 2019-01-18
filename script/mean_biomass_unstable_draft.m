@@ -30,7 +30,7 @@ for iter=1:100
     biomass_final_1(:,iter,1)=mean_value;
 end;
 
-dir_output='./output_simulation/season';
+dir_output='./output_simulation/season/';
 for iter=1:100
     filename=strcat(dir_output,'/iter',num2str(iter),'_codeversion_20180228_theta1p3',extension);
     load(filename)
@@ -49,16 +49,18 @@ end;
 % fill(plou1,plou2,'c','EdgeColor','none','FaceAlpha',.3)
 
 
-tmp=zeros(length(tau_opt),4,2);
+tmp=zeros(length(tau_opt),5,2);
 for t=1:length(tau_opt)
     tmp(t,1,1)=min(biomass_final_1(t,:,1));
     tmp(t,2,1)=max(biomass_final_1(t,:,1));
     tmp(t,3,1)=prctile(biomass_final_1(t,:,1),50);
     tmp(t,4,1)=prctile(biomass_final_1(t,:,1),90);
+    tmp(t,5,1)=mean(biomass_final_1(t,:,1));
     tmp(t,1,2)=min(biomass_final_1(t,:,2));
     tmp(t,2,2)=max(biomass_final_1(t,:,2));
     tmp(t,3,2)=prctile(biomass_final_1(t,:,2),50);
-    tmp(t,4,2)=prctile(biomass_final_1(t,:,2),90);    
+    tmp(t,4,2)=prctile(biomass_final_1(t,:,2),90); 
+    tmp(t,5,2)=mean(biomass_final_1(t,:,2));
 end
 
 %Feeling fancy
@@ -85,8 +87,10 @@ fill(plou1,median_90_season,'r','EdgeColor','none','FaceAlpha',.5)
 fill(plou1,nin_max_season,'r','EdgeColor','none','FaceAlpha',.7)
 %for iter=1:50
 iter=7;
-     plot(tau_opt-273,biomass_final_1(:,iter,1),'-o','MarkerFaceColor','b','LineWidth',2,'color','b')
-plot(tau_opt-273,biomass_final_1(:,iter,2),'-o','MarkerFaceColor','r','LineWidth',2,'color','r')
+%     plot(tau_opt-273,biomass_final_1(:,iter,1),'-o','MarkerFaceColor','b','LineWidth',2,'color','b')
+%plot(tau_opt-273,biomass_final_1(:,iter,2),'-o','MarkerFaceColor','r','LineWidth',2,'color','r')
+     plot(tau_opt-273,tmp(:,5,1),'-o','MarkerFaceColor','b','LineWidth',2,'color','b')
+plot(tau_opt-273,tmp(:,5,2),'-o','MarkerFaceColor','r','LineWidth',2,'color','r')
       xticks(tau_opt(1:9:length(tau_opt))-273)     
         xaxlabel=cell(1,length(tau_opt));
         %xaxlabel(1:4:length(tau_opt))=sprintfc("%.1f",tau_opt(1:4:length(tau_opt))-273);
@@ -127,7 +131,7 @@ for iter=1:100
     biomass_final_2(:,iter,1)=mean_value;
 end;
 
-dir_output='./output_simulation/season';
+dir_output='./output_simulation/season/';
 for iter=1:100
     filename=strcat(dir_output,'/iter',num2str(iter),'_codeversion_20180228_theta1p3',extension);
     load(filename)
@@ -141,10 +145,12 @@ for t=1:length(tau_opt)
     tmp(t,2,1)=max(biomass_final_2(t,:,1));
     tmp(t,3,1)=prctile(biomass_final_2(t,:,1),50);
     tmp(t,4,1)=prctile(biomass_final_2(t,:,1),90);
+    tmp(t,5,1)=mean(biomass_final_2(t,:,1));
     tmp(t,1,2)=min(biomass_final_2(t,:,2));
     tmp(t,2,2)=max(biomass_final_2(t,:,2));
     tmp(t,3,2)=prctile(biomass_final_2(t,:,2),50);
-    tmp(t,4,2)=prctile(biomass_final_2(t,:,2),90);    
+    tmp(t,4,2)=prctile(biomass_final_2(t,:,2),90);
+    tmp(t,5,2)=mean(biomass_final_2(t,:,2));
 end
 hold on
 
@@ -186,7 +192,7 @@ fill(plou1,nin_max_season,'r','EdgeColor','none','FaceAlpha',.7)
 
 %for iter=1:50
  iter=7;
-plot(tau_opt-273,biomass_final_2(:,iter,1),'-o','MarkerFaceColor','b','LineWidth',2,'color','b')
+%plot(tau_opt-273,biomass_final_2(:,iter,1),'-o','MarkerFaceColor','b','LineWidth',2,'color','b')
 %end
 
 % tmp=zeros(length(tau_opt),2);
@@ -198,8 +204,13 @@ plot(tau_opt-273,biomass_final_2(:,iter,1),'-o','MarkerFaceColor','b','LineWidth
 %fill(plou1,plou2,'r','EdgeColor','none','FaceAlpha',.3)
 %for iter=1:50
 iter=7;
-plot(tau_opt-273,biomass_final_2(:,iter,2),'-o','MarkerFaceColor','r','LineWidth',2,'color','r')
-      xticks(tau_opt(1:9:length(tau_opt))-273)       %ylim([mini maxi])%        xaxlabel=cell(1,length(tau_opt));
+%plot(tau_opt-273,biomass_final_2(:,iter,2),'-o','MarkerFaceColor','r','LineWidth',2,'color','r')
+
+     plot(tau_opt-273,tmp(:,5,1),'-o','MarkerFaceColor','b','LineWidth',2,'color','b')
+plot(tau_opt-273,tmp(:,5,2),'-o','MarkerFaceColor','r','LineWidth',2,'color','r')
+
+
+xticks(tau_opt(1:9:length(tau_opt))-273)       %ylim([mini maxi])%        xaxlabel=cell(1,length(tau_opt));
            xaxlabel=sprintfc("%.1f",tau_opt(1:9:length(tau_opt))-273);
         xlabel('Thermal optimum','Fontsize',afontsize)
         set(gca,'XTickLabel',xaxlabel)
@@ -237,7 +248,19 @@ fig.Renderer='Painters';
 fig.PaperPositionMode = 'auto'
 fig_pos = fig.PaperPosition;
 fig.PaperSize = [fig_pos(3) fig_pos(4)];
-print(fig,'./article/graphe/Fig4','-depsc')
+print(fig,'./article/graphe/Fig4_with_mean','-depsc')
+
+% nb=zeros(1,100);
+% for i=1:167
+%     nb(i)=sum(biomass_final_1(:,i,1)>thresh_min);
+% end
+% %histcounts(nb)
+% 
+% nb=zeros(1,100);
+% for i=1:100
+%     nb(i)=sum(biomass_final_1(:,i,2)>thresh_min);
+% end
+% %histcounts(nb)
 
 
 %

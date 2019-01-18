@@ -59,6 +59,7 @@ cutoff <- function(n, a=1e-8) {
 eqs <- function(time, n, pars) {
     rtau <- r(temp[floor(time/pars$h)+1], pars$tauopt, pars$b)
     return(list(n*(rtau*(1-pars$a%*%n)-pars$m)*cutoff(n)))
+#    return(list(n*(rtau*(1-pars$a%*%n)-pars$m))) #CP: just to check how much that slowed down the integration, or if it mattered more with ode45 than with rk4. With ode45, using cutoff doubles the computing time.
 }
 
 set.seed(54321) ## set random seed (for reproducibility)
@@ -75,10 +76,9 @@ taumax <- 298 ## maximum thermal optimum [K]
 tauopt <- sort(runif(S, taumin, taumax)) ## species' thermal optima [K]
 b <- getb(tauopt) ## solve for species' scaling factors b
 h <- 1/365 ## size of time step
-tmax <- 5000 ## number of years to integrate for
-tmax <- 500 ## JUST CHECKING WE HAVE THE SAME RESULTS CP
+tmax <- 5000 ## number of years to integrate for. CP changed it from 5000 to 50 juste to integrate with ode45. 50 timesteps require 3 minutes-and 3h for 5000 timestep
 time <- seq(0, tmax, by=h) ## time axis
-time2 <- seq(tmax-2, tmax, by=h) ## time axis to output CP
+time2 <- seq(tmax-2, tmax, by=h) ## time axis to output CP 
 temp <- mu + theta*sigma*sin(2*pi*time) +
     rnorm(length(time),0,5*sqrt(1-theta^2/2)) ## temperature time series
 ninit <- rep(1/(alpha*S), S) ## initial conditions
@@ -87,10 +87,14 @@ pars <- list(tauopt=tauopt, b=b, a=a, m=m, h=h) ## coerce parameters into list
 print(Sys.time()) #CP
 ## solve ODEs and organize data
 #sol <- ode(func=eqs, y=ninit, parms=pars, times=c(time[0],time2), method="rk4") %>% #CP modified times, was times=time before
-sol <- ode(func=eqs, y=ninit, parms=pars, times=time, method="rk4") %>% 
-    as.data.frame %>% ## convert to data frame (must be done for next step to work)
-    as_data_frame %>% ## convert to tibble (same as data frame but better)
-    gather("species", "density", 2:(S+1), factor_key=TRUE) ## key-value pairs
+#sol <- ode(func=eqs, y=ninit, parms=pars, times=time, method="rk4") %>% 
+#    as.data.frame %>% ## convert to data frame (must be done for next step to work)
+#    as_data_frame %>% ## convert to tibble (same as data frame but better)
+#    gather("species", "density", 2:(S+1), factor_key=TRUE) ## key-value pairs
+
+#sol=ode(fun=eqs,y=ninit,parms=pars,times=time,method="rk4") #CP is the format the problem?
+
+sol=ode(fun=eqs,y=ninit,parms=pars,times=time,method="ode45") #CP does the integration scheme slow our model down?
 print(Sys.time()) #CP
 
 stop() #CP

@@ -1,0 +1,323 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\usepackage{ae,aecompl}
+
+\usepackage{lineno} 
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing double
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine natbib
+\cite_engine_type authoryear
+\biblio_style plainnat
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2cm
+\topmargin 2cm
+\rightmargin 2cm
+\bottommargin 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section
+Intro
+\end_layout
+
+\begin_layout Standard
+The diversity of communities has bewildered ecologists for years, especially
+ for primary producers such as phytoplankton (Hutchinson, 1961).
+ One of the first solutions that have been proposed for the 'paradox of
+ the plankon' was the temporal variation of the environment.
+ However, inclusion of temporal variability in competition models is not
+ sufficient for maintaining a realistic diversity 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "fox_intermediate_2013"
+literal "false"
+
+\end_inset
+
+ as richness never exceeds a dozen of species in this type of model (Dakos,
+ 2009), except when the dynamics are maintained by immigration (Jabot et
+ al.
+ 2016).
+ Coexistence mechanisms such as the storage effect 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "chesson_multispecies_1994,ellner_how_2016"
+literal "false"
+
+\end_inset
+
+ [DEFINE storage effect?] can help to increase the persistence of species
+ in the community, but, to our knowledge, this was mostly tested on theoretical
+ communities of 2 to 3 species (Litchman and Klausmeier 2001, Chesson and
+ Huntly 1997).
+\end_layout
+
+\begin_layout Standard
+One of the richest modeled communities we identified is the model of Scranton
+ and Vasseur (2016), which is based on temperature variation and different
+ thermal optima defining each species 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "moisan_modelling_2002"
+literal "false"
+
+\end_inset
+
+.
+ In this model, the synchronizing effect of the environment and the storage
+ effect can maintain 12 phytoplankton-like species on average.
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "scranton_coexistence_2016"
+literal "false"
+
+\end_inset
+
+ described daily temperature as a random noise, i.e., independent and identically
+ distributed Gaussian random variates over time.
+ However, empirical analysis investigating the effect of a variable environment
+ do not always identify the storage effect while still showing the importance
+ of seasonal variation on the dynamics of phytoplanktonic communities 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "barraquand2018coastal"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Seasonality, which is a common feature under most latitudes, can indeed
+ strongly affect the dynamics of a community (Vesipa and Ridolfi, 2017,
+ Miller and Klausmeier).
+ How seasonality affects coexistence (as opposed to a purely randomly fluctuatin
+g environment) is a key feature of this paper.
+ Our present work can therefore be seen as an attempt to blend 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "scranton_coexistence_2016"
+literal "false"
+
+\end_inset
+
+'s stochastic framework with the periodic environments of 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "barabas_community_2012"
+literal "false"
+
+\end_inset
+
+, to better represent the mixture of stochastic and deterministic environmental
+ forces affecting phytoplankton community dynamics.
+ In particular, we contrast cases where the storage effect is present vs
+ absent.
+ Moreover, the overall diversity obtained at the end of the simulations
+ with 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "scranton_coexistence_2016"
+literal "false"
+
+\end_inset
+
+'s model was relatively low compared to what we usually observe in phytoplankton
+ communities (several dozens to hundreds of species).
+ We have therefore sought out which mechanisms would foster a truly species-rich
+ community for extended periods of time.
+\end_layout
+
+\begin_layout Standard
+Niche differences, leading to intraspecific interaction stronger than interspeci
+fic interactions, has recently been confirmed as key mechanism in terrestrial
+ plant communties 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "adler_competition_2018"
+literal "false"
+
+\end_inset
+
+, animal communities 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "mutshinda_what_2009"
+literal "false"
+
+\end_inset
+
+, and phytoplanktonic communities 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "barraquand2018coastal"
+literal "false"
+
+\end_inset
+
+.
+ The interaction between environment variability and niche overlap has been
+ investigated by Abrams et al.
+ 1976 [which inspired SV] but their relative contribution to coexistence
+ was not evaluated.
+ Here, niche differences are both explicit (through growth-temperature relations
+hip) and implicit (through the interaction coefficients), enabling us to
+ isolate different effects.
+\end_layout
+
+\begin_layout Standard
+Niche models have often been opposed to the neutral theory 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "hubbell_unified_2001"
+literal "false"
+
+\end_inset
+
+.
+ An intriguing offshoot of the niche vs neutrality debate is the concept
+ of `clumpy coexistence' 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "scheffer_self-organized_2006"
+literal "false"
+
+\end_inset
+
+, whereby simultaneous influences of both niche and neutral processes create
+ several clumps of similar species along a single trait axis.
+ This 'emergent neutrality' within groups 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "holt_emergent_2006"
+literal "false"
+
+\end_inset
+
+ has been proposed as a unifying concept for niche and neutral theories
+ even though the concept has been disputed 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "barabas_emergent_2013"
+literal "false"
+
+\end_inset
+
+.
+ Clumpy coexistence appears in theoretical models incorporating temporal
+ variations 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "scranton_coexistence_2016,sakavara_lumpy_2018"
+literal "false"
+
+\end_inset
+
+ and may provide some clues to the questions behind trait patterns 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "dandrea_challenges_2016"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Here, we therefore try to establish what are the relative contributions
+ to coexistence of the storage effect vs strong self-regulation, in a phytoplank
+ton-like theoretical community model.
+ We also consider the distribution of these species.
+ This led us to cross different combinations of seasonality in the forcing
+ signal, presence of the storage effect or not, and intra- vs interspecific
+ competition intensity, in order to disentangle the contributions of all
+ these factors to biodiversity maintenance.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+btprint "btPrintCited"
+bibfiles "coexistence"
+options "spbasic_nicer"
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

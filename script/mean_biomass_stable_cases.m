@@ -8,7 +8,7 @@ yspan=200;
 afontsize=8;
 col=jet(60);
 
-dir_output='./output_simulation/white_noise/';
+dir_output='./output_simulation/white_noise/morta_variable';
 %Filename for +SE+SND
 extension='_10higher.mat';
 
@@ -23,15 +23,15 @@ mean_growth_rate=mean_growth_rate/max(mean_growth_rate);
 biomass_final_60=zeros(60,100,2);
 
 for iter=1:100
-    filename=strcat(dir_output,'/iter',num2str(iter),'_codeversion_20180228_theta0',extension);
+    filename=strcat(dir_output,'/iter',num2str(iter),'_codeversion_20180228',extension);
     load(filename)
     mean_value=species_mean_value(youtbis, yspan);
     biomass_final_60(:,iter,1)=mean_value;
 end;
 
-dir_output='./output_simulation/season';
+dir_output='./output_simulation/season/morta_variable/';
 for iter=1:100
-    filename=strcat(dir_output,'/iter',num2str(iter),'_codeversion_20180228_theta1p3',extension);
+    filename=strcat(dir_output,'/iter',num2str(iter),'_codeversion_20180228',extension);
     load(filename)
     mean_value=species_mean_value(youtbis, yspan);
     biomass_final_60(:,iter,2)=mean_value;
@@ -47,13 +47,13 @@ end;
 
 
 
-dir_output='./output_simulation/white_noise/';
+dir_output='./output_simulation/white_noise/morta_variable';
 %Filename for -SE-SND
 extension='_noforcedcompetition_weightedinteraction.mat';
 white_noise_comm=zeros(1,100);
 biomass_final_1=zeros(60,100,2);
 for iter=1:100
-    filename=strcat(dir_output,'/iter',num2str(iter),'_codeversion_20180228_theta0',extension);
+    filename=strcat(dir_output,'/iter',num2str(iter),'_codeversion_20180228',extension);
     load(filename)
     nb_species=sum(youtbis'>thresh_min);
     nb_species=nb_species(end);
@@ -68,12 +68,12 @@ for iter=1:100
     end;
 end;
 
-    dir_output='./output_simulation/season/';
+    dir_output='./output_simulation/season/morta_variable';
 %Filename for -SE-SND
 extension='_noforcedcompetition_weightedinteraction.mat';
 season_comm=zeros(1,100);
 for iter=1:100
-    filename=strcat(dir_output,'/iter',num2str(iter),'_codeversion_20180228_theta1p3',extension);
+    filename=strcat(dir_output,'/iter',num2str(iter),'_codeversion_20180228',extension);
     load(filename)
     nb_species=sum(youtbis'>thresh_min);
     nb_species=nb_species(end);
@@ -238,7 +238,7 @@ fig.Renderer='Painters';
 fig.PaperPositionMode = 'auto'
 fig_pos = fig.PaperPosition;
 fig.PaperSize = [fig_pos(3) fig_pos(4)];
-print(fig,'./article/graphe/Fig3','-depsc')
+print(fig,'./article/graphe/Fig3_morta_variable','-depsc')
 
 %
 % id_min=60;
