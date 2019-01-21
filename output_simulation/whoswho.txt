@@ -18,10 +18,11 @@ In iterX_codeversion_20180228_theta0_noforcedcompetition_Ashbyformulation, a_{i,
 In iterX_codeversion_20180228_theta0_noforcedcompetition_10higherintra, a_{i,j}=0.001 and a_{i,i}=0.01
 In iterX_codeversion_20180228_theta0_random_GRincompetition.mat, the competition coefficients are weighted by random value of r_i (eq. 10 in the report)
 
-Finaly, the file growth_rate_analysis.ods contains the average maximum, standard deviation and mean values of growth rates for each species, over the 10 simulations of SV_same_temp. It can be used to weigh the interaction coefficients or use the standard deviation to compute interactions at random.
+Finaly, the file growth_rate_analysis.txt contains the average maximum, standard deviation and mean values of growth rates for each species, over the 10 simulations of SV_same_temp. It can be used to weigh the interaction coefficients or use the standard deviation to compute interactions at random.
 
 **All simulations used for the paper are in white_noise and season** (in season/, 1no_stochasticity corresponds to the SV model with storage effect and a purely seasonal signal (theta=sqrt(2)). It's not used after). They are named after the kind of coexistence mechanisms (stabilizing niche differences and/or storage effect) driving the dynamics:
 -iterX_codeversion_20180228_thetaY.mat (where X=1:100 and Y={0;1.3}) corresponds to the classic SV model, with storage effect, without stabilizing niche differences
 -iterX_codeversion_20180228_thetaY_10higher corresponds to a model with storage effect, with stabilizing niche differences, where the ratio between intra and intergroup competition coefficients is 10
 -iterX_codeversion_20180228_thetaY_noforcedcompetition_weightedinteraction.mat  corresponds to a case without storage effect (competition is weighted by the mean of the growth rates) nor stabilizing niche differences
 - iterX_codeversion_20180228_thetaY_noforcedcompetition_10higherintra_weightedinteraction.mat corresponds to a case without storage effect, with stabilizing niche differences 
+Subfolders morta_variable were also created to test the effect of mortality rate variability. 
