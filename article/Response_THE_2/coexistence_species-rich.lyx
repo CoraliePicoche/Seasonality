@@ -1799,6 +1799,8 @@ literal "false"
 \end_inset
 
 
+\change_deleted -2100369821 1548061502
+
 \begin_inset Foot
 status collapsed
 
@@ -1831,6 +1833,8 @@ literal "false"
 
 \end_inset
 
+
+\change_unchanged
 .
  Hereafter, the expression 
 \begin_inset Quotes eld
@@ -2949,17 +2953,6 @@ literal "false"
  
 \change_deleted -2100369821 1547724317
 for both technical and ecological reasons
-\change_inserted -2100369821 1547724702
- as we wanted to focus on coexistence mechanisms and seasonality while remaning
- compatible with 
-\begin_inset CommandInset citation
-LatexCommand citet
-key "scranton_coexistence_2016"
-literal "false"
-
-\end_inset
-
-
 \change_unchanged
 .
  From a technical standpoint, adding 10 000 years of numerical integration
@@ -2974,7 +2967,7 @@ literal "false"
 
  would have been compromised.
 
-\change_inserted -2100369821 1547724730
+\change_inserted -2100369821 1548061700
  Another way to shorten the transients in the case developped by 
 \begin_inset CommandInset citation
 LatexCommand citet
@@ -2986,7 +2979,10 @@ literal "false"
  would be to vary the mortality parameter, shifting the model further away
  from neutral dynamics.
  This did not alter the conclusions (see Appendix B in Supplementary Material).
- 
+ Speed of convergence therefore depends on the mechanisms considered.
+ As we wanted to focus on the storage effect and the self-regulation while
+ keeping all other things equal, we did not change the time window for integrati
+on
 \change_deleted -2100369821 1547560482
  From an ecological standpoint, waiting for full convergence when there
  are extremely long transients 
@@ -3077,9 +3073,9 @@ literal "false"
  in our opinion difficult to speculate on those variance effects because
  both intra- and interspecific competition coefficient variances may matter
  to community persistence.
+
+\change_deleted -2100369821 1547828348
  
-\change_inserted -2100369821 1547801837
-z
 \change_unchanged
 
 \end_layout
@@ -3100,8 +3096,24 @@ literal "false"
 
 ).
  Persistence may be affected differently by seasonality in such cases with
- slower community dynamics.
+ slower community dynamics
+\change_inserted -2100369821 1548065267
  
+\begin_inset CommandInset citation
+LatexCommand citep
+key "miller_evolutionary_2017"
+literal "false"
+
+\end_inset
+
+
+\change_unchanged
+.
+
+\change_deleted -2100369821 1547828360
+ 
+\change_unchanged
+
 \end_layout
 
 \begin_layout Standard
@@ -3385,7 +3397,25 @@ literal "false"
  here.
  Clumps in the trait axis when averaged across model runs/locations are
  therefore a signature of a coexistence induced by the storage effect, for
- the cases that we considered in the article.
+ the cases that we considered in the article
+\change_inserted -2100369821 1548061264
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted -2100369821 1548061268
+Confirmed.
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+.
  Of course, other mechanisms that we did not include in our models may produce
  similar patterns 
 \begin_inset CommandInset citation
@@ -3401,13 +3431,27 @@ literal "false"
  samples) as an interesting clue suggesting to look for a storage effect,
  rather than any definite proof that the storage effect is at work.
  
-\change_inserted -2100369821 1547806219
+\change_inserted -2100369821 1548061274
 [In addition to ecological considerations, we may want to mention that according
  to Pigolotti 2010 thinks that's because of the form of the competition
  kernel; and Hernandez-Garcia et al.
  2009 ascribe this to variable carrying capacity.
  Here we have kind of both.
  ]
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted -2100369821 1548061326
+I'm hesitating: wouldn't it be opening Pandora's Box?
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
 \change_unchanged
 
 \end_layout
