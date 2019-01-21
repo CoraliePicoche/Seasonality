@@ -5,7 +5,7 @@
 %%% all things equal, but with a higher intra-group competition than
 %%% inter-group coefficients
 
-dir_output="SV_same_temp";
+dir_output="season";
 
 global S tau0 mu_tau sigma_tau tau_min tau_max a_r_tau0 E_r k A m thresh_min tspan tau b tau_opt r
 
@@ -31,7 +31,7 @@ k=8.6173324*10^(-5); %Boltzmann's constant in eV.K-1
 
 %Other
 alpha_compet=0.001; %area/kg (SV) Strength of competition for all individuals
-A=ones(S,S)*alpha_compet+diag(ones(60,1)*alpha_compet*3); %interaction matrix
+A=ones(S,S)*alpha_compet+diag(ones(60,1)*alpha_compet*9); %interaction matrix
 %intra is 10-fold higher than inter when taking all coefficients into
 %account in Barraquand et al. 2017. But if we take only significant
 %coefficients, it seems closer to 4.
@@ -40,9 +40,9 @@ thresh_min=10^(-6); %species considered extinct below this biomass
 yspan=200;
 ysave=500;
 
-for iter=2:10
+for iter=6:10
     iter
-    load(strcat('./output_simulation/',dir_output,'/','iter',num2str(iter),'_codeversion_20180228_theta0.mat'));
+    load(strcat('./output_simulation/',dir_output,'/','iter',num2str(iter),'_codeversion_20180228_theta1p3.mat'));
     %%%%%% Initialize
 % Time resolution
 tstart = 1.0;
@@ -50,11 +50,13 @@ tstop = length(tau); %5000 years in SV, with 1 day intervals %15 000 used here t
 tsampling = (tstop-tstart)+1; 
 tspan=linspace(tstart,tstop,tsampling);                        % timespan for the numerical solution
  y0=ones(1,S)*1/(alpha_compet*S);
+ A=ones(S,S)*alpha_compet+diag(ones(60,1)*alpha_compet*9); %interaction matrix
 
     r=zeros(S,length(tau));
      for i=1:S
          r(i,:)=fun(tau,b(i),tau_opt(i));   
      end;
+     
     options= odeset('AbsTol',1e-8, 'RelTol',1e-3,'NonNegative',1:60); %NonNegative is necessary and speaking to Alix indicated that Reltol and Absol can be changed quite safely. For
 
     [tout,yout] = ode45(@SV16_ode_integration, tspan , y0,options);       % ode solver
@@ -64,6 +66,6 @@ tspan=linspace(tstart,tstop,tsampling);                        % timespan for th
     toutbis=tout(imin:imax);
     youtbis=yout(imin:imax,:);
     nb_species=sum(yout'>thresh_min);
-    save(strcat('./output_simulation/',dir_output,'/','iter',num2str(iter),'_codeversion_20180228_theta0_competitonintrahigherthanextra_only4timeshigher.mat'),'toutbis','youtbis','tau_opt','b','tau','nb_species');
+    save(strcat('./output_simulation/',dir_output,'/','iter',num2str(iter),'_codeversion_20180228_theta1p3_competitonintrahigherthanextra_10higher.mat'),'toutbis','youtbis','tau_opt','b','tau','nb_species','A');
 end;
     

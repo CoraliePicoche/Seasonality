@@ -7,7 +7,7 @@ clear all
 close all
 
 rng(1)
-dir_output="SV_same_temp";
+dir_output="season";
 %%%%%% Parameters
 global S tau0 mu_tau sigma_tau tau_min tau_max a_r_tau0 E_r k A m thresh_min tspan r
 
@@ -18,7 +18,7 @@ tau0=293; %reference temperature in Kelvin (SV)
 mu_tau=293; %mean temperature in Kelvin SV
 sigma_tau=5; %standard deviation of temperature in Kelvin SV
 %theta=sqrt(2)-eps(sqrt(2)); %just to avoid complex values due to machine imprecision
-theta=0
+theta=1.3
 
 tau_min=15+273; %minimum thermal optimum SV, in Kelvin
 tau_max=25+273; %maximum thermal optimum SV, in Kelvin
@@ -98,5 +98,5 @@ options= odeset('AbsTol',1e-8, 'RelTol',1e-3,'NonNegative',1:60); %NonNegative i
 toutbis=tout(imin:imax);
 youtbis=yout(imin:imax,:);
 nb_species=sum(yout'>thresh_min);
-save(strcat('./output_simulation/',dir_output,'/','iter',num2str(iter),'_codeversion_20180228_theta0.mat'),'toutbis','youtbis','tau_opt','b','tau','nb_species');
+save(strcat('./output_simulation/',dir_output,'/','iter',num2str(iter),'_codeversion_20180228_theta1p3.mat'),'toutbis','youtbis','tau_opt','b','tau','nb_species','A');
 end;
