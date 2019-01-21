@@ -312,9 +312,295 @@ coexistence; seasonality; competition; phytoplankton; Lotka-Volterra; storage
 
 \begin_layout Section
 Introduction
+\change_deleted -2100369821 1548083172
+
 \end_layout
 
 \begin_layout Standard
+
+\change_inserted -2100369821 1548083166
+
+\end_layout
+
+\begin_layout Standard
+
+\change_inserted -2100369821 1548083408
+The continued maintenance of diversity in spite of widespread competition
+ has bewildered ecologists, especially for primary producers such as phytoplankt
+on that share the same basic resources 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "hutchinson_paradox_1961"
+literal "false"
+
+\end_inset
+
+.
+ The first solution that has been proposed for the 'paradox of the plankon'
+ was the temporal variation of the environment.
+ However, inclusion of temporal variability per se in competition models
+ is not sufficient for maintaining a realistic diversity 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "chesson_roles_1997,fox_intermediate_2013"
+literal "false"
+
+\end_inset
+
+.
+ Additional mechanisms such as the storage effect 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "chesson_multispecies_1994,ellner_how_2016"
+literal "false"
+
+\end_inset
+
+ or relative nonlinearity of competition 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "armstrong_r.a._competitive_1980,chesson_mechanisms_2000,descamps-julien_stable_2005,fox_intermediate_2013"
+literal "false"
+
+\end_inset
+
+ need to be introduced for diversity to maintain.
+ Richness rarely exceeds a handful of species in this type of model, except
+ when external inputs such as immigration maintain the dynamics 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "jabot_non-random_2016"
+literal "false"
+
+\end_inset
+
+.
+ To our knowledge, the effect of temporal variability on persistence in
+ competition models has mostly been tested in theoretical communities of
+ 2 to 3 species 
+\begin_inset CommandInset citation
+LatexCommand citep
+before "e.g.,"
+key "chesson_roles_1997,litchman_competition_2001,miller_evolutionary_2017"
+literal "false"
+
+\end_inset
+
+ .
+\end_layout
+
+\begin_layout Standard
+
+\change_inserted -2100369821 1548085778
+One of the richest modeled communities that we identified is the model of
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "scranton_coexistence_2016"
+literal "false"
+
+\end_inset
+
+, which is based on temperature variation and different thermal optima for
+ each species 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "moisan_modelling_2002"
+literal "false"
+
+\end_inset
+
+.
+ In this model, the synchronizing effect of the environment and the storage
+ effect can maintain 12 phytoplankton-like species on average.
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "scranton_coexistence_2016"
+literal "false"
+
+\end_inset
+
+ described daily temperature as a random noise, i.e., independent and identically
+ distributed Gaussian random variates over time.
+ However, under most latitudes, seasonality drives part of the environmental
+ variation: over short timescales, random temporal variations often only
+ add noise to a largely deterministic seasonal trend 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "scheffer_seasonal_1997,boyce_environmental_2017,barraquand2018coastal"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\change_inserted -2100369821 1548085839
+Seasonality can strongly affect the dynamics of communities 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "rinaldi_multiple_1993,miller_evolutionary_2017,vesipa_impact_2017"
+literal "false"
+
+\end_inset
+
+.
+ How seasonality affects coexistence, as opposed to a randomly fluctuating
+ environment, is therefore a key feature of this paper.
+ Our present work can be seen as an attempt to blend 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "scranton_coexistence_2016"
+literal "false"
+
+\end_inset
+
+'s stochastic framework with the periodic environments of 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "barabas_community_2012"
+literal "false"
+
+\end_inset
+
+, to better represent the mixture of stochastic and deterministic environmental
+ forces affecting phytoplankton community dynamics.
+\end_layout
+
+\begin_layout Standard
+
+\change_inserted -2100369821 1548087434
+Niche differences between species, leading to intraspecific interaction
+ stronger than interspecific interactions, has recently been confirmed as
+ a key mechanism in terrestrial plant communities 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "adler_competition_2018"
+literal "false"
+
+\end_inset
+
+, animal communities 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "mutshinda_what_2009"
+literal "false"
+
+\end_inset
+
+, and phytoplanktonic communities 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "barraquand2018coastal"
+literal "false"
+
+\end_inset
+
+.
+ The interaction between environment variability and niche overlap has been
+ investigated by 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "abrams_niche_1976"
+literal "false"
+
+\end_inset
+
+ but his results did not extend to communities more diverse than 4 species.
+\end_layout
+
+\begin_layout Standard
+
+\change_inserted -2100369821 1548086824
+Niche models have often been opposed to the neutral theory 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "hubbell_unified_2001"
+literal "false"
+
+\end_inset
+
+.
+ An intriguing offshoot of the niche vs neutrality debate is the concept
+ of `clumpy coexistence' 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "scheffer_self-organized_2006"
+literal "false"
+
+\end_inset
+
+, whereby simultaneous influences of both niche and neutral processes create
+ several clumps of similar species along a single trait axis.
+ Niche differences enable coexistence of multiple clumps 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "chesson_mechanisms_2000"
+literal "false"
+
+\end_inset
+
+ while within-clumps coexistence occurs through neutral processes.
+ This `emergent neutrality' within groups 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "holt_emergent_2006"
+literal "false"
+
+\end_inset
+
+ has been proposed as a unifying concept for niche and neutral theories
+ even though the neutrality of such model has been disputed due to hidden
+ niches 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "barabas_emergent_2013"
+literal "false"
+
+\end_inset
+
+.
+ Since then, clumpy coexistence has appeared in theoretical models incorporating
+ temporal variations 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "scranton_coexistence_2016,sakavara_lumpy_2018"
+literal "false"
+
+\end_inset
+
+.
+ The relationship (or absence thereof) between biomass-trait distributions
+ and coexistence mechanisms is currently debated 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "dandrea_challenges_2016"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\change_inserted -2100369821 1548086849
+Here, we therefore try to establish what are the relative contributions
+ to coexistence of the storage effect vs strong self-regulation, in a phytoplank
+ton-like theoretical community model.
+ We consider both species richness and the emerging biomass-trait distributions.
+ This led us to cross different combinations of seasonality in the forcing
+ signal, presence of the storage effect or not, and intra- vs interspecific
+ competition intensity, in order to disentangle the contributions of all
+ these factors to biodiversity maintenance.
+\end_layout
+
+\begin_layout Standard
+
+\change_deleted -2100369821 1548083166
 There has been a rich debate in theoretical ecology on how to reconcile
  niche and neutral perspectives on species coexistence 
 \begin_inset CommandInset citation
@@ -352,6 +638,8 @@ literal "false"
 \end_layout
 
 \begin_layout Standard
+
+\change_deleted -2100369821 1548083166
 An intriguing offshoot of the niche vs neutrality debate is the concept
  of `clumpy coexistence' 
 \begin_inset CommandInset citation
@@ -478,6 +766,8 @@ literal "false"
 \end_layout
 
 \begin_layout Standard
+
+\change_deleted -2100369821 1548083166
 Here, we build on the work of 
 \begin_inset CommandInset citation
 LatexCommand citet
@@ -543,6 +833,8 @@ literal "false"
 \end_layout
 
 \begin_layout Standard
+
+\change_deleted -2100369821 1548083166
 Because many phytoplankton species or genera respond in similar ways to
  temperature despite having different optimas 
 \begin_inset CommandInset citation
@@ -579,6 +871,8 @@ literal "false"
 \end_layout
 
 \begin_layout Standard
+
+\change_deleted -2100369821 1548083166
 In an empirical study combining phytoplankton community-level time series
  and multivariate autoregressive models 
 \begin_inset CommandInset citation
@@ -623,6 +917,8 @@ literal "false"
 \end_layout
 
 \begin_layout Standard
+
+\change_deleted -2100369821 1548083166
 Here, we therefore try to establish what are the relative contributions
  to coexistence of the storage effect vs strong self-regulation, in a phytoplank
 ton-like theoretical community model.
@@ -630,6 +926,8 @@ ton-like theoretical community model.
  signal, presence of the storage effect or not, and intra- vs interspecific
  competition intensity, in order to disentangle the contributions of all
  these factors to biodiversity maintenance.
+\change_unchanged
+
 \end_layout
 
 \begin_layout Section
@@ -2967,7 +3265,7 @@ literal "false"
 
  would have been compromised.
 
-\change_inserted -2100369821 1548061700
+\change_inserted -2100369821 1548088405
  Another way to shorten the transients in the case developped by 
 \begin_inset CommandInset citation
 LatexCommand citet
@@ -2982,7 +3280,8 @@ literal "false"
  Speed of convergence therefore depends on the mechanisms considered.
  As we wanted to focus on the storage effect and the self-regulation while
  keeping all other things equal, we did not change the time window for integrati
-on
+on.
+
 \change_deleted -2100369821 1547560482
  From an ecological standpoint, waiting for full convergence when there
  are extremely long transients 
@@ -3397,25 +3696,7 @@ literal "false"
  here.
  Clumps in the trait axis when averaged across model runs/locations are
  therefore a signature of a coexistence induced by the storage effect, for
- the cases that we considered in the article
-\change_inserted -2100369821 1548061264
-
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-
-\change_inserted -2100369821 1548061268
-Confirmed.
-\change_unchanged
-
-\end_layout
-
-\end_inset
-
-
-\change_unchanged
-.
+ the cases that we considered in the article.
  Of course, other mechanisms that we did not include in our models may produce
  similar patterns 
 \begin_inset CommandInset citation
@@ -3426,32 +3707,28 @@ literal "false"
 \end_inset
 
  or obfuscate these patterns – typically strong self-regulation weakens
- the clustering on the trait axis.
- We therefore view clustering on the trait axis (when averaged over several
- samples) as an interesting clue suggesting to look for a storage effect,
- rather than any definite proof that the storage effect is at work.
+ the clustering on the trait axis
+\change_inserted -2100369821 1548088686
+, or, on the contrary, the competition kernel may induce the same clumps
  
-\change_inserted -2100369821 1548061274
-[In addition to ecological considerations, we may want to mention that according
- to Pigolotti 2010 thinks that's because of the form of the competition
- kernel; and Hernandez-Garcia et al.
- 2009 ascribe this to variable carrying capacity.
- Here we have kind of both.
- ]
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-
-\change_inserted -2100369821 1548061326
-I'm hesitating: wouldn't it be opening Pandora's Box?
-\change_unchanged
-
-\end_layout
+\begin_inset CommandInset citation
+LatexCommand citep
+key "pigolotti_how_2010"
+literal "false"
 
 \end_inset
 
 
+\change_deleted -2100369821 1548088624
+.
+ 
+\change_unchanged
+We therefore view clustering on the trait axis (when averaged over several
+ samples) as an interesting clue suggesting to look for a storage effect,
+ rather than any definite proof that the storage effect is at work.
+
+\change_deleted -2100369821 1548088697
+ 
 \change_unchanged
 
 \end_layout
