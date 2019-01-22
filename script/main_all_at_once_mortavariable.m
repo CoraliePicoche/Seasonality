@@ -89,7 +89,7 @@ tspan_bis=[tstart tspan(imin:imax)];
 [toutbis,youtbis] = ode45(@SV16_ode_integration, tspan_bis , y0,options);       % ode solver
 nb_species=sum(youtbis'>thresh_min);
 nb_species(end)
-%save(strcat('./output_simulation/',dir_output{cond},'/','iter',num2str(iter),'_codeversion_20180228.mat'),'toutbis','youtbis','tau_opt','b','tau','nb_species','A','morta_vect');
+save(strcat('./output_simulation/',dir_output{cond},'/','iter',num2str(iter),'_codeversion_20180228.mat'),'toutbis','youtbis','tau_opt','b','tau','nb_species','A','morta_vect');
 clear toutbis youtbis nb_species;
 
 %Second case : +SE+SSR
@@ -100,7 +100,7 @@ clear toutbis youtbis nb_species;
 [toutbis,youtbis] = ode45(@SV16_ode_integration, tspan_bis , y0,options);       % ode solver
 nb_species=sum(youtbis'>thresh_min);
 nb_species(end)
-%save(strcat('./output_simulation/',dir_output{cond},'/','iter',num2str(iter),'_codeversion_20180228_10higher.mat'),'toutbis','youtbis','tau_opt','b','tau','nb_species','A','morta_vect');
+save(strcat('./output_simulation/',dir_output{cond},'/','iter',num2str(iter),'_codeversion_20180228_10higher.mat'),'toutbis','youtbis','tau_opt','b','tau','nb_species','A','morta_vect');
 clear toutbis youtbis nb_species;
 
 %Third case : -SE-SSR
@@ -113,7 +113,7 @@ clear toutbis youtbis nb_species;
 [toutbis,youtbis] = ode45(@SV16_ode_integration_no_GR_in_competition, tspan_bis , y0,options);       % ode solver
 nb_species=sum(youtbis'>thresh_min);
 nb_species(end)
-%save(strcat('./output_simulation/',dir_output{cond},'/','iter',num2str(iter),'_codeversion_20180228_noforcedcompetition_weightedinteraction.mat'),'toutbis','youtbis','tau_opt','b','tau','nb_species','A','morta_vect');
+save(strcat('./output_simulation/',dir_output{cond},'/','iter',num2str(iter),'_codeversion_20180228_noforcedcompetition_weightedinteraction.mat'),'toutbis','youtbis','tau_opt','b','tau','nb_species','A','morta_vect');
 clear toutbis youtbis nb_species;
 
 %Fourth case : -SE+SSR
@@ -125,7 +125,7 @@ clear toutbis youtbis nb_species;
 [toutbis,youtbis] = ode45(@SV16_ode_integration_no_GR_in_competition, tspan_bis , y0,options);       % ode solver
 nb_species=sum(youtbis'>thresh_min);
 nb_species(end)
-%save(strcat('./output_simulation/',dir_output{cond},'/','iter',num2str(iter),'_codeversion_20180228_noforcedcompetition_10higherintra_weightedinteraction.mat'),'toutbis','youtbis','tau_opt','b','tau','nb_species','A','morta_vect');
+save(strcat('./output_simulation/',dir_output{cond},'/','iter',num2str(iter),'_codeversion_20180228_noforcedcompetition_10higherintra_weightedinteraction.mat'),'toutbis','youtbis','tau_opt','b','tau','nb_species','A','morta_vect');
 clear tau r toutbis youtbis nb_species;
 
 end;
