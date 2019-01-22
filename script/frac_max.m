@@ -1,6 +1,7 @@
-%%% Model of Scranton & Vasseur 2016 (Theor Ecol.)
-%%% Developped by Picoche & Barraquand 2017
-%%% fraction of the maximum growth rate achieved for one species
+%%% Model first developped by of Scranton & Vasseur 2016 (Theor Ecol.)
+%%% Script by Picoche & Barraquand 2017
+%%% This function computes the fraction of the maximum growth rate achieved
+%%% for one  for the whole temperature time series
 
 function f = frac_max(tau,tau_opt,b)
 

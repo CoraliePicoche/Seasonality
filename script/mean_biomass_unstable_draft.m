@@ -1,28 +1,34 @@
 %% Model of Scranton & Vasseur 2016 (Theor Ecol.)
 %%% Developped by Picoche & Barraquand 2018
-%%% Boxplot for the not-so-stable cases
+%%% This script draws Fig.4 in the article, biomass-trait distribution for
+%%% the cases with only one coexistence mechanism (storage effect only or
+%%% strong-self regulation only)
+
 
 clear all; close all; clc;
-thresh_min=10^(-6);
-yspan=200;
+
+%Dynamics parameters
+thresh_min=10^(-6); %threshold below which a species is considered extinct
+yspan=200; %number of years taken into account when averaging biomasses
+
+%Graphics parameters
 afontsize=10;
 col=jet(60);
+subplot_id=zeros(1,2); %keep the id of the labels to keep them aligned
 
-subplot_id=zeros(1,2);
-
+%Load maximum and mean growth rates
 T = readtable("output_simulation/growth_rate_analysis.txt","Delimiter",";");
 max_growth_rate=table2array(T(:,1));
 mean_growth_rate=table2array(T(:,3));
-
+%Scale growth rates
 max_growth_rate=max_growth_rate/max(max_growth_rate);
 mean_growth_rate=mean_growth_rate/max(mean_growth_rate);
 
-dir_output='./output_simulation/white_noise/';
-%Filename for +SE-SND
-extension='.mat';
-
+%Begin loading results
 biomass_final_1=zeros(60,100,2);
-
+dir_output='./output_simulation/white_noise/';
+%Filename for +SE-SSR
+extension='.mat';
 for iter=1:100
     filename=strcat(dir_output,'/iter',num2str(iter),'_codeversion_20180228_theta0',extension);
     load(filename)
@@ -38,17 +44,7 @@ for iter=1:100
     biomass_final_1(:,iter,2)=mean_value;
 end;
 
-% tmp=zeros(length(tau_opt),2);
-% for t=1:length(tau_opt)
-%     tmp(t,1)=min(biomass_final_1(t,:,1));
-%     tmp(t,2)=max(biomass_final_1(t,:,1));
-% end
-% hold on
-% plou1=[tau_opt fliplr(tau_opt)]-273;
-% plou2=[tmp(:,1)' fliplr(tmp(:,2)')];
-% fill(plou1,plou2,'c','EdgeColor','none','FaceAlpha',.3)
-
-
+%Compute the percentiles to plot the biomass-trait distributions
 tmp=zeros(length(tau_opt),5,2);
 for t=1:length(tau_opt)
     tmp(t,1,1)=min(biomass_final_1(t,:,1));
@@ -63,12 +59,11 @@ for t=1:length(tau_opt)
     tmp(t,5,2)=mean(biomass_final_1(t,:,2));
 end
 
-%Feeling fancy
+%Draw shaded areas
 plou1=[tau_opt fliplr(tau_opt)]-273;
 min_median_wn=[tmp(:,1,1)' fliplr(tmp(:,3,1)')];
 median_90_wn=[tmp(:,3,1)' fliplr(tmp(:,4,1)')];
 nin_max_wn=[tmp(:,4,1)' fliplr(tmp(:,2,1)')];
-
 min_median_season=[tmp(:,1,2)' fliplr(tmp(:,3,2)')];
 median_90_season=[tmp(:,3,2)' fliplr(tmp(:,4,2)')];
 nin_max_season=[tmp(:,4,2)' fliplr(tmp(:,2,2)')];
@@ -76,30 +71,27 @@ fig=figure;
 set(fig,'defaultAxesColorOrder',[[0 0 0]; [0 0 0]]);
 subplot(2,1,1)
 hold on
-
 yyaxis left;
 fill(plou1,min_median_wn,'b','EdgeColor','none','FaceAlpha',.3)
 fill(plou1,median_90_wn,'b','EdgeColor','none','FaceAlpha',.5)
 fill(plou1,nin_max_wn,'b','EdgeColor','none','FaceAlpha',.7)
-
-fill(plou1,min_median_season,'r','EdgeColor','none','FaceAlpha',.3) %Interesting : you have only one peak here
+fill(plou1,min_median_season,'r','EdgeColor','none','FaceAlpha',.3) 
 fill(plou1,median_90_season,'r','EdgeColor','none','FaceAlpha',.5)
 fill(plou1,nin_max_season,'r','EdgeColor','none','FaceAlpha',.7)
-%for iter=1:50
+
+%Plot an example of one simulation's dynamics over the shaded area
 iter=7;
-%     plot(tau_opt-273,biomass_final_1(:,iter,1),'-o','MarkerFaceColor','b','LineWidth',2,'color','b')
-%plot(tau_opt-273,biomass_final_1(:,iter,2),'-o','MarkerFaceColor','r','LineWidth',2,'color','r')
-     plot(tau_opt-273,tmp(:,5,1),'-o','MarkerFaceColor','b','LineWidth',2,'color','b')
-plot(tau_opt-273,tmp(:,5,2),'-o','MarkerFaceColor','r','LineWidth',2,'color','r')
-      xticks(tau_opt(1:9:length(tau_opt))-273)     
-        xaxlabel=cell(1,length(tau_opt));
-        %xaxlabel(1:4:length(tau_opt))=sprintfc("%.1f",tau_opt(1:4:length(tau_opt))-273);
-        set(gca,'XTickLabel',xaxlabel)
-        xtickangle(90)
-%end
+plot(tau_opt-273,biomass_final_1(:,iter,1),'-o','MarkerFaceColor','b','LineWidth',2,'color','b')
+plot(tau_opt-273,biomass_final_1(:,iter,2),'-o','MarkerFaceColor','r','LineWidth',2,'color','r')
+
+xticks(tau_opt(1:9:length(tau_opt))-273)     
+xaxlabel=cell(1,length(tau_opt));
+set(gca,'XTickLabel',xaxlabel)
+xtickangle(90)
 subplot_id(1)=ylabel({"Storage effect";'Biomass'});
 set(gca,'Fontsize',afontsize)
 
+%Add growth rate max and mean
 yyaxis right;
 plot(tau_opt-273,max_growth_rate,'o','MarkerEdgeColor','k','MarkerSize',3)
 plot(tau_opt-273,mean_growth_rate,'o','MarkerFaceColor','k','MarkerEdgeColor','k','MarkerSize',3)
@@ -110,19 +102,14 @@ ylim([0 1.1])
 text(15.1,1.*0.95,'a','Fontsize',afontsize)
 plot([tau_opt(id) tau_opt(id)]-273,[0 mean_growth_rate(id)],'--k','LineWidth',2)
 hold off;
-% fig.PaperPositionMode = 'auto'
-% fig_pos = fig.PaperPosition;
-% fig.PaperSize = [fig_pos(3) fig_pos(4)];
-% print(fig,'./Rapport/graphe/fancy_distrib_YesSE_NoSND','-dtiff')
 pos=get(gca,'Position')
 set(gca,'Position',pos)
-subplot(2,1,2)
-% 
-% set(fig,'defaultAxesColorOrder',[[0 0 0]; [0 0 0]]);
-% subplot(1,1,1)
-extension='_noforcedcompetition_10higherintra_weightedinteraction.mat';
 
+%Files for -SE+SSR
+subplot(2,1,2)
+extension='_noforcedcompetition_10higherintra_weightedinteraction.mat';
 biomass_final_2=zeros(60,100,2);
+
 dir_output='./output_simulation/white_noise/';
 for iter=1:100
     filename=strcat(dir_output,'/iter',num2str(iter),'_codeversion_20180228_theta0',extension);
@@ -139,6 +126,7 @@ for iter=1:100
     biomass_final_2(:,iter,2)=mean_value;
 end;
 
+%Compute percentiles
 tmp=zeros(length(tau_opt),4,2);
 for t=1:length(tau_opt)
     tmp(t,1,1)=min(biomass_final_2(t,:,1));
@@ -154,71 +142,34 @@ for t=1:length(tau_opt)
 end
 hold on
 
-%Feeling fancy
+%Draw shaded areas
 plou1=[tau_opt fliplr(tau_opt)]-273;
 min_median_wn=[tmp(:,1,1)' fliplr(tmp(:,3,1)')];
 median_90_wn=[tmp(:,3,1)' fliplr(tmp(:,4,1)')];
 nin_max_wn=[tmp(:,4,1)' fliplr(tmp(:,2,1)')];
-
 min_median_season=[tmp(:,1,2)' fliplr(tmp(:,3,2)')];
 median_90_season=[tmp(:,3,2)' fliplr(tmp(:,4,2)')];
 nin_max_season=[tmp(:,4,2)' fliplr(tmp(:,2,2)')];
-
 fill(plou1,min_median_wn,'b','EdgeColor','none','FaceAlpha',.3)
 fill(plou1,median_90_wn,'b','EdgeColor','none','FaceAlpha',.5)
 fill(plou1,nin_max_wn,'b','EdgeColor','none','FaceAlpha',.7)
-
 fill(plou1,min_median_season,'r','EdgeColor','none','FaceAlpha',.3)
 fill(plou1,median_90_season,'r','EdgeColor','none','FaceAlpha',.5)
 fill(plou1,nin_max_season,'r','EdgeColor','none','FaceAlpha',.7)
 
-% tmp=zeros(length(tau_opt),2);
-% for t=1:length(tau_opt)
-%     tmp(t,1)=min(biomass_final_2(t,:,1));
-%     tmp(t,2)=max(biomass_final_2(t,:,1));
-% end
-% hold on
-% plou1=[tau_opt fliplr(tau_opt)]-273;
-% plou2=[tmp(:,1)' fliplr(tmp(:,2)')];
-% fill(plou1,plou2,'c','EdgeColor','none','FaceAlpha',.3)
-
-% for iter=1:49
-%     subplot(7,7,iter)
-%     hold on; 
-%     plot(tau_opt,biomass_final_2(:,iter,1),'-b')
-%         plot(tau_opt,biomass_final_2(:,iter,2),'-r')
-%         hold off;
-% end
-
-%for iter=1:50
- iter=7;
-%plot(tau_opt-273,biomass_final_2(:,iter,1),'-o','MarkerFaceColor','b','LineWidth',2,'color','b')
-%end
-
-% tmp=zeros(length(tau_opt),2);
-% for t=1:length(tau_opt)
-%     tmp(t,1)=min(biomass_final_2(t,:,2));
-%     tmp(t,2)=max(biomass_final_2(t,:,2));
-% end
-% plou2=[tmp(:,1)' fliplr(tmp(:,2)')];
-%fill(plou1,plou2,'r','EdgeColor','none','FaceAlpha',.3)
-%for iter=1:50
+%Example of one simualtion's dynamics
 iter=7;
-%plot(tau_opt-273,biomass_final_2(:,iter,2),'-o','MarkerFaceColor','r','LineWidth',2,'color','r')
+plot(tau_opt-273,biomass_final_2(:,iter,1),'-o','MarkerFaceColor','b','LineWidth',2,'color','b')
+plot(tau_opt-273,biomass_final_2(:,iter,2),'-o','MarkerFaceColor','r','LineWidth',2,'color','r')
 
-     plot(tau_opt-273,tmp(:,5,1),'-o','MarkerFaceColor','b','LineWidth',2,'color','b')
-plot(tau_opt-273,tmp(:,5,2),'-o','MarkerFaceColor','r','LineWidth',2,'color','r')
-
-
-xticks(tau_opt(1:9:length(tau_opt))-273)       %ylim([mini maxi])%        xaxlabel=cell(1,length(tau_opt));
-           xaxlabel=sprintfc("%.1f",tau_opt(1:9:length(tau_opt))-273);
-        xlabel('Thermal optimum','Fontsize',afontsize)
-        set(gca,'XTickLabel',xaxlabel)
-       %  xtickangle(90)
+xticks(tau_opt(1:9:length(tau_opt))-273);
+xaxlabel=sprintfc("%.1f",tau_opt(1:9:length(tau_opt))-273);
+xlabel('Thermal optimum','Fontsize',afontsize)
+set(gca,'XTickLabel',xaxlabel)
 subplot_id(2)=ylabel({"Strong Self-Regulation";'Biomass'},'Fontsize',afontsize);
 set(gca,'Fontsize',afontsize)
-%end
 
+%Add growth rates max and mean
 yyaxis right;
 plot(tau_opt-273,max_growth_rate,'o','MarkerEdgeColor','k','MarkerSize',3)
 plot(tau_opt-273,mean_growth_rate,'o','MarkerFaceColor','k','MarkerEdgeColor','k','MarkerSize',3)
@@ -226,6 +177,7 @@ ylabel('Growth rate','Fontsize',afontsize);
 ylim([0 1.1])
 text(15.1,1*0.95,'b','Fontsize',afontsize)
 
+%Identigy the species with the best long-terme average growth rate
 id=find(mean_growth_rate==1);
 plot([tau_opt(id) tau_opt(id)]-273,[0 mean_growth_rate(id)],'--k','LineWidth',2)
 
@@ -249,34 +201,4 @@ fig.PaperPositionMode = 'auto'
 fig_pos = fig.PaperPosition;
 fig.PaperSize = [fig_pos(3) fig_pos(4)];
 print(fig,'./article/graphe/Fig4_with_mean','-depsc')
-
-% nb=zeros(1,100);
-% for i=1:167
-%     nb(i)=sum(biomass_final_1(:,i,1)>thresh_min);
-% end
-% %histcounts(nb)
-% 
-% nb=zeros(1,100);
-% for i=1:100
-%     nb(i)=sum(biomass_final_1(:,i,2)>thresh_min);
-% end
-% %histcounts(nb)
-
-
-%
-% id_min=60;
-% id_max=zeros(1,100);
-% for iter=1:100
-%     min_tmp=min(find(biomass_final_2(:,iter,2)>thresh_min))
-%     if id_min>min_tmp
-%         id_min=min_tmp;
-%     end;
-%         id_max(iter)=max(find(biomass_final_2(:,iter,2)>thresh_min));
-% end
-% 
-% tau_tmp=zeros(1,length(tau_opt));
-% for s1=1:60
-% tau_tmp(s1)=sum(biomass_final_1(s1,:,2)>0);
-% end;
-
 

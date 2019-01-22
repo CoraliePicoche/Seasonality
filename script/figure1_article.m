@@ -1,29 +1,27 @@
-%%% Model of Scranton & Vasseur 2016 (Theor Ecol.)
-%%% Developped by Picoche & Barraquand 2018
-%%% Figure 1 in our article : temperature and time series
+%%% Model first developped by of Scranton & Vasseur 2016 (Theor Ecol.)
+%%% Script by Picoche & Barraquand 2018
+%%% This script draws Fig.1 of the article (temperature and biomass time
+%%% series)
 
 clear all; close all; clc;
-%First definitions
-%Will look at the last two years
-ylast=2*365;
-thresh_min=10^(-6);
-col=jet(60);
-S=60;
 
-%Graphics
+ylast=2*365; %Will look at the last two years
+thresh_min=10^(-6); %below the threshold, species are considered extinct
+col=jet(60); %colors to use in the drawing
+S=60; % number of species
 afontsize=8;
 alinewidth=2.;
 
-%a) Theta=0
+% Theta=0
 load("output_simulation/white_noise/iter2_codeversion_20180228_theta0.mat")
 yend=size(tau,2);
 use_temperature=tau((yend-ylast):yend);
 yend=size(youtbis,1);
 use_community=youtbis((yend-ylast):yend,:);
 
+% a) Temperature for theta=0
 h=zeros(1,4)
 yl=zeros(1,2)
-
 h(1)=subplot(2,2,1)
 plot(use_temperature-273.15,'-k','LineWidth',.5)
 maxi=get(gca,'Ylim');
@@ -38,7 +36,7 @@ set(gca,'Fontsize',afontsize)
 get(gca,'Position')
 box off;
 
-%c) Time series for theta=0
+%c) Biomass time series for theta=0
 h(3)=subplot(2,2,3)
 hold on;
 for s1=1:S
@@ -62,7 +60,7 @@ box off;
 
 youtbis_wn=youtbis;
 
-%b) Theta=1.3 just to show the season
+%b) Temperature for theta=1.3
 load("output_simulation/season/iter2_codeversion_20180228_theta1p3.mat")
 yend=size(tau,2);
 use_temperature=tau((yend-ylast):yend);
@@ -81,7 +79,7 @@ set(gca,'Fontsize',afontsize)
 get(gca,'Position')
 box off;
 
-%d) Time series for theta=1.3
+%d) Biomass time series for theta=1.3
 h(4)=subplot(2,2,4)
 hold on;
 for s1=1:S
@@ -127,10 +125,10 @@ get(gca,'FontName')
 print(fig,'./article/graphe/Fig1','-depsc')
 
 % 
-% % Appendices
+% % Fig A1 in the Electronic Supplementary Material
 yspan=200;
-    mean_value=species_mean_value(youtbis_wn, yspan);
-    figure;subplot(1,2,1); hold on;
+mean_value=species_mean_value(youtbis_wn, yspan);
+figure;subplot(1,2,1); hold on;
 for s1=1:S
     bar(tau_opt(s1)-273,mean_value(s1),0.1,'FaceColor',col(s1,:));
 end;
@@ -145,12 +143,11 @@ ylimit=[mini*0.95 max(mean_value)+0.05*mini];
 set(gca,'yscale','log','Fontsize',8,'YLim',ylimit)
 hold off;
 
-    mean_value=species_mean_value(youtbis_season, yspan);
-    subplot(1,2,2); hold on;
+mean_value=species_mean_value(youtbis_season, yspan);
+subplot(1,2,2); hold on;
 for s1=1:S
     bar(tau_opt(s1)-273,mean_value(s1),0.1,'FaceColor',col(s1,:));
 end;
-%ylabel('Biomass')
 pos=get(gca,'Position')
 pos(1)=0.5803;pos(2)=0.11;
 pos(3)=0.38;

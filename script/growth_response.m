@@ -1,6 +1,6 @@
-%%% Model of Scranton & Vasseur 2016 (Theor Ecol.)
-%%% Developped by Picoche & Barraquand 2017
-%%% growth response to temperature
+%%% Model first developped by of Scranton & Vasseur 2016 (Theor Ecol.)
+%%% Script by Picoche & Barraquand 2017
+%%% This function computes the growth response to temperature
 
 function growth = growth_response(tau)
 global a_r_tau0 tau0 E_r k 
