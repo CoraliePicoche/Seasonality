@@ -3579,6 +3579,33 @@ literal "false"
  Overall, while seasonality may be slightly better than no forcing at all
  in maintaining diversity if a storage effect is present, seasonal forcing
  of parameters does not improve coexistence when compared to white noise.
+
+\change_inserted -2100369821 1548189007
+ In a purely deterministic setting, seasonality can alleviate the competitive
+ exclusion principle through nonlinear competition for nutrients 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "sarker_share_2018"
+literal "false"
+
+\end_inset
+
+, but this specific mechanism also relies on trade-offs between resource
+ use for diversity to maintain.
+ In addition to effects on species richness, seasonality can affect the
+ dynamics of the community: 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "dakos_interannual_2009"
+literal "false"
+
+\end_inset
+
+ have been able to maintain up to 10 phytoplanktonic species in a seasonally-ent
+rained chaotic regime, even though this result is partially dampened by
+ added niche differences through zooplanktonic predation.
+\change_unchanged
+
 \end_layout
 
 \begin_layout Standard
@@ -3664,7 +3691,13 @@ literal "false"
 \end_inset
 
 .
+
+\change_inserted -2100369821 1548187398
  
+\change_deleted -2100369821 1548187377
+ 
+\change_unchanged
+
 \begin_inset CommandInset citation
 LatexCommand citet
 key "barabas_emergent_2013"
@@ -3708,9 +3741,9 @@ literal "false"
 
  or obfuscate these patterns – typically strong self-regulation weakens
  the clustering on the trait axis
-\change_inserted -2100369821 1548088686
-, or, on the contrary, the competition kernel may induce the same clumps
- 
+\change_inserted -2100369821 1548187435
+, or, on the contrary, the modeled competition kernel may induce the same
+ clumps 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "pigolotti_how_2010"
@@ -3721,6 +3754,21 @@ literal "false"
 
 \change_deleted -2100369821 1548088624
 .
+
+\change_inserted -2100369821 1548187624
+ Moreover, we focus on a trait (thermal optimum) which clearly interacts
+ with the environment: clustering may emerge on another trait axis, such
+ as size, without being induced by the storage effect 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "segura_emergent_2011,segura_competition_2013"
+literal "false"
+
+\end_inset
+
+.
+ 
+\change_deleted -2100369821 1548088624
  
 \change_unchanged
 We therefore view clustering on the trait axis (when averaged over several
