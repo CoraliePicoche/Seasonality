@@ -317,12 +317,8 @@ Introduction
 
 \begin_layout Standard
 The continued maintenance of diversity in spite of widespread competition
- has 
-\change_inserted -666822487 1548234134
-long 
-\change_unchanged
-bewildered ecologists, especially for primary producers such as phytoplankton
- that share the same basic resources 
+ has long bewildered ecologists, especially for primary producers such as
+ phytoplankton that share the same basic resources 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "hutchinson_paradox_1961"
@@ -331,38 +327,14 @@ literal "false"
 \end_inset
 
 .
+ A solution 
+\change_deleted -2100369821 1548264746
  
-\change_deleted -666822487 1548234184
-The first
-\change_inserted -666822487 1548234184
-A
 \change_unchanged
- solution 
-\change_deleted -666822487 1548234212
-that has been proposed
-\change_unchanged
- for the 
-\change_inserted -666822487 1548234220
-`
-\change_deleted -666822487 1548234218
-'
-\change_unchanged
-paradox of the plankon'
-\change_inserted -666822487 1548234217
- was proposed
-\change_unchanged
+for the `paradox of the plankon' was proposed by Hutchinson: temporal variation
+ of the environment.
+ However, it has been shown later that inclusion of temporal variability
  
-\change_inserted -666822487 1548234228
-by Hutchinson:
-\change_deleted -666822487 1548234230
-was the
-\change_unchanged
- temporal variation of the environment.
- However, 
-\change_inserted -666822487 1548234261
-it has been shown later that 
-\change_unchanged
-inclusion of temporal variability 
 \emph on
 per se
 \emph default
@@ -384,11 +356,7 @@ literal "false"
 
 \end_inset
 
- or 
-\change_inserted -666822487 1548234285
-a 
-\change_unchanged
-relative nonlinearity of competition 
+ or a relative nonlinearity of competition 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "armstrong_r.a._competitive_1980,chesson_mechanisms_2000,descamps-julien_stable_2005,fox_intermediate_2013"
@@ -397,35 +365,9 @@ literal "false"
 \end_inset
 
  need to be introduced for diversity to maintain.
- 
-\change_inserted -666822487 1548234315
-Moreover, r
-\change_deleted -666822487 1548234313
-R
-\change_unchanged
-ichness rarely exceeds a handful 
-\change_inserted -666822487 1548234373
-to a dozen 
-\change_unchanged
-of species in 
-\change_deleted -666822487 1548234332
-this type of model
-\change_inserted -666822487 1548234369
-model competitive communities in fluctuating environments
-\change_unchanged
-, except when external inputs such as immigration 
-\change_deleted -666822487 1548234385
-maintain
-\change_inserted -666822487 1548234385
-sustain
-\change_unchanged
- 
-\change_deleted -666822487 1548234392
-the dynamics
-\change_inserted -666822487 1548234402
-diversity
-\change_unchanged
- 
+ Moreover, richness rarely exceeds a handful to a dozen of species in model
+ competitive communities in fluctuating environments, except when external
+ inputs such as immigration sustain diversity 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "jabot_non-random_2016"
@@ -435,27 +377,16 @@ literal "false"
 
 .
  To our knowledge, the effect of temporal variability on persistence in
- competition models has mostly been 
-\change_deleted -666822487 1548235408
-tested
-\change_inserted -666822487 1548235409
-examined
-\change_unchanged
- in theoretical communities of 2 to 3 species 
+ competition models has mostly been examined in theoretical communities
+ of 2 to 3 species 
 \begin_inset CommandInset citation
 LatexCommand citep
 before "e.g.,"
-key "chesson_roles_1997,litchman_competition_2001,miller_evolutionary_2017"
+key "chesson_roles_1997,litchman_competition_2001,li_effects_2016,miller_evolutionary_2017"
 literal "false"
 
 \end_inset
 
-
-\change_deleted -666822487 1548235363
- 
-\change_inserted -666822487 1548235393
-[ADD Li and Chesson 2016]
-\change_unchanged
 .
 \end_layout
 
@@ -505,26 +436,9 @@ literal "false"
 \end_layout
 
 \begin_layout Standard
-Seasonal
-\change_deleted -666822487 1548235712
-ity
-\change_inserted -666822487 1548235716
- forcing
-\change_unchanged
- 
-\change_inserted -666822487 1548235721
-of parameters 
-\change_unchanged
-can strongly affect the dynamics of 
-\change_inserted -666822487 1548235725
-model 
-\change_unchanged
-communities
-\change_inserted -666822487 1548235703
- by synchronizing species to the seasonal signal or even promoting oscillations
- with lower frequency
-\change_unchanged
- 
+Seasonal forcing of parameters can strongly affect the dynamics of model
+ communities by synchronizing species to the seasonal signal or even promoting
+ oscillations with lower frequency 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "rinaldi_multiple_1993,barabas_community_2012,miller_evolutionary_2017,vesipa_impact_2017"
@@ -681,8 +595,6 @@ literal "false"
 
 \end_inset
 
-
-\change_inserted -666822487 1548236310
 , where dispersal and drift can ensure a transient coexistence of many species,
  though several authors have attempted to blend niche and neutral processes
  
@@ -693,16 +605,9 @@ literal "false"
 
 \end_inset
 
-
-\change_unchanged
 .
- An intriguing offshoot of 
-\change_inserted -666822487 1548236326
-these attempts 
-\change_deleted -666822487 1548236291
-the niche vs neutrality debate 
-\change_unchanged
-is the concept of `clumpy coexistence' 
+ An intriguing offshoot of these attempts is the concept of `clumpy coexistence'
+ 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "scheffer_self-organized_2006"
@@ -720,11 +625,7 @@ literal "false"
 
 \end_inset
 
- while within-clump
-\change_deleted -666822487 1548236367
-s
-\change_unchanged
- coexistence occurs through neutral processes.
+ while within-clump coexistence occurs through neutral processes.
  This `emergent neutrality' within groups 
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -734,21 +635,8 @@ literal "false"
 \end_inset
 
  has been proposed as a unifying concept for niche and neutral theories
- 
-\change_inserted -666822487 1548236386
-(
-\change_unchanged
-even though the neutrality of 
-\change_deleted -666822487 1548236428
-such
-\change_inserted -666822487 1548236430
-the original
-\change_unchanged
- model has been disputed due to hidden niches
-\change_inserted -666822487 1548236413
-,
-\change_unchanged
- 
+ (even though the neutrality of the original model has been disputed due
+ to hidden niches, 
 \begin_inset CommandInset citation
 LatexCommand citealp
 key "barabas_emergent_2013"
@@ -756,25 +644,10 @@ literal "false"
 
 \end_inset
 
-
-\change_inserted -666822487 1548236398
-)
-\change_unchanged
-.
- Since then, clumpy coexistence has 
-\change_deleted -666822487 1548236462
-appeared
-\change_inserted -666822487 1548236465
-been shown to occur
-\change_unchanged
- in theoretical models incorporating 
-\change_inserted -666822487 1548236501
-a temporally variable environment interacting with a thermal preference
- trait axis
-\change_deleted -666822487 1548236458
-temporal variations
-\change_unchanged
- 
+).
+ Since then, clumpy coexistence has been shown to occur in theoretical models
+ incorporating a temporally variable environment interacting with a thermal
+ preference trait axis 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "scranton_coexistence_2016,sakavara_lumpy_2018"
@@ -792,58 +665,24 @@ literal "false"
 
 \end_inset
 
-
-\change_inserted -666822487 1548241334
 , although there are suggestions that clustering on trait axes under competition
  may be a robust find (d'Andrea et al.
  2018, 2019).
-\change_deleted -666822487 1548236545
-.
-\change_unchanged
-
 \end_layout
 
 \begin_layout Standard
-Here, we 
-\change_deleted -666822487 1548241372
-therefore 
-\change_unchanged
-try to establish what are the relative contributions to coexistence of the
- storage effect vs strong self-regulation, in a phytoplankton-like theoretical
- community model
-\change_inserted -666822487 1548241398
- with a large number of species
-\change_unchanged
-.
- 
-\change_deleted -666822487 1548241564
-We consider both species richness and the emerging biomass-trait distributions.
- 
-\change_unchanged
-This led us to cross 
-\change_deleted -666822487 1548241423
-different 
-\change_unchanged
-combinations of seasonality
-\change_inserted -666822487 1548241438
- vs randomness
-\change_unchanged
- in the forcing signal, presence of the storage effect or not, and intra-
- vs interspecific competition intensity, in order to disentangle the contributio
-ns of 
-\change_deleted -666822487 1548241495
-all 
-\change_unchanged
-these factors to biodiversity maintenance
-\change_inserted -666822487 1548241505
- and their potential interactions
-\change_unchanged
-.
-
-\change_inserted -666822487 1548241627
+Here, we try to establish what are the relative contributions to coexistence
+ of the storage effect vs strong self-regulation, in a phytoplankton-like
+ theoretical community model with a large number of species.
+ This led us to cross combinations of seasonality vs randomness in the forcing
+ signal, presence of the storage effect or not, and intra- vs interspecific
+ competition intensity, in order to disentangle the contributions of these
+ factors to biodiversity maintenance and their potential interactions.
  Alongside the resulting species richness, we also report which biomass-trait
  distribution can be expected under a given combination of processes leading
  to coexistence.
+
+\change_deleted -2100369821 1548264851
  
 \change_inserted -2100369821 1548086849
 
@@ -3094,9 +2933,7 @@ literal "false"
  This means that short- and medium-term transients (a few years to hundreds
  of years) are completely negligible at the end of the time series, but
  very long transients can remain
-\change_inserted -2100369821 1547724256
- and can still reveal part of the community functioning
-\change_inserted -666822487 1548241734
+\change_deleted -2100369821 1548268102
 
 \begin_inset Note Note
 status open
@@ -3141,20 +2978,10 @@ literal "false"
 
 .
  We kept a fixed time integration window rather than waiting for convergence
- 
-\change_deleted -2100369821 1547724317
-for both technical and ecological reasons
-\change_unchanged
-.
+ .
  From a technical standpoint, adding 10 000 years of numerical integration
- (or more) for the sake of reaching equilibrium 
-\change_deleted -666822487 1548241906
-would have been very
-\change_inserted -666822487 1548241906
-is more
-\change_unchanged
- challenging computationally, and comparison with the values reported by
- 
+ (or more) for the sake of reaching equilibrium is more challenging computationa
+lly, and comparison with the values reported by 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "scranton_coexistence_2016"
@@ -3163,40 +2990,19 @@ literal "false"
 \end_inset
 
  would have been compromised.
-
-\change_inserted -2100369821 1548088405
  Another way to shorten the transients 
-\change_deleted -666822487 1548241793
-in the case developped by 
-\begin_inset CommandInset citation
-LatexCommand citet
-key "scranton_coexistence_2016"
-literal "false"
-
-\end_inset
-
-
-\change_inserted -2100369821 1548088405
- would be to vary the mortality parameter, shifting the model further away
+\change_deleted -2100369821 1548264890
+ 
+\change_unchanged
+would be to vary the mortality parameter, shifting the model further away
  from neutral dynamics.
  This did not alter the conclusions (see Appendix B in Supplementary Material).
  
-\change_deleted -666822487 1548241837
-Speed of convergence therefore depends on the mechanisms considered.
-
-\change_inserted -2100369821 1548088405
- As we wanted to focus on the storage effect and the self-regulation while
- keeping all other 
-\change_deleted -666822487 1548241866
-things
-\change_inserted -666822487 1548241869
-elements of the model
-\change_inserted -2100369821 1548088405
+\change_deleted -2100369821 1548264890
  
-\change_deleted -666822487 1548241954
-equal
-\change_inserted -666822487 1548241956
-identical to 
+\change_unchanged
+As we wanted to focus on the storage effect and the self-regulation while
+ keeping all other elements of the model identical to 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "scranton_coexistence_2016"
@@ -3204,14 +3010,7 @@ literal "false"
 
 \end_inset
 
-
-\change_inserted -2100369821 1548088405
 , we did not change the time window for integration.
-
-\change_deleted -2100369821 1547560482
- 
-\change_unchanged
-
 \end_layout
 
 \begin_layout Standard
@@ -3319,6 +3118,14 @@ status open
 
 \change_inserted -666822487 1548242052
 Coralie, have you checked exactly that is what they say?
+\change_inserted -2100369821 1548265425
+ That's how I understand Fig.8 and Fig.11: when the period of the season is
+ shorter, i.e.
+ when community dynamics are slower, the storage effect is weaker, which
+ may affect persistence.
+ Miller and Klausmeier do admit that coexistence is not necessarily driven
+ by this storage effect but the coexistence mechanisms at play are different
+ and may therefore lead to difference in persistence.
 \change_unchanged
 
 \end_layout
@@ -3370,13 +3177,8 @@ literal "false"
 \end_inset
 
  was that a built-in storage effect in a forced Lotka-Volterra model, parameteri
-zed for phytoplankton communities, could lead to 
-\change_deleted -666822487 1548242101
-some
-\change_inserted -666822487 1548242107
-a reasonable
-\change_unchanged
- degree of coexistence.
+zed for phytoplankton communities, could lead to a reasonable degree of
+ coexistence.
  Our investigation reproduced these results, using the random noise considered
  by 
 \begin_inset CommandInset citation
@@ -3441,7 +3243,11 @@ literal "false"
 
  relative to other systems, hence we believe that 10 times stronger intraspecifi
 c competition constitutes a reasonable order of magnitude.
+
+\change_deleted -2100369821 1548268115
  
+\change_unchanged
+
 \end_layout
 
 \begin_layout Standard
@@ -3526,6 +3332,22 @@ status open
 
 \change_inserted -666822487 1548242259
 Not sure but we can discuss this
+\change_inserted -2100369821 1548265625
+.
+ This is how I understand the sentence 
+\begin_inset Quotes eld
+\end_inset
+
+In our model, if one species has maximum requirements for a particular re-
+ source, then it has intermediate and minimum requirements for other resources.
+ These types of resource requirements i.e.
+ differences in feeding traits is one of the important reasons for the observed
+ super- saturation
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Have I misunderstood?
 \change_unchanged
 
 \end_layout
@@ -3572,6 +3394,10 @@ status open
 
 \change_inserted -666822487 1548242488
 we can discuss the ref if need be
+\change_inserted -2100369821 1548266085
+.
+ That's ok for me, I assume you're referring mostly to section 7 in Chesson's
+ paper? Or you mean discussing the Dakos ref?
 \change_unchanged
 
 \end_layout
@@ -3609,50 +3435,15 @@ literal "false"
  mechanism at work while the average trait value was modified by the type
  of environmental forcing, even though the mean value of the environmental
  signal did not change.
- 
-\change_inserted -2100369821 1547807611
-However, when both 
-\change_deleted -666822487 1548242553
-mechanisms
-\change_inserted -666822487 1548242561
-strong-self regulation and the storage effect
-\change_inserted -2100369821 1547807611
- were at play, the biomass-trait distribution could either be unimodal or
- multimodal depending on the type of noise
-\change_inserted -666822487 1548242576
- (
-\change_deleted -666822487 1548242575
-, 
-\change_inserted -2100369821 1547807611
-random or seasonal, 
-\change_inserted -666822487 1548242581
-respectively) 
-\change_inserted -2100369821 1547807611
-driving the community dynamics.
- This implies that the mere observation of multimodality 
-\change_inserted -666822487 1548242631
-in a thermal preference trait-biomass distribution 
-\change_inserted -2100369821 1547807611
-is not a proof of 
-\change_deleted -666822487 1548242607
-the
-\change_inserted -666822487 1548242607
-a
-\change_inserted -2100369821 1547807611
- storage effect
-\change_deleted -666822487 1548242639
- acting on its own
-\change_inserted -2100369821 1547807611
-, or conversely, the proof of the influence of a seasonal environment.
- 
-\change_unchanged
-The biomass-trait distributions 
-\change_deleted -2100369821 1547560246
-therefore 
-\change_inserted -2100369821 1547560249
-indeed 
-\change_unchanged
-constitute clues to interpret community dynamics 
+ However, when both strong-self regulation and the storage effect were at
+ play, the biomass-trait distribution could either be unimodal or multimodal
+ depending on the type of noise (random or seasonal, respectively) driving
+ the community dynamics.
+ This implies that the mere observation of multimodality in a thermal preference
+ trait-biomass distribution is not a proof of a storage effect, or conversely,
+ the proof of the influence of a seasonal environment.
+ The biomass-trait distributions indeed constitute clues to interpret community
+ dynamics 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "dandrea_challenges_2016,loranger_what_2018"
@@ -3660,31 +3451,7 @@ literal "false"
 
 \end_inset
 
-, 
-\change_deleted -666822487 1548242667
-although
-\change_inserted -666822487 1548242671
-but
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-
-\change_inserted -666822487 1548242689
-although was OK with therefore but not with indeed, I think
-\change_unchanged
-
-\end_layout
-
-\end_inset
-
-
-\change_unchanged
- we 
-\change_deleted -666822487 1548242695
-certainly 
-\change_unchanged
-recommend to interpret them with caution to avoid over-generalization.
+, but we recommend to interpret them with caution to avoid over-generalization.
  The identification of multiple modes in biomass-trait relationships and
  SADs is relatively recent 
 \begin_inset CommandInset citation
@@ -3714,6 +3481,11 @@ status open
 Est-ce qu'on ne ferait pas mieux de ne pas mentionner les SADs? cf.
  papiers récents d'Andrea et al.
  
+\change_inserted -2100369821 1548267451
+A discuter, je ne suis pas sûre de voir ce que tu veux dire.
+ Les papiers d'Andrea et al.
+ sont très orientés 'traits' et non pas 'SAD' en soit.
+ Ou alors je n'ai pas compris ?
 \change_unchanged
 
 \end_layout
@@ -3757,37 +3529,16 @@ literal "false"
 
  highlighted.
  However, with several locations - or in a theoretical context - one could
- average across locations
-\change_deleted -666822487 1548242795
- to reproduce similar graphs to the ones produced here
-\change_unchanged
-.
- Clumps in the 
-\change_inserted -666822487 1548242854
-thermal preference 
-\change_unchanged
-trait axis when averaged across model runs/locations 
-\change_deleted -666822487 1548242866
-are therefore a signature of a coexistence induced by the
-\change_inserted -666822487 1548242868
-may be a
-\change_unchanged
- 
-\change_inserted -666822487 1548242869
-
+ average across locations.
+ Clumps in the thermal preference trait axis when averaged across model
+ runs/locations may be a 
 \begin_inset Quotes eld
 \end_inset
 
-
-\change_unchanged
-storage effect
-\change_inserted -666822487 1548242872
- clue
+storage effect clue
 \begin_inset Quotes erd
 \end_inset
 
-
-\change_unchanged
 , for the cases that we considered in the article.
  Of course, other mechanisms that we did not include in our models may produce
  similar patterns 
@@ -3799,14 +3550,11 @@ literal "false"
 \end_inset
 
  or obfuscate these patterns – typically strong self-regulation weakens
- the clustering on the trait axis
-\change_inserted -666822487 1548242898
-.
-\change_deleted -666822487 1548242897
-,
-\change_inserted -2100369821 1548187435
- or, on the contrary, the modeled competition kernel may induce the same
- clumps 
+ the clustering on the trait axis.
+
+\change_inserted -2100369821 1548267515
+ On the contrary, the modeled competition kernel may also induce clustering
+ along the trait axis due to numerical instability 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "pigolotti_how_2010"
@@ -3825,6 +3573,10 @@ status open
 \change_inserted -666822487 1548243062
 Not sure what you mean in that sentence: in what sense exactly are clumps
  the same? Same to what? I would suggest rephrasing.
+
+\change_inserted -2100369821 1548267745
+ Better now ?
+\change_deleted -2100369821 1548267746
  
 \change_unchanged
 
@@ -3836,69 +3588,21 @@ Not sure what you mean in that sentence: in what sense exactly are clumps
 \change_deleted -2100369821 1548088624
 .
 
-\change_inserted -2100369821 1548187624
+\change_unchanged
  Moreover, we focus on a trait (thermal optimum) which clearly interacts
  with the environment: clustering may emerge on another trait axis, such
- as size, 
-\change_inserted -666822487 1548243012
-which typically affects the competition coefficient, 
-\change_inserted -2100369821 1548187624
-without 
-\change_deleted -666822487 1548243024
-being induced by
-\change_inserted -666822487 1548243032
-having any relationship to
-\change_inserted -2100369821 1548187624
- the storage effect 
+ as size, which typically affects the competition coefficient, without having
+ any relationship to the storage effect 
 \begin_inset CommandInset citation
 LatexCommand citep
-key "segura_emergent_2011,segura_competition_2013"
+key "segura_emergent_2011,segura_competition_2013,dandrea_translucent_2018,dandrea_generalizing_2019"
 literal "false"
 
 \end_inset
 
-
-\change_inserted -666822487 1548242966
-
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-
-\change_inserted -666822487 1548243079
-Good point.
- Also mention the d'Andrea papers after Segura et al.
- 
-\change_unchanged
-
-\end_layout
-
-\end_inset
-
-
-\change_inserted -2100369821 1548187624
-.
-
-\change_deleted -666822487 1548242499
- 
-\change_deleted -2100369821 1548088624
- 
-\change_unchanged
-We therefore view clustering on the
-\change_inserted -666822487 1548243091
- thermal preference
-\change_unchanged
- trait axis 
-\change_deleted -666822487 1548243115
-(when averaged over several samples) 
-\change_unchanged
-as an interesting clue suggesting to look for a storage effect, rather than
- any definite proof that the storage effect is at work.
-
-\change_deleted -2100369821 1548088697
- 
-\change_unchanged
-
+.We therefore view clustering on the thermal preference trait axis as an
+ interesting clue suggesting to look for a storage effect, rather than any
+ definite proof that the storage effect is at work.
 \end_layout
 
 \begin_layout Standard
@@ -3917,39 +3621,24 @@ literal "false"
 on presented here, we are skeptical that the storage effect could by itself
  help explaining phytoplankton diversity.
  However, our results suggest that in phytoplankton-like seasonal environments,
- even though empirically-
-\change_deleted -666822487 1548243171
-based
-\change_inserted -666822487 1548243171
-tuned
-\change_unchanged
- self-regulation produce
-\change_inserted -666822487 1548243157
-s
-\change_unchanged
- much more diversity than the storage effect when considered in isolation,
- the storage effect can help diversity maintenance when combined to other
- mechanisms.
+ even though empirically-tuned self-regulation produces much more diversity
+ than the storage effect when considered in isolation, the storage effect
+ can help diversity maintenance when combined to other mechanisms.
  Indeed, the combination storage effect + strong self-regulation is non-additive
 : the cases were both self-regulation and the storage effect were present
  showed more diversity than generated by any mechanism on its own.
+
+\change_deleted -2100369821 1548266266
  
+\change_unchanged
+
 \end_layout
 
 \begin_layout Standard
 The above results suggest the very exciting idea that multiple coexistence
- mechanisms might combine superadditively
-\change_inserted -2100369821 1547548691
- to 
-\change_deleted -666822487 1548243195
-affect
-\change_inserted -666822487 1548243197
-determine
-\change_inserted -2100369821 1547548691
- the richness of the community
-\change_unchanged
-, thus helping us to better understand the astounding diversity of primary
- producers.
+ mechanisms might combine superadditively to determine the richness of the
+ community, thus helping us to better understand the astounding diversity
+ of primary producers.
  This logic could, in principle, be extended to mechanisms that we have
  not considered here (e.g., spatial structure, specialized natural enemies,
  that could be as important here for plankton as they are for tropical trees,
@@ -3962,43 +3651,14 @@ literal "false"
 \end_inset
 
 ).
-
-\change_inserted -2100369821 1547549603
- The effect of interacting mechanism
-\change_inserted -666822487 1548243215
-s
-\change_inserted -2100369821 1547549603
- can be measured either on community diversity, as we did here, or on
-\change_deleted -666822487 1548243233
- other
-\change_inserted -2100369821 1547549603
- processes 
-\change_inserted -666822487 1548243252
-rates directly, e.g.
+ The effect of interacting mechanisms can be measured either on community
+ diversity, as we did here, or on processes rates directly, e.g.
  
-\change_deleted -666822487 1548243239
-of the community such as
-\change_inserted -2100369821 1547549603
- the 
-\change_inserted -666822487 1548243257
-invasion 
-\change_inserted -2100369821 1547549603
-growth rates
-\change_deleted -666822487 1548243269
- of species when rare
-\change_unchanged
-.
-
-\change_inserted -666822487 1548243349
+\change_deleted -2100369821 1548268060
  
-\change_inserted -2100369821 1547549621
-Using the latter metric, 
-\change_deleted -2100369821 1547549622
-P
-\change_inserted -2100369821 1547549622
-p
 \change_unchanged
-revious research
+the invasion growth rates.
+ Using the latter metric, previous research
 \change_deleted -2100369821 1547549447
  
 \change_unchanged
@@ -4026,6 +3686,13 @@ status open
 \change_inserted -666822487 1548243313
 OK - check carefully that's what the metric they used unless you have done
  so already...
+
+\change_inserted -2100369821 1548268195
+ Their entire framework being based on the invasion growth rate, this is
+ how I understand the papers.
+ They're also looking at densities, but that's a result of the invasion
+ growth rate...
+ Or am I wrong?
 \change_unchanged
 
 \end_layout
