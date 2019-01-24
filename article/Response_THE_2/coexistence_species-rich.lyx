@@ -470,65 +470,9 @@ literal "false"
 \end_layout
 
 \begin_layout Standard
-
-\change_inserted -666822487 1548235976
 What other key features of field communities should be considered when modelling
- phytoplankton?
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-
-\change_inserted -666822487 1548235858
-we need a transition
-\change_unchanged
-
-\end_layout
-
-\end_inset
-
- 
-\change_deleted -666822487 1548235904
-Niche differences between species
-\change_inserted -666822487 1548235909
-Strong self-regulation
-\change_unchanged
-, 
-\change_deleted -666822487 1548235913
-leading to
-\change_inserted -666822487 1548235914
-with
-\change_unchanged
- intraspecific 
-\change_deleted -666822487 1548235925
-interaction 
-\change_inserted -666822487 1548235927
-competition much 
-\change_unchanged
-stronger than interspecific interactions, ha
-\change_deleted -666822487 1548235869
-s
-\change_inserted -666822487 1548235932
-s
-\change_unchanged
- 
-\change_deleted -666822487 1548235942
-recently 
-\change_unchanged
-been 
-\change_deleted -666822487 1548235945
-confirmed
-\change_inserted -666822487 1548235946
-found
-\change_unchanged
- 
-\change_deleted -666822487 1548235883
-as 
-\change_inserted -666822487 1548235886
-to be widespread
-\change_deleted -666822487 1548235883
-a key mechanism
-\change_unchanged
+ phytoplankton? Strong self-regulation, with intraspecific competition much
+ stronger than interspecific interactions, has been found to be widespread
  in terrestrial plant communities 
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -545,11 +489,7 @@ literal "false"
 
 \end_inset
 
-, and 
-\change_inserted -666822487 1548235953
-more recently 
-\change_unchanged
-phytoplanktonic communities 
+, and more recently phytoplanktonic communities 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "barraquand2018coastal"
@@ -558,19 +498,10 @@ literal "false"
 \end_inset
 
 .
- 
-\change_inserted -666822487 1548236070
-We will therefore insert those niche differences, manifesting as strong
+ We will therefore insert those niche differences, manifesting as strong
  self-regulation, into our models of phytoplankton competition.
- 
-\change_unchanged
-The interaction between environment variability and niche overlap 
-\change_deleted -666822487 1548236078
-has been 
-\change_inserted -666822487 1548236079
-was 
-\change_unchanged
-investigated by 
+ The interaction between environment variability and niche overlap was investiga
+ted by 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "abrams_niche_1976"
@@ -578,12 +509,9 @@ literal "false"
 
 \end_inset
 
- but his results did not extend to communities more diverse than 4 species
-\change_inserted -666822487 1548236116
-; our objective is therefore to see how those mechanisms interact for species-ri
-ch communities
-\change_unchanged
-.
+ but his results did not extend to communities more diverse than 4 species;
+ our objective is therefore to see how those mechanisms interact for species-ric
+h communities.
 \end_layout
 
 \begin_layout Standard
@@ -2329,7 +2257,13 @@ literal "false"
 ) while 6 out of the 14 species biomasses remained below the unit.
  All persisting species in the random noise simulation were clustered within
  a 3.2°C-range of thermal optima (see the biomass distribution as a function
- of the thermal optimum in Supplementary Material, Fig.
+ of the thermal optimum in
+\change_inserted -2100369821 1548349398
+ Electronic
+\change_deleted -2100369821 1548349397
+ 
+\change_unchanged
+Supplementary Material, Fig.
  A1).
  No obvious temporal patterns (e.g., cycles) could be seen in the community
  forced by random noise.
@@ -2761,9 +2695,15 @@ noprefix "false"
  Species in communities forced by a random noise stayed in the lower range
  of thermal optima (in 96% of the simulations, the highest thermal optimum
  was 22.4°C, see Fig.
- A2 in the Supplementary Material) while they were filtered out in communities
- subjected to a seasonal fluctuation of their environment, for which species
- with thermal optima above 20.5°C persisted.
+ A2 in 
+\change_deleted -2100369821 1548349404
+the
+\change_inserted -2100369821 1548349407
+Electronic
+\change_unchanged
+ Supplementary Material) while they were filtered out in communities subjected
+ to a seasonal fluctuation of their environment, for which species with
+ thermal optima above 20.5°C persisted.
  As before (Fig.
  
 \begin_inset CommandInset ref
@@ -2932,28 +2872,7 @@ literal "false"
 .
  This means that short- and medium-term transients (a few years to hundreds
  of years) are completely negligible at the end of the time series, but
- very long transients can remain
-\change_deleted -2100369821 1548268102
-
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-
-\change_inserted -666822487 1548241780
-this addition is not very clear: community functioning is too vague (even
- I am not sure what you mean).
- Rephrase or suppress.
- 
-\change_unchanged
-
-\end_layout
-
-\end_inset
-
-
-\change_inserted -2100369821 1547724256
- 
+ very long transients can remain in this class od models 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "hastings_transient_2018"
@@ -2961,8 +2880,6 @@ literal "false"
 
 \end_inset
 
-
-\change_unchanged
 .
  We realized that convergence could be incomplete after 5000 years in some
  cases (e.g., random noise + storage effect + equal competitive strength).
@@ -2994,14 +2911,31 @@ literal "false"
 \change_deleted -2100369821 1548264890
  
 \change_unchanged
-would be to vary the mortality parameter, shifting the model further away
- from neutral dynamics.
- This did not alter the conclusions (see Appendix B in Supplementary Material).
- 
-\change_deleted -2100369821 1548264890
+would be to vary the mortality parameter
+\change_deleted -2100369821 1548349489
+, shifting the
+\change_inserted -2100369821 1548349495
+ but this shifts the 
+\change_deleted -2100369821 1548349489
  
 \change_unchanged
-As we wanted to focus on the storage effect and the self-regulation while
+model further away from neutral dynamics.
+
+\change_inserted -2100369821 1548349515
+ We checked this for robustness' sake and 
+\change_deleted -2100369821 1548349516
+ T
+\change_inserted -2100369821 1548349516
+t
+\change_unchanged
+his did not alter the conclusions (see Appendix B in 
+\change_inserted -2100369821 1548349389
+Electronic 
+\change_unchanged
+Supplementary Material).
+ 
+\change_deleted -2100369821 1548349545
+ As we wanted to focus on the storage effect and the self-regulation while
  keeping all other elements of the model identical to 
 \begin_inset CommandInset citation
 LatexCommand citet
@@ -3011,6 +2945,10 @@ literal "false"
 \end_inset
 
 , we did not change the time window for integration.
+\change_inserted -2100369821 1548349573
+We therefore kept the 5000-year time window for integration.
+\change_unchanged
+
 \end_layout
 
 \begin_layout Standard
@@ -3088,9 +3026,28 @@ literal "false"
 Finally, our study is limited to communities whose species have fast population
  dynamics relative to the yearly timescale, like phytoplankton and likely
  other fast-living organisms, so that many generations can occur in a year.
- Different effects of seasonality may occur in species that have slower
- life histories or with generations that extend over multiple years (e.g.,
- multiyear cycles and chaotic attractors, 
+ 
+\change_inserted -2100369821 1548350032
+Persistence in community with slower dynamics may be affected differently
+ by seasonality 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "miller_evolutionary_2017"
+literal "false"
+
+\end_inset
+
+
+\change_deleted -2100369821 1548349963
+Different effects of seasonality may occur in species that have slower life
+ histories or
+\change_inserted -2100369821 1548349971
+, especially for species 
+\change_deleted -2100369821 1548349963
+ 
+\change_unchanged
+with generations that extend over multiple years (e.g., multiyear cycles and
+ chaotic attractors, 
 \begin_inset CommandInset citation
 LatexCommand citealt
 key "rinaldi_multiple_1993,taylor_how_2013,tyson_seasonally_2016"
@@ -3099,6 +3056,8 @@ literal "false"
 \end_inset
 
 ).
+
+\change_deleted -2100369821 1548349941
  Persistence may be affected differently by seasonality in such cases with
  slower community dynamics 
 \begin_inset CommandInset citation
@@ -3108,33 +3067,32 @@ literal "false"
 
 \end_inset
 
+.
 
-\change_inserted -666822487 1548242039
-
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-
-\change_inserted -666822487 1548242052
-Coralie, have you checked exactly that is what they say?
-\change_inserted -2100369821 1548265425
- That's how I understand Fig.8 and Fig.11: when the period of the season is
- shorter, i.e.
- when community dynamics are slower, the storage effect is weaker, which
- may affect persistence.
- Miller and Klausmeier do admit that coexistence is not necessarily driven
- by this storage effect but the coexistence mechanisms at play are different
- and may therefore lead to difference in persistence.
-\change_unchanged
-
-\end_layout
+\change_inserted -2100369821 1548350908
+ Inter-annual variability, as opposed to intra-annual seasonality, can also
+ emerge in the presence of an additional trophic level: 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "dakos_interannual_2009"
+literal "false"
 
 \end_inset
 
+ present a planktonic community with seasonally-entrained chaotic dynamics
+ which may be partly due to zooplanktonic predation.
+ Predation probably entails additional niche differences, possibly with
+ an emerging self-regulation created by predation processes 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "chesson_updates_2018"
+literal "false"
 
-\change_unchanged
+\end_inset
+
 .
+\change_unchanged
+
 \end_layout
 
 \begin_layout Standard
@@ -3307,23 +3265,22 @@ literal "false"
  in maintaining diversity if a storage effect is present, seasonal forcing
  of parameters does not improve coexistence when compared to white noise.
 
-\change_inserted -2100369821 1548189007
- In a purely deterministic setting
-\change_inserted -666822487 1548242215
+\change_inserted -2100369821 1548351472
+ 
+\change_deleted -2100369821 1548349626
 , with initially no forcing at all
-\change_inserted -2100369821 1548189007
-, seasonality can alleviate the competitive exclusion principle through
- nonlinear competition for nutrients 
+\change_inserted -2100369821 1548351777
+The color of a noise, as opposed to its strength, is indeed a proven driver
+ of community dynamics 
 \begin_inset CommandInset citation
 LatexCommand citep
-key "sarker_share_2018"
+key "ruokolainen_ecological_2009"
 literal "false"
 
 \end_inset
 
-, but this specific mechanism also relies on trade-offs between resource
- use for diversity to maintain
-\change_inserted -666822487 1548242250
+.
+\change_deleted -2100369821 1548349626
 
 \begin_inset Note Note
 status open
@@ -3356,26 +3313,11 @@ In our model, if one species has maximum requirements for a particular re-
 
 
 \change_inserted -2100369821 1548189007
-.
- In addition to effects on species richness, seasonality can affect the
  
 \change_deleted -666822487 1548242266
 dynamics
-\change_inserted -666822487 1548242271
-type of dynamical behaviour
-\change_inserted -2100369821 1548189007
- of the community: 
-\begin_inset CommandInset citation
-LatexCommand citet
-key "dakos_interannual_2009"
-literal "false"
-
-\end_inset
-
- have been able to maintain up to 10 phytoplanktonic species in a seasonally-ent
-rained chaotic regime
-\change_inserted -666822487 1548242480
-.
+\change_deleted -2100369821 1548350282
+type of dynamical behaviour.
  It is noteworthy that zooplanktonic predation included in their model probably
  entails some niche differences, possibly with an emerging self-regulation
  created by predation processes 
@@ -3387,23 +3329,6 @@ literal "false"
 \end_inset
 
 .
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-
-\change_inserted -666822487 1548242488
-we can discuss the ref if need be
-\change_inserted -2100369821 1548266085
-.
- That's ok for me, I assume you're referring mostly to section 7 in Chesson's
- paper? Or you mean discussing the Dakos ref?
-\change_unchanged
-
-\end_layout
-
-\end_inset
-
  
 \change_deleted -666822487 1548242338
 , even though this result is partially dampened by added niche differences
@@ -3452,8 +3377,19 @@ literal "false"
 \end_inset
 
 , but we recommend to interpret them with caution to avoid over-generalization.
- The identification of multiple modes in biomass-trait relationships and
- SADs is relatively recent 
+ The identification of multiple modes in biomass-trait relationships
+\change_inserted -2100369821 1548349878
+ is a relatively recent feature in models and data 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "segura_competition_2013,dandrea_translucent_2018,dandrea_generalizing_2019"
+literal "false"
+
+\end_inset
+
+
+\change_deleted -2100369821 1548349717
+ and SADs is relatively recent 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "dornelas_multiple_2008,matthews_multimodal_2014"
@@ -3466,29 +3402,6 @@ literal "false"
 LatexCommand citep
 key "mcgill_species_2007"
 literal "false"
-
-\end_inset
-
-
-\change_inserted -666822487 1548242719
-
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-
-\change_inserted -666822487 1548242747
-Est-ce qu'on ne ferait pas mieux de ne pas mentionner les SADs? cf.
- papiers récents d'Andrea et al.
- 
-\change_inserted -2100369821 1548267451
-A discuter, je ne suis pas sûre de voir ce que tu veux dire.
- Les papiers d'Andrea et al.
- sont très orientés 'traits' et non pas 'SAD' en soit.
- Ou alors je n'ai pas compris ?
-\change_unchanged
-
-\end_layout
 
 \end_inset
 
@@ -3552,7 +3465,7 @@ literal "false"
  or obfuscate these patterns – typically strong self-regulation weakens
  the clustering on the trait axis.
 
-\change_inserted -2100369821 1548267515
+\change_inserted -2100369821 1548349371
  On the contrary, the modeled competition kernel may also induce clustering
  along the trait axis due to numerical instability 
 \begin_inset CommandInset citation
@@ -3562,30 +3475,6 @@ literal "false"
 
 \end_inset
 
-
-\change_inserted -666822487 1548242912
-
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-
-\change_inserted -666822487 1548243062
-Not sure what you mean in that sentence: in what sense exactly are clumps
- the same? Same to what? I would suggest rephrasing.
-
-\change_inserted -2100369821 1548267745
- Better now ?
-\change_deleted -2100369821 1548267746
- 
-\change_unchanged
-
-\end_layout
-
-\end_inset
-
-
-\change_deleted -2100369821 1548088624
 .
 
 \change_unchanged
@@ -3664,10 +3553,6 @@ the invasion growth rates.
 \change_unchanged
 has however demonstrated that generalist seed predation could weaken the
  storage effect
-\change_deleted -2100369821 1547549607
- 
-\change_unchanged
-
 \begin_inset CommandInset citation
 LatexCommand citep
 key "kuang_coexistence_2009,kuang_interacting_2010"
@@ -3675,32 +3560,6 @@ literal "false"
 
 \end_inset
 
-
-\change_inserted -666822487 1548243290
-
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-
-\change_inserted -666822487 1548243313
-OK - check carefully that's what the metric they used unless you have done
- so already...
-
-\change_inserted -2100369821 1548268195
- Their entire framework being based on the invasion growth rate, this is
- how I understand the papers.
- They're also looking at densities, but that's a result of the invasion
- growth rate...
- Or am I wrong?
-\change_unchanged
-
-\end_layout
-
-\end_inset
-
-
-\change_unchanged
  thus different mechanisms might not always combine superadditively as we
  found here.That said, superadditivity has been found in some cases, i.e.,
  pathogens could enhance the storage effect and broaden the conditions in
@@ -3798,8 +3657,24 @@ Acknowledgements
 
 \begin_layout Standard
 We thank Alix Sauve for thoughtful comments and some bibliographic references,
- as well as György Barabás and an anonymous referee for constructive feedback.
- This study was supported by the French ANR through LabEx COTE (ANR-10-LABX-45).
+ as well as 
+\change_deleted -2100369821 1548349246
+György Barabás and 
+\change_unchanged
+an anonymous referee for 
+\change_inserted -2100369821 1548349207
+their 
+\change_unchanged
+constructive feedback.
+
+\change_inserted -2100369821 1548349333
+ We are also grateful to György Barabás for his thorough review, suggestions
+ to deal with transients and for sharing his code for comparison purposes.
+ 
+\change_deleted -2100369821 1548349210
+ 
+\change_unchanged
+This study was supported by the French ANR through LabEx COTE (ANR-10-LABX-45).
 \end_layout
 
 \begin_layout Standard
