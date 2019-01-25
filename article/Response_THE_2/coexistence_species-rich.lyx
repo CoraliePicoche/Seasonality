@@ -3026,9 +3026,7 @@ literal "false"
 Finally, our study is limited to communities whose species have fast population
  dynamics relative to the yearly timescale, like phytoplankton and likely
  other fast-living organisms, so that many generations can occur in a year.
- 
-\change_inserted -2100369821 1548350032
-Persistence in community with slower dynamics may be affected differently
+ Persistence in community with slower dynamics may be affected differently
  by seasonality 
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -3037,17 +3035,9 @@ literal "false"
 
 \end_inset
 
-
-\change_deleted -2100369821 1548349963
-Different effects of seasonality may occur in species that have slower life
- histories or
-\change_inserted -2100369821 1548349971
-, especially for species 
-\change_deleted -2100369821 1548349963
- 
-\change_unchanged
-with generations that extend over multiple years (e.g., multiyear cycles and
- chaotic attractors, 
+.
+ This especially true for species with generations that extend over multiple
+ years (e.g., multiyear cycles and chaotic attractors, 
 \begin_inset CommandInset citation
 LatexCommand citealt
 key "rinaldi_multiple_1993,taylor_how_2013,tyson_seasonally_2016"
@@ -3261,17 +3251,38 @@ literal "false"
 
  may be due to the role of forcing variance over time (we compare scenarios
  under a constant total variance).
- Overall, while seasonality may be slightly better than no forcing at all
- in maintaining diversity if a storage effect is present, seasonal forcing
- of parameters does not improve coexistence when compared to white noise.
-
-\change_inserted -2100369821 1548351472
+ Overall, while seasonality may 
+\change_deleted -2100369821 1548418562
+be slightly better than no forcing at all in 
+\change_unchanged
+maintain
+\change_deleted -2100369821 1548418564
+ing
+\change_inserted -2100369821 1548419011
+ slightly more
+\change_deleted -2100369821 1548418570
  
+\change_unchanged
+diversity
+\change_inserted -2100369821 1548418592
+ than no forcing at all
+\change_deleted -2100369821 1548418589
+ 
+\change_unchanged
+if a storage effect is present, 
+\change_deleted -2100369821 1548418527
+seasonal forcing of parameters does not improve coexistence when compared
+ to white noise.
+\change_inserted -2100369821 1548419055
+the reddening of the environmental noise due to such seasonality does not
+ necessarily improve coexistence.
+ This increase in autocorrelation, despite keeping the same strength in
+ the forcing signal, can either increase or decrease biomass fluctuations
+ and synchrony, depending on species intrisic growth rates 
 \change_deleted -2100369821 1548349626
 , with initially no forcing at all
-\change_inserted -2100369821 1548351777
-The color of a noise, as opposed to its strength, is indeed a proven driver
- of community dynamics 
+\change_inserted -2100369821 1548418865
+, which can in turn destabilize a community 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "ruokolainen_ecological_2009"
@@ -3280,39 +3291,6 @@ literal "false"
 \end_inset
 
 .
-\change_deleted -2100369821 1548349626
-
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-
-\change_inserted -666822487 1548242259
-Not sure but we can discuss this
-\change_inserted -2100369821 1548265625
-.
- This is how I understand the sentence 
-\begin_inset Quotes eld
-\end_inset
-
-In our model, if one species has maximum requirements for a particular re-
- source, then it has intermediate and minimum requirements for other resources.
- These types of resource requirements i.e.
- differences in feeding traits is one of the important reasons for the observed
- super- saturation
-\begin_inset Quotes erd
-\end_inset
-
-.
- Have I misunderstood?
-\change_unchanged
-
-\end_layout
-
-\end_inset
-
-
-\change_inserted -2100369821 1548189007
  
 \change_deleted -666822487 1548242266
 dynamics
@@ -3376,10 +3354,10 @@ literal "false"
 
 \end_inset
 
-, but we recommend to interpret them with caution to avoid over-generalization.
- The identification of multiple modes in biomass-trait relationships
-\change_inserted -2100369821 1548349878
- is a relatively recent feature in models and data 
+, but 
+\change_inserted -2100369821 1548419362
+the identification of multiple modes in these distributions is a relatively
+ recent feature in models and data 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "segura_competition_2013,dandrea_translucent_2018,dandrea_generalizing_2019"
@@ -3387,9 +3365,13 @@ literal "false"
 
 \end_inset
 
-
-\change_deleted -2100369821 1548349717
- and SADs is relatively recent 
+ and 
+\change_unchanged
+we recommend to interpret them with caution to avoid over-generalization.
+ 
+\change_deleted -2100369821 1548419322
+The identification of multiple modes in biomass-trait relationships and
+ SADs is relatively recent 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "dornelas_multiple_2008,matthews_multimodal_2014"
@@ -3465,9 +3447,10 @@ literal "false"
  or obfuscate these patterns – typically strong self-regulation weakens
  the clustering on the trait axis.
 
-\change_inserted -2100369821 1548349371
- On the contrary, the modeled competition kernel may also induce clustering
- along the trait axis due to numerical instability 
+\change_inserted -2100369821 1548411346
+ Moreover, one should note that the occurrence of clustering is very sensitive
+ to the shape of the competition kernel: small differences in shape can
+ shift the distribution towards either clustered or uniform 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "pigolotti_how_2010"
@@ -3553,6 +3536,10 @@ the invasion growth rates.
 \change_unchanged
 has however demonstrated that generalist seed predation could weaken the
  storage effect
+\change_inserted -2100369821 1548411515
+ 
+\change_unchanged
+
 \begin_inset CommandInset citation
 LatexCommand citep
 key "kuang_coexistence_2009,kuang_interacting_2010"
@@ -3656,25 +3643,10 @@ Acknowledgements
 \end_layout
 
 \begin_layout Standard
-We thank Alix Sauve for thoughtful comments and some bibliographic references,
- as well as 
-\change_deleted -2100369821 1548349246
-György Barabás and 
-\change_unchanged
-an anonymous referee for 
-\change_inserted -2100369821 1548349207
-their 
-\change_unchanged
-constructive feedback.
-
-\change_inserted -2100369821 1548349333
- We are also grateful to György Barabás for his thorough review, suggestions
- to deal with transients and for sharing his code for comparison purposes.
- 
-\change_deleted -2100369821 1548349210
- 
-\change_unchanged
-This study was supported by the French ANR through LabEx COTE (ANR-10-LABX-45).
+We thank Alix Sauve for thoughtful comments and some bibliographic references.
+ We are very grateful to György Barabás and an anonymous referee for their
+ constructive feedback.
+ This study was supported by the French ANR through LabEx COTE (ANR-10-LABX-45).
 \end_layout
 
 \begin_layout Standard
