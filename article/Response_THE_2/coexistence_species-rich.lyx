@@ -329,7 +329,13 @@ literal "false"
 .
  A solution for the `paradox of the plankon' was proposed by Hutchinson:
  temporal variation of the environment.
- However, it has been shown later that inclusion of temporal variability
+ 
+\change_inserted -666822487 1548688513
+By making the identity of the fittest species change over time, temporal
+ variation could render competitive exclusion less likely.
+ 
+\change_unchanged
+However, it has been shown later that inclusion of temporal variability
  
 \emph on
 per se
@@ -363,7 +369,13 @@ literal "false"
  need to be introduced for diversity to maintain.
  Moreover, richness rarely exceeds a handful to a dozen of species in model
  competitive communities in fluctuating environments, except when external
- inputs such as immigration sustain diversity 
+ inputs 
+\change_deleted -666822487 1548688553
+such as
+\change_inserted -666822487 1548688554
+from
+\change_unchanged
+ immigration sustain diversity 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "jabot_non-random_2016"
