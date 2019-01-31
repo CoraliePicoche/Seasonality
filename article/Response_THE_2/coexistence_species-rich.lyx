@@ -88,7 +88,6 @@
 \html_css_as_file 0
 \html_be_strict false
 \author -2100369821 "cpicoche"
-\author -666822487 "frederic"
 \end_header
 
 \begin_body
@@ -280,13 +279,21 @@ ation usually dominates interspecific interactions.
  We additionally highlight that while trait-biomass distributions provide
  some clues regarding coexistence mechanisms, they cannot indicate by themselves
  which coexistence mechanisms are at play.
+
+\change_deleted -2100369821 1548929798
  
+\change_unchanged
+
 \end_layout
 
 \begin_layout Abstract
 
 \series bold
-Number of words: 242 
+Number of words: 242
+\change_deleted -2100369821 1548929798
+ 
+\change_unchanged
+
 \end_layout
 
 \begin_layout Standard
@@ -330,9 +337,8 @@ literal "false"
  A solution for the `paradox of the plankon' was proposed by Hutchinson:
  temporal variation of the environment.
  By making the identity of the fittest species change over time, temporal
- variation could render competitive exclusion less likely
-\change_inserted -2100369821 1548925616
-, which was confirmed by early experiments 
+ variation could render competitive exclusion less likely, which was confirmed
+ by early experiments 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "sommer_paradox_1984"
@@ -340,8 +346,6 @@ literal "false"
 
 \end_inset
 
-
-\change_unchanged
 .
  However, it has been shown later that inclusion of temporal variability
  
@@ -743,7 +747,11 @@ noprefix "false"
 \end_inset
 
 ), which sets a trade-off between maximum growth rates and niche width.
+
+\change_deleted -2100369821 1548929798
  
+\change_unchanged
+
 \end_layout
 
 \begin_layout Standard
@@ -902,7 +910,11 @@ Biomass density of the
 \begin_inset Formula $\tau$
 \end_inset
 
+
+\change_deleted -2100369821 1548929798
  
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -986,7 +998,11 @@ Strength of competition of species
 \begin_inset Formula $j\rightarrow i$
 \end_inset
 
+
+\change_deleted -2100369821 1548929798
  
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -1395,7 +1411,11 @@ Niche breadth
 \begin_inset Formula $10^{3.1}(\frac{\text{kg}}{\text{kg\times year}})$
 \end_inset
 
+
+\change_deleted -2100369821 1548929798
  
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -1682,7 +1702,11 @@ noprefix "false"
 \end_inset
 
  values.
+
+\change_deleted -2100369821 1548929798
  
+\change_unchanged
+
 \end_layout
 
 \begin_layout Standard
@@ -1814,7 +1838,11 @@ equal competitive strengths
 \end_inset
 
  where intra- and interspecific competition strengths are equal.
+
+\change_deleted -2100369821 1548929798
  
+\change_unchanged
+
 \end_layout
 
 \begin_layout Standard
@@ -2126,7 +2154,11 @@ literal "false"
 , it was considered extinct.
  For each combination of parameters (type of environmental signal, storage
  effect and stabilizing niche differences), we ran 100 simulations.
+
+\change_deleted -2100369821 1548929798
  
+\change_unchanged
+
 \end_layout
 
 \begin_layout Standard
@@ -2165,7 +2197,11 @@ https://github.com/CoraliePicoche/Seasonality
 \end_layout
 
 \begin_layout Section
-Results 
+Results
+\change_deleted -2100369821 1548929798
+ 
+\change_unchanged
+
 \end_layout
 
 \begin_layout Standard
@@ -2398,7 +2434,11 @@ noprefix "false"
  A seasonal signal therefore led to a much smaller average persistence.
  There was also less variance in persistence between seasonally forced simulatio
 ns compared to random noise simulations.
+
+\change_deleted -2100369821 1548929798
  
+\change_unchanged
+
 \end_layout
 
 \begin_layout Standard
@@ -2433,7 +2473,6 @@ Both a strong self-regulation and the storage effect markedly increased
  than the sum of the species coexisting with either mechanism alone.
  The two mechanisms therefore combine superadditively, as their interaction
  has a positive effect on the richness of the community.
- 
 \end_layout
 
 \begin_layout Standard
@@ -2475,7 +2514,11 @@ name "fig:Persistence-of-species"
 
 \end_inset
 
+
+\change_deleted -2100369821 1548929798
  
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -2543,7 +2586,11 @@ noprefix "false"
  The shift in trait distribution towards higher maximum growth rates with
  a seasonal noise vs higher average growth rates with a random noise was
  consistent for all model types considered.
+
+\change_deleted -2100369821 1548929798
  
+\change_unchanged
+
 \end_layout
 
 \begin_layout Standard
@@ -2718,7 +2765,6 @@ noprefix "false"
 ), seasonality promoted species with a higher maximum growth rate since
  the autocorrelated temperatures enabled them to achieve this highest growth
  rate for a longer period of time than a random noise would have.
- 
 \end_layout
 
 \begin_layout Standard
@@ -3035,33 +3081,8 @@ literal "false"
 
 , but it seems unlikely that we would be able to generate such dynamics
  with the models presented in this article.
- 
-\change_inserted -666822487 1548675204
-Additional nonlinearities would be needed.
- 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-
-\change_inserted -666822487 1548675231
-Wondering if we should take about relative nonlinearity here or later.
- I am tempted to say later, because we finish the assumption paragraph.
-
-\change_inserted -2100369821 1548846268
- Agree on 'later', but then wonder if we should keep the last sentence.
- Was it meant to introduce the discussion on nonlinearities?
-\change_inserted -666822487 1548675231
- 
-\change_unchanged
-
-\end_layout
-
-\end_inset
-
-
-\change_unchanged
-
+ Additional nonlinearities would be needed to create instrinsically variable
+ and chaotic dynamics.
 \end_layout
 
 \begin_layout Standard
@@ -3199,7 +3220,6 @@ red
  as a result of a strong competition from both low- and high-temperature
  tolerant species.
  This holds with or without a storage effect.
- 
 \end_layout
 
 \begin_layout Standard
@@ -3238,9 +3258,7 @@ literal "false"
  more diversity than no forcing at all if a storage effect is present, the
  reddening of the environmental noise due to such seasonality reduces coexistenc
 e.
- 
-\change_inserted -666822487 1548675617
-This result may be contingent upon the correlated positive responses of
+ This result may be contingent upon the correlated positive responses of
  the species growth rate to increases in the environmental variable 
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -3250,16 +3268,7 @@ literal "false"
 
 \end_inset
 
-
-\change_inserted -2100369821 1548854650
- 
-\change_inserted -666822487 1548675617
 .
-
-\change_deleted -2100369821 1548846416
- 
-\change_unchanged
-
 \end_layout
 
 \begin_layout Standard
@@ -3433,9 +3442,19 @@ literal "false"
 \end_inset
 
 ).
- The effect of interacting mechanisms can be measured either on community
- diversity, as we did here, or on processes rates directly, e.g.
- the invasion growth rates.
+ Superadditivity, i.e.
+ the positive effect of interactions betweenmechanisms can be measured either
+ on community diversity, as we did here, or on processes rates directly,
+ e.g.
+ the invasion growth rates 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "ellner_expanded_2019"
+literal "false"
+
+\end_inset
+
+.
  Using the latter metric, previous research has however demonstrated that
  generalist seed predation could weaken the storage effect 
 \begin_inset CommandInset citation
