@@ -370,7 +370,7 @@ literal "false"
 \end_inset
 
  need to be introduced for diversity to maintain.
- Moreover, richness rarely exceeds a handful to a dozen of species in model
+ Moreover, richness rarely exceeds a handful to a dozen of species in modeled
  competitive communities in fluctuating environments, except when external
  inputs from immigration sustain diversity 
 \begin_inset CommandInset citation
@@ -3251,20 +3251,10 @@ literal "false"
  stochasticity of a single model run.
  However, with several locations - or in a theoretical context as done here
  - one could average across locations.
- Other mechanisms that we did not include in our models may produce similar
- clustered patterns 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "rael2018emergent"
-literal "false"
-
-\end_inset
-
- or obfuscate clusters altogether: typically, strong self-regulation weakens
- the clustering on the trait axis.
- Moreover, one should note that the occurrence of clustering is very sensitive
- to the shape of the competition kernel: small differences in shape can
- shift the distribution towards either clustered or uniform 
+ There are additional reasons to be cautious: the occurrence of clustering
+ is very sensitive to the shape of the competition kernel; small differences
+ in shape can shift the distribution towards either clustered or uniform
+ 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "pigolotti_how_2010"
@@ -3273,6 +3263,9 @@ literal "false"
 \end_inset
 
 .
+ We therefore view clustering on the thermal preference trait axis as an
+ interesting clue suggesting to look for a storage effect, rather than any
+ definite proof that the storage effect is at work.
  Finally, we recall that we focus on a trait (thermal optimum) which clearly
  interacts with the environment: clustering may emerge on another trait
  axis, such as size, which typically affects the competition coefficient,
@@ -3285,9 +3278,6 @@ literal "false"
 \end_inset
 
 .
- We therefore view clustering on the thermal preference trait axis as an
- interesting clue suggesting to look for a storage effect, rather than any
- definite proof that the storage effect is at work.
 \end_layout
 
 \begin_layout Standard
