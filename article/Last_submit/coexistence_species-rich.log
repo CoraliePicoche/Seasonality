@@ -1,11 +1,11 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.12.10)  27 FEB 2019 10:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2019.2.11)  27 FEB 2019 11:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **coexistence_species-rich.tex
 (./coexistence_species-rich.tex
 LaTeX2e <2016/02/01>
-Babel <3.9q> and hyphenation patterns for 7 language(s) loaded.
+Babel <3.9q> and hyphenation patterns for 35 language(s) loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo
@@ -393,10 +393,10 @@ Overfull \hbox (53.41156pt too wide) in paragraph at lines 325--334
 
 [8]
 Package epstopdf Info: Source file: <Fig1.eps>
-(epstopdf)                    date: 2018-07-09 10:03:25
+(epstopdf)                    date: 2019-02-27 10:59:20
 (epstopdf)                    size: 277922 bytes
 (epstopdf)             Output file: <Fig1-eps-converted-to.pdf>
-(epstopdf)                    date: 2019-02-27 10:14:39
+(epstopdf)                    date: 2019-02-27 10:59:20
 (epstopdf)                    size: 85787 bytes
 (epstopdf)             Command: <repstopdf --outfile=Fig1-eps-converted-to.pdf 
 Fig1.eps>
@@ -414,10 +414,10 @@ Package pdftex.def Info: Fig1-eps-converted-to.pdf used on input line 392.
 (pdftex.def)             Requested size: 459.51054pt x 403.5819pt.
  [9]
 Package epstopdf Info: Source file: <Fig2.eps>
-(epstopdf)                    date: 2018-10-04 16:34:00
+(epstopdf)                    date: 2019-02-27 10:59:20
 (epstopdf)                    size: 20280 bytes
 (epstopdf)             Output file: <Fig2-eps-converted-to.pdf>
-(epstopdf)                    date: 2019-02-27 10:14:39
+(epstopdf)                    date: 2019-02-27 10:59:20
 (epstopdf)                    size: 6919 bytes
 (epstopdf)             Command: <repstopdf --outfile=Fig2-eps-converted-to.pdf 
 Fig2.eps>
@@ -439,10 +439,10 @@ Package pdftex.def Warning: Option `bb' does not make sense,
 (pdftex.def)                using `viewport' instead on input line 485.
 
 Package epstopdf Info: Source file: <Fig3.eps>
-(epstopdf)                    date: 2018-10-18 16:51:04
+(epstopdf)                    date: 2019-02-27 10:59:20
 (epstopdf)                    size: 215783 bytes
 (epstopdf)             Output file: <Fig3-eps-converted-to.pdf>
-(epstopdf)                    date: 2019-02-27 10:14:39
+(epstopdf)                    date: 2019-02-27 10:59:20
 (epstopdf)                    size: 55015 bytes
 (epstopdf)             Command: <repstopdf --outfile=Fig3-eps-converted-to.pdf 
 Fig3.eps>
@@ -464,10 +464,10 @@ Package pdftex.def Warning: Option `bb' does not make sense,
 (pdftex.def)                using `viewport' instead on input line 534.
 
 Package epstopdf Info: Source file: <Fig4.eps>
-(epstopdf)                    date: 2018-10-12 18:36:56
+(epstopdf)                    date: 2019-02-27 10:59:20
 (epstopdf)                    size: 166420 bytes
 (epstopdf)             Output file: <Fig4-eps-converted-to.pdf>
-(epstopdf)                    date: 2019-02-27 10:14:40
+(epstopdf)                    date: 2019-02-27 10:59:20
 (epstopdf)                    size: 36282 bytes
 (epstopdf)             Command: <repstopdf --outfile=Fig4-eps-converted-to.pdf 
 Fig4.eps>
@@ -522,14 +522,14 @@ ics 36(1):419--444,
 
 [27] (./coexistence_species-rich.aux) ) 
 Here is how much of TeX's memory you used:
- 3957 strings out of 494877
- 57875 string characters out of 6179314
- 124521 words of memory out of 5000000
- 7188 multiletter control sequences out of 15000+600000
+ 3957 strings out of 494278
+ 57875 string characters out of 6162324
+ 125973 words of memory out of 5000000
+ 7229 multiletter control sequences out of 15000+600000
  13417 words of font info for 48 fonts, out of 8000000 for 9000
- 59 hyphenation exceptions out of 8191
+ 395 hyphenation exceptions out of 8191
  38i,15n,32p,1255b,361s stack positions out of 5000i,500n,10000p,200000b,80000s
- </home/cpicoche/.texmf-var/fonts/pk/ljf
+ </home/frederic/.texmf-var/fonts/pk/ljf
 our/jknappen/ec/tcrm1200.600pk></usr/share/texlive/texmf-dist/fonts/type1/publi
 c/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
 onts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
@@ -550,7 +550,7 @@ sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texli
 ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on coexistence_species-rich.pdf (27 pages, 461403 bytes).
+Output written on coexistence_species-rich.pdf (27 pages, 461392 bytes).
 PDF statistics:
  205 PDF objects out of 1000 (max. 8388607)
  144 compressed objects within 2 object streams
